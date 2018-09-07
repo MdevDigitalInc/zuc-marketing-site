@@ -1,0 +1,168 @@
+/*-------------------------------------
+ *	TYPOGRAPHY
+/-------------------------------------*/
+
+/* Main */
+body {
+  font-family: $main-font;
+  font-size: 16px;
+  color: $black;
+}
+
+/* Headings & Body Copy */
+
+/* Reset Fonts */
+
+/* Disabled because the new line rule was not intended for these cases */
+/* stylelint-disable */
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6, {
+  font-family: $main-font;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 25px;
+}
+
+// Responsive Font Size Maps
+$p-font-sizes: (
+  null  : 20px,
+  $tablet-up  : 1.15vw,
+  $tablet-lnd-only : 1.4vw,
+  $laptop-only : 1.4vw,
+  $portrait : 4vw,
+  $phone-only : 6vw
+);
+
+$h1-font-sizes: (
+  null  : 2.5vw,
+  $portrait : 5.3vw,
+  $laptop-only : 3vw,
+  $phone-only: 8vw
+);
+
+$h2-font-sizes: (
+  null  : 60px,
+  $portrait: 55px
+);
+
+$h3-font-sizes: (
+  null  : 1.6vw,
+  $portrait: 5vw,
+  $phone-only: 6vw
+);
+
+$h4-font-sizes: (
+  null  : 22px,
+  $portrait: 18px
+);
+
+$h5-font-sizes: (
+  null  : 14px
+);
+
+$h6-font-sizes: (
+  null  : 10px
+);
+
+// Links
+$link-font-sizes: (
+  null  : 16px,
+  $tablet-up : 17px,
+  $desktop-up: 18px
+);
+
+// Responsive Font-Size Mixing (Function Only)
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+      @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media #{$fs-breakpoint} {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+/* stylelint-enable */
+
+/* Generate Responsive Sizing */
+
+p {
+  line-height: 180%;
+  font-weight: 400;
+  @include font-size($p-font-sizes);
+
+  @media #{$phone-only} {
+    line-height: 150%;
+  }
+}
+
+h1,
+.h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2,
+.h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h3,
+.h3 {
+  @include font-size($h3-font-sizes);
+  letter-spacing: 5px;
+
+  @media #{$portrait} {
+    line-height: 120%;
+  }
+
+  @media #{$tablet-lnd-only} {
+    letter-spacing: 2px;
+  }
+}
+
+h4,
+.h4 {
+  @include font-size($h4-font-sizes);
+}
+
+h5,
+.h5 {
+  @include font-size($h5-font-sizes);
+}
+
+h6,
+.h6 {
+  @include font-size($h6-font-sizes);
+}
+
+.mdev-main-nav-links {
+  @include font-size($link-font-sizes);
+}
+
+/* Link Reset / Base Inherit */
+a {
+  font-family: $main-font;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.mdev-hero-text {
+  @include font-size($h1-font-sizes);
+  line-height: 120%;
+  color: $color-brand-primary;
+  font-weight: 700;
+}
