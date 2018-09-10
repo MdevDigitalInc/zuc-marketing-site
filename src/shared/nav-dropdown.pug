@@ -1,1 +1,19 @@
-div Dropdown
+a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
+  |Request Service
+
+// Smarter Living Link
+.zuc-nav-dropdown
+  a(class='hover-stroke' href='#' title='Smarter Living Plans') What Is Smarter Living?
+  // Drop Down
+  div(class='zuc-hidden-menu' data-hidden-menu aria-hidden='true' aria-role='menu')
+    .zuc-dropdown-content.flex.flex-hor-between.flex-vert-stretch
+      // Dropdown Links
+      .zuc-dropdown-column
+        a(href='#' title='Title Goes Here' aria-role='menu-item')
+          |All Attractions
+
+      // Dropdown Images
+      .zuc-dropdown-column.zuc-dropdown-images
+        div(style="background-image:url('./images/favicon2.png')")
+        a(href='#' title='Title Goes Here' aria-role='menu-item')
+          |Ropes

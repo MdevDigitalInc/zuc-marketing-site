@@ -44,7 +44,21 @@ module.exports = {
       {
         test: /\.pug$/,
         // pretty is used to prevent minification of .pug templates
-        use: [ 'html-loader?pretty=true', 'pug-html-loader?pretty=true' ]
+        use: [
+          {loader: 'html-loader'},
+          {
+            loader: 'pug-html-loader?pretty=true',
+            options: {
+              pretty: true,
+              exports: false,
+
+              data : {
+                require: require,
+                path: path
+              }
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,
@@ -83,7 +97,7 @@ module.exports = {
       // Image Processing
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loaders: [ 'file-loader?context=src/images&name=images/[path][name].[ext]', {
+        loaders: [ 'file-loader?context=assets&name=[path][name].[ext]', {
           loader: 'image-webpack-loader',
           query: {
             // JPEG Processing
