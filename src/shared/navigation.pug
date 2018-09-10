@@ -1,8 +1,20 @@
-nav(class='mdev-main-nav' aria-role='navigation' role='navigation')
-  .mdev-main-wrapper.flex.flex-nowrap.flex-hor-between.flex-vert-end
-    a(href='https://mdev.digital' title='MDEV Digital' class='mdev-main-nav-branding')
-      img(src='../../assets/images/favicon.png')
-    .mdev-main-nav-links.u-uppercase
-      a(href='#' title='MDEV Digital' class='mdev-main-nav-branding') Link One
-      a(href='#' title='MDEV Digital' class='mdev-main-nav-branding') Link Two
-      a(href='#' title='MDEV Digital' class='mdev-main-nav-branding') Link Three
+nav(class='zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase' data-main-navigation)
+  <!-- Nav Branding-->
+  .zuc-nav-brand
+    |BRAND GOES HERE
+
+  <!-- Nav Links-->
+  .zuc-nav-links.flex.flex-hor-end.flex-hor-between.flex-no-wrap.flex-vert-center
+    <!-- Nav Dropdown -->
+    include ./nav-dropdown.pug
+
+  <!-- Mobile Nav Button -->
+  div(class='zuc-menu' data-menu-open)
+    div(class='zuc-menu-open' role='button' aria-label='Mobile Navigation')
+      span(class='hidden' aria-hidden='true' aria-label='Clic to open mobile menu')
+        |Mobile Menu
+<!-- Mobile Navigation -->
+include ./nav-mobile.pug
+
+
+
