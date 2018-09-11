@@ -5,3 +5,26 @@
  *  Stylesheet for the footer.
  *
 /-------------------------------------*/
+.footer {
+  background-color: $color-zuc-indigo;
+  padding: 60px 20px 70px;
+  margin-top: 40px;
+
+  .flex-column {
+    padding: 0px 20px;
+  }
+}
+
+.footer-header {
+  color: $white;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: $white;
+  margin-top: 10px;
+  font-size: 12px;
+}
