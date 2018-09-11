@@ -1,7 +1,7 @@
 // Nav Dropdowns
 $dropdown-padding: 1.5vw;
 
-.tfac-nav-dropdown {
+.zuc-nav-dropdown {
   margin: 0;
   padding: 2vw;
   color: $white;
@@ -17,13 +17,13 @@ $dropdown-padding: 1.5vw;
     background: $white;
     color: $black;
 
-    .tfac-hidden-menu {
+    .zuc-hidden-menu {
       opacity: 1;
       transform: scaley(1);
     }
 
     .hover-stroke {
-      border-bottom: 1px solid $tfac-green;
+      border-bottom: 1px solid $color-brand-primary;
     }
   }
 
@@ -34,7 +34,7 @@ $dropdown-padding: 1.5vw;
   }
 
   // Hidden Dropdown menu
-  .tfac-hidden-menu {
+  .zuc-hidden-menu {
     opacity: 0;
     position: absolute;
     left: 0;
@@ -49,13 +49,13 @@ $dropdown-padding: 1.5vw;
     box-shadow: 0 0 50px rgba( 0,0,0,.5);
   }
 
-  .tfac-dropdown-content {
+  .zuc-dropdown-content {
     width: 100%;
     position: relative;
     padding: $dropdown-padding 0;
   }
 
-  .tfac-dropdown-images {
+  .zuc-dropdown-images {
     padding: 0 $dropdown-padding;
   }
 
@@ -68,7 +68,7 @@ $dropdown-padding: 1.5vw;
 }
 
 
-.tfac-dropdown-column {
+.zuc-dropdown-column {
   width: 50%;
 
   &:last-child {
@@ -95,7 +95,7 @@ $dropdown-padding: 1.5vw;
     }
   }
 
-  .tfac-dropdown-tile {
+  .zuc-dropdown-tile {
     width: 100%;
     position: relative;
     overflow: hidden;

@@ -1,5 +1,5 @@
 // Navigation Styles
-.tfac-main-nav {
+.zuc-main-nav {
   width: 100%;
   position: fixed;
   top: 0;
@@ -28,11 +28,11 @@
     background: $black;
   }
 
-  .tfac-main-cta {
+  .zuc-main-cta {
     line-height: 14px;
   }
 
-  .tfac-nav-slogan {
+  .zuc-nav-slogan {
     font-size: 3vw;
     width: 42%;
     padding: 2vh 0;
@@ -62,12 +62,12 @@
   }
 
   // Space out button a bit on the left
-  .tfac-btn {
+  .zuc-btn {
     margin-left: 10px;
   }
 }
 // Inner Page Nav Branding
-.tfac-nav-branding {
+.zuc-nav-branding {
   width: 15%;
   position: relative;
   margin: 1vh 0;
@@ -89,25 +89,9 @@
   @media #{$tablet-prt-only} {
     padding: 0 5.5%;
   }
-
-  &:before {
-    @include pseudo();
-    width: 115%;
-    top: -27px;
-    background-image: url('../img/splashes/splash-nav.svg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: -1;
-    @include center(horizontal);
-    @include responsive-ratio(318,400);
-
-    @media #{$phone-only} {
-      display: none;
-    }
-  }
 }
 // Brand spacing Holder
-.tfac-brand-holder {
+.zuc-brand-holder {
   width: 15%;
   min-width: 146px;
   padding: 0 3.4%;
@@ -121,10 +105,10 @@
 }
 
 // Inner Page Nav Overide
-.tfac-main-nav-inner {
+.zuc-main-nav-inner {
   width: 83%;
 
-  .tfac-nav-slogan {
+  .zuc-nav-slogan {
     font-size: 1vw;
     display: none;
 
@@ -137,19 +121,19 @@
     justify-content: flex-end;
   }
 
-  .tfac-menu-open {
+  .zuc-menu-open {
     position: relative;
   }
 }
 
-.tfac-nav-links {
+.zuc-nav-links {
   @media #{$phone-only} {
     display: none;
   }
 }
 
 // Account Links
-.tfac-account-links {
+.zuc-account-links {
   margin-left: 20px;
   font-size: $font-size-small;
 

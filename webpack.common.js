@@ -10,6 +10,7 @@ const webpack = require('webpack')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require ('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const setPath = function(folderName) {
   return path.join(__dirname, folderName);
@@ -158,6 +159,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug'
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/js', to: 'js', force: true }
+    ])
   ],
   performance: {
     hints: 'warning'
