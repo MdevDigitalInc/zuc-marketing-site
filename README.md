@@ -134,6 +134,27 @@ webpack.prod.js file under Plugins.
 
 ```
 
+### Caveats & Work Arounds
+1. Pug and Webpack are not playing very nicely when it comes to processing
+   background images. For some reason Pug is unable to interpolate the call and
+   get the required path. After many attempts the best solution seems to be a
+   work around comprised of requiring the images directly on the index.js file
+   and then calling the images using simple relative paths.
+
+```javascript
+...
+// ------------------------------ index.js
+// Import images into index.js
+
+const imagename = require( './assets/images/path-to-image/image.png' );
+```
+
+```pug
+// Call in background image with relative path to dist/ as root.
+div(style="background-image:url('./images/favicon2.png')")
+  |Some content here
+```
+
 ---
 
 ### [ MDEV Digital ]
