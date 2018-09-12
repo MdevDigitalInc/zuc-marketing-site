@@ -2,14 +2,14 @@
  * TESTIMONIAL
 /-------------------------------------*/
 
-.testimonial-container {
+.zuc-testimonial-container {
   height: 540px;
   width: 100%;
   
   background-color: $color-testimonial-grey;
 }
 
-.quote-container {
+.zuc-quote-container {
   max-height: 285px;
   max-width: 868px;
 
@@ -19,7 +19,7 @@
   background-color: $white;
 }
 
-.quote-text {  
+.zuc-quote-text {  
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
@@ -32,25 +32,25 @@
   padding: 110px 91px 96px 83px;
 }
 
-.quote-author {
+.zuc-quote-author {
   position: absolute;
   right: 74px;
   bottom: 34px;
 }
 
-.quote-badge {
+.zuc-quote-badge {
   position: absolute;
 }
 
-.quote-badge-circle {
+.zuc-quote-badge-circle {
   fill: $color-testimonial-light;
 }
 
-.badge-quote-icon {
+.zuc-badge-quote-icon {
   z-index: 1;
 }
 
-.cta-container {
+.zuc-cta-container {
   max-height: 214px;
   max-width: 317px;
 
@@ -61,7 +61,7 @@
   background-color: $color-testimonial-dark;
 }
 
-.cta-text {
+.zuc-cta-text {
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
@@ -74,7 +74,7 @@
   padding: 27px 26px 48px 29px;
 }
 
-.read-more-button {
+.zuc-read-more-button {
   position: absolute;
   top: 191px;
   left: 0px;
@@ -84,19 +84,19 @@
   padding: 17px 21px 18px 24px;
 }
 
-.quote-button {
+.zuc-quote-button {
   height: 50px;
   width: 50px;
 
   background-color: $color-testimonial-light;
   
-  &.previous {
+  &.zuc-previous {
     position: absolute;
     left: -25px;
     bottom: 34px;
   }
 
-  &.next {
+  &.zuc-next {
     position: absolute;
     right: -25px;
     bottom: 34px;
