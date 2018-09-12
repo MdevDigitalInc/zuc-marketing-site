@@ -5,7 +5,11 @@
 - var quote = 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.'
 - var author = 'JASON H.'
 .testimonial-container.flex.flex-hor-center
-  .quote-container
+  .quote-container.flex.flex-column
+    .quote-badge
+      svg.quote-badge(height='114' width='114')
+        circle.quote-badge-circle(cx='57' cy='57' r='57')
+      img.quote-badge-icon(src='../../assets/images/testimonial/icon-quote-white.svg')
     .cta-container
       span.cta-text See what our most satisfied customers say
       a.read-more-button READ ALL REVIEWS

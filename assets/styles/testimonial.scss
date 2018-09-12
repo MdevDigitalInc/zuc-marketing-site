@@ -10,14 +10,13 @@
 }
 
 .quote-container {
-  height: 285px;
-  width: 868px;
+  max-height: 285px;
+  max-width: 868px;
 
   position: relative;
   top: 219px;
   
   background-color: $white;
-  
 }
 
 .quote-text {  
@@ -39,9 +38,21 @@
   bottom: 34px;
 }
 
+.quote-badge {
+  position: absolute;
+}
+
+.quote-badge-circle {
+  fill: $color-testimonial-light;
+}
+
+.badge-quote-icon {
+  z-index: 1;
+}
+
 .cta-container {
-  height: 214px;
-  width: 317px;
+  max-height: 214px;
+  max-width: 317px;
 
   position: absolute;
   left: -281px;
