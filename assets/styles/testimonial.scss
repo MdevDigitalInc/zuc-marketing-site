@@ -1,0 +1,94 @@
+/*-------------------------------------
+ * TESTIMONIAL
+/-------------------------------------*/
+
+.testimonial-container {
+  height: 540px;
+  width: 100%;
+  
+  background-color: $color-testimonial-grey;
+}
+
+.quote-container {
+  height: 285px;
+  width: 868px;
+
+  position: relative;
+  top: 219px;
+  
+  background-color: $white;
+  
+}
+
+.quote-text {  
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-testimonial-dark;
+
+  padding: 110px 91px 96px 83px;
+}
+
+.quote-author {
+  position: absolute;
+  right: 74px;
+  bottom: 34px;
+}
+
+.cta-container {
+  height: 214px;
+  width: 317px;
+
+  position: absolute;
+  left: -281px;
+  top: -117px;
+  
+  background-color: $color-testimonial-dark;
+}
+
+.cta-text {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $white;
+
+  padding: 27px 26px 48px 29px;
+}
+
+.read-more-button {
+  position: absolute;
+  top: 191px;
+  left: 0px;
+  
+  background-color: $color-testimonial-light;
+
+  padding: 17px 21px 18px 24px;
+}
+
+.quote-button {
+  height: 50px;
+  width: 50px;
+
+  background-color: $color-testimonial-light;
+  
+  &.previous {
+    position: absolute;
+    left: -25px;
+    bottom: 34px;
+  }
+
+  &.next {
+    position: absolute;
+    right: -25px;
+    bottom: 34px;
+  }
+}
+
