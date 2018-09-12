@@ -1,27 +1,36 @@
+-var slogan     = "CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER"
+-var offer      = "$39"
+-var login      = "Login"
+-var partner    = "Become a Partner"
+-var cart       = "Cart"
+-var cartCount  = "13"
 // User Navigation
-.zuc-nav-user.flex.flex-hor-start.flex-hor-between.flex-vert-center
+.zuc-nav-user.flex.flex-hor-start.flex-hor-between.flex-vert-center.u-uppercase
   // Slogan
   .zuc-nav-slogan
-    |Slogan Goes here plz
-    span
-      |$XX.XX
+    |#{slogan}
+    span(class="u-zuc-teal")
+      |#{offer}
 
   //Nav Links
   .zuc-user-links.flex.flex-hor-start.flex-hor-between.flex-vert-center
     // Search Placeholder
 
     // Login
-    a(href="#" title="Member Login" class="zuc-user-login")
-      |Login
+    a(href="#" title="Member Login" class="zuc-user-login flex flex-vert-center u-bold")
       i.fas.fa-lock
+      |#{login}
 
     // Partnerships
     a(href="#" title="Learn about our Partnership Program" class="zuc-user-generic")
-      |Become a Partner
+      |#{partner}
 
     // Shopping Cart
-    a(href="#" title="Member Login" class="zuc-user-login")
-      |Cart
+    a(href="#" title="User Cart" class="zuc-user-cart flex flex-vert-center")
       i.fas.fa-shopping-cart
+      span.cart-center
+        |#{cart}
       span(class="zuc-cart-count")
-        |13
+        // Interpolate Cart Count from Limetac
+        span
+          |#{cartCount}
