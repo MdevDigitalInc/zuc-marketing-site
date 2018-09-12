@@ -7,13 +7,12 @@
 .zuc-testimonial-section.flex.flex-hor-center
   .zuc-quote-container.flex.flex-column.flex-vert-center.flex-hor-center
     .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center
-      svg.zuc-quote-badge
-        circle.zuc-quote-badge-circle(cx='57' cy='57' r='57')
       img.zuc-quote-badge-icon(src='../../assets/images/testimonial/icon-quote-white.svg')
     p.zuc-quote-text #{quote}
     span.zuc-quote-author — #{author}
     .zuc-cta-container
       span.zuc-cta-text See what our most satisfied customers say
-      a.zuc-read-more-button READ ALL REVIEWS
+      .zuc-read-more-button-continer.flex.flex-vert-center.flex-hor-center
+        a.zuc-read-more-button READ ALL REVIEWS
     .zuc-quote-button.zuc-next
     .zuc-quote-button.zuc-previous

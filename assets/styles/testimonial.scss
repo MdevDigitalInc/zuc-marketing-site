@@ -12,17 +12,15 @@
 .zuc-quote-badge-container {
   display: flex;
   position: absolute;
-  top: 0;
+  top: -2.875vw;
   height: 5.75vw;
   width: 5.75vw;
-}
+  
+  border-radius: 50%;
+  
+  background-color: $color-testimonial-light;
 
-.zuc-quote-badge-circle {
-  fill: $color-testimonial-light;
-}
-
-.zuc-badge-quote-icon {
-  z-index: 1;
+  box-shadow: $shadow-testimonial;
 }
 
 .zuc-quote-container {
@@ -54,6 +52,8 @@
   width: 2.5vw;
 
   background-color: $color-testimonial-light;
+
+  box-shadow: $shadow-testimonial;
   
   &.zuc-previous {
     position: absolute;
@@ -73,12 +73,14 @@
   width: 16vw;
 
   position: absolute;
-  left: -14.2vw;
   top: -5.91vw;
+  left: -14.2vw;
 
   padding: 1.36vw 1.31vw 2.42vw 1.46vw;
   
   background-color: $color-zuc-darkindigo;
+
+  box-shadow: $shadow-testimonial;
 }
 
 .zuc-cta-text {
@@ -87,14 +89,21 @@
   color: $white;
 }
 
-.zuc-read-more-button {
-  font-size: 0.93vw;
+.zuc-read-more-button-continer {
+  height: 2.53vw;
+  width: 10.91vw;
+
   position: absolute;
+  top: 9.545vw;
   left: 0;
-  
+
   background-color: $color-testimonial-light;
 
-  padding: 0.86vw 1.06vw 0.91vw 1.21vw;
+  box-shadow: $shadow-testimonial;
+}
+
+.zuc-read-more-button {
+  font-size: 0.93vw;
 }
 
 
