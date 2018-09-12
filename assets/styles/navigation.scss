@@ -69,6 +69,13 @@
   .zuc-nav-brand {
     width: auto;
     max-width: 237px;
+    transition: all .2s ease-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.05);
+    }
 
     img {
       width: 100%;
