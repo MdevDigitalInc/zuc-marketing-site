@@ -155,6 +155,38 @@ div(style="background-image:url('./images/favicon2.png')")
   |Some content here
 ```
 
+2. Javascript files that will actively be used on the front-end and are not part
+   of webpack or dependencies should be places in the `src/js/` folder. This
+   folder has been setup to be copied RAW into the `dist` folder(root). This
+   same system works flawlessly on the dev environment as well so no need to
+   worry. Just create the necessary JS file inside the folder and call them on
+   the page by using a relative path to root.
+
+```javascript
+// Webpack.Common
+...
+
+plugins: [
+  ...
+
+  new CopyWebpackPlugin([
+    { from: 'src/js', to: 'js', force: true }
+  ])
+
+  ...
+],
+
+...
+```
+
+```pug
+...
+
+  script( src='./js/filename.js')
+
+...
+```
+
 ---
 
 ### [ MDEV Digital ]

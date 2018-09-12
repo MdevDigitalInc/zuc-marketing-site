@@ -51,18 +51,18 @@
     //
     // Toggle Mobile Nav Open | Close
     $('[data-open-menu]').click( function(){
-      $('[data-mobile-menu]').toggleClass('tfac-mobile-nav-active');
+      $('[data-mobile-menu]').toggleClass('zuc-mobile-nav-active');
       $('body').toggleClass('body-active-mobile-nav');
     });
     // Toggle Mobile Nav Accordion Logic
     $('[data-accordion-item]').click( function(event){
       // If tapped item already selected...
-      if ($(event.target).hasClass('tfac-accordion-active')){
-        $(event.target).removeClass('tfac-accordion-active');
+      if ($(event.target).hasClass('zuc-accordion-active')){
+        $(event.target).removeClass('zuc-accordion-active');
       }
       else {
-        $('[data-accordion-item]').removeClass('tfac-accordion-active');
-        $(event.target).toggleClass('tfac-accordion-active');
+        $('[data-accordion-item]').removeClass('zuc-accordion-active');
+        $(event.target).toggleClass('zuc-accordion-active');
       }
     });
   });
@@ -85,10 +85,10 @@
     var top = $(window).scrollTop();
 
     if ( top >= 50 ) {
-      target.addClass('tfac-nav-active');
+      target.addClass('zuc-nav-active');
     }
     else if ( top === 0 ) {
-      target.removeClass('tfac-nav-active');
+      target.removeClass('zuc-nav-active');
     }
   };
 })();
