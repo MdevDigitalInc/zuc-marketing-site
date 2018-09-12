@@ -10,6 +10,7 @@ const webpack = require('webpack')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require ('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const setPath = function(folderName) {
   return path.join(__dirname, folderName);
@@ -44,7 +45,21 @@ module.exports = {
       {
         test: /\.pug$/,
         // pretty is used to prevent minification of .pug templates
-        use: [ 'html-loader?pretty=true', 'pug-html-loader?pretty=true' ]
+        use: [
+          {loader: 'html-loader'},
+          {
+            loader: 'pug-html-loader?pretty=true',
+            options: {
+              pretty: true,
+              exports: false,
+
+              data : {
+                require: require,
+                path: path
+              }
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,
@@ -83,7 +98,7 @@ module.exports = {
       // Image Processing
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loaders: [ 'file-loader?context=src/images&name=images/[path][name].[ext]', {
+        loaders: [ 'file-loader?context=assets&name=[path][name].[ext]', {
           loader: 'image-webpack-loader',
           query: {
             // JPEG Processing
@@ -144,6 +159,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug'
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/js', to: 'js', force: true }
+    ])
   ],
   performance: {
     hints: 'warning'

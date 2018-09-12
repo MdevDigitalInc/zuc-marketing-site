@@ -1,0 +1,114 @@
+// Navigation Styles
+.zuc-nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
+}
+
+.zuc-main-nav {
+  width: 100%;
+  padding: 0 8%;
+  left: 0;
+  color: $white;
+  font-size: $font-size-body;
+  font-weight: 700;
+  z-index: 100;
+  transition: all, .3s;
+  background: $color-brand-primary;
+
+  @media #{$tablet-up} {
+    font-size: 1vw;
+  }
+  @media #{$desktop-only} {
+    font-size: $font-size-body;
+  }
+  @media #{$xl-up} {
+    font-size: 1vw;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: lighten($color-brand-primary, 10%);
+  }
+
+  .zuc-main-cta {
+    line-height: 14px;
+  }
+
+  .zuc-nav-slogan {
+    font-size: 3vw;
+    width: 42%;
+    padding: 2vh 0;
+
+    @media #{$tablet-up} {
+      width: auto;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+    @media #{$tablet-only} {
+      font-size: 1.5vw;
+    }
+    @media #{$tablet-prt-only} {
+      font-size: 1.2vw;
+      margin-bottom: 0;
+    }
+    @media #{$laptop-only} {
+      font-size: 1.4vw;
+    }
+    @media #{$desktop-only} {
+      font-size: 20px;
+    }
+    @media #{$xl-up} {
+      font-size: 1.3vw;
+      margin: 0;
+    }
+  }
+
+  .zuc-nav-brand {
+    width: auto;
+    max-width: 237px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Space out button a bit on the left
+  .zuc-btn {
+    margin-right: 10px;
+  }
+}
+
+.zuc-nav-links {
+  @media #{$phone-only} {
+    display: none;
+  }
+}
+
+// Account Links
+.zuc-account-links {
+  margin-left: 20px;
+  font-size: $font-size-small;
+
+  @media #{$tablet-only} {
+    font-size: .9vw;
+  }
+  @media #{$laptop-up} {
+    font-size: $font-size-small;
+  }
+  @media #{$xl-up} {
+    font-size: .8vw;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0;
+  }
+
+  span {
+    margin: 0 10px;
+  }
+}
+

@@ -134,6 +134,59 @@ webpack.prod.js file under Plugins.
 
 ```
 
+### Caveats & Work Arounds
+1. Pug and Webpack are not playing very nicely when it comes to processing
+   background images. For some reason Pug is unable to interpolate the call and
+   get the required path. After many attempts the best solution seems to be a
+   work around comprised of requiring the images directly on the index.js file
+   and then calling the images using simple relative paths.
+
+```javascript
+...
+// ------------------------------ index.js
+// Import images into index.js
+
+const imagename = require( './assets/images/path-to-image/image.png' );
+```
+
+```pug
+// Call in background image with relative path to dist/ as root.
+div(style="background-image:url('./images/favicon2.png')")
+  |Some content here
+```
+
+2. Javascript files that will actively be used on the front-end and are not part
+   of webpack or dependencies should be places in the `src/js/` folder. This
+   folder has been setup to be copied RAW into the `dist` folder(root). This
+   same system works flawlessly on the dev environment as well so no need to
+   worry. Just create the necessary JS file inside the folder and call them on
+   the page by using a relative path to root.
+
+```javascript
+// Webpack.Common
+...
+
+plugins: [
+  ...
+
+  new CopyWebpackPlugin([
+    { from: 'src/js', to: 'js', force: true }
+  ])
+
+  ...
+],
+
+...
+```
+
+```pug
+...
+
+  script( src='./js/filename.js')
+
+...
+```
+
 ---
 
 ### [ MDEV Digital ]

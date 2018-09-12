@@ -31,11 +31,6 @@
 @import './flex.scss';
 
 /*----
-	Global Variables
------*/
-@import './variables.scss';
-
-/*----
   Mixins
 -----*/
 @import './mixins.scss';
@@ -79,6 +74,21 @@
   Forms
 -----*/
 @import './forms.scss';
+
+/*----
+  Main Navigation
+-----*/
+@import './navigation.scss';
+
+/*----
+  Dropdown Menu
+-----*/
+@import './nav-dropdown.scss';
+
+/*----
+  Dropdown Menu
+-----*/
+@import './nav-mobile.scss';
 
 /*----
   Print
