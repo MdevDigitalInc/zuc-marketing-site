@@ -26,6 +26,9 @@
   @media #{$xl-up} {
     font-size: 1vw;
   }
+  @media #{$phone-only} {
+    padding: 2vw;
+  }
 
   &:hover,
   &:active,
@@ -33,43 +36,20 @@
     background: lighten($color-brand-primary, 10%);
   }
 
-  .zuc-main-cta {
-    line-height: 14px;
-  }
-
-  .zuc-nav-slogan {
-    font-size: 3vw;
-    width: 42%;
-    padding: 2vh 0;
-
-    @media #{$tablet-up} {
-      width: auto;
-      padding: 0;
-      margin-bottom: 5px;
-    }
-    @media #{$tablet-only} {
-      font-size: 1.5vw;
-    }
-    @media #{$tablet-prt-only} {
-      font-size: 1.2vw;
-      margin-bottom: 0;
-    }
-    @media #{$laptop-only} {
-      font-size: 1.4vw;
-    }
-    @media #{$desktop-only} {
-      font-size: 20px;
-    }
-    @media #{$xl-up} {
-      font-size: 1.3vw;
-      margin: 0;
-    }
-  }
-
   .zuc-nav-brand {
     width: auto;
     max-width: 237px;
     transition: all .2s ease-out;
+
+    @media #{$tablet-only} {
+      max-width: 130px;
+    }
+    @media #{$xl-up} {
+      max-width: 340px;
+    }
+    @media #{$phone-only} {
+      max-width: 100px;
+    }
 
     &:hover,
     &:focus,

@@ -15,7 +15,7 @@ $dropdown-padding: 1.5vw;
   &:active,
   &:focus {
     background: $white;
-    color: $black;
+    color: $color-zuc-indigo;
 
     .zuc-hidden-menu {
       opacity: 1;
@@ -37,7 +37,7 @@ $dropdown-padding: 1.5vw;
   .zuc-hidden-menu {
     opacity: 0;
     position: absolute;
-    left: 0;
+    right: 0;
     background: $white;
     color: $black;
     width: 35vw;
@@ -47,6 +47,8 @@ $dropdown-padding: 1.5vw;
     transform: scaley(0);
     transform-origin: top;
     box-shadow: 0 0 50px rgba( 0,0,0,.5);
+    border-bottom: 4px solid $color-zuc-indigo;
+    cursor: default;
   }
 
   .zuc-dropdown-content {
@@ -57,13 +59,6 @@ $dropdown-padding: 1.5vw;
 
   .zuc-dropdown-images {
     padding: 0 $dropdown-padding;
-  }
-
-  .single-column {
-    /* !Important needed to override column size */
-    /* stylelint-disable */
-    width: 15vw !important;
-    /* stylelint-enable */
   }
 }
 
@@ -83,16 +78,29 @@ $dropdown-padding: 1.5vw;
   a {
     display: block;
     width: 100%;
-    padding: .6vw $dropdown-padding;
+    padding: .8vw $dropdown-padding;
     background: transparent;
+    color: $color-zuc-indigo;
     transition: all, .2s;
     font-weight: 400;
 
     &:hover,
     &:focus,
     &:active {
-      background: #eee;
+      background: lighten($color-zuc-indigo, 50%);
     }
+  }
+
+  p {
+    font-size: .77vw;
+    text-transform: none;
+    line-height: 160%;
+    padding-bottom: 30px;
+    color: $color-text-grey;
+  }
+
+  img {
+    width: 100%;
   }
 
   .zuc-dropdown-tile {

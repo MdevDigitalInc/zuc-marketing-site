@@ -4,7 +4,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
   .zuc-mobile-nav-content
     img(src="../../assets/images/ZucoraHome-brand-white.svg" alt="Zucora Home")
     // Primary CTA Button
-    a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
+    a(class='zuc-btn zuc-btn-primary' href='#' title='Request Service')
       |Request Service
 
   // Accordion Nav ----------------------------------------
@@ -14,6 +14,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |What Is Smarter Living?
+        i.zuc-accordion-arrow
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
@@ -27,6 +28,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |Service Plans
+        i.zuc-accordion-arrow
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='View our bundles & combos' aria-role='menu-item')
@@ -42,6 +44,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |Home Wellness Solutions
+        i.zuc-accordion-arrow
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menu-item')
@@ -55,4 +58,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
         a(class="zuc-accordion-link" href='#' title='View our whole line of offerings' aria-role='menu-item')
           |Shop all products
 
-
+  div(class="zuc-menu" data-open-menu)
+    div(class="zuc-menu-open close" role="button" aria-label="Mobile Navigation Toggle")
+      span(class="hidden" aria-hidden="true" aria-label="Click to toggle mobile menu")
+        |Mobile Menu
