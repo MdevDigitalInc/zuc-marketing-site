@@ -1,8 +1,6 @@
-.zuc-contact-forms-container {
-  width: 33.23vw;
-}
-
-// 60-40
+/*----
+  60-40
+-----*/
 
 .zuc-split-6 {
   width: 60%;
@@ -36,7 +34,22 @@
   align-items: flex-start;
 }
 
-// Contact Forms Styling
+/*----
+  Contact Non-form Styles
+-----*/
+
+.zuc-contact-subtitle {
+  max-width: 409px;
+  font-size: 18px;
+}
+
+/*----
+  Contact Forms Style; Feel free to blow this away if a parent style should take care of it
+-----*/
+
+.zuc-contact-forms-container {
+  width: 33.23vw;
+}
 
 .zuc-input-group input {
   width: 744px;
