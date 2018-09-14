@@ -4,15 +4,15 @@
 
 - var quote = 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.'
 - var author = 'JASON H.'
+
 .zuc-testimonial-section.flex.flex-hor-center
   .zuc-quote-container.flex.flex-column.flex-vert-center.flex-hor-center
-    .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center
+    .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
       img.zuc-quote-badge-icon(src='../../assets/images/testimonial/icon-quote-white.svg')
-    p.zuc-quote-text #{quote}
+    p.zuc-quote-text.u-zuc-darkindigo #{quote}
     span.zuc-quote-author — #{author}
-    .zuc-cta-container
+    .zuc-cta-container.u-soft-shadow
       span.zuc-cta-text See what our most satisfied customers say
-      .zuc-read-more-button-continer.flex.flex-vert-center.flex-hor-center
-        a.zuc-read-more-button(href='#') READ ALL REVIEWS
-    .zuc-quote-button.zuc-next
-    .zuc-quote-button.zuc-previous
+      a.zuc-btn.zuc-read-all.u-soft-shadow(href='#') READ ALL REVIEWS
+    a.zuc-quote-button.zuc-next.u-soft-shadow(href='#') >
+    a.zuc-quote-button.zuc-previous.u-soft-shadow(href='#') <
