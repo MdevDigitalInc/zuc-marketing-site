@@ -1,9 +1,12 @@
-a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
+-var smarterLiving = "Your <span class='u-bold'>Smarter Living</span> Plan lorem ipsum dolor sit amet, agam ocurreret ut eum, dicit everti assentior ea eam. Nam scripta scaevola ei, ei eam case noluisse."
+-var servicePlans = "Your <span class='u-bold'>Whole Home</span> Plan lorem ipsum dolor sit amet, agam ocurreret ut eum, dicit everti assentior ea eam. Nam scripta scaevola ei, ei eam case noluisse.";
+-var homeWellness = "Your <span class='u-bold'>Home Wellness</span> Plan lorem ipsum dolor sit amet, agam ocurreret ut eum, dicit everti assentior ea eam. Nam scripta scaevola ei, ei eam case noluisse.";
+a(class='zuc-btn zuc-btn-primary' href='#' title='Request Service')
   |Request Service
 
 // Smarter Living Link ------------------------------
 .zuc-nav-dropdown
-  a(class='hover-stroke u-uppercase' href='#' title='Smarter Living Plans')
+  a(class='u-uppercase' href='#' title='Smarter Living Plans')
     |What Is Smarter Living?
   // Drop Down
   div(class='zuc-hidden-menu' data-hidden-menu aria-hidden='true' aria-role='menu')
@@ -21,12 +24,12 @@ a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
       .zuc-dropdown-column.zuc-dropdown-images
         // Column Content
         p
-          |Your Smarter Living Plan lorem ipsum dolor sit amet, agam ocurreret ut eum, dicit everti assentior ea eam. Nam scripta scaevola ei, ei eam case noluisse.
+          |!{smarterLiving}
         img(src="https://via.placeholder.com/350x150" alt="Alt Text Here")
 
 // Service Plans -------------------------------------
 .zuc-nav-dropdown
-  a(class='hover-stroke u-uppercase' href='#' title='Zucora Home Service Plans')
+  a(class='u-uppercase' href='#' title='Zucora Home Service Plans')
     |Service Plans
   // Drop Down
   div(class='zuc-hidden-menu' data-hidden-menu aria-hidden='true' aria-role='menu')
@@ -46,12 +49,12 @@ a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
       .zuc-dropdown-column.zuc-dropdown-images
         // Column Content
         p
-          |Your Whole Home Plan lorem ipsum dolor sit amet, agam ocurreret ut eum ipsum dolor sit amet, agam ocurreret ut eum.
+          |!{servicePlans}
         img(src="https://via.placeholder.com/350x150" alt="Alt Text Here")
 
 // Home Care Solutions -------------------------------
 .zuc-nav-dropdown
-  a(class='hover-stroke u-uppercase' href='#' title='Zucora Home Care Solutions')
+  a(class='u-uppercase' href='#' title='Zucora Home Care Solutions')
     |Home Wellness Solutions
   // Drop Down
   div(class='zuc-hidden-menu' data-hidden-menu aria-hidden='true' aria-role='menu')
@@ -73,10 +76,10 @@ a(class='zuc-btn zuc-primary-btn' href='#' title='Request Service')
       .zuc-dropdown-column.zuc-dropdown-images
         // Column Content
         p
-          |Your Whole Home Plan lorem ipsum dolor sit amet, agam ocurreret ut eum ipsum dolor sit amet, agam ocurreret ut eum.
+          |!{homeWellness}
         img(src="https://via.placeholder.com/350x150" alt="Alt Text Here")
 
 
 // Shop Now -------------------------------
 .zuc-nav-dropdown
-  a(class='hover-stroke u-uppercase' href='#' title='Zucora Home Care Solutions') Shop Now
+  a(class=' u-uppercase' href='#' title='Zucora Home Care Solutions') Shop Now

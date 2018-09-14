@@ -1,0 +1,137 @@
+// User Navigation
+.zuc-nav-user {
+  background: $color-zuc-darkindigo;
+  padding: 0 8%;
+  font-size: 0.83vw;
+
+  @media #{$portrait} {
+    font-size: 1.2vw;
+  }
+  @media #{$phone-only} {
+    justify-content: flex-end!important;
+    padding: 0 2vw;
+    font-size: 3vw;
+  }
+
+
+  .zuc-nav-slogan {
+    color: $white;
+
+    @media #{$phone-only} {
+      display: none;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+// Link Bar
+.zuc-user-links {
+  width: auto;
+  position: relative;
+
+  // Login Link
+  .zuc-user-login {
+    position: relative;
+    background: $color-zuc-lightindigo;
+    padding: .6vw .9vw;
+    color: $color-zuc-darkindigo;
+    transition: all .3s;
+
+    @media #{$portrait} {
+      padding: 1.1vw 1.4vw;
+    }
+    @media #{$phone-only} {
+      padding: 2.5vw 1.4vw;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: lighten($color-zuc-lightindigo, 10%);
+      color: lighten($color-zuc-darkindigo, 10%);
+    }
+
+    i {
+      margin-right: 5px;
+      font-size: .7vw;
+
+      @media #{$phone-only} {
+        font-size: 2vw;
+      }
+    }
+  }
+
+  // Generic Link Styling
+  .zuc-user-generic {
+    text-transform: none;
+    color: $color-zuc-lightindigo;
+    transition: all .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: lighten($color-zuc-lightindigo, 15%);
+    }
+  }
+
+  // Cart Text & Icon
+  .zuc-user-cart {
+    color: $white;
+
+    @media #{$phone-only} {
+      margin-right: 0;
+    }
+
+    i {
+      color: $color-zuc-lightindigo;
+      margin-right: 8px;
+    }
+  }
+
+  // Cart Count
+  .zuc-cart-count {
+    display: inline-block;
+    overflow: hidden;
+    color: $color-zuc-darkindigo;
+    border-radius: 50%;
+    background: $color-zuc-salmon;
+    font-weight: bold;
+    position: relative;
+    padding: .62vw;
+    margin-left: 8px;
+
+    @media #{$phone-only} {
+      padding: 2.5vw;
+    }
+
+    span {
+      display: block;
+      @include center(both);
+      padding-top: 3px;
+      font-size: .72vw;
+
+      @media #{$phone-only} {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  // Ovveride to get Cart word to vertically center
+  .cart-center {
+    position: relative;
+    top: 2px;
+  }
+}
+
+// All Links
+.zuc-user-links {
+  width: auto;
+  position: relative;
+
+  a {
+    margin: 0 10px;
+  }
+}

@@ -6,13 +6,19 @@
   transform: scalex(0);
   right: 0;
   left: 0;
+  top: 0;
+  bottom: 0;
   opacity: 0;
-  background: #000;
+  background: $color-zuc-indigo;
   width: 100%;
   padding: 2vw 0;
-  z-index: 200;
-  height: 100%;
+  z-index: 500;
+  height: auto;
   transition: transform .2s, opacity .5s;
+
+  @media #{$tablet-up} {
+    display: none;
+  }
 
   img {
     width: 40%;
@@ -26,20 +32,6 @@
     margin: 5vh 0 0;
   }
 
-  .zuc-mobile-social {
-    width: 100%;
-    padding: 0 14vw;
-
-    a {
-      width: 10%;
-    }
-
-    img {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
   .aoda-compliant {
     width: 100%;
     text-align: center;
@@ -47,6 +39,14 @@
     position: relative;
     margin-top: 10vh;
     display: block;
+  }
+
+  .zuc-mobile-social {
+    width: 30%;
+    margin: 0 auto;
+    color: $white;
+    font-size: 8vw;
+    text-align: center;
   }
 }
 
@@ -63,7 +63,7 @@
 
   .zuc-accordion-title {
     width: 100%;
-    font-size: 7vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 700;
     padding: 2vh 7vw;
@@ -81,7 +81,7 @@
 
 .zuc-accordion-hidden {
   width: 100%;
-  background: #333;
+  background: lighten($color-zuc-indigo, 30%);
   transform-origin: top;
   transform: scaley(0);
   transition: all, .3s;
@@ -93,6 +93,7 @@
     display: block;
     padding: 2vh 12vw;
     border-bottom: .5px solid $white;
+    color: $color-zuc-darkindigo;
   }
 }
 
@@ -108,7 +109,7 @@
   }
 
   .zuc-accordion-title {
-    background: #1a1a1a;
+    background: darken($color-zuc-indigo, 20%);
   }
 }
 
@@ -175,7 +176,7 @@ $line-offset: -6px;
 
 .close {
   background: transparent;
-  top: 3vh;
+  top: 6vw;
   right: 3vw;
 
   &:before {
