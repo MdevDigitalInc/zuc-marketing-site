@@ -43,6 +43,11 @@
         normalizeDropdown();
         // Check Nav
         activeNavigation( mainNav );
+        // Close Nav if open
+        if ($('body').hasClass('body-active-mobile-nav')) {
+          $('[data-mobile-menu]').toggleClass('zuc-mobile-nav-active');
+          $('body').toggleClass('body-active-mobile-nav');
+        }
       },250);
     });
 
