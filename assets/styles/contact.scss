@@ -35,3 +35,39 @@
 .--top {
   align-items: flex-start;
 }
+
+// Contact Forms Styling
+
+.zuc-input-group input {
+  width: 744px;
+  height: 63px;
+
+  border-radius: 4px;
+  background-color: $white;
+  border: solid 3px #707070;
+
+  padding: 0 1vw;
+  margin-top: 8px;
+
+  color: #36384b;
+
+  &:hover, &:focus, &:active {
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 3px #707070;
+
+    padding: 0 1vw;
+  }
+
+  &::placeholder {
+    color: $color-brand-bkg;
+  }
+}
+
+.zuc-input-name {
+  margin-top: 31px;
+}
+
+.contact-submit {
+  margin-top: 100px;
+}
