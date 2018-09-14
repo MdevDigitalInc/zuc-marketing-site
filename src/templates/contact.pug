@@ -12,12 +12,20 @@
     span this is a symbol
   .zuc-contact-forms-container.flex.flex-column
     form(action="")
-      | First & Last Name
-      input(type="text" name="fullname" value="John Smith")
-      | Email Address
-      input(type="text" name="email" value="example@email.com")
-      | Phone Number
-      input(type="text" name="phone" value="000-000-0000")
-      | Message
-      input(type="text" name="message" value="Your Message Here")
-      input(type="submit" value="SEND")
+      .zuc-input-group
+        .zuc-input-name
+          | First & Last Name
+        input(type="text" data-required name="fullname" value="John Smith")
+      .zuc-input-group
+        .zuc-input-name
+          | Email Address
+        input(type="email" data-required name="email" value="example@email.co")
+      .zuc-input-group
+        .zuc-input-name
+          | Phone Number
+        input(type="tel" data-required name="phone" value="000-000-0000")
+      .zuc-input-group
+        .zuc-input-name
+          | Message
+        input(type="text" data-required name="message" value="Your Message Here")
+      
