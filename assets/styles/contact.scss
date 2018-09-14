@@ -1,3 +1,37 @@
 .zuc-contact-forms-container {
   width: 33.23vw;
 }
+
+// 60-40
+
+.zuc-split-6 {
+  width: 60%;
+  padding-right: 1vw;
+
+  @media #{$portrait} {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-right: 0;
+  }
+}
+
+.zuc-split-4 {
+  width: 40%;
+  height: 50px;
+  padding-left: 8.08vw;
+
+  @media #{$portrait} {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.--reversed {
+  .zuc-split-6 {
+    order: 2;
+  }
+}
+
+.--top {
+  align-items: flex-start;
+}
