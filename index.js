@@ -17,5 +17,3 @@ const sassStyles = require( './assets/styles/global-main.scss' );
 //const imagename = require( './assets/images/favicon2.png' );
 
 module.exports = sassStyles;
-
-window.console.log('Build Completed');
