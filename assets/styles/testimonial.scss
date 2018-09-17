@@ -5,19 +5,15 @@
 .zuc-testimonial-section {
   height: 28.125vw;
   width: 100%;
-  
   background-color: $color-testimonial-grey;
 }
 
 .zuc-quote-badge-container {
   height: 5.75vw;
   width: 5.75vw;
-
   position: absolute;
-  top: -2.875vw;  
-  
+  top: -2.875vw;
   border-radius: 50%;
-  
   background-color: $color-testimonial-light;
 }
 
@@ -28,16 +24,13 @@
 .zuc-quote-container {
   height: 14.85vw;
   width: 45.2vw;
-
   position: relative;
   top: 11.06vw;
-
   padding: 0 4.4vw;
-  
   background-color: $white;
 }
 
-.zuc-quote-text {  
+.zuc-quote-text {
   font-size: 1vw;
   text-align: center;
 }
@@ -51,7 +44,6 @@
 .zuc-quote-button {
   height: 2.5vw;
   width: 2.5vw;
-
   background-color: $color-testimonial-light;
   
   &.zuc-previous {
@@ -70,33 +62,26 @@
 .zuc-cta-container {
   height: 10.81vw;
   width: 16vw;
-
   position: absolute;
   top: -5.91vw;
   left: -14.2vw;
-
   padding: 1.36vw 1.31vw 2.42vw 1.46vw;
-  
   background-color: $color-zuc-darkindigo;
 }
 
 .zuc-cta-text {
   font-size: 2vw;
   text-align: left;
-  
   color: $white;
 }
 
-.zuc-read-all{
+.zuc-read-all {
   // Fix this later, seems incorrect
   height: 2.53vw;
-
   position: absolute;
   top: 9.545vw;
   left: 0;
-
   font-size: .93vw;
   text-align: center;
-
   background-color: $color-testimonial-light;
 }
