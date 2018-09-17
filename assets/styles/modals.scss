@@ -16,6 +16,16 @@
     padding: 1.5vw 3vw;
     background: white;
     border-bottom: 4px solid $color-zuc-indigo;
+
+    @media #{$laptop-up} {
+      min-width: 40%;
+    }
+
+    @media #{$portrait} {
+      min-width: 85%;
+      max-width: 90%;
+      padding: 4.2vw 5.4vw;
+    }
   }
 
   // Modify Submit Button
@@ -24,6 +34,18 @@
     padding-left: 4vw;
     padding-right: 4vw;
     margin: 1vw auto;
+
+    @media #{$portrait} {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      text-align: center;
+      margin: 5vw 0;
+    }
+
+    @media #{$tablet-prt-only} {
+      padding: 3vw 3.3vw;
+    }
   }
 
   // Generic Links
@@ -31,6 +53,11 @@
     color: $color-text-grey;
     font-size: .83vw;
     line-height: 1.3vw;
+
+    @media #{$portrait} {
+      font-size: 3vw;
+      line-height: 3.5vw;
+    }
   }
 
   // Forgot Password Link
@@ -47,6 +74,13 @@
     line-height: 120%;
     font-weight: 700;
     margin-bottom: 5px;
+
+    @media #{$portrait} {
+      font-size: 4.3vw;
+    }
+    @media #{$phone-only} {
+      font-size: 6.3vw;
+    }
   }
 
   // Modal Subtitle
@@ -54,6 +88,13 @@
     font-size: 1.04vw;
     line-height: 140%;
     color: $color-zuc-indigo;
+
+    @media #{$portrait} {
+      font-size: 3.2vw;
+    }
+    @media #{$phone-only} {
+      font-size: 5.2vw;
+    }
   }
 }
 

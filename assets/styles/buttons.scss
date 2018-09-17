@@ -68,6 +68,11 @@
   font-weight: 700;
   font-size: 1.25vw;
 
+  @media #{$portrait} {
+    font-size: 4vw;
+    border-radius: 6px;
+  }
+
   &:hover,
   &:focus,
   &:active {
