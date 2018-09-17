@@ -57,6 +57,10 @@
     right: -1.25vw;
     bottom: 1.73vw;
   }
+
+  img {
+    width: 0.5vw;
+  }
 }
 
 .zuc-cta-container {
@@ -83,5 +87,6 @@
   left: 0;
   font-size: .93vw;
   text-align: center;
+  vertical-align: middle;
   background-color: $color-testimonial-light;
 }
