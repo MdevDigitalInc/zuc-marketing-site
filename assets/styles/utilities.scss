@@ -135,3 +135,21 @@
 .--body-white {
   background: $white;
 }
+
+// Log In / Out Flag
+// When In Show..
+.u-auth-show {
+  display: none;
+}
+
+// --logedin added to body
+.--authenticated {
+  .u-auth-show {
+    display: inherit;
+  }
+
+  .u-auth-hide {
+    display: none;
+  }
+}
+
