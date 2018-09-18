@@ -1,15 +1,16 @@
 .zuc-footer-wrapper
   footer.flex.flex-row.flex-hor-center.zuc-footer
-    div.zuc-footer__brand-section flex flex-column flex-vert-end')
+    div.zuc-footer__brand-section.flex.flex-column
       a.zuc-nav-brand(href="/")
-        img.zuc-footer__logo src='../../assets/images/ZucoraHome-brand-white.svg')
+        img(src='../../assets/images/ZucoraHome-brand-white.svg')
       // Social Icons
-      a.zuc-social-link(href="#" title="Like us on Facebook")
-        i.fab.fa-facebook-f
-      a.zuc-social-link(href="#" title="Follow us on Instagram")
-        i.fab.fa-instagram
-    div.zuc-footer__about flex flex-column flex-vert-start zuc-footer__column')
-      h4.zuc-footer__header u-uppercase') About
+      .zuc-footer__social-icons
+        a.zuc-social-link(href="#" title="Like us on Facebook")
+          i.fab.fa-facebook-f
+        a.zuc-social-link(href="#" title="Follow us on Instagram")
+          i.fab.fa-instagram
+    div.zuc-footer__about.flex.flex-column.flex-vert-start.zuc-footer__column
+      h4.zuc-footer__header.u-uppercase About
       a.zuc-footer__link(href='#' title='todo') Contact Us
       a.zuc-footer__link(href='#' title='todo') About Us
       a.zuc-footer__link(href='#' title='todo') Our Team

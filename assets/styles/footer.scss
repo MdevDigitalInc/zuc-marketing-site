@@ -5,7 +5,7 @@
  *  Stylesheet for the footer.
  *
 /-------------------------------------*/
-.zuc-footer__wrapper {
+.zuc-footer-wrapper {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -40,9 +40,71 @@
   width: 70%;
 }
 
+.zuc-footer__brand-section {
+  padding: 0 2%;
+  left: 0;
+  color: $white;
+  font-size: $font-size-body;
+  font-weight: 700;
+  z-index: 100;
+  transition: all, .3s;
+  background: $color-brand-primary;
+  position: relative;
+
+  @media #{$tablet-up} {
+    font-size: 1vw;
+  }
+  @media #{$desktop-only} {
+    font-size: $font-size-body;
+  }
+  @media #{$xl-up} {
+    font-size: 1vw;
+  }
+  @media #{$phone-only} {
+    padding: 2vw;
+  }
+
+  .zuc-nav-brand {
+    width: auto;
+    max-width: 237px;
+    transition: all .2s ease-out;
+
+    @media #{$tablet-only} {
+      max-width: 130px;
+    }
+    @media #{$xl-up} {
+      max-width: 340px;
+    }
+    @media #{$phone-only} {
+      max-width: 100px;
+    }
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .zuc-footer__social-icons {
+    padding-top: 30px;
+    position: absolute;
+    right: 48px;
+    top: 30px;
+  }
+
+  .zuc-social-link {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 5px;
+  }
+  // Space out button a bit on the left
+  .zuc-btn {
+    margin-right: 10px;
+  }
+}
+
 .zuc-footer__copyright {
   background: $color-zuc-darkindigo;
-  padding: .8% 8%;
+  padding: 1% 8%;
   font-size: .83vw;
 
   @media #{$portrait} {
@@ -53,7 +115,6 @@
     padding: 0 2vw;
     font-size: 3vw;
   }
-
 
   .zuc-footer__copyright-text {
     color: $white;
@@ -67,3 +128,5 @@
     }
   }
 }
+
+
