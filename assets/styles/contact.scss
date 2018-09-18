@@ -4,23 +4,18 @@
 
 .zuc-split-6 {
   width: 60%;
-  padding-right: 1vw;
 
   @media #{$portrait} {
     width: 100%;
     margin-bottom: 25px;
-    padding-right: 0;
   }
 }
 
 .zuc-split-4 {
   width: 40%;
-  height: 50px;
-  padding-left: 8.08vw;
 
   @media #{$portrait} {
     width: 100%;
-    padding-left: 0;
   }
 }
 
@@ -38,21 +33,28 @@
   Contact Non-form Styles
 -----*/
 
-.zuc-contact-subtitle {
-  max-width: 409px;
-  font-size: 18px;
+.zuc-contact-blurb-container {
+  padding-left: 8.08vw;
+
+  .zuc-contact-subtitle {
+    max-width: 409px;
+    font-size: 18px;
+  }
 }
+
+
 
 /*----
   Contact Forms Style; Feel free to blow this away if a parent style should take care of it
 -----*/
 
 .zuc-contact-forms-container {
-  width: 33.23vw;
+  width: 100%;
+  padding-right: 13.5vw;
 }
 
 .zuc-input-group input {
-  width: 744px;
+  width: 100%;
   height: 63px;
 
   border-radius: 4px;
