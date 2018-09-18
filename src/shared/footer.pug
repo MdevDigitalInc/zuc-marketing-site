@@ -1,28 +1,38 @@
-footer(class='flex flex-row flex-hor-center footer')
-  div(class='footer__brand-section flex flex-column')
-    img(class='footer__logo' src="../../assets/images/ZucoraHome-brand-white.svg")
-  div(class='footer__about flex flex-column flex-vert-start footer__column')
-    h4(class='footer__header') About
-    a(class='footer__link' href='#' title='todo') Contact Us
-    a(class='footer__link' href='#' title='todo') About Us
-    a(class='footer__link' href='#' title='todo') Our Team
-    a(class='footer__link' href='#' title='todo') Join Us
-    a(class='footer__link' href='#' title='todo') Reviews
-  div(class='footer__member-center flex flex-column flex-vert-start footer__column')
-    h4(class='footer__header') Member Centre
-    a(class='footer__link' href='#' title='todo') What is Smart Living?
-    a(class='footer__link' href='#' title='todo') Member Login
-    a(class='footer__link' href='#' title='todo') Redeem Rewards
-    a(class='footer__link' href='#' title='todo') Blog
-    a(class='footer__link' href='#' title='todo') FAQ
-  div(class='footer__products-and-services flex flex-column flex-vert-start footer__column')
-    h4(class='footer__header') Products &amp; Services
-    a(class='footer__link' href='#' title='todo') Services Plans
-    a(class='footer__link' href='#' title='todo') Home Wellness Solutions
-    a(class='footer__link' href='#' title='todo') Shop Now
-  div(class='footer__partners flex flex-column flex-vert-start footer__column')
-    h4(class='footer__header') Partners
-    a(class='footer__link' href='#' title='todo') I am a Retailer
-    a(class='footer__link' href='#' title='todo') I am a Contractor
-  div(class='footer__footer-right footer__column')
-    button(class='zuc-btn zuc-primary-btn') Request Service
+.zuc-footer__wrapper
+  footer(class='flex flex-row flex-hor-center zuc-footer')
+    div(class='zuc-footer__brand-section flex flex-column')
+      //- img(class='zuc-footer__logo' src="../../assets/images/ZucoraHome-brand-white.svg")
+      a(href="/" class="zuc-nav-brand")
+        img(class="zuc-footer__logo" src='../../assets/images/ZucoraHome-brand-white.svg')
+      // Social Icons
+      a.zuc-social-link(href="#" title="Like us on Facebook")
+        i.fab.fa-facebook-f
+      a.zuc-social-link(href="#" title="Follow us on Instagram")
+        i.fab.fa-instagram
+    div(class='zuc-footer__about flex flex-column flex-vert-start zuc-footer__column')
+      h4(class='zuc-footer__header u-uppercase') About
+      a(class='zuc-footer__link' href='#' title='todo') Contact Us
+      a(class='zuc-footer__link' href='#' title='todo') About Us
+      a(class='zuc-footer__link' href='#' title='todo') Our Team
+      a(class='zuc-footer__link' href='#' title='todo') Join Us
+      a(class='zuc-footer__link' href='#' title='todo') Reviews
+    div(class='zuc-footer__member-center flex flex-column flex-vert-start zuc-footer__column')
+      h4(class='zuc-footer__header u-uppercase') Member Centre
+      a(class='zuc-footer__link' href='#' title='todo') What is Smart Living?
+      a(class='zuc-footer__link' href='#' title='todo') Member Login
+      a(class='zuc-footer__link' href='#' title='todo') Redeem Rewards
+      a(class='zuc-footer__link' href='#' title='todo') Blog
+      a(class='zuc-footer__link' href='#' title='todo') FAQ
+    div(class='zuc-footer__products-and-services flex flex-column flex-vert-start zuc-footer__column')
+      h4(class='zuc-footer__header u-uppercase') Products &amp; Services
+      a(class='zuc-footer__link' href='#' title='todo') Services Plans
+      a(class='zuc-footer__link' href='#' title='todo') Home Wellness Solutions
+      a(class='zuc-footer__link' href='#' title='todo') Shop Now
+    div(class='zuc-footer__partners flex flex-column flex-vert-start zuc-footer__column')
+      h4(class='zuc-footer__header u-uppercase') Partners
+      a(class='zuc-footer__link' href='#' title='todo') I am a Retailer
+      a(class='zuc-footer__link' href='#' title='todo') I am a Contractor
+    div(class='zuc-footer__zuc-footer-right zuc-footer__column')
+      button(class='zuc-btn zuc-btn-primary') Request Service
+  .zuc-footer__copyright.flex.flex-hor-between.flex-vert-center
+    .zuc-footer__copyright-text Copyright Zucora Inc. 2018
