@@ -94,11 +94,17 @@
   User Navigation
 -----*/
 @import './nav-userbar.scss';
+@import './modals.scss';
 
 /*----
-  User Navigation
+  Contact
 -----*/
-@import './modals.scss';
+@import './contact.scss';
+
+/*----
+  Testimonial
+-----*/
+@import './testimonial.scss';
 
 /*----
   Print

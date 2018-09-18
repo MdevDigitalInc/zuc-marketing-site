@@ -1,0 +1,109 @@
+/*-------------------------------------
+ * TESTIMONIAL
+/-------------------------------------*/
+
+.zuc-testimonial-section {
+  display: block;
+  width: 100%;
+  background-color: $color-testimonial-grey;
+  padding: 9.14vw 0;
+
+  .zuc-quote-container {
+    margin: 0 auto;
+    width: 44%;
+    padding: 0 4.4vw;
+    position: relative;
+    background-color: $white;
+  }
+}
+
+.zuc-quote-badge-container {
+  height: 5.75vw;
+  width: 5.75vw;
+  position: absolute;
+  top: -2.875vw;
+  border-radius: 50%;
+  background-color: $color-testimonial-light;
+
+  .zuc-quote-badge {
+    width: 3.08vw;
+  }
+}
+
+.zuc-quote-text {
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 5.96vw;
+  padding-bottom: 1.2vw;
+}
+
+.zuc-stars-container {
+
+  .zuc-star {
+    height: 1.5vw;
+    width: 1.5vw;
+
+    &:not( :last-child ) {
+      padding-right: .2vw;
+    }
+  }
+}
+
+.zuc-author-container {
+  width: 100%;
+  padding-bottom: 1.72vw;
+
+  .zuc-quote-author {
+    position: absolute;
+    right: 3.74vw;
+  }
+}
+
+.zuc-quote-button {
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: $color-testimonial-light;
+  
+  &.zuc-left {
+    position: absolute;
+    left: -1.25vw;
+    bottom: 1.73vw;
+  }
+
+  &.zuc-right {
+    position: absolute;
+    right: -1.25vw;
+    bottom: 1.73vw;
+  }
+
+  img {
+    width: .5vw;
+  }
+}
+
+.zuc-cta-container {
+  height: 10.81vw;
+  width: 16vw;
+  position: absolute;
+  top: -5.91vw;
+  left: -14.2vw;
+  padding: 1.36vw 1.31vw 2.42vw 1.46vw;
+  background-color: $color-zuc-darkindigo;
+}
+
+.zuc-cta-text {
+  // This text needs to be re-done once proper typography is in
+  font-size: 2vw;
+  text-align: left;
+  color: $white;
+}
+
+.zuc-read-all {
+  padding: .86vw 1.16vw;
+  position: absolute;
+  top: 9.545vw;
+  left: 0;
+  font-size: .93vw;
+  text-align: center;
+  background-color: $color-testimonial-light;
+}
