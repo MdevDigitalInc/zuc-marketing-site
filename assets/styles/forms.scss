@@ -23,22 +23,22 @@ input {
   &[type="search"],
   &[type="url"] {
     width: 100%;
-    border-radius: 0;
+    height: 63px;
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 3px #707070;
     font-family: $main-font;
-    padding: 8px 0;
-    margin-top: 15px;
-    background: transparent;
-    outline: 0;
-    transition: border .5s, background .5s;
-    border: none;
-    border-bottom: 4px solid $border-color-passive;
-    border-top: 4px solid $border-color-active;
+    padding: 0 1vw;
+    margin-top: .5vw;
+    color: #36384b;
 
-    &:hover, &:focus, &:active {
-      border-top: 4px solid $border-color-passive;
-      border-bottom: 4px solid $border-color-active;
-      background: $white;
-      padding: 8px;
+    &:hover,
+    &:focus,
+    &:active {
+      border-radius: 4px;
+      background-color: $white;
+      border: solid 3px #707070;
+      padding: 0 1vw;
     }
 
     &.--filled {
@@ -89,13 +89,17 @@ textarea {
 
 /* Form Scaffolding */
 
-.mdev-form-group {
+.zuc-form-group {
   width: 100%;
   position: relative;
   text-align: left;
 }
 
-.mdev-action-group {
+.zuc-input-name {
+  margin-top: 1.57vw;
+}
+
+.zuc-action-group {
   width: 100%;
   position: relative;
 }

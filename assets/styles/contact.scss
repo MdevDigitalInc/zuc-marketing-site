@@ -1,5 +1,5 @@
 /*----
-  Lefty-Righty
+  Lefty-Righty (2-Column Layout)
 -----*/
 .zuc-split {
   padding-bottom: 25px;
@@ -27,16 +27,6 @@
   }
 }
 
-.--reversed {
-  .zuc-split-r {
-    order: 2;
-  }
-}
-
-.--top {
-  align-items: flex-start;
-}
-
 /*----
   Contact Non-form Styles
 -----*/
@@ -55,14 +45,15 @@
 }
 
 .zuc-contact-image-container {
-  display: block;
   position: relative;
-  width: 100%;
   padding-top: 4vw;
-  max-width: 35.35vw;
+  max-width: 700px;
 
   @media #{$portrait} {
     padding-top: 0;
+    max-width: none;
+    display: flex;
+    justify-content: center;
   }
 
   .zuc-contact-image {
@@ -78,6 +69,14 @@
     left: 43%;
     top: 93%;
     width: 5vw;
+    background: #36384b;
+
+    @media #{$portrait} {
+      display: block;
+      position: static;
+      width: 10vw;
+      margin-bottom: 3vw;
+    }
   }
 }
 
@@ -91,43 +90,7 @@
   }
 }
 
-/*----
-  Contact Forms Style; Feel free to blow this away if a parent style should take care of it
------*/
-
-.zuc-input-group input {
-  width: 100%;
-  height: 63px;
-
-  border-radius: 4px;
-  background-color: $white;
-  border: solid 3px #707070;
-
-  padding: 0 1vw;
-  margin-top: .5vw;
-
-  color: #36384b;
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-radius: 4px;
-    background-color: $white;
-    border: solid 3px #707070;
-
-    padding: 0 1vw;
-  }
-
-  &::placeholder {
-    color: $color-brand-bkg;
-  }
-}
-
-.zuc-input-name {
-  margin-top: 1.57vw;
-}
-
-.zuc-contact-button {
+.zuc-contact-submit-container {
   @media #{$portrait} {
     display: flex;
     justify-content: center;
