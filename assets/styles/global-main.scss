@@ -97,14 +97,15 @@
 @import './modals.scss';
 
 /*----
-  Contact
------*/
-@import './template-styles/contact.scss';
-
-/*----
-  Testimonial
+  Component Styles
 -----*/
 @import './component-styles/testimonial.scss';
+
+/*----
+  Template Styles
+-----*/
+@import './template-styles/contact.scss';
+@import './template-styles/request-service.scss';
 
 /*----
   Print
