@@ -1,3 +1,4 @@
+$nav-animation: transform .2s, opacity .5s;
 .zuc-mobile-nav {
   position: fixed;
   display: block;
@@ -14,7 +15,7 @@
   padding: 2vw 0;
   z-index: 500;
   height: auto;
-  transition: transform .2s, opacity .5s;
+  transition: $nav-animation;
 
   @media #{$tablet-up} {
     display: none;
@@ -24,12 +25,18 @@
     width: 40%;
     display: block;
     margin: 4vh auto 0;
+
+    @media #{$phone-only} {
+      width: 100%;
+    }
   }
 
   .zuc-btn {
-    width: 100%;
     text-align: center;
-    margin: 5vh 0 0;
+    width: auto;
+    @include center(horizontal);
+    position: relative;
+    margin: 5vh auto 0;
   }
 
   .aoda-compliant {
@@ -42,11 +49,16 @@
   }
 
   .zuc-mobile-social {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     color: $white;
     font-size: 8vw;
     text-align: center;
+
+    .zuc-social-link {
+      margin: 1.6vh 4% 0;
+      display: block;
+    }
   }
 }
 
@@ -58,7 +70,6 @@
 
   .zuc-accordion-item {
     width: 100%;
-    border-bottom: .5px solid $white;
   }
 
   .zuc-accordion-title {
@@ -81,7 +92,6 @@
 
 .zuc-accordion-hidden {
   width: 100%;
-  background: lighten($color-zuc-indigo, 30%);
   transform-origin: top;
   transform: scaley(0);
   transition: all, .3s;
@@ -91,9 +101,8 @@
   a {
     width: 100%;
     display: block;
-    padding: 2vh 12vw;
-    border-bottom: .5px solid $white;
-    color: $color-zuc-darkindigo;
+    padding: 2vh 7vw;
+    color: $white;
   }
 }
 
@@ -105,24 +114,16 @@
   }
 
   .zuc-accordion-arrow {
-    transform: rotate(180deg);
-  }
-
-  .zuc-accordion-title {
-    background: darken($color-zuc-indigo, 20%);
+    transform: translate3d(0, -50%, 0) rotate(90deg);
   }
 }
 
 .zuc-accordion-arrow {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 8px solid $white;
   @include center(vertical);
-  margin-left: 15px;
-  transform-origin: center;
+  transform-origin: 20%;
   transition: all, .3s;
+  right: 7vw;
+  font-size: 7vw;
 }
 
 .zuc-mobile-nav-active {
@@ -198,5 +199,32 @@ $line-offset: -6px;
 
   @media #{$tablet-up} {
     display: none;
+  }
+}
+// Mobile Footer
+.zuc-mobile-footer {
+  position: fixed;
+  width: 100%;
+  color: $white;
+  bottom: 0;
+  left: 0;
+  background: $color-zuc-darkindigo;
+  transform-origin: left;
+  padding: 3vh 4vw;
+  opacity: 0;
+  transition: $nav-animation;
+  transform: scalex(0);
+  font-size: 12px;
+  z-index: 700;
+
+  .zuc-copyright {
+    margin-bottom: 8px;
+  }
+}
+
+.body-active-mobile-nav {
+  .zuc-mobile-footer {
+    opacity: 1;
+    transform: scalex(1);
   }
 }
