@@ -5,16 +5,25 @@
 - var quote = 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.'
 - var author = 'JASON H.'
 
-.zuc-testimonial-section.flex.flex-hor-center
+.zuc-testimonial-section.flex.flex-column.flex-vert-center.flex-hor-center
   .zuc-quote-container.flex.flex-column.flex-vert-center.flex-hor-center
     .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
       img.zuc-quote-badge-icon(src='../../assets/images/testimonial/icon-quote-white.svg')
-    p.zuc-quote-text.u-zuc-darkindigo #{quote}
-    span.zuc-quote-author — #{author}
-    .zuc-cta-container.u-soft-shadow
-      span.zuc-cta-text See what our most satisfied customers say
-      a.zuc-btn.zuc-read-all.u-soft-shadow(href='#') READ ALL REVIEWS
+    .zuc-quote-text.u-zuc-darkindigo
+      |#{quote}
+    .zuc-stars-container.flex.flex-row.flex-space-around
+      img.zuc-star(src='../../assets/images/testimonial/star.svg')
+      img.zuc-star(src='../../assets/images/testimonial/star.svg')
+      img.zuc-star(src='../../assets/images/testimonial/star.svg')
+      img.zuc-star(src='../../assets/images/testimonial/star.svg')
+      img.zuc-star(src='../../assets/images/testimonial/star.svg')
+    .zuc-author-container
+      .zuc-quote-author
+        |— #{author}
     a.zuc-quote-button.zuc-next.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href='#')
       img.zuc-next-arrow(src='../../assets/images/testimonial/right-facing-arrow.svg')
     a.zuc-quote-button.zuc-previous.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href='#')
       img.zuc-previous-arrow(src='../../assets/images/testimonial/left-facing-arrow.svg')
+    .zuc-cta-container.u-soft-shadow
+      span.zuc-cta-text See what our most satisfied customers say
+      a.zuc-btn.zuc-read-all.u-soft-shadow(href='#') READ ALL REVIEWS
