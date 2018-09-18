@@ -63,6 +63,10 @@
 .u-italic {
   font-style: italic;
 }
+
+.u-highlight {
+  color: $color-zuc-indigo;
+}
 /* Disabling because of !important */
 /* stylelint-disable */
 .u-hidden-phone {
@@ -146,6 +150,23 @@
 // Body Utilities
 .--body-white {
   background: $white;
+}
+
+// Log In / Out Flag
+// When In Show..
+.u-auth-show {
+  display: none;
+}
+
+// --logedin added to body
+.--authenticated {
+  .u-auth-show {
+    display: inherit;
+  }
+
+  .u-auth-hide {
+    display: none;
+  }
 }
 
 // Shadow Utilities

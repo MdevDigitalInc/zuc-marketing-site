@@ -1,5 +1,6 @@
 -var slogan     = "CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER"
 -var offer      = "$39"
+-var loggedIn   = "Account"
 -var login      = "Login"
 -var partner    = "Become a Partner"
 -var cart       = "Cart"
@@ -16,10 +17,19 @@
   .zuc-user-links.flex.flex-hor-start.flex-hor-between.flex-vert-center
     // Search Placeholder
 
-    // Login
-    a(href="#" title="Member Login" class="zuc-user-login flex flex-vert-center u-bold")
-      i.fas.fa-lock
-      |#{login}
+    // Login - Logged Out State
+    a(href="javascript:void(0)" title="Member Login" class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" onclick="toggleModal('[data-modal-login]')")
+      // Logged Out State
+      i.fas.fa-lock.u-auth-hide
+      span.u-auth-hide
+        |#{login}
+
+    // Account - Logged In State
+    a(href="#" title="My Account" class="zuc-user-login flex flex-vert-center u-bold u-auth-show")
+      // Logged In state
+      i.fas.fa-user.u-auth-show
+      span.u-auth-show
+        |#{loggedIn}
 
     // Partnerships
     a(href="#" title="Learn about our Partnership Program" class="zuc-user-generic")
