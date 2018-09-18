@@ -1,3 +1,4 @@
+-var copyright = "Copyright &#169; <span class='u-zuc-lightindigo'>Zucora Inc</span> 2018"
 // Mobile Only Nav ----------------------
 div(class="zuc-mobile-nav" data-mobile-menu)
   // Top Branding CTA
@@ -14,7 +15,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |What Is Smarter Living?
-        i.zuc-accordion-arrow
+        i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
@@ -28,7 +29,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |Member Centre
-        i.zuc-accordion-arrow
+        i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
@@ -40,7 +41,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |Service Plans
-        i.zuc-accordion-arrow
+        i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='View our bundles & combos' aria-role='menu-item')
@@ -56,7 +57,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |Home Care Solutions
-        i.zuc-accordion-arrow
+        i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menu-item')
@@ -79,7 +80,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
         |About Us
-        i.zuc-accordion-arrow
+        i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menu-item')
@@ -99,3 +100,18 @@ div(class="zuc-mobile-nav" data-mobile-menu)
         |Mobile Menu
   // Social Icons
   include ../modules/social-icons.pug
+
+// Mobile Footer
+.zuc-mobile-footer
+  .zuc-copyright.u-text-center
+    |!{copyright}
+  // Footer Links
+  .flex.flex-hor-center.flex-vert-center
+    a(class="zuc-mob-footer-links" href="#" title="View our Privacy Policy")
+      |Privacy Policy
+    span -
+    a(class="zuc-mob-footer-links" href="#" title="View our Terms and Conditions")
+      |Terms and Conditions
+    span -
+    a(class="zuc-mob-footer-links" href="#" title="View our Sitemap")
+      |Sitemap

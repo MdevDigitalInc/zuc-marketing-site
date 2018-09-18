@@ -18,8 +18,6 @@ const sassStyles = require( './assets/styles/global-main.scss' );
 
 module.exports = sassStyles;
 
-window.console.log('Build Completed');
-
 // Import all files from folder given regex
 function importAll(r) {
   return r.keys().map(r);
@@ -27,3 +25,4 @@ function importAll(r) {
 
 // Import all fonts
 const fonts = importAll(require.context('./assets/fonts', false, /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/));
+
