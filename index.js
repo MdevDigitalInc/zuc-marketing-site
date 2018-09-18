@@ -17,3 +17,12 @@ const sassStyles = require( './assets/styles/global-main.scss' );
 //const imagename = require( './assets/images/favicon2.png' );
 
 module.exports = sassStyles;
+
+// Import all files from folder given regex
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+// Import all fonts
+const fonts = importAll(require.context('./assets/fonts', false, /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/));
+
