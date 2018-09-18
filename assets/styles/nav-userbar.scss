@@ -2,13 +2,16 @@
 .zuc-nav-user {
   background: $color-zuc-darkindigo;
   padding: 0 8%;
-  font-size: 0.83vw;
+  font-size: .83vw;
 
   @media #{$portrait} {
     font-size: 1.2vw;
   }
   @media #{$phone-only} {
-    justify-content: flex-end!important;
+    /* Important required for override */
+    /* stylelint-disable */
+    justify-content: flex-end !important;
+    /* stylelint-enable */
     padding: 0 2vw;
     font-size: 3vw;
   }
@@ -98,7 +101,7 @@
     color: $color-zuc-darkindigo;
     border-radius: 50%;
     background: $color-zuc-salmon;
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
     padding: .62vw;
     margin-left: 8px;

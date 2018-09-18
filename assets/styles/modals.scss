@@ -1,0 +1,112 @@
+.zuc-modal {
+  position: absolute;
+  background: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  display: none;
+  opacity: 0;
+  transition: .1s all .4s;
+
+  .zuc-modal-content {
+    @include center(both);
+    min-width: 30%;
+    padding: 1.5vw 3vw;
+    background: white;
+    border-bottom: 4px solid $color-zuc-indigo;
+
+    @media #{$laptop-up} {
+      min-width: 40%;
+    }
+
+    @media #{$portrait} {
+      min-width: 85%;
+      max-width: 90%;
+      padding: 4.2vw 5.4vw;
+    }
+  }
+
+  // Modify Submit Button
+  .zuc-btn-secondary {
+    display: block;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin: 1vw auto;
+
+    @media #{$portrait} {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      text-align: center;
+      margin: 5vw 0;
+    }
+
+    @media #{$tablet-prt-only} {
+      padding: 3vw 3.3vw;
+    }
+  }
+
+  // Generic Links
+  .zuc-input-link {
+    color: $color-text-grey;
+    font-size: .83vw;
+    line-height: 1.3vw;
+
+    @media #{$portrait} {
+      font-size: 3vw;
+      line-height: 3.5vw;
+    }
+  }
+
+  // Forgot Password Link
+  .zuc-input-group .zuc-input-link {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
+  // Modal Title
+  .zuc-modal-title {
+    font-size: 1.35vw;
+    color: $color-zuc-indigo;
+    line-height: 120%;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    @media #{$portrait} {
+      font-size: 4.3vw;
+    }
+    @media #{$phone-only} {
+      font-size: 6.3vw;
+    }
+  }
+
+  // Modal Subtitle
+  .zuc-modal-subtitle {
+    font-size: 1.04vw;
+    line-height: 140%;
+    color: $color-zuc-indigo;
+
+    @media #{$portrait} {
+      font-size: 3.2vw;
+    }
+    @media #{$phone-only} {
+      font-size: 5.2vw;
+    }
+  }
+}
+
+// Modal Active Class
+.zuc-modal-active {
+  opacity: 1;
+  display: block;
+}
+
+// Body Modal Class
+.zuc-body-modal {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
