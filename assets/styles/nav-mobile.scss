@@ -27,7 +27,7 @@ $nav-animation: transform .2s, opacity .5s;
     margin: 4vh auto 0;
 
     @media #{$phone-only} {
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -83,6 +83,7 @@ $nav-animation: transform .2s, opacity .5s;
     z-index: -1;
     background: transparent;
     transition: all, .3s;
+    letter-spacing: 1px;
   }
 }
 
@@ -103,6 +104,7 @@ $nav-animation: transform .2s, opacity .5s;
     display: block;
     padding: 2vh 7vw;
     color: $white;
+    letter-spacing: 1px;
   }
 }
 
@@ -199,32 +201,5 @@ $line-offset: -6px;
 
   @media #{$tablet-up} {
     display: none;
-  }
-}
-// Mobile Footer
-.zuc-mobile-footer {
-  position: fixed;
-  width: 100%;
-  color: $white;
-  bottom: 0;
-  left: 0;
-  background: $color-zuc-darkindigo;
-  transform-origin: left;
-  padding: 3vh 4vw;
-  opacity: 0;
-  transition: $nav-animation;
-  transform: scalex(0);
-  font-size: 12px;
-  z-index: 700;
-
-  .zuc-copyright {
-    margin-bottom: 8px;
-  }
-}
-
-.body-active-mobile-nav {
-  .zuc-mobile-footer {
-    opacity: 1;
-    transform: scalex(1);
   }
 }
