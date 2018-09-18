@@ -1,0 +1,36 @@
+// Modal Container
+.zuc-modal(data-modal-login onclick="toggleModal('[data-modal-login]')")
+  // Modal Content
+  .zuc-modal-content(onclick="event.stopPropagation()")
+    // Place Modal Content Here
+    //-------------------------------------------------
+    .zuc-modal-title.u-text-center
+      |Smarter Living Plan
+    .zuc-modal-subtitle.u-text-center
+      |Member login
+
+    // User Email
+    .zuc-input-group
+      .zuc-input-name
+        |Email
+      input(type="text" data-required name="email" placeholder="John@smith.com")
+
+    // User Email
+    .zuc-input-group
+      .zuc-input-name
+        |Email
+      input(type="text" data-required name="email" placeholder="John@smith.com")
+      a(href="#" title="Password Reset" class="zuc-input-link")
+        |I need help with my &nbsp;
+        span.u-highlight password
+
+    // Submit Button
+    button.zuc-btn.zuc-btn-secondary
+      |Login
+
+    a.zuc-register(href="#" title="Become a Member" class="zuc-input-link u-text-center" style="display:block")
+      |I want to become a
+      span.u-highlight
+        | &nbsp;Smarter Living Member
+
+

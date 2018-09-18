@@ -56,3 +56,28 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
 }
+
+
+.zuc-btn-secondary {
+  color: $white;
+  border: 2px solid $color-zuc-indigo;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  background: $color-zuc-indigo;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 1.25vw;
+
+  @media #{$portrait} {
+    font-size: 4vw;
+    border-radius: 6px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background: $color-zuc-indigo;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
