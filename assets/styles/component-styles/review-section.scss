@@ -59,7 +59,7 @@
   .zuc-quote-author {
     position: absolute;
     right: 3.74vw;
-    font-size: 1.1vw ;
+    font-size: 1.1vw;
     font-weight: 600;
     color: $color-zuc-darkindigo;
   }
@@ -69,18 +69,18 @@
   height: 2.5vw;
   width: 2.5vw;
   background-color: $color-review-light;
-  
-  &.zuc-left {
-    position: absolute;
-    left: -1.25vw;
-    bottom: 1.73vw;
-  }
+}
 
-  &.zuc-right {
-    position: absolute;
-    right: -1.25vw;
-    bottom: 1.73vw;
-  }
+.zuc-left {
+  position: absolute;
+  left: -1.25vw;
+  bottom: 1.73vw;
+}
+
+.zuc-right {
+  position: absolute;
+  right: -1.25vw;
+  bottom: 1.73vw;
 }
 
 .zuc-floating-container {
