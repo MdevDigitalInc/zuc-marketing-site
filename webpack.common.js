@@ -170,6 +170,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/contact.pug'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
