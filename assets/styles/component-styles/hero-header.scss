@@ -5,6 +5,17 @@
   height: auto;
   overflow: hidden;
   z-index: 10;
+
+  &:after {
+    @include pseudo();
+    background-image: url('../images/shapes/hero-wave-shape.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 115%;
+    bottom: -20%;
+    left: -8%;
+    padding-top: calc(500 / 1922 * 100%);
+  }
 }
 
 // Media Container
@@ -12,7 +23,7 @@
   width: 100%;
   position: relative;
   height: 100vh;
-  max-height: 90vh;
+  max-height: 95vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,16 +36,15 @@
 // Shield Container
 .zuc-shield {
   position: absolute;
-  bottom: 0;
-  right: 8%;
+  bottom: 50px;
+  right: 22%;
   background: $white;
   width: 23%;
   padding-top: 27.2%;
   border-radius: 0 0 50% 50%;
   min-width: 400px;
-  max-width: 450px;
-  max-height: 520px;
   box-shadow: 0 0 80px rgba(0, 0, 0, .5);
+  z-index: 20;
 }
 
 .zuc-shield-content {
