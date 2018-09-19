@@ -38,11 +38,13 @@
 
 .zuc-contact-blurb-container {
   
-  padding-left: 0;
+  padding-left: 7%;
+  padding-right: 7%;
   text-align: center;
 
   @media #{$laptop-up} {
     padding-left: 8vw;
+    padding-right: 0;
     text-align: left;
   }
 }
@@ -76,14 +78,26 @@
   .zuc-contact-badge {
     display: block;
     position: static;
-    width: 15vw;
-    margin-bottom: 3vw;
+    width: 17vw;
+    margin-top: 34px;
+    margin-bottom: 52px;
 
     @media #{$laptop-up} {
       position: absolute;
-      left: 28%;
-      top: 90%;
+      left: 32%;
+      top: 92%;
       width: 12vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @media #{$desktop-up} {
+      position: absolute;
+      left: 28%;
+      top: 91%;
+      width: 225px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -101,7 +115,7 @@
 .zuc-contact-submit-container {
   display: flex;
   justify-content: center;
-  
+
   @media #{$laptop-up} {
     display: block;
   }
