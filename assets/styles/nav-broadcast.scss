@@ -1,0 +1,22 @@
+// Broadcast Banner
+.zuc-nav-broadcast {
+  background: $color-zuc-salmon;
+  position: absolute;
+  bottom: 0;
+  transform: translate3d( 0, 100%, 0);
+  width: 100%;
+  padding: .6vw 8%;
+  color: $color-zuc-darkindigo;
+
+  @media #{$phone-only} {
+    padding: 1vw;
+  }
+}
+
+.zuc-broadcast-text {
+  width: 85%;
+}
+
+.zuc-broadcast-close {
+  cursor: pointer;
+}
