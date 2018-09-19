@@ -168,10 +168,12 @@ module.exports = {
     //
     // IE: filename:'./shared/footer.html' will output the template as dist/shared/footer.html
     new HtmlWebpackPlugin({
-      template: './src/templates/index.pug'
+      template: './src/templates/index.pug',
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/contact.pug'
+      template: './src/templates/contact.pug',
+      filename: 'contact.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
