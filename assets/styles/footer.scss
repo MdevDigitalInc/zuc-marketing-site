@@ -15,6 +15,10 @@
   padding: 60px 20px 70px;
   margin-top: 40px;
   letter-spacing: 1px;
+
+  @media #{$phone-only} {
+    display: none;
+  }
 }
 
 .zuc-footer__column {
@@ -94,7 +98,6 @@
     font-weight: normal;
     padding: 0px 5px;
   }
-  // Space out button a bit on the left
   .zuc-btn {
     margin-right: 10px;
   }
@@ -109,21 +112,24 @@
     font-size: 1.2vw;
   }
   @media #{$phone-only} {
-    justify-content: flex-end !important;
-    padding: 0 2vw;
-    font-size: 3vw;
+    justify-content: center;
   }
 
   .zuc-footer__copyright-text {
     color: $white;
+    font-size: 12px;
 
     @media #{$phone-only} {
-      display: none;
+      font-size: 10px;;
     }
 
     span {
       margin-left: 10px;
     }
+  }
+
+  .zuc-footer__copryright-menu {
+    margin-left: 2vw;
   }
 }
 
