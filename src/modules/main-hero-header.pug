@@ -1,0 +1,25 @@
+section.zuc-hero-header-mask
+  // Media container
+  .zuc-hero-media-container
+    // Video or Image ( Image can also be added as BKG to above container )
+    video(
+      class="zuc-hero-video"
+      poster="https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg"
+      style="background-image: url('https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg'); background-size: cover;"
+      preload="auto" autoplay muted loop )
+
+      //- At least two sources plz
+      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.webm" type="video/webm")
+      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.mp4" type="video/mpr")
+
+  // Header Shield
+  .zuc-shield
+    //- Container to position elements absolutely
+    .zuc-shield-content.u-text-center
+      h1.zuc-shield-title
+        |Smarter Living Matters
+      .zuc-shield-subtitle.u-uppercase.u-bold
+        |Connected. Sustainable. Responsible.
+
+      a(class="zuc-btn zuc-btn-secondary" href="#" title="todo")
+        |Watch The Video

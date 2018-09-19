@@ -1,0 +1,57 @@
+// Hero Header Mask
+.zuc-hero-header-mask {
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  z-index: 10;
+}
+
+// Media Container
+.zuc-hero-media-container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  max-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Video Container
+.zuc-hero-video {
+  width: 115%;
+}
+
+// Shield Container
+.zuc-shield {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  background: $white;
+  width: 23%;
+  padding-top: 27.2%;
+  border-radius: 0 0 50% 50%;
+  min-width: 400px;
+  max-width: 450px;
+  max-height: 520px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, .5);
+}
+
+.zuc-shield-content {
+  position: absolute;
+  width: 100%;
+  @include center(both);
+}
+
+.zuc-shield-title {
+  font-family: $main-font-serif;
+  color: $color-zuc-indigo;
+  line-height: 1.2;
+}
+
+.zuc-shield-subtitle {
+  font-size: 1.25vw;
+  line-height: 1.2;
+  margin-top: 36px;
+  margin-bottom: 52px;
+}
