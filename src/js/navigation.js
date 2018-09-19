@@ -93,3 +93,8 @@
     }
   };
 })();
+
+// Close Broadcast Banner
+function closeBroadcast() {
+  $('[data-broadcast-banner]').addClass('u-hidden');
+}

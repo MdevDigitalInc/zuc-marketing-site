@@ -94,6 +94,10 @@
   User Navigation
 -----*/
 @import './nav-userbar.scss';
+
+/*----
+  Modals
+-----*/
 @import './modals.scss';
 
 /*----
@@ -103,7 +107,16 @@
 @import './component-styles/review-section.scss';
 
 /*----
+  Broadcast Banner
+-----*/
+@import './nav-broadcast.scss';
+
+/*----
+Footer
+-----*/
+@import './footer.scss';
+
+/*----
   Print
 -----*/
 @import './print.scss';
-
