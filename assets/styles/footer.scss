@@ -21,28 +21,28 @@
   }
 }
 
-.zuc-footer__column {
+.zuc-footer--column {
   padding: 0px 20px;
 }
 
-.zuc-footer__header {
+.zuc-footer--header {
   color: $white;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.zuc-footer__link {
+.zuc-footer--link {
   color: $white;
   margin-top: 10px;
   font-size: 12px;
 }
 
-.zuc-footer__logo {
+.zuc-footer--logo {
   width: 70%;
 }
 
-.zuc-footer__brand-section {
+.zuc-footer--brand-section {
   padding: 0 2%;
   left: 0;
   color: $white;
@@ -86,7 +86,7 @@
     }
   }
 
-  .zuc-footer__social-icons {
+  .zuc-footer--social-icons {
     padding-top: 30px;
     position: absolute;
     right: 48px;
@@ -103,7 +103,7 @@
   }
 }
 
-.zuc-footer__copyright {
+.zuc-footer--copyright {
   background: $color-zuc-darkindigo;
   padding: 1.4% 8%;
   font-size: .83vw;
@@ -115,7 +115,7 @@
     justify-content: center;
   }
 
-  .zuc-footer__copyright-text {
+  .zuc-footer--copyright-text {
     color: $white;
     font-size: 12px;
 
@@ -128,7 +128,7 @@
     }
   }
 
-  .zuc-footer__copryright-menu {
+  .zuc-footer--copryright-menu {
     margin-left: 2vw;
   }
 }
