@@ -174,3 +174,14 @@
 .u-soft-shadow {
   box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, .2);
 }
+
+// Image Utilities
+
+.u-imgflip-hor {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
