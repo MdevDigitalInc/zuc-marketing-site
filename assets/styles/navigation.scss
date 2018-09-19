@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .zuc-main-nav {
@@ -41,6 +42,9 @@
     max-width: 237px;
     transition: all .2s ease-out;
 
+    @media #{$laptop-only} {
+      max-width: 200px;
+    }
     @media #{$tablet-only} {
       max-width: 130px;
     }
@@ -48,7 +52,8 @@
       max-width: 340px;
     }
     @media #{$phone-only} {
-      max-width: 100px;
+      max-width: 150px;
+      margin: 0 auto;
     }
 
     &:hover,

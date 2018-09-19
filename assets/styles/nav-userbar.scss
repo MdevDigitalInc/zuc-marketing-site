@@ -19,6 +19,7 @@
 
   .zuc-nav-slogan {
     color: $white;
+    letter-spacing: .15vw;
 
     @media #{$phone-only} {
       display: none;

@@ -1,40 +1,12 @@
-- var subtitle = 'Need help? We make it easy.<br/>Contact us and let us help you solve your problem!'
-.zuc-split.flex.flex-row
-  .zuc-split-l.flex.flex-column
-    .zuc-contact-blurb-container
-      h1.zuc-contact-title.u-zuc-indigo.u-font-serif Contact Us
-      p.zuc-contact-subtitle !{subtitle}
-      p.u-zuc-indigo
-        strong 1 800 388 2640
-      p.u-zuc-indigo 552 Clark Road, London ON N5V 3K5
-    .zuc-contact-image-container
-      img.zuc-contact-image.u-soft-shadow(src='../../assets/images/contact/contact-placeholder.png')
-      //- Placeholder icon
-      img.zuc-contact-badge(src='../../assets/images/testimonial/icon-quote-white.svg')
-  .zuc-split-r
-    .zuc-contact-forms-container.flex.flex-column
-      form(action="")
-          .zuc-input-group
-            .zuc-input-name
-              strong
-                |First & Last Name
-            input(type="text" data-required name="fullname" placeholder="John Smith")
-          .zuc-input-group
-            .zuc-input-name
-              strong
-                |Email Address
-            input(type="email" data-required name="email" placeholder="example@email.com")
-          .zuc-input-group
-            .zuc-input-name
-              strong
-                |Phone Number
-            input(type="tel" data-required name="phone" placeholder="000-000-0000")
-          .zuc-input-group
-            .zuc-input-name
-              strong
-                |Message
-            input(type="text" data-required name="message" placeholder="Your Message Here")
-          .zuc-input-group.zuc-contact-submit-container
-            button.zuc-btn.zuc-contact-submit.u-soft-shadow(type="submit")
-              strong
-                span SEND
+doctype html
+html
+  include ../shared/meta-head.pug
+  body
+    // Site Navigation
+    include ../shared/navigation.pug
+
+    //- Working in index for ease
+    include ../components/contact-form    
+
+    // Site Footer
+    include ../shared/footer.pug

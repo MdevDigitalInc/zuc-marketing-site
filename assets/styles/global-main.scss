@@ -94,20 +94,30 @@
   User Navigation
 -----*/
 @import './nav-userbar.scss';
+
+/*----
+  Modals
+-----*/
 @import './modals.scss';
 
 /*----
-  Contact
+  Component Styles
 -----*/
-@import './contact.scss';
+@import './component-styles/contact-form.scss';
+@import './component-styles/review-section.scss';
 
 /*----
-  Testimonial
+  Broadcast Banner
 -----*/
-@import './testimonial.scss';
+@import './nav-broadcast.scss';
 
 /*----
   Print
 -----*/
 @import './print.scss';
+
+/*----
+  Footer
+-----*/
+@import './footer.scss';
 
