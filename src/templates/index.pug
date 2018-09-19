@@ -1,12 +1,4 @@
-doctype html
-html
-  include ../shared/meta-head.pug
-  body
-    // Site Navigation
-    include ../shared/navigation.pug
+extends _layout
 
-    //- Comment this line out if you don't wanna see review section
-    include ../components/review-section.pug
-
-    // Site Footer
-    include ../shared/footer.pug
+block content
+    include ../components/review-section
