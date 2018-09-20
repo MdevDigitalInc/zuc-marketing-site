@@ -1,0 +1,90 @@
+.zuc-request-blurb-container.flex.flex-column.flex-vert-center
+  h1.u-zuc-indigo Request Service
+  p
+    |Please complete the form below and one of our representatives will get back to you as soon as possible.
+.zuc-request-forms-container.flex.flex-column
+  form.flex.flex-row.flex-wrap(action="")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |First & Last Name *
+      input(type="text" data-required name="fullname" placeholder="First & Last Name")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |Email Address *
+      input(type="email" data-required name="email" placeholder="Email Address")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |Home Phone Number *
+      input(type="tel" data-required name="homephone" placeholder="Home Phone Number")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |Cell Phone Number *
+      input(type="tel" data-required name="cellphone" placeholder="Cell Phone Number")
+    .zuc-input-group.zuc-form-100
+      .zuc-input-name
+        strong
+          |Street Address *
+      input(type="text" data-required name="address" placeholder="Street Address")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |City
+      input(type="text" data-required name="city" placeholder="City")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |Province
+      input(type="text" data-required name="province" placeholder="Province")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |Zip/Postal Code
+      input(type="text" data-required name="zippostal" placeholder="Zip/Postal Code")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |Retailer
+      input(type="text" data-required name="retailer" placeholder="Retailer")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |Product Type
+      input(type="text" data-required name="producttype" placeholder="- Select Product -")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |Specific Item
+      input(type="text" data-required name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |Date Purchased (YYYY-MM-DD)
+      input(type="text" data-required name="purchasedate" placeholder="Date Purchased")
+    .zuc-input-group.zuc-form-33
+      .zuc-input-name
+        strong
+          |Order ID
+      input(type="text" data-required name="orderid" placeholder="Order ID")
+    .zuc-input-group.zuc-form-100
+      .zuc-input-name
+        strong
+          |Description of Issue
+      input(type="text" data-required name="issuedesc" placeholder="Description of Issue")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |How did the issue happen?
+      input(type="text" data-required name="issuehow" placeholder="How did the issue happen?")
+    .zuc-input-group.zuc-form-50
+      .zuc-input-name
+        strong
+          |When did the issue occur? (YYYY-MM-DD)
+      input(type="tel" data-required name="issuewhen" placeholder="Date when issue occured")
+    .zuc-input-group.zuc-request-submit-button.flex.flex-hor-center
+      button.zuc-btn.u-soft-shadow(type="submit")
+        strong
+          span SEND
