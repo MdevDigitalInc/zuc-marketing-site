@@ -175,6 +175,10 @@ module.exports = {
       template: './src/templates/contact.pug',
       filename: 'contact.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/request-service.pug',
+      filename: 'request-service.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
