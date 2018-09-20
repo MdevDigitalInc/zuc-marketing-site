@@ -20,6 +20,10 @@
       right: -2px;
       padding-top: 34%;
     }
+    @media #{$phone-only} {
+      padding-top: 54%;
+      bottom: 30px;
+    }
   }
 }
 
@@ -41,7 +45,10 @@
     min-height: 300px;
   }
   @media #{$phone-only} {
-    height: 80vh;
+    height: 110vh;
+  }
+  @media #{$iphone-x} {
+    height: 90vh;
   }
 }
 
@@ -60,7 +67,7 @@
     width: 140%;
   }
   @media #{$phone-only} {
-    width: 250%;
+    width: 280%;
   }
 }
 
@@ -87,8 +94,8 @@
     @include center(horizontal);
   }
   @media #{$phone-only} {
-    width: 62%;
-    padding-top: 71.5%;
+    width: 72%;
+    padding-top: 83.5%;
   }
 }
 
