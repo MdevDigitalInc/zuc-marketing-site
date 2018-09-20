@@ -45,3 +45,12 @@
     font-weight: 500;
   }
 }
+
+.zuc-shipping-chart {
+  width: 90%;
+
+  @media #{$tablet-up} {
+    max-width: 691px;
+    width: 80%;
+  }
+}

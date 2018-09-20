@@ -23,7 +23,7 @@
 
 .zuc-faq-container.flex.flex-column.flex-vert-center
   h1.u-font-serif.u-zuc-indigo Frequently Asked Questions
-  .zuc-hotlinks-container.flex.flex-row
+  .zuc-hotlinks-container
     .zuc-hotlink-box-l.flex.flex-column
       a(href='#')
         |#{faqTitles[0]}
@@ -48,6 +48,7 @@
         |#{faqTitles[0]}
       p
         |#{faqAnswers[0]}
+      img.zuc-shipping-chart(src='../../assets/images/faq/placeholder-faq-chart.png')
     .zuc-faq-topic-container
       h2
         |#{faqTitles[1]}
