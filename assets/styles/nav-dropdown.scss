@@ -15,22 +15,12 @@ $dropdown-padding: 1.5vw;
   &:active,
   &:focus {
     background: $white;
-    color: $color-zuc-indigo;
+    color: lighten($color-zuc-indigo, 10%);
 
     .zuc-hidden-menu {
       opacity: 1;
       transform: scaley(1);
     }
-
-    .hover-stroke {
-      border-bottom: 1px solid $color-brand-primary;
-    }
-  }
-
-  //Hover Stroke
-  .hover-stroke {
-    border-bottom: 1px solid transparent;
-    transition: all, .2s;
   }
 
   // Hidden Dropdown menu
@@ -47,8 +37,9 @@ $dropdown-padding: 1.5vw;
     transform: scaley(0);
     transform-origin: top;
     box-shadow: 0 0 50px rgba( 0,0,0,.5);
-    border-bottom: 4px solid $color-zuc-indigo;
+    border-bottom: 5px solid $color-zuc-indigo;
     cursor: default;
+    padding-top: 2.6vw;
   }
 
   .zuc-dropdown-content {
@@ -83,6 +74,9 @@ $dropdown-padding: 1.5vw;
     color: $color-zuc-indigo;
     transition: all, .2s;
     font-weight: 400;
+    text-transform: capitalize;
+    font-size: .93vw;
+
 
     &:hover,
     &:focus,

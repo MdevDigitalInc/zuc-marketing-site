@@ -94,12 +94,17 @@
   User Navigation
 -----*/
 @import './nav-userbar.scss';
+
+/*----
+  Modals
+-----*/
 @import './modals.scss';
 
 /*----
   Component Styles
 -----*/
-@import './component-styles/testimonial.scss';
+@import './component-styles/contact-form.scss';
+@import './component-styles/review-section.scss';
 
 /*----
   Template Styles
@@ -107,8 +112,18 @@
 @import './template-styles/contact.scss';
 @import './template-styles/request-service.scss';
 
+
+/*----
+  Broadcast Banner
+-----*/
+@import './nav-broadcast.scss';
+
+/*----
+Footer
+-----*/
+@import './footer.scss';
+
 /*----
   Print
 -----*/
 @import './print.scss';
-

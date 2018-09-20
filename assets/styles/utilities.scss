@@ -147,9 +147,9 @@
   color: $color-zuc-salmon;
 }
 
-// Body Utilities
-.--body-white {
-  background: $white;
+// Font Family Utilities
+.u-font-serif {
+  font-family: $main-font-serif;
 }
 
 // Log In / Out Flag
@@ -173,4 +173,11 @@
 
 .u-soft-shadow {
   box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, .2);
+}
+
+// Image Utilities
+
+.u-imgflip-hor {
+  transform: scaleX(-1);
+  filter: FlipH;
 }

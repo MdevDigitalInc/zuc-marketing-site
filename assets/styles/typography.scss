@@ -29,12 +29,17 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  null  : 20px,
+  null  : .94vw,
   $tablet-up  : 1.15vw,
   $tablet-lnd-only : 1.4vw,
   $laptop-only : 1.4vw,
   $portrait : 4vw,
   $phone-only : 6vw
+);
+// Large Body
+$body-large: (
+  null : 1.05vw,
+  $portrait : 2.2vw
 );
 
 $h1-font-sizes: (
@@ -45,27 +50,28 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
-  null  : 60px,
-  $portrait: 55px
+  null  : 2.44vw,
+  $portrait: 4vw
 );
 
 $h3-font-sizes: (
-  null  : 1.6vw,
-  $portrait: 5vw,
-  $phone-only: 6vw
+  null  : 4.1vw,
+  $portrait: 6vw
 );
 
 $h4-font-sizes: (
-  null  : 22px,
-  $portrait: 18px
+  null  : 1.25vw,
+  $portrait: 3.2vw
 );
 
 $h5-font-sizes: (
-  null  : 14px
+  null  : 1.25vw,
+  $portrait: 3.2vw
 );
 
 $h6-font-sizes: (
-  null  : 10px
+  null  : .83vw,
+  $portrait: 2vw
 );
 
 // Links
@@ -116,15 +122,6 @@ h2,
 h3,
 .h3 {
   @include font-size($h3-font-sizes);
-  letter-spacing: 5px;
-
-  @media #{$portrait} {
-    line-height: 120%;
-  }
-
-  @media #{$tablet-lnd-only} {
-    letter-spacing: 2px;
-  }
 }
 
 h4,
@@ -142,7 +139,7 @@ h6,
   @include font-size($h6-font-sizes);
 }
 
-.mdev-main-nav-links {
+.zuc-main-nav-links {
   @include font-size($link-font-sizes);
 }
 
@@ -160,9 +157,6 @@ a {
   }
 }
 
-.mdev-hero-text {
-  @include font-size($h1-font-sizes);
-  line-height: 120%;
-  color: $color-brand-primary;
-  font-weight: 700;
+.zuc-large-body {
+  @include font-size($body-large);
 }
