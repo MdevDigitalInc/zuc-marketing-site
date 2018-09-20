@@ -87,18 +87,40 @@ textarea {
 
 /* stylelint-enable */
 
-/* Form Scaffolding */
+/*
 
-.zuc-form-group {
-  width: 100%;
-  position: relative;
-  text-align: left;
-}
+  <<< FORM SCAFFOLDING >>>
+
+  For 50/50 rows:
+
+.zuc-form-row
+  .zuc-form-group.zuc-form-50
+    <your-1st-form-group>
+  .zuc-form-group.zuc-form-50
+    <your-2nd-form-group>
+
+  For 33/33/33 rows:
+
+.zuc-form-row
+  .zuc-form-group.zuc-form-33
+    <your-1st-form-group>
+  .zuc-form-group.zuc-form-33
+    <your-2nd-form-group>
+  .zuc-form-group.zuc-form-33
+    <your-3rd-form-group>
+
+*/
 
 .zuc-form-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.zuc-form-group {
+  width: 100%;
+  position: relative;
+  text-align: left;
 }
 
 .zuc-form-50 {
