@@ -81,3 +81,22 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
   }
 }
+
+.zuc-btn-browse {
+  margin-top: .5vw;
+  margin-left: 1.2vw;
+  border: 2px solid $color-zuc-indigo;
+  color: $color-zuc-indigo;
+  background: $white;
+  border-radius: 6px;
+  padding: 6px 30px;
+
+  &:hover {
+    background: $color-review-grey;
+  }
+
+  @media #{$portrait} {
+    font-size: 3vw;
+    padding: 10px 38px;
+  }
+}

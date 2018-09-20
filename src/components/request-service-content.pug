@@ -58,7 +58,13 @@
         .zuc-input-name
           strong
             |Product Type
-        input(type="text" data-required name="producttype" placeholder="- Select Product -")
+        select(data-required name="producttype" placeholder="- Select Product -")
+          option(value="foo")
+            |Earth
+          option(value="bar")
+            |Wind
+          option(value="baz")
+            |Fire
     .zuc-form-row
       .zuc-form-group.zuc-form-33
         .zuc-input-name
@@ -92,7 +98,27 @@
           strong
             |When did the issue occur? (YYYY-MM-DD)
         input(type="tel" data-required name="issuewhen" placeholder="Date when issue occured")
-    .zuc-form-group.zuc-request-submit-button.flex.flex-hor-center
-      button.zuc-btn.u-soft-shadow(type="submit")
+    .zuc-form-row
+      .zuc-form-group
+        .zuc-input-name
+          strong
+            |Have you done anything to try correcting the issue?
+          .zuc-radio-group-container
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-yes" data-required name="effort" value="Yes")
+              label(for="zuc-effort-yes")
+                |Yes
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-no" data-required name="effort" value="No")
+              label(for="zuc-effort-no")
+                |No
+    .zuc-form-row
+      .zuc-form-group
+        .zuc-input-name
+          strong
+            |Please upload your invoice and/or any pictures.
+        input.zuc-btn-browse(type="button" data-required name="issuedesc" value="Browse...")
+    .zuc-form-group.zuc-btn-request-submit-container.flex.flex-hor-center
+      button.zuc-btn.zuc-btn-secondary.u-soft-shadow(type="submit")
         strong
           span SEND
