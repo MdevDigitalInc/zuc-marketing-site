@@ -1,5 +1,9 @@
 .zuc-request-forms-container {
-  padding: 0 17%;
+  padding: 0 6vw;
+
+  @media #{$laptop-up} {
+    padding: 0 17vw;
+  }
 }
 
 .zuc-request-blurb-container {

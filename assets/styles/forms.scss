@@ -95,24 +95,36 @@ textarea {
   text-align: left;
 }
 
-.zuc-form-100 {
-  width: 100%;
+.zuc-form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .zuc-form-50 {
-  width: 50%;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 47.5%;
+
+    &:nth-child( n+2 ) {
+      margin-left: 5%;
+    }
+  }
 }
 
 .zuc-form-33 {
-  width: 33.3%;
-}
+  width: 100%;
 
+  @media #{$laptop-up} {
+    width: 30%;
+
+    &:nth-child( n+2 ) {
+      margin-left: 5%;
+    }
+  }
+}
 
 .zuc-input-name {
   margin-top: 1.57vw;
-}
-
-.zuc-action-group {
-  width: 100%;
-  position: relative;
 }
