@@ -1,0 +1,80 @@
+-
+  var faqTitles = [
+    'Shipping & Delivery',
+    'Shipping Carriers',
+    'Processing Time',
+    'Order Inquiries',
+    'Return/Refund Policy',
+    'Out of Stock Items',
+    'Damaged in Shipping',
+    'Service Requests'
+    ]
+
+-
+  var faqAnswers = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque dui, eleifend vel aliquet sit amet, congue vitae ex. Quisque in fermentum est. Donec lacinia et sem sit amet consectetur.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque dui, eleifend vel aliquet sit amet, congue vitae ex. Quisque in fermentum est. Donec lacinia et sem sit amet consectetur. Mauris congue sed mauris et interdum. Nunc lacinia ipsum a ex finibus maximus. Suspendisse eu convallis libero. In hac habitasse platea dictumst. Morbi odio neque, tempor sit amet suscipit at, venenatis at augue. Morbi et aliquet purus, quis aliquam diam. ',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque dui, eleifend vel aliquet sit amet, congue vitae ex.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    ]
+
+.zuc-faq-container.flex.flex-column.flex-vert-center
+  h1.u-font-serif.u-zuc-indigo Frequently Asked Questions
+  .zuc-hotlinks-container.flex.flex-row
+    .zuc-hotlink-box-l.flex.flex-column
+      a(href='#')
+        |#{faqTitles[0]}
+      a(href='#')
+        |#{faqTitles[1]}
+      a(href='#')
+        |#{faqTitles[2]}
+      a(href='#')
+        |#{faqTitles[3]}
+    .zuc-hotlink-box-r.flex.flex-column
+      a(href='#')
+        |#{faqTitles[4]}
+      a(href='#')
+        |#{faqTitles[5]}
+      a(href='#')
+        |#{faqTitles[6]}
+      a(href='#')
+        |#{faqTitles[7]}
+  .zuc-topic-parent-container.flex.flex-column.flex-vert-start
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[0]}
+      p
+        |#{faqAnswers[0]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[1]}
+      p
+        |#{faqAnswers[1]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[2]}
+      p
+        |#{faqAnswers[2]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[3]}
+      p
+        |#{faqAnswers[3]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[4]}
+      p
+        |#{faqAnswers[4]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[5]}
+      p
+        |#{faqAnswers[5]}
+    .zuc-faq-topic-container
+      h2
+        |#{faqTitles[6]}
+      p
+        |#{faqAnswers[6]}
