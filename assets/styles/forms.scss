@@ -88,30 +88,38 @@ textarea {
   }
 }
 
+.zuc-input-name {
+  margin-top: 15px;
+  font-size: 16px;
+
+  @media #{$laptop-up} {
+    margin-top: 30px;
+  }
+}
 
 /* stylelint-enable */
 
 /*
 
-  <<< FORM SCAFFOLDING >>>
+      <<< FORM SCAFFOLDING >>>
 
-  For 50/50 rows:
+      For 50/50 rows:
 
-.zuc-form-row
-  .zuc-form-group.zuc-form-50
-    <your-1st-form-group>
-  .zuc-form-group.zuc-form-50
-    <your-2nd-form-group>
+        .zuc-form-row
+          .zuc-form-group.zuc-form-50
+            <your-1st-form-group>
+          .zuc-form-group.zuc-form-50
+            <your-2nd-form-group>
 
-  For 33/33/33 rows:
+      For 33/33/33 rows:
 
-.zuc-form-row
-  .zuc-form-group.zuc-form-33
-    <your-1st-form-group>
-  .zuc-form-group.zuc-form-33
-    <your-2nd-form-group>
-  .zuc-form-group.zuc-form-33
-    <your-3rd-form-group>
+        .zuc-form-row
+          .zuc-form-group.zuc-form-33
+            <your-1st-form-group>
+          .zuc-form-group.zuc-form-33
+            <your-2nd-form-group>
+          .zuc-form-group.zuc-form-33
+            <your-3rd-form-group>
 
 */
 
@@ -152,11 +160,45 @@ textarea {
   }
 }
 
-.zuc-input-name {
-  margin-top: 15px;
-  font-size: 16px;
+/*
 
-  @media #{$laptop-up} {
-    margin-top: 30px;
+    <<< Radio Buttons >>>
+
+    Format:
+
+    .zuc-radio-group-container
+      .zuc-radio-group
+        input(type="radio" id="namespace-foo" data-required name="bar" value="baz")
+              label(for="namespace-foo")
+                |baz
+        input(...
+
+    NOTE: Only working for 2 options right now as designed on Request Service page
+    TODO: Make this work for any number of radio buttons!
+
+*/
+
+.zuc-radio-group-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: .5vw;
+  font-size: 24px;
+  color: $color-text-grey;
+
+  @media #{$tablet-up} {
+    justify-content: flex-start;
+    font-size: inherit;
+  }
+
+  .zuc-radio-group {
+    &:nth-child( n+2 ) {
+      padding-left: 40%;
+    }
+
+    @media #{$tablet-up} {
+      &:nth-child( n+2 ) {
+        padding-left: 5px;
+      }
+    }
   }
 }
