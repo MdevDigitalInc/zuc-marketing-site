@@ -8,14 +8,26 @@
 
 .zuc-hotlinks-container {
   padding-bottom: 88px;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   @media #{$tablet-up} {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: left;
+  }
+
+  a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+    &:hover {
+      color: $color-zuc-indigo;
+      text-decoration: underline;
+    }
   }
 }
 
