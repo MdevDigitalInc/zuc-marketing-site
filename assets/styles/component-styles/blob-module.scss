@@ -3,14 +3,47 @@
 /-------------------------------------*/
 
 .zuc-blob-module--wrapper {
-  background-image: url("../../assets/images/blob-module/graphic_slash_grey.svg");
+  // background-image: url("../../assets/images/blob-module/graphic_slash_grey.svg");
   width: 100%;
+  height: 500px;
   margin: 0;
-  padding: 4.5vw 0 4.5vw 14vw;
+  // padding: 4.5vw 0 4.5vw 0vw;
+  padding: 4.5vw 0;
+  // position: relative !important;
+  // display:block;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    // flex-direction: row !important;
+    padding: 4.5vw 0 4.5vw 6vw;
+    display: flex;
+    // height: 500px;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    display:flex;
+    padding: 4.5vw 0 4.5vw 14vw;
+  }
 }
 
 .zuc-blob-module--text-section {
-  flex: 0 0 30%;
+  flex: 40%;
+  // margin: 2vh 6vw;
+
+  @media #{$laptop-up} {
+    // margin: 0;
+  }
+
+  .zuc-blob-module--subheading:after {
+    // display: inline;
+    // content: ' tmp';
+    // background-image: url('../../assets/images/review/icon-star.svg');
+    // background-size: 28px 28px;
+    // height: 28px;
+    // width: 28px;
+  }
 
   .zuc-blob-module--heading {
     font-family: $main-font-serif;
@@ -21,6 +54,9 @@
     line-height: 1.3;
   }
 
+  .zuc-blob-module--heading {
+    text-transform: uppercase;
+  }
   .zuc-blob-module--copy {
     font-family: $main-font;
     font-weight: $body-weight;
@@ -42,6 +78,37 @@
 }
 
 .zuc-blob-module--graphic-section {
-  flex: 0 0 70%;
-  padding-left: 80px;
+  flex: 60%;
+  // padding-left: 80px;
+  padding-top: 80px;
+
+  @media #{$laptop-up} {
+    // padding-left: 80px;
+    padding-top: 0;
+  }
+
+  @media #{$tablet-only} {
+    margin-top: 80px;
+    padding-top: 80px;
+  }
+  // position: relative;
+  .photo {
+    // position:absolute;
+    // top: 50;
+    // right: 50;
+    z-index: 1;
+    max-width: 500px;
+    max-height: 400px;
+
+    @media #{$phone-only} {
+      max-width: 100%;
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .back {
+    z-index: -99;
+    bottom: 10;
+  }
 }
