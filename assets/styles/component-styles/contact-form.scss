@@ -124,7 +124,12 @@
 .zuc-contact-submit {
   background-color: $color-zuc-indigo;
   color: $white;
-  margin-top: 56px;
-  padding: 35px 115px;
-  font-size: 21px;
+  margin-top: 45px;
+  padding: 7.8vw 26vw;
+  
+  @media #{$tablet-up} {
+    padding: 35px 115px;
+    margin-top: 56px;
+    font-size: 21px;
+  }
 }
