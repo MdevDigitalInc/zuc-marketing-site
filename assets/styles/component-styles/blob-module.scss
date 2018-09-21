@@ -65,6 +65,10 @@
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     border-radius: 0;
   }
+
+  @media #{$phone-only} {
+    padding-left: 30px;
+  }
 }
 
 .zuc-blob-module--graphic-section {
