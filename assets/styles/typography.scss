@@ -29,6 +29,7 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
+  //- Tweaked for ZUC - A.
   null  : 3.3vw,
   $tablet-up  : 1.7vw,
   $tablet-lnd-only : 1.5vw,
@@ -42,6 +43,7 @@ $body-large: (
 );
 
 $h1-font-sizes: (
+  //- Tweaked for ZUC - A.
   null  : 9.5vw,
   $tablet-up : 7vw,
   $laptop-up : 4.5vw,
@@ -49,8 +51,12 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
-  null  : 2.44vw,
-  $portrait: 4vw
+  //- Tweaked for ZUC - A.
+  null  : 7vw,
+  $portrait: 6vw,
+  $tablet-up : 5vw,
+  $laptop-up : 2.8vw,
+  $desktop-up: 2.37vw
 );
 
 $h3-font-sizes: (
