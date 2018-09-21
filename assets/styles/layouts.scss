@@ -66,9 +66,10 @@
 ----*/
 
 .zuc-page-container {
-  padding-top: 125px;
+  // TODO not have this be this bad
+  padding-top: 130px;
 
   @media #{$tablet-up} {
-    padding-top: 175px;
+    padding-top: 180px;
   }
 }
