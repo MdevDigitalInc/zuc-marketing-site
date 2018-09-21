@@ -39,10 +39,7 @@ input {
     &:hover,
     &:focus,
     &:active {
-      border-radius: 4px;
-      background-color: $white;
-      border: solid 3px #707070;
-      padding: 0 1vw;
+      border: solid 3px #36384b;
     }
 
     &.--filled {

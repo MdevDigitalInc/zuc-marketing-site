@@ -29,12 +29,11 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  null  : .94vw,
-  $tablet-up  : 1.15vw,
-  $tablet-lnd-only : 1.4vw,
-  $laptop-only : 1.4vw,
-  $portrait : 4vw,
-  $phone-only : 6vw
+  null  : 3.3vw,
+  $tablet-up  : 1.7vw,
+  $tablet-lnd-only : 1.5vw,
+  $laptop-up : 1.2vw,
+  $desktop-up : 0.9vw
 );
 // Large Body
 $body-large: (
@@ -43,10 +42,10 @@ $body-large: (
 );
 
 $h1-font-sizes: (
-  null  : 2.53vw,
-  $portrait : 5.3vw,
-  $laptop-only : 3vw,
-  $phone-only: 8vw
+  null  : 9.5vw,
+  $tablet-up : 7vw,
+  $laptop-up : 4.5vw,
+  $desktop-up: 4.04vw
 );
 
 $h2-font-sizes: (
