@@ -76,23 +76,20 @@
     border-radius: 0;
   }
 
-  .tmp {
-    display: none;
-
-    @media #{$laptop-up} {
-      display: inline;
-      position: absolute;
-      bottom: -160px;
-      right: -20px;
-      transform: scale(0.25);
-    }
-  }
-
   .zuc-blob-module--grey-slash {
     position: relative;
-    bottom: 5px;
-    background-image: url('../../assets/images/blob-module/graphic_slash_grey.svg');
-    background-position: bottom 50px right 100px;
+
+    .grey-slash {
+      display: none;
+
+      @media #{$laptop-up} {
+        display: inline;
+        position: absolute;
+        bottom: -160px;
+        right: -20px;
+        transform: scale(0.25);
+      }
+    }
   }
 }
 
@@ -103,12 +100,10 @@
   // position: relative;
   // bottom: 5px;
 
-  background-image: url('../../assets/images/blob-module/graphic_slash_grey.svg');
-
+  background-image: url('../../assets/images/blob-module/round-blob-solid.svg');
   background-size: 80% 80%;
   background-repeat: no-repeat;
   background-position: bottom -5px right 100px;
-
 
   @media #{$tablet-only} {
     padding-top: 80px;
