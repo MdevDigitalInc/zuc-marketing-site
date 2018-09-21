@@ -15,6 +15,16 @@
   }
 }
 
+.zuc-contact-title {
+  text-align: center;
+  padding-left: 0;
+
+  @media #{$laptop-up} {
+    text-align: left;
+    padding-left: 8vw;
+  }
+}
+
 .zuc-contact-subtitle {
   color: $color-text-grey;
 }
@@ -74,7 +84,6 @@
 
   @media #{$laptop-up} {
     padding-right: 13.5vw;
-    padding-bottom: 8.6vw;
   }
 }
 

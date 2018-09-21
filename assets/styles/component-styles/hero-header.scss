@@ -123,6 +123,22 @@
   font-family: $main-font-serif;
   color: $color-zuc-indigo;
   line-height: 1.2;
+
+  //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
+  
+  font-size: 2.53vw;
+
+  @media #{$phone-only} {
+    font-size: 8vw;
+  }
+
+  @media #{$portrait} {
+    font-size: 5.3vw;
+  }
+
+  @media #{$laptop-only} {
+    font-size: 3vw;
+  }  
 }
 
 .zuc-shield-subtitle {
