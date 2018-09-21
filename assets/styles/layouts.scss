@@ -1,0 +1,7 @@
+.zuc-page-container {
+  padding-top: 125px;
+
+  @media #{$tablet-up} {
+    padding-top: 175px;
+  }
+}

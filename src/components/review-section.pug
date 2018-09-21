@@ -1,10 +1,18 @@
 //- 
-  review Component
+  Review Component
   AW - 120918
 
 - var quote = 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.'
 - var author = 'JASON H.'
-
+- var cta = 'See what our<br/>customers say'
+.zuc-h-floating-container
+      .zuc-cta-container.u-soft-shadow
+        span.zuc-cta-text
+          |!{cta}
+      .zuc-read-all-container
+        a.zuc-btn.zuc-read-all.u-soft-shadow(href='#')
+          strong
+            |READ ALL REVIEWS
 .zuc-review-section.flex.flex-column.flex-vert-center.flex-hor-center
   .zuc-quote-container.flex.flex-column.flex-vert-center.flex-hor-center
     .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
@@ -26,6 +34,9 @@
       img.u-imgflip-hor(src='../../assets/images/review/icon-arrow.svg')
     .zuc-floating-container
       .zuc-cta-container.u-soft-shadow
-        span.zuc-cta-text See what our customers say
+        span.zuc-cta-text
+          |!{cta}
       .zuc-read-all-container
-        a.zuc-btn.zuc-read-all.u-soft-shadow(href='#') READ ALL REVIEWS
+        a.zuc-btn.zuc-read-all.u-soft-shadow(href='#')
+          strong
+            |READ ALL REVIEWS

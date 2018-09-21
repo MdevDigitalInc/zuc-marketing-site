@@ -1,11 +1,8 @@
-doctype html
-html
-  include ../shared/meta-head.pug
-  body
-    // Site Navigation
-    include ../shared/navigation.pug
+extends _layout
 
-    include ../components/contact-form  
+block content
+  include ../modules/main-hero-header.pug
 
-    // Site Footer
-    include ../shared/footer.pug
+  //- Comment this line out if you don't wanna see review section
+  include ../components/review-section.pug
+

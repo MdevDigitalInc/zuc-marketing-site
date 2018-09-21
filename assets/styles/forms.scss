@@ -96,7 +96,10 @@ textarea {
 }
 
 .zuc-input-name {
-  margin-top: 1.57vw;
+  &:nth-child( n+1 ) {
+    // Fix this
+    margin-top: 1.57vw;
+  }
 }
 
 .zuc-action-group {

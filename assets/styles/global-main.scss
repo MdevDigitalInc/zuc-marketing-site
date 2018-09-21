@@ -101,10 +101,17 @@
 @import './modals.scss';
 
 /*----
+  Layout Styles
+-----*/
+@import './layouts.scss';
+
+/*----
   Component Styles
 -----*/
 @import './component-styles/contact-form.scss';
 @import './component-styles/review-section.scss';
+@import './component-styles/hero-header.scss';
+@import './component-styles/faq-content.scss';
 
 /*----
   Broadcast Banner
@@ -112,12 +119,11 @@
 @import './nav-broadcast.scss';
 
 /*----
-  Print
------*/
-@import './print.scss';
-
-/*----
-  Footer
+Footer
 -----*/
 @import './footer.scss';
 
+/*----
+  Print
+-----*/
+@import './print.scss';
