@@ -1,110 +1,85 @@
 /*----
-  Lefty-Righty (2-Column Layout)
------*/
-.zuc-split {
-  padding-bottom: 25px;
-
-  @media #{$portrait} {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .zuc-split-r {
-    width: 51%;
-  
-    @media #{$portrait} {
-      width: 100%;
-      margin-bottom: 25px;
-    }
-  }
-  
-  .zuc-split-l {
-    width: 49%;
-  
-    @media #{$portrait} {
-      width: 100%;
-    }
-  }
-}
-
-/*----
-  Contact Non-form Styles
+  Contact Styles - AW 2018-09-21
 -----*/
 
 .zuc-contact-blurb-container {
-  padding-left: 8.08vw;
+  
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
 
-  @media #{$portrait} {
-    padding-left: 0;
-    text-align: center;
+  @media #{$laptop-up} {
+    padding-left: 8vw;
+    padding-right: 0;
+    text-align: left;
   }
+}
 
-  .zuc-contact-subtitle {
-    font-size: 18px;
-  }
+.zuc-contact-subtitle {
+  color: $color-text-grey;
 }
 
 .zuc-contact-image-container {
   position: relative;
-  padding-top: 4vw;
-  max-width: 700px;
+  padding-top: 0;
+  max-width: none;
+  display: flex;
+  justify-content: center;
 
-  @media #{$portrait} {
-    padding-top: 0;
-    max-width: none;
-    display: flex;
-    justify-content: center;
+  @media #{$laptop-up} {
+    padding-top: 80px;
+    max-width: 700px;
+    display: block;
   }
 
   .zuc-contact-image {
-    width: 100%;
+    display: none;
 
-    @media #{$portrait} {
-      display: none;
+    @media #{$laptop-up} {
+      display: block;
+      width: 100%;
     }
   }
 
   .zuc-contact-badge {
-    position: absolute;
-    left: 43%;
-    top: 93%;
-    width: 5vw;
-    background: #36384b;
+    display: block;
+    position: static;
+    width: 17vw;
+    margin-top: 34px;
+    margin-bottom: 52px;
 
-    @media #{$portrait} {
-      display: block;
-      position: static;
-      width: 10vw;
-      margin-bottom: 3vw;
+    @media #{$laptop-up} {
+      position: absolute;
+      left: 32%;
+      top: 92%;
+      width: 12vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @media #{$desktop-up} {
+      position: absolute;
+      left: 28%;
+      top: 91%;
+      width: 225px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
 
 .zuc-contact-forms-container {
-  padding-right: 13.5vw;
-  padding-bottom: 8.6vw;
+  padding-left: 7.3%;
+  padding-right: 7.3%; 
 
-  @media #{$portrait} {
-    padding-left: 7.3%;
-    padding-right: 7.3%; 
+  @media #{$laptop-up} {
+    padding-right: 13.5vw;
+    padding-bottom: 8.6vw;
   }
 }
 
-.zuc-contact-submit-container {
-  @media #{$portrait} {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.zuc-contact-submit {
-  background-color: $color-zuc-indigo;
-  color: $white;
-  margin-top: 5.05vw;
-  padding: 35px 115px;
-  font-size: 1.1vw;
-
-  @media #{$portrait} {
-    font-size: 2.7vw;
+.zuc-contact-btn {
+  @media #{$laptop-up} {
+    display: block;
   }
 }
