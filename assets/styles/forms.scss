@@ -202,3 +202,35 @@ textarea {
     }
   }
 }
+
+/*
+      <<< Select Inputs >>>
+
+
+*/
+
+.zuc-select-container {
+
+  position: relative;
+  width: 100%;
+  height: 63px;
+  border-radius: 4px;
+  background-color: $white;
+  border: solid 3px #707070;
+  font-family: $main-font;
+  padding: 0 1vw;
+  margin-top: .5vw;
+  color: #36384b;
+
+  @media #{$portrait} {
+    padding: 0 2vw;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  select {
+    display: none; /*hide original SELECT element:*/
+  }
+}

@@ -58,13 +58,14 @@
         .zuc-input-name
           strong
             |Product Type
-        select(data-required name="producttype" placeholder="- Select Product -")
-          option(value="foo")
-            |Earth
-          option(value="bar")
-            |Wind
-          option(value="baz")
-            |Fire
+        .zuc-select-container
+          select(data-required name="producttype" placeholder="- Select Product -")
+            option(value="foo")
+              |Earth
+            option(value="bar")
+              |Wind
+            option(value="baz")
+              |Fire
     .zuc-form-row
       .zuc-form-group.zuc-form-33
         .zuc-input-name
@@ -103,15 +104,15 @@
         .zuc-input-name
           strong
             |Have you done anything to try correcting the issue?
-          .zuc-radio-group-container
-            .zuc-radio-group
-              input(type="radio" id="zuc-effort-yes" data-required name="effort" value="Yes")
-              label(for="zuc-effort-yes")
-                |Yes
-            .zuc-radio-group
-              input(type="radio" id="zuc-effort-no" data-required name="effort" value="No")
-              label(for="zuc-effort-no")
-                |No
+        .zuc-radio-group-container
+          .zuc-radio-group
+            input(type="radio" id="zuc-effort-yes" data-required name="effort" value="Yes")
+            label(for="zuc-effort-yes")
+              |Yes
+          .zuc-radio-group
+            input(type="radio" id="zuc-effort-no" data-required name="effort" value="No")
+            label(for="zuc-effort-no")
+              |No
     .zuc-form-row
       .zuc-form-group
         .zuc-input-name
