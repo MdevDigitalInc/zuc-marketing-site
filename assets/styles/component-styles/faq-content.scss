@@ -1,0 +1,61 @@
+.zuc-hotlinks-container {
+  padding-top: 50px;
+  padding-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media #{$tablet-up} {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+    &:hover {
+      color: $color-zuc-indigo;
+      text-decoration: underline;
+    }
+  }
+}
+
+.zuc-hotlink-box-r {
+  padding-left: 0;
+
+  @media #{$tablet-up} {
+    padding-left: 112px;
+  }
+}
+
+.zuc-topic-parent-container {
+  width: 86%;
+
+  @media #{$laptop-up} {
+    width: 60%;
+  }
+}
+
+.zuc-faq-topic-container {
+  text-align: left;
+  padding-bottom: 41px;
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 500;
+  }
+}
+
+.zuc-shipping-chart {
+  width: 90%;
+
+  @media #{$tablet-up} {
+    max-width: 691px;
+    width: 80%;
+  }
+}

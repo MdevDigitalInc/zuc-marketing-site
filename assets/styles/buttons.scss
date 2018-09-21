@@ -63,14 +63,14 @@
   border: 2px solid $color-zuc-indigo;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   background: $color-zuc-indigo;
-  border-radius: 4px;
   text-transform: none;
   font-weight: 700;
   font-size: 1.25vw;
+  padding: 1vw 1vw .8vw;
 
   @media #{$portrait} {
     font-size: 4vw;
-    border-radius: 6px;
+    padding: 2vw 2vw 1.3vw;
   }
 
   &:hover,
@@ -79,5 +79,47 @@
     color: $white;
     background: $color-zuc-indigo;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+.zuc-btn-browse {
+  margin-top: .5vw;
+  margin-left: 1.2vw;
+  border: 2px solid $color-zuc-indigo;
+  color: $color-zuc-indigo;
+  cursor: pointer;
+  background: $white;
+  border-radius: 6px;
+  padding: 6px 30px;
+
+  &:hover {
+    background: $color-review-grey;
+  }
+
+  @media #{$portrait} {
+    font-size: 3vw;
+    padding: 10px 38px;
+  }
+}
+
+.zuc-btn-send-container {
+  padding: 5vw 0;
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 8vw 30vw;
+
+    @media #{$tablet-up} {
+      padding: 4vw 15vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: 2.5vw 12.5vw;
+    }
+
+    @media #{$desktop-up} {
+      padding: 2vw 10vw;
+    }
   }
 }

@@ -1,0 +1,82 @@
+/*----
+    Standard Page Content Header:
+
+    .zuc-content-header-container 
+      h1
+      p
+----*/
+
+.zuc-content-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    margin: 0 9%;
+  }
+
+  p {
+    color: $color-text-grey;
+    padding-top: 20px;
+    margin: 0 11%;
+  }
+}
+
+/*----
+      50-50 Block:
+
+      .zuc-split
+        .zuc-split-l
+          ...
+        .zuc-split-r
+-----*/
+
+.zuc-split {
+  flex-direction: column;
+  align-items: center;
+  
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 25px;
+  }
+
+  .zuc-split-l {
+    width: 100%;
+
+    @media #{$laptop-up} {
+      width: 50%;
+    }
+  }
+
+  .zuc-split-r {
+    width: 100%;
+    margin-bottom: 25px;
+  
+    @media #{$laptop-up} {
+      width: 50%;
+    }
+  }
+}
+
+/*----
+      Padding for the top of standard page sections:
+
+      .zuc-section-container
+        ...
+
+----*/
+
+.zuc-section-container {
+  // TODO not have this be this bad
+  padding-top: 150px;
+
+  @media #{$tablet-up} {
+    padding-top: 200px;
+  }
+}

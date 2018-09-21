@@ -1,0 +1,176 @@
+// Hero Header Mask
+.zuc-hero-header-mask {
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  z-index: 10;
+
+  &:after {
+    @include pseudo();
+    background-image: url('../images/shapes/hero-wave-shape.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    bottom: -2px;
+    padding-top: calc(500 / 1922 * 100%);
+
+    @media #{$portrait} {
+      width: 190%;
+      right: -2px;
+      padding-top: 34%;
+    }
+    @media #{$phone-only} {
+      padding-top: 54%;
+      bottom: 30px;
+    }
+  }
+}
+
+// Media Container
+.zuc-hero-media-container {
+  width: 100%;
+  position: relative;
+  height: 113vh;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media #{$tablet-lnd-only} {
+    min-height: 400px;
+    height: 98vh;
+  }
+  @media #{$portrait} {
+    height: 60vh;
+    min-height: 300px;
+  }
+  @media #{$phone-only} {
+    height: 110vh;
+  }
+  @media #{$iphone-x} {
+    height: 90vh;
+  }
+}
+
+// Video Container
+.zuc-hero-video {
+  width: 115%;
+  @include center(horizontal);
+
+  @media #{$laptop-only} {
+    width: 130%;
+  }
+  @media #{$tablet-lnd-only} {
+    width: 150%;
+  }
+  @media #{$portrait} {
+    width: 140%;
+  }
+  @media #{$phone-only} {
+    width: 280%;
+  }
+}
+
+// Shield Container
+.zuc-shield {
+  position: absolute;
+  bottom: 20vh;
+  right: 15%;
+  background: $white;
+  width: 23%;
+  padding-top: 26.5%;
+  border-radius: 0 0 48% 48%;
+  box-shadow: 0 0 80px rgba(0, 0, 0, .3);
+  z-index: 20;
+  overflow: hidden;
+
+  @media #{$tablet-lnd-only} {
+    bottom: 14vh;
+  }
+  @media #{$portrait} {
+    width: 40%;
+    padding-top: 46.5%;
+    bottom: 4vh;
+    @include center(horizontal);
+  }
+  @media #{$phone-only} {
+    width: 72%;
+    padding-top: 83.5%;
+  }
+}
+
+.zuc-shield-content {
+  position: absolute;
+  width: 100%;
+  @include center(both);
+  z-index: 2;
+  padding: 10px;
+
+  .zuc-btn-secondary {
+    text-transform: uppercase;
+    font-size: 1vw;
+
+    @media #{$portrait} {
+      font-size: 2vw;
+    }
+    @media #{$phone-only} {
+      font-size: 3vw;
+    }
+  }
+}
+
+.zuc-shield-title {
+  font-family: $main-font-serif;
+  color: $color-zuc-indigo;
+  line-height: 1.2;
+
+  //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
+  
+  font-size: 2.53vw;
+
+  @media #{$phone-only} {
+    font-size: 8vw;
+  }
+
+  @media #{$portrait} {
+    font-size: 5.3vw;
+  }
+
+  @media #{$laptop-only} {
+    font-size: 3vw;
+  }  
+}
+
+.zuc-shield-subtitle {
+  font-size: 1.25vw;
+  line-height: 1.2;
+  margin-top: 36px;
+  margin-bottom: 52px;
+  letter-spacing: .7px;
+
+  @media #{$portrait} {
+    font-size: 2vw;
+  }
+  @media #{$phone-only} {
+    font-size: 3vw;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+// Shield Backgrounds
+.zuc-icon--primary {
+  &:before {
+    @include pseudo();
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../images/icons/ZH_Icon_Concrete.svg') $white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center -1px;
+    opacity: .2;
+    z-index: 0;
+  }
+}

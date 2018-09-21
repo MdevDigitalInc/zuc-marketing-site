@@ -1,0 +1,127 @@
+.zuc-section-container 
+  .zuc-content-header-container 
+    h1
+      |Request Service
+    p
+      |Please complete the form below and one of our representatives will get back to you as soon as possible.
+  .zuc-forms-container.flex.flex-column
+    form.flex.flex-column(action="")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |First & Last Name *
+          input(type="text" data-required name="fullname" placeholder="First & Last Name")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Email Address *
+          input(type="email" data-required name="email" placeholder="Email Address")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Home Phone Number *
+          input(type="tel" data-required name="homephone" placeholder="Home Phone Number")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Cell Phone Number *
+          input(type="tel" data-required name="cellphone" placeholder="Cell Phone Number")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Street Address *
+          input(type="text" data-required name="address" placeholder="Street Address")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |City
+          input(type="text" data-required name="city" placeholder="City")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Province
+          input(type="text" data-required name="province" placeholder="Province")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Zip/Postal Code
+          input(type="text" data-required name="zippostal" placeholder="Zip/Postal Code")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Retailer
+          input(type="text" data-required name="retailer" placeholder="Retailer")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Product Type
+          .zuc-select-container
+            select(data-required name="producttype" placeholder="- Select Product -")
+              option(value="foo")
+                |Earth
+              option(value="bar")
+                |Wind
+              option(value="baz")
+                |Fire
+      .zuc-form-row
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Specific Item
+          input(type="text" data-required name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Date Purchased (YYYY-MM-DD)
+          input(type="text" data-required name="purchasedate" placeholder="Date Purchased")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Order ID
+          input(type="text" data-required name="orderid" placeholder="Order ID")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Description of Issue
+          input(type="text" data-required name="issuedesc" placeholder="Description of Issue")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |How did the issue happen?
+          input(type="text" data-required name="issuehow" placeholder="How did the issue happen?")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |When did the issue occur? (YYYY-MM-DD)
+          input(type="tel" data-required name="issuewhen" placeholder="Date when issue occured")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Have you done anything to try correcting the issue?
+          .zuc-radio-group-container
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-yes" data-required name="effort" value="Yes")
+              label(for="zuc-effort-yes")
+                |Yes
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-no" data-required name="effort" value="No")
+              label(for="zuc-effort-no")
+                |No
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Please upload your invoice and/or any pictures.
+          input.zuc-btn-browse(type="button" data-required name="issuedesc" value="Browse...")
+      .zuc-form-group.zuc-btn-send-container
+        button.zuc-btn.zuc-btn-secondary.u-soft-shadow(type="submit")
+          strong
+            span SEND
