@@ -29,11 +29,12 @@ input {
     border: solid 3px #707070;
     font-family: $main-font;
     padding: 0 1vw;
-    margin-top: .5vw;
+    margin-top: .4vw;
     color: #36384b;
 
     @media #{$portrait} {
       padding: 0 2vw;
+      margin-top: .9vw;
     }
 
     &:hover,
@@ -94,11 +95,26 @@ textarea {
 }
 
 .zuc-input-name {
-  margin-top: 15px;
-  font-size: 16px;
+  margin-top: 2.1vw;
+  font-size: 3.2vw;
+
+  @media #{$tablet-up} {
+    margin-top: 1.8vw;
+    font-size: 1.6vw;
+  }
 
   @media #{$laptop-up} {
-    margin-top: 30px;
+    margin-top: 1.45vw;
+    font-size: 1.1vw;
+  }
+
+  @media #{$desktop-up} {
+    margin-top: 1.3vw;
+    font-size: .9vw;
+  }
+
+  &.zuc-input-name-no-margin {
+    margin-top: 0;
   }
 }
 
