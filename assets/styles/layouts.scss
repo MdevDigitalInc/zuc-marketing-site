@@ -30,6 +30,7 @@
           ...
         .zuc-split-r
 -----*/
+
 .zuc-split {
   padding-bottom: 25px;
 
@@ -53,5 +54,21 @@
       width: 100%;
       margin-bottom: 25px;
     }
+  }
+}
+
+/*----
+      Padding for "normal" pages:
+
+      .zuc-page-container
+        ...
+
+----*/
+
+.zuc-page-container {
+  padding-top: 125px;
+
+  @media #{$tablet-up} {
+    padding-top: 175px;
   }
 }
