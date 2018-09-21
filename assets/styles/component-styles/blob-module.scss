@@ -11,12 +11,10 @@
 
   @media #{$tablet-only} {
     padding: 4.5vw 0 4.5vw 6vw;
-    display: flex;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
-    display:flex;
     padding: 4.5vw 0 4.5vw 14vw;
   }
 }
