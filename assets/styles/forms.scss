@@ -88,6 +88,14 @@ textarea {
   }
 }
 
+.zuc-forms-container {
+  padding: 0 6vw;
+
+  @media #{$laptop-up} {
+    padding: 0 17vw;
+  }
+}
+
 .zuc-input-name {
   margin-top: 15px;
   font-size: 16px;
@@ -205,8 +213,6 @@ textarea {
 
 /*
       <<< Select Inputs >>>
-
-
 */
 
 .zuc-select-container {

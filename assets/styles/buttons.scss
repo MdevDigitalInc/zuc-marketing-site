@@ -101,3 +101,23 @@
     padding: 10px 38px;
   }
 }
+
+.zuc-btn-send-container {
+  padding: 5vw 0;
+
+  button {
+    padding: 8vw 30vw;
+
+    @media #{$tablet-up} {
+      padding: 4vw 15vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: 2.5vw 12.5vw;
+    }
+
+    @media #{$desktop-up} {
+      padding: 2vw 10vw;
+    }
+  }
+}

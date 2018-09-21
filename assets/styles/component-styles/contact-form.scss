@@ -1,34 +1,5 @@
 /*----
-  Lefty-Righty (2-Column Layout)
------*/
-.zuc-split {
-  padding-bottom: 25px;
-
-  @media #{$portrait} {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .zuc-split-r {
-    width: 51%;
-  
-    @media #{$portrait} {
-      width: 100%;
-      margin-bottom: 25px;
-    }
-  }
-  
-  .zuc-split-l {
-    width: 49%;
-  
-    @media #{$portrait} {
-      width: 100%;
-    }
-  }
-}
-
-/*----
-  Contact Non-form Styles
+  Contact Styles - AW 2018-09-21
 -----*/
 
 .zuc-contact-blurb-container {

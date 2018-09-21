@@ -184,6 +184,10 @@ module.exports = {
       template: './src/templates/faq.pug',
       filename: 'faq.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/order-support.pug',
+      filename: 'order-support.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
