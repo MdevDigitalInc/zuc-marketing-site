@@ -21,7 +21,6 @@
   padding: 0 4.4vw;
   position: relative;
   background-color: $white;
-  width: 100%;
 
   @media #{$tablet-up} {
     width: 86%;
@@ -66,6 +65,7 @@
   .zuc-quote-author {
     text-align: center;
     padding-top: 30px;
+    // TODO solve font-weight override here gracefully
     font-weight: 600;
     color: $color-zuc-darkindigo;
   }
@@ -89,6 +89,7 @@
 
 .zuc-right {
   right: 0;
+  
   @media #{$tablet-up} {
     right: -25px;
   }
@@ -96,7 +97,7 @@
 
 .zuc-floating-container {
   position: relative;
-  background-color: $color-zuc-darkindigo;
+  background-color: $color-zuc-indigo;
   padding: 28px 26px 45px 29px;
 
   @media #{$tablet-up} {
@@ -118,9 +119,9 @@
 }
 
 .zuc-read-all {
-  //display: block;
+  // TODO These styles are temporary until global button styles are updated
   text-align: center;
   color: $color-zuc-lilac;
   border: 2px $color-zuc-lilac solid;
-  border-radius: 50%;
+  border-radius: 30px;
 }
