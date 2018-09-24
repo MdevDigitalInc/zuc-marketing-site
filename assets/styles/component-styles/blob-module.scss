@@ -85,7 +85,7 @@
         position: absolute;
         bottom: -160px;
         right: -95px;
-        transform: scale(0.25);
+        transform: scale(.25);
       }
     }
   }
@@ -97,7 +97,6 @@
 
   @media #{$tablet-only} {
     padding-top: 60px;
-
   }
   @media #{$phone-only} {
     padding-top: 80px;
@@ -128,16 +127,15 @@
 
     @media #{$tablet-only} {
       top: 95px;
-      transform: scale(0.75);
+      transform: scale(.75);
       max-width: 800px;
     }
 
     @media #{$phone-only} {
       top: 35%;
       left: 45%;
-      transform: scale(2.0);
+      transform: scale(2);
       display: none;
     }
-
   }
 }
