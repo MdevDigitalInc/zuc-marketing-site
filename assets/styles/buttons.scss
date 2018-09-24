@@ -21,23 +21,6 @@
   vertical-align: middle;
   font-size: 1.25vw;
 
-  &:before,
-  &:after {
-    @include pseudo();
-    width: 100%;
-    height: 100%;
-  }
-
-  &:before {
-    top: 0;
-    left: 0;
-  }
-
-  &:after {
-    bottom: 0;
-    right: 0;
-  }
-
   @media #{$phone-only} {
     padding: 4vw 4.3vw;
     letter-spacing: 1px;
@@ -62,13 +45,16 @@
 
 .zuc-btn-secondary {
   color: $white;
-  border: 2px solid $color-zuc-indigo;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  background: $color-zuc-indigo;
+  border: none;
   text-transform: none;
   font-weight: 700;
   font-size: 1.25vw;
   padding: 1vw 1.05vw .8vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #434da0 34%, #a2acff);
+  background-position: center;
+  background-size: cover;
 
   @media #{$portrait} {
     font-size: 4vw;
@@ -79,8 +65,8 @@
   &:focus,
   &:active {
     color: $white;
-    background: $color-zuc-indigo;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6);
   }
 }
 
@@ -100,5 +86,14 @@
   @media #{$portrait} {
     font-size: 3vw;
     padding: 10px 38px;
+  }
+}
+
+// Extra padding for FORM
+.zuc-btn-xpad {
+  padding: 1vw 3vw;
+
+  @media #{$laptop-up} {
+    padding: 1vw 3vw;
   }
 }
