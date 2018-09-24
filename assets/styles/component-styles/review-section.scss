@@ -95,17 +95,17 @@
 }
 
 .zuc-floating-container {
-  display: none;
+  position: relative;
+  background-color: $color-zuc-darkindigo;
+  padding: 28px 26px 45px 29px;
 
   @media #{$tablet-up} {
-    display: inline;
     position: absolute;
     left: 0;
     top: -300px;
   }
 
   @media #{$laptop-up} {
-    display: inline;
     position: absolute;
     top: -74px;
     left: -281px;
@@ -113,43 +113,14 @@
 }
 
 .zuc-cta-text {
-  // This text needs to be re-done once proper typography is in?
-  font-family: $main-font-serif;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.25;
+  font-size: 40px; // TODO remove this once LM updates typography
   text-align: left;
-  color: $white;
-}
-
-.zuc-cta-container {
-  padding: 28px 26px 45px 29px;
-  background-color: $color-zuc-darkindigo;
-  position: relative;
-}
-
-.zuc-read-all-container {
-  @media #{$phone-only} {
-    position: relative;
-  }
 }
 
 .zuc-read-all {
-  padding: 17px 22px;
-  position: relative;
-  top: -22px;
+  //display: block;
   text-align: center;
-  background-color: $color-review-light;
-
-  @media #{$phone-only} {
-    position: absolute;
-  }
-}
-
-.zuc-h-floating-container {
-  display: none;
-
-  @media #{$phone-only} {
-    display: block;
-  }
+  color: $color-zuc-lilac;
+  border: 2px $color-zuc-lilac solid;
+  border-radius: 50%;
 }
