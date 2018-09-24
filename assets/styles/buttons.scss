@@ -50,7 +50,7 @@
   font-weight: 700;
   font-size: 1.25vw;
   padding: 1vw 1.05vw .8vw;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  box-shadow: 0 23px 40px rgba(0, 0, 0, .2);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0);
   background: linear-gradient(90deg, #434da0 34%, #a2acff);
   background-position: center;
@@ -65,7 +65,7 @@
   &:focus,
   &:active {
     color: $white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    box-shadow: 0 23px 40px rgba(0, 0, 0, 0);
     text-shadow: 0 0 10px rgba(0, 0, 0, .6);
   }
 }
