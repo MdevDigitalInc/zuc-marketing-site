@@ -10,13 +10,13 @@
 /* Base Button */
 .zuc-btn {
   width: auto;
-  padding: .7vw 1vw .54vw;
+  padding: .7vw 1.05vw .54vw;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
   transition: all .4s;
-  border-radius: 0;
+  border-radius: 20vw;
   position: relative;
   vertical-align: middle;
   font-size: 1.25vw;
@@ -68,7 +68,7 @@
   text-transform: none;
   font-weight: 700;
   font-size: 1.25vw;
-  padding: 1vw 1vw .8vw;
+  padding: 1vw 1.05vw .8vw;
 
   @media #{$portrait} {
     font-size: 4vw;
@@ -91,7 +91,6 @@
   color: $color-zuc-indigo;
   cursor: pointer;
   background: $white;
-  border-radius: 6px;
   padding: 6px 30px;
 
   &:hover {
@@ -101,27 +100,5 @@
   @media #{$portrait} {
     font-size: 3vw;
     padding: 10px 38px;
-  }
-}
-
-.zuc-btn-send-container {
-  padding: 5vw 0;
-  display: flex;
-  justify-content: center;
-
-  button {
-    padding: 8vw 30vw;
-
-    @media #{$tablet-up} {
-      padding: 4vw 15vw;
-    }
-
-    @media #{$laptop-up} {
-      padding: 2.5vw 12.5vw;
-    }
-
-    @media #{$desktop-up} {
-      padding: 2vw 10vw;
-    }
   }
 }
