@@ -14,14 +14,14 @@ for (i = 0; i < x.length; i++) {
   /*for each element, create a new DIV that will act as the selected item:*/
 
   a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
+  a.setAttribute("class", "zuc-select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
 
   /*for each element, create a new DIV that will contain the option list:*/
 
   b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
+  b.setAttribute("class", "zuc-select-items zuc-select-hide");
   for (j = 1; j < selElmnt.length; j++) {
 
     /*for each option in the original select element,
@@ -61,28 +61,28 @@ for (i = 0; i < x.length; i++) {
 
       e.stopPropagation();
       closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
+      this.nextSibling.classList.toggle("zuc-select-hide");
+      this.classList.toggle("zuc-select-arrow-active");
   });
 }
 function closeAllSelect(elmnt) {
 
   /*a function that will close all select boxes in the document,
   except the current select box:*/
-  
+
   var x, y, i, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
+  x = document.getElementsByClassName("zuc-select-items");
+  y = document.getElementsByClassName("zuc-select-selected");
   for (i = 0; i < y.length; i++) {
     if (elmnt == y[i]) {
       arrNo.push(i)
     } else {
-      y[i].classList.remove("select-arrow-active");
+      y[i].classList.remove("zuc-select-arrow-active");
     }
   }
   for (i = 0; i < x.length; i++) {
     if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
+      x[i].classList.add("zuc-select-hide");
     }
   }
 }

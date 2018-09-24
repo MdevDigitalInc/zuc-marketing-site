@@ -253,3 +253,73 @@ textarea {
     display: none; // Hide original <select> element
   }
 }
+
+/*
+      Instead of looking like this:
+
+  <div class="zuc-select-container">
+    <select>
+      <option>
+      <option>
+      ...
+
+      The markdown will look like this:
+
+  <div class="zuc-select-container">
+    <div class="zuc-select-selected">
+    <div class="zuc-select-items">
+      <div class="zuc-select-option">
+      <div class="zuc-select-option">
+      ...      
+  
+ */
+
+.zuc-select-selected {
+  background-color: $white;
+
+  // Closed menu arrow style
+  &:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  // Open menu arrow style
+  .zuc-select-arrow-active {
+
+    &:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+  }
+}
+
+// <select> options styles
+.zuc-select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  // <select
+  div {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+// Hide the items when the select box is closed
+.zuc-select-hide {
+  display: none;
+}
