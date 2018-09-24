@@ -4,20 +4,35 @@
 .zuc-home-customized-section--wrapper {
   width: 100%;
   margin: 0;
-  margin-top: -40px;
-  z-index: 999;
+  margin-top: -50px;
+  z-index: 99;
   padding: 0 14vw 14vh 14vw;
   display: flex;
   flex-direction: row;
   position: relative;
+
+  @media #{$phone-only} {
+    flex-direction: column;
+  }
 }
 
 .zuc-home-customized-section--text-section {
   flex: 40%;
   position: relative;
 
-  .zuc-home-customized-section--subheading {
+  .zuc-home-customized-section--subheading:after {
+    display: inline;
+    content: ' ';
+    background-image: url('../../assets/images/blob-module/graphic_line_green_small.svg');
+    background-size: 40px 28px;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(25%, -25%);
+    height: 30px;
+    width: 35px;
+  }
 
+  .zuc-home-customized-section--subheading {
   }
 
   .zuc-home-customized-section--heading {
@@ -33,13 +48,14 @@
     font-weight: $body-weight;
     font-size: $font-size-body;
     line-height: 1.3;
+    width: 26vw;
   }
 
   .zuc-btn-secondary {
+    // TODO These styles are temporary until global button styles are updated
     margin-top: 30px;
     width: 180px; // todo - fix
     text-align: center;
-    font-family: $main-font;
     font-weight: $body-weight;
     font-size: $font-size-body;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -52,9 +68,10 @@
   position: relative;
 }
 
-// can delete this, temporary
-.photo {
+.icon {
   z-index: 1;
-  max-width: 500px;
-  max-height: 400px;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 1vw;
 }
+
