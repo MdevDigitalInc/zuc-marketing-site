@@ -1,5 +1,5 @@
 /*
-    w3 custom <select> code - AW - 20180924
+    w3 custom <select> code - Modified by AW - 20180924
 */
 
 var x, i, j, selElmnt, a, b, c;
@@ -28,6 +28,7 @@ for (i = 0; i < x.length; i++) {
     create a new DIV that will act as an option item:*/
 
     c = document.createElement("DIV");
+    c.setAttribute("class", "zuc-select-option");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
 
@@ -41,11 +42,11 @@ for (i = 0; i < x.length; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
+            y = this.parentNode.getElementsByClassName("zuc-same-as-selected");
             for (k = 0; k < y.length; k++) {
               y[k].removeAttribute("class");
             }
-            this.setAttribute("class", "same-as-selected");
+            this.setAttribute("class", "zuc-same-as-selected");
             break;
           }
         }
@@ -65,17 +66,17 @@ for (i = 0; i < x.length; i++) {
       this.classList.toggle("zuc-select-arrow-active");
   });
 }
-function closeAllSelect(elmnt) {
 
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
+// closeAllSelect : close all <select> boxes in the doc except class="zuc-select-selected"
+
+function closeAllSelect(elmnt) {
 
   var x, y, i, arrNo = [];
   x = document.getElementsByClassName("zuc-select-items");
   y = document.getElementsByClassName("zuc-select-selected");
   for (i = 0; i < y.length; i++) {
     if (elmnt == y[i]) {
-      arrNo.push(i)
+      arrNo.push(i);
     } else {
       y[i].classList.remove("zuc-select-arrow-active");
     }
@@ -86,6 +87,7 @@ function closeAllSelect(elmnt) {
     }
   }
 }
+
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
-document.addEventListener("click", closeAllSelect); 
+document.addEventListener("click", closeAllSelect);

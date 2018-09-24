@@ -213,7 +213,7 @@ textarea {
 
   .zuc-radio-group {
     &:nth-child( n+2 ) {
-      padding-left: 40%;
+      padding-left: 40%; // TODO smelly padding
     }
 
     @media #{$tablet-up} {
@@ -225,7 +225,25 @@ textarea {
 }
 
 /*
-      <<< Select Inputs >>>
+<<< Select Inputs >>>
+
+select.js turns.....
+
+  <div class="zuc-select-container">
+    <select>
+      <option>
+      <option>
+      ...
+
+...into this:
+
+  <div class="zuc-select-container">
+    <div class="zuc-select-selected">
+    <div class="zuc-select-items">
+      <div class="zuc-select-option">
+      <div class="zuc-select-option">
+      ...      
+  
 */
 
 .zuc-select-container {
@@ -254,28 +272,14 @@ textarea {
   }
 }
 
-/*
-      Instead of looking like this:
-
-  <div class="zuc-select-container">
-    <select>
-      <option>
-      <option>
-      ...
-
-      The markdown will look like this:
-
-  <div class="zuc-select-container">
-    <div class="zuc-select-selected">
-    <div class="zuc-select-items">
-      <div class="zuc-select-option">
-      <div class="zuc-select-option">
-      ...      
-  
- */
-
 .zuc-select-selected {
   background-color: $white;
+
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
 
   // Closed menu arrow style
   &:after {
@@ -290,7 +294,7 @@ textarea {
   }
 
   // Open menu arrow style
-  .zuc-select-arrow-active {
+  &.zuc-select-arrow-active {
 
     &:after {
       border-color: transparent transparent #fff transparent;
@@ -299,7 +303,6 @@ textarea {
   }
 }
 
-// <select> options styles
 .zuc-select-items {
   position: absolute;
   background-color: DodgerBlue;
@@ -315,10 +318,18 @@ textarea {
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
     user-select: none;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
 // Hide the items when the select box is closed
 .zuc-select-hide {
   display: none;
+}
+
+.zuc-same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
