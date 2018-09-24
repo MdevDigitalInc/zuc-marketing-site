@@ -2,21 +2,21 @@
     w3 custom <select> code - Modified by AW - 20180924
 */
 
-var x, i, j, selElmnt, a, b, c;
+var selCon, i, j, selElmnt, a, b, c;
 
 // Look for any elements with the class "zuc-select-container"
 
-x = document.getElementsByClassName("zuc-select-container");
+selCon = document.getElementsByClassName("zuc-select-container");
 
-for (i = 0; i < x.length; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
+for (i = 0; i < selCon.length; i++) {
+  selElmnt = selCon[i].getElementsByTagName("select")[0];
   
   /*for each element, create a new DIV that will act as the selected item:*/
 
   a = document.createElement("DIV");
   a.setAttribute("class", "zuc-select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
+  selCon[i].appendChild(a);
 
   /*for each element, create a new DIV that will contain the option list:*/
 
@@ -54,7 +54,7 @@ for (i = 0; i < x.length; i++) {
     });
     b.appendChild(c);
   }
-  x[i].appendChild(b);
+  selCon[i].appendChild(b);
   a.addEventListener("click", function(e) {
 
       /*when the select box is clicked, close any other select boxes,
