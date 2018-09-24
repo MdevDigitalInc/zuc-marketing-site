@@ -177,7 +177,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/request-service.pug',
-      filename: 'request-service.html'
+      filename: 'forms/request-service.html'
       
     }),
     new HtmlWebpackPlugin({
