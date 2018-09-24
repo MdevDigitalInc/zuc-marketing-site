@@ -15,6 +15,11 @@ form {
 
 $border-color-active: rgba(15, 22, 24, 1);
 $border-color-passive: rgba(15, 22, 24, 0);
+
+$form-text-color: $color-zuc-darkindigo;
+$form-bg-color: $white;
+$form-border-color: #707070;
+
 input {
   &[type="text"],
   &[type="email"],
@@ -25,12 +30,12 @@ input {
     width: 100%;
     height: 63px;
     border-radius: 4px;
-    background-color: $white;
-    border: solid 3px #707070;
+    background-color: $form-bg-color;
+    border: solid 3px $form-border-color;
     font-family: $main-font;
     padding: 0 1vw;
     margin-top: .4vw;
-    color: #36384b;
+    color: $form-text-color;
 
     @media #{$portrait} {
       padding: 0 2vw;
@@ -40,7 +45,7 @@ input {
     &:hover,
     &:focus,
     &:active {
-      border: solid 3px #36384b;
+      border: solid 3px $color-zuc-darkindigo;
     }
 
     &.--filled {
@@ -54,6 +59,8 @@ input {
     }
   }
 }
+
+// TODO textarea
 
 textarea {
   width: 100%;
@@ -252,12 +259,11 @@ select.js turns.....
   width: 100%;
   height: 63px;
   border-radius: 4px;
-  background-color: $white;
-  border: solid 3px #707070;
-  
+  background-color: $form-bg-color;
+  color: $form-text-color;
+  border: solid 3px $form-border-color;
   padding: 0 1vw;
   margin-top: .5vw;
-  color: #36384b;
 
   @media #{$portrait} {
     padding: 0 2vw;
@@ -273,9 +279,8 @@ select.js turns.....
 }
 
 .zuc-select-selected {
-  background-color: $white;
-
-  color: #ffffff;
+  background-color: $form-bg-color;
+  color: $form-text-color;
   padding: 8px 16px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -305,14 +310,14 @@ select.js turns.....
 
 .zuc-select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: $form-bg-color;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
 
   .zuc-select-option {
-    color: #ffffff;
+    color: $form-text-color;
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
