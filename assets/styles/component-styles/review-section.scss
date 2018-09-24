@@ -3,9 +3,7 @@
 /-------------------------------------*/
 
 .zuc-review-section {
-  display: block;
-  width: 100%;
-  padding: 112px 0 180px;
+  padding: 60vw 0 180px;
 
   @media #{$tablet-up} {
     padding: 366px 0;
@@ -16,11 +14,9 @@
   }
 }
 
-.zuc-quote-container {
-  margin: 0 auto;
-  padding: 0 4.4vw;
+.zuc-review-container {
+  width: 100%;
   position: relative;
-  background-color: $white;
 
   @media #{$tablet-up} {
     width: 86%;
@@ -29,6 +25,10 @@
   @media #{$laptop-up} {
     width: 44%;
   }
+}
+
+.zuc-quote-container {
+  background-color: $white;
 }
 
 .zuc-quote-badge-container {
@@ -42,8 +42,8 @@
 
 .zuc-quote-text {
   text-align: center;
-  padding-top: 110px;
-  padding-bottom: 1.2vw;
+  padding: 110px 4.4vw 1.2vw;
+  // TODO remove line-height once LM is done typography
   line-height: 1.3;
 }
 
@@ -58,17 +58,13 @@
   }
 }
 
-.zuc-author-container {
-  width: 100%;
-  padding-bottom: 27px;
-
-  .zuc-quote-author {
-    text-align: center;
-    padding-top: 30px;
-    // TODO solve font-weight override here gracefully
-    font-weight: 600;
-    color: $color-zuc-darkindigo;
-  }
+.zuc-quote-author {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  // TODO solve font-weight override here gracefully
+  font-weight: 600;
+  color: $color-zuc-darkindigo;
 }
 
 .zuc-quote-button {
@@ -81,6 +77,7 @@
 
 .zuc-left {
   left: 0;
+  z-index: 7;
 
   @media #{$tablet-up} {
     left: -25px;
@@ -89,6 +86,7 @@
 
 .zuc-right {
   right: 0;
+  z-index: 7;
   
   @media #{$tablet-up} {
     right: -25px;
@@ -96,20 +94,16 @@
 }
 
 .zuc-floating-container {
-  position: relative;
+  position: block;
   background-color: $color-zuc-indigo;
   padding: 28px 26px 45px 29px;
-
-  @media #{$tablet-up} {
-    position: absolute;
-    left: 0;
-    top: -300px;
-  }
+  width: 100%;
 
   @media #{$laptop-up} {
     position: absolute;
-    top: -74px;
-    left: -281px;
+    width: auto;
+    top: -100px;
+    left: -320px;
   }
 }
 
