@@ -19,6 +19,7 @@ $border-color-passive: rgba(15, 22, 24, 0);
 $form-text-color: $color-zuc-darkindigo;
 $form-bg-color: $white;
 $form-border-color: #707070;
+$form-placeholder-color: $color-brand-bkg;
 
 input {
   &[type="text"],
@@ -55,7 +56,7 @@ input {
     }
 
     &::placeholder {
-      color: $color-brand-bkg;
+      color: $form-placeholder-color;
     }
   }
 }
@@ -258,23 +259,29 @@ select.js turns.....
   width: 100%;
   height: 63px;
   background: $form-bg-color;
+  margin-top: .5vw;
+
+  @media #{$portrait} {
+    margin-top: .9vw;
+  }
   
   &:after {
     content: '';
+    position: absolute;
     top: 0;
     width: 0;
     height: 0;
-    right: 10px;
+    right: 15px;
     bottom: 0;
     margin: auto;
     border-style: solid;
-    border-width: 4px;
-    border-color: $form-border-color;
+    border-width: 5px 5px 0 5px;
+    border-color: $form-border-color transparent transparent transparent;
     pointer-events: none;
   }
   
   &:before {
-    width: 30px;
+    width: 40px;
     position: absolute;
     top: 3px;
     right: 3px;
@@ -286,7 +293,7 @@ select.js turns.....
   
   &:hover {
     &:before {
-      background: #456456; // TODO
+      background: $bkg-light-grey; // TODO
     }
   }
 
@@ -301,14 +308,13 @@ select.js turns.....
     outline: none;
     padding-right: 35px;
     padding-left: 15px;
+    color: $form-text-color;
     border: 3px solid $form-border-color; // TODO
   }
 
   &:focus {
     border-color: #009900;
   }
-
-  margin-top: .5vw;
 
   &:focus {
     outline: none;
