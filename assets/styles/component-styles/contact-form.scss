@@ -2,6 +2,7 @@
   Contact Styles - AW 2018-09-21
 -----*/
 
+// Variable to keep consistent alignment of section items
 $ss-padding: 8vw;
 
 .zuc-contact-blurb-container {
@@ -17,10 +18,6 @@ $ss-padding: 8vw;
 .zuc-contact-title {
   text-align: left;
   padding-left: $ss-padding;
-}
-
-.zuc-contact-subtitle {
-  color: $color-text-grey;
 }
 
 .zuc-contact-image-container {
