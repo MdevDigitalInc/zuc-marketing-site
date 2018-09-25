@@ -19,7 +19,7 @@ $border-color-passive: rgba(15, 22, 24, 0);
 $form-text-color: $color-zuc-darkindigo;
 $form-bg-color: $white;
 $form-border-color: #707070;
-$form-placeholder-color: $color-brand-bkg;
+$form-placeholder-color: $color-text-grey;
 
 input {
   &[type="text"],
@@ -190,7 +190,6 @@ textarea {
 }
 
 /*
-
     <<< Radio Buttons >>>
 
     Format:
@@ -233,24 +232,9 @@ textarea {
 }
 
 /*
-<<< Select Inputs >>>
+  <<< Select Inputs >>>
 
-select.js turns.....
-
-  <div class="zuc-select-container">
-    <select>
-      <option>
-      <option>
-      ...
-
-...into this:
-
-  <div class="zuc-select-container">
-    <div class="zuc-select-selected">
-    <div class="zuc-select-items">
-      <div class="zuc-select-option">
-      <div class="zuc-select-option">
-      ...      
+  Note: Wrap all <select> objects in a <div class=".zuc-select-container">
   
 */
 
@@ -265,23 +249,25 @@ select.js turns.....
     margin-top: .9vw;
   }
   
+  // This is the little arrow on the dropdown button
   &:after {
     content: '';
     position: absolute;
     top: 0;
     width: 0;
     height: 0;
-    right: 15px;
+    right: 17px;
     bottom: 0;
     margin: auto;
     border-style: solid;
-    border-width: 5px 5px 0 5px;
-    border-color: $form-border-color transparent transparent transparent;
+    border-width: 10px 8px 0 8px; // <triangle height> <width left> 0 <width right>
+    border-color: $color-zuc-darkindigo transparent transparent transparent;
     pointer-events: none;
   }
   
+  // This is the small block of background behind the dropdown arrow
   &:before {
-    width: 40px;
+    width: 44px;
     position: absolute;
     top: 3px;
     right: 3px;
@@ -293,12 +279,11 @@ select.js turns.....
   
   &:hover {
     &:before {
-      background: $bkg-light-grey; // TODO
+      background: $bkg-light-grey;
     }
   }
 
   select {
-    border: none;
     box-shadow: none;
     border-radius: 4px;
     background: transparent;
@@ -309,14 +294,24 @@ select.js turns.....
     padding-right: 35px;
     padding-left: 15px;
     color: $form-text-color;
-    border: 3px solid $form-border-color; // TODO
-  }
+    border: 3px solid $form-border-color;
 
-  &:focus {
-    border-color: #009900;
-  }
+    &:hover,
+    &:focus,
+    &:active {
+      border: solid 3px $color-zuc-darkindigo;
+      outline: none;
+    }
 
-  &:focus {
-    outline: none;
+    &:invalid {
+
+      &:required {
+        color: #bcbcbc;
+      }
+    }
+
+    option[value=""][disabled] {
+      display: none;
+    }
   }
 }
