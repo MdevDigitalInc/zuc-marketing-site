@@ -3,7 +3,7 @@
 -----*/
 
 .zuc-contact-blurb-container {
-  
+
   padding-left: 7%;
   padding-right: 7%;
   text-align: center;
@@ -80,15 +80,9 @@
 
 .zuc-contact-forms-container {
   padding-left: 7.3%;
-  padding-right: 7.3%; 
+  padding-right: 7.3%;
 
   @media #{$laptop-up} {
     padding-right: 13.5vw;
-  }
-}
-
-.zuc-contact-btn {
-  @media #{$laptop-up} {
-    display: block;
   }
 }
