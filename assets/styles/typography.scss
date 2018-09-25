@@ -180,36 +180,42 @@ a {
   }
 }
 
-// Typography Colors
+// Typography Colors & Families
 
 h1,
 .h1 {
   color: $color-zuc-indigo;
+  font-family: $main-font-serif;
 }
 
 h2,
 .h2 {
   color: $color-zuc-indigo;
+  font-family: $main-font-serif;
 }
 
 h3,
 .h3 {
   color: $color-mdev-white;
+  font-family: $main-font-serif;
 }
 
 h4,
 .h4 {
   color: $color-zuc-darkindigo;
+  font-family: $main-font;
 }
 
 h5,
 .h5 {
   color: $color-zuc-indigo;
+  font-family: $main-font-serif;
 }
 
 h6,
 .h6 {
   color: $color-zuc-indigo;
+  font-family: $main-font;
 }
 
 p {
