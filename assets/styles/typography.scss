@@ -29,7 +29,6 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  //- Tweaked for ZUC - A.
   null  : 3.3vw,
   $tablet-up  : 2.34vw,
   $tablet-lnd-only : 1.8vw,
@@ -39,7 +38,6 @@ $p-font-sizes: (
 );
 
 $h1-font-sizes: (
-  //- Tweaked for ZUC - A.
   null  : 9.07vw,
   $tablet-up : 7.8vw,
   $tablet-lnd-only : 5.9vw,
@@ -48,7 +46,6 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
-  //- Tweaked for ZUC - A.
   null  : 8vw,
   $tablet-up : 6.11vw,
   $tablet-lnd-only : 4.6vw,
@@ -181,4 +178,40 @@ a {
   @media #{$portrait} {
     width: 90%;
   }
+}
+
+// Typography Colors
+
+h1,
+.h1 {
+  color: $color-zuc-indigo;
+}
+
+h2,
+.h2 {
+  color: $color-zuc-indigo;
+}
+
+h3,
+.h3 {
+  color: $color-mdev-white;
+}
+
+h4,
+.h4 {
+  color: $color-zuc-darkindigo;
+}
+
+h5,
+.h5 {
+  color: $color-zuc-indigo;
+}
+
+h6,
+.h6 {
+  color: $color-zuc-indigo;
+}
+
+p {
+  color: $color-zuc-darkindigo;
 }
