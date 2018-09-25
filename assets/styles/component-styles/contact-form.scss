@@ -45,9 +45,13 @@ $ss-padding: 8vw;
   .zuc-contact-badge {
     display: block;
     position: static;
-    width: 17vw;
+    width: 28vw;
     margin-top: 34px;
     margin-bottom: 52px;
+
+    @media #{$tablet-up} {
+      width: 18vw;
+    }
 
     @media #{$laptop-up} {
       position: absolute;
