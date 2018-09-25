@@ -185,3 +185,21 @@
   transform: scaleX(-1);
   filter: FlipH;
 }
+
+// Weight Utilities
+
+.u-w-heading {
+  font-weight: $heading;
+}
+
+.u-w-subheading {
+  font-weight: $subheading-weight;
+}
+
+.u-w-body {
+  font-weight: $body-weight;
+}
+
+.u-w-medium {
+  font-weight: $medium-weight;
+}
