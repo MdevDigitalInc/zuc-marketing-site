@@ -8,7 +8,16 @@
     width: 100%;
     @include center(both);
     z-index: -1;
+
+    @media #{$tablet-lnd-only} {
+      width: 120%;
+    }
   }
+}
+
+.zuc-slider-container {
+  position: relative;
+  z-index: 2;
 }
 
 .zuc-slide-media {
@@ -18,6 +27,14 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
+
+  @media #{$tablet-lnd-only} {
+    width: 100%;
+    padding-top: 50%;
+  }
+  @media #{$portrait} {
+    width: 100%;
+  }
 }
 
 .zuc-slide-content {
@@ -25,6 +42,14 @@
   background: $white;
   padding: 3vw 4vw 3vw 3vw;
   position: relative;
+
+  @media #{$tablet-only} {
+    width: 100%;
+  }
+  @media #{$portrait} {
+    width: 100%;
+    padding: 9vw;
+  }
 
   &:before {
     @include pseudo();
@@ -34,6 +59,10 @@
     top: -10%;
     bottom: -10%;
     z-index: -1;
+
+    @media #{$portrait} {
+      display: none;
+    }
   }
 
   &:after {
@@ -44,11 +73,50 @@
     background: $color-zuc-mint;
     right: -93px;
     top: 60px;
+
+    @media #{$portrait} {
+      right: auto;
+      top: 30px;
+    }
   }
 
   .zuc-slide-text {
     color: $color-text-grey;
-    padding: 1vw 0;
+    padding: 1vw 0 2vw;
   }
 }
+
+$control-width: 20px;
+.zuc-slider-controls {
+  position: relative;
+  margin-top: 3vw;
+
+  .zuc-slide-selector {
+    width: $control-width;
+    height: $control-width;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid $white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    transition: all .4s;
+    cursor: pointer;
+    margin: 0 9px;
+
+    &:hover,
+    &:active,
+    &:focus {
+     background: $white;
+     box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+   }
+ }
+}
+
+.zuc-slide {
+  position: relative;
+
+  @media #{$portrait} {
+    flex-wrap: wrap;
+  }
+}
+
 
