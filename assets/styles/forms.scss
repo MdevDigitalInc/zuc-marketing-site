@@ -49,6 +49,7 @@ input {
       border: solid 3px $color-zuc-darkindigo;
     }
 
+    // Not currently used
     &.--filled {
       border-top: 4px solid $border-color-passive;
       border-bottom: 4px solid $border-color-active;
@@ -94,6 +95,8 @@ textarea {
   }
 }
 
+/* stylelint-enable */
+
 .zuc-forms-container {
   padding: 0 6vw;
 
@@ -129,9 +132,6 @@ textarea {
 .zuc-form-action {
   padding: 5vw 0;
 }
-
-
-/* stylelint-enable */
 
 /*
 
@@ -308,13 +308,15 @@ textarea {
       outline: none;
     }
 
+    // This is the equivalent to placeholder for <select>
     &:invalid {
 
       &:required {
-        color: #bcbcbc;
+        color: $form-placeholder-color;
       }
     }
 
+    // Hide the placeholder value once anything else is chosen
     option[value=""][disabled] {
       display: none;
     }
