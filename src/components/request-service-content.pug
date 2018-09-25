@@ -61,7 +61,9 @@
             strong
               |Product Type
           .zuc-select-container
-            select(data-required name="producttype" placeholder="- Select Product -")
+            select(required name="producttype")
+              option(value="" disabled selected)
+                |Drop Down Here
               option(value="foo")
                 |Earth
               option(value="bar")
