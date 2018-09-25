@@ -1,0 +1,21 @@
+- var title = 'Inspired by Nature'
+- var subheading = 'Convenient'
+- var text = 'Zucora Home offers environmentally responsible home wellness solutions. These naturally inspired cleaning and personal care items and bedding essentials, will empower your quest for a clean home and healthy family while having a positive impact on world around you.'
+- var button = 'See all'
+
+section.zuc-home-inspired-section--wrapper
+  .zuc-home-inspired-section--left.flex.flex-column
+    h4.zuc-home-inspired-section--subheading.u-uppercase
+      |#{subheading}
+    h2.zuc-home-inspired-section--heading
+      |#{title}
+    img.photo(src='https://via.placeholder.com/1000x800' alt='')
+    .zuc-home-inspired-section--green-waves
+      img.green-waves(src='../../assets/images/home-inspired-section/todo.svg' alt='')
+  .zuc-home-inspired-section--right.flex.flex-hor-center
+    .zuc-home-inspired-section--icons
+    .zuc-home-inspired-section--copy
+    a.zuc-btn.zuc-btn-secondary.u-uppercase(href="#" title="todo")
+      |#{button}
+
+
