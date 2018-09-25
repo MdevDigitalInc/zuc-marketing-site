@@ -191,6 +191,10 @@ module.exports = {
       template: './src/templates/typography-test.pug',
       filename: 'test/typography.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/smarter-parent.pug',
+      filename: 'smarter-living.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
