@@ -2,7 +2,13 @@
 .zuc-hero-slider {
   width: 100%;
   position: relative;
-  padding: 50px 0;
+  padding: 10vw 0;
+
+  .zuc-slider-bkg {
+    width: 100%;
+    @include center(both);
+    z-index: -1;
+  }
 }
 
 .zuc-slide-media {
@@ -11,7 +17,7 @@
   padding-top: 36%;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 0;
 }
 
 .zuc-slide-content {
