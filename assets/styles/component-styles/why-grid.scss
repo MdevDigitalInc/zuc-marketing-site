@@ -1,0 +1,28 @@
+.zuc-why-grid-section-container {
+  position: relative;
+  padding: 200px 24% 80px;
+}
+
+.zuc-why-grid-row {
+
+  &:nth-child( n+2 ) {
+    margin-top: 80px; // TODO ended on this line Aw 20180924
+  }
+
+  h6 {
+    color: $color-zuc-indigo;
+    font-weight: 600;
+  }
+
+  p {
+    color: $color-zuc-darkindigo;
+  }
+}
+
+.zuc-why-grid-item {
+  width: 30%;
+
+  &:nth-child( n+2 ) {
+    padding-left: 5%;
+  }
+}
