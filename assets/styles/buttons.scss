@@ -28,8 +28,8 @@
 }
 
 .zuc-btn-primary {
-  color: $color-zuc-teal;
-  border: 2px solid $color-zuc-teal;
+  color: $color-zuc-mint;
+  border: 2px solid $color-zuc-mint;
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
 
@@ -37,7 +37,7 @@
   &:focus,
   &:active {
     color: $white;
-    background: $color-zuc-teal;
+    background: $color-zuc-mint;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
 }
@@ -80,7 +80,7 @@
   padding: 6px 30px;
 
   &:hover {
-    background: $color-review-grey;
+    background: $color-zuc-platinum;
   }
 
   @media #{$portrait} {

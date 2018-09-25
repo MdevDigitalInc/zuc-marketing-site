@@ -23,7 +23,9 @@
             strong
               |Find Order By
           .zuc-select-container
-            select(data-required name="find-order" placeholder="Drop Down Here")
+            select(required name="find-order" placeholder="Drop Down Here")
+              option(value="" disabled selected)
+                |Drop Down Here
               option(value="foo")
                 |Earth
               option(value="bar")
