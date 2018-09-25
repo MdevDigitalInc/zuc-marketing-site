@@ -71,21 +71,13 @@
 }
 
 .zuc-btn-browse {
-  margin-top: .5vw;
-  margin-left: 1.2vw;
-  border: 2px solid $color-zuc-indigo;
-  color: $color-zuc-indigo;
-  cursor: pointer;
-  background: $white;
-  padding: 6px 30px;
+  margin-top: .8vw;
+  border-color: $color-zuc-lilac;
+  color: $color-zuc-lilac;
 
   &:hover {
+    color: $color-zuc-lilac;
     background: $color-zuc-platinum;
-  }
-
-  @media #{$portrait} {
-    font-size: 3vw;
-    padding: 10px 38px;
   }
 }
 

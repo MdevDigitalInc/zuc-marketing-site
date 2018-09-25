@@ -184,8 +184,8 @@ module.exports = {
       filename: 'faq.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/order-support.pug',
-      filename: 'forms/order-support.html'
+      template: './src/templates/orders.pug',
+      filename: 'forms/orders.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/typography-test.pug',
