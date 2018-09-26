@@ -7,10 +7,23 @@
   .zuc-slider-bkg {
     width: 100%;
     @include center(both);
+    overflow: hidden;
     z-index: -1;
 
     @media #{$tablet-lnd-only} {
-      width: 120%;
+      object {
+        width: 130%;
+      }
+    }
+    @media #{$portrait} {
+      object {
+        width: 220%;
+      }
+    }
+    @media #{$phone-only} {
+      object {
+        width: 320%;
+      }
     }
   }
 }
@@ -57,6 +70,7 @@
   }
   @media #{$portrait} {
     width: 100%;
+    padding-top: 60%;
   }
 }
 
@@ -73,6 +87,9 @@
   @media #{$portrait} {
     width: 100%;
     padding: 9vw;
+  }
+  @media #{$phone-only} {
+    padding: 15vw 9vw;
   }
 
   &:before {
