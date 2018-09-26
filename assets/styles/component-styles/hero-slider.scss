@@ -19,6 +19,7 @@
 .zuc-slider-container {
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 // Individual Slide
@@ -26,6 +27,8 @@
   width: 100%;
   position: absolute;
   opacity: 0;
+  transition: all .5s;
+  transform: translate3d(100%, 0, 0);
 
   @media #{$portrait} {
     flex-wrap: wrap;
@@ -34,8 +37,9 @@
 
 // Active Slide
 .--active-slide {
-  position: relative;
+  position: absolute;
   opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 // Slide Image
