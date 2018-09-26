@@ -47,8 +47,15 @@
     width: 50%;
   }
 
-  img {
-    width: 30vw;
+  .zuc-img-container {
+
+    .zuc-photo {
+      position: relative;
+    }
+  
+    .zuc-blob {
+      position: absolute;
+    }
   }
 }
 
