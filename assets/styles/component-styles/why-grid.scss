@@ -14,11 +14,12 @@
 .zuc-why-grid-item {
   padding-top: 35px;
   padding-bottom: 45px;
-  
   width: 100%;
+  text-align: center;
 
   @media #{$tablet-only} {
     width: 45%;
+    text-align: left;
 
     &:nth-child( 2n ) {
       margin-left: 10%;
@@ -28,6 +29,7 @@
   @media #{$laptop-up} {
     width: 30%;
     margin-left: 5%;
+    text-align: left;
 
     &:nth-child( 3n+1 ) {
       margin-left: 0;
