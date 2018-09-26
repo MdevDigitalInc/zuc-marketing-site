@@ -50,7 +50,7 @@
     position: relative;
 
     .green-waves {
-      // display: none;
+      display: none;
 
       @media #{$laptop-up} {
         display: inline;
@@ -64,15 +64,15 @@
 }
 
 .zuc-home-inspired-section--right {
-  flex: 60%;
+  // flex: 60%;
   position: relative;
 
   @media #{$tablet-only} {
-    padding-top: 60px;
+    padding-top: 15px;
 
   }
   @media #{$phone-only} {
-    padding-top: 80px;
+    padding-top: 10px;
   }
 
   .zuc-home-inspired-section--copy {
@@ -98,15 +98,40 @@
     margin-bottom: 5vh;
     text-align: center;
 
+    @media #{$tablet-only} {
+      justify-content: space-around;
+    }
+    @media #{$phone-only} {
+      justify-content: space-around;
+    }
+
     .item {
       margin-right: 4vw;
       max-width: 100px;
-    }
-    .icon {
+
       @media #{$tablet-only} {
+        margin-right: 0;
       }
       @media #{$phone-only} {
+        margin-right: 0;
+      }
+
+      p {
+        @media #{$tablet-only} {
+          font-size: 3vh;
+        }
+        @media #{$phone-only} {
+          font-size: 3vh;
+        }
+      }
+    }
+    .icon {
+      @media #{$phone-only} {
         padding: 1vh 0.1vw;
+        max-width: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        min-height: 50px;
       }
       z-index: 1;
       max-width: 90px;
