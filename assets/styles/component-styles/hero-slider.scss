@@ -15,11 +15,30 @@
   }
 }
 
+// Container for Slides
 .zuc-slider-container {
   position: relative;
   z-index: 2;
 }
 
+// Individual Slide
+.zuc-slide {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+
+  @media #{$portrait} {
+    flex-wrap: wrap;
+  }
+}
+
+// Active Slide
+.--active-slide {
+  position: relative;
+  opacity: 1;
+}
+
+// Slide Image
 .zuc-slide-media {
   width: 60%;
   position: relative;
@@ -37,6 +56,7 @@
   }
 }
 
+// Slide Content
 .zuc-slide-content {
   width: 30%;
   background: $white;
@@ -86,6 +106,7 @@
   }
 }
 
+// Slide Controls
 $control-width: 20px;
 .zuc-slider-controls {
   position: relative;
@@ -109,14 +130,9 @@ $control-width: 20px;
      box-shadow: 0 0 30px rgba(0, 0, 0, .8);
    }
  }
+
+ .--active {
+   background: $white;
+ }
 }
-
-.zuc-slide {
-  position: relative;
-
-  @media #{$portrait} {
-    flex-wrap: wrap;
-  }
-}
-
 
