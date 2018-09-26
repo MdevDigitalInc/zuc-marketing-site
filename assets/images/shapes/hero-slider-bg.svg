@@ -1,11 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.1 78">
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgb(100, 238, 176);stop-opacity:1" />
-      <stop offset="100%" style="stop-color:rgb(67, 77, 160);stop-opacity:1" />
-    </linearGradient>
-    <style>
-      .cls-1{fill:url(#grad1);}
-    </style>
-  </defs>
-  <path class="cls-1" d="M143.6,66.3a123,123,0,0,0-25.8,2.4c-6.1,1.2-11.9,2.1-17.2,4.1l-7.7,3c-2.6,1.2-5,2.8-8,3.7a52.7,52.7,0,0,1-7.3,1.3c-4.7.7-10.7-.3-14.6-1.1-8.2-1.6-15.8-3-23.8-4.7-4.4-.9-8.8-.9-13.7-1.6a24,24,0,0,0-6-.2l-6.5.3L5,74.9.4,76.3V45.1l3.7-2a62.2,62.2,0,0,1,11.3-3l7.7-.8H46.5l6.6-.4c5.3-.9,10.4-1,15.2-2.3a100.2,100.2,0,0,0,16.3-5.2c9.9-4.2,18.6-9.8,27.6-15.1a81.8,81.8,0,0,1,10-4.4c6.9-3,14.1-5.8,21.4-8.8Z" transform="translate(-0.4 -3)"/></svg>
+  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 648 348.357">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:rgb(100, 238, 176);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(67, 77, 160);stop-opacity:1" />
+      </linearGradient>
+      <style>
+        .cls-1{fill:url(#grad1);}
+      </style>
+    </defs>
+    <title>slider-bg-solid</title>
+    <path class="cls-1" d="M648,301.966c-41.2-.625-124,.034-194.4,29.359C391,354,328,386,175.5,341.449,143,330,50,311,0,347.186V206.125c5.512-3.037,37-27.125,125.55-27C234,184,331,176,381.038,143.693,509,66,611,25,648,15.456Z" transform="translate(0 -15.456)"/>
+  </svg>
