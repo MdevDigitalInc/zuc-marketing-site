@@ -86,35 +86,47 @@
   }
 }
 
-.zuc-blob-module--graphic-section {
-  flex: 60%;
+.zuc-home-customized-section--graphic-section {
+  // flex: 60%;
   position: relative;
-  display: flex;
+  // display: flex;
+  text-align: center;
+  padding-top: 60px;
+
+
+  .item {
+    margin-right: 4vw;
+    max-width: 180px;
+    @media #{$tablet-only} {
+      padding-top: 30px;
+    }
+  }
 
   @media #{$tablet-only} {
-    padding: 40px;
+    padding: 50px 180px 40px;
     justify-content: space-between;
     flex-wrap: wrap;
-
   }
+
   @media #{$phone-only} {
     padding-top: 80px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .icon {
+    @media #{$phone-only} {
+      padding: 1vh 0.1vw;
+    }
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 4vh;
+    // margin: 0 2vw;
+  }
 }
 
-.icon {
-  @media #{$tablet-only} {
-    // flex: 0 0 25%;
-  }
-  @media #{$phone-only} {
-    // flex: 0 0 25%;
-    padding: 1vh 0.1vw;
-  }
-  z-index: 1;
-  max-width: 100px;
-  max-height: 100px;
-  margin: 0 2vw;
-}
+
 

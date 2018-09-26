@@ -13,11 +13,23 @@ section.zuc-home-customized-section--wrapper
       |#{text}
     a.zuc-btn.zuc-btn-secondary.u-uppercase(href="#" title="todo")
       |#{button}
-  .zuc-blob-module--graphic-section.flex.flex-hor-start.flex-vert-center
-    // ToDo: Update with proper icons once they're available.
-    img.icon(src='../../assets/images/icons/icon-24-7-service.svg' alt='Solutions Team')
-    img.icon(src='../../assets/images/icons/icon-fast-service.svg' alt='Rapid Response')
-    img.icon(src='../../assets/images/icons/icon-tech-network.svg' alt='Technician Network')
-    img.icon(src='../../assets/images/icons/icon-premium-pricing.svg' alt='Premium Pricing')
+  .zuc-home-customized-section--graphic-section.flex.flex-hor-start.flex-vert-start
+    .item
+      img.icon(src='../../assets/images/icons/icon-24-7-service.svg' alt='Solutions Team')
+      p.u-bold.u-uppercase
+        |Solutions Team
+    // TODO: re-export this svg -- has different dimensions than rest.
+    .item
+      img.icon(src='../../assets/images/icons/icon-fast-service.svg' alt='Rapid Response')
+      p.u-bold.u-uppercase
+        |Rapid Response
+    .item
+      img.icon(src='../../assets/images/icons/icon-tech-network.svg' alt='Technician Network')
+      p.u-bold.u-uppercase
+        |Technician Network
+    .item
+      img.icon(src='../../assets/images/icons/icon-premium-pricing.svg' alt='Premium Pricing')
+      p.u-bold.u-uppercase
+        |Premium Pricing
 
 
