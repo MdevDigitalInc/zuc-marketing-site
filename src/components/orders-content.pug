@@ -1,5 +1,5 @@
-.zuc-section-container 
-  .zuc-content-header-container 
+.zuc-section-container
+  .zuc-content-header-container
     h1
       |Orders & Returns
     p
@@ -10,20 +10,22 @@
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Order ID
+              |ORDER ID
           input(type="text" data-required name="order-id" placeholder="Order ID")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Billing Last Name
+              |BILLING LAST NAME
           input(type="text" data-required name="billing-lastname" placeholder="Billing Last Name")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Find Order By
+              |FIND ORDER BY
           .zuc-select-container
-            select(data-required name="find-order" placeholder="Drop Down Here")
+            select(required name="find-order" placeholder="Drop Down Here")
+              option(value="" disabled selected)
+                |Drop Down Here
               option(value="foo")
                 |Earth
               option(value="bar")
@@ -33,15 +35,15 @@
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Email Address
+              |EMAIL ADDRESS
           input(type="email" data-required name="email" placeholder="Email Address")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
-              |Order Information
+              |ORDER INFORMATION
           input(type="text" data-required name="orderinfo" placeholder="Order Information")
-      .zuc-form-group.zuc-btn-send-container
-        button.zuc-btn.zuc-btn-secondary.u-soft-shadow(type="submit")
+      .zuc-form-action.flex.flex-hor-center
+        button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
           strong
             span SEND
