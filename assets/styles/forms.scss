@@ -106,7 +106,7 @@ textarea {
 }
 
 .zuc-input-name {
-  margin-top: 2.1vw;
+  margin-top: 4vw;
   font-size: 3.2vw;
   text-transform: capitalize;
   color: $form-text-color;
@@ -219,7 +219,7 @@ textarea {
   justify-content: flex-start;
   margin-top: .5vw;
   font-size: 24px;
-  color: $color-text-grey;
+  color: $color-zuc-concrete;
 
   @media #{$tablet-up} {
     justify-content: flex-start;

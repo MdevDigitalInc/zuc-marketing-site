@@ -182,3 +182,23 @@ a {
     width: 90%;
   }
 }
+
+/* stylelint-disable */
+
+$zuc-body-small-font-sizes: (
+  null  : 3vw,
+  $tablet-up  : 2vw,
+  $tablet-lnd-only : 1.5vw,
+  $laptop-up : 1vw,
+  $desktop-up : .8vw,
+  $xl-up : .9vw
+);
+
+/* stylelint-enable */
+
+.zuc-body-small {
+  line-height: 1.25;
+  font-weight: 100;
+
+  @include font-size($zuc-body-small-font-sizes);
+}
