@@ -49,6 +49,10 @@
 
   p {
     color: $color-zuc-darkindigo;
+
+    @media #{$phone-only} {
+      padding: 0 7vw;
+    }
   }
 
   .zuc-why-grid-img-container {
