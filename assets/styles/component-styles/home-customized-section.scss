@@ -35,7 +35,7 @@
   }
 
   @media #{$laptop-up} {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   .zuc-home-customized-section--subheading:after {
@@ -76,7 +76,7 @@
 
   .zuc-btn-secondary {
     // TODO These styles are temporary until global button styles are updated
-    margin-top: 30px;
+    margin-top: 40px;
     width: 260px; // todo - fix
     text-align: center;
     font-weight: $body-weight;
