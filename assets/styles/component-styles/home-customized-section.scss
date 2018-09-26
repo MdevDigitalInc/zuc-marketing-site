@@ -77,12 +77,12 @@
   .zuc-btn-secondary {
     // TODO These styles are temporary until global button styles are updated
     margin-top: 30px;
-    width: 180px; // todo - fix
+    width: 260px; // todo - fix
     text-align: center;
     font-weight: $body-weight;
     font-size: $font-size-body;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    border-radius: 0;
+    text-transform: uppercase;
+
   }
 }
 
