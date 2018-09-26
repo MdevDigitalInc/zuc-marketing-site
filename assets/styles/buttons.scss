@@ -10,32 +10,16 @@
 /* Base Button */
 .zuc-btn {
   width: auto;
-  padding: .7vw 1vw .54vw;
+  padding: .7vw 1.05vw .54vw;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
   transition: all .4s;
-  border-radius: 0;
+  border-radius: 20vw;
   position: relative;
   vertical-align: middle;
-
-  &:before,
-  &:after {
-    @include pseudo();
-    width: 100%;
-    height: 100%;
-  }
-
-  &:before {
-    top: 0;
-    left: 0;
-  }
-
-  &:after {
-    bottom: 0;
-    right: 0;
-  }
+  font-size: 1.25vw;
 
   @media #{$phone-only} {
     padding: 4vw 4.3vw;
@@ -44,15 +28,16 @@
 }
 
 .zuc-btn-primary {
-  color: $color-zuc-teal;
-  border: 2px solid $color-zuc-teal;
+  color: $color-zuc-mint;
+  border: 2px solid $color-zuc-mint;
+  background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
 
   &:hover,
   &:focus,
   &:active {
     color: $white;
-    background: $color-zuc-teal;
+    background: $color-zuc-mint;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
 }
@@ -60,13 +45,16 @@
 
 .zuc-btn-secondary {
   color: $white;
-  border: 2px solid $color-zuc-indigo;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  background: $color-zuc-indigo;
+  border: none;
   text-transform: none;
   font-weight: 700;
   font-size: 1.25vw;
-  padding: 1vw 1vw .8vw;
+  padding: 1vw 1.05vw .8vw;
+  box-shadow: 0 23px 40px rgba(0, 0, 0, .2);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #434da0 34%, #a2acff);
+  background-position: center;
+  background-size: cover;
 
   @media #{$portrait} {
     font-size: 4vw;
@@ -77,49 +65,27 @@
   &:focus,
   &:active {
     color: $white;
-    background: $color-zuc-indigo;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    box-shadow: 0 23px 40px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6);
   }
 }
 
 .zuc-btn-browse {
-  margin-top: .5vw;
-  margin-left: 1.2vw;
-  border: 2px solid $color-zuc-indigo;
-  color: $color-zuc-indigo;
-  cursor: pointer;
-  background: $white;
-  border-radius: 6px;
-  padding: 6px 30px;
+  margin-top: .8vw;
+  border-color: $color-zuc-lilac;
+  color: $color-zuc-lilac;
 
   &:hover {
-    background: $color-review-grey;
-  }
-
-  @media #{$portrait} {
-    font-size: 3vw;
-    padding: 10px 38px;
+    color: $color-zuc-lilac;
+    background: $color-zuc-platinum;
   }
 }
 
-.zuc-btn-send-container {
-  padding: 5vw 0;
-  display: flex;
-  justify-content: center;
+// Extra padding for FORM
+.zuc-btn-xpad {
+  padding: 1vw 3vw;
 
-  button {
-    padding: 8vw 30vw;
-
-    @media #{$tablet-up} {
-      padding: 4vw 15vw;
-    }
-
-    @media #{$laptop-up} {
-      padding: 2.5vw 12.5vw;
-    }
-
-    @media #{$desktop-up} {
-      padding: 2vw 10vw;
-    }
+  @media #{$laptop-up} {
+    padding: 1vw 3vw;
   }
 }

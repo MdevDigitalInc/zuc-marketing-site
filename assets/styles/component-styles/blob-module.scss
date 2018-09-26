@@ -1,7 +1,6 @@
 /*-------------------------------------
  * Blob Module
 /-------------------------------------*/
-
 .zuc-blob-module--wrapper {
   width: 100%;
   margin: 0;
@@ -64,14 +63,11 @@
 
   .zuc-btn-secondary {
     margin-top: 30px;
-    width: 180px; // todo - fix
-    text-transform: uppercase;
-    text-align: center;
-    font-family: $main-font;
-    font-weight: $body-weight;
-    font-size: $font-size-body;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    border-radius: 0;
+    display: inline-block;
+    // TODO - Richard you will have to fix the rest of it
+    // I would recommend you re-think that module a little bit.
+    // I am not sure the left hand side needs to be a flex container. Especially since everything is just sitting one below the other
+    // You mmight just be causing youself more work with that.
   }
 
   .zuc-blob-module--grey-slash {
@@ -85,7 +81,7 @@
         position: absolute;
         bottom: -160px;
         right: -95px;
-        transform: scale(0.25);
+        transform: scale(.25);
       }
     }
   }
@@ -97,7 +93,6 @@
 
   @media #{$tablet-only} {
     padding-top: 60px;
-
   }
   @media #{$phone-only} {
     padding-top: 80px;
@@ -128,16 +123,15 @@
 
     @media #{$tablet-only} {
       top: 95px;
-      transform: scale(0.75);
+      transform: scale(.75);
       max-width: 800px;
     }
 
     @media #{$phone-only} {
       top: 35%;
       left: 45%;
-      transform: scale(2.0);
+      transform: scale(2);
       display: none;
     }
-
   }
 }

@@ -8,28 +8,28 @@ $color-brand-accent: #64eeb0;
 $color-brand-bkg: #0f1618;
 $bkg-light-grey: #fafafa;
 $black: #000;
-$white: #fff;
+$white: #f7f7f7;
 
 // Zucora Colors
 $color-zuc-indigo: #434da0;
 $color-zuc-darkindigo: #36384b;
 $color-zuc-lightindigo: #a3acff;
-$color-zuc-teal: #64eeb0;
+$color-zuc-mint: #64eeb0;
 $color-zuc-salmon: #feb9a6;
+$color-zuc-lilac: #a3acff;
+$color-zuc-platinum: #f7f7f7;
+$color-zuc-concrete: #c8c8c8;
 
 // Text Colors
 $color-text-grey: #676767;
 
-// Review Section Colors
-$color-review-light: #a3acff;
-$color-review-grey: #f7f7f7;
-
 // Main Font
 $main-font: aktiv-grotesk, 'Helvetica', sans-serif;
 $main-font-serif: PublicoHeadline, aktiv-grotesk, 'Helvetica', sans-serif;
-$heading-weight: 700;
+$heading-weight: 300;
 $subheading-weight: 500;
 $body-weight: 300;
+$medium-weight: 600;
 
 // Sizing Variables
 
@@ -51,29 +51,39 @@ $font-size-small: 14px;
   font-family: PublicoHeadline;
   font-weight: 500;
   font-style: normal;
-  src: url(/fonts/PublicoHeadline-Bold.woff2) format('woff2'), url(/fonts/PublicoHeadline-Bold.woff) format('woff'), url(/fonts/PublicoHeadline-Bold.ttf) format('truetype');
+  src: url(/fonts/PublicoHeadline-Bold.woff2) format('woff2'),
+  url(/fonts/PublicoHeadline-Bold.woff) format('woff'),
+  url(/fonts/PublicoHeadline-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: PublicoHeadline;
   font-weight: 500;
   font-style: italic;
-  src: url(/fonts/PublicoHeadline-BoldItalic.woff2) format('woff2'), url(/fonts/PublicoHeadline-BoldItalic.woff) format('woff'), url(/fonts/PublicoHeadline-BoldItalic.ttf) format('truetype');
+  src: url(/fonts/PublicoHeadline-BoldItalic.woff2) format('woff2'),
+  url(/fonts/PublicoHeadline-BoldItalic.woff) format('woff'),
+  url(/fonts/PublicoHeadline-BoldItalic.ttf) format('truetype');
 }
 @font-face {
   font-family: PublicoHeadline;
   font-weight: 300;
   font-style: normal;
-  src: url(/fonts/PublicoHeadline-Light.woff2) format('woff2'), url(/fonts/PublicoHeadline-Light.woff) format('woff'), url(/fonts/PublicoHeadline-Light.ttf) format('truetype');
+  src: url(/fonts/PublicoHeadline-Light.woff2) format('woff2'),
+  url(/fonts/PublicoHeadline-Light.woff) format('woff'),
+  url(/fonts/PublicoHeadline-Light.ttf) format('truetype');
 }
 @font-face {
   font-family: PublicoHeadline;
   font-weight: 300;
   font-style: italic;
-  src: url(/fonts/PublicoHeadline-LightItalic.woff2) format('woff2'), url(/fonts/PublicoHeadline-LightItalic.woff) format('woff'), url(/fonts/PublicoHeadline-LightItalic.ttf) format('truetype');
+  src: url(/fonts/PublicoHeadline-LightItalic.woff2) format('woff2'),
+  url(/fonts/PublicoHeadline-LightItalic.woff) format('woff'),
+  url(/fonts/PublicoHeadline-LightItalic.ttf) format('truetype');
 }
 @font-face {
   font-family: PublicoHeadline;
   font-weight: 400;
   font-style: normal;
-  src: url(/fonts/PublicoHeadline-Medium.woff2) format('woff2'), url(/fonts/PublicoHeadline-Medium.woff) format('woff'), url(/fonts/PublicoHeadline-Medium.ttf) format('truetype');
+  src: url(/fonts/PublicoHeadline-Medium.woff2) format('woff2'),
+  url(/fonts/PublicoHeadline-Medium.woff) format('woff'),
+  url(/fonts/PublicoHeadline-Medium.ttf) format('truetype');
 }
