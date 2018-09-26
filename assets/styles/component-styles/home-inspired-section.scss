@@ -45,6 +45,22 @@
 
   @media #{$phone-only} {
   }
+
+  .zuc-home-inspired-section--green-waves {
+    position: relative;
+
+    .green-waves {
+      // display: none;
+
+      @media #{$laptop-up} {
+        display: inline;
+        position: absolute;
+        top: -79px;
+        left: -217px;
+        transform: scale(0.23);
+      }
+    }
+  }
 }
 
 .zuc-home-inspired-section--right {
