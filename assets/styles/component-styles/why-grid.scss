@@ -47,5 +47,14 @@
 
   img {
     margin-bottom: 23px;
+    width: 25%;
+
+    @media #{$tablet-up} {
+      width: 30%;
+    }
+  
+    @media #{$laptop-up} {
+      width: 40%;
+    }
   }
 }
