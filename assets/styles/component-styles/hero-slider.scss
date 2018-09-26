@@ -111,6 +111,7 @@ $control-width: 20px;
 .zuc-slider-controls {
   position: relative;
   margin-top: 3vw;
+  z-index: 20;
 
   .zuc-slide-selector {
     width: $control-width;
