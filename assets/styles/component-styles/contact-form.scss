@@ -13,6 +13,10 @@ $ss-padding: 8vw;
   @media #{$laptop-up} {
     padding-right: 0;
   }
+
+  .--nudge {
+    padding-top: 25px;
+  }
 }
 
 .zuc-contact-title {
@@ -82,7 +86,4 @@ $ss-padding: 8vw;
   }
 }
 
-// To nudge a generic <> down(j) by 25px
-.zuc-nudge-jpx {
-  padding-top: 25px;
-}
+
