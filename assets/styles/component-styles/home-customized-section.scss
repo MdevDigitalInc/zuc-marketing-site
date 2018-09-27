@@ -36,6 +36,7 @@
 
   @media #{$laptop-up} {
     max-width: 40%;
+    margin-right: 40px;
   }
 
   .zuc-home-customized-section--subheading:after {
@@ -100,10 +101,13 @@
     @media #{$tablet-only} {
       padding-top: 30px;
     }
+    @media #{$phone-only} {
+      margin-right: 1vw;
+    }
   }
 
   @media #{$tablet-only} {
-    padding: 50px 180px 40px;
+    padding: 50px 10px 40px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -124,7 +128,6 @@
     max-width: 100px;
     max-height: 100px;
     margin-bottom: 4vh;
-    // margin: 0 2vw;
   }
 }
 
