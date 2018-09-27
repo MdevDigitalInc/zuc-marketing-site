@@ -5,7 +5,6 @@
   width: 100%;
   margin: 0;
   padding: 4.5vh 4.5vw;
-  display: flex;
   flex-direction: column;
 
   @media #{$tablet-only} {
@@ -58,7 +57,7 @@
 }
 
 .zuc-home-inspired-section--right {
-  // flex: 60%;
+  flex: 60%;
   position: relative;
 
   @media #{$tablet-only} {
@@ -134,5 +133,4 @@
       min-height: 90px;
     }
   }
-
 }
