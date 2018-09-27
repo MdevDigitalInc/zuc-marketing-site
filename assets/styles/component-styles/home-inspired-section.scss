@@ -1,0 +1,136 @@
+/*-------------------------------------
+ * Homepage - Inspired Section
+/-------------------------------------*/
+.zuc-home-inspired-section--wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 4.5vh 4.5vw;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    padding: 4.5vw 0 4.5vw 6vw;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    padding: 4.5vw 0 4.5vw 14vw;
+  }
+
+  .zuc-home-inspired-section--subheading:after {
+    display: inline;
+    content: ' ';
+    background-image: url('../../assets/images/blob-module/graphic_line_green_small.svg');
+    background-size: 40px 28px;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(25%, -15%);
+    height: 30px;
+    width: 35px;
+  }
+
+  .zuc-home-inspired-section--heading {
+    font-family: $main-font-serif;
+    font-weight: $heading-weight;
+    color: $color-zuc-indigo;
+    font-size: 4vw;
+    width: 100%;
+    line-height: 1.3;
+
+    @media #{$laptop-up} {
+      width: 440px;
+    }
+  }
+}
+
+.zuc-home-inspired-section--left {
+  flex: 40%;
+  position: relative;
+
+  .green-waves {
+    display: none;
+
+    @media #{$laptop-up} {
+      display: inline;
+      width: 100px;
+    }
+  }
+}
+
+.zuc-home-inspired-section--right {
+  flex: 60%;
+  position: relative;
+
+  @media #{$tablet-only} {
+    padding-top: 15px;
+
+  }
+  @media #{$phone-only} {
+    padding-top: 10px;
+  }
+
+  .zuc-home-inspired-section--copy {
+    font-weight: $body-weight;
+    font-size: $font-size-body;
+    line-height: 1.3;
+
+    @media #{$laptop-up} {
+      max-width: 600px;
+    }
+  }
+
+  .zuc-btn-secondary {
+    margin-top: 30px;
+    width: 180px; // todo - fix
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: $body-weight;
+    font-size: $font-size-body;
+  }
+
+  .zuc-home-inspired-section--icons {
+    margin-bottom: 5vh;
+    text-align: center;
+
+    @media #{$tablet-only} {
+      justify-content: space-around;
+    }
+    @media #{$phone-only} {
+      justify-content: space-around;
+    }
+
+    .item {
+      margin-right: 4vw;
+      max-width: 100px;
+
+      @media #{$tablet-only} {
+        margin-right: 0;
+      }
+      @media #{$phone-only} {
+        margin-right: 0;
+      }
+
+      p {
+        @media #{$tablet-only} {
+          font-size: 3vh;
+        }
+        @media #{$phone-only} {
+          font-size: 3vh;
+        }
+      }
+    }
+    .icon {
+      @media #{$phone-only} {
+        padding: 1vh .1vw;
+        max-width: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        min-height: 50px;
+      }
+      z-index: 1;
+      max-width: 90px;
+      min-width: 90px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+  }
+}
