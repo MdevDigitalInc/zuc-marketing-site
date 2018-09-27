@@ -43,19 +43,12 @@
   flex: 40%;
   position: relative;
 
-  .zuc-home-inspired-section--green-waves {
-    position: relative;
+  .green-waves {
+    display: none;
 
-    .green-waves {
-      display: none;
-
-      @media #{$laptop-up} {
-        display: inline;
-        position: absolute;
-        top: -79px;
-        left: -225px;
-        transform: scale(0.23);
-      }
+    @media #{$laptop-up} {
+      display: inline;
+      width: 100px;
     }
   }
 }
