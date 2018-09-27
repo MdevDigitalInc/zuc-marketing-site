@@ -42,19 +42,56 @@
 
 .zuc-smarter-how-r {
   width: 100%;
+  justify-content: center;
 
   @media #{$laptop-up} {
     width: 50%;
+    justify-content: flex-end;
   }
 
   .zuc-img-container {
+    position: relative;
+
+    @media #{$tablet-only} {
+      padding-bottom: 10vw;
+    }
 
     .zuc-photo {
       position: relative;
+      max-width: 607px;
+      width: 100%;
+    
+      @media #{$laptop-up} {
+        width: 35vw;
+      }
+    
+      @media #{$desktop-up} {
+        width: 30.5vw;
+      }
     }
   
     .zuc-blob {
       position: absolute;
+      z-index: -1;
+      top: 8vw;
+      left: -6vw;
+      width: 42vw;
+      
+      @media #{$tablet-up} {
+        top: 19vw;
+        left: -8.5vw;
+        width: 96vw;
+      }
+    
+      @media #{$laptop-up} {
+        top: 8vw;
+        left: -6vw;
+        width: 48.2vw;
+      }
+    
+      @media #{$desktop-up} {
+        width: 42vw;
+      }
     }
   }
 }
