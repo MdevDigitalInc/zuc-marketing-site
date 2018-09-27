@@ -182,5 +182,73 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0;
+
+  .zuc-hero-row {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .zuc-hero-content {
+    width: 80%;
+    position: relative;
+    margin: 0  auto;
+  }
+
+  .zuc-hero-left {
+    width: 40%;
+    padding: 0 5.5vw;
+  }
+
+  .zuc-hero-right {
+    width: 60%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 10px 0;
+  }
 }
 
+// Video Row Modifier
+.zuc-hero-row.--video-row {
+  background: $white;
+  z-index: 2;
+
+  .zuc-hero-left {
+    padding: 3vw;
+    width: 30%;
+  }
+
+  .zuc-hero-right {
+    // This asinine percentage is to fix a rendering issue
+    // Thanks chrome. - LM
+    width: 71%;
+    background: $color-zuc-indigo;
+    padding: 3vw;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.zuc-hero-video-player {
+  flex-direction: column;
+
+
+  img {
+    width: 30%;
+    opacity: .6;
+  }
+
+  i {
+    font-size: 10vw;
+  }
+
+  .zuc-video-title {
+    font-size: 2vw;
+    opacity: .6;
+  }
+}
