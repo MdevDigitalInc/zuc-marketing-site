@@ -62,7 +62,6 @@
 
   @media #{$tablet-only} {
     padding-top: 15px;
-
   }
   @media #{$phone-only} {
     padding-top: 10px;
@@ -98,26 +97,6 @@
       justify-content: space-around;
     }
 
-    .item {
-      margin-right: 4vw;
-      max-width: 100px;
-
-      @media #{$tablet-only} {
-        margin-right: 0;
-      }
-      @media #{$phone-only} {
-        margin-right: 0;
-      }
-
-      p {
-        @media #{$tablet-only} {
-          font-size: 3vh;
-        }
-        @media #{$phone-only} {
-          font-size: 3vh;
-        }
-      }
-    }
     .icon {
       @media #{$phone-only} {
         padding: 1vh .1vw;
@@ -131,6 +110,27 @@
       min-width: 90px;
       max-height: 90px;
       min-height: 90px;
+    }
+  }
+
+  .item {
+    margin-right: 4vw;
+    max-width: 100px;
+
+    @media #{$tablet-only} {
+      margin-right: 0;
+    }
+    @media #{$phone-only} {
+      margin-right: 0;
+    }
+
+    p {
+      @media #{$tablet-only} {
+        font-size: 3vh;
+      }
+      @media #{$phone-only} {
+        font-size: 3vh;
+      }
     }
   }
 }
