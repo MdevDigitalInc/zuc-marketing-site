@@ -16,107 +16,86 @@
   }
 }
 
-.zuc-service-title-box {
-  background-color: #ddd;
-  width: 100%;
-  text-align: left;
-  height: 20vw;  // Just for debugging
-  
-  @media #{$tablet-up} {
-    // TODO
-  }
-
-  @media #{$laptop-up} {
-    width: 30%;
-  }
-
-  @media #{$desktop-up} {
-    // TODO
-  }
-}
-
-.zuc-bundle-box {
-  background-color: #daf;
-  width: 100%;
-
-  @media #{$tablet-up} {
-    // TODO
-  }
-
-  @media #{$laptop-up} {
-    width: 70%;
-  }
-
-  @media #{$desktop-up} {
-    // TODO
-  }
-}
-
-.zuc-furniture-box {
-  background-color: #fad;
+.zuc-service-box {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 20vw; // Just for debugging
+  position: relative;
+  overflow: hidden;
 
-  @media #{$tablet-up} {
-    width: 33%;
+  img {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
   }
 
-  @media #{$laptop-up} {
-    width: 16%;
+  &.--title {
+    background-color: #ddd;
+    text-align: left;
+  
+    @media #{$tablet-up} {
+      // TODO
+    }
+  
+    @media #{$laptop-up} {
+      width: 30%;
+    }
+  
+    @media #{$desktop-up} {
+      // TODO
+    }
   }
 
-  @media #{$desktop-up} {
-    // TODO
-  }
-}
+  &.--triple {
+    background-color: $color-zuc-darkindigo;
+    opacity: .7;
 
-.zuc-appliance-box {
-  background-color: #cffd;
-  width: 100%;
-
-  @media #{$tablet-up} {
-    width: 34%;
-  }
-
-  @media #{$laptop-up} {
-    width: 16%;
-  }
-
-  @media #{$desktop-up} {
-    // TODO
-  }
-}
-
-.zuc-home-box {
-  width: 100%;
-  background-color: #ffcd;
-
-  @media #{$tablet-up} {
-    width: 33%;
+    @media #{$tablet-up} {
+      width: 33%;
+    }
+  
+    @media #{$laptop-up} {
+      width: 16%;
+    }
+  
+    @media #{$desktop-up} {
+      // TODO
+    }
   }
 
-  @media #{$laptop-up} {
-    width: 16%;
+  &.--bundle {
+    background-color: $color-zuc-indigo;
+    opacity: .7;
+  
+    @media #{$tablet-up} {
+      // TODO
+    }
+  
+    @media #{$laptop-up} {
+      width: 70%;
+    }
+  
+    @media #{$desktop-up} {
+      // TODO
+    }
   }
 
-  @media #{$desktop-up} {
-    // TODO
-  }
-}
-
-.zuc-combo-box {
-  background-color: #cdff;
-  width: 100%;
-
-  @media #{$tablet-up} {
-    // TODO
-  }
-
-  @media #{$laptop-up} {
-    width: 52%;
-  }
-
-  @media #{$desktop-up} {
-    // TODO
+  &.--combo {
+    background-color: $color-zuc-salmon;
+    opacity: .7; 
+  
+    @media #{$tablet-up} {
+      // TODO
+    }
+  
+    @media #{$laptop-up} {
+      width: 52%;
+    }
+  
+    @media #{$desktop-up} {
+      // TODO
+    } 
   }
 }
