@@ -2,6 +2,10 @@
   padding: 15vw 7vw;
   flex-direction: column-reverse;
 
+  @media #{$tablet-up} {
+    padding: 12vw 6vw 13vw;
+  }
+
   @media #{$laptop-up} {
     padding: 13vw 0 6vw;
     flex-direction: row;
@@ -57,6 +61,7 @@
 .zuc-benefit-bubble {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 17px;
 
   .zuc-bubble-text {
@@ -64,8 +69,12 @@
     color: $color-zuc-concrete;
     margin-top: 25px;
 
+    // Font override to make it snug on small screens
+    font-size: 3vw;
+
     @media #{$tablet-up} {
       margin-bottom: 2vw;
+      font-size: inherit;
     }
   
     @media #{$laptop-up} {
