@@ -8,11 +8,11 @@
   }
 
   @media #{$laptop-up} {
-    // TODO
+    padding: 8vw 8%;
   }
 
   @media #{$desktop-up} {
-    padding: 8vw 8%;
+    // TODO
   }
 }
 
@@ -20,17 +20,18 @@
   background-color: #ddd;
   width: 100%;
   text-align: left;
-
+  height: 20vw;  // Just for debugging
+  
   @media #{$tablet-up} {
     // TODO
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 30%;
   }
 
   @media #{$desktop-up} {
-    width: 20%;
+    // TODO
   }
 }
 
@@ -43,28 +44,29 @@
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 70%;
   }
 
   @media #{$desktop-up} {
-    width: 80%;
+    // TODO
   }
 }
 
 .zuc-furniture-box {
   background-color: #fad;
   width: 100%;
+  height: 20vw; // Just for debugging
 
   @media #{$tablet-up} {
     width: 33%;
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 16%;
   }
 
   @media #{$desktop-up} {
-    width: 16%;
+    // TODO
   }
 }
 
@@ -77,11 +79,11 @@
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 16%;
   }
 
   @media #{$desktop-up} {
-    width: 16%;
+    // TODO
   }
 }
 
@@ -94,11 +96,11 @@
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 16%;
   }
 
   @media #{$desktop-up} {
-    width: 16%;
+    // TODO
   }
 }
 
@@ -111,10 +113,10 @@
   }
 
   @media #{$laptop-up} {
-    // TODO
+    width: 52%;
   }
 
   @media #{$desktop-up} {
-    width: 52%;
+    // TODO
   }
 }
