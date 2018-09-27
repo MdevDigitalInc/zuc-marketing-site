@@ -26,3 +26,5 @@ function importAll(r) {
 // Import all fonts
 const fonts = importAll(require.context('./assets/fonts', false, /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/));
 
+// Import Image
+const sliderBg = require( './assets/images/shapes/hero-slider-bg.svg' );
