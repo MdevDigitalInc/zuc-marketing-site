@@ -1,9 +1,10 @@
 .zuc-service-plans-box {
-  padding: 0;
+  padding: 38vw 0;
   position: relative;
+  text-align: center;
 
   @media #{$tablet-up} {
-    // TODO
+    padding: 30.5vw 0;
   }
 
   @media #{$laptop-up} {
@@ -11,13 +12,14 @@
   }
 
   @media #{$desktop-up} {
-    padding: 0 8%;
+    padding: 8vw 8%;
   }
 }
 
 .zuc-service-title-box {
   background-color: #ddd;
   width: 100%;
+  text-align: left;
 
   @media #{$tablet-up} {
     // TODO
@@ -54,7 +56,7 @@
   width: 100%;
 
   @media #{$tablet-up} {
-    // TODO
+    width: 33%;
   }
 
   @media #{$laptop-up} {
@@ -71,7 +73,7 @@
   width: 100%;
 
   @media #{$tablet-up} {
-    // TODO
+    width: 34%;
   }
 
   @media #{$laptop-up} {
@@ -88,7 +90,7 @@
   background-color: #ffcd;
 
   @media #{$tablet-up} {
-    // TODO
+    width: 33%;
   }
 
   @media #{$laptop-up} {
