@@ -10,10 +10,6 @@
   @media #{$laptop-up} {
     padding: 8vw 8%;
   }
-
-  @media #{$desktop-up} {
-    // JIC
-  }
 }
 
 .zuc-service-box {
@@ -46,10 +42,6 @@
       width: 30%;
       padding: 4.5vw 3.5vw;
     }
-  
-    @media #{$desktop-up} {
-      // JIC
-    }
   }
 
   &.--bundle {
@@ -62,10 +54,6 @@
     @media #{$laptop-up} {
       width: 70%;
       height: auto;
-    }
-  
-    @media #{$desktop-up} {
-      // JIC
     }
   }
 
