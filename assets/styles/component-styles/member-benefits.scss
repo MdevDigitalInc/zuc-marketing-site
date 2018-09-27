@@ -1,0 +1,69 @@
+.zuc-member-benefits {
+  padding: 5vw 15vw;
+}
+
+.zuc-blog-title-container {
+  // Override h4
+  h4 {
+    margin: 0;
+  }
+
+  margin-bottom: 3.5vw;
+
+  @media #{$tablet-up} {
+    margin-bottom: 2vw;
+  }
+
+  @media #{$laptop-up} {
+    margin-bottom: 1.25vw;
+  }
+}
+
+.zuc-benefit-bubble-box {
+  order: 2;
+
+  @media #{$laptop-up} {
+    order: 0;
+  }
+}
+
+.zuc-benefit-bubble {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+
+  .zuc-bubble {
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    background-color: $color-zuc-concrete;
+  }
+
+  .zuc-bubble-text {
+    text-align: center;
+    color: $color-zuc-concrete;
+    margin-top: 25px;
+  }
+
+  &.--big {
+    padding: 0 5px;
+
+    .zuc-bubble-text {
+      color: $color-zuc-darkindigo;
+    }
+
+    .zuc-bubble {
+      width: 267px;
+      height: 267px;
+    }
+  }
+}
+
+.zuc-benefit-blurb {
+  width: 22%;
+  margin-left: 4.3vw;
+
+  p {
+    padding-bottom: 1.5vw;
+  }
+}
