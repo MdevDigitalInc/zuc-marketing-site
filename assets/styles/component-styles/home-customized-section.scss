@@ -1,7 +1,7 @@
 /*-------------------------------------
  * Home Customized Section.
 /-------------------------------------*/
-.zuc-home-customized-section--wrapper::before {
+.zuc-home-customized-section--wrapper:before {
   // ToDo: we may want to add something here to fix how this section connects to the video header.
 }
 
@@ -9,14 +9,14 @@
   width: 100%;
   margin: 0;
   z-index: 99;
-  padding: 0 14vw 14vh 14vw;
+  padding: 0 14vw 14vh;
   display: flex;
   flex-direction: column;
   position: relative;
 
   @media #{$tablet-only} {
     padding: 0 0 4.5vh 6vw;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media #{$laptop-up} {
@@ -106,7 +106,7 @@
 
   .icon {
     @media #{$phone-only} {
-      padding: 1vh 0.1vw;
+      padding: 1vh .1vw;
     }
     z-index: 1;
     width: 100px;
