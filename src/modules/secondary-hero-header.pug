@@ -1,14 +1,42 @@
-section.zuc-secondary-header
-  // Media container
-  .zuc-hero-media-container
-    // Video or Image ( Image can also be added as BKG to above container )
-    video(
-      class="zuc-hero-video"
-      poster="https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg"
-      style="background-image: url('https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg'); background-size: cover;"
-      preload="auto" autoplay muted loop )
+-
+  var introText = [
+    'Smarter Living is about choices that make life more comfortable and convenient. We take the stress out of home ownership with professional services and innovatiave products designed to protect your budget while delivering peace of mind for you and your family.',
+    'Smarter Living provides new technologies so you can securely connect all of your home systems to control your home’s lighting, climate, entertainments and security in one easy-to-use application. Discover how easy it is to enjoy Smarter Living with Zucora Home.'
+  ]
+-
+  var videoText = 'When you choose a Smarter Living Plan, you are making responsible choices that have a positive impact on your finances, your family’s well-being, and the environment within your home and your communities.'
 
-      //- At least two sources plz
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.webm" type="video/webm")
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.mp4" type="video/mpr")
+section.zuc-secondary-header
+  // Hero Content - Wrapper
   .zuc-hero-content
+    // Top Content
+    .zuc-hero-row.flex.flex-vert-center
+      .zuc-hero-left
+        h1.u-font-serif
+          |What is Smarter Living?
+        p
+          |#{introText[0]}
+        p
+          |#{introText[1]}
+        a.zuc-btn.zuc-btn-secondary.u-uppercase(href="#" title="TODO")
+          |See All Plans
+      .zuc-hero-right
+        img(src="https://via.placeholder.com/1280x845" title="TODO")
+    // Bottom Video
+    .zuc-hero-row.flex.flex-vert-center.--video-row
+      .zuc-hero-left
+        h1.u-font-serif
+          |To live smarter offers security.
+        p
+          |#{videoText}
+      .zuc-hero-right
+        .zuc-video-player
+          // Images
+          img(src='../../assets/images/ZucoraHome-brand-white.svg')
+          // Play Button
+          i.far.fa-play-circle
+          // video Title
+          .zuc-video-title
+            |Choose to protect your home and your family.
+
+include ../modals/modal-smarter-video.pug
