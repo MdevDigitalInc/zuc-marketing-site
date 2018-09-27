@@ -32,9 +32,8 @@
   }
 
   &.--title {
-    background-color: #ddd;
     text-align: left;
-  
+
     @media #{$tablet-up} {
       // TODO
     }
@@ -49,8 +48,6 @@
   }
 
   &.--triple {
-    background-color: $color-zuc-darkindigo;
-    opacity: .7;
 
     @media #{$tablet-up} {
       width: 33%;
@@ -66,8 +63,6 @@
   }
 
   &.--bundle {
-    background-color: $color-zuc-indigo;
-    opacity: .7;
   
     @media #{$tablet-up} {
       // TODO
@@ -83,8 +78,6 @@
   }
 
   &.--combo {
-    background-color: $color-zuc-salmon;
-    opacity: .7; 
   
     @media #{$tablet-up} {
       // TODO

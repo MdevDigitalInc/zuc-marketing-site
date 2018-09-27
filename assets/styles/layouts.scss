@@ -125,3 +125,75 @@
     border-color: $color-zuc-mint;
   }
 }
+
+/*
+  Global Colour Overlays
+
+  ex.
+
+    .my-div.--overlay.--o-indigo
+
+*/
+
+.--overlay {
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+    background-color: transparent; // Default is no overlay - AW
+  }
+
+  &.--o-indigo {
+    &:after {
+      background-color: $color-zuc-indigo;
+    }
+  }
+
+  &.--o-darkindigo {
+    &:after {
+      background-color: $color-zuc-darkindigo;
+    }
+  }
+
+  &.--o-lightindigo {
+    &:after {
+      background-color: $color-zuc-lightindigo;
+    }
+  }
+
+  &.--o-mint {
+    &:after {
+      background-color: $color-zuc-mint;
+    }
+  }
+
+  &.--o-salmon {
+    &:after {
+      background-color: $color-zuc-salmon;
+    }
+  }
+
+  &.--o-lilac {
+    &:after {
+      background-color: $color-zuc-lilac;
+    }
+  }
+
+  &.--o-platinum {
+    &:after {
+      background-color: $color-zuc-platinum;
+    }
+  }
+
+  &.--o-concrete {
+    &:after {
+      background-color: $color-zuc-concrete;
+    }
+  }
+}
