@@ -2,6 +2,7 @@
  * Home Customized Section.
 /-------------------------------------*/
 .zuc-home-customized-section--wrapper::before {
+  // ToDo: we may want to add something here to fix how this section connects to the video header.
 }
 
 .zuc-home-customized-section--wrapper {
@@ -68,7 +69,6 @@
     font-size: $font-size-body;
     line-height: 1.3;
 
-
     @media #{$laptop-up} {
       width: 26vw;
       max-width: 400px;
@@ -76,9 +76,8 @@
   }
 
   .zuc-btn-secondary {
-    // TODO These styles are temporary until global button styles are updated
     margin-top: 40px;
-    width: 260px; // todo - fix
+    width: 260px;
     text-align: center;
     font-weight: $body-weight;
     font-size: $font-size-body;
@@ -91,7 +90,6 @@
   position: relative;
   text-align: center;
   padding-top: 60px;
-
 
   .item {
     margin-right: 4vw;
