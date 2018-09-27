@@ -1,0 +1,118 @@
+.zuc-service-plans-box {
+  padding: 0;
+  position: relative;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    padding: 0 8%;
+  }
+}
+
+.zuc-service-title-box {
+  background-color: #ddd;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 20%;
+  }
+}
+
+.zuc-bundle-box {
+  background-color: #daf;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 80%;
+  }
+}
+
+.zuc-furniture-box {
+  background-color: #fad;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 16%;
+  }
+}
+
+.zuc-appliance-box {
+  background-color: #cffd;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 16%;
+  }
+}
+
+.zuc-home-box {
+  width: 100%;
+  background-color: #ffcd;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 16%;
+  }
+}
+
+.zuc-combo-box {
+  background-color: #cdff;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    // TODO
+  }
+
+  @media #{$laptop-up} {
+    // TODO
+  }
+
+  @media #{$desktop-up} {
+    width: 52%;
+  }
+}
