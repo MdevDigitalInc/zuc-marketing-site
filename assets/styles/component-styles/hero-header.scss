@@ -31,7 +31,7 @@
 .zuc-hero-media-container {
   width: 100%;
   position: relative;
-  height: 113vh;
+  height: 105vh;
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +125,7 @@
   line-height: 1.2;
 
   //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
-  
+
   font-size: 2.53vw;
 
   @media #{$phone-only} {
@@ -138,7 +138,7 @@
 
   @media #{$laptop-only} {
     font-size: 3vw;
-  }  
+  }
 }
 
 .zuc-shield-subtitle {
@@ -174,3 +174,13 @@
     z-index: 0;
   }
 }
+
+// Secondary Hero Header -------------
+.zuc-secondary-header {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
