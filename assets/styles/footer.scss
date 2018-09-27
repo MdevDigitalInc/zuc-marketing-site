@@ -5,8 +5,8 @@
 
 .zuc-footer-wrapper {
   padding-bottom: 25px;
-  background-image: url('../images/footer.jpeg');
-  background-position-y: bottom;
+  // background-image: url('../images/footer.jpeg');
+  // background-position-y: bottom;
 }
 
 .zuc-footer {
@@ -142,3 +142,35 @@
  * SECONDARY FOOTER
  *-------------------------------------
 */
+
+.zuc-secondary-footer-wrapper {
+  position: relative;
+  z-index: -1;
+  // top: -600px;
+
+  .zuc-secondary-footer-bkg {
+    width: 100%;
+    //@include center(both);
+    overflow: hidden;
+    z-index: -99;
+    position: relative;
+    bottom: -390px;
+    left: 0;
+
+    @media #{$tablet-lnd-only} {
+      object {
+        width: 130%;
+      }
+    }
+    @media #{$portrait} {
+      object {
+        width: 220%;
+      }
+    }
+    @media #{$phone-only} {
+      object {
+        width: 320%;
+      }
+    }
+  }
+}
