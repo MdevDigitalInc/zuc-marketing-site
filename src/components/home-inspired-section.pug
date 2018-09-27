@@ -1,0 +1,36 @@
+- var title = 'Inspired by clean homes and healthy families.'
+- var subheading = 'Convenient'
+- var text = 'Zucora Home offers environmentally responsible home wellness solutions. These naturally inspired cleaning and personal care items and bedding essentials, will empower your quest for a clean home and healthy family while having a positive impact on world around you.'
+- var button = 'See all'
+
+section.zuc-home-inspired-section--wrapper.flex
+  .zuc-home-inspired-section--left.flex-column
+    h4.zuc-home-inspired-section--subheading.u-uppercase
+      |#{subheading}
+    h2.zuc-home-inspired-section--heading
+      |#{title}
+    img.green-waves(src='../../assets/images/homepage/graphic_zigzag_green.svg' alt='Decorative lines')
+  .zuc-home-inspired-section--right.flex.flex-column.flex-hor-center
+    .zuc-home-inspired-section--icons.flex.flex-hor-start.flex-vert-start
+      .item
+        img.icon(src='../../assets/images/icons/icon-non-toxic.svg' alt='Non-Toxic')
+        p.u-bold.u-uppercase
+          | Non-Toxic
+      .item
+        img.icon(src='../../assets/images/icons/icon-clinically-tested.svg' alt='Clinically Tested')
+        p.u-bold.u-uppercase
+          |Clinically Tested
+      .item
+        img.icon(src='../../assets/images/icons/icon-sulfate-free.svg' alt='Sulfate Free')
+        p.u-bold.u-uppercase
+          |Sulfate Free
+      .item
+        img.icon(src='../../assets/images/icons/icon-animal.svg' alt='Not Tested on Animals')
+        p.u-bold.u-uppercase
+          | Not Tested on Animals
+    .zuc-home-inspired-section--copy
+      |#{text}
+    a.zuc-btn.zuc-btn-secondary(href="#")
+      |#{button}
+
+
