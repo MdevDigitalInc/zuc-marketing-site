@@ -82,6 +82,7 @@
         top: 19vw;
         left: -8.5vw;
         width: 96vw;
+        display: none; // TODO
       }
     
       @media #{$laptop-up} {
