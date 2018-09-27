@@ -1,10 +1,20 @@
 extends _layout
 
 block content
+  //- Hero Header
   include ../modules/main-hero-header.pug
-
-  //- Comment this line out if you don't wanna see review section
+  //- Customized Section
   include ../components/home-customized-section.pug
+  //- Hero Slider Module
+  include ../modules/hero-content-slider.pug
+  //- Review Section
   include ../components/review-section.pug
+  //- Inspired Section
+  include ../components/home-inspired-section.pug
+  //- Blob Module
   include ../components/blob-module.pug
+  //- Blog Module
+  include ../components/blog-module.pug
+  // Hero Slider Controller
+  script( src='./js/hero-slider.js')
 

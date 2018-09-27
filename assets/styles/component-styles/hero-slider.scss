@@ -1,0 +1,160 @@
+// Hero Content Slider
+.zuc-hero-slider {
+  width: 100%;
+  position: relative;
+  padding: 10vw 0;
+
+  .zuc-slider-bkg {
+    width: 100%;
+    @include center(both);
+    overflow: hidden;
+    z-index: -1;
+
+    @media #{$tablet-lnd-only} {
+      object {
+        width: 130%;
+      }
+    }
+    @media #{$portrait} {
+      object {
+        width: 220%;
+      }
+    }
+    @media #{$phone-only} {
+      object {
+        width: 320%;
+      }
+    }
+  }
+}
+
+// Container for Slides
+.zuc-slider-container {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+// Individual Slide
+.zuc-slide {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all .5s;
+  transform: translate3d(100%, 0, 0);
+
+  @media #{$portrait} {
+    flex-wrap: wrap;
+  }
+}
+
+// Active Slide
+.--active-slide {
+  position: absolute;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+// Slide Image
+.zuc-slide-media {
+  width: 60%;
+  position: relative;
+  padding-top: 36%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+
+  @media #{$tablet-lnd-only} {
+    width: 100%;
+    padding-top: 50%;
+  }
+  @media #{$portrait} {
+    width: 100%;
+    padding-top: 60%;
+  }
+}
+
+// Slide Content
+.zuc-slide-content {
+  width: 30%;
+  background: $white;
+  padding: 3vw 4vw 3vw 3vw;
+  position: relative;
+
+  @media #{$tablet-only} {
+    width: 100%;
+  }
+  @media #{$portrait} {
+    width: 100%;
+    padding: 9vw;
+  }
+  @media #{$phone-only} {
+    padding: 15vw 9vw;
+  }
+
+  &:before {
+    @include pseudo();
+    background: $color-zuc-salmon;
+    width: 30%;
+    right: 0;
+    top: -10%;
+    bottom: -10%;
+    z-index: -1;
+
+    @media #{$portrait} {
+      display: none;
+    }
+  }
+
+  &:after {
+    @include pseudo();
+    z-index: 2;
+    width: 186px;
+    height: 12px;
+    background: $color-zuc-mint;
+    right: -93px;
+    top: 60px;
+
+    @media #{$portrait} {
+      right: auto;
+      top: 30px;
+    }
+  }
+
+  .zuc-slide-text {
+    color: $color-text-grey;
+    padding: 1vw 0 2vw;
+  }
+}
+
+// Slide Controls
+$control-width: 20px;
+.zuc-slider-controls {
+  position: relative;
+  margin-top: 3vw;
+  z-index: 20;
+
+  .zuc-slide-selector {
+    width: $control-width;
+    height: $control-width;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid $white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    transition: all .4s;
+    cursor: pointer;
+    margin: 0 9px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $white;
+      box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+    }
+  }
+
+  .--active {
+    background: $white;
+  }
+}
+
