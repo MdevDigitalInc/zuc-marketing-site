@@ -1,29 +1,56 @@
 .zuc-member-benefits {
-  padding: 5vw 15vw;
+  padding: 15vw 7vw;
+  flex-direction: column-reverse;
+
+  @media #{$laptop-up} {
+    padding: 13vw 0 6vw;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-.zuc-blog-title-container {
-  // Override h4
-  h4 {
-    margin: 0;
-  }
-
-  margin-bottom: 3.5vw;
+.zuc-benefit-blurb {
+  width: 100%;
+  margin-left: 0;
+  padding-bottom: 7.5vw;
 
   @media #{$tablet-up} {
-    margin-bottom: 2vw;
+    width: 56vw;
   }
 
   @media #{$laptop-up} {
-    margin-bottom: 1.25vw;
+    width: 22vw;
+    margin-left: 4.3vw;
   }
-}
 
-.zuc-benefit-bubble-box {
-  order: 2;
+  p {
+    padding-bottom: 5vw;
 
-  @media #{$laptop-up} {
-    order: 0;
+    @media #{$tablet-up} {
+      padding-bottom: 3vw;
+    }
+
+    @media #{$laptop-up} {
+      padding-bottom: 1.5vw;
+    }
+  }
+
+  .zuc-blog-title-container {
+
+    // Override h4
+    h4 {
+      margin: 0;
+    }
+  
+    margin-bottom: 3.5vw;
+  
+    @media #{$tablet-up} {
+      margin-bottom: 2vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin-bottom: 1.25vw;
+    }
   }
 }
 
@@ -32,17 +59,40 @@
   flex-direction: column;
   padding-top: 17px;
 
-  .zuc-bubble {
-    width: 216px;
-    height: 216px;
-    border-radius: 50%;
-    background-color: $color-zuc-concrete;
-  }
-
   .zuc-bubble-text {
     text-align: center;
     color: $color-zuc-concrete;
     margin-top: 25px;
+
+    @media #{$tablet-up} {
+      margin-bottom: 2vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin-bottom: 1.25vw;
+    }
+  }
+
+  .zuc-bubble {
+    border-radius: 50%;
+    background-color: $color-zuc-concrete;
+    width: 26vw;
+    height: 26vw;
+
+    @media #{$tablet-up} {
+      width: 25vw;
+      height: 25vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 13vw;
+      height: 13vw;
+    }
+
+    @media #{$desktop-up} {
+      width: 10vw;
+      height: 10vw;
+    }
   }
 
   &.--big {
@@ -53,17 +103,23 @@
     }
 
     .zuc-bubble {
-      width: 267px;
-      height: 267px;
+      width: 33vw;
+      height: 33vw;
+
+      @media #{$tablet-up} {
+        width: 31vw;
+        height: 31vw;
+      }
+    
+      @media #{$laptop-up} {
+        width: 18vw;
+        height: 18vw;
+      }
+
+      @media #{$desktop-up} {
+        width: 14vw;
+        height: 14vw;
+      }
     }
-  }
-}
-
-.zuc-benefit-blurb {
-  width: 22%;
-  margin-left: 4.3vw;
-
-  p {
-    padding-bottom: 1.5vw;
   }
 }
