@@ -183,25 +183,59 @@
   background-position: center;
   padding: 100px 0;
 
+  @media #{$portrait} {
+    padding: 100px 0 0;
+  }
+
   .zuc-hero-row {
     width: 100%;
     position: relative;
     z-index: 1;
+
+    @media #{$portrait} {
+      flex-wrap: wrap;
+    }
   }
 
   .zuc-hero-content {
     width: 80%;
     position: relative;
     margin: 0  auto;
+
+    @media #{$tablet-lnd-only} {
+      width: 90%;
+    }
+    @media #{$laptop-only} {
+      width: 90%;
+    }
+    @media #{$portrait} {
+      width: 100%;
+    }
   }
 
   .zuc-hero-left {
     width: 40%;
-    padding: 0 5.5vw;
+    padding: 0 2.2vw;
+    position: relative;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+      text-align: center;
+
+      h5,
+      p {
+        text-align: left;
+      }
+    }
   }
 
   .zuc-hero-right {
     width: 60%;
+
+    @media #{$portrait} {
+      width: 100%;
+    }
   }
 
   img {
@@ -209,18 +243,51 @@
   }
 
   p {
-    margin: 10px 0;
+    margin: 1.5vw 0;
+  }
+
+  .--img-position {
+    position: relative;
+    bottom: -5vw;
+    z-index: -1;
   }
 }
 
 // Video Row Modifier
 .zuc-hero-row.--video-row {
   background: $white;
+  margin-top: 60px;
   z-index: 2;
+  position: relative;
+
+  @media #{$portrait} {
+    margin-top: 0;
+  }
+
+  h5 {
+    @media #{$tablet-prt-only} {
+      width: 50%;
+    }
+  }
 
   .zuc-hero-left {
     padding: 3vw;
     width: 30%;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+      text-align: left;
+    }
+
+    @media #{$tablet-prt-only} {
+      display: flex;
+      flex-wrap: wrap;
+
+      p {
+        width: 50%;
+      }
+    }
   }
 
   .zuc-hero-right {
@@ -231,24 +298,70 @@
     padding: 3vw;
     text-align: center;
     color: $white;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+    }
+  }
+
+  .--wave-position {
+    position: absolute;
+    right: 0;
+    top: 3vw;
+    width: 200px;
+    transform: translate3d(50%, 0, 0);
+
+    @media #{$portrait} {
+      position: relative;
+      top: auto;
+      right: auto;
+      left: 0;
+      transform: translate3d(0, 0, 0);
+      margin: 5px 0 15px;
+      width: 140px;
+    }
+    @media #{$tablet-prt-only} {
+      display: block;
+    }
   }
 }
 
+// Fake Video Player
 .zuc-hero-video-player {
   flex-direction: column;
+  padding: 0 20%;
+
+  @media #{$portrait} {
+    padding: 5vw;
+  }
 
 
   img {
-    width: 30%;
+    width: 70%;
     opacity: .6;
+
+    @media #{$portrait} {
+      width: 90%;
+    }
   }
 
-  i {
-    font-size: 10vw;
+  .--play-icon {
+    width: 25%;
+    margin: 20px 0;
+
+    @media #{$portrait} {
+      width: 40%;
+    }
   }
 
   .zuc-video-title {
-    font-size: 2vw;
+    font-size: 2.5vw;
     opacity: .6;
+    font-weight: 300;
+
+    @media #{$portrait} {
+      font-size: 6.2vw;
+    }
   }
 }

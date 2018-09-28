@@ -26,6 +26,7 @@
     letter-spacing: 1px;
   }
 
+
   i {
     margin-left: 10px;
   }
@@ -63,6 +64,9 @@
   @media #{$portrait} {
     font-size: 4vw;
     padding: 2vw 2vw 1.3vw;
+  }
+  @media #{$portrait} {
+    padding: 3vw 3.3vw;
   }
 
   &:hover,

@@ -6,37 +6,38 @@
 -
   var videoText = 'When you choose a Smarter Living Plan, you are making responsible choices that have a positive impact on your finances, your family’s well-being, and the environment within your home and your communities.'
 -
-  var title = 'What is <br> Smarter Living'
+  var title = 'What is Smarter Living?'
 
 section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
   // Hero Content - Wrapper
   .zuc-hero-content
     // Top Content
-    .zuc-hero-row.flex.flex-vert-center
+    .zuc-hero-row.flex.flex-vert-end
       .zuc-hero-left
-        h1.u-font-serif.u-zuc-indigo
+        h5.u-font-serif.u-zuc-indigo
           |!{title}
-        p.u-color-grey
+        p.u-zuc-darkindigo
           |#{introText[0]}
-        p.u-color-grey
+        p.u-zuc-darkindigo
           |#{introText[1]}
-        a.zuc-btn.zuc-btn-secondary.u-uppercase(href="#" title="TODO")
+        a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
           |See All Plans
       .zuc-hero-right
-        img(src="https://via.placeholder.com/1280x845" title="TODO")
+        img.--img-position(src='https://via.placeholder.com/1280x845' title="TODO")
     // Bottom Video
     .zuc-hero-row.flex.flex-vert-stretch.--video-row.u-soft-shadow
       .zuc-hero-left
-        h1.u-font-serif.u-zuc-indigo
+        h5.u-font-serif.u-zuc-indigo
           |To live smarter offers security.
-        p
+        p.u-ultralight.u-zuc-darkindigo
+          img.--wave-position(src='../../assets/images/shapes/zigzag-coral.svg')
           |#{videoText}
       .zuc-hero-right.flex.flex-vert-stretch.flex-hor-center
         .zuc-hero-video-player.flex.flex-wrap.flex-vert-center.flex-hor-between
           // Images
           img(src='../../assets/images/ZucoraHome-brand-white.svg')
           // Play Button
-          i.far.fa-play-circle
+          img.--play-icon(src='../../assets/images/icons/icon-play.svg')
           // video Title
           .zuc-video-title.u-font-serif
             |Choose to protect your home and your family.
