@@ -22,7 +22,7 @@ h4,.h4,
 h5,.h5,
 h6,.h6, {
   font-family: $main-font;
-  font-weight: 700;
+  font-weight: 300;
   color: inherit;
   margin-bottom: 25px;
 }
@@ -31,52 +31,63 @@ h6,.h6, {
 $p-font-sizes: (
   //- Tweaked for ZUC - A.
   null  : 3.3vw,
-  $tablet-up  : 1.7vw,
+  $tablet-up  : 2.34vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1.2vw,
-  $desktop-up : .9vw
-);
-// Large Body
-$body-large: (
-  null : 1.05vw,
-  $portrait : 2.2vw
+  $desktop-up : .9vw,
+  $xl-up : 1vw
 );
 
 $h1-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 9.5vw,
-  $tablet-up : 7vw,
-  $laptop-up : 4.5vw,
-  $desktop-up: 4.04vw
+  null  : 9.07vw,
+  $tablet-up : 7.8vw,
+  $tablet-lnd-only : 5.9vw,
+  $laptop-up : 3.89vw,
+  $desktop-up: 3.125vw
 );
 
 $h2-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 7vw,
-  $portrait: 6vw,
-  $tablet-up : 5vw,
-  $laptop-up : 2.8vw,
-  $desktop-up: 2.37vw
+  null  : 8vw,
+  $tablet-up : 6.11vw,
+  $tablet-lnd-only : 4.6vw,
+  $laptop-up : 3vw,
+  $desktop-up: 2.44vw
 );
 
 $h3-font-sizes: (
-  null  : 4.1vw,
-  $portrait: 6vw
+  null  : 8vw,
+  $tablet-up: 5.2vw,
+  $tablet-lnd-only : 4vw,
+  $laptop-up : 2.08vw
 );
 
 $h4-font-sizes: (
-  null  : 1.25vw,
-  $portrait: 3.2vw
+  null  : 4.27vw,
+  $tablet-up : 2.6vw,
+  $tablet-lnd-only : 2vw,
+  $laptop-up : 1.84vw,
+  $desktop-up : 1.04vw,
+  $xl-up: 1.44vw
 );
 
 $h5-font-sizes: (
-  null  : 1.25vw,
-  $portrait: 3.2vw
+  null  : 7vw,
+  $tablet-only : 8vw,
+  $tablet-lnd-only : 5vw,
+  $laptop-up : 4.6vw,
+  $desktop-up : 4.17vw,
+  $xl-up : 3.13vw
 );
 
 $h6-font-sizes: (
-  null  : .83vw,
-  $portrait: 2vw
+  null  : 3.9vw,
+  $tablet-up : 2.08vw,
+  $tablet-lnd-only : 1.6vw,
+  $laptop-up : 1.1vw,
+  $desktop-up : .72vw,
+  $xl-up : 1vw
 );
 
 // Links
@@ -162,6 +173,32 @@ a {
   }
 }
 
-.zuc-large-body {
-  @include font-size($body-large);
+// Typography Testing
+.test-typography {
+  width: 60%;
+  margin: 300px auto 200px;
+
+  @media #{$portrait} {
+    width: 90%;
+  }
+}
+
+/* stylelint-disable */
+
+$zuc-body-small-font-sizes: (
+  null  : 3vw,
+  $tablet-up  : 2vw,
+  $tablet-lnd-only : 1.5vw,
+  $laptop-up : 1vw,
+  $desktop-up : .8vw,
+  $xl-up : .9vw
+);
+
+/* stylelint-enable */
+
+.zuc-body-small {
+  line-height: 1.25;
+  font-weight: 100;
+
+  @include font-size($zuc-body-small-font-sizes);
 }

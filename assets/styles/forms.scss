@@ -15,6 +15,12 @@ form {
 
 $border-color-active: rgba(15, 22, 24, 1);
 $border-color-passive: rgba(15, 22, 24, 0);
+
+$form-text-color: $color-zuc-darkindigo;
+$form-bg-color: $bkg-light-grey;
+$form-border-color: #707070;
+$form-placeholder-color: $color-text-grey;
+
 input {
   &[type="text"],
   &[type="email"],
@@ -25,12 +31,12 @@ input {
     width: 100%;
     height: 63px;
     border-radius: 4px;
-    background-color: $white;
-    border: solid 3px #707070;
+    background-color: $form-bg-color;
+    border: solid 3px $form-border-color;
     font-family: $main-font;
     padding: 0 1vw;
     margin-top: .4vw;
-    color: #36384b;
+    color: $form-text-color;
 
     @media #{$portrait} {
       padding: 0 2vw;
@@ -40,9 +46,10 @@ input {
     &:hover,
     &:focus,
     &:active {
-      border: solid 3px #36384b;
+      border: solid 3px $color-zuc-darkindigo;
     }
 
+    // Not currently used
     &.--filled {
       border-top: 4px solid $border-color-passive;
       border-bottom: 4px solid $border-color-active;
@@ -50,10 +57,12 @@ input {
     }
 
     &::placeholder {
-      color: $color-brand-bkg;
+      color: $form-placeholder-color;
     }
   }
 }
+
+// TODO textarea
 
 textarea {
   width: 100%;
@@ -86,6 +95,8 @@ textarea {
   }
 }
 
+/* stylelint-enable */
+
 .zuc-forms-container {
   padding: 0 6vw;
 
@@ -95,8 +106,11 @@ textarea {
 }
 
 .zuc-input-name {
-  margin-top: 2.1vw;
+  margin-top: 4vw;
   font-size: 3.2vw;
+  text-transform: capitalize;
+  color: $form-text-color;
+  font-weight: $medium-weight;
 
   @media #{$tablet-up} {
     margin-top: 1.8vw;
@@ -118,7 +132,9 @@ textarea {
   }
 }
 
-/* stylelint-enable */
+.zuc-form-action {
+  padding: 5vw 0;
+}
 
 /*
 
@@ -182,7 +198,6 @@ textarea {
 }
 
 /*
-
     <<< Radio Buttons >>>
 
     Format:
@@ -204,7 +219,7 @@ textarea {
   justify-content: flex-start;
   margin-top: .5vw;
   font-size: 24px;
-  color: $color-text-grey;
+  color: $color-zuc-concrete;
 
   @media #{$tablet-up} {
     justify-content: flex-start;
@@ -213,7 +228,7 @@ textarea {
 
   .zuc-radio-group {
     &:nth-child( n+2 ) {
-      padding-left: 40%;
+      padding-left: 40%; // TODO smelly padding
     }
 
     @media #{$tablet-up} {
@@ -225,30 +240,88 @@ textarea {
 }
 
 /*
-      <<< Select Inputs >>>
+  <<< Select Inputs >>>
+
+  Note: Wrap all <select> objects in a <div class=".zuc-select-container">
+  
 */
 
 .zuc-select-container {
   position: relative;
   width: 100%;
   height: 63px;
-  border-radius: 4px;
-  background-color: $white;
-  border: solid 3px #707070;
-  font-family: $main-font;
-  padding: 0 1vw;
+  background: $form-bg-color;
   margin-top: .5vw;
-  color: #36384b;
 
   @media #{$portrait} {
-    padding: 0 2vw;
+    margin-top: .9vw;
   }
-
-  &:focus {
-    outline: none;
+  
+  // This is the little arrow on the dropdown button
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    right: 17px;
+    bottom: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 10px 8px 0 8px; // <triangle height> <width left> 0 <width right>
+    border-color: $color-zuc-darkindigo transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  // This is the small block of background behind the dropdown arrow
+  &:before {
+    width: 44px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: $form-bg-color;
+    content: '';
+    pointer-events: none;
+  }
+  
+  &:hover {
+    &:before {
+      background: $bkg-light-grey;
+    }
   }
 
   select {
-    display: none; /*hide original SELECT element:*/
+    box-shadow: none;
+    border-radius: 4px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-right: 35px;
+    padding-left: 15px;
+    color: $form-text-color;
+    border: 3px solid $form-border-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: solid 3px $color-zuc-darkindigo;
+      outline: none;
+    }
+
+    // This is the equivalent to placeholder for <select>
+    &:invalid {
+
+      &:required {
+        color: $form-placeholder-color;
+      }
+    }
+
+    // Hide the placeholder value once anything else is chosen
+    option[value=""][disabled] {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,142 @@
+.zuc-service-plans-box {
+  padding: 0 0 38vw;
+  position: relative;
+  text-align: center;
+
+  @media #{$tablet-only} {
+    padding: 0 0 30.5vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0 8% 8vw;
+  }
+}
+
+.zuc-service-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .zuc-title-container {
+    white-space: nowrap;
+  }
+
+  .zuc-box-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+  }
+
+  .zuc-block-img {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+  }
+
+  .zuc-block-badge {
+    width: 60vw;
+    position: absolute;
+    z-index: -4;
+
+    @media #{$tablet-up} {
+      width: 39.5vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 20.2vw;
+    }
+  }
+
+  .zuc-green-bar {
+    display: none;
+
+    @media #{$laptop-up} {
+      display: flex;
+      position: relative;
+      left: 3vw;
+      width: 8.5vw;
+    }
+
+    @media #{$desktop-up} {
+      left: 8.939vw;
+      width: 8.5vw;
+    }
+  }
+
+  &.--title {
+    text-align: left;
+    padding: 8vw 5vw;
+    overflow: visible;
+
+    p {
+      padding-bottom: 3vw;
+    }
+
+    @media #{$tablet-up} {
+      padding: 7vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 30%;
+      padding: 4.5vw 3.5vw;
+    }
+  }
+
+  &.--bundle {
+    height: 96vw;
+  
+    @media #{$tablet-up} {
+      height: 69.4vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  &.--triple {
+    height: 66.25vw;
+
+    h3 {
+      padding: 0 3vw 1vw;
+    }
+
+    @media #{$tablet-up} {
+      width: 33.33%;
+      height: 57.7vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 16%;
+      height: 30vw;
+    }
+  
+    @media #{$desktop-up} {
+      height: 22.4vw;
+    }
+  }
+
+  &.--combo {
+    height: 110vw;
+  
+    @media #{$tablet-up} {
+      height: 57.7vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 52%;
+      height: 30vw;
+    }
+  
+    @media #{$desktop-up} {
+      height: 22.4vw;
+    } 
+  }
+}

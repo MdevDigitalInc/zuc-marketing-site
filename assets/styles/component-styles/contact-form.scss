@@ -2,44 +2,39 @@
   Contact Styles - AW 2018-09-21
 -----*/
 
+// Variable to keep consistent alignment of section items
+$ss-padding: 8vw;
+
 .zuc-contact-blurb-container {
-  
-  padding-left: 7%;
-  padding-right: 7%;
-  text-align: center;
+
+  padding: 0 $ss-padding;
+  text-align: left;
 
   @media #{$laptop-up} {
-    padding-left: 8vw;
     padding-right: 0;
-    text-align: left;
+  }
+
+  .--nudge {
+    padding-top: 25px;
   }
 }
 
 .zuc-contact-title {
-  text-align: center;
-  padding-left: 0;
-
-  @media #{$laptop-up} {
-    text-align: left;
-    padding-left: 8vw;
-  }
-}
-
-.zuc-contact-subtitle {
-  color: $color-text-grey;
+  text-align: left;
+  padding-left: $ss-padding;
 }
 
 .zuc-contact-image-container {
   position: relative;
   padding-top: 0;
   max-width: none;
-  display: flex;
-  justify-content: center;
+  display: block;
+  padding-left: 8vw;
 
   @media #{$laptop-up} {
     padding-top: 80px;
     max-width: 700px;
-    display: block;
+    padding-left: 0;
   }
 
   .zuc-contact-image {
@@ -54,9 +49,13 @@
   .zuc-contact-badge {
     display: block;
     position: static;
-    width: 17vw;
+    width: 28vw;
     margin-top: 34px;
     margin-bottom: 52px;
+
+    @media #{$tablet-up} {
+      width: 18vw;
+    }
 
     @media #{$laptop-up} {
       position: absolute;
@@ -79,16 +78,12 @@
 }
 
 .zuc-contact-forms-container {
-  padding-left: 7.3%;
-  padding-right: 7.3%; 
+  padding: 0 $ss-padding;
 
   @media #{$laptop-up} {
-    padding-right: 13.5vw;
+    padding-left: 15px;
+    padding-right: $ss-padding;
   }
 }
 
-.zuc-contact-btn {
-  @media #{$laptop-up} {
-    display: block;
-  }
-}
+
