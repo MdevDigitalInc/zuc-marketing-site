@@ -200,7 +200,7 @@
   .zuc-hero-content {
     width: 80%;
     position: relative;
-    margin: 0  auto;
+    margin: 0 auto;
 
     @media #{$tablet-lnd-only} {
       width: 90%;
@@ -321,8 +321,13 @@
       margin: 5px 0 15px;
       width: 140px;
     }
+
     @media #{$tablet-prt-only} {
       display: block;
+    }
+
+    @media #{$tablet-lnd-only} {
+      width: 150px;
     }
   }
 }
