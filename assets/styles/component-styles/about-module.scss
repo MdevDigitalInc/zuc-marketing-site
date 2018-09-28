@@ -2,13 +2,13 @@
   flex-direction: column;
   position: relative;
   align-items: center;
+  padding: 0 8vw 300px;
+  margin-top: 250px;
 
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 8vw 300px;
-    margin-top: 250px;
   }
 }
 
@@ -56,8 +56,8 @@
   }
 
   a {
-    width: 45vw;
     text-align: center;
+    width: 45vw;
 
     @media #{$tablet-only} {
       width: 24vw;
