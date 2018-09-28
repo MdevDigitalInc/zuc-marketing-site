@@ -148,6 +148,12 @@
   z-index: -1;
   // top: -600px;
 
+  .zuc-footer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .zuc-footer--brand-section {
+    background-color: rgba(0, 0, 0, 0);
+  }
   .zuc-secondary-footer-bkg {
     width: 100%;
     //@include center(both);
