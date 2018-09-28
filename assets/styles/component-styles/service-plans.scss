@@ -40,11 +40,15 @@
   }
 
   .zuc-block-badge {
-    width: 20.2vw;
+    width: 60vw;
+    position: absolute;
+    z-index: -4;
+
+    @media #{$tablet-up} {
+      width: 39.5vw;
+    }
 
     @media #{$laptop-up} {
-      position: absolute;
-      z-index: -4;
       width: 20.2vw;
     }
   }
