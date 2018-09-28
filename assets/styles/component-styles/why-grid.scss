@@ -1,17 +1,17 @@
 .zuc-why-grid-section-container {
   position: relative;
-  padding: 200px 5vw 80px;
+  padding: 0 5vw 80px;
 
   @media #{$tablet-up} {
-    padding: 200px 7vw 80px;
+    padding: 0 7vw 80px;
   }
 
   @media #{$laptop-up} {
-    padding: 200px 20vw 80px;
+    padding: 0 20vw 80px;
   }
 
   @media #{$desktop-up} {
-    padding: 200px 24vw 80px;
+    padding: 0 24vw 80px;
   }
 }
 

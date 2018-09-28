@@ -4,14 +4,14 @@
 /-------------------------------------*/
 
 .zuc-review-section {
-  padding: 60vw 0 180px;
+  padding-bottom: 25vw;
 
   @media #{$tablet-up} {
-    padding: 366px 0;
+    padding-bottom: 11.5vw;
   }
 
   @media #{$laptop-up} {
-    padding: 180px 0;
+    padding-bottom: 10.7vw;
   }
 }
 
@@ -24,6 +24,10 @@
   }
 
   @media #{$laptop-up} {
+    width: 50%;
+  }
+
+  @media #{$desktop-up} {
     width: 44%;
   }
 }
@@ -96,17 +100,25 @@
   width: 100%;
 
   @media #{$laptop-up} {
-    position: relative;
+    position: absolute;
     width: auto;
-    top: -75%;
-    left: -65%;
+    top: -20%;
+    left: -30%;
+  }
+
+  @media #{$desktop-up} {
+    top: -20%;
+    left: -35%;
   }
 }
 
 .zuc-read-all {
-  // TODO These styles are temporary until global button styles are updated
   text-align: center;
   color: $color-zuc-lilac;
-  border: 2px $color-zuc-lilac solid;
-  border-radius: 30px;
+  border-color: $color-zuc-lilac;
+  
+  &:hover {
+    background: $color-zuc-lilac;
+    color: $color-zuc-indigo;
+  }
 }
