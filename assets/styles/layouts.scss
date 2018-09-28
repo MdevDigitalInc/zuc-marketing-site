@@ -147,6 +147,13 @@
     opacity: .7;
     z-index: -1;
     background-color: transparent; // Default is no overlay - AW
+    transition: .3s;
+  }
+
+  &:hover {
+    &:after {
+      opacity: .8;
+    }
   }
 
   &.--o-indigo {
