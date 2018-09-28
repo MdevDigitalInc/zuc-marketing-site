@@ -31,7 +31,7 @@
 .zuc-hero-media-container {
   width: 100%;
   position: relative;
-  height: 113vh;
+  height: 105vh;
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +125,7 @@
   line-height: 1.2;
 
   //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
-  
+
   font-size: 2.53vw;
 
   @media #{$phone-only} {
@@ -138,7 +138,7 @@
 
   @media #{$laptop-only} {
     font-size: 3vw;
-  }  
+  }
 }
 
 .zuc-shield-subtitle {
@@ -172,5 +172,201 @@
     background-position: center -1px;
     opacity: .2;
     z-index: 0;
+  }
+}
+
+// Secondary Hero Header -------------
+.zuc-secondary-header {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+
+  @media #{$portrait} {
+    padding: 100px 0 0;
+  }
+
+  .zuc-hero-row {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    @media #{$portrait} {
+      flex-wrap: wrap;
+    }
+  }
+
+  .zuc-hero-content {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    @media #{$tablet-lnd-only} {
+      width: 90%;
+    }
+    @media #{$laptop-only} {
+      width: 90%;
+    }
+    @media #{$portrait} {
+      width: 100%;
+    }
+  }
+
+  .zuc-hero-left {
+    width: 40%;
+    padding: 0 2.2vw;
+    position: relative;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+      text-align: center;
+
+      h5,
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .zuc-hero-right {
+    width: 60%;
+
+    @media #{$portrait} {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 1.5vw 0;
+  }
+
+  .--img-position {
+    position: relative;
+    bottom: -5vw;
+    z-index: -1;
+  }
+}
+
+// Video Row Modifier
+.zuc-hero-row.--video-row {
+  background: $white;
+  margin-top: 60px;
+  z-index: 2;
+  position: relative;
+
+  @media #{$portrait} {
+    margin-top: 0;
+  }
+
+  h5 {
+    @media #{$tablet-prt-only} {
+      width: 50%;
+    }
+  }
+
+  .zuc-hero-left {
+    padding: 3vw;
+    width: 30%;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+      text-align: left;
+    }
+
+    @media #{$tablet-prt-only} {
+      display: flex;
+      flex-wrap: wrap;
+
+      p {
+        width: 50%;
+      }
+    }
+  }
+
+  .zuc-hero-right {
+    // This asinine percentage is to fix a rendering issue
+    // Thanks chrome. - LM
+    width: 71%;
+    background: $color-zuc-indigo;
+    padding: 3vw;
+    text-align: center;
+    color: $white;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+    }
+  }
+
+  .--wave-position {
+    position: absolute;
+    right: 0;
+    top: 3vw;
+    width: 200px;
+    transform: translate3d(50%, 0, 0);
+
+    @media #{$portrait} {
+      position: relative;
+      top: auto;
+      right: auto;
+      left: 0;
+      transform: translate3d(0, 0, 0);
+      margin: 5px 0 15px;
+      width: 140px;
+    }
+
+    @media #{$tablet-prt-only} {
+      display: block;
+    }
+
+    @media #{$tablet-lnd-only} {
+      width: 150px;
+    }
+  }
+}
+
+// Fake Video Player
+.zuc-hero-video-player {
+  flex-direction: column;
+  padding: 0 20%;
+
+  @media #{$portrait} {
+    padding: 5vw;
+  }
+
+
+  img {
+    width: 70%;
+    opacity: .6;
+
+    @media #{$portrait} {
+      width: 90%;
+    }
+  }
+
+  .--play-icon {
+    width: 25%;
+    margin: 20px 0;
+
+    @media #{$portrait} {
+      width: 40%;
+    }
+  }
+
+  .zuc-video-title {
+    font-size: 2.5vw;
+    opacity: .6;
+    font-weight: 300;
+
+    @media #{$portrait} {
+      font-size: 6.2vw;
+    }
   }
 }

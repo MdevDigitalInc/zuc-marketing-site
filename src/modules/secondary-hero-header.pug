@@ -1,14 +1,45 @@
-section.zuc-secondary-header
-  // Media container
-  .zuc-hero-media-container
-    // Video or Image ( Image can also be added as BKG to above container )
-    video(
-      class="zuc-hero-video"
-      poster="https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg"
-      style="background-image: url('https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg'); background-size: cover;"
-      preload="auto" autoplay muted loop )
+-
+  var introText = [
+    'Smarter Living is about choices that make life more comfortable and convenient. We take the stress out of home ownership with professional services and innovatiave products designed to protect your budget while delivering peace of mind for you and your family.',
+    'Smarter Living provides new technologies so you can securely connect all of your home systems to control your home’s lighting, climate, entertainments and security in one easy-to-use application. Discover how easy it is to enjoy Smarter Living with Zucora Home.'
+  ]
+-
+  var videoText = 'When you choose a Smarter Living Plan, you are making responsible choices that have a positive impact on your finances, your family’s well-being, and the environment within your home and your communities.'
+-
+  var title = 'What is Smarter Living?'
 
-      //- At least two sources plz
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.webm" type="video/webm")
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.mp4" type="video/mpr")
+section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
+  // Hero Content - Wrapper
   .zuc-hero-content
+    // Top Content
+    .zuc-hero-row.flex.flex-vert-end
+      .zuc-hero-left
+        h5.u-font-serif.u-zuc-indigo
+          |!{title}
+        p.u-zuc-darkindigo
+          |#{introText[0]}
+        p.u-zuc-darkindigo
+          |#{introText[1]}
+        a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
+          |See All Plans
+      .zuc-hero-right
+        img.--img-position(src='https://via.placeholder.com/1280x845' title="TODO")
+    // Bottom Video
+    .zuc-hero-row.flex.flex-vert-stretch.--video-row.u-soft-shadow
+      .zuc-hero-left
+        h5.u-font-serif.u-zuc-indigo
+          |To live smarter offers security.
+        p.u-ultralight.u-zuc-darkindigo
+          img.--wave-position(src='../../assets/images/shapes/zigzag-coral.svg')
+          |#{videoText}
+      .zuc-hero-right.flex.flex-vert-stretch.flex-hor-center
+        .zuc-hero-video-player.flex.flex-wrap.flex-vert-center.flex-hor-between
+          // Images
+          img(src='../../assets/images/ZucoraHome-brand-white.svg')
+          // Play Button
+          img.--play-icon(src='../../assets/images/icons/icon-play.svg')
+          // video Title
+          .zuc-video-title.u-font-serif
+            |Choose to protect your home and your family.
+
+include ../modals/modal-smarter-video.pug

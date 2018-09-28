@@ -75,11 +75,19 @@
   function normalizeDropdown() {
     var mainNavDropdown = $('[data-main-navigation]'),
         navHiddenDropdown = $('[data-hidden-menu]'),
+        outerNavHeight = $('[data-nav-height]'),
         heightAdjustment = mainNavDropdown.outerHeight();
+        bodyPadding = outerNavHeight.outerHeight();
 
+    // Normalize the top distance of the dropdowns so they are flush
     navHiddenDropdown.css({
       "top": ( heightAdjustment - 0.3 ) + 'px'
     });
+    // Add margin to Body to push content down a bit
+    $('body').css({
+      "margin-top" : bodyPadding + 'px'
+    });
+
   };
 
   function activeNavigation( target ) {
