@@ -5,7 +5,18 @@
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+    padding: 0 8% 300px;
+    margin-top: 250px;
   }
+}
+
+.zuc-pear-blob {
+  position: absolute;
+  top: -592px;
+  left: 0;
+  max-width: 582px;
+  z-index: -99;
 }
 
 .zuc-about-img-box {
@@ -20,11 +31,16 @@
   width: 100%;
 
   @media #{$laptop-up} {
-    width: 46%;
+    width: 46vw;
+    margin: auto 0;
     padding: 3.25vw 5vw 2vw 2.4vw;
   }
 
   p {
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  a {
+    width: 10vw;
   }
 }
