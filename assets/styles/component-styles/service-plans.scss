@@ -19,6 +19,10 @@
   position: relative;
   overflow: hidden;
 
+  .zuc-title-container {
+    white-space: nowrap;
+  }
+
   .zuc-box-link {
     position: absolute;
     top: 0;
@@ -51,6 +55,11 @@
     @media #{$laptop-up} {
       display: flex;
       position: relative;
+      left: 3vw;
+      width: 8.5vw;
+    }
+
+    @media #{$desktop-up} {
       left: 8.939vw;
       width: 8.5vw;
     }
