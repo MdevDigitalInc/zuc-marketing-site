@@ -1,3 +1,30 @@
-h1 {
-  display: inline;
+.zuc-about-section {
+  flex-direction: column;
+  position: relative;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.zuc-about-img-box {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    max-width: 669px;
+  }
+}
+
+.zuc-about-text-box {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 46%;
+    padding: 3.25vw 5vw 2vw 2.4vw;
+  }
+
+  p {
+    margin-bottom: 4vw;
+  }
 }
