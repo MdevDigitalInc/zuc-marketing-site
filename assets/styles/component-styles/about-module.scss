@@ -1,6 +1,7 @@
 .zuc-about-section {
   flex-direction: column;
   position: relative;
+  align-items: center;
 
   @media #{$laptop-up} {
     flex-direction: row;
@@ -16,19 +17,29 @@
   top: -592px;
   left: 0;
   max-width: 582px;
+  width: 25vw; // TODO
   z-index: -99;
 }
 
 .zuc-about-img-box {
-  width: 100%;
+  max-width: 669px;
+  width: 84vw;
 
   @media #{$laptop-up} {
-    max-width: 669px;
+    min-width: 600px;
+    width: 35%;
   }
 }
 
 .zuc-about-text-box {
-  width: 100%;
+  background-color: $bkg-light-grey;
+  width: 84vw;
+  padding: 10vw 13vw 8vw 10vw;
+
+  @media #{$tablet-up} {
+    max-width: 669px;
+    padding: 8vw 6.8vw 6vw 8vw;
+  }
 
   @media #{$laptop-up} {
     width: 46vw;
@@ -37,10 +48,22 @@
   }
 
   p {
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
+
+    @media #{$laptop-up} {
+      margin-bottom: 2vw;
+    }
   }
 
   a {
-    width: 10vw;
+    width: 45vw;
+
+    @media #{$tablet-only} {
+      width: 28vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 10vw;
+    }
   }
 }
