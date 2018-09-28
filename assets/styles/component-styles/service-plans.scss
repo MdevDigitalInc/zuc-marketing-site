@@ -19,11 +19,22 @@
   position: relative;
   overflow: hidden;
 
-  img {
+  .zuc-block-img {
     position: absolute;
     z-index: -5;
     top: 0;
     left: 0;
+  }
+
+  .zuc-block-badge {
+    display: none;
+
+    @media #{$laptop-up} {
+      position: absolute;
+      z-index: -4;
+      width: 20.2vw;
+      display: inline;
+    }
   }
 
   &.--title {
