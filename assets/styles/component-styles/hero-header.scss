@@ -31,7 +31,7 @@
 .zuc-hero-media-container {
   width: 100%;
   position: relative;
-  height: 105vh;
+  height: 110vh;
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +78,7 @@
   right: 15%;
   background: $white;
   width: 23%;
-  padding-top: 26.5%;
+  padding-top: 26.73%;
   border-radius: 0 0 48% 48%;
   box-shadow: 0 0 80px rgba(0, 0, 0, .3);
   z-index: 20;
@@ -126,7 +126,7 @@
 
   //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
 
-  font-size: 2.53vw;
+  font-size: 3.125vw;
 
   @media #{$phone-only} {
     font-size: 8vw;
