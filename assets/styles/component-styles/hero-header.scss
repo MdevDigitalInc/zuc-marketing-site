@@ -181,7 +181,8 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 7.8vw 0;
+  margin-bottom: 7.8vw;
 
   @media #{$portrait} {
     padding: 100px 0 0;
@@ -295,7 +296,7 @@
     // Thanks chrome. - LM
     width: 71%;
     background: $color-zuc-indigo;
-    padding: 3vw;
+    padding: 5vw 2vw;
     text-align: center;
     color: $white;
 
