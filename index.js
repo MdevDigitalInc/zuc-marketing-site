@@ -28,3 +28,4 @@ const fonts = importAll(require.context('./assets/fonts', false, /\.(woff(2)?|tt
 
 // Import Image
 const sliderBg = require( './assets/images/shapes/hero-slider-bg.svg' );
+const secBgImg = require( './assets/images/graphics/footer-blob.svg' );
