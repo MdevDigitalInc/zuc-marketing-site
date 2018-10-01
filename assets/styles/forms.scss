@@ -32,7 +32,7 @@ input {
     height: 63px;
     border-radius: 4px;
     background-color: $form-bg-color;
-    border: solid 3px $form-border-color;
+    border: solid 2px $form-border-color;
     font-family: $main-font;
     padding: 0 1vw;
     margin-top: .4vw;
@@ -46,13 +46,13 @@ input {
     &:hover,
     &:focus,
     &:active {
-      border: solid 3px $color-zuc-darkindigo;
+      border: solid 2px $color-zuc-darkindigo;
     }
 
     // Not currently used
     &.--filled {
-      border-top: 4px solid $border-color-passive;
-      border-bottom: 4px solid $border-color-active;
+      border-top: 2px solid $border-color-passive;
+      border-bottom: 2px solid $border-color-active;
       text-transform: none;
     }
 
@@ -100,7 +100,6 @@ textarea {
 .zuc-input-name {
   margin-top: 4vw;
   font-size: 3.2vw;
-  text-transform: capitalize;
   color: $form-text-color;
   font-weight: $medium-weight;
 

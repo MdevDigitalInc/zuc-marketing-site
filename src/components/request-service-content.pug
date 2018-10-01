@@ -15,60 +15,60 @@ section.zuc-section-container.--sides
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |FIRST & LAST NAME *
+              |First & Last Name *
           input(type="text" data-required name="fullname" placeholder="First & Last Name")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |EMAIL ADDRESS *
+              |Email Address *
           input(type="email" data-required name="email" placeholder="Email Address")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |PHONE NUMBER *
-          input(type="tel" data-required name="phone" placeholder="Home Phone Number (At Time Of Purchase)")
+              |Current Phone Number *
+          input(type="tel" data-required name="phone" placeholder="Phone number where we can reach you")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |CURRENT PHONE NUMBER
-          input(type="tel" name="currentphone" placeholder="Current Phone Number (If Different)")
+              |Phone number at time of purchase (if different from current)
+          input(type="tel" name="currentphone" placeholder="Phone number at time of purchase")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
-              |STREET ADDRESS
+              |Street Address
           input(type="text" name="address" placeholder="Street Address")
       .zuc-form-row
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |CITY
+              |City
           input(type="text" name="city" placeholder="City")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |PROVINCE
+              |Province
           input(type="text" name="province" placeholder="Province")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |ZIP/POSTAL CODE
-          input(type="text" name="zippostal" placeholder="Zip/Postal Code")
+              |Postal Code
+          input(type="text" name="postal" placeholder="Postal Code")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |RETAILER
+              |Retailer
           input(type="text" name="retailer" placeholder="Retailer")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |PRODUCT CODE
+              |Product Type
           .zuc-select-container
             select(required name="producttype")
               option(value="" disabled selected)
-                |Drop Down Here
+                |Choose your product type
               option(value="foo")
                 |Earth
               option(value="bar")
@@ -79,40 +79,40 @@ section.zuc-section-container.--sides
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |SPECIFIC ITEM
+              |Specific Item
           input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |DATE PURCHASED (YYYY-MM-DD)
+              |Date Purchased (YYYY-MM-DD)
           input(type="text" name="purchasedate" placeholder="Date Purchased")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |ORDER ID
+              |Order ID
           input(type="text" name="orderid" placeholder="Order ID")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
-              |DESCRIPTION OF ISSUE
-          input(type="text" name="issuedesc" placeholder="Description of Issue")
+              |Description of Problem *
+          input(type="text" data-required name="issuedesc" placeholder="Description of Issue")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |HOW DID THE ISSUE HAPPEN?
+              |How did the issue happen?
           input(type="text" name="issuehow" placeholder="How did the issue happen?")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |WHEN DID THE ISSUE OCCUR? (YYYY-MM-DD)
-          input(type="tel" name="issuewhen" placeholder="Date when issue occured")
+              |When did the Issue Occur? (YYYY-MM-DD)
+          input(type="text" name="issuewhen" placeholder="Date when issue occured")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
-              |HAVE YOU DONE ANYTHING TO TRY CORRECTING THE ISSUE?
+              |Have you done anything to try correcting the issue?
           .zuc-radio-group-container
             .zuc-radio-group
               input(type="radio" id="zuc-effort-yes" name="effort" value="Yes")
@@ -126,9 +126,9 @@ section.zuc-section-container.--sides
         .zuc-form-group
           .zuc-input-name
             strong
-              |PLEASE UPLOAD YOUR INVOICE AND/OR ANY PICTURES.
+              |Please upload your invoice and/or any pictures.
           input.zuc-btn.zuc-btn-primary.zuc-btn-browse(type="button" name="issuedesc" value="Browse...")
       .zuc-form-action
         button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
           strong
-            span SEND
+            span SUBMIT
