@@ -18,7 +18,8 @@ $border-color-passive: rgba(15, 22, 24, 0);
 
 $form-text-color: $color-zuc-darkindigo;
 $form-bg-color: $bkg-light-grey;
-$form-border-color: #707070;
+$border-color-passive: $color-zuc-darkindigo;
+$border-color-active: $color-zuc-indigo;
 $form-placeholder-color: $color-text-grey;
 
 input {
@@ -33,7 +34,7 @@ input {
     height: 63px;
     border-radius: 4px;
     background-color: $form-bg-color;
-    border: solid 2px $form-border-color;
+    border: solid 2px $border-color-passive;
     font-family: $main-font;
     padding: 0 1vw;
     margin-top: .4vw;
@@ -47,14 +48,7 @@ input {
     &:hover,
     &:focus,
     &:active {
-      border: solid 2px $color-zuc-darkindigo;
-    }
-
-    // Not currently used
-    &.--filled {
-      border-top: 2px solid $border-color-passive;
-      border-bottom: 2px solid $border-color-active;
-      text-transform: none;
+      border: solid 2px $border-color-active;
     }
 
     &::placeholder {
@@ -294,12 +288,12 @@ textarea {
     padding-right: 35px;
     padding-left: 15px;
     color: $form-text-color;
-    border: 2px solid $form-border-color;
+    border: 2px solid $border-color-passive;
 
     &:hover,
     &:focus,
     &:active {
-      border: solid 2px $color-zuc-darkindigo;
+      border: solid 2px $border-color-active;
       outline: none;
     }
 
