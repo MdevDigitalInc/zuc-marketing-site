@@ -145,8 +145,18 @@
 
 .zuc-secondary-footer-wrapper {
   position: relative;
-  // z-index: -1;
-  // top: -600px;
+  width: 100%;
+  // bottom: 250px;
+  // padding-top: 400px;
+  // overflow-x: hidden;
+  padding-top: 450px;
+  margin-top: -500px;
+  overflow-x: hidden;
+
+  @media #{$laptop-up} {
+    padding-top: 550px;
+    // margin-top: -500px;
+  }
 
   .zuc-footer {
     background: linear-gradient(to bottom, transparent, #434da0, #434da0);
@@ -158,16 +168,14 @@
 
 .zuc-secondary-footer-bkg {
   width: 100%;
-  //@include center(both);
-  overflow: hidden;
+  // overflow: hidden;
   z-index: -99;
   position: absolute;
   bottom: 225px;
   left: 0;
-  transform: scale(1.2);
+  // transform: scale(1.2);
 
   @media #{$laptop-up} {
-    // ToDo: will likely want to tweak these values during polish.
     bottom: 175px;
   }
   @media #{$phone-only} {
