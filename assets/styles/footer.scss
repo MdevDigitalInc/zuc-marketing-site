@@ -151,11 +151,10 @@
 
 .zuc-secondary-footer-wrapper {
   position: relative;
-  z-index: -1;
+  // z-index: -1;
   // top: -600px;
 
   .zuc-footer {
-    // background-color: rgba(0, 0, 0, 0);
     background: linear-gradient(to bottom, transparent, #434da0, #434da0);
   }
   .zuc-footer--brand-section {
