@@ -1,16 +1,16 @@
 .zuc-smarter-how {
-  padding: 0 5vw;
+  padding: 0 5vw 45.625vw;
 
   @media #{$tablet-up} {
-    padding: 0 7vw;
+    padding: 0 7vw 37.5vw;
   }
 
   @media #{$laptop-up} {
-    padding: 0 10vw;
+    padding: 0 10vw 20vw;
   }
 
   @media #{$desktop-up} {
-    padding: 0 13vw;
+    padding: 0 13vw 18.23vw;
   }
 }
 
