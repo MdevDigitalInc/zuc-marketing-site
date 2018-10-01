@@ -38,28 +38,46 @@
 }
 
 .zuc-quote-badge-container {
-  height: 114px;
-  width: 114px;
+  height: 21.25vw;
+  width: 21.25vw;
   position: absolute;
-  top: -57px;
+  top: -10.625vw;
   border-radius: 50%;
   background-color: $white;
+
+  @media #{$tablet-only} {
+    height: 14.85vw;
+    width: 14.85vw;
+    top: -7.425vw;
+  }
+
+  @media #{$laptop-only} {
+    height: 8.9vw;
+    width: 8.9vw;
+    top: -4.45vw;
+  }
+
+  @media #{$desktop-up} {
+    height: 5.75vw;
+    width: 5.75vw;
+    top: -2.875vw;
+  }
 }
 
 .zuc-quote-text {
   text-align: center;
-  padding: 110px 4.4vw 1.2vw;
+  padding: 21.875vw 4.4vw 10vw;
 
-  @media #{$tablet-up} {
-    padding: 110px 4.4vw 1.2vw;
+  @media #{$tablet-only} {
+    padding: 11.92vw 4.4vw 3.5vw;
   }
 
-  @media #{$laptop-up} {
-    padding: 110px 4.4vw 1.2vw;
+  @media #{$laptop-only} {
+    padding: 7vw 4.4vw 1.5vw;
   }
 
   @media #{$desktop-up} {
-    padding: 110px 4.4vw 1.2vw;
+    padding: 5.56vw 4.4vw 1.2vw;
   }
 }
 
@@ -76,7 +94,15 @@
 
 .zuc-quote-author {
   text-align: center;
-  padding: 1.36vw 0;
+  padding: 9.375vw 0 31.25vw;
+
+  @media #{$tablet-only} {
+    padding: 3.9vw 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: 1.36vw 0;
+  }
 }
 
 .zuc-quote-button {
@@ -84,11 +110,15 @@
   width: 50px;
   background-color: $white;
   position: absolute;
-  bottom: 35px;
+  bottom: 10vw;
+
+  @media #{$tablet-up} {
+    bottom: 35px;
+  }
 }
 
 .zuc-left {
-  left: 0;
+  left: 12.5vw;
   z-index: 7;
 
   @media #{$tablet-up} {
@@ -97,7 +127,7 @@
 }
 
 .zuc-right {
-  right: 0;
+  right: 12.5vw;
   z-index: 7;
   
   @media #{$tablet-up} {
@@ -113,7 +143,7 @@
   width: 100%;
 
   @media #{$tablet-only} {
-    padding: 4.688vw 0;
+    padding: 4.69vw 0;
   }
 
   @media #{$laptop-up} {
