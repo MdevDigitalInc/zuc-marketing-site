@@ -1,23 +1,40 @@
 /*----
 
   .zuc-section-container :
-  For pages that begin with a centered h1 title and then some content after them use the following container for consistent spacing
+  For pages that begin with a centered h1 title and then some content after them use the following container for consistent spacing.
+  Default is only padding top ; --sides is padding top, left, and right
   AW - LU: 20181001
 ----*/
 
 .zuc-section-container {
-  padding-top: 40.31vw;
+  padding: 40.31vw 0 0;
 
   @media #{$tablet-only} {
-    padding-top: 25.26vw;
+    padding: 25.26vw 0 0;
   }
 
   @media #{$laptop-only} {
-    padding-top: 16vw;
+    padding: 16vw 0 0;
   }
 
   @media #{$desktop-up} {
-    padding-top: 11.41vw;
+    padding: 11.41vw 0 0;
+  }
+
+  &.--sides {
+    padding: 40.31vw 6vw 0;
+
+    @media #{$tablet-only} {
+      padding: 25.26vw 6vw 0;
+    }
+  
+    @media #{$laptop-only} {
+      padding: 16vw 17vw 0;
+    }
+  
+    @media #{$desktop-up} {
+      padding: 11.41vw 17vw  0;
+    }
   }
 
   h1:first-of-type {

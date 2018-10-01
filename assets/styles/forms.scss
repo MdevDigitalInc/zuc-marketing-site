@@ -97,14 +97,6 @@ textarea {
 
 /* stylelint-enable */
 
-.zuc-forms-container {
-  padding: 0 6vw;
-
-  @media #{$laptop-up} {
-    padding: 0 17vw;
-  }
-}
-
 .zuc-input-name {
   margin-top: 4vw;
   font-size: 3.2vw;
