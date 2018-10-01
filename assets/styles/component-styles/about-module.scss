@@ -16,20 +16,29 @@
   }
 }
 
-// TODO AW 20180927
 .zuc-pear-blob {
   position: absolute;
   z-index: -99;
-  width: 29.4vw;
   left: 0;
-  bottom: 0;
+  top: -21.47vw;
+  height: 190vw;
+
+  @media #{$tablet-only} {
+    left: -13vw;
+    top: -18vw;
+    height: 200vw;
+  }
   
-  @media #{$laptop-up} {
-    left: 0;
+  @media #{$laptop-only} {
+    left: -2.5vw;
+    top: -29.9vw;
+    height: 69.65vw;
   }
 
   @media #{$desktop-up} {
-    left: 0;
+    left: -2.5vw;
+    top: -29.9vw;
+    height: 69.65vw;
   }
 }
 
