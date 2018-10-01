@@ -2,23 +2,35 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  padding: 0 8vw 300px;
-  margin-top: 250px;
+  padding: 0 8vw 30vw;
+
+  @media #{$tablet-only} {
+    padding: 0 8vw 25vw;
+  }
 
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 8vw 15vw;
   }
 }
 
 // TODO AW 20180927
 .zuc-pear-blob {
   position: absolute;
-  top: -592px;
-  left: 0;
-  max-width: 582px;
   z-index: -99;
+  width: 29.4vw;
+  left: 0;
+  bottom: 0;
+  
+  @media #{$laptop-up} {
+    left: 0;
+  }
+
+  @media #{$desktop-up} {
+    left: 0;
+  }
 }
 
 .zuc-about-img-box {
