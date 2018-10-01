@@ -12,10 +12,22 @@
 
   img {
     position: absolute;
-    top: -1vw;
-    left: 0;
     z-index: -69;
-    width: 100%;
+    overflow: hidden;
+    width: 250%;
+    bottom: 0;
+    right: 0;    
+
+    @media #{$tablet-only} {
+      width: 160%;
+      left: -30%;
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+      top: -1vw;
+      left: 0;
+    }
   }
 }
 
