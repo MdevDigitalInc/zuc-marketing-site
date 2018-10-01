@@ -20,15 +20,15 @@
   position: relative;
 
   @media #{$tablet-up} {
-    width: 86%;
+    width: 86vw;
   }
 
   @media #{$laptop-up} {
-    width: 50%;
+    width: 50vw;
   }
 
   @media #{$desktop-up} {
-    width: 44%;
+    width: 44vw;
   }
 }
 
@@ -49,6 +49,18 @@
 .zuc-quote-text {
   text-align: center;
   padding: 110px 4.4vw 1.2vw;
+
+  @media #{$tablet-up} {
+    padding: 110px 4.4vw 1.2vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 110px 4.4vw 1.2vw;
+  }
+
+  @media #{$desktop-up} {
+    padding: 110px 4.4vw 1.2vw;
+  }
 }
 
 .zuc-stars-container {
@@ -64,7 +76,7 @@
 
 .zuc-quote-author {
   text-align: center;
-  padding: 27px 0;
+  padding: 1.36vw 0;
 }
 
 .zuc-quote-button {
@@ -94,21 +106,23 @@
 }
 
 .zuc-floating-container {
+  text-align: center;
   display: block;
   background-color: $color-zuc-indigo;
-  padding: 28px 26px 45px 29px;
+  padding: 15vw 0;
   width: 100%;
 
-  @media #{$laptop-up} {
-    position: absolute;
-    width: auto;
-    top: -20%;
-    left: -30%;
+  @media #{$tablet-only} {
+    padding: 4.688vw 0;
   }
 
-  @media #{$desktop-up} {
-    top: -20%;
-    left: -35%;
+  @media #{$laptop-up} {
+    text-align: left;
+    position: absolute;
+    width: 17vw;
+    padding: 1.87vw 2.07vw 1.51vw;
+    top: -4.2vw;
+    left: -13.43vw;
   }
 }
 
