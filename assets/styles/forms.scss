@@ -27,7 +27,8 @@ input {
   &[type="tel"],
   &[type="password"],
   &[type="search"],
-  &[type="url"] {
+  &[type="url"],
+  &[type="date"] {
     width: 100%;
     height: 63px;
     border-radius: 4px;
@@ -264,7 +265,7 @@ textarea {
     pointer-events: none;
   }
   
-  // This is the small block of background behind the dropdown arrow
+  // This is the small block of background behind the dropdown arrow, NOTE: update the position if you change the border thickness!!!
   &:before {
     width: 44px;
     position: absolute;
