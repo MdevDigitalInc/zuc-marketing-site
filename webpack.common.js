@@ -199,6 +199,11 @@ module.exports = {
       template: './src/templates/benefits.pug',
       filename: 'benefits.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/service-plan-parent.pug',
+      // TODO: confirm route names for service parent/children.
+      filename: 'service-plans/'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
