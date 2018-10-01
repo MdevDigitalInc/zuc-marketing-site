@@ -154,6 +154,11 @@
     padding-top: 550px;
   }
 
+  @media #{$xl-up} {
+    padding-top: 850px;
+    margin-top: -700px;
+  }
+
   @media #{$phone-only} {
     padding-top: 0;
     margin-top: 0;
