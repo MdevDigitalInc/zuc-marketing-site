@@ -10,6 +10,33 @@
   @media #{$laptop-up} {
     padding: 0 8% 8vw;
   }
+
+  .zuc-bg-blob {
+    position: absolute;
+    z-index: -69;
+    overflow: hidden;
+    left: 0;
+    top: -21.47vw;
+    height: 190vw;
+
+    @media #{$tablet-only} {
+      left: -13vw;
+      top: -18vw;
+      height: 200vw;
+    }
+    
+    @media #{$laptop-only} {
+      left: -2.5vw;
+      top: -29.9vw;
+      height: 69.65vw;
+    }
+
+    @media #{$desktop-up} {
+      left: -2.5vw;
+      top: -29.9vw;
+      height: 69.65vw;
+    }
+  }
 }
 
 .zuc-service-box {
@@ -73,6 +100,7 @@
     text-align: left;
     padding: 8vw 5vw;
     overflow: visible;
+    background: $bkg-light-grey;
 
     p {
       padding-bottom: 3vw;
