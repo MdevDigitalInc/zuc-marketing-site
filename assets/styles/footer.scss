@@ -175,14 +175,7 @@
       width: 130%;
     }
   }
-  @media #{$portrait} {
-    object {
-      width: 220%;
-    }
-  }
   @media #{$phone-only} {
-    object {
-      width: 320%;
-    }
+    display: none;
   }
 }
