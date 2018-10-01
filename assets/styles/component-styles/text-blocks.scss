@@ -1,6 +1,7 @@
 /*
   .zuc-head-blurb :
-  For styling sections with a platinum background and top/bottom indigo border
+
+  For styling <p> sections with a platinum background and top/bottom indigo border
 
   AW - LU: 20181001
 
@@ -12,9 +13,34 @@
   text-align: center;
   border-top: solid 3px $color-zuc-indigo;
   border-bottom: solid 3px $color-zuc-indigo;
+  margin-bottom: 9.375vw;
+
+    @media #{$tablet-only} {
+      margin-bottom: 7.03vw;
+    }
+  
+    @media #{$laptop-only} {
+      margin-bottom: 5vw;
+    }
+  
+    @media #{$desktop-up} {
+      margin-bottom: 4.2vw;
+    }
 
   p {
     color: $color-zuc-darkindigo;
-    padding: 2vw 4.1%;
+    padding: 7.5vw 5.5%;
+
+    @media #{$tablet-only} {
+      padding: 3.52vw 4%;
+    }
+  
+    @media #{$laptop-only} {
+      padding: 2.5vw 4%;
+    }
+  
+    @media #{$desktop-up} {
+      padding: 2vw 4%;
+    }
   }
 }
