@@ -1,5 +1,22 @@
 .zuc-blog-module-container {
-  padding: 0 6% 1vw 8%;
+  position: relative;
+  padding: 0 5% 12vw;
+
+  @media #{$tablet-only} {
+    padding: 0 6% 19.27vw 8%;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0 6% 10.15vw 8%;
+  }
+
+  img {
+    position: absolute;
+    top: -1vw;
+    left: 0;
+    z-index: -69;
+    width: 100%;
+  }
 }
 
 .zuc-blog-header {
