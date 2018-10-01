@@ -1,24 +1,47 @@
+// TO DO This module looks like butts on screen sizes between tablet and desktop, try it yourself! - AW 20181001
+
 .zuc-about-section {
   flex-direction: column;
   position: relative;
   align-items: center;
-  padding: 0 8vw 300px;
-  margin-top: 250px;
+  padding: 0 8vw 30vw;
+
+  @media #{$tablet-only} {
+    padding: 0 8vw 25vw;
+  }
 
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 8vw 15vw;
   }
 }
 
-// TODO AW 20180927
 .zuc-pear-blob {
   position: absolute;
-  top: -592px;
-  left: 0;
-  max-width: 582px;
   z-index: -99;
+  left: 0;
+  top: -21.47vw;
+  height: 190vw;
+
+  @media #{$tablet-only} {
+    left: -13vw;
+    top: -18vw;
+    height: 200vw;
+  }
+  
+  @media #{$laptop-only} {
+    left: -2.5vw;
+    top: -29.9vw;
+    height: 69.65vw;
+  }
+
+  @media #{$desktop-up} {
+    left: -2.5vw;
+    top: -29.9vw;
+    height: 69.65vw;
+  }
 }
 
 .zuc-about-img-box {
