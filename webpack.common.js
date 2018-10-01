@@ -199,6 +199,10 @@ module.exports = {
       template: './src/templates/benefits.pug',
       filename: 'benefits.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/service-plans.pug',
+      filename: 'service-plans.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
