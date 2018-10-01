@@ -168,6 +168,7 @@
   position: absolute;
   bottom: 225px;
   left: 0;
+  transform: scale(1.2);
 
   @media #{$laptop-up} {
     bottom: 175px;
