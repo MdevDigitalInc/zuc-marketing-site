@@ -5,10 +5,11 @@
 
 .zuc-footer-wrapper {
   padding-bottom: 25px;
-  // background-image: url('../images/footer.jpeg');
-  // background-position-y: bottom;
-  // background-repeat: no-repeat;
+  background-image: url('../images/footer.jpeg');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
   // background-size: 100% 25px;
+  // background-clip: padding-box;
 }
 
 .zuc-footer {
@@ -151,7 +152,8 @@
   // top: -600px;
 
   .zuc-footer {
-    background-color: rgba(0, 0, 0, 0);
+    // background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, transparent, #434da0, #434da0);
   }
   .zuc-footer--brand-section {
     background-color: rgba(0, 0, 0, 0);
@@ -164,8 +166,9 @@
   overflow: hidden;
   z-index: -99;
   position: absolute;
-  bottom: 0px;
+  bottom: 155px;
   left: 0;
+  transform: scale(1.2);
 
   @media #{$tablet-lnd-only} {
     object {
