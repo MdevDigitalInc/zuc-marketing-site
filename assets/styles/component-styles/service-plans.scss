@@ -10,6 +10,26 @@
   @media #{$laptop-up} {
     padding: 0 8% 8vw;
   }
+
+  .zuc-bg-blob {
+    display: none;
+    
+    @media #{$laptop-up} {
+      display: block;
+      position: absolute;
+      z-index: -69;
+      overflow: hidden;
+      left: 0;
+      top: -12.07vw;
+      height: 88vw;
+    }
+
+    @media #{$desktop-up} {
+      left: 0;
+      top: -12.07vw;
+      height: 73.65vw;
+    }
+  }
 }
 
 .zuc-service-box {
@@ -73,6 +93,7 @@
     text-align: left;
     padding: 8vw 5vw;
     overflow: visible;
+    background: $bkg-light-grey;
 
     p {
       padding-bottom: 3vw;
