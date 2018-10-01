@@ -6,10 +6,9 @@ section.zuc-hero-slider
       // - Slide text content on the left
       .zuc-slide-content.u-soft-shadow
         h5.zuc-slide-title.u-font-serif.u-zuc-indigo
-          |Avoid the Unexpected
+          |Avoid the unexpected
         p.zuc-slide-text
           |A Smarter Living Plan offers peace of mind and stress relief from unexpected product failures and breakdowns.
-
         a.zuc-btn.zuc-btn-secondary(href="#" title="Learn More")
           |Learn More
           i.fas.fa-arrow-right
@@ -46,11 +45,27 @@ section.zuc-hero-slider
       // - Slide Image
       .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
 
+    // First Slide
+    .zuc-slide.flex.flex-vert-center.flex-hor-end(data-slide="4")
+      // - Slide text content on the left
+      .zuc-slide-content.u-soft-shadow
+        h5.zuc-slide-title.u-font-serif.u-zuc-indigo
+          |Fourth
+        p.zuc-slide-text
+          |A Smarter Living Plan offers peace of mind and stress relief from unexpected product failures and breakdowns.
+
+        a.zuc-btn.zuc-btn-secondary(href="#" title="Learn More")
+          |Learn More
+          i.fas.fa-arrow-right
+      // - Slide Image
+      .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
+
   // Slideshow Controlls
   .zuc-slider-controls.flex.flex-hor-center.flex-vert-center
-    div.zuc-slide-selector(data-move-slide="3")
     div.zuc-slide-selector.--active(data-move-slide="1")
     div.zuc-slide-selector(data-move-slide="2")
+    div.zuc-slide-selector(data-move-slide="3")
+    div.zuc-slide-selector(data-move-slide="4")
 
   // Backround element
   .zuc-slider-bkg

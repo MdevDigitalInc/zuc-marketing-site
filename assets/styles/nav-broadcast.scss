@@ -7,6 +7,7 @@
   width: 100%;
   padding: .6vw 8%;
   color: $color-zuc-darkindigo;
+  display: none;
 
   @media #{$phone-only} {
     padding: 2vw;
@@ -19,4 +20,9 @@
 
 .zuc-broadcast-close {
   cursor: pointer;
+}
+
+// Active Class for Broadcast Banner
+.zuc-nav-broadcast.--active {
+  display: flex;
 }
