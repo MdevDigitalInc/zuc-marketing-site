@@ -154,6 +154,11 @@
     padding-top: 550px;
   }
 
+  @media #{$phone-only} {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   .zuc-footer {
     background: linear-gradient(to bottom, transparent, #434da0, #434da0);
   }
