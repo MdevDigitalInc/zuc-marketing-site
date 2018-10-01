@@ -12,29 +12,22 @@
   }
 
   .zuc-bg-blob {
-    position: absolute;
-    z-index: -69;
-    overflow: hidden;
-    left: 0;
-    top: -21.47vw;
-    height: 190vw;
-
-    @media #{$tablet-only} {
-      left: -13vw;
-      top: -18vw;
-      height: 200vw;
-    }
+    display: none;
     
-    @media #{$laptop-only} {
-      left: -2.5vw;
-      top: -29.9vw;
-      height: 69.65vw;
+    @media #{$laptop-up} {
+      display: block;
+      position: absolute;
+      z-index: -69;
+      overflow: hidden;
+      left: 0;
+      top: -12.07vw;
+      height: 88vw;
     }
 
     @media #{$desktop-up} {
-      left: -2.5vw;
-      top: -29.9vw;
-      height: 69.65vw;
+      left: 0;
+      top: -12.07vw;
+      height: 73.65vw;
     }
   }
 }
