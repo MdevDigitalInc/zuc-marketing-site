@@ -48,6 +48,7 @@
   max-width: 669px;
   width: 84vw;
   z-index: 2;
+  overflow: hidden; // Maybe
 
   @media #{$laptop-up} {
     width: 34vw;
