@@ -169,14 +169,13 @@
   overflow: hidden;
   z-index: -99;
   position: absolute;
-  bottom: 155px;
+  bottom: 225px;
   left: 0;
   transform: scale(1.2);
 
-  @media #{$tablet-lnd-only} {
-    object {
-      width: 130%;
-    }
+  @media #{$laptop-up} {
+    // ToDo: will likely want to tweak these values during polish.
+    bottom: 175px;
   }
   @media #{$phone-only} {
     display: none;
