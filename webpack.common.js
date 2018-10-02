@@ -204,15 +204,15 @@ module.exports = {
       filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/appliance-plan.pug',
+      template: './src/templates/appl-plan.pug',
       filename: 'plans/appliances.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/furniture-plan.pug',
+      template: './src/templates/furn-plan.pug',
       filename: 'plans/furniture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/home-system-plan.pug',
+      template: './src/templates/homesys-plan.pug',
       filename: 'plans/home-systems.html'
     }),
     new CopyWebpackPlugin([
