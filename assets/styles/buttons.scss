@@ -46,6 +46,20 @@
   }
 }
 
+.zuc-btn-hollow {
+  border: 2px solid $color-zuc-lilac;
+  background: transparent;
+  text-align: center;
+  color: $color-zuc-lilac;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-zuc-indigo;
+    background: $color-zuc-lilac;
+  }
+}
+
 
 .zuc-btn-secondary {
   color: $white;

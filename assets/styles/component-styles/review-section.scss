@@ -129,7 +129,7 @@
 .zuc-right {
   right: 12.5vw;
   z-index: 7;
-  
+
   @media #{$tablet-up} {
     right: -25px;
   }
@@ -153,16 +153,5 @@
     padding: 1.87vw 2.07vw 1.51vw;
     top: -4.2vw;
     left: -13.43vw;
-  }
-}
-
-.zuc-read-all {
-  text-align: center;
-  color: $color-zuc-lilac;
-  border-color: $color-zuc-lilac;
-  
-  &:hover {
-    background: $color-zuc-lilac;
-    color: $color-zuc-indigo;
   }
 }

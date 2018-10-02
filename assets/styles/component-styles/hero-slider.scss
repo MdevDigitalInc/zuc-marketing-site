@@ -92,35 +92,6 @@
     padding: 15vw 9vw;
   }
 
-  &:before {
-    @include pseudo();
-    background: $color-zuc-salmon;
-    width: 30%;
-    right: 0;
-    top: -15%;
-    bottom: -15%;
-    z-index: -1;
-
-    @media #{$portrait} {
-      display: none;
-    }
-  }
-
-  &:after {
-    @include pseudo();
-    z-index: 2;
-    width: 186px;
-    height: 12px;
-    background: $color-zuc-mint;
-    right: -93px;
-    top: 60px;
-
-    @media #{$portrait} {
-      right: auto;
-      top: 30px;
-    }
-  }
-
   .zuc-slide-text {
     color: $color-zuc-darkindigo;
     padding: 1vw 0 2vw;
