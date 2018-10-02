@@ -1,0 +1,68 @@
+.zuc-damage-bar {
+  position: relative;
+
+  .zuc-dmg-bg-img {
+    display: none;
+
+    @media #{$laptop-up} {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.zuc-damage-group {
+  margin: 0;
+
+  @media #{$tablet-only} {
+    margin: 52.86vw 6.5vw 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: 15.1vw 16.7vw 0;
+  }  
+}
+
+.zuc-damage-box {
+  width: 33%;
+  background: $color-mdev-white;
+  padding: 0;
+
+  @media #{$tablet-only} {
+    padding: 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: 3.69vw 6.2vw 3.23vw 2.68vw;
+  }
+
+  .zuc-why-damage-img-box {
+    width: 5.6vw;
+    padding-bottom: 9.375vw;
+
+    @media #{$tablet-only} {
+      width: 5.6vw;
+      padding: 3.9vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 5.6vw;
+      padding-bottom: 1.51vw;
+    }
+  }
+
+  h6 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  &:nth-child( even ) {
+    background: $color-zuc-indigo;
+    color: $color-mdev-white;
+
+    h6 {
+      color: $color-mdev-white;
+    }
+  }
+}
