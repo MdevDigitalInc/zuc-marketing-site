@@ -1,3 +1,13 @@
 .zuc-whats-covered {
-  margin-top: 200px; // DEV ONLY
+  padding: 0 8vw;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    padding: 0 20vw;
+    flex-direction: row;
+  }
+}
+
+.zuc-whats-covered-text {
+
 }
