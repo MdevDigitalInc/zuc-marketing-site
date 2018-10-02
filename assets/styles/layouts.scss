@@ -213,3 +213,19 @@
     }
   }
 }
+
+/*
+  Snippet useful for starting new pages and getting past the header - AW
+*/
+
+.zuc-temporary-padding {
+  padding: 200px 0 0;
+
+  &.--bottom {
+    padding: 200px 0;
+  }
+
+  &.--sides {
+    padding: 200px;
+  }
+}
