@@ -13,10 +13,18 @@
   .zuc-dmg-bg-img {
     display: none;
 
-    @media #{$laptop-up} {
+    @media #{$tablet-up} {
+      display: block;
+      z-index: -13;
       position: absolute;
+      width: 100%;
       top: 0;
       left: 0;
+      height: 77.5vw;
+    }
+
+    @media #{$laptop-up} {
+      height: 30vw;
     }
   }
 }
@@ -45,7 +53,7 @@
   }
 
   @media #{$laptop-up} {
-    width: 33%;
+    width: 33.3%;
     padding: 3.69vw 6.2vw 3.23vw 2.68vw;
   }
 
