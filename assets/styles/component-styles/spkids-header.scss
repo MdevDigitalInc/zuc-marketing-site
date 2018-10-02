@@ -15,6 +15,7 @@
 .zuc-head-box {
   width: 90vw;
   padding: 11.563vw 13.75vw 11.563vw 10.625vw;
+  background-color: $color-mdev-white;
 
   @media #{$tablet-only} {
     width: 75.65vw;
@@ -89,6 +90,7 @@
   position: relative;
   height: 83.438vw; // Design not done so manual height so it's not hideous
   width: 90vw;
+  background-color: $color-mdev-white;
   
   @media #{$tablet-only} {
     height: 62.5vw; // Design not done so manual height so it's not hideous
@@ -112,4 +114,31 @@
       display: block;
     }
   }
+}
+
+
+.zuc-spkids-header-bg1 {
+  position: absolute;
+  z-index: -13;
+  left: -2px;
+  top: 0;
+  width: 500%;
+
+  @media #{$tablet-only} {
+    left: -1px;
+    width: 200%;
+  }
+
+  @media #{$laptop-up} {
+    top: -3vw;
+    width: 100%;
+  }
+}
+
+//TODO
+.zuc-spkids-header-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
