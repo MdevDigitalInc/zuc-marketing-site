@@ -86,9 +86,10 @@
 }
 
 .zuc-kaboose-box {
+  position: relative;
   height: 83.438vw; // Design not done so manual height so it's not hideous
   width: 90vw;
-
+  
   @media #{$tablet-only} {
     height: 62.5vw; // Design not done so manual height so it's not hideous
     width: 75.65vw;
@@ -97,5 +98,18 @@
   @media #{$laptop-up} {
     height: 31vw;  // Design not done so manual height so it's not hideous
     width: 25vw;
+  }
+
+  .zuc-zigzag {
+    display: none;
+    width: 12.8vw;
+    position: absolute;
+    top: 3.28vw;
+    left: -6.4vw;
+    z-index: 8;
+
+    @media #{$laptop-up} {
+      display: block;
+    }
   }
 }
