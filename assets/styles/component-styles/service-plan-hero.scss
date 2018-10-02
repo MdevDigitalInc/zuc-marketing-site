@@ -30,14 +30,11 @@
     font-family: $main-font-serif;
     font-weight: $heading-weight;
     color: $color-zuc-indigo;
-    font-size: 36px; //todo: fix units:
-    width: 400px; // todo: fix units, overflow
+    font-size: 36px;
+    width: 420px;
     line-height: 1.3;
   }
 
-  .zuc-service-plan-hero--heading {
-    text-transform: uppercase;
-  }
   .zuc-service-plan-hero--copy {
     font-family: $main-font;
     font-weight: $body-weight;
@@ -47,6 +44,11 @@
     @media #{$laptop-up} {
       max-width: 400px;
     }
+  }
+
+  .zuc-service-plan-hero--tagline {
+    margin-top: 2vh;
+    color: $color-zuc-indigo;
   }
 
   .zuc-btn-secondary {
