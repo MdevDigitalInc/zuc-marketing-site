@@ -15,7 +15,7 @@
 .zuc-head-box {
   width: 90vw;
   padding: 11.563vw 13.75vw 11.563vw 10.625vw;
-  background-color: $color-mdev-white;
+  background-color: $color-pure-white;
 
   @media #{$tablet-only} {
     width: 75.65vw;
@@ -72,7 +72,11 @@
   }
 
   h1 {
+<<<<<<< HEAD
     color: $color-mdev-white;
+=======
+    color: $color-pure-white;
+>>>>>>> staging-2018-10-01
     font-family: $main-font-serif;
   }
 
@@ -90,7 +94,11 @@
   position: relative;
   height: 83.438vw; // Design not done so manual height so it's not hideous
   width: 90vw;
+<<<<<<< HEAD
   background-color: $color-mdev-white;
+=======
+  background-color: $color-pure-white;
+>>>>>>> staging-2018-10-01
   
   @media #{$tablet-only} {
     height: 62.5vw; // Design not done so manual height so it's not hideous
