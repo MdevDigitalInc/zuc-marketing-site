@@ -1,13 +1,30 @@
 .zuc-whats-covered {
-  padding: 0 8vw;
   flex-direction: column;
+  align-items: flex-start;
 
   @media #{$laptop-up} {
     padding: 0 20vw;
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
 .zuc-whats-covered-text {
+  padding: 0 5.5vw;
 
+  @media #{$tablet-only} {
+    padding: 0 7.5vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0;
+  }
+}
+
+.zuc-whats-covered-image {
+  align-self: center;
+
+  @media #{$laptop-up} {
+    align-self: none;
+  }
 }
