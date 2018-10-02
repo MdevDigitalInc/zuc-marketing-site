@@ -2,7 +2,7 @@
 
   .zuc-section-container :
   For pages that begin with a centered h1 title and then some content after them use the following container for consistent spacing.
-  Default is only padding top ; --sides is padding top, left, and right
+  Default is only padding top ; --sides is padding top, left, and right ; --hstyle adds default heading styles
   AW - LU: 20181001
 ----*/
 
@@ -37,10 +37,12 @@
     }
   }
 
-  h1:first-of-type {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    text-align: center;
+  &.--hstyle {
+    h1:first-of-type {
+      font-family: $main-font-serif;
+      color: $color-zuc-indigo;
+      text-align: center;
+    }
   }
 }
 
