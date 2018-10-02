@@ -203,6 +203,18 @@ module.exports = {
       template: './src/templates/service-plans.pug',
       filename: 'service-plans.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/appl-plan.pug',
+      filename: 'plans/appliance.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/furn-plan.pug',
+      filename: 'plans/furniture.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/homesys-plan.pug',
+      filename: 'plans/home-systems.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
