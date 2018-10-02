@@ -1,38 +1,59 @@
 /*----
-    Standard Page Content Header:
 
-    .zuc-content-header-container 
-      h1
-      p
+  .zuc-section-container :
+  For pages that begin with a centered h1 title and then some content after them use the following container for consistent spacing.
+  Default is only padding top ; --sides is padding top, left, and right
+  AW - LU: 20181001
 ----*/
 
-.zuc-content-header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+.zuc-section-container {
+  padding: 40.31vw 0 0;
 
-  h1 {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    margin: 0 9%;
+  @media #{$tablet-only} {
+    padding: 25.26vw 0 0;
   }
 
-  p {
-    color: $color-text-grey;
-    padding-top: 20px;
-    margin: 0 11%;
+  @media #{$laptop-only} {
+    padding: 16vw 0 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: 11.41vw 0 0;
+  }
+
+  &.--sides {
+    padding: 40.31vw 6vw 0;
+
+    @media #{$tablet-only} {
+      padding: 25.26vw 6vw 0;
+    }
+  
+    @media #{$laptop-only} {
+      padding: 16vw 17vw 0;
+    }
+  
+    @media #{$desktop-up} {
+      padding: 11.41vw 17vw  0;
+    }
+  }
+
+  h1:first-of-type {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    text-align: center;
   }
 }
 
 /*----
-      50-50 Block:
+  50-50 Block :
+  For pages that have a 50/50 split that switches to 100/100 on tablet/phone screen sizes
 
-      .zuc-split
-        .zuc-split-l
-          ...
-        .zuc-split-r
+  .zuc-split
+    .zuc-split-l
+      ...
+    .zuc-split-r
+
+  AW - LU: 20181001
 -----*/
 
 .zuc-split {
@@ -64,33 +85,17 @@
   }
 }
 
-/*----
-      Padding for the top of standard page sections:
-
-      .zuc-section-container
-        ...
-
-----*/
-
-.zuc-section-container {
-  // TODO not have this be this bad
-  padding-top: 150px;
-
-  @media #{$tablet-up} {
-    padding-top: 200px;
-  }
-}
-
 /*
-    Consistent Title Flags
-    Concept:
+  Consistent Title Flags
+  Concept:
 
-    .zuc-blog-title-container.flex  < -- Flex so that the h4 and flag are boxes in a row beside each other
-      h4  < -- override margin: 0; on the heading so as to not misalign the flag, apply margin to container instead
-        |BLOG
-      .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
-        .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
+  .zuc-blog-title-container.flex  < -- Flex so that the h4 and flag are boxes in a row beside each other
+    h4  < -- override margin: 0; on the heading so as to not misalign the flag, apply margin to container instead
+      |BLOG
+    .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
+      .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
 
+  AW - LU: 20181001
 */
 
 .zuc-title-flag {
@@ -123,5 +128,86 @@
 
   .--green {
     border-color: $color-zuc-mint;
+  }
+}
+
+/*
+  Global Colour Overlays
+
+  ex.
+
+    .my-div.--overlay.--o-indigo
+
+  AW - LU: 20181001
+
+*/
+
+.--overlay {
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+    background-color: transparent; // Default is no overlay - AW
+    transition: .4s;
+  }
+
+  &:hover {
+    &:after {
+      opacity: .8;
+    }
+  }
+
+  &.--o-indigo {
+    &:after {
+      background-color: $color-zuc-indigo;
+    }
+  }
+
+  &.--o-darkindigo {
+    &:after {
+      background-color: $color-zuc-darkindigo;
+    }
+  }
+
+  &.--o-lightindigo {
+    &:after {
+      background-color: $color-zuc-lightindigo;
+    }
+  }
+
+  &.--o-mint {
+    &:after {
+      background-color: $color-zuc-mint;
+    }
+  }
+
+  &.--o-salmon {
+    &:after {
+      background-color: $color-zuc-salmon;
+    }
+  }
+
+  &.--o-lilac {
+    &:after {
+      background-color: $color-zuc-lilac;
+    }
+  }
+
+  &.--o-platinum {
+    &:after {
+      background-color: $color-zuc-platinum;
+    }
+  }
+
+  &.--o-concrete {
+    &:after {
+      background-color: $color-zuc-concrete;
+    }
   }
 }
