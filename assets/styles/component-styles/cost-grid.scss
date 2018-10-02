@@ -56,8 +56,54 @@
       width: 100%;
     }
   }
+
+  .zuc-item-overlay {
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(54, 56, 75, .9);
+    padding: 1vw;
+    text-align: center;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .zuc-overlay-content {
+    width: 100%;
+  }
+
+  .zuc-item-title {
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+    width: 100%;
+  }
+
+  .zuc-item-costs {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+
+    li {
+      padding: .2vw;
+    }
+
+    li:nth-child(even) {
+      font-weight: 700;
+    }
+
+    li:nth-child(odd) {
+      font-weight: 300;
+    }
+  }
 }
 
+// Double Item Row
 .zuc-grid-double {
   width: 50%;
 
@@ -65,4 +111,12 @@
     width: 100%;
     height: 240px;
   }
+}
+
+.--height-one {
+  height: 400px;
+}
+
+.--height-two {
+  height: 300px;
 }
