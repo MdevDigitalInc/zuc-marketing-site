@@ -79,6 +79,8 @@
 .zuc-custom-plan--box {
   width: 32%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 1vh 1vw;
 
@@ -89,5 +91,12 @@
   .photo {
     max-height: 300px;
     max-width: 300px;
+  }
+
+  .photo-text {
+    text-transform: uppercase;
+    color: $color-zuc-concrete;
+    margin-top: -25px; // because images have a lot of space at btm.
+    padding-bottom: 20px;
   }
 }
