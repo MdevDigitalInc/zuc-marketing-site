@@ -77,11 +77,13 @@
     @media #{$tablet-only} {
       max-width: 100%;
       display: block;
+      margin-right: 0px;
     }
 
     @media #{$phone-only} {
       max-width: 100%;
       display: block;
+      margin-right: 0px;
     }
   }
 }
