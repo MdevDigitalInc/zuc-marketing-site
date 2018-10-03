@@ -1,8 +1,13 @@
 .zuc-whats-covered {
   flex-direction: column;
+  padding: 0 0 35vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 17vw;
+  }
 
   @media #{$laptop-up} {
-    padding: 0 20vw;
+    padding: 0 20vw 3vw;
     flex-direction: row;
     align-items: flex-start;
   }
