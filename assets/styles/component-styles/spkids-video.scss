@@ -1,4 +1,107 @@
 .spkids-video {
   position: relative;
-  padding: 0 8vw 8.59vw;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 51.25vw;
+
+  @media #{$tablet-only} {
+    width: 87%;
+    padding-bottom: 26.95vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 80%;
+    padding-bottom: 8.59vw;
+  }
+}
+
+.zuc-video-row {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+  }
+}
+
+.zuc-video-left {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 8.75vw 20.94vw 8.75vw 4.69vw;
+
+  @media #{$tablet-only} {
+    padding: 9.24vw 17.97vw 6.51vw 6vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 30%;
+    padding: 3.48vw 5.1vw 4.29vw 2.53vw;
+  }
+
+  p {
+    @media #{$tablet-only} {
+      padding-right: 21.875vw;
+    }
+  }
+
+  .--wave-position {
+    display: none;
+
+    @media #{$tablet-up} {
+      display: block;
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      transform: translate3d(-9.24vw, -6.51vw, 0);
+      width: 13.76vw;
+    }
+
+    @media #{$laptop-up} {
+      top: 3vw;
+      right: 0;
+      bottom: auto;
+      width: 5.3vw;
+      transform: translate3d(50%, 0, 0);
+    }
+  }
+}
+
+.zuc-video-right {
+  background: $color-zuc-indigo;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 70%;
+  }
+}
+
+.zuc-video-player {
+  width: 100%;
+  // Height is faked since there is no video
+  height: 88.75vw;
+
+  @media #{$tablet-only} {
+    height: 73.44vw;
+  }
+
+  @media #{$laptop-up} {
+    height: 32.07vw;
+  }
+
+  .--play-icon {
+    opacity: .6;
+    width: 20%;
+
+    @media #{$tablet-only} {
+      width: 13;
+    }
+  
+    @media #{$laptop-up} {
+      width: 10%;
+    }
+  }
 }
