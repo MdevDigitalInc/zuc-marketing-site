@@ -106,12 +106,15 @@
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    right: -20px;
-    height: 40px;
-    width: 40px;
+    left: 95%;
+    z-index: 1;
+    height: 9vh;
+    width: 2.6vw;
     @media #{$phone-only} {
       position: static;
       margin-top: 15px;
+      height: 10vh;
+      width: 10vw;
     }
   }
 
@@ -120,13 +123,16 @@
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    right: -24px;
-    height: 50px;
-    width: 50px;
+    left: 95%;
+    z-index: 1;
+    height: 9vh;
+    width: 3vw;
 
     @media #{$phone-only} {
       position: static;
       margin-top: 15px;
+      height: 10vh;
+      width: 10vw;
     }
   }
 }
