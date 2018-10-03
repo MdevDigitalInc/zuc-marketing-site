@@ -45,11 +45,7 @@
 
 .zuc-damage-box {
   width: 100%;
-<<<<<<< HEAD
-  background: $color-mdev-white;
-=======
   background: $color-pure-white;
->>>>>>> staging-2018-10-01
   padding: 21.875vw 12.19vw 21.56vw 11.25vw;
 
   @media #{$tablet-only} {
@@ -98,17 +94,10 @@
 
   &:nth-child( even ) {
     background: $color-zuc-indigo;
-<<<<<<< HEAD
-    color: $color-mdev-white;
-
-    h4 {
-      color: $color-mdev-white;
-=======
     color: $color-pure-white;
 
     h4 {
       color: $color-pure-white;
->>>>>>> staging-2018-10-01
     }
   }
 }
