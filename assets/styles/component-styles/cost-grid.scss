@@ -69,6 +69,7 @@
     }
   }
 
+  // Testimonial - Review Block
   .--testimonial {
     background: $color-zuc-lilac;
     padding: 4vw 1.9vw 1.9vw;
@@ -80,6 +81,7 @@
     }
   }
 
+  // Badge Container Override
   .zuc-quote-badge-container {
     background: $color-zuc-lilac;
     @include center(horizontal);
@@ -91,6 +93,9 @@
     }
   }
 
+  // Item Overlay - Separate from main overlays
+  // because it also has to control the content
+  // inside the overlays.
   .zuc-item-overlay {
     width: 50%;
     height: auto;
@@ -125,16 +130,19 @@
     }
   }
 
+  // Needed to keep content in the lower part of the overlay
   .zuc-overlay-content {
     width: 100%;
   }
 
+  // Overlay Text -------------------
   .zuc-item-title {
     font-weight: 700;
     width: 100%;
     margin-bottom: 1.5vw;
   }
 
+  // Overlay Costs
   .zuc-item-costs {
     position: relative;
     bottom: 20px;
@@ -159,6 +167,8 @@
 }
 
 // Double Item Row
+// Needed to keep two of the items stacked on
+// either end of the module.
 .zuc-grid-double {
   width: 100%;
 
@@ -208,6 +218,9 @@
   }
 }
 
+// Needed to shift the one last silly overlay.
+// Could be entirely refactored lately but honestly,
+// probably not worth the trouble.
 .--nudge {
   .zuc-item-overlay {
     right: 0;
