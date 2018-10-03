@@ -22,10 +22,12 @@
   background: $color-zuc-indigo;
   color: $white;
 
-  @media #{$tablet-up} {
+  @media #{$tablet-only} {
+    padding: 4vw;
+  }
+  @media #{$laptop-up} {
     padding: 2.6vw 2vw;
   }
-
   @media #{$laptop-only} {
     width: 30%;
   }
@@ -65,6 +67,7 @@
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media #{$phone-only} {
       height: 240px;
@@ -81,12 +84,15 @@
   // Testimonial - Review Block
   .--testimonial {
     background: $color-zuc-lilac;
-    padding: 4vw 1.9vw 1.9vw;
+    padding: 20vw 9vw 6vw;
     text-align: center;
     position: relative;
 
     @media #{$tablet-only} {
       padding: 12vw 4vw 4vw;
+    }
+    @media #{$laptop-up} {
+      padding: 4vw 1.9vw 1.9vw;
     }
 
     h6 {
@@ -107,6 +113,9 @@
 
     @media #{$tablet-only} {
       width: 20%;
+    }
+    @media #{$phone-only} {
+      width: 25%;
     }
   }
 
@@ -159,6 +168,9 @@
     width: 100%;
     margin-bottom: 1.5vw;
 
+    @media #{$phone-only} {
+      margin-bottom: 9vw;
+    }
     @media #{$tablet-only} {
       font-size: 2.7vw;
       margin-bottom: 2vw;
@@ -173,27 +185,41 @@
     margin-top: .5vw;
     margin-bottom: 0;
 
+    @media #{$phone-only} {
+      margin-top: 2vw;
+    }
     @media #{$tablet-only} {
       margin-top: 3vw;
     }
 
     li {
       padding: .2vw;
+
+      @media #{$phone-only} {
+        padding: 1vw;
+      }
     }
 
-    li:nth-child(even) {
+    li:nth-child(odd) {
       font-size: 1.04vw;
       font-weight: 700;
+
+      @media #{$phone-only} {
+        font-size: 3vw;
+      }
 
       @media #{$tablet-only} {
         font-size: 2.36vw;
       }
     }
 
-    li:nth-child(odd) {
+    li:nth-child(even) {
       font-weight: 300;
       font-size: .93vw;
 
+      @media #{$phone-only} {
+        font-size: 2.8vw;
+      }
       @media #{$tablet-only} {
         font-size: 2.36vw;
       }
@@ -274,7 +300,7 @@
     position: absolute;
     min-height: 2px;
     left: 55%;
-    top: 8vw;
+    top: 6vw;
     transform: translateX(0);
     height: 4px;
     padding-top: 0;
@@ -284,10 +310,16 @@
     min-heigth: 10px;
     position: absolute;
     left: 35%;
-    top: 2.6vw;
+    top: 4vw;
     transform: translateX(0);
     height: 10px;
     padding-top: 0;
+  }
+  @media #{$laptop-up} {
+    top: 2.6vw;
+  }
+  @media #{$xl-up} {
+    width: 45%;
   }
 }
 

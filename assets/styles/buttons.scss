@@ -21,9 +21,14 @@
   vertical-align: middle;
   font-size: .83vw;
 
+  @media #{$portrait} {
+    font-size: 1.5vw;
+    padding: 2vw 2.2vw;
+  }
   @media #{$phone-only} {
     padding: 4vw 4.3vw;
     letter-spacing: 1px;
+    font-size: 3vw;
   }
 
   i {
@@ -36,6 +41,11 @@
   border: 2px solid $color-zuc-mint;
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+
+  @media #{$portrait} {
+    font-size: 1vw;
+    padding: 1vw;
+  }
 
   &:hover,
   &:focus,
