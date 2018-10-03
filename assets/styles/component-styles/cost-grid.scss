@@ -1,9 +1,14 @@
 // Hero Header Mask
 .zuc-cost-grid {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   flex-wrap: wrap;
+
+  @media #{$tablet-up} {
+    width: 80%;
+  }
+
 
   @media #{$laptop-up} {
     flex-wrap: nowrap;
@@ -13,9 +18,13 @@
 // Left Side Block with Button
 .zuc-cost-action {
   width: 100%;
-  padding: 2.6vw 2vw;
+  padding: 6vw;
   background: $color-zuc-indigo;
   color: $white;
+
+  @media #{$tablet-up} {
+    padding: 2.6vw 2vw;
+  }
 
   @media #{$laptop-only} {
     width: 30%;
@@ -76,6 +85,10 @@
     text-align: center;
     position: relative;
 
+    @media #{$tablet-only} {
+      padding: 12vw 4vw 4vw;
+    }
+
     h6 {
       margin: 1vw 0 0;
     }
@@ -90,6 +103,10 @@
 
     img {
       width: 100%;
+    }
+
+    @media #{$tablet-only} {
+      width: 20%;
     }
   }
 
@@ -108,7 +125,7 @@
     color: $white;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     opacity: 1;
     transition: all .4s;
 
@@ -121,6 +138,7 @@
       bottom: 0;
       position: absolute;
       opacity: 0;
+      align-items: flex-end;
     }
 
     &:hover,
@@ -140,6 +158,11 @@
     font-weight: 700;
     width: 100%;
     margin-bottom: 1.5vw;
+
+    @media #{$tablet-only} {
+      font-size: 2.7vw;
+      margin-bottom: 2vw;
+    }
   }
 
   // Overlay Costs
@@ -150,6 +173,10 @@
     margin-top: .5vw;
     margin-bottom: 0;
 
+    @media #{$tablet-only} {
+      margin-top: 3vw;
+    }
+
     li {
       padding: .2vw;
     }
@@ -157,11 +184,19 @@
     li:nth-child(even) {
       font-size: 1.04vw;
       font-weight: 700;
+
+      @media #{$tablet-only} {
+        font-size: 2.36vw;
+      }
     }
 
     li:nth-child(odd) {
       font-weight: 300;
       font-size: .93vw;
+
+      @media #{$tablet-only} {
+        font-size: 2.36vw;
+      }
     }
   }
 }
@@ -229,5 +264,38 @@
     @media #{$laptop-up} {
       left: 0!important;
     }
+  }
+}
+
+// Overrides for Green Decorative Bar
+.zuc-cost-grid .d-green-bar:after {
+  @media #{$phone-only} {
+    width: 30%;
+    position: absolute;
+    min-height: 2px;
+    left: 55%;
+    top: 8vw;
+    transform: translateX(0);
+    height: 4px;
+    padding-top: 0;
+  }
+  @media #{$tablet-only} {
+    width: 20%;
+    min-heigth: 10px;
+    position: absolute;
+    left: 35%;
+    top: 2.6vw;
+    transform: translateX(0);
+    height: 10px;
+    padding-top: 0;
+  }
+}
+
+// Background Override on Mobile
+.--no-mob-bkg .zuc-slider-bkg {
+  display: none;
+
+  @media #{$laptop-up} {
+    display: block;
   }
 }
