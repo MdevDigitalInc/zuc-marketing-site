@@ -76,6 +76,12 @@
   }
 }
 
+.--overlay {
+  &:after {
+    opacity: 0;
+  }
+}
+
 .zuc-custom-plan--box {
   width: 32%;
   display: flex;
