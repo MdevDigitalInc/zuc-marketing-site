@@ -75,18 +75,19 @@
 
   .zuc-slb-benefits-bg { //TODO, tops are solid, adjust width once blob is in
     position: absolute;
+    z-index: -5;
     left: 0;
     top: -13.75vw;
-    width: 200%;
+    width: 125%;
 
     @media #{$tablet-only} {
       top: -13.15vw;
-      width: 100%;
+      width: 125%;
     }
 
     @media #{$laptop-up} {
       top: -4.85vw;
-      width: 46%;
+      width: 50%;
     }
   }
 }
