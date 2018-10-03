@@ -5,11 +5,18 @@
   &:after {
     @include pseudo();
     z-index: 2;
-    width: 186px;
-    height: 12px;
+    width: 50%;
+    padding-top: 4%;
+    min-height: 12px;
     background: $color-zuc-mint;
-    right: -93px;
+    right: -50%;
+    transform: translateX(-50%);
     top: 60px;
+
+    @media #{$laptop-only} {
+      width: 35%;
+      transform: translateX(-95%);
+    }
 
     @media #{$portrait} {
       right: auto;
