@@ -1,26 +1,30 @@
 .zuc-slb-benefits {
+  position: relative;
   flex-direction: column;
-  padding: 0;
+  margin-bottom: 28.125vw;
 
   @media #{$tablet-only} {
-    padding: 0;
+    margin-bottom: 19.79vw;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
-    padding: 0;
+    margin-bottom: 10.66vw;
   }
 
   .zuc-image-box {
+    background: $color-zuc-darkindigo;
     width: 100%;
+    height: 75.625vw;
 
     @media #{$tablet-only} {
-      padding: 0;
+      height: 38.67vw;
     }
 
     @media #{$laptop-up} {
       width: 33.3%;
+      height: auto;
     }
   }
 
@@ -36,7 +40,18 @@
     @media #{$laptop-up} {
       width: 20%;
       padding: 2.72vw 2.47vw 3.78vw 1.96vw;
-      
+    }
+
+    p {
+      padding-bottom: 6.875vw;
+
+      @media #{$tablet-only} {
+        padding-bottom: 4.68vw;
+      }
+  
+      @media #{$laptop-up} {
+        padding-bottom: 2.37vw;
+      }
     }
   }
 
@@ -55,19 +70,20 @@
     }
   }
 
-  .zuc-slb-benefits-bg {
+  .zuc-slb-benefits-bg { //TODO, tops are solid, adjust width once blob is in
     position: absolute;
     left: 0;
+    top: -13.75vw;
     width: 200%;
 
     @media #{$tablet-only} {
-      top: 0;
+      top: -13.15vw;
       width: 100%;
     }
 
     @media #{$laptop-up} {
-      top: 0;
-      width: 30%;
+      top: -4.85vw;
+      width: 46%;
     }
   }
 }
