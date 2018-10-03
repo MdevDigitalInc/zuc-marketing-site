@@ -65,13 +65,21 @@
     right: 0;
     bottom: 0;
     position: absolute;
-    background: rgba(54, 56, 75, .9);
+    background: rgba(54, 56, 75, .7);
     padding: 1vw;
     text-align: center;
     color: $white;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    opacity: 0;
+    transition: all .4s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
   }
 
   .zuc-overlay-content {
@@ -80,25 +88,29 @@
 
   .zuc-item-title {
     font-weight: 700;
-    margin-bottom: 1.5vw;
     width: 100%;
+    margin-bottom: 1.5vw;
   }
 
   .zuc-item-costs {
     position: relative;
     bottom: 20px;
     width: 100%;
+    margin-top: .5vw;
+    margin-bottom: 0;
 
     li {
       padding: .2vw;
     }
 
     li:nth-child(even) {
+      font-size: 1.04vw;
       font-weight: 700;
     }
 
     li:nth-child(odd) {
       font-weight: 300;
+      font-size: .93vw;
     }
   }
 }
