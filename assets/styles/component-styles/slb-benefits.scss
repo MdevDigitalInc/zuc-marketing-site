@@ -1,0 +1,69 @@
+.zuc-slb-benefits {
+  flex-direction: column;
+  padding: 0;
+
+  @media #{$tablet-only} {
+    padding: 0;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .zuc-image-box {
+    width: 100%;
+
+    @media #{$tablet-only} {
+      padding: 0;
+    }
+
+    @media #{$laptop-up} {
+      width: 33.3%;
+    }
+  }
+
+  .zuc-cta-box {
+    background: $color-zuc-indigo;
+    width: 100%;
+
+    @media #{$tablet-only} {
+      padding: 0;
+    }
+
+    @media #{$laptop-up} {
+      width: 20%;
+    }
+  }
+
+  .zuc-info-box {
+    background: $color-pure-white;
+    width: 100%;
+
+    @media #{$tablet-only} {
+      padding: 0;
+    }
+
+    @media #{$laptop-up} {
+      width: 30%;
+    }
+  }
+
+  .zuc-slb-benefits-bg {
+    position: absolute;
+    left: 0;
+    width: 200%;
+
+    @media #{$tablet-only} {
+      top: 0;
+      width: 100%;
+    }
+
+    @media #{$laptop-up} {
+      top: 0;
+      width: 30%;
+    }
+  }
+}
+

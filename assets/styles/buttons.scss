@@ -44,6 +44,18 @@
     background: $color-zuc-mint;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
+
+  &.--b-lilac {
+    color: $color-zuc-lilac;
+    border-color: $color-zuc-lilac;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-zuc-darkindigo;
+      background: $color-zuc-lilac;
+    }
+  }
 }
 
 
