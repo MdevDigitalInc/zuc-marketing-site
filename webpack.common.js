@@ -25,7 +25,7 @@ module.exports = {
   // Output Files
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
+    publicPath: '',
     filename: 'app/[name][hash].js'
   },
   // Split Vendor | Build Assets into separate chunks
