@@ -62,10 +62,10 @@
   position: relative;
 
   @media #{$tablet-only} {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   @media #{$phone-only} {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   .photo {
