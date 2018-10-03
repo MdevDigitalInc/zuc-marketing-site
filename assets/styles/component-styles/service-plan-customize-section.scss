@@ -102,30 +102,31 @@
   }
 
   .plus-icon {
-    &:after {
-      display: inline;
-      content: ' ';
-      background-image: url('../../assets/images/icons/icon-plus.svg');
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 50%;
-      // left: 100%;
-      right: -20px;
-      height: 40px;
-      width: 40px;
+    background-image: url('../../assets/images/icons/icon-plus.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    height: 40px;
+    width: 40px;
+    @media #{$phone-only} {
+      position: static;
+      margin-top: 15px;
     }
   }
+
   .or-icon {
-    &:after {
-      display: inline;
-      content: ' ';
-      background-image: url('../../assets/images/icons/icon-or.svg');
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 50%;
-      right: -24px;
-      height: 50px;
-      width: 50px;
+    background-image: url('../../assets/images/icons/icon-or.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    height: 50px;
+    width: 50px;
+
+    @media #{$phone-only} {
+      position: static;
+      margin-top: 15px;
     }
   }
 }
