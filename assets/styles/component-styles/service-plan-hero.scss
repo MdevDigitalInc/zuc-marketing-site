@@ -9,12 +9,12 @@
   flex-direction: column;
 
   @media #{$tablet-only} {
-    padding: 4.5vh 0 4.5vh 6vw;
+    padding: 8vh 0 4.5vh 6vw;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
-    padding: 4.5vh 0 4.5vh 18vw;
+    padding: 8vh 0 4.5vh 18vw;
   }
 }
 
@@ -72,6 +72,7 @@
     z-index: 1;
     max-width: 500px;
     max-height: 400px;
+    margin-right: 350px;
 
     @media #{$tablet-only} {
       max-width: 100%;
