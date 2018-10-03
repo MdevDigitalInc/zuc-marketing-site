@@ -1,32 +1,52 @@
 .spkids-video {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
   padding-bottom: 51.25vw;
 
   @media #{$tablet-only} {
-    width: 87%;
     padding-bottom: 26.95vw;
   }
 
   @media #{$laptop-up} {
-    width: 80%;
     padding-bottom: 8.59vw;
+  }
+
+  .zuc-video-bg {
+    position: absolute;
+    right: -1px;
+    top: -19.69vw;
+    width: 80vw;
+
+    @media #{$tablet-only} {
+      top: -11.46vw;
+      width: 55vw;
+    }
+
+    @media #{$laptop-up} {
+      top: -16.11vw;
+      width: 25vw;
+    }
   }
 }
 
 .zuc-video-row {
   position: relative;
+  margin: 0 auto;
   z-index: 1;
   width: 100%;
   flex-direction: column;
 
+  @media #{$tablet-only} {
+    width: 87%;
+  }
+
   @media #{$laptop-up} {
+    width: 80%;
     flex-direction: row;
   }
 }
 
 .zuc-video-left {
+  background: $color-pure-white;
   position: relative;
   text-align: left;
   width: 100%;
