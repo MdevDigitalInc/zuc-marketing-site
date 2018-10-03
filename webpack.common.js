@@ -205,7 +205,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/appl-plan.pug',
-      filename: 'plans/appliance.html'
+      filename: 'plans/appliances.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/furn-plan.pug',
