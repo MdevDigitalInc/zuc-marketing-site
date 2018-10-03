@@ -185,8 +185,13 @@
   padding: 7.8vw 0;
   margin-bottom: 7.8vw;
 
+  @media #{$tablet-only} {
+    margin-bottom: 23.18vw;
+  }
+
   @media #{$portrait} {
     padding: 100px 0 0;
+    margin-bottom: 28.125vw;
   }
 
   .zuc-hero-row {
