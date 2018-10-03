@@ -106,11 +106,17 @@
 @import './layouts.scss';
 
 /*----
+  Compound Component Styles
+-----*/
+@import './component-styles/shared-main.scss';
+@import './component-styles/slb-main.scss';
+@import './component-styles/slp-main.scss';
+@import './component-styles/spkids-main.scss';
+
+/*----
   Component Styles
 -----*/
-@import './component-styles/blog-module.scss';
 @import './component-styles/contact-form.scss';
-@import './component-styles/review-section.scss';
 @import './component-styles/blob-module.scss';
 @import './component-styles/hero-header.scss';
 @import './component-styles/faq-content.scss';
@@ -118,16 +124,8 @@
 @import './component-styles/home-inspired-section.scss';
 @import './component-styles/home-about-module.scss';
 @import './component-styles/hero-slider.scss';
-@import './component-styles/slp-why-grid.scss';
-@import './component-styles/slp-how-blob.scss';
-@import './component-styles/slp-service-plans.scss';
-@import './component-styles/slp-member-benefits.scss';
-@import './component-styles/spkids-header.scss';
-@import './component-styles/spkids-coverage.scss';
-@import './component-styles/spkids-video.scss';
-@import './component-styles/spkids-damage.scss';
 @import './component-styles/text-blocks.scss';
-@import './component-styles/slb-benefits.scss';
+
 /*----
   Broadcast Banner
 -----*/
