@@ -1,25 +1,17 @@
-section.zuc-hero-header-mask
-  // Media container
-  .zuc-hero-media-container
-    // Video or Image ( Image can also be added as BKG to above container )
-    video(
-      class="zuc-hero-video"
-      poster="https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg"
-      style="background-image: url('https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg'); background-size: cover;"
-      preload="auto" autoplay muted loop )
-
-      //- At least two sources plz
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.webm" type="video/webm")
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.mp4" type="video/mpr")
-
-  // Header Shield
-  .zuc-shield.zuc-icon--primary
-    //- Container to position elements absolutely
-    .zuc-shield-content.u-text-center
-      h1.zuc-shield-title
-        |Smarter Living Matters
-      .zuc-shield-subtitle.u-uppercase.u-normal
-        |Customized. Connected. Convenient.
-
-      a(class="zuc-btn zuc-btn-secondary" href="#" title="todo")
-        |Watch Video
+-
+  var copy = [
+    'Unlike most other systems, Smarter Home Control enables most standard compliant devices to be added to your gateway without any input from us or you.',
+    'Smarter Home Control scans the devices, finds the features they provide, and make them easily available for you.',
+    'If you have a ZigBee light-bulb, you can add it, and chances are, it will just work. This means that your things easily integrate with the Smarter Home Control system as long as it runs the standard version of the protocols we support. If you have already invested in a lighting or alarm system, you can connect them to the gateway, and have them available everywhere, anytime in one app.',
+    'Now, that’s what we call smart.'
+  ]
+section.zuc-hero-header-test
+  .zuc-shc-content.d-greenbar
+    .h6.u-uppercase
+      |one home, One app
+    h1
+      |Smarter Home Control
+    //- Iterate through the copy
+    each val in copy.length ? copy : ['There are no values']
+      p
+        |#{val}
