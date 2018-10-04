@@ -4,24 +4,32 @@ section.zuc-choice {
   padding: 0 0 10vw;
 
   @media #{$tablet-only} {
-    padding: 0 7vw 10vw;
+    padding: 0 0 10vw;
   }
 
   @media #{$laptop-up} {
-    padding: 0 10vw 10vw 15vw;
+    padding: 0 0 10vw 15vw;
     flex-direction: row;
   }
 }
 
 .zuc-choice-box-left {
-  width: 40vw;
-  // waiting on design so the next few line are just to give visuality while developing section - AW 20181004
-  height: 20.45vw;
   background: $color-zuc-indigo;
+  width: 100%;
+  height: 60vw; // waiting on design
+
+  @media #{$tablet-only} {
+    height: 40vw; // waiting on design
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    height: 20.45vw; // waiting on design
+  }
 }
 
 .zuc-choice-box-right {
-  padding: 0;
+  padding: 0 7vw;
 
   @media #{$laptop-up} {
     padding: 2.34vw 0 0 5.35vw;
@@ -35,7 +43,7 @@ section.zuc-choice {
 
     margin-bottom: 3.5vw;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       margin-bottom: 2vw;
     }
 
@@ -47,8 +55,9 @@ section.zuc-choice {
   p {
     padding-bottom: 5vw;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       padding-bottom: 3vw;
+      width: 55.08vw;
     }
 
     @media #{$laptop-up} {
@@ -57,10 +66,23 @@ section.zuc-choice {
     }
   }
 
-  .zuc-learn-more {
-    border-bottom: 2px solid $color-zuc-indigo;
+  .zuc-link-box {
+    flex-direction: column;
 
     @media #{$tablet-up} {
+      flex-direction: row;
+    }
+  }
+
+  .zuc-learn-more {
+    border-bottom: 2px solid $color-zuc-indigo;
+    padding-top: 5vw;
+    margin-left: 4.3vw;
+
+    @media #{$tablet-up} {
+      display: inline;
+      padding-top: 0;
+      margin-left: 4.3vw;
     }
 
     @media #{$laptop-up} {
