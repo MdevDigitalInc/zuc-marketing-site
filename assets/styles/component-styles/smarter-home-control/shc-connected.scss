@@ -12,14 +12,30 @@ section.zuc-connected {
 }
 
 .zuc-connected-left {
-  position: relative;
   width: 100%;
+  justify-content: center;
 
   @media #{$laptop-up} {
     width: 50%;
+    justify-content: flex-end;
+  }
+
+  .zuc-image-box {
+    margin: 0 6%;
+
+    @media #{$tablet-only} {
+      margin: 0 0 0 6%;
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 0 0 15%;
+    }
+  }
+
+  img {
+    width: 100%;
   }
 }
-
 
 .zuc-connected-right {
   width: 100%;
