@@ -21,14 +21,14 @@ section.zuc-connected {
   }
 
   .zuc-image-box {
-    margin: 0 6%;
+    margin: 0 6vw 26vw;
 
     @media #{$tablet-only} {
-      margin: 0 0 0 6%;
+      margin: 0 6vw 24.22vw;
     }
 
     @media #{$laptop-up} {
-      margin: 0 0 0 15%;
+      margin: 0 0 0 15vw;
     }
   }
 
