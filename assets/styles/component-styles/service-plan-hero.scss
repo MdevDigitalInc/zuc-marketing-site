@@ -69,13 +69,13 @@
     @media #{$tablet-only} {
       max-width: 100%;
       display: block;
-      margin-right: 0px;
+      margin-right: 0;
     }
 
     @media #{$phone-only} {
       max-width: 100%;
       display: block;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
