@@ -6,6 +6,7 @@
     'Now, that’s what we call smart.'
   ]
 section.zuc-hero-header-test
+  // Content Block
   .zuc-shc-content.d-greenbar
     .h6.u-uppercase
       |one home, One app
@@ -15,3 +16,9 @@ section.zuc-hero-header-test
     each val in copy.length ? copy : ['There are no values']
       p
         |#{val}
+
+    a(class="zuc-btn zuc-btn-secondary" href="#" title="todo")
+      |GET STARTED TODAY
+
+    .zuc-shc-appview
+      img(src="../../assets/images/smarter-home/phone.png" alt="todo")
