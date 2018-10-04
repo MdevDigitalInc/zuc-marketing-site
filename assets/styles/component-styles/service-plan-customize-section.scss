@@ -1,0 +1,138 @@
+// Service Plan Customize Section.
+.zuc-custom-plan--header {
+  color: $color-zuc-indigo;
+  width: 100%;
+  text-align: left;
+  padding: 6vh 9vw 0 18vw;
+  @media #{$phone-only} {
+    margin-top: 20px;
+    margin-left: 5%;
+    padding: 0 0 3vh;
+  }
+}
+
+.zuc-custom-plan--container {
+  padding: 0 0 3vh;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+
+  @media #{$tablet-only} {
+    padding: 0 0 8vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 4.5vh 9vw 4.5vh 18vw;
+  }
+}
+
+.zuc-custom-plan {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+
+  @media #{$phone-only} {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+}
+
+.zuc-custom-plan--title {
+  text-align: center;
+  width: 4%;
+  padding: 20px 0px;
+  background-color: $color-zuc-lilac;
+  display: flex;
+  justify-content: center;
+
+  @media #{$phone-only} {
+    width: 100%;
+    height: 5vh;
+  }
+
+  &--vertical-text {
+    color: $white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transform-origin: 50%;
+
+    @media #{$phone-only} {
+      width: 100%;
+      height: auto;
+      align-self: center;
+      transform: rotate(0deg);
+      transform-origin: 0%;
+      writing-mode: horizontal-tb
+    }
+  }
+}
+
+.zuc-custom-plan--overlay {
+  &:after {
+    opacity: 0;
+  }
+}
+
+.zuc-custom-plan--box {
+  width: 32%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1vh 1vw;
+
+  @media #{$phone-only} {
+    width: 100%;
+  }
+
+  .photo {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .photo-text {
+    text-transform: uppercase;
+    color: $color-zuc-concrete;
+    margin-top: -25px; // because images have a lot of space at btm.
+    padding-bottom: 20px;
+  }
+
+  .plus-icon {
+    background-image: url('../../assets/images/icons/icon-plus.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    z-index: 1;
+    height: 9vh;
+    width: 2.6vw;
+    @media #{$phone-only} {
+      position: static;
+      margin-top: 15px;
+      height: 10vh;
+      width: 10vw;
+    }
+  }
+
+  .or-icon {
+    background-image: url('../../assets/images/icons/icon-or.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    z-index: 1;
+    height: 9vh;
+    width: 3vw;
+
+    @media #{$phone-only} {
+      position: static;
+      margin-top: 15px;
+      height: 10vh;
+      width: 10vw;
+    }
+  }
+}
