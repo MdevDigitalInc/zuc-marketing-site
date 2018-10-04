@@ -108,10 +108,10 @@
 /*----
   Compound Component Styles
 -----*/
-@import './component-styles/shared-main.scss';
-@import './component-styles/slb-main.scss';
-@import './component-styles/slp-main.scss';
-@import './component-styles/sp-main.scss';
+@import './component-styles/shared/shared-main.scss';
+@import './component-styles/smarter-living-benefits/slb-main.scss';
+@import './component-styles/smarter-living-parent/slp-main.scss';
+@import './component-styles/service-plan/sp-main.scss';
 
 /*----
   Component Styles
