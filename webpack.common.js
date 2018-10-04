@@ -172,11 +172,11 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/contact.pug',
+      template: './src/templates/form-contact.pug',
       filename: 'contact.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/request-service.pug',
+      template: './src/templates/form-request-service.pug',
       filename: 'request-service.html'
     }),
     new HtmlWebpackPlugin({
@@ -184,7 +184,7 @@ module.exports = {
       filename: 'faq.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/orders.pug',
+      template: './src/templates/form-orders.pug',
       filename: 'orders.html'
     }),
     new HtmlWebpackPlugin({
@@ -192,15 +192,15 @@ module.exports = {
       filename: 'typography.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/smarter-living.pug',
+      template: './src/templates/sl-parent.pug',
       filename: 'smarter-living.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/slb-parent.pug',
-      filename: 'slb-parent.html'
+      template: './src/templates/sl-benefits.pug',
+      filename: 'benefits.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/service-plans.pug',
+      template: './src/templates/sp-parents.pug',
       filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
