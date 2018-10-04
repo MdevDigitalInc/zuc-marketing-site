@@ -8,7 +8,7 @@ section.zuc-choice {
   }
 
   @media #{$laptop-up} {
-    padding: 0 15vw 10vw 20vw;
+    padding: 0 10vw 10vw 15vw;
     flex-direction: row;
   }
 }
@@ -22,8 +22,6 @@ section.zuc-choice {
 
 .zuc-choice-box-right {
   padding: 0;
-
-
 
   @media #{$laptop-up} {
     padding: 2.34vw 0 0 5.35vw;
@@ -56,6 +54,17 @@ section.zuc-choice {
     @media #{$laptop-up} {
       padding-bottom: 1.5vw;
       width: 16.5vw;
+    }
+  }
+
+  .zuc-learn-more {
+    border-bottom: 2px solid $color-zuc-indigo;
+
+    @media #{$tablet-up} {
+    }
+
+    @media #{$laptop-up} {
+      margin-left: 1.67vw;
     }
   }
 }
