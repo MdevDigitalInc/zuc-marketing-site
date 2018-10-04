@@ -9,6 +9,26 @@ section.zuc-connected {
   @media #{$laptop-up} {
     padding: 0 0 9.44vw;
   }
+
+  .zuc-bg-blog {
+    position: absolute;
+    z-index: -6;
+    top: -105vw;
+    left: -65vw;
+    height: 208.125vw;
+
+    @media #{$tablet-only} {
+      top: -71.74vw;
+      left: -32vw;
+      height: 155.86vw;
+    }
+
+    @media #{$laptop-up} {
+      top: -35.8vw;
+      left: -7vw;
+      height: 69.64vw;
+    }
+  }
 }
 
 .zuc-connected-left {
@@ -30,10 +50,10 @@ section.zuc-connected {
     @media #{$laptop-up} {
       margin: 0 0 0 15vw;
     }
-  }
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }
 
