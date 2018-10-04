@@ -11,15 +11,23 @@ section.zuc-connected {
   }
 }
 
+.zuc-connected-left {
+  position: relative;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
 
 
 .zuc-connected-right {
   width: 100%;
   margin: 0;
-  padding: 0 5vw 29.375vw;
+  padding: 0 7vw 29.375vw;
 
-  @media #{$tablet-up} {
-    padding: 0 0 13.8vw;
+  @media #{$tablet-only} {
+    padding: 0 7vw 13.8vw;
   }
 
   @media #{$laptop-up} {
