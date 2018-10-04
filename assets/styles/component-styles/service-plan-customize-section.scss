@@ -1,11 +1,7 @@
 // Service Plan Customize Section.
 .zuc-custom-plan--header {
-  font-family: $main-font-serif;
-  font-weight: $heading-weight;
   color: $color-zuc-indigo;
-  font-size: 36px;
   width: 100%;
-  line-height: 1.3;
   text-align: left;
   padding: 6vh 9vw 0 18vw;
   @media #{$phone-only} {
@@ -74,7 +70,6 @@
     }
   }
 }
-
 
 .zuc-custom-plan--overlay {
   &:after {
