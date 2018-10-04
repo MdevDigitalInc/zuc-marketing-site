@@ -106,32 +106,26 @@
 @import './layouts.scss';
 
 /*----
+  Compound Component Styles
+-----*/
+@import './component-styles/shared/shared-main.scss';
+@import './component-styles/smarter-living-benefits/slb-main.scss';
+@import './component-styles/smarter-living-parent/slp-main.scss';
+@import './component-styles/service-plan/sp-main.scss';
+@import './component-styles/smarter-home-control/shc-main.scss';
+
+/*----
   Component Styles
 -----*/
 @import './component-styles/contact-form.scss';
-@import './component-styles/review-section.scss';
 @import './component-styles/blob-module.scss';
 @import './component-styles/hero-header.scss';
 @import './component-styles/faq-content.scss';
 @import './component-styles/home-customized-section.scss';
 @import './component-styles/home-inspired-section.scss';
+@import './component-styles/home-about-module.scss';
 @import './component-styles/hero-slider.scss';
-@import './component-styles/smarter-why.scss';
-@import './component-styles/blog-module.scss';
-@import './component-styles/how-blob.scss';
-@import './component-styles/service-plans.scss';
-@import './component-styles/member-benefits.scss';
-@import './component-styles/about-module.scss';
 @import './component-styles/text-blocks.scss';
-@import './component-styles/service-plan-hero.scss';
-@import './component-styles/service-plan-customize-section.scss';
-@import './component-styles/cost-grid.scss';
-@import './component-styles/spkids-header.scss';
-@import './component-styles/spkids-coverage.scss';
-@import './component-styles/spkids-video.scss';
-@import './component-styles/spkids-damage.scss';
-@import './component-styles/slb-benefits.scss';
-
 
 /*----
   Broadcast Banner
