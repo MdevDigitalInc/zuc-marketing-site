@@ -1,0 +1,333 @@
+// Hero Header Mask
+.zuc-cost-grid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+
+  @media #{$tablet-up} {
+    width: 80%;
+  }
+
+
+  @media #{$laptop-up} {
+    flex-wrap: nowrap;
+  }
+}
+
+// Left Side Block with Button
+.zuc-cost-action {
+  width: 100%;
+  padding: 6vw;
+  background: $color-zuc-indigo;
+  color: $white;
+
+  @media #{$tablet-only} {
+    padding: 4vw;
+  }
+  @media #{$laptop-up} {
+    padding: 2.6vw 2vw;
+  }
+  @media #{$laptop-only} {
+    width: 30%;
+  }
+  @media #{$desktop-up} {
+    width: 25%;
+  }
+  .zuc-btn {
+    margin-top: 3vw;
+  }
+}
+
+// Right side block with Content
+.zuc-cost-content {
+  width: 100%;
+  position: relative;
+
+  @media #{$laptop-only} {
+    width: 70%;
+  }
+  @media #{$desktop-up} {
+    width: 75%;
+  }
+}
+
+// Grid Rows - Top - Bottom
+.zuc-grid-row {
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+
+  @media #{$laptop-up} {
+    flex-wrap: nowrap;
+  }
+
+  .zuc-grid-item {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media #{$phone-only} {
+      height: 240px;
+    }
+    @media #{$tablet-only} {
+      height: 240px;
+    }
+
+    @media #{$laptop-up} {
+      width: 25%;
+    }
+  }
+
+  // Testimonial - Review Block
+  .--testimonial {
+    background: $color-zuc-lilac;
+    padding: 20vw 9vw 6vw;
+    text-align: center;
+    position: relative;
+
+    @media #{$tablet-only} {
+      padding: 12vw 4vw 4vw;
+    }
+    @media #{$laptop-up} {
+      padding: 4vw 1.9vw 1.9vw;
+    }
+
+    h6 {
+      margin: 1vw 0 0;
+    }
+  }
+
+  // Badge Container Override
+  .zuc-quote-badge-container {
+    background: $color-zuc-lilac;
+    @include center(horizontal);
+    height: auto;
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
+
+    @media #{$tablet-only} {
+      width: 20%;
+    }
+    @media #{$phone-only} {
+      width: 25%;
+    }
+  }
+
+  // Item Overlay - Separate from main overlays
+  // because it also has to control the content
+  // inside the overlays.
+  .zuc-item-overlay {
+    width: 50%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(54, 56, 75, .7);
+    padding: 1vw;
+    text-align: center;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 1;
+    transition: all .4s;
+
+    @media #{$laptop-up} {
+      width: auto;
+      height: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      opacity: 0;
+      align-items: flex-end;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  // Needed to keep content in the lower part of the overlay
+  .zuc-overlay-content {
+    width: 100%;
+  }
+
+  // Overlay Text -------------------
+  .zuc-item-title {
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1.5vw;
+
+    @media #{$phone-only} {
+      margin-bottom: 9vw;
+    }
+    @media #{$tablet-only} {
+      font-size: 2.7vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  // Overlay Costs
+  .zuc-item-costs {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    margin-top: .5vw;
+    margin-bottom: 0;
+
+    @media #{$phone-only} {
+      margin-top: 2vw;
+    }
+    @media #{$tablet-only} {
+      margin-top: 3vw;
+    }
+
+    li {
+      padding: .2vw;
+
+      @media #{$phone-only} {
+        padding: 1vw;
+      }
+    }
+
+    li:nth-child(odd) {
+      font-size: 1.04vw;
+      font-weight: 700;
+
+      @media #{$phone-only} {
+        font-size: 3vw;
+      }
+
+      @media #{$tablet-only} {
+        font-size: 2.36vw;
+      }
+    }
+
+    li:nth-child(even) {
+      font-weight: 300;
+      font-size: .93vw;
+
+      @media #{$phone-only} {
+        font-size: 2.8vw;
+      }
+      @media #{$tablet-only} {
+        font-size: 2.36vw;
+      }
+    }
+  }
+}
+
+// Double Item Row
+// Needed to keep two of the items stacked on
+// either end of the module.
+.zuc-grid-double {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+
+  .zuc-grid-item {
+    width: 100%;
+
+    @media #{$laptop-only} {
+      height: 14vw;
+    }
+    @media #{$desktop-only} {
+      height: 13vw;
+    }
+    @media #{$xl-up} {
+      height: 15vw;
+    }
+  }
+}
+
+// Height Override
+.--height-one {
+
+  @media #{$laptop-only} {
+    height: 24vw;
+  }
+  @media #{$desktop-only} {
+    height: 21vw;
+  }
+  @media #{$xl-up}  {
+    height: 23vw;
+  }
+}
+
+// nth-child override
+.zuc-grid-item:nth-child(even) {
+  .zuc-item-overlay {
+    left: 0;
+  }
+}
+
+.zuc-grid-item:nth-child(odd) {
+  .zuc-item-overlay {
+    right: 0;
+  }
+}
+
+// Needed to shift the one last silly overlay.
+// Could be entirely refactored lately but honestly,
+// probably not worth the trouble.
+.--nudge {
+  .zuc-item-overlay {
+    right: 0;
+    left: auto!important;
+
+    @media #{$laptop-up} {
+      left: 0!important;
+    }
+  }
+}
+
+// Overrides for Green Decorative Bar
+.zuc-cost-grid .d-green-bar:after {
+  @media #{$phone-only} {
+    width: 30%;
+    position: absolute;
+    min-height: 2px;
+    left: 55%;
+    top: 6vw;
+    transform: translateX(0);
+    height: 4px;
+    padding-top: 0;
+  }
+  @media #{$tablet-only} {
+    width: 20%;
+    min-heigth: 10px;
+    position: absolute;
+    left: 35%;
+    top: 4vw;
+    transform: translateX(0);
+    height: 10px;
+    padding-top: 0;
+  }
+  @media #{$laptop-up} {
+    top: 2.6vw;
+  }
+  @media #{$xl-up} {
+    width: 45%;
+  }
+}
+
+// Background Override on Mobile
+.--no-mob-bkg .zuc-slider-bkg {
+  display: none;
+
+  @media #{$laptop-up} {
+    display: block;
+  }
+}
