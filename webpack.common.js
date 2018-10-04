@@ -196,23 +196,23 @@ module.exports = {
       filename: 'smarter-living.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/benefits.pug',
-      filename: 'benefits.html'
+      template: './src/templates/slb-parent.pug',
+      filename: 'slb-parent.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/service-plans.pug',
       filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/appl-plan.pug',
+      template: './src/templates/spkids-appl.pug',
       filename: 'spkids-appliances.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/furn-plan.pug',
+      template: './src/templates/spkids-furn.pug',
       filename: 'spkids-furniture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/homesys-plan.pug',
+      template: './src/templates/spkids-homesys.pug',
       filename: 'spkids-home-systems.html'
     }),
     new CopyWebpackPlugin([
