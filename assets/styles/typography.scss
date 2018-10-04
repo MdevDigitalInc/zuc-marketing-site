@@ -116,12 +116,12 @@ $link-font-sizes: (
 /* Generate Responsive Sizing */
 
 p {
-  line-height: 180%;
+  line-height: 1.44;
   font-weight: 400;
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {
-    line-height: 150%;
+    line-height: 1.43;
   }
 }
 

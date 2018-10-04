@@ -1,0 +1,144 @@
+.zuc-spkids-header {
+  flex-direction: column;
+  margin: 23.7vw 0 16.41vw;
+
+  @media #{$tablet-only} {
+    margin: 23.7vw 0 16.41vw;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    margin: 10.2vw 8.2vw 15vw;
+  }
+}
+
+.zuc-head-box {
+  width: 90vw;
+  padding: 11.563vw 13.75vw 11.563vw 10.625vw;
+  background-color: $color-pure-white;
+
+  @media #{$tablet-only} {
+    width: 75.65vw;
+    padding: 10.68vw 20.73vw 10.68vw 7.68vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 25vw;
+    height: 31vw; // ?
+    padding: 5.84vw 3.69vw 6.67vw 2.32vw;
+  }
+
+  @media #{$desktop-up} {
+    padding: 8.84vw 3.69vw 6.67vw 2.32vw;
+  }
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  p {
+    color: $color-zuc-darkindigo;
+    padding-right: 0;
+    padding-bottom: 12.188vw;
+    
+    @media #{$tablet-only} {
+      padding-right: 8.72vw;
+      padding-bottom: 5.6vw;
+    }
+    
+    @media #{$laptop-up} {
+      padding-right: 3.38vw;
+      padding-bottom: 2.17vw;
+    }
+  }
+}
+
+.zuc-spkids-header-img-box {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 82.813vw 25.625vw 5.313vw 8.438vw;
+
+  @media #{$tablet-only} {
+    width: 84vw;
+    padding: 61.85vw 26.17vw 5.6vw 7.03vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 33.3vw;
+    height: 36vw; // ?
+    padding: 21.97vw 10.15vw 2.17vw 2.73vw;
+  }
+
+  h1 {
+    color: $color-pure-white;
+    font-family: $main-font-serif;
+  }
+
+  img {
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+    height: 100%; // TODO
+    top: 0;
+    left: 0;
+  }
+}
+
+.zuc-kaboose-box {
+  position: relative;
+  height: 83.438vw; // Design not done so manual height so it's not hideous
+  width: 90vw;
+  background-color: $color-pure-white;
+  
+  @media #{$tablet-only} {
+    height: 62.5vw; // Design not done so manual height so it's not hideous
+    width: 75.65vw;
+  }
+
+  @media #{$laptop-up} {
+    height: 31vw;  // Design not done so manual height so it's not hideous
+    width: 25vw;
+  }
+
+  .zuc-zigzag {
+    display: none;
+    width: 12.8vw;
+    position: absolute;
+    top: 3.28vw;
+    left: -6.4vw;
+    z-index: 8;
+
+    @media #{$laptop-up} {
+      display: block;
+    }
+  }
+}
+
+
+.zuc-spkids-header-bg1 {
+  position: absolute;
+  z-index: -13;
+  left: -2px;
+  top: 0;
+  width: 500%;
+
+  @media #{$tablet-only} {
+    left: -1px;
+    width: 200%;
+  }
+
+  @media #{$laptop-up} {
+    top: -3vw;
+    width: 100%;
+  }
+}
+
+//TODO
+.zuc-spkids-header-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

@@ -2,13 +2,6 @@
  *  FOOTER
  *-------------------------------------
 */
-
-.zuc-footer-wrapper {
-  padding-bottom: 25px;
-  background-image: url('../images/footer.jpeg');
-  background-position-y: bottom;
-}
-
 .zuc-footer {
   background-color: $color-zuc-indigo;
   padding: 60px 20px 70px;
@@ -138,4 +131,59 @@
   }
 }
 
+.zuc-footer--btm-trim {
+  height: 25px;
+  background-image: url('../images/footer.jpeg');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
 
+/*-------------------------------------
+ * SECONDARY FOOTER
+ *-------------------------------------
+*/
+
+.zuc-secondary-footer-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 450px;
+  margin-top: -500px;
+  overflow-x: hidden;
+
+  @media #{$laptop-up} {
+    padding-top: 550px;
+  }
+
+  @media #{$xl-up} {
+    padding-top: 850px;
+    margin-top: -700px;
+  }
+
+  @media #{$phone-only} {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .zuc-footer {
+    background: linear-gradient(to bottom, transparent, #434da0, #434da0);
+  }
+  .zuc-footer--brand-section {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.zuc-secondary-footer-bkg {
+  width: 100%;
+  z-index: -99;
+  position: absolute;
+  bottom: 225px;
+  left: 0;
+  transform: scale(1.2);
+
+  @media #{$laptop-up} {
+    bottom: 175px;
+  }
+  @media #{$phone-only} {
+    display: none;
+  }
+}
