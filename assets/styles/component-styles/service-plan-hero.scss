@@ -27,17 +27,11 @@
   }
 
   .zuc-service-plan-hero--heading {
-    // font-family: $main-font-serif;
-    // font-weight: $heading-weight;
     color: $color-zuc-indigo;
-    // font-size: 36px;
     width: 22vw;
-    // line-height: 1.3;
   }
 
   .zuc-service-plan-hero--copy {
-    font-weight: $body-weight;
-    font-size: $font-size-body;
 
     @media #{$laptop-up} {
       max-width: 400px;
