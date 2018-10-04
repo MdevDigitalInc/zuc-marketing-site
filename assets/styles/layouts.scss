@@ -97,6 +97,14 @@
     .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
       .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
 
+  snippet for copya pasta:
+
+  .zuc-title-container.flex
+    h4
+      |soisoisoi
+    .zuc-title-flag
+      .--green
+
   AW - LU: 20181001
 */
 
