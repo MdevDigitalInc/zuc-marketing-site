@@ -8,7 +8,8 @@
 
   &:after {
     @include pseudo();
-    background-image: url('../images/shapes/hero-wave-shape.svg');
+    background: url('../images/shapes/hero-wave-shape.svg');
+    //background-image: url('./images/shapes/hero-wave-shape.svg');
     // Another asinine percentage for webkit.
     background-size: 101%;
     background-repeat: no-repeat;
@@ -185,8 +186,13 @@
   padding: 7.8vw 0;
   margin-bottom: 7.8vw;
 
+  @media #{$tablet-only} {
+    margin-bottom: 23.18vw;
+  }
+
   @media #{$portrait} {
     padding: 100px 0 0;
+    margin-bottom: 28.125vw;
   }
 
   .zuc-hero-row {

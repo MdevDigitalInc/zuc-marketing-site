@@ -25,7 +25,7 @@ module.exports = {
   // Output Files
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
+    publicPath: '',
     filename: 'app/[name][hash].js'
   },
   // Split Vendor | Build Assets into separate chunks
@@ -146,7 +146,7 @@ module.exports = {
   // Plugins & Post Processing
   plugins: [
     // Text Extraction & Chunking
-    new ExtractTextPlugin("assets/styles/styles[hash].css"),
+    new ExtractTextPlugin("styles[hash].css"),
     // [ PUG + SASS Template Registration ]
     // -----------------------------------
     // Webpack needs to know which main templates to compile.
@@ -173,11 +173,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/contact.pug',
-      filename: 'forms/contact.html'
+      filename: 'contact.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/request-service.pug',
-      filename: 'forms/request-service.html'
+      filename: 'request-service.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/faq.pug',
@@ -185,11 +185,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/orders.pug',
-      filename: 'forms/orders.html'
+      filename: 'orders.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/typography-test.pug',
-      filename: 'test/typography.html'
+      filename: 'typography.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/smarter-living.pug',
@@ -202,6 +202,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/service-plans.pug',
       filename: 'service-plans.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/appl-plan.pug',
+      filename: 'appliances.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/furn-plan.pug',
+      filename: 'furniture.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/homesys-plan.pug',
+      filename: 'home-systems.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }

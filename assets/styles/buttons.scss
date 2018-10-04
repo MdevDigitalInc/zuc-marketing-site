@@ -13,7 +13,7 @@
   padding: .67vw 1.04vw;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
   transition: all .4s;
   border-radius: 20vw;
@@ -21,9 +21,14 @@
   vertical-align: middle;
   font-size: .83vw;
 
+  @media #{$portrait} {
+    font-size: 1.5vw;
+    padding: 2vw 2.2vw;
+  }
   @media #{$phone-only} {
     padding: 4vw 4.3vw;
     letter-spacing: 1px;
+    font-size: 3vw;
   }
 
   i {
@@ -37,6 +42,11 @@
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
 
+  @media #{$portrait} {
+    font-size: 1vw;
+    padding: 1vw;
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -46,11 +56,24 @@
   }
 }
 
+.zuc-btn-hollow {
+  border: 2px solid $color-zuc-lilac;
+  background: transparent;
+  text-align: center;
+  color: $color-zuc-lilac;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-zuc-indigo;
+    background: $color-zuc-lilac;
+  }
+}
+
 
 .zuc-btn-secondary {
   color: $white;
   border: none;
-  text-transform: none;
   font-weight: 700;
   font-size: .96vw;
   padding: 1.45vw 2.21vw;
