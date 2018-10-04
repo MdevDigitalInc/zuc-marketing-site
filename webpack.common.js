@@ -173,11 +173,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-contact.pug',
-      filename: 'contact.html'
+      filename: 'form-contact.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-request-service.pug',
-      filename: 'request-service.html'
+      filename: 'form-request-service.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/faq.pug',
@@ -185,7 +185,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-orders.pug',
-      filename: 'orders.html'
+      filename: 'form-orders.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/typography-test.pug',
