@@ -27,22 +27,6 @@
     width: 50%;
     padding: 0 8vw 0 3vw;
   }
-
-  img {
-    width: 8vw;
-
-    @media #{$tablet-up} {
-      width: 8vw;
-    }
-
-    @media #{$laptop-up} {
-      width: 8vw;
-    }
-
-    @media #{$desktop-up} {
-      width: 8vw;
-    }
-  }
 }
 
 .zuc-smarter-how-rt {
@@ -93,36 +77,5 @@
         width: 42vw;
       }
     }
-  }
-}
-
-.zuc-blue-bar {
-  border: 3px solid $color-zuc-lilac;
-  width: 37vw;
-  margin-top: 3vw;
-  margin-bottom: 6vw;
-
-  @media #{$tablet-up} {
-    width: 24vw;
-    margin-top: 2vw;
-    margin-bottom: 7vw;
-  }
-
-  @media #{$tablet-lnd-only} {
-    width: 15vw;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
-  }
-
-  @media #{$laptop-up} {
-    width: 12vw;
-    margin-top: 1.2vw;
-    margin-bottom: 2.2vw;
-  }
-
-  @media #{$desktop-up} {
-    width: 8vw;
-    margin-top: 1vw;
-    margin-bottom: 1.8vw;
   }
 }
