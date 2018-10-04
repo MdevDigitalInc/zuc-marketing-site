@@ -215,6 +215,10 @@ module.exports = {
       template: './src/templates/spkids-homesys.pug',
       filename: 'sp-home-systems.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/shc-parent.pug',
+      filename: 'shc-parent.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
