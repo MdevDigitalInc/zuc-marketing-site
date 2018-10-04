@@ -1,5 +1,5 @@
 .zuc-smarter-how {
-  padding: 0 5vw 45.625vw;
+  padding: 0 0 45.625vw;
 
   @media #{$tablet-up} {
     padding: 0 7vw 37.5vw;
@@ -17,6 +17,11 @@
 .zuc-smarter-how-lt {
   width: 100%;
   margin: 0;
+  padding: 0 5vw 29.375vw;
+
+  @media #{$tablet-up} {
+    padding: 0 0 13.8vw;
+  }
 
   @media #{$laptop-up} {
     width: 50%;
@@ -40,7 +45,6 @@
   }
 }
 
-// TODO AW 20180927
 .zuc-smarter-how-rt {
   width: 100%;
   justify-content: center;
@@ -54,51 +58,43 @@
     position: relative;
 
     @media #{$tablet-only} {
-      padding-bottom: 10vw;
+      width: 72vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 30.66vw;
     }
 
     .zuc-photo {
       position: relative;
-      max-width: 607px;
       width: 100%;
 
       @media #{$laptop-up} {
-        width: 35vw;
-      }
-
-      @media #{$desktop-up} {
-        width: 30.5vw;
+        max-width: 607px;
       }
     }
 
     .zuc-blob {
       position: absolute;
-      z-index: -1;
-      top: 8vw;
-      left: -6vw;
-      width: 42vw;
+      z-index: -3;
+      top: -7.813vw;
+      left: 0;
+      width: 175%;
 
-      @media #{$tablet-up} {
-        top: 19vw;
-        left: -8.5vw;
+      @media #{$tablet-only} {
+        top: 13vw;
+        left: -12vw;
         width: 96vw;
-        display: none; // TODO
       }
 
       @media #{$laptop-up} {
-        top: 8vw;
+        top: 6vw;
         left: -6vw;
-        width: 48.2vw;
-      }
-
-      @media #{$desktop-up} {
         width: 42vw;
       }
     }
   }
 }
-
-// END TODO
 
 .zuc-blue-bar {
   border: 3px solid $color-zuc-lilac;
