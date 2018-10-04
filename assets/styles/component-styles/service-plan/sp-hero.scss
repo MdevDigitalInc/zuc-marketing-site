@@ -1,0 +1,81 @@
+/*-------------------------------------
+ * Blob Module
+/-------------------------------------*/
+.zuc-service-plan-hero--wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 4.5vw 0;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    padding: 8vh 0 4.5vh 6vw;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    padding: 8vh 0 4.5vh 18vw;
+  }
+}
+
+.zuc-service-plan-hero--text-section {
+  flex: 40%;
+  position: relative;
+
+  @media #{$phone-only} {
+    padding-left: 30px;
+  }
+
+  .zuc-service-plan-hero--heading {
+    color: $color-zuc-indigo;
+    width: 22vw;
+  }
+
+  .zuc-service-plan-hero--copy {
+
+    @media #{$laptop-up} {
+      max-width: 400px;
+    }
+  }
+
+  .zuc-service-plan-hero--tagline {
+    margin-top: 2vh;
+    color: $color-zuc-indigo;
+  }
+
+  .zuc-btn-secondary {
+    margin-top: 30px;
+    display: inline-block;
+  }
+}
+
+.zuc-service-plan-hero--graphic-section {
+  flex: 60%;
+  position: relative;
+
+  @media #{$tablet-only} {
+    padding-top: 50px;
+  }
+  @media #{$phone-only} {
+    padding-top: 50px;
+  }
+
+  .photo {
+    z-index: 1;
+    max-width: 500px;
+    max-height: 400px;
+    margin-right: 350px;
+
+    @media #{$tablet-only} {
+      max-width: 100%;
+      display: block;
+      margin-right: 0px;
+    }
+
+    @media #{$phone-only} {
+      max-width: 100%;
+      display: block;
+      margin-right: 0px;
+    }
+  }
+}
