@@ -205,15 +205,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/appl-plan.pug',
-      filename: 'appliances.html'
+      filename: 'spkids-appliances.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/furn-plan.pug',
-      filename: 'furniture.html'
+      filename: 'spkids-furniture.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/homesys-plan.pug',
-      filename: 'home-systems.html'
+      filename: 'spkids-home-systems.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
