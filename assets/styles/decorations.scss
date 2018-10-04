@@ -1,2 +1,45 @@
 // Decorations
+.d-green-bar {
+  position: relative;
+
+  &:after {
+    @include pseudo();
+    z-index: 2;
+    width: 50%;
+    padding-top: 4%;
+    min-height: 12px;
+    background: $color-zuc-mint;
+    right: -50%;
+    transform: translateX(-50%);
+    top: 60px;
+
+    @media #{$laptop-only} {
+      width: 35%;
+      transform: translateX(-95%);
+    }
+
+    @media #{$portrait} {
+      right: auto;
+      top: 30px;
+    }
+  }
+}
+
+.d-salmon-box {
+  position: relative;
+
+  &:before {
+    @include pseudo();
+    background: $color-zuc-salmon;
+    width: 30%;
+    right: 0;
+    top: -15%;
+    bottom: -15%;
+    z-index: -1;
+
+    @media #{$portrait} {
+      display: none;
+    }
+  }
+}
 

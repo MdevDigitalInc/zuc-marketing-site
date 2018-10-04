@@ -311,3 +311,31 @@ textarea {
     }
   }
 }
+
+// Global List Styling Not Sure Where Else To Put It AW
+
+li {
+  list-style: inside;
+  margin-bottom: 7.8vw;
+  color: $color-zuc-darkindigo;
+
+  @media #{$tablet-only} {
+    margin-bottom: 3.26vw;
+  }
+  
+  @media #{$laptop-up} {
+    margin-bottom: 1vw;
+  }
+
+  &:last-of-type {
+    margin-bottom: 13vw;
+
+    @media #{$tablet-only} {
+      margin-bottom: 5.5vw;
+    }
+    
+    @media #{$laptop-up} {
+      margin-bottom: 2.5vw;
+    }
+  }
+}
