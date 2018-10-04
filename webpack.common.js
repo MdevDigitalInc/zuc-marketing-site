@@ -200,7 +200,7 @@ module.exports = {
       filename: 'benefits.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/sp-parents.pug',
+      template: './src/templates/sp-parent.pug',
       filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
