@@ -8,7 +8,8 @@
 
   &:after {
     @include pseudo();
-    background-image: url('../images/shapes/hero-wave-shape.svg');
+    background: url('../images/shapes/hero-wave-shape.svg');
+    //background-image: url('./images/shapes/hero-wave-shape.svg');
     // Another asinine percentage for webkit.
     background-size: 101%;
     background-repeat: no-repeat;
