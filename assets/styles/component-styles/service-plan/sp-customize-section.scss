@@ -44,7 +44,7 @@
 .zuc-custom-plan--title {
   text-align: center;
   width: 4%;
-  padding: 20px 0px;
+  padding: 20px 0;
   background-color: $color-zuc-lilac;
   display: flex;
   justify-content: center;
@@ -66,7 +66,7 @@
       align-self: center;
       transform: rotate(0deg);
       transform-origin: 0%;
-      writing-mode: horizontal-tb
+      writing-mode: horizontal-tb;
     }
   }
 }
