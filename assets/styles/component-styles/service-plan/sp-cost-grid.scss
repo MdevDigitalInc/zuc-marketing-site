@@ -79,6 +79,34 @@
     @media #{$laptop-up} {
       width: 25%;
     }
+
+    &.--aircon {
+      background-image: url('../../assets/images/smarter-living/streetview-house.png');
+    }
+
+    &.--dining {
+      background-image: url('../../assets/images/shared/dining-room-set.png');
+    }
+    
+    &.--heater {
+      background-image: url('../../assets/images/shared/water-heater-repair.png');
+    }
+
+    &.--fridge {
+      background-image: url('../../assets/images/shared/refridgerator-repair.png');
+    }
+
+    &.--living {
+      background-image: url('../../assets/images/shared/leather-sofa.png');
+    }
+
+    &.--bigchair {
+      background-image: url('../../assets/images/shared/oversized-chair.png');
+    }
+
+    &.--laundry {
+      background-image: url('../../assets/images/shared/washing-machine-repair.png');
+    }
   }
 
   // Testimonial - Review Block
