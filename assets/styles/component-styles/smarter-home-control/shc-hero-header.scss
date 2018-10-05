@@ -5,8 +5,43 @@
 .zuc-hero-header-control {
   width: 100%;
   position: relative;
+  margin-bottom: 400px;
+  padding: 300px 0;
 }
 
+.zuc-shc-content {
+  width: 32%;
+  padding: 4vw 5.5vw 4vw 4vw;
+  color: $color-zuc-darkindigo;
+  background: $white;
+  position: relative;
+  top: -150px;
+  left: 15%;
+
+  p {
+    margin: 20px 0;
+  }
+
+  .zuc-shc-appview {
+    position: absolute;
+    right: -40%;
+    bottom: -20px;
+  }
+}
+
+.zuc-hero-products {
+  width: 100%;
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  // REMOVE OPACITY - TESTING ONLY
+  opacity: 0;
+}
+
+// General Backgrounds
 .zuc-hero-bkg {
   width: 100%;
   position: absolute;
@@ -15,18 +50,20 @@
   top: 0;
 }
 
+// Kitchen Photo Layer
 .--layer-zero {
   background-image: url('../../assets/images/smarter-home/interior-kitchen-header.png');
   z-index: -2;
   background-size: cover;
-  padding-top: 53.65%;
+  padding-top: 50%;
   background-position: center;
 }
 
+// Shape Gradient Layer
 .--layer-one {
   background-image: url('../../assets/images/smarter-home/header-blob.svg');
   z-index: -1;
-  top: 10%;
+  top: 15%;
   padding-top: 54%;
   background-position: left;
 }
