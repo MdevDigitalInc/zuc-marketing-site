@@ -16,18 +16,18 @@
     background-size: cover;
     background-position: center;
     // Default fallback
-    background-image: url('../../assets/images/service-plan/furniture-icon-banner.png');
+    background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
     
     &.--appl {
-      background-image: url('../../assets/images/service-plan/appliances-icon-banner.png');
+      background-image: url('../../assets/images/service-plans/appliances-icon-banner.png');
     }
 
     &.--furn {
-      background-image: url('../../assets/images/service-plan/furniture-icon-banner.png');
+      background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
     }
 
     &.--homesys {
-      background-image: url('../../assets/images/service-plan/home-systems-icon-banner.png');
+      background-image: url('../../assets/images/service-plans/home-systems-icon-banner.png');
     }
 
     @media #{$tablet-up} {
