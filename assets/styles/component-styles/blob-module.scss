@@ -94,6 +94,22 @@
     position: relative;
   }
 
+  .phone-img {
+    position: absolute;
+    max-height: 400px;
+    left: 10%;
+    top: 10%;
+
+    @media #{$tablet-only} {
+      left: 15%;
+      top: 20%;
+      max-height: 380px;
+    }
+    @media #{$phone-only} {
+      display: none;
+    }
+  }
+
   .photo {
     z-index: 1;
     max-width: 500px;
