@@ -96,23 +96,19 @@ textarea {
 
 .zuc-input-name {
   margin-top: 4vw;
-  font-size: 3.2vw;
   color: $form-text-color;
   font-weight: $medium-weight;
 
   @media #{$tablet-up} {
     margin-top: 1.8vw;
-    font-size: 1.6vw;
   }
 
   @media #{$laptop-up} {
     margin-top: 1.45vw;
-    font-size: 1.1vw;
   }
 
   @media #{$desktop-up} {
     margin-top: 1.3vw;
-    font-size: .9vw;
   }
 
   &.zuc-input-name-no-margin {
