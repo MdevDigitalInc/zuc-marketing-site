@@ -1,3 +1,26 @@
 /*----
   Smarter Home Control (shc) Styles
 -----*/
+
+.zuc-hero-header-control {
+  width: 100%;
+  position: relative;
+}
+
+.zuc-hero-bkg {
+  width: 100%;
+  position: absolute;
+  background-size: 100%;
+  top: 0;
+  height: 200px;
+}
+
+.--layer-zero {
+  background: url('../../assets/images/smarter-home/interior-kitchen-header.png');
+}
+
+.--layer-one {
+  background: url('../../assets/images/smarter-home/header-blob.svg');
+  height: 980px;
+}
+
