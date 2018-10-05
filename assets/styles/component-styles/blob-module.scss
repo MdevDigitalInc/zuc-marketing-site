@@ -39,11 +39,10 @@
   }
 
   .zuc-blob-module--heading {
-    font-family: $main-font-serif;
     font-weight: $heading-weight;
     color: $color-zuc-indigo;
     font-size: 36px; //todo: fix units:
-    width: 400px; // todo: fix units, overflow
+    width: 400px; // todo: fix units
     line-height: 1.3;
   }
 
@@ -51,9 +50,6 @@
     text-transform: uppercase;
   }
   .zuc-blob-module--copy {
-    font-family: $main-font;
-    font-weight: $body-weight;
-    font-size: $font-size-body;
     line-height: 1.3;
 
     @media #{$laptop-up} {
@@ -64,10 +60,6 @@
   .zuc-btn-secondary {
     margin-top: 30px;
     display: inline-block;
-    // TODO - Richard you will have to fix the rest of it
-    // I would recommend you re-think that module a little bit.
-    // I am not sure the left hand side needs to be a flex container. Especially since everything is just sitting one below the other
-    // You mmight just be causing youself more work with that.
   }
 
   .zuc-blob-module--grey-slash {
