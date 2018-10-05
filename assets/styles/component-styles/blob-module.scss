@@ -90,6 +90,10 @@
     padding-top: 80px;
   }
 
+  &.--img-wrapper {
+    position: relative;
+  }
+
   .photo {
     z-index: 1;
     max-width: 500px;
@@ -124,6 +128,20 @@
       left: 45%;
       transform: scale(2);
       display: none;
+    }
+  }
+}
+
+.zuc-blob-module--mobile-icons {
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: -10px;
+
+  .badge {
+    width: 140px;
+    height: 40px;
+    &:first-child {
+      padding-right: 10px;
     }
   }
 }
