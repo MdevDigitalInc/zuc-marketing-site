@@ -12,13 +12,13 @@
 
 -
   var faqAnswers = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'FREE GROUND SHIPPING ON ALL ORDERS OVER $39*<br/>Package will be shipped via most economical shipping option available and can take up to 10 business days for delivery. Does not apply to some remote postal codes **<br/>Base shipping for orders under $39.00 is $10.95. Zucora Home is only available to Canadian addresses at this time.<br/>*For standard Ground, Monday-Friday, Shipping only.<br/>**Please refer to chart for complete list of remote area postal codes.',
     'Orders are shipped from our warehouse in London, Ontario via UPS GROUND (to major Canadian city centres) or CANADA POST EXPEDITED PARCEL (for destinations beyond major cities). If your package is returned, we will contact you to make arrangements for re-shipment. Zucora Home uses both methods of shipping to ensure all orders arrive in the most economical and timely manner available.',
     'We strive to ship orders within 24-48 business hours of order placement. Orders placed on Saturday, Sunday or a recognized holiday cannot be processed until the next regular business day. During colder winter months, orders placed on Fridays shipping to rural areas may be held for shipping until the following business day to assist in freezing prevention while product may remain on shipping trucks for the course of the weekend. Zucora Home is not responsible for orders with incorrect shipping addresses. Orders with incorrect shipping addresses may be rerouted or returned to Zucora Inc. as undeliverable. You will receive an email alerting you. The billing party is also responsible for any additional shipping fees.',
     'If you would like additional information about our products or would like to inquire about an existing order, you may contact us at orders@zucora.com.',
     'Zucora Home proudly offers a 60-day, money-back, 100% satisfaction guarantee on all its products. If you are not completely satisfied with your purchase, you may return the purchased products for a full replacement or full refund within 60 days from the purchase date. If you would like to exchange or return a product, please contact us at 1-800-388-2640.',
     'If you place an order that contains an out-of-stock item, it is our policy to ship the in-stock items immediately, and then ship the back ordered items as soon as they arrive in our warehouse. Our customer Service team will notify you via email immediately if this occurs.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'We must be notified within 14 days if your package arrives damaged in shipping. Please retain original shipping box. Contact orders@zucora.com to process a pick-up of your damaged item. Please package returns with care! Return items in a sturdy box with plenty of packaging. Please note: Zucora Home does not reimburse any shipping costs for returns or exchanges.'
     ]
 section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
   h1
@@ -47,7 +47,11 @@ section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
       h2
         |#{faqTitles[0]}
       p
-        |#{faqAnswers[0]}
+        |!{faqAnswers[0]}
+      h4.u-uppercase
+        |Approximate Delivery Times to major Canadian Cities:
+      p
+        |2-5 business days - Ottawa, Toronto, Kitchener, London, Montreal<br/>4-7 business days Halifax, Saint John, Regina, Saskatoon<br/>5-8 business days Calgary, Edmonton, Vancouver<br/>6-9 business days St. John's, Victoria<br/>Please allow extra delivery days for additional distances from major city centres above. Zucora Home cannot guarantee package arrival dates and is not responsible for lost or stolen packages, but we will be more than happy to assist you as much as possible.<br/>Please contact us at orders@zucora.com if you have any concerns regarding your order.
       img.zuc-shipping-chart(src='../../assets/images/faq/placeholder-faq-chart.png' alt='todo')
     .zuc-faq-topic-container
       h2
@@ -79,3 +83,8 @@ section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
         |#{faqTitles[6]}
       p
         |#{faqAnswers[6]}
+      h4.u-uppercase
+        |Approved products can be returned to:
+      p
+        |Zucora Inc.<br/>552 Clarke Road<br/>London, ON, N5V 3K5, Canada
+
