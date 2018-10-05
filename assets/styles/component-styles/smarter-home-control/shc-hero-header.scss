@@ -11,16 +11,23 @@
   width: 100%;
   position: absolute;
   background-size: 100%;
+  background-repeat: no-repeat;
   top: 0;
-  height: 200px;
 }
 
 .--layer-zero {
-  background: url('../../assets/images/smarter-home/interior-kitchen-header.png');
+  background-image: url('../../assets/images/smarter-home/interior-kitchen-header.png');
+  z-index: -2;
+  background-size: cover;
+  padding-top: 53.65%;
+  background-position: center;
 }
 
 .--layer-one {
-  background: url('../../assets/images/smarter-home/header-blob.svg');
-  height: 980px;
+  background-image: url('../../assets/images/smarter-home/header-blob.svg');
+  z-index: -1;
+  top: 10%;
+  padding-top: 54%;
+  background-position: left;
 }
 
