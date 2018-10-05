@@ -17,7 +17,8 @@ $border-color-active: rgba(15, 22, 24, 1);
 $border-color-passive: rgba(15, 22, 24, 0);
 
 $form-text-color: $color-zuc-darkindigo;
-$form-bg-color: $bkg-light-grey;
+$form-bg-passive: $color-pure-white;
+$form-bg-active: $color-zuc-platinum;
 $border-color-passive: $color-zuc-darkindigo;
 $border-color-active: $color-zuc-indigo;
 $form-placeholder-color: $color-text-grey;
@@ -33,7 +34,7 @@ input {
     width: 100%;
     height: 63px;
     border-radius: 4px;
-    background-color: $form-bg-color;
+    background-color: $form-bg-passive;
     border: solid 2px $border-color-passive;
     font-family: $main-font;
     padding: 0 1vw;
@@ -49,6 +50,7 @@ input {
     &:focus,
     &:active {
       border: solid 2px $border-color-active;
+      background-color: $form-bg-active;
     }
 
     &::placeholder {
@@ -94,23 +96,19 @@ textarea {
 
 .zuc-input-name {
   margin-top: 4vw;
-  font-size: 3.2vw;
   color: $form-text-color;
   font-weight: $medium-weight;
 
   @media #{$tablet-up} {
     margin-top: 1.8vw;
-    font-size: 1.6vw;
   }
 
   @media #{$laptop-up} {
     margin-top: 1.45vw;
-    font-size: 1.1vw;
   }
 
   @media #{$desktop-up} {
     margin-top: 1.3vw;
-    font-size: .9vw;
   }
 
   &.zuc-input-name-no-margin {
@@ -236,7 +234,7 @@ textarea {
   position: relative;
   width: 100%;
   height: 63px;
-  background: $form-bg-color;
+  background: $form-bg-passive;
   margin-top: .5vw;
 
   @media #{$portrait} {
@@ -266,7 +264,7 @@ textarea {
     top: 2px;
     right: 2px;
     bottom: 2px;
-    background: $form-bg-color;
+    background: $form-bg-passive;
     content: '';
     pointer-events: none;
   }
