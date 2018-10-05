@@ -44,6 +44,10 @@
   font-weight: 700;
 }
 
+.u-normal {
+  font-weight: 300;
+}
+
 .u-bold {
   font-weight: 700;
 }
@@ -181,6 +185,10 @@
 
 .u-soft-shadow {
   box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, .2);
+
+  @media #{$portrait} {
+    box-shadow: 0 1vw 8.43vw 0 rgba(12, 12, 12, .2);
+  }
 }
 
 .u-text-shadow {
@@ -192,4 +200,9 @@
 .u-imgflip-hor {
   transform: scaleX(-1);
   filter: FlipH;
+}
+
+// Spacing Utilities
+.u-section-spacing {
+  margin: 8vw 0;
 }

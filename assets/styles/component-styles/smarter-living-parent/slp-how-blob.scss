@@ -1,0 +1,81 @@
+.zuc-smarter-how {
+  padding: 0 0 45.625vw;
+
+  @media #{$tablet-up} {
+    padding: 0 7vw 37.5vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0 10vw 20vw;
+  }
+
+  @media #{$desktop-up} {
+    padding: 0 13vw 18.23vw;
+  }
+}
+
+.zuc-smarter-how-lt {
+  width: 100%;
+  margin: 0;
+  padding: 0 5vw 29.375vw;
+
+  @media #{$tablet-up} {
+    padding: 0 0 13.8vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    padding: 0 8vw 0 3vw;
+  }
+}
+
+.zuc-smarter-how-rt {
+  width: 100%;
+  justify-content: center;
+
+  @media #{$laptop-up} {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .zuc-img-container {
+    position: relative;
+
+    @media #{$tablet-only} {
+      width: 72vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 30.66vw;
+    }
+
+    .zuc-photo {
+      position: relative;
+      width: 100%;
+
+      @media #{$laptop-up} {
+        max-width: 607px;
+      }
+    }
+
+    .zuc-blob {
+      position: absolute;
+      z-index: -3;
+      top: -7.813vw;
+      left: 0;
+      width: 175%;
+
+      @media #{$tablet-only} {
+        top: 13vw;
+        left: -12vw;
+        width: 96vw;
+      }
+
+      @media #{$laptop-up} {
+        top: 6vw;
+        left: -6vw;
+        width: 42vw;
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@ module.exports = {
   // Output Files
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
+    publicPath: '',
     filename: 'app/[name][hash].js'
   },
   // Split Vendor | Build Assets into separate chunks
@@ -146,7 +146,7 @@ module.exports = {
   // Plugins & Post Processing
   plugins: [
     // Text Extraction & Chunking
-    new ExtractTextPlugin("assets/styles/styles[hash].css"),
+    new ExtractTextPlugin("styles[hash].css"),
     // [ PUG + SASS Template Registration ]
     // -----------------------------------
     // Webpack needs to know which main templates to compile.
@@ -172,28 +172,52 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/contact.pug',
-      filename: 'forms/contact.html'
+      template: './src/templates/form-contact.pug',
+      filename: 'form-contact.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/request-service.pug',
-      filename: 'forms/request-service.html'
+      template: './src/templates/form-request-service.pug',
+      filename: 'form-request-service.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/faq.pug',
       filename: 'faq.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/orders.pug',
-      filename: 'forms/orders.html'
+      template: './src/templates/form-orders.pug',
+      filename: 'form-orders.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/typography-test.pug',
-      filename: 'test/typography.html'
+      filename: 'typography.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/smarter-living.pug',
-      filename: 'smarter-living.html'
+      template: './src/templates/sl-parent.pug',
+      filename: 'sl-parent.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/sl-benefits.pug',
+      filename: 'sl-benefits.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/sp-parent.pug',
+      filename: 'sp-parent.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spkids-appl.pug',
+      filename: 'sp-appliances.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spkids-furn.pug',
+      filename: 'sp-furniture.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spkids-homesys.pug',
+      filename: 'sp-home-systems.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/shc-parent.pug',
+      filename: 'shc-parent.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }

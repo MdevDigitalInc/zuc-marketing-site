@@ -1,0 +1,157 @@
+/*-------------------------------------
+ * Review Module Styles - AW - 19/09/18
+ Last Update: 20180925 AW
+/-------------------------------------*/
+
+.zuc-review-section {
+  padding-bottom: 25vw;
+
+  @media #{$tablet-up} {
+    padding-bottom: 11.5vw;
+  }
+
+  @media #{$laptop-up} {
+    padding-bottom: 10.7vw;
+  }
+}
+
+.zuc-review-container {
+  width: 100%;
+  position: relative;
+
+  @media #{$tablet-up} {
+    width: 86vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 50vw;
+  }
+
+  @media #{$desktop-up} {
+    width: 44vw;
+  }
+}
+
+.zuc-quote-container {
+  background-color: $white;
+  position: relative;
+}
+
+.zuc-quote-badge-container {
+  height: 21.25vw;
+  width: 21.25vw;
+  position: absolute;
+  top: -10.625vw;
+  border-radius: 50%;
+  background-color: $white;
+
+  @media #{$tablet-only} {
+    height: 14.85vw;
+    width: 14.85vw;
+    top: -7.425vw;
+  }
+
+  @media #{$laptop-only} {
+    height: 8.9vw;
+    width: 8.9vw;
+    top: -4.45vw;
+  }
+
+  @media #{$desktop-up} {
+    height: 5.75vw;
+    width: 5.75vw;
+    top: -2.875vw;
+  }
+}
+
+.zuc-quote-text {
+  text-align: center;
+  padding: 21.875vw 4.4vw 10vw;
+
+  @media #{$tablet-only} {
+    padding: 11.92vw 4.4vw 3.5vw;
+  }
+
+  @media #{$laptop-only} {
+    padding: 7vw 4.4vw 1.5vw;
+  }
+
+  @media #{$desktop-up} {
+    padding: 5.56vw 4.4vw 1.2vw;
+  }
+}
+
+.zuc-stars-container {
+
+  .zuc-star {
+    width: 27px;
+
+    &:not( :last-child ) {
+      margin-right: 6px;
+    }
+  }
+}
+
+.zuc-quote-author {
+  text-align: center;
+  padding: 9.375vw 0 31.25vw;
+
+  @media #{$tablet-only} {
+    padding: 3.9vw 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: 1.36vw 0;
+  }
+}
+
+.zuc-quote-button {
+  height: 50px;
+  width: 50px;
+  background-color: $white;
+  position: absolute;
+  bottom: 10vw;
+
+  @media #{$tablet-up} {
+    bottom: 35px;
+  }
+}
+
+.zuc-left {
+  left: 12.5vw;
+  z-index: 7;
+
+  @media #{$tablet-up} {
+    left: -25px;
+  }
+}
+
+.zuc-right {
+  right: 12.5vw;
+  z-index: 7;
+
+  @media #{$tablet-up} {
+    right: -25px;
+  }
+}
+
+.zuc-floating-container {
+  text-align: center;
+  display: block;
+  background-color: $color-zuc-indigo;
+  padding: 15vw 0;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    padding: 4.69vw 0;
+  }
+
+  @media #{$laptop-up} {
+    text-align: left;
+    position: absolute;
+    width: 17vw;
+    padding: 1.87vw 2.07vw 1.51vw;
+    top: -4.2vw;
+    left: -13.43vw;
+  }
+}

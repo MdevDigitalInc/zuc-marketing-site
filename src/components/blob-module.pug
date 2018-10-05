@@ -7,7 +7,7 @@ section.zuc-blob-module--wrapper
   .zuc-blob-module--text-section.flex.flex-column
     h4.zuc-blob-module--subheading.u-uppercase
       |#{subheading}
-    h2.zuc-blob-module--heading
+    h2.zuc-blob-module--heading.u-font-serif
       |#{title}
     .zuc-blob-module--copy
       |#{text}
@@ -15,8 +15,14 @@ section.zuc-blob-module--wrapper
       a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
         |#{button}
     .zuc-blob-module--grey-slash
-      img.grey-slash(src='../../assets/images/blob-module/graphic_slash_grey.svg' alt='')
+      img.grey-slash(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='')
   .zuc-blob-module--graphic-section.flex.flex-hor-center
-    img.photo(src='https://via.placeholder.com/1000x800' alt='')
-    img.blob(src='../../assets/images/blob-module/round-blob-solid.svg' alt='')
-
+    .--img-wrapper
+      img.phone-img(src='../../assets/images/homepage/connected-phone.png' alt="Image of cell phone with Smarter Living App")
+      img.photo(src='../../assets/images/homepage/women-onphone.png' alt='Woman browsing her cell phone while drinking from a mug')
+      .zuc-blob-module--app-icons.flex.flex-row
+        a(href="#" title="todo")
+          img.badge(src='../../assets/images/homepage/google-play-badge.png')
+        a(href="#" title="todo")
+          img.badge(src='../../assets/images/homepage/app-store-badge.png')
+    img.blob(src='../../assets/images/blob-module/round-blob-solid.svg' alt='Decorative gradient image in background')

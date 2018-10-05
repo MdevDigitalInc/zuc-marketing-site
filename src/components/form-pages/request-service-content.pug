@@ -1,0 +1,134 @@
+-
+  var headBlurb = [
+    "Since 1979, Zucora Home has been working with Canadians from coast to coast to help solve problems when furniture accidents happen or major appliances fail.<br/>Please complete as much information as you can on the Service Request before submitting it. This detail will help our Solutions Team gather information about your plan before calling you. The questions you are asked help us to determine the right solution for you quickly because we'll better understand if one of our special-forumulated products will restore your furniture, a service technician should be sent to your home, or if there is another appropriate solution.<br/>You can expect to hear from our Solutions Team within 24 business hours following your request."
+  ]
+
+section.zuc-section-container.--sides.--hstyle
+  h1
+    |Request Service
+  .zuc-head-blurb
+    p
+      |!{headBlurb}
+  .zuc-forms-container.flex.flex-column
+    form.flex.flex-column(action="")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |First &amp; Last Name *
+          input(type="text" data-required name="fullname" placeholder="First & Last Name")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Email Address *
+          input(type="email" data-required name="email" placeholder="Email Address")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Current Phone Number *
+          input(type="tel" data-required name="phone" placeholder="Phone number where we can reach you")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Phone number at time of purchase (if different from current)
+          input(type="tel" name="currentphone" placeholder="Phone number at time of purchase")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Street Address
+          input(type="text" name="address" placeholder="Street Address")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |City
+          input(type="text" name="city" placeholder="City")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Province
+          input(type="text" name="province" placeholder="Province")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Postal Code
+          input(type="text" name="postal" placeholder="Postal Code")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Retailer
+          input(type="text" name="retailer" placeholder="Retailer")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |Product Type
+          .zuc-select-container
+            select(required name="producttype")
+              option(value="" disabled selected)
+                |Choose your product type
+              option(value="foo")
+                |Earth
+              option(value="bar")
+                |Wind
+              option(value="baz")
+                |Fire
+      .zuc-form-row
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Specific Item
+          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Date Purchased (YYYY-MM-DD)
+          input(type="text" name="purchasedate" placeholder="Date Purchased")
+        .zuc-form-group.zuc-form-33
+          .zuc-input-name
+            strong
+              |Order ID
+          input(type="text" name="orderid" placeholder="Order ID")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Description of Problem *
+          input(type="text" data-required name="issuedesc" placeholder="Description of Issue")
+      .zuc-form-row
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |How did the issue happen?
+          input(type="text" name="issuehow" placeholder="How did the issue happen?")
+        .zuc-form-group.zuc-form-50
+          .zuc-input-name
+            strong
+              |When did the Issue Occur? (YYYY-MM-DD)
+          input(type="text" name="issuewhen" placeholder="Date when issue occured")
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Have you done anything to try correcting the issue?
+          .zuc-radio-group-container
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-yes" name="effort" value="Yes")
+              label(for="zuc-effort-yes")
+                |Yes
+            .zuc-radio-group
+              input(type="radio" id="zuc-effort-no" name="effort" value="No")
+              label(for="zuc-effort-no")
+                |No
+      .zuc-form-row
+        .zuc-form-group
+          .zuc-input-name
+            strong
+              |Please upload your invoice and/or any pictures.
+          input.zuc-btn.zuc-btn-primary.zuc-btn-browse(type="button" name="issuedesc" value="Browse...")
+      .zuc-form-action
+        button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
+          strong
+            span SUBMIT

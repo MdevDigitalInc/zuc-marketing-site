@@ -34,7 +34,7 @@ $p-font-sizes: (
   $tablet-up  : 2.34vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1.2vw,
-  $desktop-up : .9vw,
+  $desktop-up : .9375vw,
   $xl-up : 1vw
 );
 
@@ -67,8 +67,8 @@ $h4-font-sizes: (
   null  : 4.27vw,
   $tablet-up : 2.6vw,
   $tablet-lnd-only : 2vw,
-  $laptop-up : 1.84vw,
-  $desktop-up : 1.04vw,
+  $laptop-up : 1.25vw,
+  $desktop-up : 1.01vw,
   $xl-up: 1.44vw
 );
 
@@ -86,7 +86,7 @@ $h6-font-sizes: (
   $tablet-up : 2.08vw,
   $tablet-lnd-only : 1.6vw,
   $laptop-up : 1.1vw,
-  $desktop-up : .72vw,
+  $desktop-up : .83vw,
   $xl-up : 1vw
 );
 
@@ -116,12 +116,12 @@ $link-font-sizes: (
 /* Generate Responsive Sizing */
 
 p {
-  line-height: 180%;
+  line-height: 1.44;
   font-weight: 400;
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {
-    line-height: 150%;
+    line-height: 1.43;
   }
 }
 
@@ -190,14 +190,14 @@ $zuc-body-small-font-sizes: (
   $tablet-up  : 2vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1vw,
-  $desktop-up : .8vw,
-  $xl-up : .9vw
+  $desktop-up : .833vw,
+  $xl-up : .93vw
 );
 
 /* stylelint-enable */
 
 .zuc-body-small {
-  line-height: 1.25;
+  line-height: 1.45;
   font-weight: 100;
 
   @include font-size($zuc-body-small-font-sizes);

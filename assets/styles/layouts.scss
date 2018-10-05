@@ -1,38 +1,61 @@
 /*----
-    Standard Page Content Header:
 
-    .zuc-content-header-container 
-      h1
-      p
+  .zuc-section-container :
+  For pages that begin with a centered h1 title and then some content after them use the following container for consistent spacing.
+  Default is only padding top ; --sides is padding top, left, and right ; --hstyle adds default heading styles
+  AW - LU: 20181001
 ----*/
 
-.zuc-content-header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+.zuc-section-container {
+  padding: 40.31vw 0 0;
 
-  h1 {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    margin: 0 9%;
+  @media #{$tablet-only} {
+    padding: 25.26vw 0 0;
   }
 
-  p {
-    color: $color-text-grey;
-    padding-top: 20px;
-    margin: 0 11%;
+  @media #{$laptop-only} {
+    padding: 16vw 0 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: 11.41vw 0 0;
+  }
+
+  &.--sides {
+    padding: 40.31vw 6vw 0;
+
+    @media #{$tablet-only} {
+      padding: 25.26vw 6vw 0;
+    }
+  
+    @media #{$laptop-only} {
+      padding: 16vw 17vw 0;
+    }
+  
+    @media #{$desktop-up} {
+      padding: 11.41vw 17vw  0;
+    }
+  }
+
+  &.--hstyle {
+    h1:first-of-type {
+      font-family: $main-font-serif;
+      color: $color-zuc-indigo;
+      text-align: center;
+    }
   }
 }
 
 /*----
-      50-50 Block:
+  50-50 Block :
+  For pages that have a 50/50 split that switches to 100/100 on tablet/phone screen sizes
 
-      .zuc-split
-        .zuc-split-l
-          ...
-        .zuc-split-r
+  .zuc-split
+    .zuc-split-l
+      ...
+    .zuc-split-r
+
+  AW - LU: 20181001
 -----*/
 
 .zuc-split {
@@ -64,33 +87,25 @@
   }
 }
 
-/*----
-      Padding for the top of standard page sections:
-
-      .zuc-section-container
-        ...
-
-----*/
-
-.zuc-section-container {
-  // TODO not have this be this bad
-  padding-top: 150px;
-
-  @media #{$tablet-up} {
-    padding-top: 200px;
-  }
-}
-
 /*
-    Consistent Title Flags
-    Concept:
+  Consistent Title Flags
+  Concept:
 
-    .zuc-blog-title-container.flex  < -- Flex so that the h4 and flag are boxes in a row beside each other
-      h4  < -- override margin: 0; on the heading so as to not misalign the flag, apply margin to container instead
-        |BLOG
-      .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
-        .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
+  .zuc-blog-title-container.flex  < -- Flex so that the h4 and flag are boxes in a row beside each other
+    h4  < -- override margin: 0; on the heading so as to not misalign the flag, apply margin to container instead
+      |BLOG
+    .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
+      .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
 
+  snippet for copya pasta:
+
+  .zuc-title-container.flex
+    h4
+      |soisoisoi
+    .zuc-title-flag
+      .--green
+
+  AW - LU: 20181001
 */
 
 .zuc-title-flag {
@@ -133,6 +148,8 @@
 
     .my-div.--overlay.--o-indigo
 
+  AW - LU: 20181001
+
 */
 
 .--overlay {
@@ -153,6 +170,7 @@
   &:hover {
     &:after {
       opacity: .8;
+      cursor: pointer;
     }
   }
 
@@ -202,5 +220,91 @@
     &:after {
       background-color: $color-zuc-concrete;
     }
+  }
+}
+
+/*
+  Snippet useful for starting new pages and getting past the header - AW
+*/
+
+.zuc-temporary-padding {
+  padding: 200px 0 0;
+
+  &.--bottom {
+    padding: 200px 0;
+  }
+
+  &.--sides {
+    padding: 200px;
+  }
+}
+
+/*
+
+  Bar graphic used in many places on the site!
+
+  Combine with secondary flag to choose color!
+
+  Exclamation marks!
+
+  AW - 20181004
+  */
+
+.--zucbar {
+  border: 3px solid black;
+  width: 37vw;
+  margin-top: 3vw;
+  margin-bottom: 6vw;
+
+  &.--zb-lilac {
+    border-color: $color-zuc-lilac;
+  }
+
+  &.--zb-indigo {
+    border-color: $color-zuc-indigo;
+  }
+
+  &.--zb-darkindigo {
+    border-color: $color-zuc-darkindigo;
+  }
+
+  &.--zb-mint {
+    border-color: $color-zuc-mint;
+  }
+
+  &.--zb-salmon {
+    border-color: $color-zuc-salmon;
+  }
+
+  &.--zb-platinum {
+    border-color: $color-zuc-platinum;
+  }
+
+  &.--zb-concrete {
+    border-color: $color-zuc-concrete;
+  }
+
+  @media #{$tablet-up} {
+    width: 24vw;
+    margin-top: 2vw;
+    margin-bottom: 7vw;
+  }
+
+  @media #{$tablet-lnd-only} {
+    width: 15vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 12vw;
+    margin-top: 1.2vw;
+    margin-bottom: 2.2vw;
+  }
+
+  @media #{$desktop-up} {
+    width: 8vw;
+    margin-top: 1vw;
+    margin-bottom: 1.8vw;
   }
 }

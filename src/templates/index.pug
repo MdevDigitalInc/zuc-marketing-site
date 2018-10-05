@@ -2,7 +2,7 @@ extends _layout
 
 block content
   //- Hero Header
-  include ../modules/main-hero-header.pug
+  include ../heroes/main-hero-header.pug
   //- Customized Section
   include ../components/home-customized-section.pug
   //- Hero Slider Module
@@ -10,12 +10,16 @@ block content
   //- Blob Module
   include ../components/blob-module.pug
   //- Review Section
-  include ../components/review-section.pug
+  include ../components/shared/review-module.pug
   //- Inspired Section
   include ../components/home-inspired-section.pug
   //- About Module
-  include ../components/about-module.pug
+  include ../components/home-about-module.pug
   //- Blog Module
-  include ../components/blog-module.pug
+  include ../components/shared/blog-module.pug
   // Hero Slider Controller
-  script( src='./js/hero-slider.js')
+  script( src='js/hero-slider.js')
+
+block foot
+  //- Uses secondary footer on home-page.
+  include ../shared/secondary-footer.pug
