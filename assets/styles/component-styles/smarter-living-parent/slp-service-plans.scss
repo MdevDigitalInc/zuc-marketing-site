@@ -39,6 +39,12 @@
   position: relative;
   overflow: hidden;
 
+  h2,
+  h3,
+  h5 {
+    z-index: 10;
+  }
+
   .zuc-title-container {
     white-space: nowrap;
   }
@@ -50,13 +56,6 @@
     width: 100%;
     height: 100%;
     z-index: 50;
-  }
-
-  .zuc-block-img {
-    position: absolute;
-    z-index: -5;
-    top: 0;
-    left: 0;
   }
 
   .zuc-block-badge {
@@ -111,6 +110,9 @@
 
   &.--bundle {
     height: 96vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/smarter-living/streetview-house.png');
   
     @media #{$tablet-up} {
       height: 69.4vw;
@@ -144,9 +146,30 @@
     }
   }
 
+  &.--furn {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/smarter-living/girl-jumping-couch.png');
+  }
+
+  &.--appl {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/smarter-living/mom-daughter-laundry.png');
+  }
+
+  &.--homesys {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/smarter-living/hvac.png');
+  }
+
   &.--combo {
     height: 110vw;
-  
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/smarter-living/interior-house.png');
+
     @media #{$tablet-up} {
       height: 57.7vw;
     }
