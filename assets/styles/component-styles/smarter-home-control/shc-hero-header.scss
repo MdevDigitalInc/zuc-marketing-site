@@ -9,6 +9,7 @@
   padding: 300px 0;
 }
 
+// Text Content
 .zuc-shc-content {
   width: 35%;
   padding: 4vw 5.5vw 4vw 4vw;
@@ -16,15 +17,23 @@
   background: $white;
   position: relative;
   top: -150px;
-  min-width: 480px;
   left: 15%;
   z-index: 10;
+
+  @media #{$laptop-only} {
+    width: 45%;
+  }
+  @media #{$desktop-up} {
+    width: 35%;
+    min-width: 480px;
+  }
 
   p {
     margin: 20px 0;
     line-height: 1.63;
   }
 
+  // Phone App View
   .zuc-shc-appview {
     position: absolute;
     right: -34%;
@@ -43,6 +52,7 @@
   }
 }
 
+// Products Container
 .zuc-hero-products {
   position: absolute;
   width: auto;
@@ -82,6 +92,13 @@
   background-size: cover;
   padding-top: 50%;
   background-position: center;
+
+  @media #{$laptop-only} {
+    padding-top: 53%;
+  }
+  @media #{$desktop-up} {
+    padding-top: 50%;
+  }
 }
 
 // Shape Gradient Layer
@@ -93,11 +110,17 @@
   background-position: left;
 }
 
+// Individual Product Positions
+
+// Smoke Detector
 .--sensor-smk {
   right: 0;
   bottom: 0;
   transform: translate3d(-90%, -90%, 0);
 
+  @media #{$laptop-only} {
+    transform: translate3d(-90%, -140%, 0);
+  }
   @media #{$desktop-only} {
     transform: translate3d(-90%, -90%, 0);
   }
@@ -106,11 +129,15 @@
   }
 }
 
+// Outdoor Camera
 .--out-camera {
   right: 0;
   bottom: 0;
   transform: translateY(-210%);
 
+  @media #{$laptop-only} {
+    transform: translateY(-240%);
+  }
   @media #{$desktop-only} {
     transform: translateY(-210%);
   }
@@ -119,11 +146,15 @@
   }
 }
 
+// Motion Sensor
 .--sensor {
   left: 0;
   top: 0;
   transform: translate3D( -25%, 155%, 0);
 
+  @media #{$laptop-only} {
+    transform: translate3D( -25%, 115%, 0);
+  }
   @media #{$desktop-only} {
     transform: translate3D( -25%, 155%, 0);
   }
@@ -132,11 +163,15 @@
   }
 }
 
+// Light Bulb
 .--light-2 {
   bottom: 0;
   left: 0;
   transform: translateY(-150%);
 
+  @media #{$laptop-only} {
+    transform: translateY(-170%);
+  }
   @media #{$desktop-only} {
     transform: translateY(-150%);
   }
@@ -145,11 +180,15 @@
   }
 }
 
+// Pot Light
 .--light {
   bottom: 0;
   right: 0;
   transform: translate3d(-60%, -260%, 0);
 
+  @media #{$laptop-only} {
+    transform: translate3d(-60%, -300%, 0);
+  }
   @media #{$desktop-only} {
     transform: translate3d(-60%, -260%, 0);
   }
@@ -158,6 +197,7 @@
   }
 }
 
+// Keypass
 .--keypass {
   bottom: 0;
   left: 0;
@@ -176,6 +216,9 @@
   right: 0;
   transform: translate3d(-325%, -218%, 0);
 
+  @media #{$laptop-only} {
+    display: none;
+  }
   @media #{$desktop-only} {
     transform: translate3d(-325%, -218%, 0);
   }
