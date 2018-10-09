@@ -20,12 +20,18 @@
 
   p {
     margin: 20px 0;
+    line-height: 1.63;
   }
 
   .zuc-shc-appview {
     position: absolute;
     right: -40%;
     bottom: -20px;
+  }
+
+  .zuc-hsc-subtitle {
+    font-size: 1.04vw;
+    margin-bottom: 1.32vw;
   }
 }
 
@@ -36,8 +42,11 @@
   right: 0;
   bottom: 0;
   top: 0;
-  // REMOVE OPACITY - TESTING ONLY
-  opacity: 0;
+  overflow: hidden;
+
+  .hero-product {
+    position: absolute;
+  }
 }
 
 // General Backgrounds
