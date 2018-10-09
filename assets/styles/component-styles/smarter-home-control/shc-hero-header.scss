@@ -7,6 +7,10 @@
   position: relative;
   margin-bottom: 400px;
   padding: 300px 0;
+
+  @media #{$tablet-lnd-only} {
+    padding: 50px 0 400px;
+  }
 }
 
 // Text Content
@@ -20,6 +24,12 @@
   left: 15%;
   z-index: 10;
 
+  @media #{$tablet-lnd-only} {
+    width: 80%;
+    margin: 0 auto;
+    left: auto;
+    top: auto;
+  }
   @media #{$laptop-only} {
     width: 45%;
   }
@@ -40,6 +50,11 @@
     bottom: -5%;
     width: 45%;
 
+    @media #{$tablet-lnd-only} {
+      width: 35%;
+      right: 0;
+      bottom: -90%;
+    }
   }
 
   .zuc-hsc-subtitle {
@@ -93,6 +108,9 @@
   padding-top: 50%;
   background-position: center;
 
+  @media #{$tablet-lnd-only} {
+    padding-top: 85%;
+  }
   @media #{$laptop-only} {
     padding-top: 53%;
   }
@@ -108,6 +126,10 @@
   top: 15%;
   padding-top: 54%;
   background-position: left;
+
+  @media #{$tablet-lnd-only} {
+    top: 45%;
+  }
 }
 
 // Individual Product Positions
@@ -118,6 +140,9 @@
   bottom: 0;
   transform: translate3d(-90%, -90%, 0);
 
+  @media #{$tablet-lnd-only} {
+    transform: translate3d(-90%, 0, 0);
+  }
   @media #{$laptop-only} {
     transform: translate3d(-90%, -140%, 0);
   }
@@ -152,6 +177,9 @@
   top: 0;
   transform: translate3D( -25%, 155%, 0);
 
+  @media #{$tablet-lnd-only} {
+    transform: translate3D( -25%, 175%, 0);
+  }
   @media #{$laptop-only} {
     transform: translate3D( -25%, 115%, 0);
   }
@@ -169,6 +197,9 @@
   left: 0;
   transform: translateY(-150%);
 
+  @media #{$tablet-lnd-only} {
+    transform: translateY(0) translateX(-8%) scale(.9);
+  }
   @media #{$laptop-only} {
     transform: translateY(-170%);
   }
@@ -203,6 +234,9 @@
   left: 0;
   transform: translate3d(58%, -170%, 0);
 
+  @media #{$tablet-lnd-only} {
+    transform: translate3d(58%, 0, 0);
+  }
   @media #{$desktop-only} {
     transform: translate3d(58%, -170%, 0);
   }
