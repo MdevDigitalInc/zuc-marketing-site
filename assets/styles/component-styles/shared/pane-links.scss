@@ -1,5 +1,5 @@
 section.zuc-pane-links {
-  padding: 0;
+  padding: 0 0 11vw;
 
   @media #{$tablet-only} {
     padding: 0 6vw;
@@ -33,15 +33,15 @@ section.zuc-pane-links {
   }
 
   &:nth-child( 1 ) {
-    background-image: url('../../assets/images/smarter-living/streetview-house.png');
-    
+    background-image: url('../../assets/images/shared/baby-bath.png');
+
     .zuc-pane-title {
       background: $color-zuc-mint;
     }
   }
 
   &:nth-child( 2 ) {
-    background-image: url('../../assets/images/smarter-living/streetview-house.png');
+    background-image: url('../../assets/images/shared/interior-house.png');
 
     .zuc-pane-title {
       background: $color-zuc-salmon;
@@ -68,7 +68,7 @@ section.zuc-pane-links {
 .zuc-pane-bumper {
   position: relative;
   width: 100%;
-  padding: 3.69vw 0 0;
+  padding: 3.69vw 5vw 0;
 
   @media #{$laptop-up} {
     width: 28%;
