@@ -1,2 +1,28 @@
 // Smarter Products Hero.
 
+.spr-child-hero--mask {
+  background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
+  background-position: 116.5px 0 !important; // TODO: fix this, better way
+  height: 100%;
+  padding: 20vh 0;
+
+  // &:after {
+  //   @include pseudo();
+  //   background: url('../images/shapes/hero-wave-shape.svg');
+  //   background-size: 101%;
+  //   background-repeat: no-repeat;
+  //   width: 100%;
+  //   bottom: -2px;
+  //   padding-top: calc(300 / 1922 * 100%);
+
+  //   @media #{$portrait} {
+  //     width: 190%;
+  //     right: -2px;
+  //     padding-top: 34%;
+  //   }
+  //   @media #{$phone-only} {
+  //     padding-top: 54%;
+  //     bottom: 30px;
+  //   }
+  // }
+}
