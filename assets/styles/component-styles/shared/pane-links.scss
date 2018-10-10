@@ -33,7 +33,7 @@ section.zuc-pane-links {
     height: 28.08vw;
   }
 
-  /* Styles for all pane titles */
+  /* Styles for pane titles */
   .zuc-pane-title {
     text-transform: uppercase;
     position: relative;
@@ -55,39 +55,40 @@ section.zuc-pane-links {
     @media #{$laptop-up} {
       padding: 1.55vw;
     }
-  }
 
-  &:nth-child( 1 ) {
-    background-image: url('../../assets/images/shared/baby-bath.png');
+    &.--lilac {
+      background: $color-zuc-lilac;
+    }
 
-    .zuc-pane-title {
+    &.--concrete {
+      background: $color-zuc-concrete;
+    }
+
+    &.--salmon {
+      background: $color-zuc-salmon;
+    }
+
+    &.--mint {
       background: $color-zuc-mint;
     }
   }
 
-  &:nth-child( 2 ) {
+  /* Styles for pane backgrounds */
+  &.--baby {
+    background-image: url('../../assets/images/shared/baby-bath.png');
+  }
+
+  &.--interior {
     background-image: url('../../assets/images/shared/interior-house.png');
-
-    .zuc-pane-title {
-      background: $color-zuc-salmon;
-    }
   }
 
-  &:nth-child( 3 ) {
+  &.--house {
     background-image: url('../../assets/images/smarter-living/streetview-house.png');
-
-    .zuc-pane-title {
-      background: $color-zuc-lilac;
-    }
   }
 
-  &:nth-child( 4 ) {
+  &.--kitchen {
     background-image: url('../../assets/images/smarter-home/interior-kitchen-header.png');
-
-    .zuc-pane-title {
-      background: $color-zuc-concrete;
-    }
-  } 
+  }
   
   a {
     position: absolute;
