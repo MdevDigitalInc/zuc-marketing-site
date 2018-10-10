@@ -13,6 +13,19 @@
   @media #{$desktop-up} {
     padding: 0 24vw 5.45vw;
   }
+
+  .zuc-grid-subtext {
+    color: color-zuc-darkindigo;
+    padding: 0 0 18vw;
+
+    @media #{$tablet-only} {
+      padding: 0 0 8.6vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: 0 0 3.84vw;
+    }
+  }
 }
 
 .zuc-why-grid-item {
@@ -45,6 +58,7 @@
     color: $color-zuc-indigo;
     font-weight: 600;
     margin-top: 23px;
+    text-transform: uppercase;
   }
 
   p {

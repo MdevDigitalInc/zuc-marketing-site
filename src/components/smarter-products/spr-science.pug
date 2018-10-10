@@ -1,2 +1,67 @@
-p
-  |Hey
+-
+  var whyTitles = [
+    'Clinically Tested',
+    'Protection from<br/> Mould &amp; Mildew',
+    'Allergen Barriers',
+    'Bed Bug Protection',
+    'Dust Mite Protection',
+    'Bacteria-Free Protection'
+  ]
+-
+  var whyBody = [
+    'PureCare products are certified to OEKO-TEX® standard 100, ensuring that our sleep products contain no harmful chemicals to humans or pets.',
+    'Moisture can trigger the growth of mould and mildew. PureCare\'s clinically proven protectors provide a barrier around your mattress and pillows.',
+    'Clean and hygenic sleep enviroment.',
+    'Lorem ipsum.',
+    'Lorem ipsum.',
+    'Antimicrobial silver chloride inhibits bacteria, mould and mildew that causes deterioration, stains and odours.'
+  ]
+
+section.zuc-why-grid-section-container.flex.flex-column.flex-hor-center
+  h2.u-zuc-indigo.u-font-serif
+    |The science of healthy sleep
+  p.zuc-grid-subtext
+    |Our PureCare products are designed with clinically tested fabrics. The scientifically advanced fibres deliver sleep solutions focused on additional wellness, hygiene and comfort benefits to the sleeper.
+  .zuc-why-grid-item-container.flex.flex-wrap
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-clinically-tested.svg", alt="Icon of a clipboard")
+      h6
+        |!{whyTitles[0]}
+      p.zuc-body-small
+        |#{whyBody[0]}
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-mould-mildew.svg", alt="Icon of mould")
+      h6
+        |!{whyTitles[1]}
+      p.zuc-body-small
+        |#{whyBody[1]}
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-allergen.svg", alt="Icon of an allergen")
+      h6
+        |!{whyTitles[2]}
+      p.zuc-body-small
+        |#{whyBody[2]}
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-bed-bug.svg", alt="Icon of a bed bug")
+      h6
+        |!{whyTitles[3]}
+      p.zuc-body-small
+        |#{whyBody[3]}
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-dust-mites.svg", alt="Icon of a dust mite")
+      h6
+        |!{whyTitles[4]}
+      p.zuc-body-small
+        |#{whyBody[4]}
+    .zuc-why-grid-item
+      .zuc-why-grid-img-container
+        img(src="../../assets/images/icons/icon-bacteria-free.svg", alt="Icon of bacteria")
+      h6
+        |!{whyTitles[5]}
+      p.zuc-body-small
+        |#{whyBody[5]}
