@@ -1,4 +1,8 @@
-.zuc-why-grid-section-container {
+/*
+  Sixgrid - AW 20181010
+  
+*/
+.zuc-sixgrid-container {
   position: relative;
   padding: 0 5vw 29.375vw;
 
@@ -14,7 +18,7 @@
     padding: 0 24vw 5.45vw;
   }
 
-  .zuc-grid-subtext {
+  .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     padding: 0 0 18vw;
 
@@ -28,7 +32,7 @@
   }
 }
 
-.zuc-why-grid-item {
+.zuc-sixgrid-item {
   padding-bottom: 1.25vw;
   width: 100%;
   text-align: center;
@@ -69,7 +73,7 @@
     }
   }
 
-  .zuc-why-grid-img-container {
+  .zuc-sixgrid-img-container {
     height: 23vw;
     display: flex;
     justify-content: center;
