@@ -204,6 +204,10 @@ module.exports = {
       filename: 'sp-parent.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/templates/spr-child.pug',
+      filename: 'spr-child.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/templates/spkids-appl.pug',
       filename: 'sp-appliances.html'
     }),
