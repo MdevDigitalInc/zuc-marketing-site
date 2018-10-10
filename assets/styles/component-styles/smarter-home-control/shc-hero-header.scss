@@ -5,16 +5,23 @@
 .zuc-hero-header-control {
   width: 100%;
   position: relative;
-  margin-bottom: 400px;
   padding: 300px 0;
   overflow: hidden;
 
   @media #{$tablet-only} {
-    padding: 50px 0 400px;
+    padding: 50px 0 510px;
+    margin-bottom: 120px;
   }
   @media #{$tablet-prt-only} {
     padding: 50px 0 970px;
-
+  }
+  @media #{$phone-only} {
+    padding: 40px 0 900px;
+  }
+  @media #{$laptop-only} {
+    margin-bottom: -120px;
+  }
+  @media #{$portrait} {
     .d-green-bar:after {
       display: none;
     }
@@ -32,11 +39,19 @@
   left: 15%;
   z-index: 10;
 
+  @media #{$phone-only} {
+    left: auto;
+    top: auto;
+    margin: 0 auto;
+    padding: 4vw 4vw 16vw;
+  }
+
   @media #{$tablet-only} {
     width: 90%;
     top: auto;
     left: auto;
     margin: 0 auto;
+    padding: 4vw;
   }
   @media #{$tablet-lnd-only} {
     width: 80%;
@@ -61,6 +76,12 @@
     bottom: -5%;
     width: 45%;
 
+    @media #{$phone-only} {
+      width: 70%;
+      left: 50%;
+      transform: translatex(-50%) translatey(92%);
+      bottom: 0;
+    }
     @media #{$tablet-prt-only} {
       width: 40%;
       right: -20px;
@@ -77,6 +98,10 @@
     font-size: 1.04vw;
     margin-bottom: 1.32vw;
 
+    @media #{$phone-only} {
+      font-size: 3vw;
+      margin-bottom: 3vw;
+    }
     @media #{$tablet-only} {
       font-size: 1.4vw;
     }
@@ -128,6 +153,9 @@
   padding-top: 50%;
   background-position: center;
 
+  @media #{$phone-only} {
+    padding-top: 234%;
+  }
   @media #{$tablet-prt-only} {
     padding-top: 164%;
   }
@@ -150,6 +178,11 @@
   padding-top: 54%;
   background-position: left;
 
+  @media #{$phone-only} {
+    top: 35%;
+    padding-top: 160%;
+    width: 250%;
+  }
   @media #{$tablet-prt-only} {
     top: 35%;
     padding-top: 160%;
