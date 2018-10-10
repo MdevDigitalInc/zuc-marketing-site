@@ -1,0 +1,27 @@
+.zuc-pane {
+  width: 100%;
+
+  @media #{$tablet-only} {
+    width: 50%;
+  }
+
+  @media #{$laptop-up} {
+    width: 17%;
+  }
+
+  &:nth-child( 1 ) {
+    background: $color-zuc-mint;
+  }
+
+  &:nth-child( 2 ) {
+    background: $color-zuc-salmon;
+  }
+
+  &:nth-child( 3 ) {
+    background: $color-zuc-lilac;
+  }
+
+  &:nth-child( 4 ) {
+    background: $color-zuc-concrete;
+  }
+}
