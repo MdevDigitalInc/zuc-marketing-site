@@ -6,11 +6,11 @@
     @include pseudo();
     z-index: 2;
     width: 50%;
-    padding-top: 3%;
-    min-height: 12px;
-    max-height: 15px;
+    min-height: 10px;
+    max-height: 12px;
     background: $color-zuc-mint;
-    max-width: 157px;
+    max-width: 150px;
+    height: 20%;
     right: 0;
     transform: translateX(50%);
     top: 4vw;
