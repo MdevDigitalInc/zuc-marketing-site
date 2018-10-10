@@ -13,7 +13,6 @@ section.zuc-pane-links {
 .zuc-pane {
   position: relative;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,7 +21,6 @@ section.zuc-pane-links {
   height: 51.25vw;
 
   @media #{$tablet-up} {
-    justify-content: flex-end;
     align-items: flex-start;
     width: 50%;
     height: 54.43vw;
@@ -44,6 +42,7 @@ section.zuc-pane-links {
     transform: rotate(180deg);
     transform-origin: 50%;
     color: $color-zuc-darkindigo;
+    margin-left: auto;
     height: 100%;
     padding: 0 5vw;
     
