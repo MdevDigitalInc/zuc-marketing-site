@@ -18,6 +18,7 @@
     }
 
     &.--left {
+      margin-bottom: 9vw;
 
       @media #{$laptop-up} {
         width: 20vw;
