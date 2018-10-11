@@ -134,6 +134,13 @@
     }
   }
 
+  a.zuc-lang-toggle {
+    &:hover {
+      color: $color-zuc-lilac;
+      transition: .4s;
+    }
+  }
+
   // Ovveride to get Cart word to vertically center
   .cart-center {
     position: relative;
