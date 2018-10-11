@@ -91,7 +91,6 @@
     padding: 0 5px;
   }
 
-  .fab.fa-linkedin-in,
   .far.fa-envelope {
     display: none;
   }
@@ -128,6 +127,23 @@
 
   .zuc-footer--copryright-menu {
     margin-left: 2vw;
+
+    span {
+      font-size: 12px;
+      margin: 0 .5vw;
+
+      @media #{$tablet-only} {
+        margin: 0 .4vw;
+      }
+
+      @media #{$laptop-only} {
+        margin: 0 .2vw;
+      }
+
+      @media #{$desktop-up} {
+        margin: 0 .1vw;
+      }
+    }
   }
 }
 
@@ -183,6 +199,7 @@
   @media #{$laptop-up} {
     bottom: 175px;
   }
+
   @media #{$phone-only} {
     display: none;
   }
