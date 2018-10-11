@@ -149,6 +149,7 @@
   }
   @media #{$phone-only} {
     justify-content: center;
+    flex-direction: column;
   }
 
   .zuc-footer--copyright-text {
@@ -170,6 +171,7 @@
     span {
       font-size: 12px;
       margin: 0 .5vw;
+      color: $white;
 
       @media #{$tablet-only} {
         margin: 0 .4vw;
