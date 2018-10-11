@@ -47,11 +47,6 @@
     padding: 1vw;
   }
 
-  @media #{$tablet-only} {
-    font-size: 1.75vw;
-    padding: 2vw;
-  }
-
   &:hover,
   &:focus,
   &:active {
