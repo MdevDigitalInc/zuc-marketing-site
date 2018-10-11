@@ -40,6 +40,11 @@
   font-weight: 600;
   margin-bottom: 20px;
   white-space: nowrap;
+  /* Uncomment Me For Ellpsis overflow
+  width: setme;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  */
 }
 
 .zuc-footer--link {
@@ -222,15 +227,6 @@
 
   .far.fa-envelope {
     display: none;
-  }
-}
-
-/* Override Button Styles AW */
-
-footer .zuc-btn-primary {
-  @media #{$tablet-only} {
-    font-size: 1.75vw;
-    padding: 2vw;
   }
 }
 
