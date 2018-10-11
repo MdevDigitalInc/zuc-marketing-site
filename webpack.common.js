@@ -223,6 +223,14 @@ module.exports = {
       template: './src/templates/shc-parent.pug',
       filename: 'shc-parent.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-forgot-password.pug',
+      filename: 'form-forgot-password.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-reset-password.pug',
+      filename: 'form-reset-password.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
