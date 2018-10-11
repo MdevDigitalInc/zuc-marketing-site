@@ -139,14 +139,6 @@
   }
 }
 
-// Override Button Styles AW
-footer .zuc-btn-primary {
-  @media #{$tablet-only} {
-    font-size: 1.75vw;
-    padding: 2vw;
-  }
-}
-
 .zuc-footer--copyright {
   background: $color-zuc-darkindigo;
   padding: 1.4% 8%;
@@ -194,9 +186,15 @@ footer .zuc-btn-primary {
   }
 }
 
+/* Secondary set of social icons for tablet size */
+
 .zuc-footer--social-icons-secondary {
   display: block;
   padding-top: 30px;
+
+  .zuc-mobile-social {
+    justify-content: flex-start;
+  }
 
   .zuc-social-link {
     color: $white;
@@ -214,11 +212,13 @@ footer .zuc-btn-primary {
   }
 }
 
-.zuc-footer--btm-trim {
-  height: 25px;
-  background-image: url('../images/footer.jpeg');
-  background-position-y: bottom;
-  background-repeat: no-repeat;
+/* Override Button Styles AW */
+
+footer .zuc-btn-primary {
+  @media #{$tablet-only} {
+    font-size: 1.75vw;
+    padding: 2vw;
+  }
 }
 
 footer .zuc-footer-row {
@@ -228,6 +228,22 @@ footer .zuc-footer-row {
   @media #{$laptop-up} {
     flex-direction: row;
   }
+}
+
+.zuc-shipping-blurb {
+  display: none;
+
+  @media #{$tablet-only} {
+    display: block;
+    padding-top: 4.69vw;
+  }
+}
+
+.zuc-footer--btm-trim {
+  height: 25px;
+  background-image: url('../images/footer.jpeg');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 /*-------------------------------------
