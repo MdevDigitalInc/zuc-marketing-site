@@ -1,28 +1,68 @@
 // Smarter Products Hero.
 
-.spr-child-hero--mask {
+.zuc-spr-hero-container {
+  width: 100%;
+  position: relative;
+  // padding: 300px 0;
+  overflow: hidden;
+
+  .zuc-hero-content {
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+    left: 14%;
+
+    @media #{$tablet-lnd-only} {
+      width: 90%;
+    }
+    @media #{$laptop-only} {
+      width: 90%;
+    }
+    @media #{$portrait} {
+      width: 100%;
+    }
+  }
+
+  .zuc-hero-left {
+    width: 40%;
+    padding: 0 2.2vw;
+    position: relative;
+
+    @media #{$portrait} {
+      width: 100%;
+      padding: 5vw;
+      text-align: center;
+
+      h5,
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.zuc-spr-hero--bkg-img {
   background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
-  background-position: 116.5px 0 !important; // TODO: fix this, better way
   height: 100%;
-  padding: 20vh 0;
+  top: 0;
+  right: 0;
+  // padding: 20vh 0;
+  z-index: -1;
+  z-index: -2;
+  background-size: cover;
+  padding-top: 50%;
+  background-position: center;
+}
 
-  // &:after {
-  //   @include pseudo();
-  //   background: url('../images/shapes/hero-wave-shape.svg');
-  //   background-size: 101%;
-  //   background-repeat: no-repeat;
-  //   width: 100%;
-  //   bottom: -2px;
-  //   padding-top: calc(300 / 1922 * 100%);
-
-  //   @media #{$portrait} {
-  //     width: 190%;
-  //     right: -2px;
-  //     padding-top: 34%;
-  //   }
-  //   @media #{$phone-only} {
-  //     padding-top: 54%;
-  //     bottom: 30px;
-  //   }
-  // }
+.zuc-spr-hero--bkg-shape {
+  background-image: url('../../assets/images/shapes/wave-top.svg');
+  z-index: 1;
+  bottom: -22px;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
