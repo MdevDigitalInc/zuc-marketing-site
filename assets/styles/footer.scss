@@ -165,8 +165,20 @@
     }
   }
 
-  .zuc-footer--copryright-menu {
+  .zuc-footer--copyright-title {
+    font-size: 12px;
+
+    @media #{$phone-only} {
+      padding: 0 0 1vw;
+    }
+  }
+
+  .zuc-footer--copyright-menu {
     margin-left: 2vw;
+
+    @media #{$phone-only} {
+      padding: 0 0 1vw;
+    }
 
     span {
       font-size: 12px;

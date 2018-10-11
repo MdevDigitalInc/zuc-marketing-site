@@ -1,8 +1,14 @@
 .zuc-footer-wrapper
   include ../components/footer-links.pug
   .zuc-footer--copyright.flex.flex-vert-center
-    .zuc-footer--copyright-text Copyright Zucora Inc. 2018
-    .zuc-footer--copryright-menu.flex.flex-hor-start
+    .zuc-footer--copyright-title
+      span.zuc-footer--copyright-text
+        |Copyright @ 
+      a.u-zuc-lilac(href="#" title="todo")
+        |Zucora Inc
+      span.zuc-footer--copyright-text
+        |  2018
+    .zuc-footer--copyright-menu.flex.flex-hor-start
       a.zuc-footer--copyright-text(href="#" title="View our Privacy Policy")
         | Privacy Policy
       span
