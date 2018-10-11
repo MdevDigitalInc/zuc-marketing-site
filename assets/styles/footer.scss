@@ -7,6 +7,15 @@
   padding: 60px 20px 70px;
   margin-top: 40px;
   letter-spacing: 1px;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    padding-left: 5vw;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+  }
 
   @media #{$phone-only} {
     display: none;
@@ -15,6 +24,15 @@
 
 .zuc-footer--column {
   padding: 0 20px;
+  
+
+  &:nth-child( 2 ) {
+    margin: 5.86vw 0 0;
+
+    @media #{$laptop-up} {
+      margin: 0;
+    }
+  }
 }
 
 .zuc-footer--header {
@@ -22,6 +40,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .zuc-footer--link {
@@ -59,36 +78,56 @@
   }
 
   .zuc-nav-brand {
-    width: auto;
+    width: 12vw;
     max-width: 237px;
     transition: all .2s ease-out;
 
     @media #{$tablet-only} {
-      max-width: 130px;
+      width: 30vw;
+      padding-bottom: 4.81vw;
     }
+
     @media #{$xl-up} {
       max-width: 340px;
     }
+
     @media #{$phone-only} {
       max-width: 100px;
     }
 
     img {
       width: 90%;
+
+      @media #{$tablet-only} {
+        width: 100%;
+      }
     }
   }
 
-  .zuc-footer--social-icons {
+  .zuc-footer--social-icons-primary {
     padding-top: 30px;
     position: absolute;
     right: 48px;
     top: 30px;
+    display: none;
+
+    @media #{$laptop-up} {
+      display: block;
+    }
   }
 
   .zuc-social-link {
-    font-size: 14px;
+    font-size: 1.5vw;
     font-weight: 400;
     padding: 0 5px;
+
+    @media #{$laptop-only} {
+      font-size: 1.3vw;
+    }
+
+    @media #{$desktop-up} {
+      font-size: 1.15vw;
+    }
   }
 
   .far.fa-envelope {
@@ -97,6 +136,14 @@
 
   .zuc-btn {
     margin-right: 10px;
+  }
+}
+
+// Override Button Styles AW
+footer .zuc-btn-primary {
+  @media #{$tablet-only} {
+    font-size: 1.75vw;
+    padding: 2vw;
   }
 }
 
@@ -147,11 +194,40 @@
   }
 }
 
+.zuc-footer--social-icons-secondary {
+  display: block;
+  padding-top: 30px;
+
+  .zuc-social-link {
+    color: $white;
+    font-size: 3vw;
+    font-weight: 400;
+    padding: 0 1.2vw;
+  }
+
+  @media #{$laptop-up} {
+    display: none;
+  }
+
+  .far.fa-envelope {
+    display: none;
+  }
+}
+
 .zuc-footer--btm-trim {
   height: 25px;
   background-image: url('../images/footer.jpeg');
   background-position-y: bottom;
   background-repeat: no-repeat;
+}
+
+footer .zuc-footer-row {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+  }
 }
 
 /*-------------------------------------
