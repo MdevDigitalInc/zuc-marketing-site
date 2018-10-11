@@ -1,9 +1,9 @@
 // Smarter Products Hero.
+// TODO: clean up this file before PR.
 
 .zuc-spr-hero-container {
   width: 100%;
   position: relative;
-  // padding: 300px 0;
   overflow: hidden;
 
   .zuc-hero-content {
@@ -13,14 +13,15 @@
     top: 20%;
     left: 14%;
 
-    @media #{$tablet-lnd-only} {
-      width: 90%;
+    @media #{$tablet-only} {
+      width: 80%;
+      top: 15%;
+      left: 5%;
     }
-    @media #{$laptop-only} {
-      width: 90%;
-    }
-    @media #{$portrait} {
-      width: 100%;
+    @media #{$phone-only} {
+      width: 80%;
+      top: 5%;
+      left: 5%;
     }
   }
 
@@ -29,40 +30,88 @@
     padding: 0 2.2vw;
     position: relative;
 
-    @media #{$portrait} {
-      width: 100%;
-      padding: 5vw;
-      text-align: center;
+    @media #{$tablet-only} {
+      width: 60%;
+    }
 
-      h5,
-      p {
-        text-align: left;
+    @media #{$phone-only} {
+      width: 60%;
+
+      // TODO: confirm this override.  I'm doing this to style to mock-specs.
+      h5 {
+        font-size:5vw;
+        margin-bottom: 15px;
       }
     }
+
+    // @media #{$portrait} {
+    //   width: 100%;
+    //   padding: 5vw;
+    //   text-align: center;
+
+    //   h5 {
+    //     text-align: left;
+    //   }
+    // }
   }
 }
 
-.zuc-spr-hero--bkg-img {
+.zuc-spr-hero__bkg-img {
   background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
   height: 100%;
-  top: 0;
-  right: 0;
-  // padding: 20vh 0;
+  // top: 0;
+  // right: 0;
   z-index: -1;
-  z-index: -2;
   background-size: cover;
   padding-top: 50%;
   background-position: center;
+
+  @media #{$phone-only} {
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+  @media #{$tablet-only} {
+    // background-size:
+    // width: 200%;
+  }
+
 }
 
-.zuc-spr-hero--bkg-shape {
+.zuc-spr-hero__bkg-wave {
   background-image: url('../../assets/images/shapes/wave-top.svg');
-  z-index: 1;
-  bottom: -22px;
+  z-index: 2;
+  bottom: -1px;
   background-position: bottom;
   height: 100%;
   width: 100%;
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
+
+  @media #{$phone-only} {
+    width: 200%;
+    bottom: -22px;
+  }
+  @media #{$tablet-only} {
+    // width: 200%;
+    // bottom: -22px;
+  }
+}
+
+.zuc-spr-hero__bkg-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-position: right;
+  margin-top: -35px;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  background-image: url('../../assets/images/smarter-products-child/circles-hero.png');
+  z-index: 1;
+  padding-top: 20%;
+  @media #{$phone-only} {
+    margin-top: -10px;
+  }
 }
