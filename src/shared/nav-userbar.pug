@@ -1,5 +1,6 @@
 -var slogan     = "CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER"
 -var offer      = "$39"
+-var search     = "Search"
 -var loggedIn   = "Account"
 -var login      = "Login"
 -var partner    = "Become a Partner"
@@ -10,13 +11,16 @@
   // Slogan
   .zuc-nav-slogan
     |#{slogan}
-    span(class="u-zuc-teal")
+    span(class="u-zuc-mint")
       |#{offer}
 
   //Nav Links
   .zuc-user-links.flex.flex-hor-start.flex-hor-between.flex-vert-center
     // Search Placeholder
-
+    .zuc-search-box
+      i.fas.fa-search
+      span.search-text
+        |#{search}
     // Login - Logged Out State
     a(href="javascript:void(0)" title="Member Login" class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" onclick="toggleModal('[data-modal-login]')")
       // Logged Out State

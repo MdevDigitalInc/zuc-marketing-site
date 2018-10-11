@@ -81,6 +81,17 @@
     }
   }
 
+  // Search Text & Icon
+  .zuc-search-box {
+    color: $white;
+    margin-right: 8px;
+
+    i {
+      color: $color-zuc-lightindigo;
+      margin-right: 8px;
+    }
+  }
+
   // Cart Text & Icon
   .zuc-user-cart {
     color: $white;
