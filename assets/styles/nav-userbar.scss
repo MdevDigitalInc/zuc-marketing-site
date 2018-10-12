@@ -19,7 +19,7 @@
 
   .zuc-nav-slogan {
     color: $white;
-    letter-spacing: .15vw;
+    letter-spacing: .1vw;
 
     @media #{$phone-only} {
       display: none;
@@ -81,6 +81,17 @@
     }
   }
 
+  // Search Text & Icon
+  .zuc-search-box {
+    color: $white;
+    margin-right: 8px;
+
+    i {
+      color: $color-zuc-lightindigo;
+      margin-right: 8px;
+    }
+  }
+
   // Cart Text & Icon
   .zuc-user-cart {
     color: $white;
@@ -114,12 +125,19 @@
     span {
       display: block;
       @include center(both);
-      padding-top: 3px;
+      padding-top: 1px;
       font-size: .72vw;
 
       @media #{$phone-only} {
         font-size: 3vw;
       }
+    }
+  }
+
+  a.zuc-lang-toggle {
+    &:hover {
+      color: $color-zuc-lilac;
+      transition: .4s;
     }
   }
 
