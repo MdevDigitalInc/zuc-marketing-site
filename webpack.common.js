@@ -208,10 +208,6 @@ module.exports = {
       filename: 'smarter-home-products.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/spr-child.pug',
-      filename: 'spr-child.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/templates/spkids-appl.pug',
       filename: 'service-plans-appliance.html'
     }),
