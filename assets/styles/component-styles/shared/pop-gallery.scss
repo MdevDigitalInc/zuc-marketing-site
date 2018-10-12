@@ -17,9 +17,12 @@
 
   .zuc-pop-card-category {
     color: $color-zuc-lilac;
+    text-transform: uppercase;
   }
 
   .zuc-pop-card-name {
     color: $color-zuc-darkindigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
   }
 }
