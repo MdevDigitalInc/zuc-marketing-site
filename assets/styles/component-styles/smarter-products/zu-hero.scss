@@ -4,42 +4,37 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+}
 
-  .zu-hero-content {
-    width: 80%;
-    position: absolute;
-    margin: 0 auto;
-    top: 20%;
-    left: 14%;
-
-    @media #{$tablet-only} {
-      width: 80%;
-      top: 15%;
-      left: 5%;
-    }
-    @media #{$phone-only} {
-      width: 80%;
-      top: 5%;
-      left: 5%;
-    }
+.zuc-wave-hero-content {
+  width: 33%;
+  height: 100%;
+  left: 16%;
+  position: absolute;
+  background: rgba(67, 77, 160, .7);
+  // background-position: right bottom;
+  // background-repeat: no-repeat;
+  padding: 4vw 2vw 4vw;
+   @media #{$laptop-only} {
+    width: 38%;
+    padding: 16.4vw 3vw 5vw;
   }
-
-  .zuc-hero-left {
-    width: 40%;
-    padding: 0 2.2vw;
-    position: relative;
-
-    @media #{$tablet-only} {
-      width: 60%;
-    }
-
-    @media #{$phone-only} {
-      width: 60%;
-
-      h5 {
-        font-size: 5vw;
-        margin-bottom: 15px;
-      }
+  @media #{$tablet-lnd-only} {
+    width: 50%;
+  }
+  @media #{$portrait} {
+    width: 100%;
+    left: 0;
+    padding: 17vw 6vw 9vw;
+    background-size: 80%;
+  }
+  p {
+    // Seems unique to this component
+    margin-bottom: 10vw;
+    font-size: 1.35vw;
+    line-height: 1.55;
+     @media #{$portrait} {
+      font-size: 4vw;
     }
   }
 }
