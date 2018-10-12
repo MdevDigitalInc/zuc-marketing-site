@@ -70,6 +70,10 @@ section.zuc-pane-links {
     &.--mint {
       background: $color-zuc-mint;
     }
+
+    &.--indigo {
+      background: $color-zuc-indigo;
+    }
   }
 
   /* Styles for pane backgrounds */
@@ -87,6 +91,10 @@ section.zuc-pane-links {
 
   &.--kitchen {
     background-image: url('../../assets/images/smarter-home/interior-kitchen-header.png');
+  }
+
+  &.--sleepy {
+    background-image: url('../../assets/images/shared/woman-sleeper-stretching.png');
   }
   
   a {
