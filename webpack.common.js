@@ -231,6 +231,14 @@ module.exports = {
       template: './src/templates/form-reset-password.pug',
       filename: 'form-reset-password.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/terms.pug',
+      filename: 'terms-conditions.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/privacy.pug',
+      filename: 'privacy-policy.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
