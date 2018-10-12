@@ -239,6 +239,10 @@ module.exports = {
       template: './src/templates/privacy.pug',
       filename: 'privacy-policy.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/about.pug',
+      filename: 'about.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
