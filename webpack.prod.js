@@ -79,9 +79,9 @@ module.exports = merge(common, {
       persistentCache: true,
       inject: true, // Inject Calls on index.html automatically
       // CHANGE COLOR OF THEME
-      background: '#13b2a9',
+      background: '#434da0',
       // CHANGE PROJECT TITLE
-      title: 'MDEV Digital Inc.',
+      title: 'Zucora Home',
       // Icons to export
       icons: {
         android: true,

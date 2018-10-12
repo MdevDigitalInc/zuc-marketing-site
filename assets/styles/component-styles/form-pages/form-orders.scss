@@ -1,0 +1,22 @@
+section.zuc-orders-section {
+
+  &.--pre {
+    .zuc-orders-pre {
+      display: block;
+    }
+
+    .zuc-orders-post {
+      display: none;
+    }
+  }
+
+  &.--post {
+    .zuc-orders-pre {
+      display: none;
+    }
+
+    .zuc-orders-post {
+      display: block;
+    }
+  }
+}

@@ -30,3 +30,4 @@ const fonts = importAll(require.context('./assets/fonts', false, /\.(woff(2)?|tt
 const headerBg = require( './assets/images/shapes/hero-wave-shape.svg' );
 const sliderBg = require( './assets/images/shapes/hero-slider-bg.svg' );
 const secBgImg = require( './assets/images/shapes/footer-blob.svg' );
+const pcBgImg = require( './assets/images/smarter-products/woman-sleeper-stretching.png' );
