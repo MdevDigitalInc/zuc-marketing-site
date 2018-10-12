@@ -51,7 +51,7 @@
   ]
 
 section.zuc-pop-gallery
-  each prop in props.length ? props : ['There are no values']
+  each prop in props.length ? props : ['Gallery is empty']
     a.zuc-pop-card(href=prop._href title=prop._title)
       img(src=prop._src, alt=prop._alt)
       span.zuc-pop-card-category
