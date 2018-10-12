@@ -173,7 +173,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-contact.pug',
-      filename: 'form-contact.html'
+      filename: 'form-contact-us.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-request-service.pug',
@@ -185,7 +185,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-orders.pug',
-      filename: 'form-orders.html'
+      filename: 'form-orders-shipping.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/typography-test.pug',
@@ -193,15 +193,19 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/sl-parent.pug',
-      filename: 'sl-parent.html'
+      filename: 'smarter-living.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/sl-benefits.pug',
-      filename: 'sl-benefits.html'
+      filename: 'smarter-living-membership-benefits.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/sp-parent.pug',
-      filename: 'sp-parent.html'
+      filename: 'service-plans.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-parent.pug',
+      filename: 'smarter-home-products.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spr-child.pug',
@@ -209,19 +213,51 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spkids-appl.pug',
-      filename: 'sp-appliances.html'
+      filename: 'service-plans-appliance.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spkids-furn.pug',
-      filename: 'sp-furniture.html'
+      filename: 'service-plans-furniture.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spkids-homesys.pug',
-      filename: 'sp-home-systems.html'
+      filename: 'service-plans-home-systems.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/shc-parent.pug',
-      filename: 'shc-parent.html'
+      filename: 'smarter-home-control.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-forgot-password.pug',
+      filename: 'form-forgot-password.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-reset-password.pug',
+      filename: 'form-reset-password.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/terms.pug',
+      filename: 'terms-conditions.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/privacy.pug',
+      filename: 'privacy-policy.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/about.pug',
+      filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-home-care-kits.pug',
+      filename: 'home-care-kits.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-purecare.pug',
+      filename: 'purecare.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-zu-collection.pug',
+      filename: 'zu-collection.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }

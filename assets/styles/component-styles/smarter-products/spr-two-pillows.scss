@@ -1,0 +1,86 @@
+section.zuc-two-pillows {
+  padding-bottom: 14vw;
+
+  @media #{$tablet-only} {
+    padding-bottom: 16vw;
+  }
+
+  @media #{$laptop-up} {
+    padding-bottom: 7.58vw;
+  }
+}
+
+.zuc-product-box {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+
+  @media #{$tablet-only} {
+    padding: 0 5vw;
+    justify-content: space-between;
+  }
+
+  @media #{$tablet-up} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .zuc-product {
+    width: 90vw;
+    margin-left: 0;
+
+    img {
+      padding-bottom: 3.75vw;
+
+      @media #{$tablet-only} {
+        padding-bottom: 1vw;
+      }
+
+      @media #{$laptop-up} {
+        padding-bottom: .75vw;
+      }
+    }
+
+    &.--left {
+      margin-bottom: 9vw;
+
+      @media #{$tablet-only} {
+        width: 42vw;
+        padding-bottom: 16vw;
+      }
+
+      @media #{$laptop-up} {
+        width: 20vw;
+        margin-left: 3.23vw;
+      }
+    }
+
+    &.--right {
+
+      @media #{$tablet-only} {
+        width: 42vw;
+      }
+
+      @media #{$laptop-up} {
+        width: 22vw;
+        margin-left: 9.8vw;
+      }
+    }
+  }
+}
+
+.zuc-snowflake-box {
+  display: none;
+  margin-left: 0;
+
+  @media #{$laptop-up} {
+    display: block;
+    margin-left: 16.87vw;
+  }
+
+  img {
+    max-width: 208px;
+    max-height: 537px;
+    width: 10.5vw;
+  }
+}

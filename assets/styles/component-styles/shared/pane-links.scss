@@ -1,0 +1,144 @@
+section.zuc-pane-links {
+  padding: 0 0 11vw;
+
+  @media #{$tablet-only} {
+    padding: 0 6vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0;
+  }
+}
+
+.zuc-pane {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 51.25vw;
+
+  @media #{$tablet-up} {
+    align-items: flex-start;
+    width: 50%;
+    height: 54.43vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 17%;
+    height: 28.08vw;
+  }
+
+  /* Styles for pane titles */
+  .zuc-pane-title {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transform-origin: 50%;
+    color: $color-zuc-darkindigo;
+    height: 100%;
+    padding: 0 5vw;
+    
+    @media #{$tablet-up} {
+      height: 65%;
+      padding: 3vw;
+      justify-content: flex-start;
+    }
+  
+    @media #{$laptop-up} {
+      height: 50%;
+      padding: 1.55vw;
+    }
+
+    &.--lilac {
+      background: $color-zuc-lilac;
+    }
+
+    &.--concrete {
+      background: $color-zuc-concrete;
+    }
+
+    &.--salmon {
+      background: $color-zuc-salmon;
+    }
+
+    &.--mint {
+      background: $color-zuc-mint;
+    }
+
+    &.--indigo {
+      background: $color-zuc-indigo;
+    }
+  }
+
+  /* Styles for pane backgrounds */
+  &.--baby {
+    background-image: url('../../assets/images/shared/baby-bath.png');
+  }
+
+  &.--interior {
+    background-image: url('../../assets/images/shared/interior-house.png');
+  }
+
+  &.--house {
+    background-image: url('../../assets/images/smarter-living/streetview-house.png');
+  }
+
+  &.--kitchen {
+    background-image: url('../../assets/images/smarter-home/interior-kitchen-header.png');
+  }
+
+  &.--sleepy {
+    background-image: url('../../assets/images/shared/woman-sleeper-stretching.png');
+  }
+
+  &.--smartphone {
+    background-image: url('../../assets/images/shared/woman-smartphone.png');
+  }
+  
+  a {
+    position: absolute;
+    z-index: 13;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+.zuc-pane-bumper {
+  position: relative;
+  width: 100%;
+  padding: 3.69vw 1vw 0;
+
+  @media #{$laptop-up} {
+    width: 28%;
+    padding: 3.69vw 0 0 4vw;
+  }
+
+  .zuc-bumper-title-container {
+    margin-bottom: 3.5vw;
+
+    @media #{$tablet-up} {
+      margin-bottom: 2vw;
+    }
+
+    @media #{$laptop-up} {
+      margin-bottom: 1.25vw;
+    }
+  }
+
+  // h4 override
+  h4 {
+    margin: 0;
+  }
+}
