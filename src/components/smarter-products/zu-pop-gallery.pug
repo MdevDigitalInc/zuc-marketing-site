@@ -1,0 +1,61 @@
+-
+  var props = [
+    {
+      name : 'Dish Liquid',
+      category : 'Home Care',
+      _src : '../../assets/images/smarter-products/product-dish-liquid.png',
+      _alt : 'Dish soap',
+      _href : '#',
+      _title : 'Home Care Dish Liquid'
+    },
+    {
+      name : 'Bazu Kids',
+      category : 'Family Care',
+      _src : '../../assets/images/smarter-products/product-bazu-kids.png',
+      _alt : 'Shampoo bottles for children',
+      _href : '#',
+      _title : 'Family Care Bazu Kids'
+    },
+    {
+      name : 'Hard Surface Cleaner',
+      category : 'Home Care',
+      _src : '../../assets/images/smarter-products/product-hard-surface-cleaner.png',
+      _alt : 'Container of hard surface cleaner',
+      _href : '#',
+      _title : 'Home Care Hard Surface Cleaner'
+    },
+    {
+      name : 'Mop Package',
+      category : 'Tools &amp; Textiles',
+      _src : '../../assets/images/smarter-products/product-mop-package.png',
+      _alt : 'A mop with optional mop heads',
+      _href : '#',
+      _title : 'Tools and Textiles Mop Package'
+    },
+    {
+      name : 'Baby Bazu',
+      category : 'Family Care',
+      _src : '../../assets/images/smarter-products/product-baby-bazu.png',
+      _alt : 'Hygiene products for babies',
+      _href : '#',
+      _title : 'Family Care Baby Bazu'
+    },
+    {
+      name : 'Microcleaning Cloths',
+      category : 'Tools &amp; Textiles',
+      _src : '../../assets/images/smarter-products/product-micro-cleaning-cloths.png',
+      _alt : 'Three microfibre cloths',
+      _href : '#',
+      _title : 'Tool and Textiles Microcleaning Cloths'
+    },
+  ]
+
+section.zuc-pop-gallery
+  each prop in props.length ? props : ['Gallery is empty']
+    a.zuc-pop-card(href=prop._href title=prop._title)
+      .zuc-pop-card-img-box
+        img(src=prop._src, alt=prop._alt)
+      span.zuc-pop-card-category
+        |!{prop.category}
+      span.zuc-pop-card-name
+        |!{prop.name}
