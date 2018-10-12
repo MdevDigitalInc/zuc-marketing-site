@@ -1,8 +1,8 @@
 {
-  "name": "pug-sass-templating-boilerplate",
+  "name": "zucora-marketing-site",
   "description": "This project aims to provide a simple way of generating templated HTML5 / CSS pages",
   "version": "1.0.0",
-  "author": "Lucas Moreira <lucas@mdev.digital>",
+  "author": "MDEV DIGITAL <contact@mdev.digital>",
   "private": true,
   "main": "webpack.config.js",
   "scripts": {
