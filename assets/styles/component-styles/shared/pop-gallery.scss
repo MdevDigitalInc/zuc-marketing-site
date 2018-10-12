@@ -1,3 +1,25 @@
 .zuc-pop-gallery {
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zuc-pop-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .zuc-pop-card-img {
+    width: 90%;
+  }
+
+  .zuc-pop-card-category {
+    color: $color-zuc-lilac;
+  }
+
+  .zuc-pop-card-name {
+    color: $color-zuc-darkindigo;
+  }
 }

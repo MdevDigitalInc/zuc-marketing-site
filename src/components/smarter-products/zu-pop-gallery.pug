@@ -1,1 +1,27 @@
+-
+  var props = [
+    {
+      name : 'Dish Liquid',
+      category : 'Home Care',
+      _src : '../../assets/images/smarter-home/phone.png',
+      _alt : 'Dish soap',
+      _href : 'index.html',
+      _title : 'Home Care Dish Liquid'
+    },
+    {
+      name : 'Bazu Kids',
+      category : 'Family Care',
+      _src : '../../assets/images/smarter-home/phone.png',
+      _alt : 'Shampoo bottles for children',
+      _href : 'index.html',
+      _title : 'Family Care Bazu Kids'
+    },
+  ]
 section.zuc-pop-gallery
+  each prop in props.length ? props : ['There are no values']
+    a.zuc-pop-card(href=prop._href title=prop._title)
+      img(src=prop._src, alt=prop._alt)
+      span.zuc-pop-card-category
+        |#{prop.category}
+      span.zuc-pop-card-name
+        |#{prop.name}
