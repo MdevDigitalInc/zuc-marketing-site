@@ -1,0 +1,76 @@
+// Zu Collections Hero.
+
+.zu-hero-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .zu-hero-content {
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+    left: 14%;
+
+    @media #{$tablet-only} {
+      width: 80%;
+      top: 15%;
+      left: 5%;
+    }
+    @media #{$phone-only} {
+      width: 80%;
+      top: 5%;
+      left: 5%;
+    }
+  }
+
+  .zuc-hero-left {
+    width: 40%;
+    padding: 0 2.2vw;
+    position: relative;
+
+    @media #{$tablet-only} {
+      width: 60%;
+    }
+
+    @media #{$phone-only} {
+      width: 60%;
+
+      h5 {
+        font-size: 5vw;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.zu-hero-bkg-img {
+  background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
+  height: 100%;
+  z-index: -1;
+  padding-top: 50%;
+  background-size: 115%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  @media #{$phone-only} {
+    background-size: 200%;
+  }
+}
+
+.zu-hero-bkg-wave {
+  background-image: url('../../assets/images/shapes/wave-top.svg');
+  z-index: 2;
+  bottom: -1px;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media #{$phone-only} {
+    width: 200%;
+    bottom: -22px;
+  }
+}
