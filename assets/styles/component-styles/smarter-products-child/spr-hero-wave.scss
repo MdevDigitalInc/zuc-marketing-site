@@ -9,10 +9,35 @@
     background: url('../images/shapes/wave-bottom.svg');
     //background-image: url('./images/shapes/hero-wave-shape.svg');
     // Another asinine percentage for webkit.
-    background-size: 101%;
-    top: 0;
+    background-size: 100%;
+    top: -2px;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: calc(251 / 1839 * 100%);
+  }
+
+  .zuc-wave-hero-content {
+    width: 40%;
+    left: 20%;
+    position: relative;
+    background: url('../images/smarter-products/white-mol-mesh-bottom-right.png') rgba(67, 77, 160, .7);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 14.4vw 4vw 4vw;
+
+    p {
+      margin-bottom: 10vw;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .zuc-silver-protect {
+    position: absolute;
+    right: 4vw;
+    bottom: 4vw;
+    width: 12%;
   }
 }

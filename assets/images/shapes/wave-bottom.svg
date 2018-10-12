@@ -1,1 +1,5 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1838.621 250.786"><title>wave-bottom</title><path d="M-.884,0V250.786C292.345-30.109,696.524,136.318,1069,132.355c265.49-7.925,277.378-134.726,768.734-108.049-.009-7.548-.018-15.671-.026-24.306Z" transform="translate(0.884)"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1838.621 250.786">
+  <style>
+    .cls-1{fill:#fff;}
+  </style>
+  <path class="cls-1" d="M-.884,0V250.786C292.345-30.109,696.524,136.318,1069,132.355c265.49-7.925,277.378-134.726,768.734-108.049-.009-7.548-.018-15.671-.026-24.306Z" transform="translate(0.884)"/></svg>
