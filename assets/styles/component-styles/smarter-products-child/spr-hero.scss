@@ -48,13 +48,13 @@
   background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
   height: 100%;
   z-index: -1;
-  background-size: cover;
   padding-top: 50%;
-  background-position: center;
+  background-size: 115%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 
   @media #{$phone-only} {
     background-size: 200%;
-    background-repeat: no-repeat;
   }
 }
 
