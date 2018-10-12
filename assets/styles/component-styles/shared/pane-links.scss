@@ -13,6 +13,7 @@ section.zuc-pane-links {
 .zuc-pane {
   position: relative;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,9 +35,6 @@ section.zuc-pane-links {
   /* Styles for pane titles */
   .zuc-pane-title {
     text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
