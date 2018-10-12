@@ -204,7 +204,7 @@ module.exports = {
       filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/spr-child.pug',
+      template: './src/templates/spr-parent.pug',
       filename: 'smarter-home-products.html'
     }),
     new HtmlWebpackPlugin({
@@ -242,6 +242,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/about.pug',
       filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-home-care-kits.pug',
+      filename: 'home-care-kits.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-purecare.pug',
+      filename: 'purecare.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/spr-zu-collection.pug',
+      filename: 'zu-collection.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
