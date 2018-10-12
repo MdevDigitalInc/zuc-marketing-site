@@ -11,6 +11,22 @@ div(class="zuc-mobile-nav" data-mobile-menu)
   // Accordion Nav ----------------------------------------
   div(class="zuc-accordion-nav" role="menu" aria-role="menu")
 
+    //About Links --------------------------------
+    div(class="zuc-accordion-item" data-accordion-item)
+      .zuc-accordion-title
+        |About
+        i.zuc-accordion-arrow.fas.fa-angle-right
+      // Hidden Content
+      div(class="zuc-accordion-hidden" aria-hidden="true")
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |About Us
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |Contact Us
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |Our Team
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |Reviews
+
     // Smarter Living Links --------------------------------
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
@@ -19,30 +35,18 @@ div(class="zuc-mobile-nav" data-mobile-menu)
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
-          |Discover Smarter Living Plans
-        a(class="zuc-accordion-link" href='#' title='What is Smarter living.' aria-role='menu-item')
-          |Smarter Home Control
+          |Discover Smarter Living
         a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menu-item')
           |Smarter Living Benefits
         a(class="zuc-accordion-link" href='#' title='What smarter living can do for you' aria-role='menu-item')
           |Smarter Living Matters
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |Smarter Home Control
 
-    // Member Centre Links --------------------------------
+    // Service Plans Links --------------------------------
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
-        |Member Centre
-        i.zuc-accordion-arrow.fas.fa-angle-right
-      // Hidden Content
-      div(class="zuc-accordion-hidden" aria-hidden="true")
-        a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
-          |Login
-        a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menu-item')
-          |Redeem Rewards
-
-    // Service Links --------------------------------
-    div(class="zuc-accordion-item" data-accordion-item)
-      .zuc-accordion-title
-        |Service Plans
+        |Plans
         i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
@@ -65,7 +69,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
         a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menu-item')
           |Why wellness matters
         a(class="zuc-accordion-link" href='#' title='View our line of home care products' aria-role='menu-item')
-          |Zu Collection
+          |ZU Collection
         a(class="zuc-accordion-link" href='#' title='View our line of sleep wellness products' aria-role='menu-item')
           |PureCare
         a(class="zuc-accordion-link" href='#' title='Learn more about our home wellness care kits' aria-role='menu-item')
@@ -73,28 +77,26 @@ div(class="zuc-mobile-nav" data-mobile-menu)
         a(class="zuc-accordion-link" href='#' title='View our whole line of offerings' aria-role='menu-item')
           |Shop all products
 
+    // Member Centre Links --------------------------------
+    div(class="zuc-accordion-item" data-accordion-item)
+      .zuc-accordion-title
+        |Member Centre
+        i.zuc-accordion-arrow.fas.fa-angle-right
+      // Hidden Content
+      div(class="zuc-accordion-hidden" aria-hidden="true")
+        a(class="zuc-accordion-link" href='#' title='Learn more about smarter living.' aria-role='menu-item')
+          |Member Login
+        a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menu-item')
+          |Redeem Rewards
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |Blog
+        a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menu-item')
+          |FAQ
+
     // Shop Now --------------------------------
     div(class="zuc-accordion-item" data-accordion-item)
       a.zuc-accordion-title(href="#" title="Shop Now" style="display: block;")
         |Shop Now
-
-    // Home Care Links --------------------------------
-    div(class="zuc-accordion-item" data-accordion-item)
-      .zuc-accordion-title
-        |About Us
-        i.zuc-accordion-arrow.fas.fa-angle-right
-      // Hidden Content
-      div(class="zuc-accordion-hidden" aria-hidden="true")
-        a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menu-item')
-          |Contact Us
-        a(class="zuc-accordion-link" href='#' title='View our line of home care products' aria-role='menu-item')
-          |About Us
-        a(class="zuc-accordion-link" href='#' title='View our line of sleep wellness products' aria-role='menu-item')
-          |Our Team
-        a(class="zuc-accordion-link" href='#' title='Learn more about our home wellness care kits' aria-role='menu-item')
-          |Join Us
-        a(class="zuc-accordion-link" href='#' title='View our whole line of offerings' aria-role='menu-item')
-          |FAQ
 
   div(class="zuc-menu" data-open-menu)
     div(class="zuc-menu-open close" role="button" aria-label="Mobile Navigation Toggle")

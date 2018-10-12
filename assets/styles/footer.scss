@@ -6,6 +6,15 @@
   background-color: $color-zuc-indigo;
   padding: 60px 20px 70px;
   letter-spacing: 1px;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    padding-left: 5vw;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+  }
 
   @media #{$phone-only} {
     display: none;
@@ -14,6 +23,15 @@
 
 .zuc-footer--column {
   padding: 0 20px;
+  
+
+  &:nth-child( 2 ) {
+    margin: 5.86vw 0 0;
+
+    @media #{$laptop-up} {
+      margin: 0;
+    }
+  }
 }
 
 .zuc-footer--header {
@@ -21,6 +39,12 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;
+  white-space: nowrap;
+  /* Uncomment Me For Ellpsis overflow
+  width: setme;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  */
 }
 
 .zuc-footer--link {
@@ -58,39 +82,58 @@
   }
 
   .zuc-nav-brand {
-    width: auto;
+    width: 12vw;
     max-width: 237px;
     transition: all .2s ease-out;
 
     @media #{$tablet-only} {
-      max-width: 130px;
+      width: 30vw;
+      padding-bottom: 4.81vw;
     }
+
     @media #{$xl-up} {
       max-width: 340px;
     }
+
     @media #{$phone-only} {
       max-width: 100px;
     }
 
     img {
       width: 90%;
+
+      @media #{$tablet-only} {
+        width: 100%;
+      }
     }
   }
 
-  .zuc-footer--social-icons {
+  .zuc-footer--social-icons-primary {
     padding-top: 30px;
     position: absolute;
     right: 48px;
     top: 30px;
+    display: none;
+
+    @media #{$laptop-up} {
+      display: block;
+    }
   }
 
   .zuc-social-link {
-    font-size: 14px;
+    font-size: 1.5vw;
     font-weight: 400;
     padding: 0 5px;
+
+    @media #{$laptop-only} {
+      font-size: 1.3vw;
+    }
+
+    @media #{$desktop-up} {
+      font-size: 1.15vw;
+    }
   }
 
-  .fab.fa-linkedin-in,
   .far.fa-envelope {
     display: none;
   }
@@ -110,6 +153,7 @@
   }
   @media #{$phone-only} {
     justify-content: center;
+    flex-direction: column;
   }
 
   .zuc-footer--copyright-text {
@@ -125,8 +169,89 @@
     }
   }
 
-  .zuc-footer--copryright-menu {
+  .zuc-footer--copyright-title {
+    font-size: 12px;
+
+    @media #{$phone-only} {
+      padding: 0 0 1vw;
+    }
+  }
+
+  .zuc-footer--copyright-menu {
     margin-left: 2vw;
+
+    @media #{$phone-only} {
+      padding: 0 0 1vw;
+    }
+
+    span {
+      font-size: 12px;
+      margin: 0 .5vw;
+      color: $white;
+
+      @media #{$tablet-only} {
+        margin: 0 .4vw;
+      }
+
+      @media #{$laptop-only} {
+        margin: 0 .2vw;
+      }
+
+      @media #{$desktop-up} {
+        margin: 0 .1vw;
+      }
+    }
+  }
+}
+
+/* Secondary set of social icons for tablet size */
+
+.zuc-footer--social-icons-secondary {
+  display: block;
+  padding-top: 30px;
+
+  .zuc-mobile-social {
+    justify-content: flex-start;
+  }
+
+  .zuc-social-link {
+    color: $white;
+    font-size: 3vw;
+    font-weight: 400;
+    padding: 0 1.2vw;
+  }
+
+  @media #{$laptop-up} {
+    display: none;
+  }
+
+  .far.fa-envelope {
+    display: none;
+  }
+}
+
+footer .zuc-btn-primary {
+  @media #{$tablet-only} {
+    font-size: 1.75vw;
+    padding: 2vw;
+  }
+}
+
+footer .zuc-footer-row {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+  }
+}
+
+.zuc-shipping-blurb {
+  display: none;
+
+  @media #{$tablet-only} {
+    display: block;
+    padding-top: 4.69vw;
   }
 }
 
@@ -182,6 +307,7 @@
   @media #{$laptop-up} {
     bottom: 175px;
   }
+
   @media #{$phone-only} {
     display: none;
   }
