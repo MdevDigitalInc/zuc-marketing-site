@@ -1,5 +1,4 @@
 // Smarter Products Hero.
-// TODO: clean up this file before PR.
 
 .zuc-spr-hero-container {
   width: 100%;
@@ -37,30 +36,18 @@
     @media #{$phone-only} {
       width: 60%;
 
-      // TODO: confirm this override.  I'm doing this to style to mock-specs.
+      // TODO: confirm this override.  Inherited sizing was off.
       h5 {
         font-size:5vw;
         margin-bottom: 15px;
       }
     }
-
-    // @media #{$portrait} {
-    //   width: 100%;
-    //   padding: 5vw;
-    //   text-align: center;
-
-    //   h5 {
-    //     text-align: left;
-    //   }
-    // }
   }
 }
 
 .zuc-spr-hero__bkg-img {
   background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
   height: 100%;
-  // top: 0;
-  // right: 0;
   z-index: -1;
   background-size: cover;
   padding-top: 50%;
@@ -69,10 +56,6 @@
   @media #{$phone-only} {
     background-size: 200%;
     background-repeat: no-repeat;
-  }
-  @media #{$tablet-only} {
-    // background-size:
-    // width: 200%;
   }
 
 }
@@ -92,10 +75,6 @@
     width: 200%;
     bottom: -22px;
   }
-  @media #{$tablet-only} {
-    // width: 200%;
-    // bottom: -22px;
-  }
 }
 
 .zuc-spr-hero__bkg-overlay {
@@ -111,6 +90,7 @@
   background-image: url('../../assets/images/smarter-products-child/circles-hero.png');
   z-index: 1;
   padding-top: 20%;
+
   @media #{$phone-only} {
     margin-top: -10px;
   }
