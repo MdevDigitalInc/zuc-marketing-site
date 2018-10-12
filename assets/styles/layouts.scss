@@ -7,33 +7,33 @@
 ----*/
 
 .zuc-section-container {
-  padding: 40.31vw 0 0;
+  padding: 11.25vw 0 0;
 
   @media #{$tablet-only} {
-    padding: 25.26vw 0 0;
+    padding: 10.8vw 0 0;
   }
 
   @media #{$laptop-only} {
-    padding: 16vw 0 0;
+    padding: 8vw 0 0;
   }
 
   @media #{$desktop-up} {
-    padding: 11.41vw 0 0;
+    padding: 6.2vw 0 0;
   }
 
   &.--sides {
-    padding: 40.31vw 6vw 0;
+    padding: 11.25vw 6vw 0;
 
     @media #{$tablet-only} {
-      padding: 25.26vw 6vw 0;
+      padding: 10.8vw 6vw 0;
     }
   
     @media #{$laptop-only} {
-      padding: 16vw 17vw 0;
+      padding: 8vw 17vw 0;
     }
   
     @media #{$desktop-up} {
-      padding: 11.41vw 17vw  0;
+      padding: 6.2vw 17vw  0;
     }
   }
 
