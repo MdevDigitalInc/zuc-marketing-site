@@ -34,7 +34,9 @@ section.zuc-pane-links {
   /* Styles for pane titles */
   .zuc-pane-title {
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,16 +44,17 @@ section.zuc-pane-links {
     transform: rotate(180deg);
     transform-origin: 50%;
     color: $color-zuc-darkindigo;
-    margin-left: auto;
     height: 100%;
     padding: 0 5vw;
     
     @media #{$tablet-up} {
-      height: auto;
-      padding: 4vw;
+      height: 65%;
+      padding: 3vw;
+      justify-content: flex-start;
     }
   
     @media #{$laptop-up} {
+      height: 50%;
       padding: 1.55vw;
     }
 
@@ -95,6 +98,10 @@ section.zuc-pane-links {
 
   &.--sleepy {
     background-image: url('../../assets/images/shared/woman-sleeper-stretching.png');
+  }
+
+  &.--smartphone {
+    background-image: url('../../assets/images/shared/woman-smartphone.png');
   }
   
   a {
