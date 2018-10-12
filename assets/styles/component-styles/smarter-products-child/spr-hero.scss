@@ -37,7 +37,7 @@
       width: 60%;
 
       h5 {
-        font-size:5vw;
+        font-size: 5vw;
         margin-bottom: 15px;
       }
     }
@@ -59,7 +59,7 @@
 }
 
 .zuc-spr-hero-bkg-mesh {
-  display:none;
+  display: none;
 
   @media #{$laptop-up} {
     display: block;
