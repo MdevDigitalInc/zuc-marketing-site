@@ -1,0 +1,18 @@
+.zuc-wave-hero-top {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+  &:after {
+    @include pseudo();
+    background: url('../images/shapes/wave-bottom.svg');
+    //background-image: url('./images/shapes/hero-wave-shape.svg');
+    // Another asinine percentage for webkit.
+    background-size: 101%;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: calc(251 / 1839 * 100%);
+  }
+}
