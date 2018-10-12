@@ -36,7 +36,6 @@
     @media #{$phone-only} {
       width: 60%;
 
-      // TODO: confirm this override.  Inherited sizing was off.
       h5 {
         font-size:5vw;
         margin-bottom: 15px;
