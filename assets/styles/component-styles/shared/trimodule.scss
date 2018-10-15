@@ -1,0 +1,23 @@
+section.zuc-tri-module {
+  position: relative;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.zuc-tri-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  background: $color-zuc-platinum;
+
+  .zuc-why-box-icons {
+    width: 100%;
+    display: flex;
+  }
+}
