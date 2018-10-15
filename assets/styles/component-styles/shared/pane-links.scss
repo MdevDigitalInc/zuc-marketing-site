@@ -44,6 +44,7 @@ section.zuc-pane-links {
     color: $color-zuc-darkindigo;
     height: 100%;
     padding: 0 5vw;
+    box-shadow: .7px 1.9px 68px 0 rgba(12, 12, 12, .2);
     
     @media #{$tablet-up} {
       height: 65%;
