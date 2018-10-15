@@ -17,9 +17,34 @@ section.zuc-tri-module {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 33.3%;
   background: $color-zuc-platinum;
+
+  &.blog-box {
+    align-items: flex-start;
+    padding: 1vw; // TODO
+  }
+
+  .zuc-tri-box-title-container {
+    margin-bottom: 3.5vw;
+
+    @media #{$tablet-up} {
+      margin-bottom: 2vw;
+    }
+
+    @media #{$laptop-up} {
+      margin-bottom: 1.25vw;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  &.why-box {
+    align-items: center;
+    padding: 1vw; // TODO
+  }
 
   .zuc-why-box-icons {
     width: 100%;
@@ -33,8 +58,45 @@ section.zuc-tri-module {
   height: 100%;
 }
 
-.blueboi {
-  background: rgb(156, 156, 219);
-  width: 100%;
-  height: 100%;
+.zuc-blog-item {
+  position: relative;
+  display: flex;
+  border: solid 1px $color-zuc-concrete;
+  background: $color-pure-white;
+  padding: .6vw;
+  margin: 0 0 .8vw;
+  width: 26vw;
+  
+  .zuc-blog-item-left {
+    width: 9.4vw;
+    height: 9.4vw;
+    background: url('../../assets/images/shared/air-conditioning-repair.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .zuc-blog-item-right {
+    width: 65%;
+    padding-left: .81vw;
+
+    .zuc-blog-item-info {
+      color: $color-zuc-darkindigo;
+      font-weight: 500;
+      font-size: .707vw;
+    }
+
+    h2 {
+      color: $color-zuc-indigo;
+      font-family: $main-font-serif;
+      font-size: 1.21vw;
+      margin-bottom: .76vw;
+    }
+
+    p {
+      color: $color-zuc-darkindigo;
+      font-weight: 100;
+      font-size: .707vw;
+      margin-top: .66vw;
+    }
+  }
 }
