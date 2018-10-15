@@ -412,21 +412,36 @@ section.zuc-tri-module {
   }
 
   .zuc-why-box-icon-img {
-    height: 23vw;
-    width: 19.375vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-top: .8vw;
+    height: 23vw;
+    width: 19.375vw;
+
+    img {
+      max-height: 23vw;
+      max-width: 19.375vw;
+    }
 
     @media #{$tablet-only} {
       height: 13vw;
       width: 10vw;
+      
+      img {
+        max-height: 13vw;
+        max-width: 10vw;
+      }
     }
 
     @media #{$laptop-up} {
       height: 6.3vw;
       width: 5.45vw;
+
+      img {
+        max-height: 6.3vw;
+        max-width: 5.45vw;
+      }
     }
   }
 }
