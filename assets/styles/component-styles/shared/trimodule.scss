@@ -12,14 +12,14 @@
 section.zuc-tri-module {
   position: relative;
   flex-direction: row;
-  margin: 15vw 0 30vw;
+  padding-bottom: 30vw;
 
   @media #{$tablet-only} {
-    margin: 13vw 0 15vw;
+    padding-bottom: 15vw;
   }
 
   @media #{$laptop-up} {
-    margin: 10vw 0 5vw;
+    padding-bottom: 5vw;
   }
   
   .zuc-tri-module-wave {
@@ -43,35 +43,10 @@ section.zuc-tri-module {
     width: 33.3%;
   }
 
-  &.review-box {
-    align-items: center;
-    justify-content: center;
-    padding: 3.4vw;
-  }
-
-  &.blog-box {
-    align-items: flex-start;
-    padding: 0 16.5vw;
-
-    @media #{tablet-only} {
-      padding: 0 16.5vw; // This media query doesn't work ?!
-    }
-
-    @media #{$laptop-up} {
-      padding: 3.4vw;
-    }
-  }
-
-  &.why-box {
-    align-items: center;
-    justify-content: center;
-    padding: 3.4vw;
-  }
-
   .zuc-tri-box-title-container {
     margin-bottom: 3.5vw;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       margin-bottom: 2vw;
     }
 
@@ -81,7 +56,11 @@ section.zuc-tri-module {
   }
 
   h2 {
-    font-size: 3.9vw;
+    font-size: 6.875vw;
+
+    @media #{$tablet-up} {
+      font-size: 3.9vw;
+    }
 
     @media #{$laptop-up} {
       font-size: 1.51vw;
@@ -89,7 +68,11 @@ section.zuc-tri-module {
   }
 
   h3 {
-    font-size: 5.47vw;
+    font-size: 9.375vw;
+
+    @media #{$tablet-up} {
+      font-size: 5.47vw;
+    }
 
     @media #{$laptop-up} {
       font-size: 2.1vw;
@@ -107,12 +90,26 @@ section.zuc-tri-module {
 
 ******/
 
+.--review-box {
+  align-items: center;
+  justify-content: center;
+  padding: 0 5vw 20vw;
+
+  @media #{$tablet-only} {
+    padding: 0 16vw 11.7vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 3.4vw;
+  }
+}
+
 .zuc-quote-badge {
   border-radius: 50%;
   background-color: $white;
   height: 21.25vw;
   width: 21.25vw;
-  margin-bottom: 1.5vw;
+  margin-bottom: 7.5vw;
 
   @media #{$tablet-only} {
     height: 10vw;
@@ -120,6 +117,7 @@ section.zuc-tri-module {
   }
 
   @media #{$laptop-up} {
+    margin-bottom: 1.5vw;
     height: 3.84vw;
     width: 3.84vw;
   }
@@ -132,7 +130,15 @@ section.zuc-tri-module {
 
 .zuc-review-text {
   text-align: center;
-  padding: 0 0 1.3vw;
+  padding: 0 0 5vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 3vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 0 0 1.3vw;
+  }
 }
 
 .zuc-review-stars {
@@ -150,24 +156,57 @@ section.zuc-tri-module {
 }
 
 .zuc-review-author {
-  padding: 1.1vw 0 2.3vw;
+  padding: 8vw 0 13vw;
+
+  @media #{$tablet-only} {
+    padding: 2vw 0 4vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 1.1vw 0 2.3vw;
+  }
 }
 
 .zuc-review-button {
   position: absolute;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   background-color: $color-pure-white;
+  top: 82vw;
+
+  @media #{$tablet-up} {
+    width: 35px;
+    height: 35px;
+    top: 40vw;
+  }
+  
+  @media #{$laptop-up} {
+    top: 22vw;
+  }
 
   &.--left {
-    top: 22vw;
-    left: 3.08vw;
+    left: 5vw;
+
+    @media #{$tablet-only} {
+      left: 16vw;
+    }
+    
+    @media #{$laptop-up} {
+      left: 3.08vw;
+    }
   }
 
   &.--right {
-    top: 22vw;
-    right: 3.08vw;
+    right: 5vw;
+
+    @media #{$tablet-only} {
+      right: 16vw;
+    }
+    
+    @media #{$laptop-up} {
+      right: 3.08vw;
+    }
   }
 }
 
@@ -177,8 +216,22 @@ section.zuc-tri-module {
 
 ******/
 
+.--blog-box {
+  background: $color-zuc-platinum;
+  align-items: flex-start;
+  padding: 0 5vw;
+
+  @media #{$tablet-only} {
+    padding: 0 16.5vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 3.4vw;
+  }
+}
+
 .zuc-tri-blog-titles {
-  padding: 0 0 0 8vw;
+  padding: 0;
 
   @media #{$tablet-only} {
     padding: 0 0 0 3vw;
@@ -194,14 +247,13 @@ section.zuc-tri-module {
   display: flex;
   border: solid 1px $color-zuc-concrete;
   background: $color-pure-white;
-  padding: .6vw;
-  margin: 0 0 .8vw;
+  padding: 2vw;
+  margin: 0 0 5vw;
   width: 100%;
 
   @media #{$tablet-only} {
     padding: 1.6vw;
     margin: 0 0 1.8vw;
-    width: 100%;
   }
   
   @media #{$laptop-up} {
@@ -230,7 +282,7 @@ section.zuc-tri-module {
 
   .zuc-blog-item-right {
     width: 65%;
-    padding-left: 5vw;
+    padding-left: 4vw;
 
     @media #{$tablet-only} {
       padding-left: 2.4vw;
@@ -243,7 +295,7 @@ section.zuc-tri-module {
     .zuc-blog-item-info {
       color: $color-zuc-darkindigo;
       font-weight: 500;
-      font-size: .707vw;
+      font-size: 2.5vw;
 
       @media #{$tablet-only} {
         font-size: 1.8vw;
@@ -257,8 +309,8 @@ section.zuc-tri-module {
     h2 {
       color: $color-zuc-indigo;
       font-family: $main-font-serif;
-      margin-bottom: .76vw;
-      font-size: 1.21vw;
+      margin-bottom: 1.2vw;
+      font-size: 4vw;
 
       @media #{$tablet-only} {
         margin-bottom: 1vw;
@@ -274,8 +326,8 @@ section.zuc-tri-module {
     p {
       color: $color-zuc-darkindigo;
       font-weight: 100;
-      margin-top: 3vw;
-      font-size: .707vw;
+      margin-top: 1.2vw;
+      font-size: 2.5vw;
 
       @media #{$tablet-only} {
         margin-top: 1vw;
@@ -295,6 +347,13 @@ section.zuc-tri-module {
   WHY BOX
 
 ******/
+
+.--why-box {
+  background: $color-zuc-platinum;
+  align-items: center;
+  justify-content: center;
+  padding: 3.4vw;
+}
 
 .zuc-why-box-icon-row {
   width: 100%;
