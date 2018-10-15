@@ -13,6 +13,17 @@
       // Nav Dropdown
       include ./nav-dropdown.pug
 
+    // Mobile Nav Cart
+    .zuc-mob-cart
+      a(href="#" title="User Cart" class="zuc-user-cart flex flex-vert-center")
+        i.fas.fa-shopping-cart
+        span.cart-center.u-normal
+          |#{cart}
+        span(class="zuc-cart-count")
+          // Interpolate Cart Count from Limetac
+          span
+            |#{cartCount}
+
     // Mobile Nav Button
     div(class='zuc-menu')
       div(class='zuc-menu-open' role='button' data-open-menu aria-label='Mobile Navigation')

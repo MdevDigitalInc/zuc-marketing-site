@@ -28,7 +28,7 @@
     font-size: 1vw;
   }
   @media #{$phone-only} {
-    padding: 2vw;
+    padding: 5vw 4vw;
   }
 
   &:hover,
@@ -52,7 +52,8 @@
       max-width: 340px;
     }
     @media #{$phone-only} {
-      max-width: 150px;
+      max-width: 250px;
+      width: 40vw;
       margin: 0 2vw;
     }
 
