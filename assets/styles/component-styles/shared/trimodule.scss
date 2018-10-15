@@ -12,12 +12,7 @@
 section.zuc-tri-module {
   background: $color-zuc-platinum;
   position: relative;
-  flex-direction: column;
-
-  @media #{$laptop-up} {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  flex-direction: row;
 
   .zuc-tri-module-wave {
     position: absolute;
@@ -29,7 +24,17 @@ section.zuc-tri-module {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 33.3%;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 33.3%;
+  }
+  
+
+  &.review-box {
+    align-items: center;
+    padding: 1vw; // TODO
+  }
 
   &.blog-box {
     align-items: flex-start;
@@ -132,7 +137,17 @@ section.zuc-tri-module {
   justify-content: center;
 
   .zuc-why-box-icon-item {
-    color: $color-cuz-darkindigo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      color: $color-zuc-darkindigo;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.5;
+      padding-top: .76vw;
+    }
 
     &:nth-child( n+2 ) {
       margin-left: 2.22vw;
