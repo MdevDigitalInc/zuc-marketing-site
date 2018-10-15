@@ -36,8 +36,33 @@
   */
   p {
     margin-bottom: 2vw;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     line-height: 1.55;
+
+    @media #{$phone-only} {
+      font-size: 3vw;
+      line-height: 4.5vw;
+    }
+
+    @media #{$tablet-only} {
+      font-size: 1.8vw;
+      line-height: 2vw;
+    }
+  }
+
+  h3 {
+    font-size: 3vw;
+    line-height: 3.4vw;
+
+    @media #{$phone-only} {
+      font-size: 9vw;
+      line-height: 9vw;
+    }
+
+    @media #{$tablet-only} {
+      font-size: 6vw;
+      line-height: 6vw;
+    }
   }
 }
 
