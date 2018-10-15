@@ -12,9 +12,7 @@
   left: 16%;
   position: absolute;
   background: rgba(67, 77, 160, .7);
-  // background-position: right bottom;
-  // background-repeat: no-repeat;
-  padding: 4vw 2vw;
+  padding: 4vw 4vw;
   @media #{$laptop-only} {
     width: 38%;
     padding: 16.4vw 3vw 5vw;
