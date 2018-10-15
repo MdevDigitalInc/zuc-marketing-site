@@ -3,6 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  padding: 0 5% 13vw;
 
   @media #{$tablet-up} {
     padding: 0 9% 5vw;
