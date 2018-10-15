@@ -15,29 +15,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.7vw;
-  width: 100%;
+  text-align: center;
+  width: 50%;
+  padding: 9vw;
 
   @media #{$tablet-only} {
     width: 50%;
+    padding: 6vw;
   }
 
   @media #{$laptop-up} {
     width: 16.66%;
+    padding: 2.7vw;
   }
-  
+
   &:hover {
     box-shadow: $soft-shadow;
   }
 
-  .zuc-pop-card-img {
-    width: 90%;
+  .zuc-pop-card-img-box {
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
   }
 
   .zuc-pop-card-category {
     color: $color-zuc-lilac;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 4.375vw;
+    padding: 6vw 0 3.5vw;
+
+    @media #{$tablet-only} {
+      font-size: 1.82vw;
+      padding: 2.6vw 0 1.3vw;
+    }
+
+    @media #{$laptop-only} {
+      font-size: .8vw;
+      padding: 1.45vw 0 .8vw;
+    }
 
     @media #{$desktop-up} {
       font-size: .7vw;
@@ -49,7 +69,15 @@
     color: $color-zuc-darkindigo;
     font-family: $main-font-serif;
     font-weight: 300;
-    text-align: center;
+    font-size: 7vw;
+
+    @media #{$tablet-only} {
+      font-size: 3.9vw;
+    }
+
+    @media #{$laptop-only} {
+      font-size: 1.65vw;
+    }
 
     @media #{$desktop-up} {
       font-size: 1.5vw;
