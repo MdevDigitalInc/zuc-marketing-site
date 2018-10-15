@@ -4,6 +4,12 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  @media #{$phone-only} {
+    height: 90vw;
+  }
+  @media #{$tablet-only} {
+    height: 60vw;
+  }
 }
 
 .zuc-zu-hero-content {
@@ -17,11 +23,12 @@
   @media #{$phone-only} {
     width: 100%;
     left: 0;
-    // padding: 16.4vw 3vw 5vw;
+    padding: 10vw 10vw 0vw;
   }
   @media #{$tablet-only} {
-    width: 80%;
-    left: 10%;
+    width: 85%;
+    left: 7.5%;
+    padding: 10vw 8vw 0vw;
   }
   /* Todo:
     To conform to mock, more overrides may be necessary for
@@ -46,9 +53,9 @@
     right: 18vw;
   }
   @media #{$phone-only} {
-    max-width: 35vw;
+    max-width: 48vw;
     bottom: 2vw;
-    right: 30%;
+    right: 25%;
   }
 }
 
@@ -58,11 +65,17 @@
   z-index: -1;
   padding-top: 50%;
   background-size: 100%;
-  background-position: right top;
+  background-position: top right;
   background-repeat: no-repeat;
 
+  @media #{$tablet-only} {
+    background-size: 170%;
+    background-position: 100% 30%;
+  }
+
   @media #{$phone-only} {
-    background-size: 200%;
+    background-size: 260%;
+    background-position: 90% 40%;
   }
 }
 
