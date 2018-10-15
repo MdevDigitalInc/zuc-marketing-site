@@ -352,13 +352,30 @@ section.zuc-tri-module {
   background: $color-zuc-platinum;
   align-items: center;
   justify-content: center;
-  padding: 3.4vw;
+  padding: 16.25vw 0;
+
+  @media #{$tablet-only} {
+    padding: 11vw 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: 4vw 0;
+  }
 }
 
 .zuc-why-box-icon-row {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 13vw;
+
+  @media #{$tablet-only} {
+    padding-bottom: 6.9vw;
+  }
+
+  @media #{$laptop-up} {
+    padding-bottom: 2vw;
+  }
 
   .zuc-why-box-icon-item {
     display: flex;
@@ -370,11 +387,19 @@ section.zuc-tri-module {
       font-weight: 600;
       text-align: center;
       line-height: 1.5;
-      padding-top: .76vw;
+      padding-top: 4vw;
+
+      @media #{$tablet-only} {
+        padding-top: 1.4vw;
+      }
+  
+      @media #{$laptop-up} {
+        padding-top: .76vw;
+      }
     }
 
     &:nth-child( n+2 ) {
-      margin-left: 14vw;
+      margin-left: 10vw;
 
       @media #{$tablet-only} {
         margin-left: 6vw;
@@ -387,8 +412,8 @@ section.zuc-tri-module {
   }
 
   .zuc-why-box-icon-img {
-    height: 36vw;
-    width: 31.25vw;
+    height: 23vw;
+    width: 19.375vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
