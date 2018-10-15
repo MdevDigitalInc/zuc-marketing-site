@@ -51,10 +51,10 @@ section.zuc-tri-module {
 
   &.blog-box {
     align-items: flex-start;
-    padding: 0 20vw;
+    padding: 0 16.5vw;
 
     @media #{tablet-only} {
-      padding: 0 16vw;
+      padding: 0 16.5vw; // This media query doesn't work ?!
     }
 
     @media #{$laptop-up} {
@@ -63,12 +63,9 @@ section.zuc-tri-module {
   }
 
   &.why-box {
-
-    @media #{$tablet-up} {
-      align-items: center;
-      justify-content: center;
-      padding: 3.4vw;
-    }
+    align-items: center;
+    justify-content: center;
+    padding: 3.4vw;
   }
 
   .zuc-tri-box-title-container {
@@ -180,6 +177,18 @@ section.zuc-tri-module {
 
 ******/
 
+.zuc-tri-blog-titles {
+  padding: 0 0 0 8vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 0 3vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 0 0 0 1vw;
+  }
+}
+
 .zuc-blog-item {
   position: relative;
   display: flex;
@@ -187,38 +196,96 @@ section.zuc-tri-module {
   background: $color-pure-white;
   padding: .6vw;
   margin: 0 0 .8vw;
-  width: 26vw;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    padding: 1.6vw;
+    margin: 0 0 1.8vw;
+    width: 100%;
+  }
+  
+  @media #{$laptop-up} {
+    padding: .6vw;
+    margin: 0 0 .8vw;
+    width: 26vw;
+  }
   
   .zuc-blog-item-left {
-    width: 9.4vw;
-    height: 9.4vw;
     background: url('../../assets/images/shared/air-conditioning-repair.png');
     background-position: center;
     background-size: cover;
+    width: 32.5vw;
+    height: 32.5vw;
+
+    @media #{$tablet-only} {
+      width: 24.22vw;
+      height: 24.22vw;
+    }
+    
+    @media #{$laptop-up} {
+      width: 9.4vw;
+      height: 9.4vw;
+    }
   }
 
   .zuc-blog-item-right {
     width: 65%;
-    padding-left: .81vw;
+    padding-left: 5vw;
+
+    @media #{$tablet-only} {
+      padding-left: 2.4vw;
+    }
+    
+    @media #{$laptop-up} {
+      padding-left: .81vw;
+    }
 
     .zuc-blog-item-info {
       color: $color-zuc-darkindigo;
       font-weight: 500;
       font-size: .707vw;
+
+      @media #{$tablet-only} {
+        font-size: 1.8vw;
+      }
+      
+      @media #{$laptop-up} {
+        font-size: .707vw;
+      }
     }
 
     h2 {
       color: $color-zuc-indigo;
       font-family: $main-font-serif;
-      font-size: 1.21vw;
       margin-bottom: .76vw;
+      font-size: 1.21vw;
+
+      @media #{$tablet-only} {
+        margin-bottom: 1vw;
+        font-size: 3.125vw;
+      }
+      
+      @media #{$laptop-up} {
+        margin-bottom: .76vw;
+        font-size: 1.21vw;
+      }
     }
 
     p {
       color: $color-zuc-darkindigo;
       font-weight: 100;
+      margin-top: 3vw;
       font-size: .707vw;
-      margin-top: .66vw;
+
+      @media #{$tablet-only} {
+        margin-top: 1vw;
+        font-size: 1.8vw;
+      }
+      
+      @media #{$laptop-up} {
+        margin-top: .66vw;
+        font-size: .707vw;
+      }
     }
   }
 }
