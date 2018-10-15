@@ -5,6 +5,14 @@
   position: relative;
   overflow: hidden;
 
+  @media #{$phone-only} {
+    height: 90vw;
+  }
+
+  @media #{$tablet-only} {
+    height: 75vw;
+  }
+
   .zuc-spr-hero-content {
     width: 80%;
     position: absolute;
@@ -14,7 +22,7 @@
 
     @media #{$tablet-only} {
       width: 80%;
-      top: 15%;
+      top: 8%;
       left: 5%;
     }
     @media #{$phone-only} {
@@ -54,8 +62,8 @@
   background-repeat: no-repeat;
 
   @media #{$tablet-only} {
-    background-size: 140%;
-    background-position: -240px 0;
+    background-size: 180%;
+    background-position: 60% 32%;
   }
 
   @media #{$phone-only} {
@@ -98,6 +106,12 @@
 
   @media #{$phone-only} {
     margin-top: -10px;
+  }
+
+  @media #{$tablet-only} {
+    background-size: 74%;
+    background-position: 51% 106%;
+    margin-top: -2px;
   }
 }
 
