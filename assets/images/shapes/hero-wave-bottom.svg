@@ -1,3 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653.272 61">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 653.3 61" style="enable-background:new 0 0 653.3 61;" xml:space="preserve">
 <title>hero-wave-bottom</title>
-<path style="fill: #fff"  d="M.013,0H653s0,25,.285,24.219C634,37,578,55,468.435,55.551,414,56,260,31,172.948,34.1,132,36,59,38,.013,61Z" transform="translate(-0.013)"/></svg>
+<g>
+	<path style="fill: #FFF" d="M172.9,34.1C132,36,59,38,0,61h653.3V24.2C634,37,578,55,468.4,55.6C414,56,260,31,172.9,34.1z"/>
+	<path d="M653,0c0,0,0,25,0.3,24.2V0H653z"/>
+</g>
+</svg>
