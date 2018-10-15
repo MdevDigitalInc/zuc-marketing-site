@@ -28,13 +28,17 @@
   }
   p {
     // Seems unique to this component
-    margin-bottom: 10vw;
-    font-size: 1.35vw;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
     line-height: 1.55;
-    @media #{$portrait} {
-      font-size: 4vw;
-    }
   }
+}
+
+.product-image {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+  z-index: 10;
 }
 
 .zu-hero-bkg-img {
