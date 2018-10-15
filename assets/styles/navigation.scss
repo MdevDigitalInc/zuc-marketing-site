@@ -72,6 +72,44 @@
   .zuc-btn {
     margin-right: 10px;
   }
+
+  // Cart Text & Icon
+  .zuc-user-cart {
+    position: relative;
+    right: -20px;
+
+    @media #{$tablet-up} {
+      display: none;
+    }
+
+    i {
+      font-size: 7vw;
+      color: $color-zuc-lightindigo;
+    }
+  }
+
+  // Cart Count
+  .zuc-cart-count {
+    display: inline-block;
+    overflow: hidden;
+    color: $color-zuc-darkindigo;
+    border-radius: 50%;
+    background: $color-zuc-salmon;
+    font-weight: 700;
+    position: relative;
+    padding: 2.5vw;
+    top: -13px;
+    right: 7px;
+
+    span {
+      display: block;
+      @include center(both);
+      padding-top: 1px;
+      font-size: 3vw;
+    }
+  }
+
+
 }
 
 .zuc-nav-links {
