@@ -12,7 +12,15 @@
 section.zuc-tri-module {
   position: relative;
   flex-direction: row;
-  margin-top: 10vw;
+  margin: 15vw 0 30vw;
+
+  @media #{$tablet-only} {
+    margin: 13vw 0 15vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 10vw 0 5vw;
+  }
   
   .zuc-tri-module-wave {
     // This thing is not in a good place, use a clipped version of the image
@@ -43,13 +51,24 @@ section.zuc-tri-module {
 
   &.blog-box {
     align-items: flex-start;
-    padding: 3.4vw;
+    padding: 0 20vw;
+
+    @media #{tablet-only} {
+      padding: 0 16vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: 3.4vw;
+    }
   }
 
   &.why-box {
-    align-items: center;
-    justify-content: center;
-    padding: 3.4vw;
+
+    @media #{$tablet-up} {
+      align-items: center;
+      justify-content: center;
+      padding: 3.4vw;
+    }
   }
 
   .zuc-tri-box-title-container {
@@ -65,11 +84,19 @@ section.zuc-tri-module {
   }
 
   h2 {
-    font-size: 1.51vw;
+    font-size: 3.9vw;
+
+    @media #{$laptop-up} {
+      font-size: 1.51vw;
+    }
   }
 
   h3 {
-    font-size: 2.1vw;
+    font-size: 5.47vw;
+
+    @media #{$laptop-up} {
+      font-size: 2.1vw;
+    }
   }
 
   h4 {
@@ -221,24 +248,34 @@ section.zuc-tri-module {
     }
 
     &:nth-child( n+2 ) {
-      margin-left: 2.22vw;
+      margin-left: 14vw;
+
+      @media #{$tablet-only} {
+        margin-left: 6vw;
+      }
+  
+      @media #{$laptop-up} {
+        margin-left: 2.22vw;
+      }
     }
   }
 
   .zuc-why-box-icon-img {
-    height: 5vw;
-    width: 5.45vw;
+    height: 36vw;
+    width: 31.25vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-top: .8vw;
 
-    @media #{$tablet-up} {
-      height: 12vw;
+    @media #{$tablet-only} {
+      height: 13vw;
+      width: 10vw;
     }
 
     @media #{$laptop-up} {
       height: 6.3vw;
+      width: 5.45vw;
     }
   }
 }
