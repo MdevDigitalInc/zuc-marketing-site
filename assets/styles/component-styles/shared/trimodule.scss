@@ -6,6 +6,11 @@ section.zuc-tri-module {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .zuc-tri-module-wave {
+    position: absolute;
+    left: 0;
+  }
 }
 
 .zuc-tri-box {
@@ -20,4 +25,16 @@ section.zuc-tri-module {
     width: 100%;
     display: flex;
   }
+}
+
+.redboi {
+  background: #b46767;
+  width: 100%;
+  height: 100%;
+}
+
+.blueboi {
+  background: rgb(156, 156, 219);
+  width: 100%;
+  height: 100%;
 }
