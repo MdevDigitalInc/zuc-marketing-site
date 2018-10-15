@@ -32,13 +32,19 @@
 
 .product-image {
   position: absolute;
-  right: 40px;
-  bottom: 100px;
   z-index: 10;
+  max-width: 23vw;
+  right: 15%;
+  bottom: 5vw;
   @media #{$tablet-only} {
     max-width: 35vw;
-    bottom: 20px;
+    bottom: 2vw;
     right: 18vw;
+  }
+  @media #{$phone-only} {
+    max-width: 35vw;
+    bottom: 2vw;
+    right: 30%;
   }
 }
 
