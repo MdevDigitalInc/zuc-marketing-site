@@ -104,11 +104,10 @@
   }
 }
 
-// TODO: make wave responsive and consistent with similar components.
 .zu-hero-bkg-wave {
   background-image: url('../../assets/images/shapes/wave-top.svg');
   z-index: 2;
-  bottom: -1px;
+  bottom: -2px;
   background-position: bottom;
   height: 100%;
   width: 100%;
@@ -116,9 +115,16 @@
   background-size: 100%;
   background-repeat: no-repeat;
 
-  // Ignore breakpoints on wave for time-being.
-  // @media #{$phone-only} {
-  //   width: 200%;
-  //   bottom: -22px;
-  // }
+  @media #{$tablet-only} {
+    width: 280%;
+    background-position-y: bottom;
+    background-position-x: -330px;
+    bottom: -120px;
+  }
+
+  @media #{$phone-only} {
+    background-size: 460%;
+    background-position-y: 230%;
+    background-position-x: 99%;
+  }
 }
