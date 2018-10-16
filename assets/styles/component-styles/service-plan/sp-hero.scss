@@ -3,24 +3,25 @@
 /-------------------------------------*/
 .zuc-service-plan-hero--wrapper {
   width: 100%;
+  height: 36.818vw;
   margin: 0;
-  padding: 4.5vw 0;
   display: flex;
+  position: relative;
   flex-direction: column;
-
-  @media #{$tablet-only} {
-    padding: 8vh 0 4.5vh 6vw;
-  }
+  overflow: hidden;
 
   @media #{$laptop-up} {
     flex-direction: row;
-    padding: 8vh 0 4.5vh 18vw;
+    height: 36.818vw;
   }
 }
 
 .zuc-service-plan-hero--text-section {
   flex: 40%;
-  position: relative;
+  position: absolute;
+  z-index: 5;
+  top: 7vw;
+  left: 16vw;
 
   @media #{$phone-only} {
     padding-left: 30px;
@@ -28,10 +29,12 @@
 
   .zuc-service-plan-hero--heading {
     color: $color-zuc-indigo;
-    width: 22vw;
+    font-size: 60px;
+    width: 33vw;
   }
 
   .zuc-service-plan-hero--copy {
+    color: $color-zuc-darkindigo;
 
     @media #{$laptop-up} {
       max-width: 400px;
@@ -50,32 +53,57 @@
 }
 
 .zuc-service-plan-hero--graphic-section {
-  flex: 60%;
-  position: relative;
 
-  @media #{$tablet-only} {
-    padding-top: 50px;
-  }
-  @media #{$phone-only} {
-    padding-top: 50px;
-  }
+  .--photo {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
 
-  .photo {
-    z-index: 1;
-    max-width: 500px;
-    max-height: 400px;
-    margin-right: 350px;
-
-    @media #{$tablet-only} {
-      max-width: 100%;
-      display: block;
-      margin-right: 0;
+    img {
+      width: 100%;
     }
+  }
 
-    @media #{$phone-only} {
-      max-width: 100%;
-      display: block;
-      margin-right: 0;
+  .--grey-blob {
+    position: absolute;
+    width: 70vw;
+    top: -19vw;
+    left: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .--pear {
+    display: none;
+
+    @media #{$laptop-up} {
+      display: initial;
+      position: absolute;
+      width: 20vw;
+      top: 10.25vw;
+      left: -3vw;
+      z-index: 1;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  .--bottom-wave {
+    position: absolute;
+    width: 100vw;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+    
+    img {
+      width: 100%;
     }
   }
 }
