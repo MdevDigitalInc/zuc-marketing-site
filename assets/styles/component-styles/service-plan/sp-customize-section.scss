@@ -223,7 +223,6 @@ $zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: ( 9 / 3.2 ) * 1vw;
 
   @media #{$tablet-up} {
     flex-direction: row;
@@ -250,6 +249,12 @@ $zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
 
   @media #{$laptop-up} {
     height: $zuc-custom-row-height-desktop;
+  }
+
+  &:last-child {
+    @media #{$phone-only} {
+      padding: 0 0 ( 28 / 3.2 ) * 1vw;
+    }
   }
 
   img {
