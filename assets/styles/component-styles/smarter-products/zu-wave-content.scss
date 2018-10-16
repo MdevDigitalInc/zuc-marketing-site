@@ -10,11 +10,15 @@
   margin-bottom: 7.5vw;
 
   @media #{$tablet-only} {
-    background-position: right bottom;
-    background-size: 100%;
+    background-position: 100% 20%;
+    background-size: 122%;
   }
   @media #{$portrait} {
     background-position: right bottom;
+  }
+  @media #{$phone-only} {
+    background-position: 65% 0%;
+    background-size: 220%;
   }
 
   &:after {
@@ -34,9 +38,8 @@
     }
 
     @media #{$phone-only} {
-      width: 101%;
-      background-size: 101%;
-      background-position: -1px top;
+      background-size: 450%;
+      background-position: 100% 7%;
     }
   }
 
@@ -54,12 +57,13 @@
     @media #{$tablet-only} {
       width: 85%;
       left: 7.5%;
+      padding: 18vw 2vw 4vw;
     }
-    @media #{$portrait} {
+
+    @media #{$phone-only} {
       width: 100%;
-      left: 0;
-      padding: 17vw 6vw 9vw;
-      background-size: 80%;
+      left: 0%;
+      padding: 18vw 5vw 4vw;
     }
 
     p {
