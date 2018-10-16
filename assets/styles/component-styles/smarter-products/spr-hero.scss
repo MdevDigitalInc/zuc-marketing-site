@@ -127,20 +127,19 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-size: 100%;
+  background-size: 105%;
   background-repeat: no-repeat;
 
   @media #{$tablet-only} {
-    width: 280%;
-    background-position-y: bottom;
-    background-position-x: -330px;
-    bottom: -120px;
+    background-size: 290%;
+    background-position-y: 135%;
+    background-position-x: 16%;
   }
 
   @media #{$phone-only} {
     background-size: 460%;
-    background-position-y: 240%;
-    background-position-x: 100%;
+    background-position-y: 210%;
+    background-position-x: 99%;
   }
 }
 
