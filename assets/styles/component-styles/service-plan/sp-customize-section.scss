@@ -44,7 +44,6 @@ section.zuc-custom-plan {
 
   @media #{$tablet-up} {
     flex: 30%;
-    width: 100%;
   }
 
   &.--lilac {
@@ -218,57 +217,74 @@ $zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
 }
 
 .zuc-custom-plan--items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   width: 100%;
-  overflow: hidden;
-  max-height: none;
-  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: ( 9 / 3.2 ) * 1vw;
 
   @media #{$tablet-up} {
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     margin: ( 5 / 7.68 ) * 1vw;
-    max-height: $zuc-custom-row-height-tablet;
-    height: $zuc-custom-row-height-tablet;
   }
 
   @media #{$laptop-up} {
     margin: ( 9 / 19.8 ) * 1vw;
-    max-height: $zuc-custom-row-height-desktop;
-    height: $zuc-custom-row-height-desktop;
   }
 }
 
 .zuc-custom-plan--box {
-  flex: 30%;
+  width: 100%;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
-  height: 100%;
+  height: auto;
+
+  @media #{$tablet-up} {
+    flex: 30%;
+    height: $zuc-custom-row-height-tablet;
+  }
+
+  @media #{$laptop-up} {
+    height: $zuc-custom-row-height-desktop;
+  }
 
   img {
     width: 100%;
-    max-height: 250px;
-    max-width: 250px;
+    max-width: ( 230 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      max-width: ( 140 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      max-width: ( 250 / 19.8 ) * 1vw;
+    }
   }
 
   .photo-text {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
+    font-size: ( 14 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      font-size: ( 9.5 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: ( 18 / 19.8 ) * 1vw;
+    }
   }
 
   .plus-icon {
     background-image: url('../../assets/images/icons/icon-plus.svg');
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    left: 95%;
+    top: 40%;
+    right: -1.3vw;
     z-index: 1;
     height: 9vh;
     width: 2.6vw;
