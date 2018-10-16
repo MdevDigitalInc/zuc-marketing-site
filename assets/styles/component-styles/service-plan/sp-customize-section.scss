@@ -292,15 +292,16 @@ section.zuc-custom-plan {
     background-repeat: no-repeat;
     position: absolute;
     top: 40%;
-    right: -1.3vw;
-    z-index: 1;
-    height: 9vh;
-    width: 2.6vw;
+    left: 100%;
+    transform: translatex(-50%);
+    z-index: 10;
+    height: 3vw;
+    width: 3vw;
 
     @media #{$phone-only} {
       position: static;
       margin-top: 15px;
-      height: 10vh;
+      height: 10vw;
       width: 10vw;
     }
   }
@@ -309,16 +310,17 @@ section.zuc-custom-plan {
     background-image: url('../../assets/images/icons/icon-or.svg');
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    left: 95%;
-    z-index: 1;
-    height: 9vh;
+    top: 40%;
+    left: 100%;
+    transform: translatex(-50%);
+    z-index: 10;
+    height: 3vw;
     width: 3vw;
 
     @media #{$phone-only} {
       position: static;
       margin-top: 15px;
-      height: 10vh;
+      height: 10vw;
       width: 10vw;
     }
   }
