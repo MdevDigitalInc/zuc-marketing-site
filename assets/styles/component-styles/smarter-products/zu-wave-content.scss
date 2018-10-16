@@ -53,7 +53,7 @@
     @media #{$tablet-only} {
       width: 85%;
       left: 7.5%;
-      padding: 18vw 2vw 2vw;
+      padding: 18vw 3vw 2vw;
     }
     @media #{$phone-only} {
       width: 100%;
@@ -61,11 +61,18 @@
       padding: 18vw 5vw 2vw;
     }
 
-    // TODO: overrides may be necessary to get p to look like mock.
+    // TODO: confirm overrides.
     p {
       margin-bottom: 10vw;
       font-size: 1.35vw;
       line-height: 1.55;
+
+      @media #{$tablet-only} {
+        font-size: 2vw;
+      }
+      @media #{$phone-only} {
+        font-size: 4vw;
+      }
     }
   }
 
