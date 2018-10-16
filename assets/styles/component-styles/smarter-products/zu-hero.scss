@@ -19,6 +19,7 @@
   position: absolute;
   background: rgba(67, 77, 160, .7);
   padding: 7vw 4vw;
+  z-index: 5;
 
   @media #{$phone-only} {
     width: 100%;
