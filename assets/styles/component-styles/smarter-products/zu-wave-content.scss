@@ -21,8 +21,6 @@
   &:after {
     @include pseudo();
     background: url('../images/shapes/wave-bottom.svg');
-    //background-image: url('./images/shapes/hero-wave-shape.svg');
-    // Another asinine percentage for webkit.
     background-size: 100%;
     top: -2px;
     background-repeat: no-repeat;
