@@ -3,12 +3,16 @@
 /-------------------------------------*/
 .zuc-service-plan-hero--wrapper {
   width: 100%;
-  height: 36.818vw;
+  height: 245.938vw;
   margin: 0;
   display: flex;
   position: relative;
   flex-direction: column;
   overflow: hidden;
+
+  @media #{$tablet-only} {
+    height: 120vw;
+  }
 
   @media #{$laptop-up} {
     flex-direction: row;
@@ -20,24 +24,47 @@
   flex: 40%;
   position: absolute;
   z-index: 5;
-  top: 7vw;
-  left: 16vw;
+  top: 20vw;
+  left: 5vw;
 
-  @media #{$phone-only} {
-    padding-left: 30px;
+  @media #{$tablet-only} {
+    flex: 75%;
+    top: 7vw;
+    left: 7vw;
+  }
+
+  @media #{$laptop-up} {
+    flex: 40%;
+    top: 7vw;
+    left: 16vw;
   }
 
   .zuc-service-plan-hero--heading {
     color: $color-zuc-indigo;
-    font-size: 60px;
-    width: 33vw;
+    font-size: 10.625vw;
+    width: 85vw;
+
+    @media #{$tablet-only} {
+      font-size: 7.813vw;
+      width: 80vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: 3.03vw;
+      width: 33vw;
+    }
   }
 
   .zuc-service-plan-hero--copy {
     color: $color-zuc-darkindigo;
+    width: 80vw;
+
+    @media #{$tablet-only} {
+      max-width: 64vw;
+    }
 
     @media #{$laptop-up} {
-      max-width: 400px;
+      max-width: 25vw;
     }
   }
 
@@ -56,22 +83,43 @@
 
   .--photo {
     position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 320vw;
+    left: -210vw;
+    padding: 136.875vw 0 0;
     z-index: -2;
+
+    @media #{$tablet-only} {
+      width: 155vw;
+      left: -55vw;
+      padding: 66.93vw 0 0;
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+    }
 
     img {
       width: 100%;
     }
   }
 
+  // 1/3
   .--grey-blob {
     position: absolute;
     width: 70vw;
     top: -19vw;
     left: 0;
     z-index: -1;
+
+    @media #{$tablet-only} {
+      display: none;
+    }
+
+    @media #{$laptop-up} {
+      width: 70vw;
+      top: -19vw;
+      left: 0;
+    }
 
     img {
       width: 100%;
@@ -97,10 +145,22 @@
 
   .--bottom-wave {
     position: absolute;
-    width: 100vw;
+    width: 170vw;
     bottom: -2px;
-    left: 0;
+    left: -60vw;
     z-index: 2;
+
+    @media #{$tablet-only} {
+      width: 170vw;
+      bottom: -2px;
+      left: -60vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 100vw;
+      bottom: -2px;
+      left: 0;
+    }
     
     img {
       width: 100%;
