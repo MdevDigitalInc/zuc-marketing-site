@@ -3,11 +3,15 @@
   color: $color-zuc-indigo;
   width: 100%;
   text-align: left;
-  padding: 6vh 9vw 0 18vw;
-  @media #{$phone-only} {
-    margin-top: 20px;
-    margin-left: 5%;
-    padding: 0 0 3vh;
+  margin: 20px 0 0 5%;
+  padding: 0 0 3vh;
+
+  @media #{$tablet-only} {
+    padding: 6vh 9vw 0 18vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 6vh 9vw 0 18vw;
   }
 }
 
@@ -18,31 +22,39 @@
   justify-content: center;
 
   @media #{$tablet-only} {
-    padding: 0 0 8vw;
+    margin: ( 5 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
-    padding: 4.5vh 9vw 4.5vh 18vw;
+    padding: 0 16vw;
+    margin: ( 30 / 19.8 ) * 1vw 0 ( 40 / 19.8 ) * 1vw;
   }
 }
 
 .zuc-custom-plan {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   width: 100%;
   position: relative;
   overflow: hidden;
-  flex-direction: row;
 
   @media #{$phone-only} {
     flex-direction: column;
-    width: 90%;
     align-items: center;
+    width: 90%;
   }
 }
 
 .zuc-custom-plan--title-container {
-  width: 100%;
+  width: 15%;
+
+  @media #{$tablet-only} {
+    width: 15%;
+  }
+
+  @media #{$laptop-up} {
+    width: 100%;
+  }
 
   &.--lilac {
     background-color: $color-zuc-lilac;
