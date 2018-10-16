@@ -41,32 +41,121 @@
   }
 }
 
-.zuc-custom-plan--title {
-  text-align: center;
-  width: 4%;
-  padding: 20px 0;
-  background-color: $color-zuc-lilac;
-  display: flex;
-  justify-content: center;
+.zuc-custom-plan--title-container {
+  width: 100%;
 
-  @media #{$phone-only} {
-    width: 100%;
-    height: 5vh;
+  &.--lilac {
+    background-color: $color-zuc-lilac;
   }
 
-  &--vertical-text {
-    color: $white;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    transform-origin: 50%;
+  &.--indigo {
+    background-color: $color-zuc-indigo;
+  }
+}
 
-    @media #{$phone-only} {
-      width: 100%;
-      height: auto;
-      align-self: center;
-      transform: rotate(0deg);
-      transform-origin: 0%;
-      writing-mode: horizontal-tb;
+.zuc-custom-plan--title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color-pure-white;
+  border: 1px $color-pure-white solid;
+  margin: ( 9 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    margin: ( 5 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: ( 9 / 19.8 ) * 1vw;
+  }
+
+  // CTA Line ("BEST VALUE")
+  > :nth-child( 1 ) {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: ( 23 / 3.2 ) * 1vw 0 0;
+    font-size: ( 15 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      padding: ( 13 / 7.68 ) * 1vw 0 0;
+      font-size: ( 8.5 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 26 / 19.8 ) * 1vw 0 0;
+      font-size: ( 16 / 19.8 ) * 1vw;
+    }
+  }
+
+  // PLAN NAME ("Whole Home Plan")
+  > :nth-child( 2 ) {
+    font-family: $main-font-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: ( 16 / 3.2 ) * 1vw 0 0;
+    font-size: ( 28 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      padding: ( 8 / 7.68 ) * 1vw 0 0;
+      font-size: ( 15.5 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 17 / 19.8 ) * 1vw 0 0;
+      font-size: ( 30 / 19.8 ) * 1vw;
+    }
+  }
+
+  // Graphical Line
+  > :nth-child( 3 ) {
+    border-top: 1px $color-pure-white solid;
+    padding: ( 9 / 3.2 ) * 1vw 0 0;
+    width: 40%;
+
+    @media #{$tablet-only} {
+      padding: ( 5 / 7.68 ) * 1vw 0 0;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 9 / 19.8 ) * 1vw 0 0;
+    }
+  }
+
+  // Price Object
+  > :nth-child( 4 ) {
+    display: relative;
+  }
+
+  // Rate ("/month")
+  > :nth-child( 5 ) {
+    font-weight: 600;
+    padding: 0 0 8.75vw;
+
+    @media #{$tablet-only} {
+      padding: 0 0 8.75vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: 0 0 8.75vw;
+    }
+  }
+
+  // Savings ("Save $50")
+  > :nth-child( 6 ) {
+    font-family: $main-font-serif;
+    font-size: ( 27 / 3.2 ) * 1vw;
+    padding: 0 0 ( 29 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 15 / 7.68 ) * 1vw;
+      padding: 0 0 ( 16 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 29 / 19.8 ) * 1vw;
+      padding: 0 0 ( 31 / 19.8 ) * 1vw;
     }
   }
 }
