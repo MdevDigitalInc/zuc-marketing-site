@@ -1,0 +1,72 @@
+.zuc-zu-wave-top {
+  background-image: url('../images/smarter-products/boy-laying-withdog.png');
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  background-size: cover;
+  background-position: right -5vw;
+  background-repeat: no-repeat;
+  margin-bottom: 7.5vw;
+
+  @media #{$tablet-lnd-only} {
+    background-position: right bottom;
+  }
+  @media #{$portrait} {
+    background-position: right bottom;
+  }
+
+  &:after {
+    @include pseudo();
+    background: url('../images/shapes/wave-bottom.svg');
+    //background-image: url('./images/shapes/hero-wave-shape.svg');
+    // Another asinine percentage for webkit.
+    background-size: 100%;
+    top: -2px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: calc(251 / 1839 * 100%);
+
+    @media #{$phone-only} {
+      width: 101%;
+      background-size: 101%;
+      background-position: -1px top;
+    }
+  }
+
+  .zuc-zu-wave-content {
+    width: 33%;
+    left: 16%;
+    position: relative;
+    background: rgba(67, 77, 160, .7);
+    padding: 14.4vw 2vw 4vw;
+
+    @media #{$laptop-only} {
+      width: 38%;
+      padding: 16.4vw 3vw 5vw;
+    }
+    @media #{$tablet-lnd-only} {
+      width: 50%;
+    }
+    @media #{$portrait} {
+      width: 100%;
+      left: 0;
+      padding: 17vw 6vw 9vw;
+      background-size: 80%;
+    }
+
+    p {
+      margin-bottom: 10vw;
+      font-size: 1.35vw;
+      line-height: 1.55;
+
+      @media #{$portrait} {
+        font-size: 4vw;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
