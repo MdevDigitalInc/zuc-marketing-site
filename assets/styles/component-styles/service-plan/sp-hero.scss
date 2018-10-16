@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 245.938vw;
+  height: 220vw; //THIS245.938
 
   @media #{$tablet-only} {
     height: 120vw;
@@ -77,12 +77,16 @@
 
 .zuc-service-plan-hero--graphic-section {
 
+  img {
+    width: 100%;
+  }
+
   .--photo {
     position: relative;
     z-index: -2;
     width: 320vw;
     left: -210vw;
-    padding: 136.875vw 0 0;
+    padding: 110vw 0 0; //THIS136.875vw
 
     @media #{$tablet-only} {
       width: 155vw;
@@ -94,10 +98,6 @@
       width: 100%;
       left: 0;
       padding: 0;
-    }
-
-    img {
-      width: 100%;
     }
   }
 
@@ -112,10 +112,6 @@
       left: 0;
       z-index: -1;
     }
-
-    img {
-      width: 100%;
-    }
   }
 
   .--pear {
@@ -128,10 +124,6 @@
       top: 10.25vw;
       left: -3vw;
       z-index: 1;
-    }
-    
-    img {
-      width: 100%;
     }
   }
 
@@ -153,10 +145,6 @@
       bottom: -2px;
       left: 0;
     }
-    
-    img {
-      width: 100%;
-    }
   }
 
   .--bottom-wave-flipped {
@@ -164,7 +152,7 @@
     position: absolute;
     z-index: -2;
     width: 300%;
-    top: 136vw;
+    top: 109vw; //THIS
     left: -80vw;
 
     @media #{$tablet-only} {
