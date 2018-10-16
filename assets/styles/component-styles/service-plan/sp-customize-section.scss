@@ -1,5 +1,10 @@
 // Service Plan Customize Section.
 
+// Variables
+
+$zuc-custom-row-height-tablet: ( 160 / 7.68 ) * 1vw;
+$zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
+
 section.zuc-custom-plan {
   flex-direction: column;
   justify-content: center;
@@ -54,9 +59,6 @@ section.zuc-custom-plan {
     background-color: $color-zuc-indigo;
   }
 }
-
-$zuc-custom-row-height-tablet: ( 160 / 7.68 ) * 1vw;
-$zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
 
 .zuc-custom-plan--title {
   display: flex;
