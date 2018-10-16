@@ -1,59 +1,53 @@
 // Service Plan Customize Section.
-.zuc-custom-plan--header {
-  color: $color-zuc-indigo;
-  width: 100%;
-  text-align: left;
-  margin: 20px 0 0 5%;
-  padding: 0 0 3vh;
 
-  @media #{$tablet-only} {
-    padding: 6vh 9vw 0 18vw;
-  }
-
-  @media #{$laptop-up} {
-    padding: 6vh 9vw 0 18vw;
-  }
-}
-
-.zuc-custom-plan--container {
-  padding: 0 0 3vh;
-  position: relative;
-  flex-direction: row;
+section.zuc-custom-plan--container {
+  flex-direction: column;
   justify-content: center;
+  padding: 0 5vw;
 
   @media #{$tablet-only} {
-    margin: ( 5 / 7.68 ) * 1vw;
+    padding: 0 7vw;
   }
 
   @media #{$laptop-up} {
     padding: 0 16vw;
-    margin: ( 30 / 19.8 ) * 1vw 0 ( 40 / 19.8 ) * 1vw;
   }
+}
+
+.zuc-custom-plan--header {
+  color: $color-zuc-indigo;
+  width: 100%;
+  text-align: left;
 }
 
 .zuc-custom-plan {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  position: relative;
   overflow: hidden;
 
-  @media #{$phone-only} {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+  margin: ( 32 / 3.2 ) * 1vw 0 ( 78 / 3.2 ) * 1vw;
+
+  @media #{$tablet-up} {
+    flex-direction: row;
+    margin: ( 53 / 7.68 ) * 1vw 0 ( 59 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: ( 30 / 19.8 ) * 1vw 0 ( 40 / 19.8 ) * 1vw;
   }
 }
 
 .zuc-custom-plan--title-container {
-  width: 15%;
+  width: 100%;
 
   @media #{$tablet-only} {
-    width: 15%;
+    width: 100%;
   }
 
   @media #{$laptop-up} {
-    width: 100%;
+    width: 16vw;
   }
 
   &.--lilac {
@@ -123,14 +117,16 @@
   // Graphical Line
   > :nth-child( 3 ) {
     border-top: 1px $color-pure-white solid;
-    padding: ( 9 / 3.2 ) * 1vw 0 0;
     width: 40%;
+    padding: ( 9 / 3.2 ) * 1vw 0 0;
 
     @media #{$tablet-only} {
+      width: 45%;
       padding: ( 5 / 7.68 ) * 1vw 0 0;
     }
 
     @media #{$laptop-up} {
+      width: 50%;
       padding: ( 9 / 19.8 ) * 1vw 0 0;
     }
   }
@@ -149,11 +145,11 @@
       font-size: (36 / 3.2 ) * 1vw;
 
       @media #{$tablet-only} {
-        font-size: (12 / 7.68 ) * 1vw;
+        font-size: (42 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
-        font-size: (12 / 19.8 ) * 1vw;
+        font-size: (50 / 19.8 ) * 1vw;
       }
     }
     // Dollar Value
@@ -161,11 +157,11 @@
       font-size: (60 / 3.2 ) * 1vw;
 
       @media #{$tablet-only} {
-        font-size: (45 / 7.68 ) * 1vw;
+        font-size: (80 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
-        font-size: (30 / 19.8 ) * 1vw;
+        font-size: (100 / 19.8 ) * 1vw;
       }
     }
     // Cent Value
@@ -173,11 +169,11 @@
       font-size: (18 / 3.2 ) * 1vw;
 
       @media #{$tablet-only} {
-        font-size: (12 / 7.68 ) * 1vw;
+        font-size: (24 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
-        font-size: (12 / 19.8 ) * 1vw;
+        font-size: (26 / 19.8 ) * 1vw;
       }
     }
   }
@@ -185,14 +181,17 @@
   // Rate ("/month")
   > :nth-child( 5 ) {
     font-weight: 600;
-    padding: 0 0 8.75vw;
+    font-size: ( 12 / 3.2 ) * 1vw;
+    padding: 0 0 ( 28 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      padding: 0 0 8.75vw;
+      font-size: ( 14 / 7.68 ) * 1vw;
+      padding: 0 0 ( 14 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
-      padding: 0 0 8.75vw;
+      font-size: ( 16 / 19.8 ) * 1vw;
+      padding: 0 0 ( 30 / 19.8 ) * 1vw;
     }
   }
 
@@ -215,14 +214,23 @@
   }
 }
 
-.zuc-custom-plan--overlay {
-  &:after {
-    opacity: 0;
+.zuc-custom-plan--items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  @media #{$tablet-up} {
+    flex-direction: row;
   }
 }
 
+
+
 .zuc-custom-plan--box {
-  width: 32%;
+  flex: 30%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
