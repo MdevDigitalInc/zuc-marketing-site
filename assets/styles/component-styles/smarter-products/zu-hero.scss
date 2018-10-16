@@ -75,11 +75,11 @@
   @media #{$tablet-only} {
     max-width: 35vw;
     bottom: 2vw;
-    right: 18vw;
+    right: 24vw;
   }
   @media #{$phone-only} {
     max-width: 48vw;
-    bottom: 2vw;
+    bottom: 4vw;
     right: 25%;
   }
 }
