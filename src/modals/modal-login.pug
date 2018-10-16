@@ -13,13 +13,17 @@
     .zuc-input-group
       .zuc-input-name
         |Email
-      input(type="text" data-required name="email" placeholder="John@smith.com")
+      label.u-screenreader(for="field-email")
+        |Email Address
+      input(type="text" required data-required id="field-email" name="email" placeholder="John@smith.com")
 
-    // User Email
+    // User Password
     .zuc-input-group
       .zuc-input-name
-        |Email
-      input(type="text" data-required name="email" placeholder="John@smith.com")
+        |Password
+      label.u-screenreader(for="field-password")
+        |User Password
+      input(type="password" required data-required name="password" placeholder="")
       a(href="#" title="Password Reset" class="zuc-input-link")
         |I need help with my &nbsp;
         span.u-highlight password
