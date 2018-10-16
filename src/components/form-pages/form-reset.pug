@@ -10,12 +10,16 @@ section.zuc-reset-password.zuc-section-container.--hstyle.--pre
           .zuc-input-name.zuc-input-name-no-margin
             strong
               |New Password*
-          input(type="password" data-required name="newpassword" placeholder="New Password")
+          label.u-screenreader(for="field-newpwd")
+            |New Password
+          input(type="password" data-required name="newpassword" placeholder="New Password" id="field-newpwd")
         .zuc-form-group
           .zuc-input-name
             strong
               |Confirm New Password*
-          input(type="password" data-required name="confirmpassword" placeholder="Confirm New Password")
+          label.u-screenreader(for="field-confirm")
+            |Confirm New Password
+          input(type="password" data-required name="confirmpassword" placeholder="Confirm New Password" id="field-confirm")
         .zuc-form-action
           button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
             strong

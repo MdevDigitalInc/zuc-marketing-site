@@ -27,7 +27,7 @@
     },
   }
 
-section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
+section.zuc-secondary-header(aria-describedby="" style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
   // Hero Content - Wrapper
   .zuc-hero-content
     // Top Content
@@ -51,6 +51,7 @@ section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net
         |Your membership to Smarter Living
       .zuc-header-tiles.flex.flex-vert-start.flex-hor-between
         // Tile ----------------
+        // - Iterate over each value in the Tiles object
         each val, index in tiles
           .zuc-header-tile
             img.zuc-header-tile-icon(src=val.image alt=val.alt)
@@ -61,5 +62,7 @@ section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net
 
   img.zuc-hero-bottom-wave(src="../../assets/images/shapes/hero-wave-bottom.svg", alt="A wave shape")
 
+  .u-screenreader(id="header-caption")
+    |BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO
 
 include ../modals/modal-smarter-video.pug

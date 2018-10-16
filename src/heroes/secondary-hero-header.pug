@@ -8,7 +8,7 @@
 -
   var title = 'What is Smarter Living?'
 
-section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
+section.zuc-secondary-header(aria-describedby="header-caption" style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
   // Hero Content - Wrapper
   .zuc-hero-content
     // Top Content
@@ -41,5 +41,8 @@ section.zuc-secondary-header(style="background-image:url('http://lullabycasa.net
           // video Title
           .zuc-video-title.u-font-serif
             |Choose to protect your home and your family.
+
+  .u-screenreader(id="header-caption")
+    |BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO
 
 include ../modals/modal-smarter-video.pug
