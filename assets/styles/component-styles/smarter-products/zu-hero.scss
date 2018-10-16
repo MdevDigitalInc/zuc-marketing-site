@@ -74,7 +74,7 @@
   bottom: 5vw;
   @media #{$tablet-only} {
     max-width: 35vw;
-    bottom: 2vw;
+    bottom: 4xvw;
     right: 24vw;
   }
   @media #{$phone-only} {
@@ -107,24 +107,23 @@
 .zu-hero-bkg-wave {
   background-image: url('../../assets/images/shapes/wave-top.svg');
   z-index: 2;
-  bottom: -2px;
+  bottom: -1px;
   background-position: bottom;
   height: 100%;
   width: 100%;
   position: absolute;
-  background-size: 100%;
+  background-size: 105%;
   background-repeat: no-repeat;
 
   @media #{$tablet-only} {
-    width: 280%;
-    background-position-y: bottom;
-    background-position-x: -330px;
-    bottom: -120px;
+    background-size: 290%;
+    background-position-y: 162%;
+    background-position-x: 16%;
   }
 
   @media #{$phone-only} {
     background-size: 460%;
-    background-position-y: 230%;
+    background-position-y: 210%;
     background-position-x: 99%;
   }
 }
