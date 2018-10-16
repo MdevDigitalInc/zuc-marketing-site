@@ -183,7 +183,6 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  padding: 7.8vw 0;
   margin-bottom: 7.8vw;
 
   @media #{$tablet-only} {
@@ -268,6 +267,17 @@
 
     @media #{$portrait} {
       margin: 4vw 0;
+    }
+  }
+
+  .zuc-hero-bottom-wave {
+    display: none;
+
+    @media #{$laptop-up} {
+      display: initial;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
     }
   }
 }
