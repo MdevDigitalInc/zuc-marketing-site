@@ -1,4 +1,4 @@
-.zuc-zu-wave-top {
+.--zu-wave-content {
   // width: 100%;
   // position: relative;
   // overflow: hidden;
@@ -26,17 +26,18 @@
     // padding-top: calc(251 / 1839 * 100%);
 
     // can comment these out too now -- they are in the master
-    @media #{$tablet-only} {
-      background-size: 330%;
-      background-position: 20% 25%;
-    }
-    @media #{$phone-only} {
-      background-size: 450%;
-      background-position: 100% 7%;
+    // @media #{$tablet-only} {
+    //   background-size: 330%;
+    //   background-position: 20% 25%;
+    // }
+    // @media #{$phone-only} {
+    //   background-size: 450%;
+    //   background-position: 100% 7%;
     }
   }
 
-  .zuc-zu-wave-content {
+  // Overrides:
+  .zuc-wave-hero-content {
     // width: 33%;
     // left: 16%;
     // position: relative;
@@ -44,20 +45,20 @@
     padding: 14.4vw 2vw 2vw;
 
     // might be able to rm these too -- in master
-    @media #{$laptop-only} {
-      width: 38%;
-      padding: 16.4vw 3vw 2vw;
-    }
-    @media #{$tablet-only} {
-      width: 85%;
-      left: 7.5%;
-      padding: 18vw 3vw 2vw;
-    }
-    @media #{$phone-only} {
-      width: 100%;
-      left: 0%;
-      padding: 18vw 5vw 2vw;
-    }
+    // @media #{$laptop-only} {
+    //   width: 38%;
+    //   padding: 16.4vw 3vw 2vw;
+    // }
+    // @media #{$tablet-only} {
+    //   width: 85%;
+    //   left: 7.5%;
+    //   padding: 18vw 3vw 2vw;
+    // }
+    // @media #{$phone-only} {
+    //   width: 100%;
+    //   left: 0%;
+    //   padding: 18vw 5vw 2vw;
+    // }
 
     // TODO: confirm overrides.
     p {
@@ -74,7 +75,7 @@
     }
   }
 
-  img {
-    width: 100%;
-  }
+  // img {
+  //   width: 100%;
+  // }
 }
