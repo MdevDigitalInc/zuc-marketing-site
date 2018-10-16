@@ -26,10 +26,19 @@
     width: 100%;
     padding-top: calc(251 / 1839 * 100%);
 
+    // @media #{$phone-only} {
+    //   width: 101%;
+    //   background-size: 101%;
+    //   background-position: -1px top;
+    // }
+
+    @media #{$tablet-only} {
+      background-size: 330%;
+      background-position: 20% 25%;
+    }
     @media #{$phone-only} {
-      width: 101%;
-      background-size: 101%;
-      background-position: -1px top;
+      background-size: 450%;
+      background-position: 100% 7%;
     }
   }
 
@@ -42,18 +51,33 @@
     background-repeat: no-repeat;
     padding: 14.4vw 2vw 4vw;
 
-    @media #{$laptop-only} {
-      width: 38%;
-      padding: 16.4vw 3vw 5vw;
+    // @media #{$laptop-only} {
+    //   width: 38%;
+    //   padding: 16.4vw 3vw 5vw;
+    // }
+    // @media #{$tablet-lnd-only} {
+    //   width: 50%;
+    // }
+    // @media #{$portrait} {
+    //   width: 100%;
+    //   left: 0;
+    //   padding: 17vw 6vw 9vw;
+    //   background-size: 80%;
+    // }
+
+    // @media #{$laptop-only} {
+    //   width: 38%;
+    //   padding: 16.4vw 3vw 2vw;
+    // }
+    @media #{$tablet-only} {
+      width: 85%;
+      left: 7.5%;
+      padding: 18vw 3vw 2vw;
     }
-    @media #{$tablet-lnd-only} {
-      width: 50%;
-    }
-    @media #{$portrait} {
+    @media #{$phone-only} {
       width: 100%;
-      left: 0;
-      padding: 17vw 6vw 9vw;
-      background-size: 80%;
+      left: 0%;
+      padding: 18vw 5vw 2vw;
     }
 
     p {
@@ -79,6 +103,9 @@
     width: 12%;
 
     @media #{$portrait} {
+      display: none;
+    }
+    @media #{$tablet-only} {
       display: none;
     }
   }

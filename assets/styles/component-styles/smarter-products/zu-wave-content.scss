@@ -1,12 +1,11 @@
 .zuc-zu-wave-top {
-  background-image: url('../images/smarter-products/boy-laying-withdog.png');
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: right -5vw;
-  background-repeat: no-repeat;
-  margin-bottom: 7.5vw;
+  // width: 100%;
+  // position: relative;
+  // overflow: hidden;
+  // background-size: cover;
+  // background-position: right -5vw;
+  // background-repeat: no-repeat;
+  // margin-bottom: 7.5vw;
 
   @media #{$tablet-only} {
     background-position: 100% 20%;
@@ -18,14 +17,15 @@
   }
 
   &:after {
-    @include pseudo();
-    background: url('../images/shapes/wave-bottom.svg');
-    background-size: 100%;
-    top: -2px;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: calc(251 / 1839 * 100%);
+    // @include pseudo();
+    // background: url('../images/shapes/wave-bottom.svg');
+    // background-size: 100%;
+    // top: -2px;
+    // background-repeat: no-repeat;
+    // width: 100%;
+    // padding-top: calc(251 / 1839 * 100%);
 
+    // can comment these out too now -- they are in the master
     @media #{$tablet-only} {
       background-size: 330%;
       background-position: 20% 25%;
@@ -37,12 +37,13 @@
   }
 
   .zuc-zu-wave-content {
-    width: 33%;
-    left: 16%;
-    position: relative;
+    // width: 33%;
+    // left: 16%;
+    // position: relative;
     background: rgba(67, 77, 160, .7);
     padding: 14.4vw 2vw 2vw;
 
+    // might be able to rm these too -- in master
     @media #{$laptop-only} {
       width: 38%;
       padding: 16.4vw 3vw 2vw;
