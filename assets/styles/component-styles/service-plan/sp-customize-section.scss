@@ -125,7 +125,49 @@
 
   // Price Object
   > :nth-child( 4 ) {
-    display: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: $main-font-serif;
+    font-weight: 300;
+
+    // Currency Symbol
+    > :nth-child( 1 ) {
+      align-self: flex-start;
+      font-size: (36 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        font-size: (12 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        font-size: (12 / 19.8 ) * 1vw;
+      }
+    }
+    // Dollar Value
+    > :nth-child( 2 ) {
+      font-size: (60 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        font-size: (45 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        font-size: (30 / 19.8 ) * 1vw;
+      }
+    }
+    // Cent Value
+    > :nth-child( 3 ) {
+      font-size: (18 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        font-size: (12 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        font-size: (12 / 19.8 ) * 1vw;
+      }
+    }
   }
 
   // Rate ("/month")
@@ -145,6 +187,7 @@
   // Savings ("Save $50")
   > :nth-child( 6 ) {
     font-family: $main-font-serif;
+    font-weight: 300;
     font-size: ( 27 / 3.2 ) * 1vw;
     padding: 0 0 ( 29 / 3.2 ) * 1vw;
 
