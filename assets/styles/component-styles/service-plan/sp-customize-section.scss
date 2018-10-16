@@ -23,7 +23,7 @@ section.zuc-custom-plan {
 .zuc-custom-plan--container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   overflow: hidden;
 
@@ -224,44 +224,43 @@ $zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
   position: relative;
   width: 100%;
   overflow: hidden;
-  max-height: auto;
+  max-height: none;
+  height: auto;
+  margin: ( 9 / 3.2 ) * 1vw;
 
   @media #{$tablet-up} {
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: ( 5 / 7.68 ) * 1vw;
     max-height: $zuc-custom-row-height-tablet;
+    height: $zuc-custom-row-height-tablet;
   }
 
   @media #{$laptop-up} {
+    margin: ( 9 / 19.8 ) * 1vw;
     max-height: $zuc-custom-row-height-desktop;
+    height: $zuc-custom-row-height-desktop;
   }
 }
 
 .zuc-custom-plan--box {
   flex: 30%;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   position: relative;
-  padding: 1vh 1vw;
-
-  @media #{$phone-only} {
-    width: 100%;
-  }
+  height: 100%;
 
   img {
     width: 100%;
-  }
-
-  .photo {
     max-height: 250px;
     max-width: 250px;
   }
 
   .photo-text {
-    text-transform: uppercase;
-    color: $color-zuc-concrete;
-    margin-top: -25px; // because images have a lot of space at btm.
-    padding-bottom: 20px;
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
   }
 
   .plus-icon {
@@ -273,6 +272,7 @@ $zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
     z-index: 1;
     height: 9vh;
     width: 2.6vw;
+
     @media #{$phone-only} {
       position: static;
       margin-top: 15px;
