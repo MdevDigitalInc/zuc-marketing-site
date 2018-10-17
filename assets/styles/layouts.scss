@@ -181,6 +181,16 @@
     }
   }
 
+  // Add this flag to NOT have animated hover
+  &.--o-static {
+    &:hover {
+      &:after {
+        opacity: .7;
+        cursor: none;
+      }
+    }
+  }
+
   &.--o-indigo {
     &:after {
       background-color: $color-zuc-indigo;
