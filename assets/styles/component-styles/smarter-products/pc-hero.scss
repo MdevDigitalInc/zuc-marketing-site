@@ -1,6 +1,6 @@
 // Smarter Products Hero.
 
-.zuc-spr-hero-container {
+.--pc-hero-container {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,7 @@
     height: 75vw;
   }
 
-  .zuc-spr-hero-content {
+  .--pc-hero-content {
     width: 80%;
     position: absolute;
     margin: 0 auto;
@@ -52,7 +52,7 @@
   }
 }
 
-.zuc-spr-hero-bkg-img {
+.--pc-hero-bkg-img {
   background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
   height: 100%;
   z-index: -1;
@@ -72,7 +72,7 @@
   }
 }
 
-.zuc-spr-hero-bkg-mesh {
+.--pc-hero-bkg-mesh {
   display: none;
 
   @media #{$laptop-up} {
@@ -91,7 +91,7 @@
   }
 }
 
-.zuc-spr-hero-bkg-overlay {
+.--pc-hero-bkg-overlay {
   background-image: url('../../assets/images/smarter-products-child/circles-hero.png');
   position: absolute;
   z-index: 1;
@@ -119,7 +119,7 @@
   }
 }
 
-.zuc-spr-hero-bkg-wave {
+.--pc-hero-bkg-wave {
   background-image: url('../../assets/images/shapes/wave-top.svg');
   z-index: 2;
   bottom: -2px;

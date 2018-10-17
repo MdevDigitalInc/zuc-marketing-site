@@ -1,0 +1,53 @@
+// Master styles for all SPR heros.
+
+.zuc-spr-hero-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media #{$phone-only} {
+    height: 90vw;
+  }
+
+  @media #{$tablet-only} {
+    height: 75vw;
+  }
+
+  .zuc-spr-hero-content {
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+    top: 12%;
+    left: 12%;
+
+    @media #{$tablet-only} {
+      width: 80%;
+      top: 8%;
+      left: 5%;
+    }
+    @media #{$phone-only} {
+      width: 80%;
+      top: 5%;
+      left: 5%;
+    }
+  }
+
+  .zuc-hero-left {
+    width: 40%;
+    padding: 0 2.2vw;
+    position: relative;
+
+    @media #{$tablet-only} {
+      width: 60%;
+    }
+
+    @media #{$phone-only} {
+      width: 60%;
+
+      h5 {
+        font-size: 5vw;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
