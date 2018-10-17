@@ -2,11 +2,11 @@
   overflow: hidden;
   padding: 0 0 45.625vw;
 
-  @media #{$tablet-up} {
-    padding: 0 7vw 37.5vw;
+  @media #{$tablet-only} {
+    padding: 0 7vw 20.5vw;
   }
 
-  @media #{$laptop-up} {
+  @media #{$laptop-only} {
     padding: 0 10vw 20vw;
   }
 
@@ -20,13 +20,30 @@
   margin: 0;
   padding: 0 5vw 29.375vw;
 
-  @media #{$tablet-up} {
+  @media #{$tablet-only} {
     padding: 0 0 13.8vw;
   }
 
   @media #{$laptop-up} {
     width: 50%;
     padding: 0 8vw 0 3vw;
+  }
+
+  .zuc-smarter-how-step {
+    color: $color-zuc-lilac;
+    font-weight: 600;
+    font-size: ( 14 / 3.2 ) * 1vw;
+    padding: 0 0 ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 16 / 7.68 ) * 1vw;
+      padding: 0 0 ( 10/ 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: ( 16 / 19.2 ) * 1vw;
+      padding: 0 0 ( 10 / 19.2 ) * 1vw;
+    }
   }
 }
 
@@ -41,6 +58,8 @@
 
   .zuc-img-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     @media #{$tablet-only} {
       width: 72vw;
@@ -50,12 +69,21 @@
       width: 30.66vw;
     }
 
-    .zuc-photo {
-      position: relative;
-      width: 100%;
+    .zuc-img-block {
+      background: url('../../assets/images/shared/couple-on-computer.png');
+      background-position: center;
+      background-size: cover;
+      height: ( 254 / 3.2 ) * 1vw;
+      width: ( 320 / 3.2 ) * 1vw;
 
+      @media #{$tablet-only} {
+        height: ( 512 / 7.68 ) * 1vw;
+        width: ( 607 / 7.68 ) * 1vw;
+      }
+  
       @media #{$laptop-up} {
-        max-width: 607px;
+        height: ( 512 / 19.2 ) * 1vw;
+        width: ( 607 / 19.2 ) * 1vw;
       }
     }
 
@@ -67,7 +95,7 @@
       width: 175%;
 
       @media #{$tablet-only} {
-        top: 13vw;
+        top: 19vw;
         left: -12vw;
         width: 96vw;
       }
