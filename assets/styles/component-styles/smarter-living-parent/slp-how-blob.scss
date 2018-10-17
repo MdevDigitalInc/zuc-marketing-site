@@ -1,17 +1,13 @@
 .zuc-smarter-how {
   overflow: hidden;
-  padding: 0 0 45.625vw;
+  padding: 0 0 ( 77 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    padding: 0 7vw 20.5vw;
+    padding: 0 7vw ( 205 / 7.68 ) * 1vw;
   }
 
-  @media #{$laptop-only} {
-    padding: 0 10vw 20vw;
-  }
-
-  @media #{$desktop-up} {
-    padding: 0 13vw 18.23vw;
+  @media #{$laptop-up} {
+    padding: 0 11.5vw ( 165 / 19.2 ) * 1vw;
   }
 }
 

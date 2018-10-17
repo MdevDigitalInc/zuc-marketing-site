@@ -1,14 +1,14 @@
 .zuc-service-plans-box {
   position: relative;
   text-align: center;
-  margin: 0 0 ( 86 / 3.2 ) * 1vw;
+  padding: 0 0 ( 86 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    margin: 0 0 ( 108 / 7.68 ) * 1vw;
+    padding: 0 0 ( 108 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
-    margin: 0 8% ( 186 / 19.2 ) * 1vw;
+    padding: 0 8% ( 186 / 19.2 ) * 1vw;
   }
 
   .zuc-bg-blob {
