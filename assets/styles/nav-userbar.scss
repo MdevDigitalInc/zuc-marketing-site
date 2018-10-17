@@ -8,12 +8,7 @@
     font-size: 1.2vw;
   }
   @media #{$phone-only} {
-    /* Important required for override */
-    /* stylelint-disable */
-    justify-content: flex-end !important;
-    /* stylelint-enable */
-    padding: 0 2vw;
-    font-size: 3vw;
+    display: none;
   }
 
 

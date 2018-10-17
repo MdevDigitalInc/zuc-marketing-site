@@ -1,4 +1,4 @@
-- var title = 'Choose the service plan that\'s right for you.'
+- var title = 'Choose the service<br/>plan that&#8217;s right for you.'
 - var text = 'A Smarter Living Plan is customized by you to fit your lifestyle and budget and the monthly subscription fee gives you the coverage you want immediately without big upfront costs. '
 - var button = 'See all plans'
 - var tagline = 'Breakdowns will happen... one plan has you covered.'
@@ -6,7 +6,7 @@
 section.zuc-service-plan-hero--wrapper
   .zuc-service-plan-hero--text-section.flex.flex-column
     h2.zuc-service-plan-hero--heading.u-font-serif
-      |#{title}
+      |!{title}
     p.zuc-service-plan-hero--copy.u-font-serif.u-normal
       |#{text}
     p.zuc-service-plan-hero--tagline.u-bold
@@ -14,6 +14,14 @@ section.zuc-service-plan-hero--wrapper
     .zuc-service-plan-hero--btn
       a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
         |#{button}
-  .zuc-service-plan-hero--graphic-section.flex.flex-hor-center
-    img.photo(src='../../assets/images/service-plans/serviceman-washingmachine.png' alt='Serviceman in kneeling before a washingmachine.')
-
+  .zuc-service-plan-hero--graphic-section
+    .--photo
+      img(src='../../assets/images/shared/man-tool-bag.png' alt='A man with a toolbag over his shoulder.')
+    .--bottom-wave
+      img(src='../../assets/images/shapes/hero-wave-bottom.svg', alt='An abstract grey wave')
+    .--bottom-wave-flipped
+      img(src='../../assets/images/shapes/hero-wave-bottom.svg', alt='An abstract grey wave')
+    .--grey-blob
+      img(src="../../assets/images/shapes/hero-wave-middle-grey.svg", alt="A tall abstract grey wave")
+    .--pear
+      img(src="../../assets/images/shapes/round-blob-half-solid.svg", alt="An abstract green pear shape")
