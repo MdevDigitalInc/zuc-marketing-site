@@ -1,10 +1,12 @@
-section.zu-collection-blob {
+section.zuc-collection-blob {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
 .zuc-collection-blob-left {
+  display: flex;
+  justify-content: center;
   width: 100%;
 
   @media #{$tablet-only} {
@@ -17,6 +19,8 @@ section.zu-collection-blob {
 }
 
 .zuc-collection-blob-right {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
   @media #{$tablet-only} {
@@ -25,5 +29,33 @@ section.zu-collection-blob {
 
   @media #{$laptop-up} {
     width: 50%;
+  }
+
+  // Paragraph
+  > :nth-child( 3 ) {
+    padding: 0 0 ( 29 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      padding: 0 0 ( 43 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      width: ( 452 / 19.2 ) * 1vw;
+      padding: 0 0 ( 25 / 19.2 ) * 1vw;
+    }
+  }
+
+  // Bumper Link
+  > :nth-child( 5 ) {
+    text-decoration: underline;
+    padding: ( 35 / 3.2 ) * 1vw 0 0;
+
+    @media #{$tablet-only} {
+      padding: ( 35 / 7.68 ) * 1vw 0 0;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 35 / 19.2 ) * 1vw 0 0;
+    }
   }
 }
