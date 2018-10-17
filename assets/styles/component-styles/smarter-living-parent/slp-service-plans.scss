@@ -45,6 +45,8 @@
     z-index: 10;
   }
 
+
+
   .zuc-title-container-slp {
     width: 100%;
     white-space: nowrap;
@@ -150,8 +152,9 @@
 
   &.--furn {
     background-size: cover;
-    background-position: center;
-    background-image: url('../../assets/images/smarter-living/girl-jumping-couch.png');
+    background-image: url('../../assets/images/shared/furniture-plan.png');
+    background-position: 93% 0;
+
   }
 
   &.--appl {
