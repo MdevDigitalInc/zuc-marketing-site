@@ -1,19 +1,38 @@
 section.zuc-member-benefits {
   position: relative;
   width: 100%;
+
+  margin: 0 0 ( 70 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    margin: 0 0 ( 43 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 0 ( 214 / 19.2 ) * 1vw;
+  }
 }
 
 .zuc-member-benefits-left {
   display: flex;
+  order: 2;
   justify-content: center;
   width: 100%;
 
   @media #{$laptop-up} {
+    order: 1;
     justify-content: flex-end;
-    width: 50%;
+    width: 60%;
   }
 
   .zuc-img-box {
+    max-width: 700px;
+    width: 100%;
+
+    @media #{$laptop-up} {
+      width: ( 780 / 19.2 ) * 1vw;
+    }
+
     img {
       width: 100%;
     }
@@ -21,6 +40,7 @@ section.zuc-member-benefits {
 }
 
 .zuc-member-benefits-right {
+  order: 1;
   width: 100%;
   padding: 0 7vw 15vw;
 
@@ -29,8 +49,9 @@ section.zuc-member-benefits {
   }
 
   @media #{$laptop-up} {
-    width: 50%;
-    padding: 0 0 6vw;
+    order: 2;
+    width: 40%;
+    padding: ( 128 / 19.8) * 1vw 0 6vw ( 40 / 19.2 ) * 1vw;
   }
 
   h3 {
