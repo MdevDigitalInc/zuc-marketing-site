@@ -149,6 +149,7 @@ section.zuc-pane-links {
 
   .zuc-bumper-title-container {
     margin-bottom: 3.5vw;
+    font-size: ( 50 / 3.2 ) * 1vw;
 
     @media #{$tablet-up} {
       margin-bottom: 2vw;
@@ -156,6 +157,18 @@ section.zuc-pane-links {
 
     @media #{$laptop-up} {
       margin-bottom: 1.25vw;
+    }
+  }
+
+  h5 {
+    font-size: ( 30 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      font-size: ( 50 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 50 / 19.8 ) * 1vw;
     }
   }
 
