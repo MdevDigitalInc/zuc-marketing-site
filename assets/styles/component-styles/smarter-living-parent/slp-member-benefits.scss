@@ -1,30 +1,36 @@
-.zuc-member-benefits {
-  padding: 0 7vw 15vw;
-  flex-direction: column-reverse;
+section.zuc-member-benefits {
+  position: relative;
+  width: 100%;
+}
 
-  @media #{$tablet-up} {
+.zuc-member-benefits-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .zuc-img-box {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.zuc-member-benefits-right {
+  width: 100%;
+  padding: 0 7vw 15vw;
+
+  @media #{$tablet-only} {
     padding: 0 6vw 13vw;
   }
 
   @media #{$laptop-up} {
+    width: 50%;
     padding: 0 0 6vw;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.zuc-benefit-blurb {
-  width: 100%;
-  margin-left: 0;
-  padding-bottom: 7.5vw;
-
-  @media #{$tablet-up} {
-    width: 56vw;
-  }
-
-  @media #{$laptop-up} {
-    width: 22vw;
-    margin-left: 4.3vw;
   }
 
   p {
@@ -36,96 +42,6 @@
 
     @media #{$laptop-up} {
       padding-bottom: 1.5vw;
-    }
-  }
-
-  .zuc-title-container {
-    margin-bottom: 3.5vw;
-    // Override h4
-    h4 {
-      margin: 0;
-    }
- 
-    @media #{$tablet-up} {
-      margin-bottom: 2vw;
-    }
-  
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
-}
-
-.zuc-benefit-bubble {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 17px;
-
-  .zuc-bubble-text {
-    text-align: center;
-    color: $color-zuc-concrete;
-    margin-top: 25px;
-    // Font override to make it snug on small screens
-    font-size: 3vw;
-
-    @media #{$tablet-up} {
-      margin-bottom: 2vw;
-      font-size: inherit;
-    }
-  
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
-
-  .zuc-bubble {
-    border-radius: 50%;
-    background-color: $color-zuc-concrete;
-    width: 26vw;
-    height: 26vw;
-
-    @media #{$tablet-up} {
-      width: 25vw;
-      height: 25vw;
-    }
-  
-    @media #{$laptop-up} {
-      width: 13vw;
-      height: 13vw;
-    }
-
-    @media #{$desktop-up} {
-      width: 10vw;
-      height: 10vw;
-    }
-  }
-
-  &.--big {
-    padding: 0 5px;
-
-    .zuc-bubble-text {
-      color: $color-zuc-darkindigo;
-    }
-
-    .zuc-bubble {
-      width: 33vw;
-      height: 33vw;
-
-      @media #{$tablet-up} {
-        width: 31vw;
-        height: 31vw;
-      }
-    
-      @media #{$laptop-up} {
-        width: 18vw;
-        height: 18vw;
-      }
-
-      @media #{$desktop-up} {
-        width: 14vw;
-        height: 14vw;
-      }
     }
   }
 }
