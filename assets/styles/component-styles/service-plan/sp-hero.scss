@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 220vw; //THIS245.938
+  height: 220vw;
 
   @media #{$tablet-only} {
     height: 120vw;
@@ -86,7 +86,7 @@
     z-index: -2;
     width: 320vw;
     left: -210vw;
-    padding: 110vw 0 0; //THIS136.875vw
+    padding: 110vw 0 0;
 
     @media #{$tablet-only} {
       width: 155vw;
@@ -152,7 +152,7 @@
     position: absolute;
     z-index: -2;
     width: 300%;
-    top: 109vw; //THIS
+    top: 109vw;
     left: -80vw;
 
     @media #{$tablet-only} {
