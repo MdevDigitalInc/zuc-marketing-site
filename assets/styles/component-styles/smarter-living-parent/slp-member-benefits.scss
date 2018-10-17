@@ -33,15 +33,30 @@ section.zuc-member-benefits {
     padding: 0 0 6vw;
   }
 
+  h3 {
+    width: ( 256 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      width: ( 564 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      width: ( 401 / 19.2 ) * 1vw;
+    }
+  }
+
   p {
     padding-bottom: 5vw;
+    width: ( 267 / 3.2 ) * 1vw;
 
     @media #{$tablet-up} {
       padding-bottom: 3vw;
+      width: ( 637 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
       padding-bottom: 1.5vw;
+      width: ( 372 / 19.2 ) * 1vw;
     }
   }
 }
