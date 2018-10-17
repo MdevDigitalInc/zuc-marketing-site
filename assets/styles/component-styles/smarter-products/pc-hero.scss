@@ -1,34 +1,34 @@
 // Smarter Products Hero.
 
 .--pc-hero-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  // width: 100%;
+  // position: relative;
+  // overflow: hidden;
 
   @media #{$phone-only} {
-    height: 90vw;
+    // height: 90vw;
   }
 
   @media #{$tablet-only} {
-    height: 75vw;
+    // height: 75vw;
   }
 
   .--pc-hero-content {
+    // position: absolute;
     width: 80%;
-    position: absolute;
     margin: 0 auto;
     top: 12%;
     left: 12%;
 
     @media #{$tablet-only} {
-      width: 80%;
-      top: 8%;
-      left: 5%;
+      // width: 80%;
+      // top: 8%;
+      // left: 5%;
     }
     @media #{$phone-only} {
-      width: 80%;
-      top: 5%;
-      left: 5%;
+      // width: 80%;
+      // top: 5%;
+      // left: 5%;
     }
   }
 
@@ -120,15 +120,15 @@
 }
 
 .--pc-hero-bkg-wave {
-  background-image: url('../../assets/images/shapes/wave-top.svg');
-  z-index: 2;
-  bottom: -2px;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: 105%;
-  background-repeat: no-repeat;
+  // background-image: url('../../assets/images/shapes/wave-top.svg');
+  // z-index: 2;
+  // bottom: -2px;
+  // background-position: bottom;
+  // height: 100%;
+  // width: 100%;
+  // position: absolute;
+  // background-size: 105%;
+  // background-repeat: no-repeat;
 
   @media #{$tablet-only} {
     background-size: 290%;
@@ -137,10 +137,8 @@
   }
 
   @media #{$phone-only} {
-    background-size: 460%;
-    background-position-y: 210%;
-    background-position-x: 99%;
+    // background-size: 460%;
+    // background-position-y: 210%;
+    // background-position-x: 99%;
   }
 }
-
-
