@@ -30,7 +30,7 @@
     top: -18vw;
     height: 200vw;
   }
-  
+
   @media #{$laptop-only} {
     left: -2.5vw;
     top: -29.9vw;
@@ -95,6 +95,54 @@
 
     @media #{$desktop-up} {
       width: 10vw;
+    }
+  }
+
+  .--icons {
+    margin-bottom: 5vh;
+    text-align: center;
+
+    @media #{$tablet-only} {
+      justify-content: space-around;
+    }
+    @media #{$phone-only} {
+      justify-content: space-around;
+    }
+
+    .icon {
+      @media #{$phone-only} {
+        padding: 1vh .1vw;
+        max-width: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        min-height: 50px;
+      }
+      z-index: 1;
+      max-width: 90px;
+      min-width: 90px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+  }
+
+  .item {
+    margin-right: 8vw;
+    max-width: 100px;
+
+    @media #{$tablet-only} {
+      margin-right: 0;
+    }
+    @media #{$phone-only} {
+      margin-right: 0;
+    }
+
+    p {
+      @media #{$tablet-only} {
+        font-size: 3vh;
+      }
+      @media #{$phone-only} {
+        font-size: 3vh;
+      }
     }
   }
 }
