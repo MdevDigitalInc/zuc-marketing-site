@@ -34,27 +34,28 @@ section.zuc-pane-links {
 
   /* Styles for pane titles */
   .zuc-pane-title {
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    color: $color-zuc-darkindigo;
+    font-weight: 500;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     transform-origin: 50%;
-    color: $color-zuc-darkindigo;
+    box-shadow: .7px 1.9px 68px 0 rgba(12, 12, 12, .2);
     height: 100%;
     padding: 0 5vw;
-    box-shadow: .7px 1.9px 68px 0 rgba(12, 12, 12, .2);
     
     @media #{$tablet-up} {
+      justify-content: flex-start;
       height: 65%;
       padding: 3vw;
-      justify-content: flex-start;
     }
 
     @media #{$laptop-up} {
       height: 50%;
-      padding: 1.55vw;
+      padding: 1vw 1.55vw;
     }
 
     &.--lilac {
@@ -97,6 +98,7 @@ section.zuc-pane-links {
 
   &.--sleepy {
     background-image: url('../../assets/images/shared/woman-sleeper-stretching.png');
+    background-position: 90% 0;
   }
 
   &.--smartphone {
@@ -105,6 +107,21 @@ section.zuc-pane-links {
 
   &.--dishes {
     background-image: url('../../assets/images/shared/girl-doing-dishes.png');
+  }
+
+  &.--toolman {
+    background-image: url('../../assets/images/shared/man-tool-bag.png');
+    background-position: 93% 0;
+  }
+
+  &.--happy {
+    background-image: url('../../assets/images/shared/happy-family-livingroom.png');
+    background-position: 40% 0;
+  }
+
+  &.--laundry {
+    background-image: url('../../assets/images/shared/women-laundry-machine.png');
+    background-position: 40% 0;
   }
   
   a {
@@ -139,6 +156,18 @@ section.zuc-pane-links {
 
     @media #{$laptop-up} {
       margin-bottom: 1.25vw;
+    }
+  }
+
+  h5 {
+    font-size: ( 30 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      font-size: ( 50 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 50 / 19.8 ) * 1vw;
     }
   }
 
