@@ -6,7 +6,7 @@
     'Now, that’s what we call smart.'
   ]
 
-section.zuc-hero-header-control
+section.zuc-hero-header-control(aria-describedby="header-caption")
   // Content Block
   .zuc-shc-content.d-green-bar.u-soft-shadow
     .zuc-hsc-subtitle.u-uppercase.u-bold
@@ -19,44 +19,47 @@ section.zuc-hero-header-control
       p
         |#{val}
     // Action
-    a(class="zuc-btn zuc-btn-secondary" href="#" title="todo")
+    a(class="zuc-btn zuc-btn-secondary" href="#" title="Get Started with Smart Home")
       |GET STARTED TODAY
 
     // App Screenshot
     .zuc-shc-appview
-      img(src="../../assets/images/smarter-home/phone.png" alt="todo")
+      img(src="../../assets/images/smarter-home/phone.png" alt="Zucora Smart Home App")
   // Products
   .zuc-hero-products
 
     // - Indoor Camera
     .hero-product.--ind-camera
-      img(src="../../assets/images/smarter-home/product-indoor-camera.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-indoor-camera.png" alt="Indoor Camera")
 
     // - Keypass
     .hero-product.--keypass
-      img(src="../../assets/images/smarter-home/product-keypas.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-keypas.png" alt="Smart Security Keypass")
 
     // - Light Bulb
     .hero-product.--light
-      img(src="../../assets/images/smarter-home/product-light-blub.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-light-blub.png" alt="Smart Home Lighting")
 
     // - Light Bulb 2
     .hero-product.--light-2
-      img(src="../../assets/images/smarter-home/product-light-bulb.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-light-bulb.png" alt="Smart Home Lightbulb")
 
     // - Motion Sensor
     .hero-product.--sensor
-      img(src="../../assets/images/smarter-home/product-motion-sensor.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-motion-sensor.png" alt="Smart Home Motion Sensor")
 
     // - Outdoor Camera
     .hero-product.--out-camera
-      img(src="../../assets/images/smarter-home/product-outdoor-camera.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-outdoor-camera.png" alt="Outdoor Camera")
 
     // - Smoke Sensor
     .hero-product.--sensor-smk
-      img(src="../../assets/images/smarter-home/product-smoke-sensor.png" alt="todo")
+      img(src="../../assets/images/smarter-home/product-smoke-sensor.png" alt="Smart Home Smoke Sensor")
 
   // Wave Shape
   .zuc-hero-bkg.--layer-one
   // Image of House
   .zuc-hero-bkg.--layer-zero
+  // AODA Description
+  .u-screenreader(id="header-caption")
+    |DESCRIBE HEADER BACKGROUND IMAGE FOR VISUALLY IMPAIRED - TODO
