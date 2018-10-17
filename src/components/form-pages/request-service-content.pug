@@ -16,58 +16,78 @@ section.zuc-section-container.--sides.--hstyle
           .zuc-input-name
             strong
               |First &amp; Last Name *
-          input(type="text" data-required name="fullname" placeholder="First & Last Name")
+          label.u-screenreader(for="field-name")
+            |Firs &amp; Last Name
+          input(type="text" data-required name="fullname" placeholder="First & Last Name" id="field-name")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |Email Address *
-          input(type="email" data-required name="email" placeholder="Email Address")
+          label.u-screenreader(for="field-email")
+            |Email Address
+          input(type="email" data-required name="email" placeholder="Email Address" id="field-email")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |Current Phone Number *
-          input(type="tel" data-required name="phone" placeholder="Phone number where we can reach you")
+          label.u-screenreader(for="field-phone")
+            |Phone Number
+          input(type="tel" data-required name="phone" placeholder="Phone number where we can reach you" id="field-phone")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |Phone number at time of purchase (if different from current)
-          input(type="tel" name="currentphone" placeholder="Phone number at time of purchase")
+          label.u-screenreader(for="field-phoneorder")
+            |Phone number at time of purchase (if different from current)
+          input(type="tel" name="currentphone" placeholder="Phone number at time of purchase" id="field-phoneorder")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
               |Street Address
-          input(type="text" name="address" placeholder="Street Address")
+          label.u-screenreader(for="field-address")
+            |Street Address
+          input(type="text" name="address" placeholder="Street Address" id="field-address")
       .zuc-form-row
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
               |City
-          input(type="text" name="city" placeholder="City")
+          label.u-screenreader(for="field-city")
+            |City
+          input(type="text" name="city" placeholder="City" id="field-city")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
               |Province
+          label.u-screenreader(for="field-province")
+            |Province
           input(type="text" name="province" placeholder="Province")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
               |Postal Code
-          input(type="text" name="postal" placeholder="Postal Code")
+          label.u-screenreader(for="field-postal")
+            |Postal Code
+          input(type="text" name="postal" placeholder="Postal Code" id="field-postal")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |Retailer
-          input(type="text" name="retailer" placeholder="Retailer")
+          label.u-screenreader(for="field-retailer")
+            |Retailer
+          input(type="text" name="retailer" placeholder="Retailer" id="field-retailer")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |Product Type
           .zuc-select-container
+            label.u-screenreader(for="field-select")
+              |Choose your product type
             select(required name="producttype")
-              option(value="" disabled selected)
+              option(value="" disabled selected id="field-select")
                 |Choose your product type
               option(value="foo")
                 |Earth
@@ -80,34 +100,46 @@ section.zuc-section-container.--sides.--hstyle
           .zuc-input-name
             strong
               |Specific Item
-          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)")
+          label.u-screenreader(for="field-item")
+            |Specific Item
+          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)" id="field-item")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
               |Date Purchased (YYYY-MM-DD)
-          input(type="text" name="purchasedate" placeholder="Date Purchased")
+          label.u-screenreader(for="field-datepurchase")
+            |Date of Purchase
+          input(type="text" name="purchasedate" placeholder="Date Purchased" id="field-datepurchase")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
               |Order ID
-          input(type="text" name="orderid" placeholder="Order ID")
+          label.u-screenreader(for="field-orderid")
+            |Order ID
+          input(type="text" name="orderid" placeholder="Order ID" id="field-orderid")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name
             strong
               |Description of Problem *
-          input(type="text" data-required name="issuedesc" placeholder="Description of Issue")
+          label.u-screenreader(for="field-description")
+            |Description of Problem
+          input(type="text" data-required name="issuedesc" placeholder="Description of Issue" id="field-description")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |How did the issue happen?
-          input(type="text" name="issuehow" placeholder="How did the issue happen?")
+          label.u-screenreader(for="field-how")
+            |How did the issue happen?
+          input(type="text" name="issuehow" placeholder="How did the issue happen?" id="field-how")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
               |When did the Issue Occur? (YYYY-MM-DD)
-          input(type="text" name="issuewhen" placeholder="Date when issue occured")
+          label.u-screenreader(for="field-when")
+            |When did the issue occur?
+          input(type="text" name="issuewhen" placeholder="Date when issue occured" id="field-when")
       .zuc-form-row
         .zuc-form-group
           .zuc-input-name

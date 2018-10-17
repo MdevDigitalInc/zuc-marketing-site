@@ -10,7 +10,9 @@ section.zuc-forgot-password.zuc-section-container.--hstyle.--pre
           .zuc-input-name.zuc-input-name-no-margin
             strong
               |Your Email Address*
-          input(type="email" data-required name="email" placeholder="Your Email Address")
+          label.u-screenreader(for="field-email")
+            |Email Address
+          input(type="email" data-required name="email" placeholder="Your Email Address" id="field-email")
         .zuc-form-action
           button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
             strong
