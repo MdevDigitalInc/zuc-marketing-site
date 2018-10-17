@@ -1,0 +1,29 @@
+section.zu-collection-blob {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zuc-collection-blob-left {
+  width: 100%;
+
+  @media #{$tablet-only} {
+    // Hey
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
+
+.zuc-collection-blob-right {
+  width: 100%;
+
+  @media #{$tablet-only} {
+    // Hey
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
