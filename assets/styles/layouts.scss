@@ -167,6 +167,13 @@
     transition: .4s;
   }
 
+  // Add this flag to start from no overlay - AW
+  &.--fadein {
+    &:after {
+      opacity: 0;
+    }
+  }
+
   &:hover {
     &:after {
       opacity: .8;

@@ -28,7 +28,7 @@
     font-size: 1vw;
   }
   @media #{$phone-only} {
-    padding: 2vw;
+    padding: 5vw 4vw;
   }
 
   &:hover,
@@ -52,7 +52,8 @@
       max-width: 340px;
     }
     @media #{$phone-only} {
-      max-width: 150px;
+      max-width: 250px;
+      width: 40vw;
       margin: 0 2vw;
     }
 
@@ -70,6 +71,42 @@
   // Space out button a bit on the left
   .zuc-btn {
     margin-right: 10px;
+  }
+
+  // Cart Text & Icon
+  .zuc-user-cart {
+    position: relative;
+    right: -20px;
+
+    @media #{$tablet-up} {
+      display: none;
+    }
+
+    i {
+      font-size: 7vw;
+      color: $color-zuc-lightindigo;
+    }
+  }
+
+  // Cart Count
+  .zuc-cart-count {
+    display: inline-block;
+    overflow: hidden;
+    color: $color-zuc-darkindigo;
+    border-radius: 50%;
+    background: $color-zuc-salmon;
+    font-weight: 700;
+    position: relative;
+    padding: 2.5vw;
+    top: -13px;
+    right: 7px;
+
+    span {
+      display: block;
+      @include center(both);
+      padding-top: 1px;
+      font-size: 3vw;
+    }
   }
 }
 
