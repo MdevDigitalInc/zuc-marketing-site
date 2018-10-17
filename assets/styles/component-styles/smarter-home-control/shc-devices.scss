@@ -1,0 +1,50 @@
+.zuc-smart-devices {
+  width: 90%;
+  margin: 8vw auto 20vw;
+
+  @media #{$portrait} {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10vw auto 36vw;
+  }
+  @media #{$tablet-lnd-only} {
+    width: 80%;
+  }
+  @media #{$laptop-only} {
+    width: 70%;
+  }
+  @media #{$desktop-up} {
+    width: 60%;
+  }
+}
+
+.zuc-smart-device {
+  width: 45%;
+
+  @media #{$portrait} {
+    width: 100%;
+    margin-bottom: 16vw;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .zuc-device-img {
+    height: 12vw;
+    margin-bottom: 3vw;
+
+    @media #{$portrait} {
+      height: 20vh;
+    }
+  }
+
+  h4 {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 1.4vw;
+  }
+}
