@@ -176,8 +176,8 @@ module.exports = {
       filename: 'form-contact-us.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/form-request-service.pug',
-      filename: 'form-request-service.html'
+      template: './src/templates/form-service-request.pug',
+      filename: 'form-service-request.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/faq.pug',
