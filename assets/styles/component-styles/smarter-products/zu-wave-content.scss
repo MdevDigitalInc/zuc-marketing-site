@@ -1,0 +1,33 @@
+.--zu-wave-content {
+
+  background-image: url('../images/smarter-products/boy-laying-withdog.png');
+  // Uniquely positions & sizes the "Child and Dog" image.
+  @media #{$tablet-only} {
+    background-position: 100% 20%;
+    background-size: 122%;
+  }
+  @media #{$phone-only} {
+    background-position: 65% 29%;
+    background-size: 220%;
+  }
+
+  // Overrides:
+  .zuc-wave-hero-content {
+    background: rgba(67, 77, 160, .7);
+    padding: 14.4vw 2vw 2vw;
+
+    // TODO: confirm overrides.
+    p {
+      margin-bottom: 10vw;
+      font-size: 1.35vw;
+      line-height: 1.55;
+
+      @media #{$tablet-only} {
+        font-size: 2vw;
+      }
+      @media #{$phone-only} {
+        font-size: 4vw;
+      }
+    }
+  }
+}
