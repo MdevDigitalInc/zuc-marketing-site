@@ -8,9 +8,12 @@ N/A
 ## How To Test:
 - In terminal: `npm run dev`
 - Navigate to : `localhost:8080/`
-- Did you test locally?
 
-Expected Result(s): Section should be fully responsive
+:imp: Delete this line only if you tested locally! :imp:
+
+### Expected Result(s):
+
+- Observe the glory of my implementation
 
 ## Design Links
 
