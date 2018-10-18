@@ -270,6 +270,28 @@
     }
   }
 
+  .zuc-secondary-header--graphic-section {
+
+    .--bottom-wave {
+      display: none;
+  
+      @media #{$tablet-up} {
+        display: initial;
+        position: absolute;
+        z-index: 2;
+        width: 170vw;
+        bottom: -3px;
+        left: -60vw;
+      }
+  
+      @media #{$laptop-up} {
+        width: 105vw;
+        bottom: -3px;
+        left: -5px;
+      }
+    }
+  }
+
   .zuc-hero-bottom-wave {
     display: none;
 

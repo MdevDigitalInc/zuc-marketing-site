@@ -8,7 +8,12 @@
 -
   var title = 'What is Smarter Living?'
 
-section.zuc-secondary-header(aria-describedby="header-caption" style="background-image:url('http://lullabycasa.net/wp-content/uploads/2015/07/decoration-interior-fancy-yellow-leather-for-your-house-beautiful-living-room-interior-design-combined-with-brown-wooden-coffee-table-and-white-ceiling-fitting-cool-ideas-for-house-beautiful-living-r.jpg');")
+
+//- NOTE: THIS BACKGROUND IMAGE WONT WORK FOR SOME REASON, SPENDING TOO MUCH TIME ON IT - AW 20181018 vvvvv
+section.zuc-secondary-header(aria-describedby="header-caption" style="background-image: url('images/smarter-living/hero-background.png');")
+  .zuc-secondary-header--graphic-section
+    .--bottom-wave
+      img(src='../../assets/images/shapes/hero-wave-bottom.svg', alt='An abstract grey wave')
   // Hero Content - Wrapper
   .zuc-hero-content
     // Top Content
@@ -23,7 +28,7 @@ section.zuc-secondary-header(aria-describedby="header-caption" style="background
         a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
           |See All Plans
       .zuc-hero-right
-        img.--img-position(src='https://via.placeholder.com/1280x845' title="TODO")
+        img.--img-position(src='../../assets/images/smarter-living/hero-couple.png' title="TODO" alt="A happy couple")
     // Bottom Video
     .zuc-hero-row.flex.flex-vert-stretch.--video-row.u-soft-shadow
       .zuc-hero-left
