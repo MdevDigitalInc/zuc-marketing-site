@@ -1,32 +1,60 @@
 .zuc-smarter-how {
   overflow: hidden;
-  padding: 0 0 45.625vw;
+  padding: 0 0 ( 77 / 3.2 ) * 1vw;
 
-  @media #{$tablet-up} {
-    padding: 0 7vw 37.5vw;
+  @media #{$tablet-only} {
+    padding: 0 7vw ( 205 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
-    padding: 0 10vw 20vw;
-  }
-
-  @media #{$desktop-up} {
-    padding: 0 13vw 18.23vw;
+    padding: 0 11.5vw ( 165 / 19.2 ) * 1vw;
   }
 }
 
 .zuc-smarter-how-lt {
   width: 100%;
   margin: 0;
-  padding: 0 5vw 29.375vw;
+  padding: 0 5vw ( 90 / 3.2 ) * 1vw;
 
-  @media #{$tablet-up} {
-    padding: 0 0 13.8vw;
+  @media #{$tablet-only} {
+    padding: 0 0 ( 56 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
     width: 50%;
     padding: 0 8vw 0 3vw;
+  }
+
+  h4 {
+    font-size: ( 16 / 3.2 ) * 1vw;
+    margin: 0 0 ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 20 / 7.68 ) * 1vw;
+      margin: 0 0 ( 16/ 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: ( 20 / 19.2 ) * 1vw;
+      margin: 0 0 ( 18 / 19.2 ) * 1vw;
+    }
+  }
+
+  .zuc-smarter-how-step {
+    color: $color-zuc-lilac;
+    font-weight: 600;
+    font-size: ( 14 / 3.2 ) * 1vw;
+    margin: 0 0 ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 16 / 7.68 ) * 1vw;
+      margin: 0 0 ( 10 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: ( 16 / 19.2 ) * 1vw;
+      margin: 0 0 ( 9 / 19.2 ) * 1vw;
+    }
   }
 }
 
@@ -41,6 +69,8 @@
 
   .zuc-img-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     @media #{$tablet-only} {
       width: 72vw;
@@ -50,12 +80,21 @@
       width: 30.66vw;
     }
 
-    .zuc-photo {
-      position: relative;
-      width: 100%;
+    .zuc-img-block {
+      background: url('../../assets/images/shared/couple-on-computer.png');
+      background-position: center;
+      background-size: cover;
+      height: ( 254 / 3.2 ) * 1vw;
+      width: ( 320 / 3.2 ) * 1vw;
 
+      @media #{$tablet-only} {
+        height: ( 512 / 7.68 ) * 1vw;
+        width: ( 607 / 7.68 ) * 1vw;
+      }
+  
       @media #{$laptop-up} {
-        max-width: 607px;
+        height: ( 512 / 19.2 ) * 1vw;
+        width: ( 607 / 19.2 ) * 1vw;
       }
     }
 
@@ -67,7 +106,7 @@
       width: 175%;
 
       @media #{$tablet-only} {
-        top: 13vw;
+        top: 19vw;
         left: -12vw;
         width: 96vw;
       }
