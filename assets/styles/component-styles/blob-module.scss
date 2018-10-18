@@ -39,16 +39,11 @@
   }
 
   .zuc-blob-module--heading {
-    font-weight: $heading-weight;
-    color: $color-zuc-indigo;
-    font-size: 36px; //todo: fix units:
-    width: 400px; // todo: fix units
+    font-size: 36px;
+    width: 400px;
     line-height: 1.3;
   }
 
-  .zuc-blob-module--heading {
-    text-transform: uppercase;
-  }
   .zuc-blob-module--copy {
     line-height: 1.3;
 
