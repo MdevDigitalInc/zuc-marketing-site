@@ -125,6 +125,11 @@ section.zuc-pane-links {
     background-image: url('../../assets/images/shared/women-laundry-machine.png');
     background-position: 40% 0;
   }
+
+  &.--momboy {
+    background-image: url('../../assets/images/shared/mom-boy-kitchen.png');
+    background-position: 98% 0;
+  }
   
   a {
     position: absolute;
@@ -170,6 +175,7 @@ section.zuc-pane-links {
 
     @media #{$laptop-up} {
       font-size: ( 50 / 19.2 ) * 1vw;
+      width: ( 380 / 19.2 ) * 1vw;
     }
   }
 
