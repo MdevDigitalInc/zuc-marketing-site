@@ -101,6 +101,8 @@
     }
     z-index: 1;
     width: 55%;
+    // using px to normalize svg files with differing heights.
+    height: 70px;
     margin-bottom: 4vh;
   }
 }
