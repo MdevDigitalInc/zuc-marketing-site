@@ -11,24 +11,34 @@
 
 section.zuc-tri-module {
   position: relative;
+  overflow: hidden;
   flex-direction: row;
-  padding-bottom: 30vw;
+  background-color: $color-zuc-platinum;
+  padding: 0 0 ( 73 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    padding-bottom: 15vw;
+    padding: ( 176 / 19.2 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
-    padding-bottom: 5vw;
+    background-color: inherit;
+    padding: ( 140 / 19.2 ) * 1vw 0 0;
   }
   
   .zuc-tri-module-wave {
     z-index: -700;
-    overflow: hidden;
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%;
+    top: 0;
+    
+
+    @media #{$tablet-only} {
+      width: 100%; // This is where you stopped, get the blob to show up on everything except desktop now -AW
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+    }
   }
 }
 
