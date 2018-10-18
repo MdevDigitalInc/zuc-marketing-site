@@ -43,18 +43,6 @@ section.zuc-tri-module {
     width: 33.3%;
   }
 
-  .zuc-tri-box-title-container {
-    margin-bottom: 3.5vw;
-
-    @media #{$tablet-only} {
-      margin-bottom: 2vw;
-    }
-
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
-
   h2 {
     font-size: 6.875vw;
 
