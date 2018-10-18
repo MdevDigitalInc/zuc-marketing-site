@@ -68,19 +68,22 @@
   }
 }
 
+// Heights are to design spec but personally dangerous if text changes, hence commented out
 .zuc-blog-module-item {
   position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
   background: $color-pure-white;
   border: 1px $color-zuc-concrete solid;
   width: 100%;
-  height: ( 120 / 3.2 ) * 1vw;
+  //height: ( 120 / 3.2 ) * 1vw;
   margin: 0 0 1.7vw;
-  padding: ( 14 / 3.2 ) * 1vw;
+  padding: ( 8 / 3.2 ) * 1vw;
 
   @media #{$tablet-up} {
+    flex-direction: column;
     width: 32%;
-    height: ( 272 / 7.68 ) * 1vw;
+    //height: ( 421 / 7.68 ) * 1vw;
     margin: 0;
     padding: ( 14 / 7.68 ) * 1vw;
   
@@ -91,7 +94,7 @@
   
   @media #{$laptop-up} {
     width: 32%;
-    height: ( 527 / 19.2 ) * 1vw;
+    //height: ( 527 / 19.2 ) * 1vw;
     padding: ( 14 / 19.2 ) * 1vw;
   
     &:nth-child( n+2 ) {
@@ -103,12 +106,12 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: ( 20 / 3.2 ) * 1vw;
-    margin: 0 0 ( 26 / 3.2 ) * 1vw;
+    height: ( 132 / 3.2 ) * 1vw;
+    margin: 0 ( 8 / 3.2 ) * 1vw 0 0;
 
-    @media #{$tablet-only} {
-      height: ( 22 / 7.68 ) * 1vw;
-      margin: 0 0 ( 26 / 7.68 ) * 1vw;
+    @media #{$tablet-up} {
+      height: ( 147 / 7.68 ) * 1vw;
+      margin: 0 0 ( 10 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
@@ -125,19 +128,22 @@
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: ( 20 / 3.2 ) * 1vw;
+    margin: 0 0 ( 9 / 3.2 ) * 1vw;
+    font-size: ( 16 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      font-size: ( 22 / 7.68 ) * 1vw;
+      margin: 0 0 ( 13 / 7.68 ) * 1vw;
+      font-size: ( 24 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
+      margin: 0 0 ( 15 / 19.2 ) * 1vw;
       font-size: ( 24 / 19.2 ) * 1vw;
     }
   }
 
   .zuc-blog-item-info {
-    padding: 0 0 ( 20 / 3.2 ) * 1vw;
+    padding: 0 0 ( 8 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
       padding: 0 0 ( 12 / 7.68 ) * 1vw;
@@ -150,11 +156,29 @@
     span {
       color: $color-zuc-darkindigo;
       font-weight: 500;
+      font-size: ( 12 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        font-size: ( 14 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        font-size: ( 14 / 19.2 ) * 1vw;
+      }
     }
   }
 
   .zuc-blog-module-item-blurb {
     color: $color-zuc-darkindigo;
     font-weight: 100;
+    font-size: ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 14 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 14 / 19.2 ) * 1vw;
+    }
   }
 }
