@@ -1,8 +1,15 @@
 section.zuc-orders-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   &.--pre {
+
     .zuc-orders-pre {
       display: block;
+      width: 66.7%;
     }
 
     .zuc-orders-post {
@@ -11,12 +18,20 @@ section.zuc-orders-section {
   }
 
   &.--post {
+
     .zuc-orders-pre {
       display: none;
     }
 
     .zuc-orders-post {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      > :nth-child( 1 ) {
+        width: 66.7%;
+        align-self: center;
+      }
     }
   }
 }

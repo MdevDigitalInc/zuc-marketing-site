@@ -38,22 +38,6 @@
       padding-bottom: 1.5vw;
     }
   }
-
-  .zuc-title-container {
-    margin-bottom: 3.5vw;
-    // Override h4
-    h4 {
-      margin: 0;
-    }
- 
-    @media #{$tablet-up} {
-      margin-bottom: 2vw;
-    }
-  
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
 }
 
 .zuc-benefit-bubble {
