@@ -397,6 +397,7 @@
   .--play-icon {
     width: 25%;
     margin: 20px 0;
+    opacity: 1;
 
     @media #{$portrait} {
       width: 40%;
