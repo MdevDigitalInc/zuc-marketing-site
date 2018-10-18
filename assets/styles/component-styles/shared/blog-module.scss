@@ -46,18 +46,6 @@
     width: 24%;
   }
 
-  .zuc-blog-title-container {
-    margin-bottom: 3.5vw;
-
-    @media #{$tablet-up} {
-      margin-bottom: 2vw;
-    }
-
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
-
   img {
     width: 15vw;
 
