@@ -1,4 +1,4 @@
-// Master styles for all SPR heros.
+// Base styles for all SPR heros.
 
 .zuc-spr-hero-container {
   width: 100%;
@@ -9,27 +9,8 @@
     height: 90vw;
   }
 
-  @media #{$tablet-only} {
-    height: 75vw;
-  }
-
   .zuc-spr-hero-content {
     position: absolute;
-    // width: 80%;
-    // margin: 0 auto;
-    // top: 12%;
-    // left: 12%;
-
-    @media #{$tablet-only} {
-      width: 80%;
-      top: 8%;
-      left: 5%;
-    }
-    @media #{$phone-only} {
-      width: 80%;
-      top: 5%;
-      left: 5%;
-    }
   }
 
   .zuc-hero-left {

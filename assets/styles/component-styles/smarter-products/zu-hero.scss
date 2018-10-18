@@ -1,13 +1,7 @@
 // Zu Collections Hero.
 
 .--zu-hero-container {
-  // width: 100%;
-  // position: relative;
-  // overflow: hidden;
 
-  @media #{$phone-only} {
-    height: 90vw;
-  }
   @media #{$tablet-only} {
     height: 60vw;
   }
@@ -17,7 +11,6 @@
   width: 33%;
   height: 100%;
   left: 16%;
-  // position: absolute;
   background: rgba(67, 77, 160, .7);
   padding: 7vw 4vw;
 
@@ -31,6 +24,25 @@
     left: 0;
     padding: 10vw 10vw 0;
   }
+
+  .product-image {
+    position: absolute;
+    z-index: 10;
+    max-width: 23vw;
+    right: 15%;
+    bottom: 5vw;
+    @media #{$tablet-only} {
+      max-width: 35vw;
+      bottom: 4vw;
+      right: 24vw;
+    }
+    @media #{$phone-only} {
+      max-width: 48vw;
+      bottom: 4vw;
+      right: 25%;
+    }
+  }
+
   /* Todo:
     To conform to mock, more overrides may be necessary for
     p and h3
@@ -64,25 +76,6 @@
       font-size: 6vw;
       line-height: 6vw;
     }
-  }
-}
-
-// Namespce this
-.product-image {
-  position: absolute;
-  z-index: 10;
-  max-width: 23vw;
-  right: 15%;
-  bottom: 5vw;
-  @media #{$tablet-only} {
-    max-width: 35vw;
-    bottom: 4vw;
-    right: 24vw;
-  }
-  @media #{$phone-only} {
-    max-width: 48vw;
-    bottom: 4vw;
-    right: 25%;
   }
 }
 
