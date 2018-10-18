@@ -14,10 +14,10 @@
 .zuc-smarter-how-lt {
   width: 100%;
   margin: 0;
-  padding: 0 5vw 29.375vw;
+  padding: 0 5vw ( 90 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    padding: 0 0 13.8vw;
+    padding: 0 0 ( 56 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
