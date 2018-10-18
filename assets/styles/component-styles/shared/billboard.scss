@@ -1,0 +1,53 @@
+section.zuc-billboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.zuc-billboard-frame {
+  width: 100%;
+  background: $color-zuc-platinum;
+  box-shadow: 0 2px 68px 0 rgba(13, 13, 13, .2);
+  margin: 5vh 5vw;
+
+  @media #{$tablet-only} {
+    margin: 5vh 6vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 5vh 8vw;
+  }
+}
+
+.zuc-billboard-image-box {
+  position: relative;
+  margin: ( 28 / 3.2 ) * 1vw ( 34 / 3.2 ) * 1vw; // No Design Reference at Mobile size
+
+  @media #{$tablet-only} {
+    margin: ( 28 / 7.68 ) * 1vw ( 34 / 7.68 ) * 1vw; // No Design Reference at Tablet size
+  }
+
+  @media #{$laptop-up} {
+    margin: ( 28 / 19.2 ) * 1vw ( 34 / 19.2 ) * 1vw;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.zuc-billboard-overlay {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  left: 0;
+
+  // Style your text here
+
+  padding: 5% 0 0 5%;
+
+  h5 {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+  }
+}

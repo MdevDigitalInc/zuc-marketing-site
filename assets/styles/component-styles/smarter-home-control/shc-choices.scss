@@ -35,23 +35,6 @@ section.zuc-choice {
     padding: 2.34vw 0 0 5.35vw;
   }
 
-  .zuc-title-container {
-    // oveerride h4 for flag
-    h4 {
-      margin: 0;
-    }
-
-    margin-bottom: 3.5vw;
-
-    @media #{$tablet-only} {
-      margin-bottom: 2vw;
-    }
-
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
-  }
-
   p {
     padding-bottom: 5vw;
 

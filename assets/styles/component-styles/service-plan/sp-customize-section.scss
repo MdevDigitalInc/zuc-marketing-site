@@ -3,7 +3,7 @@
 // Variables
 
 $zuc-custom-row-height-tablet: ( 160 / 7.68 ) * 1vw;
-$zuc-custom-row-height-desktop: ( 309 / 19.8 ) * 1vw;
+$zuc-custom-row-height-desktop: ( 309 / 19.2 ) * 1vw;
 
 section.zuc-custom-plan {
   flex-direction: column;
@@ -41,7 +41,7 @@ section.zuc-custom-plan {
   }
 
   @media #{$laptop-up} {
-    margin: ( 30 / 19.8 ) * 1vw 0 ( 40 / 19.8 ) * 1vw;
+    margin: ( 30 / 19.2 ) * 1vw 0 ( 40 / 19.2 ) * 1vw;
   }
 }
 
@@ -78,7 +78,7 @@ section.zuc-custom-plan {
   }
 
   @media #{$laptop-up} {
-    margin: ( 9 / 19.8 ) * 1vw;
+    margin: ( 9 / 19.2 ) * 1vw;
     height: $zuc-custom-row-height-desktop;
   }
 
@@ -95,8 +95,8 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      padding: ( 26 / 19.8 ) * 1vw 0 0;
-      font-size: ( 16 / 19.8 ) * 1vw;
+      padding: ( 26 / 19.2 ) * 1vw 0 0;
+      font-size: ( 16 / 19.2 ) * 1vw;
     }
   }
 
@@ -114,8 +114,8 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      padding: ( 17 / 19.8 ) * 1vw 0 0;
-      font-size: ( 30 / 19.8 ) * 1vw;
+      padding: ( 17 / 19.2 ) * 1vw 0 0;
+      font-size: ( 30 / 19.2 ) * 1vw;
     }
   }
 
@@ -132,7 +132,7 @@ section.zuc-custom-plan {
 
     @media #{$laptop-up} {
       width: 50%;
-      padding: ( 9 / 19.8 ) * 1vw 0;
+      padding: ( 9 / 19.2 ) * 1vw 0;
     }
   }
 
@@ -154,7 +154,7 @@ section.zuc-custom-plan {
       }
 
       @media #{$laptop-up} {
-        font-size: ( 50 / 19.8 ) * 1vw;
+        font-size: ( 50 / 19.2 ) * 1vw;
       }
     }
     // Dollar Value
@@ -166,7 +166,7 @@ section.zuc-custom-plan {
       }
 
       @media #{$laptop-up} {
-        font-size: ( 100 / 19.8 ) * 1vw;
+        font-size: ( 100 / 19.2 ) * 1vw;
       }
     }
     // Cent Value
@@ -178,7 +178,7 @@ section.zuc-custom-plan {
       }
 
       @media #{$laptop-up} {
-        font-size: ( 26 / 19.8 ) * 1vw;
+        font-size: ( 26 / 19.2 ) * 1vw;
       }
     }
   }
@@ -195,8 +195,8 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      font-size: ( 16 / 19.8 ) * 1vw;
-      padding: 0 0 ( 30 / 19.8 ) * 1vw;
+      font-size: ( 16 / 19.2 ) * 1vw;
+      padding: 0 0 ( 30 / 19.2 ) * 1vw;
     }
   }
 
@@ -213,8 +213,8 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      font-size: ( 29 / 19.8 ) * 1vw;
-      padding: 0 0 ( 31 / 19.8 ) * 1vw;
+      font-size: ( 29 / 19.2 ) * 1vw;
+      padding: 0 0 ( 31 / 19.2 ) * 1vw;
     }
   }
 }
@@ -233,7 +233,7 @@ section.zuc-custom-plan {
   }
 
   @media #{$laptop-up} {
-    margin: ( 9 / 19.8 ) * 1vw;
+    margin: ( 9 / 19.2 ) * 1vw;
   }
 }
 
@@ -268,7 +268,7 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      max-width: ( 250 / 19.8 ) * 1vw;
+      max-width: ( 250 / 19.2 ) * 1vw;
     }
   }
 
@@ -282,7 +282,7 @@ section.zuc-custom-plan {
     }
   
     @media #{$laptop-up} {
-      font-size: ( 18 / 19.8 ) * 1vw;
+      font-size: ( 18 / 19.2 ) * 1vw;
     }
   }
 
