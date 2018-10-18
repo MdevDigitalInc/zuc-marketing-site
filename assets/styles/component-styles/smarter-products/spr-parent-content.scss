@@ -1,0 +1,99 @@
+/**********************************************************
+
+  ZU Collection Section
+
+**********************************************************/
+
+section.zuc-spr-zu {
+  position: relative;
+  width: 100%;
+}
+
+.zuc-spr-zu-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+    width: 60%;
+  }
+}
+
+.zuc-spr-zu-right {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 40%;
+  }
+}
+
+/**********************************************************
+
+  PURECARE Section
+
+**********************************************************/
+
+section.zuc-spr-pc {
+  position: relative;
+  width: 100%;
+}
+
+.zuc-spr-pc-left {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 40%;
+    padding: 0 0 0 ( 226 / 19.2 ) * 1vw;
+  }
+}
+
+.zuc-spr-pc-right {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    justify-content: flex-start;
+    width: 60%;
+  }
+}
+
+/**********************************************************
+
+  Home Kits Section
+
+**********************************************************/
+
+section.zuc-spr-hk {
+  position: relative;
+  width: 100%;
+  padding: 0 0 ( 130 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 ( 230 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0 0 ( 350 / 19.2 ) * 1vw;
+  }
+}
+
+.zuc-spr-hk-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+    width: 50%;
+  }
+}
+
+.zuc-spr-hk-right {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
