@@ -45,7 +45,7 @@
   }
 
   .zuc-blob-module--copy {
-    font-size: 16px;
+    // font-size: 16px;
     @media #{$laptop-up} {
       max-width: 400px;
     }
@@ -76,7 +76,7 @@
 .zuc-blob-module--graphic-section {
   flex: 60%;
   position: relative;
-  left: -70px;
+  // left: -70px;
 
   @media #{$tablet-only} {
     padding-top: 60px;
