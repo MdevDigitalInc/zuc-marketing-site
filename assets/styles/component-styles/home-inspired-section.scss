@@ -59,15 +59,15 @@
     //   padding-top: 2vh;
     // }
 
-    // @media #{$laptop-up} {
-    //   max-width: 600px;
-    // }
+    @media #{$laptop-up} {
+      width: 70%;
+    }
   }
 
   // todo: Better way of doing button overrides?
   .zuc-btn-secondary {
     margin-top: 30px;
-    width: 14vw;
+    width: 200px;
   }
 
   .zuc-home-inspired-section--icons {
