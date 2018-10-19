@@ -85,15 +85,15 @@
     padding-top: 80px;
   }
 
-  &.--img-wrapper {
+  .--img-wrapper {
     position: relative;
   }
 
   .phone-img {
     position: absolute;
     max-height: 460px;
-    left: 8%;
-    top: 5%;
+    left: -18%;
+    bottom: -4%;
 
     @media #{$tablet-only} {
       left: 15%;
