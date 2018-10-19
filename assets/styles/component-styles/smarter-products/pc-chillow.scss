@@ -1,6 +1,5 @@
 section.zuc-chillow {
   width: 100%;
-  overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +10,7 @@ section.zuc-chillow {
   }
 
   @media #{$laptop-up} {
-    padding: ( 230 / 19.2 ) * 1vw 0 ( 169 / 19.2 ) * 1vw;
+    padding: ( 154 / 19.2 ) * 1vw 0 ( 169 / 19.2 ) * 1vw;
   }
 }
 
@@ -53,7 +52,7 @@ section.zuc-chillow {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 520 / 7.68 ) * 1vw; // TODO
+      width: ( 520 / 7.68 ) * 1vw; // TODO 
     }
   
     @media #{$laptop-up} {

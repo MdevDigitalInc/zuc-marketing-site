@@ -1,12 +1,12 @@
 section.zuc-two-pillows {
-  padding-bottom: 14vw;
+  padding-bottom: 0;
 
   @media #{$tablet-only} {
-    padding-bottom: 16vw;
+    padding-bottom: 0;
   }
 
   @media #{$laptop-up} {
-    padding-bottom: 7.58vw;
+    padding-bottom: 0;
   }
 }
 
