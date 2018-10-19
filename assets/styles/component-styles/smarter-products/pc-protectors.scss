@@ -3,10 +3,10 @@ section.zuc-protectors {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: ( 230 / 3.2 ) * 1vw 0 ( 169 /3.2 ) * 1vw; // TODO
+  padding: ( 88 / 3.2 ) * 1vw 5vw 0;
 
   @media #{$tablet-only} {
-    padding: ( 230 / 7.68 ) * 1vw 0 ( 169 / 7.68 ) * 1vw; // TODO
+    padding: ( 122 / 7.68 ) * 1vw 7vw 0;
   }
 
   @media #{$laptop-up} {
@@ -20,13 +20,14 @@ section.zuc-protectors {
   img {
     z-index: -50;
     position: absolute;
-    width: 100%;
-    top: -( 206 / 3.2 ) * 1vw; // TODO
-    left: 0;
+    width: 450%;
+    top: ( 40 / 3.2 ) * 1vw; // TODO
+    right: -10%;
 
-    @media #{$tablet-only} { // TODO
-      width: 100%;
-      top: -( 206 / 7.68 ) * 1vw;
+    @media #{$tablet-only} {
+      width: 200%;
+      top: 35vw;
+      left: -99%;
     }
   
     @media #{$laptop-up} {
@@ -50,10 +51,10 @@ section.zuc-protectors {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 0 5vw; // TODO
+  padding: ( 16 / 3.2 ) * 1vw ( 11 / 3.2 ) * 1vw 0;
 
   @media #{$tablet-only} {
-    padding: 0 7vw; // TODO
+    padding: ( 53 / 7.68 ) * 1vw ( 55 / 7.68 ) * 1vw 0;
   }
 
   @media #{$laptop-up} {
@@ -66,10 +67,10 @@ section.zuc-protectors {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: ( 30 / 3.2 ) * 1vw;  // TODO
+    font-size: ( 15 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      font-size: ( 30 / 7.68 ) * 1vw;  // TODO
+      font-size: ( 30 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
@@ -84,10 +85,10 @@ section.zuc-protectors {
 
 .zuc-protectors-right {
   width: 100%;
-  padding: ( 25 / 3.2 ) * 1vw 5vw 0; // TODO
+  padding: ( 40 / 3.2 ) * 1vw ( 26 / 3.2 ) * 1vw ( 38 / 3.2 ) * 1vw ;
 
   @media #{$tablet-only} {
-    padding: ( 15 / 7.68 ) * 1vw 7vw 0; // TODO
+    padding: ( 39 / 7.68 ) * 1vw ( 36 / 7.68 ) * 1vw ( 49 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
@@ -96,11 +97,7 @@ section.zuc-protectors {
   }
 
   p {
-    width: 100%;  // TODO
-
-    @media #{$tablet-only} {
-      width: ( 520 / 7.68 ) * 1vw; // TODO 
-    }
+    width: 100%;
   
     @media #{$laptop-up} {
       width: ( 438 / 19.2 ) * 1vw;

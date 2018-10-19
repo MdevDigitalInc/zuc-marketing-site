@@ -38,7 +38,7 @@ section.zuc-two-pillows {
 
       @media #{$tablet-only} {
         width: 42vw;
-        padding: 0 0 16vw;
+        margin: 0;
       }
 
       @media #{$laptop-up} {

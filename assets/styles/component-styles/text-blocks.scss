@@ -103,14 +103,13 @@
       border-bottom: 2px solid $color-zuc-indigo;
       padding: 0 0 1px;
       font-size: ( 14 / 3.2 ) * 1vw;
+      line-height: 1.6;
 
       @media #{$tablet-only} {
-        padding: 0 0 1px;
         font-size: ( 14 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
-        padding: 0 0 1px;
         font-size: ( 14 / 19.2 ) * 1vw;
       }
 

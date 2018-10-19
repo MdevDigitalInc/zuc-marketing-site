@@ -3,10 +3,10 @@ section.zuc-chillow {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: ( 230 / 3.2 ) * 1vw 0 ( 169 /3.2 ) * 1vw; // TODO
+  padding: ( 179 / 3.2 ) * 1vw 0 ( 169 /3.2 ) * 1vw; // TODO
 
   @media #{$tablet-only} {
-    padding: ( 230 / 7.68 ) * 1vw 0 ( 169 / 7.68 ) * 1vw; // TODO
+    padding: ( 221 / 7.68 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
@@ -37,10 +37,10 @@ section.zuc-chillow {
 
 .zuc-chillow-right {
   width: 100%;
-  padding: ( 25 / 3.2 ) * 1vw 5vw 0; // TODO
+  padding: ( 31 / 3.2 ) * 1vw 5vw 0;
 
   @media #{$tablet-only} {
-    padding: ( 15 / 7.68 ) * 1vw 7vw 0; // TODO
+    padding: ( 40 / 7.68 ) * 1vw 7vw 0;
   }
 
   @media #{$laptop-up} {
@@ -50,10 +50,6 @@ section.zuc-chillow {
 
   p {
     width: 100%;
-
-    @media #{$tablet-only} {
-      width: ( 520 / 7.68 ) * 1vw; // TODO 
-    }
   
     @media #{$laptop-up} {
       width: ( 464 / 19.2 ) * 1vw;
