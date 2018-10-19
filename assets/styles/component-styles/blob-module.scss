@@ -85,15 +85,15 @@
     padding-top: 80px;
   }
 
-  .--img-wrapper {
+  &.--img-wrapper {
     position: relative;
   }
 
   .phone-img {
     position: absolute;
-    max-height: 460px;
-    left: -18%;
-    bottom: -4%;
+    max-height: 400px;
+    left: 8%;
+    bottom: 5%;
 
     @media #{$tablet-only} {
       left: 15%;
@@ -110,12 +110,13 @@
     max-width: 500px;
     max-height: 400px;
 
-    z-index: -1;
-    top: -25px;
-    left: -60px;
-    position: relative;
-    max-width: 510px;
-    max-height: 430px;
+    // WIP
+    // z-index: -1;
+    // top: -25px;
+    // left: -60px;
+    // position: relative;
+    // max-width: 510px;
+    // max-height: 430px;
 
     @media #{$tablet-only} {
       max-width: 100%;
@@ -133,8 +134,7 @@
     display: inline;
     position: absolute;
     top: 85px;
-    left: 10px;
-    max-width: 708px;
+    max-width: 700px;
 
     @media #{$tablet-only} {
       top: 95px;
@@ -153,11 +153,11 @@
 
 .zuc-blob-module--app-icons {
   justify-content: flex-end;
-  // margin-top: 5px;
-  // margin-right: -10px;
+  margin-top: 5px;
+  margin-right: -10px;
   position: relative;
-  right: 52px;
-  top: -15px;
+  // right: 52px;
+  // top: -15px;
 
   .badge {
     width: 140px;
