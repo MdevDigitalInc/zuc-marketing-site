@@ -1,23 +1,19 @@
+- var title = 'convenient'
+- var subheading = 'Furniture will wear out.'
+- var text = 'A cost-effective repair and replacement Service plan for your home furnishings will protect the family budget and remove the stress of accidental stains and damage.'
+- var button = 'GET STARTED today'
 section.zuc-whats-covered.flex
-  .zuc-whats-covered-text
-    h2.u-font-serif.u-zuc-indigo
-      |What's Covered?
-    ul
-      li
-        |Placeholder
-      li
-        |Placeholder
-      li
-        |Placeholder
-      li
-        |Placeholder
-      li
-        |Placeholder
-      li
-        |Placeholder
-      li
-        |Placeholder
-    a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
-      |BUY NOW
+  .zuc-blob-module--text-section.flex.flex-column
+    h4.zuc-blob-module--subheading.u-uppercase
+      |#{subheading}
+    h2.zuc-blob-module--heading.u-font-serif
+      |#{title}
+    .zuc-blob-module--copy
+      |#{text}
+    .zuc-blob-module--btn
+      a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+        |#{button}
+    .zuc-blob-module--grey-slash
+      img.grey-slash(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='TODO')
   .zuc-whats-covered-image
-    img(src="../../assets/images/shared/happy-family-livingroom.png", alt="todo")
+    img(src="../../assets/images/service-plans/servicewoman-chair.png", alt="todo")
