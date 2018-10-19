@@ -1,6 +1,5 @@
 section.zuc-protectors {
   width: 100%;
-  overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -15,11 +14,23 @@ section.zuc-protectors {
   }
 }
 
+.zuc-protectors-graphics {
+  width: 100%;
+  
+  img {
+    z-index: -50;
+    position: absolute;
+    top: -( 206 / 19.2 ) * 1vw;
+    left: 0;
+    width: 100%;
+  }
+}
 
 .zuc-protectors-box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background: $color-pure-white;
   box-shadow: .7px 1.9px 68px 0 rgba(13, 13, 13, .2);
 }
 
