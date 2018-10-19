@@ -1,5 +1,30 @@
 /*************************************************
 
+  HERO STYLES
+
+*************************************************/
+
+.--hk-hero-bkg-img {
+  background-image: url('../../assets/images/shared/happy-family-livingroom.png');
+  height: 100%;
+  z-index: -1;
+  padding-top: 50%;
+  background-size: 100%;
+  background-position: cover;
+  
+  @media #{$tablet-only} {
+    background-size: 170%;
+    background-position: 100% 30%;
+  }
+
+  @media #{$phone-only} {
+    background-size: 260%;
+    background-position: 90% 40%;
+  }
+}
+
+/*************************************************
+
   INK BLOB STYLES
 
 *************************************************/
