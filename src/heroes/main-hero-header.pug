@@ -1,6 +1,6 @@
 section.zuc-hero-header-mask
   // Media container
-  .zuc-hero-media-container
+  .zuc-hero-media-container(aria-describedby="header-caption")
     // Video or Image ( Image can also be added as BKG to above container )
     video(
       class="zuc-hero-video"
@@ -23,3 +23,5 @@ section.zuc-hero-header-mask
 
       a(class="zuc-btn zuc-btn-secondary" href="#" title="todo")
         |Watch Video
+  .u-screenreader(id="header-caption")
+    |BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO

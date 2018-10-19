@@ -18,6 +18,18 @@
     padding: 0 24vw 5.45vw;
   }
 
+  h2 {
+    width: ( 280 / 3.2 ) * 1vw;
+    
+    @media #{$tablet-only} {
+      width: ( 568 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: ( 662 / 19.2 ) * 1vw;
+    }
+  }
+
   .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     padding: 0 0 18vw;

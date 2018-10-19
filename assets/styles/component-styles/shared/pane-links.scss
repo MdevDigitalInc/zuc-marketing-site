@@ -15,6 +15,7 @@ section.zuc-pane-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,26 +35,31 @@ section.zuc-pane-links {
 
   /* Styles for pane titles */
   .zuc-pane-title {
-    text-transform: uppercase;
+    position: relative;
+    right: -2px;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    color: $color-zuc-darkindigo;
+    font-weight: 500;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     transform-origin: 50%;
-    color: $color-zuc-darkindigo;
+    box-shadow: .7px 1.9px 68px 0 rgba(12, 12, 12, .2);
     height: 100%;
     padding: 0 5vw;
     
     @media #{$tablet-up} {
+      justify-content: flex-start;
       height: 65%;
       padding: 3vw;
-      justify-content: flex-start;
     }
-  
+
     @media #{$laptop-up} {
       height: 50%;
-      padding: 1.55vw;
+      padding: 1vw (31.76 / 19.2) * 1vw  1vw 1.55vw;
     }
 
     &.--lilac {
@@ -74,6 +80,20 @@ section.zuc-pane-links {
 
     &.--indigo {
       background: $color-zuc-indigo;
+      color: $color-pure-white;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: ( 12 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        font-size: ( 16 / 7.68 ) * 1vw; 
+      }
+
+      @media #{$laptop-up} {
+        font-size: ( 18 / 19.2 ) * 1vw;
+      }
     }
   }
 
@@ -96,10 +116,36 @@ section.zuc-pane-links {
 
   &.--sleepy {
     background-image: url('../../assets/images/shared/woman-sleeper-stretching.png');
+    background-position: 90% 0;
   }
 
   &.--smartphone {
     background-image: url('../../assets/images/shared/woman-smartphone.png');
+    background-position: 80% 0;
+  }
+
+  &.--dishes {
+    background-image: url('../../assets/images/shared/girl-doing-dishes.png');
+  }
+
+  &.--toolman {
+    background-image: url('../../assets/images/shared/man-tool-bag.png');
+    background-position: 93% 0;
+  }
+
+  &.--happy {
+    background-image: url('../../assets/images/shared/happy-family-livingroom.png');
+    background-position: 40% 0;
+  }
+
+  &.--laundry {
+    background-image: url('../../assets/images/shared/women-laundry-machine.png');
+    background-position: 40% 0;
+  }
+
+  &.--momboy {
+    background-image: url('../../assets/images/shared/mom-boy-kitchen.png');
+    background-position: 98% 0;
   }
   
   a {
@@ -134,6 +180,19 @@ section.zuc-pane-links {
 
     @media #{$laptop-up} {
       margin-bottom: 1.25vw;
+    }
+  }
+
+  h5 {
+    font-size: ( 30 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      font-size: ( 50 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 50 / 19.2 ) * 1vw;
+      width: ( 380 / 19.2 ) * 1vw;
     }
   }
 

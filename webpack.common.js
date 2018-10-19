@@ -176,8 +176,8 @@ module.exports = {
       filename: 'form-contact-us.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/form-request-service.pug',
-      filename: 'form-request-service.html'
+      template: './src/templates/form-service-request.pug',
+      filename: 'form-service-request.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/faq.pug',
@@ -200,12 +200,12 @@ module.exports = {
       filename: 'smarter-living-membership-benefits.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/sp-parent.pug',
-      filename: 'service-plans.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/templates/spr-parent.pug',
       filename: 'smarter-home-products.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/sp-parent.pug',
+      filename: 'service-plans.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spkids-appl.pug',

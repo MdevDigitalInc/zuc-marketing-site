@@ -3,7 +3,10 @@
     'Shipping & Delivery',
     'Shipping Carriers',
     'Processing Time',
-    'Order Inquiries',
+    'Order Inquiries'
+    ]
+-
+  var faqTitles2 = [
     'Return/Refund Policy',
     'Out of Stock Items',
     'Damaged in Shipping',
@@ -20,28 +23,21 @@
     'If you place an order that contains an out-of-stock item, it is our policy to ship the in-stock items immediately, and then ship the back ordered items as soon as they arrive in our warehouse. Our customer Service team will notify you via email immediately if this occurs.',
     'We must be notified within 14 days if your package arrives damaged in shipping. Please retain original shipping box. Contact orders@zucora.com to process a pick-up of your damaged item. Please package returns with care! Return items in a sturdy box with plenty of packaging. Please note: Zucora Home does not reimburse any shipping costs for returns or exchanges.'
     ]
+
 section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
   h1
     |Frequently Asked Questions
   .zuc-hotlinks-container
     .zuc-hotlink-box-l.flex.flex-column
-      a(href='#')
-        |#{faqTitles[0]}
-      a(href='#')
-        |#{faqTitles[1]}
-      a(href='#')
-        |#{faqTitles[2]}
-      a(href='#')
-        |#{faqTitles[3]}
+      each val in faqTitles.length ? faqTitles : ['There are no values']
+        a(href='#' title="TODO")
+          |#{val}
+
     .zuc-hotlink-box-r.flex.flex-column
-      a(href='#')
-        |#{faqTitles[4]}
-      a(href='#')
-        |#{faqTitles[5]}
-      a(href='#')
-        |#{faqTitles[6]}
-      a(href='#')
-        |#{faqTitles[7]}
+      each val in faqTitles2.length ? faqTitles2 : ['There are no values']
+        a(href='#' title="TODO")
+          |#{val}
+
   .zuc-topic-parent-container.flex.flex-column.flex-vert-start
     .zuc-faq-topic-container
       h2
@@ -75,12 +71,12 @@ section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
         |#{faqAnswers[4]}
     .zuc-faq-topic-container
       h2
-        |#{faqTitles[5]}
+        |#{faqTitles2[0]}
       p
         |#{faqAnswers[5]}
     .zuc-faq-topic-container
       h2
-        |#{faqTitles[6]}
+        |#{faqTitles2[1]}
       p
         |#{faqAnswers[6]}
       h4.u-uppercase

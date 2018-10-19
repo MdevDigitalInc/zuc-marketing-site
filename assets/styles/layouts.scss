@@ -88,60 +88,6 @@
 }
 
 /*
-  Consistent Title Flags
-  Concept:
-
-  .zuc-blog-title-container.flex  < -- Flex so that the h4 and flag are boxes in a row beside each other
-    h4  < -- override margin: 0; on the heading so as to not misalign the flag, apply margin to container instead
-      |BLOG
-    .zuc-title-flag  < -- div with align-items: center; with responsive margin-left and width
-      .--red  < -- empty div that fills width of parent and is a coloured border to make the flag
-
-  snippet for copya pasta:
-
-  .zuc-title-container.flex
-    h4
-      |soisoisoi
-    .zuc-title-flag
-      .--green
-
-  AW - LU: 20181001
-*/
-
-.zuc-title-flag {
-  display: flex;
-  align-items: center;
-  margin-left: 3vw;
-  width: 15vw;
-
-  @media #{$tablet-up} {
-    width: 7vw;
-  }
-
-  @media #{$laptop-up} {
-    margin-left: .8vw;
-    width: 3vw;
-  }
-
-  div {
-    width: 100%;
-    border: 3px solid $color-zuc-lightindigo;
-  }
-
-  .--blue {
-    border-color: $color-zuc-lilac;
-  }
-
-  .--red {
-    border-color: $color-zuc-salmon;
-  }
-
-  .--green {
-    border-color: $color-zuc-mint;
-  }
-}
-
-/*
   Global Colour Overlays
 
   ex.
@@ -167,10 +113,27 @@
     transition: .4s;
   }
 
+  // Add this flag to start from no overlay - AW
+  &.--fadein {
+    &:after {
+      opacity: 0;
+    }
+  }
+
   &:hover {
     &:after {
       opacity: .8;
       cursor: pointer;
+    }
+  }
+
+  // Add this flag to NOT have animated hover
+  &.--o-static {
+    &:hover {
+      &:after {
+        opacity: .7;
+        cursor: none;
+      }
     }
   }
 

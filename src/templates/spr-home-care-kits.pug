@@ -1,6 +1,17 @@
 extends _layout
 
 block content
-  //- Content Here
-  h1
-    |Home Care Kits TODO
+  //- HERO
+  include ../heroes/hk-hero.pug
+
+  //- HERO BUMPER (3 grid)
+  //- Add me
+
+  //- Ink Section
+  include ../components/smarter-products/hk-ink.pug
+
+  //- Leather Kit Section
+  include ../components/smarter-products/hk-leather.pug
+
+  //- Pre-Footer Panelinks
+  include ../components/smarter-products/hk-pane-links.pug

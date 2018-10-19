@@ -13,7 +13,9 @@ section.zuc-hero-slider
           |Learn More
           i.fas.fa-arrow-right
       // - Slide Image
-      .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
+      .zuc-slide-media.u-soft-shadow(aria-describedby="slide-1-dsc" style="background-image: url('https://via.placeholder.com/900x700');")
+        .u-screenreader(id="slide-1-dsc")
+          |DESCRIBE SLIDE IMAGE HERE BRIEFLY FOR THE VISUALLY IMPAIRED - TODO
 
     // First Slide
     .zuc-slide.flex.flex-vert-center.flex-hor-end(data-slide="2")
@@ -28,7 +30,9 @@ section.zuc-hero-slider
           |Learn More
           i.fas.fa-arrow-right
       // - Slide Image
-      .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
+      .zuc-slide-media.u-soft-shadow(aria-describedby="slide-2-dsc" style="background-image: url('https://via.placeholder.com/900x700');")
+        .u-screenreader(id="slide-2-dsc")
+          |DESCRIBE SLIDE IMAGE HERE BRIEFLY FOR THE VISUALLY IMPAIRED - TODO
 
     // First Slide
     .zuc-slide.flex.flex-vert-center.flex-hor-end(data-slide="3")
@@ -43,7 +47,9 @@ section.zuc-hero-slider
           |Learn More
           i.fas.fa-arrow-right
       // - Slide Image
-      .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
+      .zuc-slide-media.u-soft-shadow(aria-describedby="slide-3-dsc" style="background-image: url('https://via.placeholder.com/900x700');")
+        .u-screenreader(id="slide-3-dsc")
+          |DESCRIBE SLIDE IMAGE HERE BRIEFLY FOR THE VISUALLY IMPAIRED - TODO
 
     // First Slide
     .zuc-slide.flex.flex-vert-center.flex-hor-end(data-slide="4")
@@ -58,14 +64,16 @@ section.zuc-hero-slider
           |Learn More
           i.fas.fa-arrow-right
       // - Slide Image
-      .zuc-slide-media.u-soft-shadow(style="background-image: url('https://via.placeholder.com/900x700');")
+      .zuc-slide-media.u-soft-shadow(aria-describedby="slide-4-dsc" style="background-image: url('https://via.placeholder.com/900x700');")
+        .u-screenreader(id="slide-4-dsc")
+          |DESCRIBE SLIDE IMAGE HERE BRIEFLY FOR THE VISUALLY IMPAIRED - TODO
 
   // Slideshow Controlls
-  .zuc-slider-controls.flex.flex-hor-center.flex-vert-center
-    div.zuc-slide-selector.--active(data-move-slide="1")
-    div.zuc-slide-selector(data-move-slide="2")
-    div.zuc-slide-selector(data-move-slide="3")
-    div.zuc-slide-selector(data-move-slide="4")
+  .zuc-slider-controls.flex.flex-hor-center.flex-vert-center(aria-role="menu")
+    div.zuc-slide-selector.--active(data-move-slide="1" aria-role="menuitem" aria-label="Go to slide 1")
+    div.zuc-slide-selector(data-move-slide="2" aria-role="menuitem" aria-label="Go to slide 2")
+    div.zuc-slide-selector(data-move-slide="3" aria-role="menuitem" aria-label="Go to slide 3")
+    div.zuc-slide-selector(data-move-slide="4" aria-role="menuitem" aria-label="Go to slide 4")
 
   // Backround element
   .zuc-slider-bkg

@@ -1,4 +1,4 @@
-section.zuc-orders-section.zuc-section-container.--sides.--hstyle.--pre
+section.zuc-orders-section.zuc-section-container.--hstyle.--pre
   h1
     |Orders &amp; Returns
   .zuc-orders-pre
@@ -12,19 +12,25 @@ section.zuc-orders-section.zuc-section-container.--sides.--hstyle.--pre
             .zuc-input-name
               strong
                 |Order ID
-            input(type="text" data-required name="order-id" placeholder="Order ID")
+            label.u-screenreader(for="field-orderid")
+              |Order Id Number
+            input(type="text" data-required name="order-id" placeholder="Order ID" id="field-orderid")
           .zuc-form-group.zuc-form-50
             .zuc-input-name
               strong
                 |Billing Last Name
-            input(type="text" data-required name="billing-lastname" placeholder="Billing Last Name")
+            label.u-screenreader(for="field-lastname")
+              |Billing Last Name
+            input(type="text" data-required name="billing-lastname" placeholder="Billing Last Name" id="field-lastname")
         .zuc-form-row
           .zuc-form-group.zuc-form-50
             .zuc-input-name
               strong
                 |Find Order By
             .zuc-select-container
-              select(required name="find-order" placeholder="Drop Down Here")
+              label.u-screenreader(for="field-select")
+                |Find Order By
+              select(required name="find-order" placeholder="Drop Down Here" id="field-select")
                 option(value="" disabled selected)
                   |Drop Down Here
                 option(value="byemail")
@@ -35,13 +41,17 @@ section.zuc-orders-section.zuc-section-container.--sides.--hstyle.--pre
             .zuc-input-name
               strong
                 |Email Address
-            input(type="email" data-required name="email" placeholder="Email Address")
+            label.u-screenreader(for="field-email")
+              |Email Address
+            input(type="email" data-required name="email" placeholder="Email Address" id="field-email")
         .zuc-form-row
           .zuc-form-group
             .zuc-input-name
               strong
                 |Order Information
-            input(type="text" data-required name="orderinfo" placeholder="Order Information")
+            label.u-screenreader(for="field-orderinfo")
+              |Order Information
+            input(type="text" data-required name="orderinfo" placeholder="Order Information" id="field-orderinfo")
         .zuc-form-action
           button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
             strong
@@ -50,4 +60,4 @@ section.zuc-orders-section.zuc-section-container.--sides.--hstyle.--pre
     .zuc-head-blurb
       p
         |Thank You! Your form was successfully sent... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nisi sed neque egestas, quis sagittis ligula laoreet. Mauris porta arcu at quam vulputate vestibulum.
-include orders-panelinks.pug
+    include orders-panelinks.pug

@@ -1,0 +1,124 @@
+section.zuc-protectors {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: ( 88 / 3.2 ) * 1vw 5vw 0;
+
+  @media #{$tablet-only} {
+    padding: ( 122 / 7.68 ) * 1vw 7vw 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: ( 162 / 19.2 ) * 1vw 16vw ( 76 / 19.2 ) * 1vw;
+  }
+}
+
+.zuc-protectors-graphics {
+  width: 100%;
+  
+  img {
+    z-index: -50;
+    position: absolute;
+    width: 450%;
+    top: ( 40 / 3.2 ) * 1vw;  
+    right: -10%;
+
+    @media #{$tablet-only} {
+      width: 200%;
+      top: 35vw;
+      left: -99%;
+      right: 0;
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+      top: -( 206 / 19.2 ) * 1vw;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.zuc-protectors-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: $color-pure-white;
+  box-shadow: .7px 1.9px 68px 0 rgba(13, 13, 13, .2);
+}
+
+.zuc-protectors-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: ( 16 / 3.2 ) * 1vw ( 11 / 3.2 ) * 1vw 0;
+
+  @media #{$tablet-only} {
+    padding: ( 53 / 7.68 ) * 1vw ( 55 / 7.68 ) * 1vw 0;
+  }
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+    width: 60%;
+    padding: ( 65 / 19.2 ) * 1vw ( 41 / 19.2 ) * 1vw ( 58 / 19.2 ) * 1vw;
+  }
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    font-size: ( 15 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 30 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 30 / 19.2 ) * 1vw;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.zuc-protectors-right {
+  width: 100%;
+  padding: ( 40 / 3.2 ) * 1vw ( 26 / 3.2 ) * 1vw ( 38 / 3.2 ) * 1vw ;
+
+  @media #{$tablet-only} {
+    padding: ( 39 / 7.68 ) * 1vw ( 36 / 7.68 ) * 1vw ( 49 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 40%;
+    padding: ( 85 / 19.2 ) * 1vw 0 0;
+  }
+
+  p {
+    width: 100%;
+  
+    @media #{$laptop-up} {
+      width: ( 438 / 19.2 ) * 1vw;
+    }
+  }
+
+  .zuc-title-container {
+    position: relative;
+
+    @media #{$phone-only} {
+
+      align-items: flex-end;
+
+      .zuc-title-flag {
+        position: relative;
+        left: -40%;
+        height: 50%;
+      }
+    }
+  }
+}

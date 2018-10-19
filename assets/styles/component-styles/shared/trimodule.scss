@@ -1,0 +1,449 @@
+/*
+  Trimodule Section - AW
+    20181015
+*/
+
+/******
+
+  Section Layout
+
+******/
+
+section.zuc-tri-module {
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  padding: ( 157 / 3.2 ) * 1vw 0 0;
+
+  @media #{$tablet-only} {
+    padding: ( 176 / 7.68 ) * 1vw 0 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: ( 140 / 19.2 ) * 1vw 0 0;
+  }
+  
+  .zuc-tri-module-wave {
+    z-index: -700;
+    position: absolute;
+    top: 15vw;
+    width: 300%;
+    left: -170%;
+
+    @media #{$tablet-up} {
+      top: 0;
+      width: 200%;
+      left: -30vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.zuc-tri-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 33.3%;
+  }
+
+  h2 {
+    font-size: 6.875vw;
+
+    @media #{$tablet-up} {
+      font-size: 3.9vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: 1.51vw;
+    }
+  }
+
+  h3 {
+    font-size: 9.375vw;
+
+    @media #{$tablet-up} {
+      font-size: 5.47vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: 2.1vw;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+}
+
+/******
+
+  REVIEW BOX
+
+******/
+
+.--review-box {
+  align-items: center;
+  justify-content: center;
+  background-color: $color-zuc-platinum;
+  padding: 0 5vw 20vw;
+
+  @media #{$tablet-only} {
+    padding: 0 16vw 11.7vw;
+  }
+
+  @media #{$laptop-up} {
+    background-color: inherit;
+    padding: 3.4vw;
+  }
+}
+
+.zuc-quote-badge {
+  border-radius: 50%;
+  background-color: $white;
+  height: 21.25vw;
+  width: 21.25vw;
+  margin-bottom: 7.5vw;
+
+  @media #{$tablet-only} {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  @media #{$laptop-up} {
+    margin-bottom: 1.5vw;
+    height: 3.84vw;
+    width: 3.84vw;
+  }
+
+  // This is to get around Chrome rendering
+  img {
+    max-width: 100%;
+  }
+}
+
+.zuc-review-text {
+  text-align: center;
+  padding: 0 0 5vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 3vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 0 0 1.3vw;
+  }
+}
+
+.zuc-review-stars {
+
+  // This is to get around Chrome rendering
+  max-height: 27px;
+
+  .zuc-star {
+    width: 27px;
+
+    &:not( :last-child ) {
+      margin-right: 6px;
+    }
+  }
+}
+
+.zuc-review-author {
+  padding: 8vw 0 13vw;
+
+  @media #{$tablet-only} {
+    padding: 2vw 0 4vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 1.1vw 0 2.3vw;
+  }
+}
+
+.zuc-review-button {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $color-pure-white;
+  top: 82vw;
+
+  @media #{$tablet-up} {
+    width: 35px;
+    height: 35px;
+    top: 40vw;
+  }
+  
+  @media #{$laptop-up} {
+    top: 22vw;
+  }
+
+  &.--left {
+    left: 5vw;
+
+    @media #{$tablet-only} {
+      left: 16vw;
+    }
+    
+    @media #{$laptop-up} {
+      left: 3.08vw;
+    }
+  }
+
+  &.--right {
+    right: 5vw;
+
+    @media #{$tablet-only} {
+      right: 16vw;
+    }
+    
+    @media #{$laptop-up} {
+      right: 3.08vw;
+    }
+  }
+}
+
+/******
+
+  BLOG BOX
+
+******/
+
+.--blog-box {
+  align-items: flex-start;
+  background-color: $color-zuc-platinum;
+  padding: 0 5vw;
+
+  @media #{$tablet-only} {
+    padding: 0 16.5vw;
+  }
+
+  @media #{$laptop-up} {
+    background-color: inherit;
+    padding: 3.4vw;
+  }
+}
+
+.zuc-tri-blog-titles {
+  padding: 0;
+
+  @media #{$tablet-only} {
+    padding: 0 0 0 3vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: 0 0 0 1vw;
+  }
+}
+
+.zuc-blog-item {
+  position: relative;
+  display: flex;
+  border: solid 1px $color-zuc-concrete;
+  background: $color-pure-white;
+  padding: 2vw;
+  margin: 0 0 5vw;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    padding: 1.6vw;
+    margin: 0 0 1.8vw;
+  }
+  
+  @media #{$laptop-up} {
+    padding: .6vw;
+    margin: 0 0 .8vw;
+    width: 26vw;
+  }
+  
+  .zuc-blog-item-left {
+    background: url('../../assets/images/shared/air-conditioning-repair.png');
+    background-position: center;
+    background-size: cover;
+    width: 32.5vw;
+    height: 32.5vw;
+
+    @media #{$tablet-only} {
+      width: 24.22vw;
+      height: 24.22vw;
+    }
+    
+    @media #{$laptop-up} {
+      width: 9.4vw;
+      height: 9.4vw;
+    }
+  }
+
+  .zuc-blog-item-right {
+    width: 65%;
+    padding-left: 4vw;
+
+    @media #{$tablet-only} {
+      padding-left: 2.4vw;
+    }
+    
+    @media #{$laptop-up} {
+      padding-left: .81vw;
+    }
+
+    .zuc-blog-item-info {
+      color: $color-zuc-darkindigo;
+      font-weight: 500;
+      font-size: 2.5vw;
+
+      @media #{$tablet-only} {
+        font-size: 1.8vw;
+      }
+      
+      @media #{$laptop-up} {
+        font-size: .707vw;
+      }
+    }
+
+    h2 {
+      color: $color-zuc-indigo;
+      font-family: $main-font-serif;
+      margin-bottom: 1.2vw;
+      font-size: 4vw;
+
+      @media #{$tablet-only} {
+        margin-bottom: 1vw;
+        font-size: 3.125vw;
+      }
+      
+      @media #{$laptop-up} {
+        margin-bottom: .76vw;
+        font-size: 1.21vw;
+      }
+    }
+
+    p {
+      color: $color-zuc-darkindigo;
+      font-weight: 100;
+      margin-top: 1.2vw;
+      font-size: 2.5vw;
+
+      @media #{$tablet-only} {
+        margin-top: 1vw;
+        font-size: 1.8vw;
+      }
+      
+      @media #{$laptop-up} {
+        margin-top: .66vw;
+        font-size: .707vw;
+      }
+    }
+  }
+}
+
+/******
+
+  WHY BOX
+
+******/
+
+.--why-box {
+  align-items: center;
+  justify-content: center;
+  background-color: $color-zuc-platinum;
+  padding: 16.25vw 5vw ( 73 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    padding: 11vw 5vw ( 120 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    background-color: inherit;
+    padding: 4vw 0;
+  }
+}
+
+.zuc-why-box-icon-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 13vw;
+
+  @media #{$tablet-only} {
+    padding-bottom: 6.9vw;
+  }
+
+  @media #{$laptop-up} {
+    padding-bottom: 2vw;
+  }
+
+  .zuc-why-box-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      color: $color-zuc-darkindigo;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.5;
+      padding-top: 4vw;
+
+      @media #{$tablet-only} {
+        padding-top: 1.4vw;
+      }
+  
+      @media #{$laptop-up} {
+        padding-top: .76vw;
+      }
+    }
+
+    &:nth-child( n+2 ) {
+      margin-left: 5vw;
+
+      @media #{$tablet-only} {
+        margin-left: 6vw;
+      }
+  
+      @media #{$laptop-up} {
+        margin-left: 2.22vw;
+      }
+    }
+  }
+
+  .zuc-why-box-icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: .8vw;
+    height: 23vw;
+    width: 19.375vw;
+
+    img {
+      max-height: 23vw;
+      max-width: 19.375vw;
+    }
+
+    @media #{$tablet-only} {
+      height: 13vw;
+      width: 10vw;
+      
+      img {
+        max-height: 13vw;
+        max-width: 10vw;
+      }
+    }
+
+    @media #{$laptop-up} {
+      height: 6.3vw;
+      width: 5.45vw;
+
+      img {
+        max-height: 6.3vw;
+        max-width: 5.45vw;
+      }
+    }
+  }
+}

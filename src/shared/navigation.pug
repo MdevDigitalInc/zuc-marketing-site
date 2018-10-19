@@ -13,10 +13,20 @@
       // Nav Dropdown
       include ./nav-dropdown.pug
 
+    // Mobile Nav Cart
+    // TODO - Needs logic for action - LimeTAC
+    .zuc-user-cart
+      a(href="#" title="User Cart" class="zuc-user-cart flex flex-vert-center")
+        i.fas.fa-shopping-cart
+        span(class="zuc-cart-count")
+          // Interpolate Cart Count from Limetac
+          span
+            |#{cartCount}
+
     // Mobile Nav Button
     div(class='zuc-menu')
       div(class='zuc-menu-open' role='button' data-open-menu aria-label='Mobile Navigation')
-        span(class='hidden' aria-hidden='true' aria-label='Clic to open mobile menu')
+        span(class='hidden' aria-hidden='true' aria-label='Open mobile menu')
           |Mobile Menu
 
   // Mobile Navigation

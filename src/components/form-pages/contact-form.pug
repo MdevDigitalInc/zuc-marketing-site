@@ -21,22 +21,30 @@ section.zuc-section-container
               .zuc-input-name.zuc-input-name-no-margin
                 strong
                   |FIRST &amp; LAST NAME
-              input(type="text" data-required name="fullname" placeholder="John Smith")
+              label.u-screenreader(for="field-name")
+                |First &amp; Last Name
+              input(type="text" data-required name="fullname" placeholder="John Smith" id="field-name")
             .zuc-form-group
               .zuc-input-name
                 strong
                   |Email Address
-              input(type="email" data-required name="email" placeholder="example@email.com")
+              label.u-screenreader(for="field-email")
+                |Email Address
+              input(type="email" data-required name="email" placeholder="example@email.com" id="field-email")
             .zuc-form-group
               .zuc-input-name
                 strong
                   |Phone Number
-              input(type="tel" data-required name="phone" placeholder="000.000.0000")
+              label.u-screenreader(for="field-phone")
+                |Phone Number
+              input(type="tel" data-required name="phone" placeholder="000.000.0000" id="field-phone")
             .zuc-form-group
               .zuc-input-name
                 strong
                   |Message
-              input(type="text" data-required name="message" placeholder="Your Message Here")
+              label.u-screenreader(for="field-message")
+                |Message
+              input(type="text" data-required name="message" placeholder="Your Message Here" id="field-message")
             .zuc-form-action
               button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
                 strong
