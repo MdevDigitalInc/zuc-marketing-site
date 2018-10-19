@@ -21,7 +21,7 @@ section.zuc-protectors {
     z-index: -50;
     position: absolute;
     width: 450%;
-    top: ( 40 / 3.2 ) * 1vw;
+    top: ( 40 / 3.2 ) * 1vw;  
     right: -10%;
 
     @media #{$tablet-only} {
@@ -104,6 +104,21 @@ section.zuc-protectors {
   
     @media #{$laptop-up} {
       width: ( 438 / 19.2 ) * 1vw;
+    }
+  }
+
+  .zuc-title-container {
+    position: relative;
+
+    @media #{$phone-only} {
+
+      align-items: flex-end;
+
+      .zuc-title-flag {
+        position: relative;
+        left: -40%;
+        height: 50%;
+      }
     }
   }
 }
