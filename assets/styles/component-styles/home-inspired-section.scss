@@ -8,12 +8,12 @@
   flex-direction: column;
 
   @media #{$tablet-only} {
-    padding: 4.5vw 0 4.5vw 6vw;
+    padding: 4.5vw 0 20vh 6vw;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
-    padding: 4.5vw 0 4.5vw 14vw;
+    padding: 4.5vw 0 30vh 14vw;
   }
 
   .zuc-home-inspired-section--subheading:after {
