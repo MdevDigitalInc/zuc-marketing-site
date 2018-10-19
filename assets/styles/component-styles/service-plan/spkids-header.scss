@@ -30,11 +30,11 @@
 
   @media #{$laptop-up} {
     width: 33%;
-      // Top-Bottom margin causes the middle div to be taller.
-      // This is because we are using flex-vert-stretch which tells them all
-      // to be the same height. Margin is part of calculated height, so it
-      // gives the desired effect.
-      margin: 3% 0;
+    // Top-Bottom margin causes the middle div to be taller.
+    // This is because we are using flex-vert-stretch which tells them all
+    // to be the same height. Margin is part of calculated height, so it
+    // gives the desired effect.
+    margin: 3% 0;
   }
 
   p {
