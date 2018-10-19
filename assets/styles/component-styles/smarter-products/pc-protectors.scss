@@ -21,18 +21,21 @@ section.zuc-protectors {
     z-index: -50;
     position: absolute;
     width: 450%;
-    top: ( 40 / 3.2 ) * 1vw; // TODO
+    top: ( 40 / 3.2 ) * 1vw;
     right: -10%;
 
     @media #{$tablet-only} {
       width: 200%;
       top: 35vw;
       left: -99%;
+      right: 0;
     }
   
     @media #{$laptop-up} {
       width: 100%;
       top: -( 206 / 19.2 ) * 1vw;
+      left: 0;
+      right: 0;
     }
   }
 }
