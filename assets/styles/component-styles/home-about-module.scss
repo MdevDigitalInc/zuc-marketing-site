@@ -112,10 +112,6 @@
     .icon {
       @media #{$phone-only} {
         padding: 1vh .1vw;
-        max-width: 50px;
-        min-width: 50px;
-        max-height: 50px;
-        min-height: 50px;
       }
       z-index: 1;
       width: 70px;
