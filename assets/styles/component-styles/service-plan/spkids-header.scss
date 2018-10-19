@@ -1,23 +1,41 @@
-.zuc-spkids-header {
-  flex-direction: column;
-  margin: 23.7vw 0 16.41vw;
+.zuc-spkids-header-mask {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 6vw 0;
+  margin-bottom: 5vw;
 
-  @media #{$tablet-only} {
-    margin: 23.7vw 0 16.41vw;
+  @media #{$laptop-only} {
+    padding: 3vw 0;
   }
+}
+
+.zuc-spkids-content {
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
 
   @media #{$laptop-up} {
     flex-direction: row;
-    margin: 10.2vw 8.2vw 15vw;
   }
 }
 
 .zuc-head-box {
   background-color: $color-pure-white;
-  width: 33%;
   padding: 2.81vw 2.3vw 0;
   position: relative;
-  margin: 3% 0;
+  width: 90%;
+  margin: 0 auto;
+
+  @media #{$laptop-up} {
+    width: 33%;
+      // Top-Bottom margin causes the middle div to be taller.
+      // This is because we are using flex-vert-stretch which tells them all
+      // to be the same height. Margin is part of calculated height, so it
+      // gives the desired effect.
+      margin: 3% 0;
+  }
 
   p {
     color: $color-zuc-darkindigo;
@@ -43,26 +61,36 @@
     @include center(horizontal);
     bottom: 2.81vw;
   }
+
+  // Last Child override so UL doesnt touch the button
+  &:last-child {
+    .zuc-btn {
+      position: relative;
+      margin-top: 2vw;
+    }
+  }
 }
 
 .zuc-spkids-header-img-box {
   position: relative;
   z-index: 2;
-  width: 40%;
-  padding: 2.6vw;
+  width: 100%;
+  margin: 0;
+  padding: 60% 6vw 6vw;
   background-size: cover;
 
+  @media #{$laptop-up} {
+    width: 40%;
+    padding: 2.6vw;
+  }
+
   .zuc-zigzag {
-    display: none;
     width: 30%;
     position: relative;
     z-index: 8;
     min-width: 10vw;
     margin-bottom: 1.56vw;
-
-    @media #{$laptop-up} {
-      display: block;
-    }
+    display: block;
   }
 
   h5 {
@@ -70,39 +98,21 @@
   }
 }
 
-.zuc-kaboose-box {
-  position: relative;
-  height: 83.438vw; // Design not done so manual height so it's not hideous
-  width: 90vw;
-  background-color: $color-pure-white;
-
-  @media #{$tablet-only} {
-    height: 62.5vw; // Design not done so manual height so it's not hideous
-    width: 75.65vw;
-  }
-
-  @media #{$laptop-up} {
-    height: 31vw;  // Design not done so manual height so it's not hideous
-    width: 25vw;
-  }
-}
-
-
 .zuc-spkids-header-bg1 {
+  background-image: url('../../assets/images/shapes/header-blob.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
   position: absolute;
-  z-index: -13;
-  left: -2px;
   top: 0;
-  width: 500%;
+  background-size: 300%;
+  padding-top: 200%;
 
-  @media #{$tablet-only} {
-    left: -1px;
-    width: 200%;
-  }
 
   @media #{$laptop-up} {
-    top: -3vw;
-    width: 100%;
+    @include center(both);
+    padding-top: 55%;
+    background-size: 100%;
   }
 }
 
