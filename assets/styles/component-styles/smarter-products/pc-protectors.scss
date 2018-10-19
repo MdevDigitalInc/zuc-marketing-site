@@ -20,9 +20,19 @@ section.zuc-protectors {
   img {
     z-index: -50;
     position: absolute;
-    top: -( 206 / 19.2 ) * 1vw;
-    left: 0;
     width: 100%;
+    top: -( 206 / 3.2 ) * 1vw; // TODO
+    left: 0;
+
+    @media #{$tablet-only} { // TODO
+      width: 100%;
+      top: -( 206 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      width: 100%;
+      top: -( 206 / 19.2 ) * 1vw;
+    }
   }
 }
 
@@ -40,10 +50,10 @@ section.zuc-protectors {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 0 5vw;
+  padding: 0 5vw; // TODO
 
   @media #{$tablet-only} {
-    padding: 0 7vw;
+    padding: 0 7vw; // TODO
   }
 
   @media #{$laptop-up} {
@@ -56,10 +66,10 @@ section.zuc-protectors {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: ( 30 / 3.2 ) * 1vw;
+    font-size: ( 30 / 3.2 ) * 1vw;  // TODO
 
     @media #{$tablet-only} {
-      font-size: ( 30 / 7.68 ) * 1vw;
+      font-size: ( 30 / 7.68 ) * 1vw;  // TODO
     }
 
     @media #{$laptop-up} {
@@ -86,7 +96,7 @@ section.zuc-protectors {
   }
 
   p {
-    width: 100%;
+    width: 100%;  // TODO
 
     @media #{$tablet-only} {
       width: ( 520 / 7.68 ) * 1vw; // TODO 
