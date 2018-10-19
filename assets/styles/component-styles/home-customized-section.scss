@@ -6,9 +6,10 @@
   width: 100%;
   margin: 0;
   z-index: 99;
-  padding: 0 14vw 14vh;
+  padding: 14vh 14vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
 
   @media #{$tablet-only} {
@@ -18,18 +19,14 @@
 
   @media #{$laptop-up} {
     flex-direction: row;
+    align-items: flex-start;
     margin-top: -80px;
     padding: 0 0 9vh 14vw;
   }
 }
 
 .zuc-home-customized-section--text-section {
-  flex: 40%;
-  position: relative;
-
-  @media #{$phone-only} {
-    padding-left: 30px;
-  }
+  flex: 50%;
 
   @media #{$laptop-up} {
     max-width: 40%;
@@ -55,12 +52,9 @@
   }
 
   .zuc-home-customized-section--copy {
-    font-weight: $body-weight;
-    font-size: $font-size-body;
 
-    @media #{$laptop-up} {
-      width: 26vw;
-      max-width: 400px;
+    @media #{$tablet-only} {
+      margin-right: 10vw;
     }
   }
 
@@ -70,26 +64,33 @@
 }
 
 .zuc-home-customized-section--graphic-section {
-  flex: 60%;
+  flex: 50%;
   position: relative;
   text-align: center;
-  // transform: translateY(-20%);
   padding-right: 10vw;
+  padding-top: 12vh;
 
   .item {
-    width: 25%;
+    margin-right: 2.5vw;
+
+    @media #{$phone-only} {
+      width: 25%;
+      margin-right: 2vw;
+    }
+    @media #{$tablet-only} {
+      width: 25%;
+      margin-right: 4vw;
+    }
   }
 
   @media #{$tablet-only} {
     padding: 50px 10px 40px;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   @media #{$phone-only} {
-    padding-top: 80px;
+    padding-top: 8vh;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   .icon {
@@ -97,13 +98,16 @@
       padding: 1vh .1vw;
     }
     z-index: 1;
-    width: 55%;
-    // using px to normalize svg files with differing heights.
     height: 70px;
+    width: 70px;
     margin-bottom: 4vh;
   }
 
   p {
     color: $color-zuc-darkindigo;
+
+    @media #{$phone-only} {
+      font-size: 2.5vh;
+    }
   }
 }
