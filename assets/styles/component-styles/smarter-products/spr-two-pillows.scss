@@ -1,13 +1,5 @@
 section.zuc-two-pillows {
-  padding-bottom: 0;
-
-  @media #{$tablet-only} {
-    padding-bottom: 0;
-  }
-
-  @media #{$laptop-up} {
-    padding-bottom: 0;
-  }
+  position: relative;
 }
 
 .zuc-product-box {
