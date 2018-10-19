@@ -72,18 +72,4 @@ section.zuc-collection-blob {
       padding: 0 0 ( 25 / 19.2 ) * 1vw;
     }
   }
-
-  // Bumper Link
-  > :nth-child( 5 ) {
-    text-decoration: underline;
-    padding: ( 35 / 3.2 ) * 1vw 0 0;
-
-    @media #{$tablet-only} {
-      padding: ( 35 / 7.68 ) * 1vw 0 0;
-    }
-
-    @media #{$laptop-up} {
-      padding: ( 35 / 19.2 ) * 1vw 0 0;
-    }
-  }
 }

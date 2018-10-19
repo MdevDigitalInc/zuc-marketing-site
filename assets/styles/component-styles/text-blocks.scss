@@ -55,6 +55,8 @@
 */
 
 .zuc-blob-stack {
+  display: flex;
+  flex-direction: column;
 
   h3 {
     color: $color-zuc-indigo;
@@ -73,5 +75,49 @@
     @media #{$laptop-up} {
       padding-bottom: 1.5vw;
     }
+  }
+
+  /* Optional text-blob bumper link
+
+      .blob-blink
+        a(href="#")
+          |this text will be uppercase
+
+  */
+
+  .blob-blink {
+    padding: ( 35 / 3.2 ) * 1vw 0 0;
+
+    @media #{$tablet-only} {
+      padding: ( 35 / 7.68 ) * 1vw 0 0;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 35 / 19.2 ) * 1vw 0 0;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $color-zuc-indigo;
+      font-weight: 600;
+      border-bottom: 2px solid $color-zuc-indigo;
+      padding: 0 0 1px;
+      font-size: ( 14 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        padding: 0 0 1px;
+        font-size: ( 14 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        padding: 0 0 1px;
+        font-size: ( 14 / 19.2 ) * 1vw;
+      }
+
+      &:hover {
+        color: $color-zuc-lilac;
+        border-bottom: 2px solid $color-zuc-lilac;
+      }
+    }  
   }
 }
