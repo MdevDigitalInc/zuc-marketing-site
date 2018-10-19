@@ -2,10 +2,12 @@ section.zuc-connected {
   position: relative;
   padding: 0 0 39vw;
 
+  @media #{$phone-only} {
+    margin-top: 10vw;
+  }
   @media #{$tablet-only} {
     padding: 0 0 21.22vw;
   }
-
   @media #{$laptop-up} {
     padding: 0 0 9.44vw;
   }
@@ -42,6 +44,7 @@ section.zuc-connected {
 
   .zuc-image-box {
     margin: 0 6vw 26vw;
+    transform: scale(1.2) translatex(-10%);
 
     @media #{$tablet-only} {
       margin: 0 6vw 24.22vw;
@@ -65,9 +68,14 @@ section.zuc-connected {
   @media #{$tablet-only} {
     padding: 0 7vw 13.8vw;
   }
-
   @media #{$laptop-up} {
     width: 50%;
-    padding: 0 8vw 0 3vw;
+    padding: 0 15% 0 3vw;
+  }
+  @media #{$desktop-only} {
+    padding: 0 18% 0 3vw;
+  }
+  @media #{$xl-up} {
+    padding: 0 20% 0 3vw;
   }
 }

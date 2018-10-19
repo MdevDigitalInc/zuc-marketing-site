@@ -122,6 +122,8 @@
   }
 
   h4 {
+    font-weight: 500;
+    color: $color-zuc-darkindigo;
     margin: 0;
   }
 }
@@ -196,6 +198,16 @@
     &:after {
       opacity: .8;
       cursor: pointer;
+    }
+  }
+
+  // Add this flag to NOT have animated hover
+  &.--o-static {
+    &:hover {
+      &:after {
+        opacity: .7;
+        cursor: none;
+      }
     }
   }
 
