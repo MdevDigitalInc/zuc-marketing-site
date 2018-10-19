@@ -60,6 +60,7 @@ section.zuc-choice {
   .zuc-learn-more {
     border-bottom: 2px solid $color-zuc-indigo;
     padding-top: 5vw;
+    padding-bottom: 2px;
     margin-left: 4.3vw;
 
     @media #{$tablet-up} {
@@ -70,6 +71,11 @@ section.zuc-choice {
 
     @media #{$laptop-up} {
       margin-left: 1.67vw;
+    }
+
+    &:hover {
+      color: $color-zuc-lilac;
+      border-bottom: 2px solid $color-zuc-lilac;
     }
   }
 }
