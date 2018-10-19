@@ -44,3 +44,34 @@
     }
   }
 }
+
+/*
+  .zuc-blob-stack:
+
+  For styling "50/50" blob sections, this compound element style is heavily used across the entire site.
+
+  AW - LU: 20181018
+
+*/
+
+.zuc-blob-stack {
+
+  h3 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  p {
+    font-weight: 100;
+    color: $color-zuc-darkindigo;
+    padding-bottom: 5vw;
+
+    @media #{$tablet-up} {
+      padding-bottom: 3vw;
+    }
+
+    @media #{$laptop-up} {
+      padding-bottom: 1.5vw;
+    }
+  }
+}
