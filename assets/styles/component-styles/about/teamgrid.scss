@@ -39,6 +39,14 @@ section.zuc-teamgrid {
   margin: 0 0 2%;
   background: #0f0;
 
+  &:nth-child( 1 ) {
+    background: #42f0ca;
+  }
+
+  &:nth-child( 2 ) {
+    background: #550f32;
+  }
+
   @media #{$tablet-only} {
     width: 49%;
     margin: 0 0 2% 2%;
