@@ -2,21 +2,31 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid #f00;
+  margin: ( 51 / 3.2 ) * 1vw 0 ( 133 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
+    margin: ( 114 / 7.68 ) * 1vw 7vw ( 179 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: space-between;
-    margin: 10vw 16vw;
+    margin: ( 82 / 19.2 ) * 1vw 16vw ( 112 / 19.2 ) * 1vw;
   }
 }
 
 .zuc-damage-left {
   display: flex;
   flex-direction: column;
+  margin: 0 5vw ( 43 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    margin: 0 0 ( 57 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: ( 31 / 19.2 ) * 1vw 0 ( 28 / 19.2 ) * 1vw;
+  }
 
   h2 {
     color: $color-zuc-indigo;
@@ -32,38 +42,57 @@
       font-size: ( 50 / 19.2 ) * 1vw;
     }
   }
+
+  .zuc-btn-box {
+    align-self: center;
+
+    @media #{$tablet-up} {
+      align-self: flex-start;
+    }
+  }
 }
 
-.zuc-damage-group {
+.zuc-damage-row {
   display: flex;
   flex-direction: column;
+  padding: 0 0 ( 24 / 3.2 ) * 1vw; 
 
-  @media #{$laptop-up} {
+  @media #{$tablet-up} {
     flex-direction: row;
-  } 
-}
-
-.zuc-damage-box {
-  width: 100%;
-  background: $color-pure-white;
-
-  @media #{$tablet-only} {
-    // todo
+    padding: 0 0 ( 45 / 7.68 ) * 1vw; 
   }
 
-  @media #{$laptop-up} {
+  @media #{laptop-up} {
+    padding: 0 0 ( 35 / 19.2 ) * 1vw; 
+  }
+}
+
+.zuc-damage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: $color-pure-white;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    align-items: flex-start;
+    text-align: left;
     width: 33.3%;
   }
 
   .zuc-why-damage-img-box {
-    height: 23vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 40%;
+    height: ( 140 / 3.2 ) * 1vw;
 
     @media #{$tablet-up} {
       justify-content: flex-start;
-      height: 12vw;
+      height: ( 120 / 7.68 ) * 1vw;
+      width: 40%;
     }
 
     @media #{$laptop-up} {
@@ -71,46 +100,41 @@
     }
 
     img {
-      width: 25%;
-      position: relative;
-  
-      @media #{$tablet-up} {
-        width: 30%;
-      }
-    
-      @media #{$laptop-up} {
-        width: 50%;
-      }
-  
-      @media #{$desktop-up} {
-        width: 40%;
-      }
+      width: 100%;
     }
   }
 
-  h4 {
+  h6 {
     color: $color-zuc-indigo;
-    font-family: $main-font-serif;
-    white-space: nowrap;
-    font-size: 9.375vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: ( 20 / 3.2 ) * 1vw;
 
-    @media #{$tablet-only} {
-      font-size: 6vw;
+    @media #{$tablet-up} {
+      margin-top: ( 20 / 7.68 ) * 1vw;
     }
-
+  
     @media #{$laptop-up} {
-      font-size: 1.8vw;
+      margin-top: ( 20 / 19.2 ) * 1vw;
+    }
+  }
+
+  p {
+    color: $color-zuc-darkindigo;
+
+    @media #{$phone-only} {
+      padding: 0 7vw;
     }
   }
 }
 
 .zuc-damage-right {
   background: $color-zuc-indigo;
-  padding: ( 38 / 3.2 ) * 1vw 0 0 5vw;
+  padding: ( 38 / 3.2 ) * 1vw 0 ( 34 / 3.2 ) * 1vw 5vw;
   width: 100%;
   
   @media #{$tablet-only} {
-    padding: ( 41 / 7.68 ) * 1vw 0 0 ( 39 / 7.68 ) * 1vw;
+    padding: ( 41 / 7.68 ) * 1vw 0 ( 43 / 7.68 ) * 1vw ( 39 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
@@ -137,9 +161,11 @@
     color: $color-pure-white;
     font-weight: 100;
     padding: 0 0 ( 26 / 3.2 ) * 1vw;
+    width: ( 237 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
       padding: 0 0 ( 31 / 7.68 ) * 1vw;
+      width: ( 532 / 7.68 ) * 1vw;
     }
   
     @media #{$laptop-up} {
