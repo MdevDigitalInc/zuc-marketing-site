@@ -70,6 +70,7 @@
     width: 47vw;
     // margin: auto 0;
     padding: 3.25vw 5vw 2vw 2.4vw;
+    align-self: stretch;
   }
 
   p {
@@ -144,9 +145,3 @@
     }
   }
 }
-
-// .zuc-about-box-continer {
-//   @media #{$laptop-up} {
-//     justify-content: stretch;
-//   }
-// }
