@@ -1,0 +1,12 @@
+section.zuc-teamgrid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.zuc-teamgrid-boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
