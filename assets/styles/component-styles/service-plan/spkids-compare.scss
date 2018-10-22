@@ -1,26 +1,90 @@
-section.zuc-appl-compare {
+section.zuc-compare {
   position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: ( 209 / 3.2 ) * 1vw 5vw 0;
 
-  h2 {
+  @media #{$tablet-only} {
+    margin: ( 184 / 7.68 ) * 1vw 7vw 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: ( 178 / 19.2 ) * 1vw 16vw ( 122 / 19.2 ) * 1vw;
+  }
+
+  .zuc-compare-title {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
+    text-align: center;
+    margin: 0 0 ( 59 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      margin: 0 0 ( 45 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin: 0 0 ( 44 / 19.2 ) * 1vw;
+    }
   }
 }
   
 .zuc-compare-row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
+
 .zuc-compare-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 
-  @media #{laptop-up} {
+  @media #{$laptop-up} {
     width: 33.3%;
+  }
+
+  h6 {
+    color: $color-zuc-indigo;
+    font-weight: 600;
+    margin: 0 0 ( 11 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      margin: 0 0 ( 10 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin: 0 0 ( 12 / 19.2 ) * 1vw;
+    }
+  }
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    text-align: center;
+    margin: 0;
+  }
+
+  .zuc-img-box {
+    width: 100%;
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  .zuc-btn-box {
+    text-align: center;
+    margin: 0 0 ( 52 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      margin: 0 0 ( 82 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin: 0;
+    }
   }
 }
