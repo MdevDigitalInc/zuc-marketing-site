@@ -1,30 +1,32 @@
 /*
   Sixgrid - AW 20181010
-  
+
 */
 .zuc-sixgrid-container {
   position: relative;
-  padding: 0 5vw 29.375vw;
+  overflow: visible;
+  padding: 20% 5vw 29.375vw;
+  margin-top: -20%;
 
   @media #{$tablet-up} {
-    padding: 0 7vw 12.37vw;
+    padding: 20% 7vw 12.37vw;
   }
 
   @media #{$laptop-up} {
-    padding: 0 20vw 7vw;
+    padding: 20% 20vw 7vw;
   }
 
   @media #{$desktop-up} {
-    padding: 0 24vw 5.45vw;
+    padding: 20% 24vw 5.45vw;
   }
 
   h2 {
     width: ( 280 / 3.2 ) * 1vw;
-    
+
     @media #{$tablet-only} {
       width: ( 568 / 7.68 ) * 1vw;
     }
-  
+
     @media #{$laptop-up} {
       width: ( 662 / 19.2 ) * 1vw;
     }
@@ -109,7 +111,7 @@
     @media #{$tablet-up} {
       width: 30%;
     }
-  
+
     @media #{$laptop-up} {
       width: 50%;
     }
@@ -118,4 +120,16 @@
       width: 40%;
     }
   }
+}
+
+// Background Shape
+.--sixgrid-bkg {
+  width: 100%;
+  padding-top: 61.7%;
+  @include center(both);
+  z-index: -1;
+  background-image: url('../../assets/images/shapes/wave-shape-dbl-silver.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
