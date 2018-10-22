@@ -4,13 +4,16 @@
 - var button = 'GET STARTED today'
 section.zuc-whats-covered.flex
   .zuc-blob-module--text-section.zuc-blob-stack
-    h4.zuc-blob-module--subheading.u-uppercase
-      |#{subheading}
-    h2.zuc-blob-module--heading.u-font-serif
+    .zuc-title-container
+      h4.u-uppercase
+        |#{subheading}
+      .zuc-title-flag
+        .--green
+    h2.u-font-serif.u-zuc-indigo
       |#{title}
-    .zuc-blob-module--copy
+    p.u-zuc-darkindigo
       |#{text}
-    .zuc-blob-module--btn
+    .zuc-btn-box
       a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
         |#{button}
     .zuc-blob-module--grey-slash
