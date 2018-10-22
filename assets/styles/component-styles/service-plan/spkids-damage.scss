@@ -1,63 +1,46 @@
-.zuc-damage-bar {
+.zuc-damage {
   position: relative;
-  padding-bottom: 88.44vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #F00;
 
   @media #{$tablet-only} {
-    padding-bottom: 44.22vw;
   }
 
   @media #{$laptop-up} {
-    padding-bottom: 22.11vw;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10vw 16vw;
   }
+}
 
-  .zuc-damage-bg-img {
-    display: none;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    // Default fallback
-    background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
-    
-    &.--appl {
-      background-image: url('../../assets/images/service-plans/appliances-icon-banner.png');
+.zuc-damage-left {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    font-size: ( 30 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 50 / 7.68 ) * 1vw;
     }
-
-    &.--furn {
-      background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
-    }
-
-    &.--homesys {
-      background-image: url('../../assets/images/service-plans/home-systems-icon-banner.png');
-    }
-
-    @media #{$tablet-up} {
-      display: block;
-      z-index: -13;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 77.5vw;
-    }
-
+  
     @media #{$laptop-up} {
-      height: 30vw;
+      font-size: ( 50 / 19.2 ) * 1vw;
     }
   }
 }
 
 .zuc-damage-group {
-  margin: 0;
+  display: flex;
   flex-direction: column;
-
-  @media #{$tablet-only} {
-    margin: 52.86vw 6.5vw 0;
-  }
 
   @media #{$laptop-up} {
     flex-direction: row;
-    margin: 15.1vw 16.7vw 0;
-  }  
+  } 
 }
 
 .zuc-damage-box {
@@ -82,10 +65,14 @@
       width: 17.6vw;
       padding-bottom: 3.9vw;
     }
-  
+
     @media #{$laptop-up} {
       width: 5.6vw;
       padding-bottom: 1.51vw;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -93,28 +80,56 @@
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
     white-space: nowrap;
-    // Override h4 sizes at Becky's direction - AW
     font-size: 9.375vw;
 
     @media #{$tablet-only} {
       font-size: 6vw;
     }
 
-    @media #{$laptop-only} {
+    @media #{$laptop-up} {
       font-size: 1.8vw;
     }
+  }
+}
 
-    @media #{$desktop-up} {
-      font-size: 1.51vw;
+.zuc-damage-right {
+  background: $color-zuc-indigo;
+  padding: ( 38 / 3.2 ) * 1vw 0 0 5vw;
+
+  @media #{$tablet-only} {
+    padding: ( 41 / 7.68 ) * 1vw 0 0 ( 39 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: ( 115 / 19.2 ) * 1vw 0 0 ( 29 / 19.2 ) * 1vw;
+  }
+
+  h3 {
+    color: $color-pure-white;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    font-size: ( 30 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 40 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      font-size: ( 40 / 19.2 ) * 1vw;
     }
   }
 
-  &:nth-child( even ) {
-    background: $color-zuc-indigo;
+  p {
     color: $color-pure-white;
+    font-weight: 100;
+    padding: 0 0 ( 26 / 3.2 ) * 1vw;
 
-    h4 {
-      color: $color-pure-white;
+    @media #{$tablet-only} {
+      padding: 0 0 ( 31 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      padding: 0 0 ( 31 / 19.2 ) * 1vw;
     }
   }
 }
