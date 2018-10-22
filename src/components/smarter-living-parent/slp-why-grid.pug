@@ -2,64 +2,65 @@
   var gridTitles = [
     '24/7 MULTILINGUAL<br/>CUSTOMER SERVICE',
     'CANADA-WIDE<br/>TECHNICIAN NETWORK',
-    'ANNUAL FURNITURE<br/>CLEANING ALLOWANCE',
-    'RAPID RESPONSE<br/>TIME',
-    'PREMIUM PRICING ON<br/>HOME WELLNESS SOLUTIONS',
-    'MEMBER REWARD<br/>REDEMPTION'
+    'PERSONALIZED<br/>PLAN ',
+    'RAPID<br/>RESPONSE',
+    'PREFERRED<br/>PRICING',
+    'EARN<br/>REWARDS'
   ]
 -
   var gridBody = [
     'Resolve questions or arrange for service when it’s convenient for you.',
     'Access to pre-screened, experienced professional repair technicians.',
-    'Keep your favourite furniture or area rugs sparkling with your annual cleaning allowance.',
-    'You are a priority for us and you can expect a response from our Customer Solutions Team within 24 hours.',
-    'Apply rewards at checkout as a discount on your order or to purchase gift certificates for new furniture or appliance purchases. from our retail partners.',
-    'The online checkout redemption option makes it simple to apply rewards as a discount on your order or to purchase gift certificates for new furniture or appliance purchases from our retail partners.'
+    'Select the plan that is right for you and fits your budget.',
+    'Your Smarter Living Plan gives you priority service.',
+    'Receive special Member pricing on Smarter Living Products.',
+    'Earn Member rewards on future purchases.'
   ]
 
-section.zuc-sixgrid-container.flex.flex-column.flex-hor-center
-  h5.u-zuc-indigo.u-font-serif
-    |Why choose a Smarter Living Plan by Zucora Home?
-  .zuc-sixgrid-item-container.flex.flex-wrap
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-24-7-service.svg", alt="Icon of a turning clock with the text 24/7")
-      h6
-        |!{gridTitles[0]}
-      p.zuc-body-small
-        |#{gridBody[0]}
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-tech-network.svg", alt="Icon of two workers shown from the shoulder up")
-      h6
-        |!{gridTitles[1]}
-      p.zuc-body-small
-        |#{gridBody[1]}
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-furniture-cleaning.svg", alt="Icon of a sparklingly clean couch")
-      h6
-        |!{gridTitles[2]}
-      p.zuc-body-small
-        |#{gridBody[2]}
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-fast-service.svg", alt="Icon of a clock moving quickly shown with speed lines")
-      h6
-        |!{gridTitles[3]}
-      p.zuc-body-small
-        |#{gridBody[3]}
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-preferred-pricing.svg", alt="Icon of a price tag with a star on it")
-      h6
-        |!{gridTitles[4]}
-      p.zuc-body-small
-        |#{gridBody[4]}
-    .zuc-sixgrid-item
-      .zuc-sixgrid-img-container
-        img(src="../../assets/images/icons/icon-premium-pricing.svg", alt="Icon of a piggy bank with coins dropping into it")
-      h6
-        |!{gridTitles[5]}
-      p.zuc-body-small
-        |#{gridBody[5]}
+section.zuc-sixgrid-slp
+  .zuc-sixgrid-container.flex.flex-column.flex-hor-center
+    h2.u-zuc-indigo.u-font-serif
+      |Why choose a Smarter Living Plan by Zucora Home?
+    .zuc-sixgrid-item-container.flex.flex-wrap
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-24-7-service.svg", alt="Icon of a turning clock with the text 24/7")
+        h6
+          |!{gridTitles[0]}
+        p.zuc-body-small
+          |#{gridBody[0]}
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-tech-network.svg", alt="Icon of two workers shown from the shoulder up")
+        h6
+          |!{gridTitles[1]}
+        p.zuc-body-small
+          |#{gridBody[1]}
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-personalized-service.svg", alt="Icon of a sparklingly clean couch")
+        h6
+          |!{gridTitles[2]}
+        p.zuc-body-small
+          |#{gridBody[2]}
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-fast-service.svg", alt="Icon of a clock moving quickly shown with speed lines")
+        h6
+          |!{gridTitles[3]}
+        p.zuc-body-small
+          |#{gridBody[3]}
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-preferred-pricing.svg", alt="Icon of a price tag with a star on it")
+        h6
+          |!{gridTitles[4]}
+        p.zuc-body-small
+          |#{gridBody[4]}
+      .zuc-sixgrid-item
+        .zuc-sixgrid-img-container
+          img(src="../../assets/images/icons/icon-premium-pricing.svg", alt="Icon of a piggy bank with coins dropping into it")
+        h6
+          |!{gridTitles[5]}
+        p.zuc-body-small
+          |#{gridBody[5]}

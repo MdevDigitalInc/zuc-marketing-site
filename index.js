@@ -31,3 +31,7 @@ const headerBg = require( './assets/images/shapes/hero-wave-shape.svg' );
 const sliderBg = require( './assets/images/shapes/hero-slider-bg.svg' );
 const secBgImg = require( './assets/images/shapes/footer-blob.svg' );
 const pcBgImg = require( './assets/images/smarter-products/woman-sleeper-stretching.png' );
+const slpHeroBgImg = require ( './assets/images/smarter-living/hero-background.png' );
+const srvHeaderAppl = require ( './assets/images/service-plans/woman-laundry-blue-header.png' );
+const srvHeaderFurn = require ( './assets/images/service-plans/father-son-laughing-blue-header.png' );
+const srvHeaderSys = require ( './assets/images/service-plans/front-house-blue-header.png' );

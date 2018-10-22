@@ -1,13 +1,5 @@
 section.zuc-two-pillows {
-  padding-bottom: 14vw;
-
-  @media #{$tablet-only} {
-    padding-bottom: 16vw;
-  }
-
-  @media #{$laptop-up} {
-    padding-bottom: 7.58vw;
-  }
+  position: relative;
 }
 
 .zuc-product-box {
@@ -27,7 +19,7 @@ section.zuc-two-pillows {
 
   .zuc-product {
     width: 90vw;
-    margin-left: 0;
+    margin: 0;
 
     img {
       padding-bottom: 3.75vw;
@@ -42,16 +34,16 @@ section.zuc-two-pillows {
     }
 
     &.--left {
-      margin-bottom: 9vw;
+      margin: 0 0 9vw;
 
       @media #{$tablet-only} {
         width: 42vw;
-        padding-bottom: 16vw;
+        margin: 0;
       }
 
       @media #{$laptop-up} {
         width: 20vw;
-        margin-left: 3.23vw;
+        margin: 0 0 0 3.23vw;
       }
     }
 
@@ -63,7 +55,7 @@ section.zuc-two-pillows {
 
       @media #{$laptop-up} {
         width: 22vw;
-        margin-left: 9.8vw;
+        margin: 0 0 0 9.8vw;
       }
     }
   }

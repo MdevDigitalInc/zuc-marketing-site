@@ -1,27 +1,16 @@
-// Smarter Products Hero.
+// Base styles for all SPR heros.
 
 .zuc-spr-hero-container {
   width: 100%;
   position: relative;
   overflow: hidden;
 
-  .zuc-spr-hero-content {
-    width: 80%;
-    position: absolute;
-    margin: 0 auto;
-    top: 20%;
-    left: 14%;
+  @media #{$phone-only} {
+    height: 90vw;
+  }
 
-    @media #{$tablet-only} {
-      width: 80%;
-      top: 15%;
-      left: 5%;
-    }
-    @media #{$phone-only} {
-      width: 80%;
-      top: 5%;
-      left: 5%;
-    }
+  .zuc-spr-hero-content {
+    position: absolute;
   }
 
   .zuc-hero-left {
@@ -44,73 +33,20 @@
   }
 }
 
-.zuc-spr-hero-bkg-img {
-  background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
-  height: 100%;
-  z-index: -1;
-  padding-top: 50%;
-  background-size: 115%;
-  background-position: right bottom;
-  background-repeat: no-repeat;
-
-  @media #{$phone-only} {
-    background-size: 200%;
-  }
-}
-
-.zuc-spr-hero-bkg-mesh {
-  display: none;
-
-  @media #{$laptop-up} {
-    display: block;
-    background-image: url('../../assets/images/smarter-products-child/white-mol-mesh-bottom-left.png');
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-size: 25%;
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    top: 0;
-    left: -75px;
-    opacity: 1;
-  }
-}
-
-.zuc-spr-hero-bkg-overlay {
-  background-image: url('../../assets/images/smarter-products-child/circles-hero.png');
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: right;
-  margin-top: -35px;
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
-  padding-top: 20%;
-
-  @media #{$phone-only} {
-    margin-top: -10px;
-  }
-}
-
 .zuc-spr-hero-bkg-wave {
   background-image: url('../../assets/images/shapes/wave-top.svg');
   z-index: 2;
-  bottom: -1px;
+  bottom: -2px;
   background-position: bottom;
   height: 100%;
   width: 100%;
   position: absolute;
-  background-size: 100%;
+  background-size: 105%;
   background-repeat: no-repeat;
 
   @media #{$phone-only} {
-    width: 200%;
-    bottom: -22px;
+    background-size: 460%;
+    background-position-y: 210%;
+    background-position-x: 99%;
   }
 }
-
-

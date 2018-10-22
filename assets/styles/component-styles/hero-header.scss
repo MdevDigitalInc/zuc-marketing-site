@@ -237,14 +237,6 @@
     }
   }
 
-  .zuc-hero-right {
-    width: 60%;
-
-    @media #{$portrait} {
-      width: 100%;
-    }
-  }
-
   img {
     width: 100%;
   }
@@ -267,6 +259,28 @@
 
     @media #{$portrait} {
       margin: 4vw 0;
+    }
+  }
+
+  .zuc-secondary-header--graphic-section {
+
+    .--bottom-wave {
+      display: none;
+
+      @media #{$tablet-up} {
+        display: initial;
+        position: absolute;
+        z-index: 2;
+        width: 170vw;
+        bottom: -3px;
+        left: -60vw;
+      }
+
+      @media #{$laptop-up} {
+        width: 105vw;
+        bottom: -3px;
+        left: -5px;
+      }
     }
   }
 
@@ -383,6 +397,7 @@
   .--play-icon {
     width: 25%;
     margin: 20px 0;
+    opacity: 1;
 
     @media #{$portrait} {
       width: 40%;

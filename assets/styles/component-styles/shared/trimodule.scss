@@ -11,25 +11,35 @@
 
 section.zuc-tri-module {
   position: relative;
+  overflow: hidden;
   flex-direction: row;
-  padding-bottom: 30vw;
+  padding: ( 157 / 3.2 ) * 1vw 0 0;
 
   @media #{$tablet-only} {
-    padding-bottom: 15vw;
+    padding: ( 176 / 7.68 ) * 1vw 0 0;
   }
 
   @media #{$laptop-up} {
-    padding-bottom: 5vw;
+    padding: ( 140 / 19.2 ) * 1vw 0 0;
   }
-  
+
   .zuc-tri-module-wave {
-    // This thing is not in a good place, use a clipped version of the image
-    z-index: -2;
-    overflow: hidden;
+    z-index: -700;
     position: absolute;
-    left: 0;
-    top: -8vw;
-    width: 100%;
+    top: 15vw;
+    width: 300%;
+    left: -170%;
+
+    @media #{$tablet-up} {
+      top: 0;
+      width: 200%;
+      left: -30vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
@@ -41,18 +51,6 @@ section.zuc-tri-module {
 
   @media #{$laptop-up} {
     width: 33.3%;
-  }
-
-  .zuc-tri-box-title-container {
-    margin-bottom: 3.5vw;
-
-    @media #{$tablet-only} {
-      margin-bottom: 2vw;
-    }
-
-    @media #{$laptop-up} {
-      margin-bottom: 1.25vw;
-    }
   }
 
   h2 {
@@ -93,6 +91,7 @@ section.zuc-tri-module {
 .--review-box {
   align-items: center;
   justify-content: center;
+  background-color: $color-zuc-platinum;
   padding: 0 5vw 20vw;
 
   @media #{$tablet-only} {
@@ -100,6 +99,7 @@ section.zuc-tri-module {
   }
 
   @media #{$laptop-up} {
+    background-color: inherit;
     padding: 3.4vw;
   }
 }
@@ -135,7 +135,7 @@ section.zuc-tri-module {
   @media #{$tablet-only} {
     padding: 0 0 3vw;
   }
-  
+
   @media #{$laptop-up} {
     padding: 0 0 1.3vw;
   }
@@ -161,7 +161,7 @@ section.zuc-tri-module {
   @media #{$tablet-only} {
     padding: 2vw 0 4vw;
   }
-  
+
   @media #{$laptop-up} {
     padding: 1.1vw 0 2.3vw;
   }
@@ -180,7 +180,7 @@ section.zuc-tri-module {
     height: 35px;
     top: 40vw;
   }
-  
+
   @media #{$laptop-up} {
     top: 22vw;
   }
@@ -191,7 +191,7 @@ section.zuc-tri-module {
     @media #{$tablet-only} {
       left: 16vw;
     }
-    
+
     @media #{$laptop-up} {
       left: 3.08vw;
     }
@@ -203,7 +203,7 @@ section.zuc-tri-module {
     @media #{$tablet-only} {
       right: 16vw;
     }
-    
+
     @media #{$laptop-up} {
       right: 3.08vw;
     }
@@ -217,8 +217,8 @@ section.zuc-tri-module {
 ******/
 
 .--blog-box {
-  background: $color-zuc-platinum;
   align-items: flex-start;
+  background-color: $color-zuc-platinum;
   padding: 0 5vw;
 
   @media #{$tablet-only} {
@@ -226,6 +226,7 @@ section.zuc-tri-module {
   }
 
   @media #{$laptop-up} {
+    background-color: inherit;
     padding: 3.4vw;
   }
 }
@@ -236,7 +237,7 @@ section.zuc-tri-module {
   @media #{$tablet-only} {
     padding: 0 0 0 3vw;
   }
-  
+
   @media #{$laptop-up} {
     padding: 0 0 0 1vw;
   }
@@ -255,13 +256,13 @@ section.zuc-tri-module {
     padding: 1.6vw;
     margin: 0 0 1.8vw;
   }
-  
+
   @media #{$laptop-up} {
     padding: .6vw;
     margin: 0 0 .8vw;
     width: 26vw;
   }
-  
+
   .zuc-blog-item-left {
     background: url('../../assets/images/shared/air-conditioning-repair.png');
     background-position: center;
@@ -273,7 +274,7 @@ section.zuc-tri-module {
       width: 24.22vw;
       height: 24.22vw;
     }
-    
+
     @media #{$laptop-up} {
       width: 9.4vw;
       height: 9.4vw;
@@ -287,7 +288,7 @@ section.zuc-tri-module {
     @media #{$tablet-only} {
       padding-left: 2.4vw;
     }
-    
+
     @media #{$laptop-up} {
       padding-left: .81vw;
     }
@@ -300,7 +301,7 @@ section.zuc-tri-module {
       @media #{$tablet-only} {
         font-size: 1.8vw;
       }
-      
+
       @media #{$laptop-up} {
         font-size: .707vw;
       }
@@ -316,7 +317,7 @@ section.zuc-tri-module {
         margin-bottom: 1vw;
         font-size: 3.125vw;
       }
-      
+
       @media #{$laptop-up} {
         margin-bottom: .76vw;
         font-size: 1.21vw;
@@ -333,7 +334,7 @@ section.zuc-tri-module {
         margin-top: 1vw;
         font-size: 1.8vw;
       }
-      
+
       @media #{$laptop-up} {
         margin-top: .66vw;
         font-size: .707vw;
@@ -349,16 +350,17 @@ section.zuc-tri-module {
 ******/
 
 .--why-box {
-  background: $color-zuc-platinum;
   align-items: center;
   justify-content: center;
-  padding: 16.25vw 0;
+  background-color: $color-zuc-platinum;
+  padding: 16.25vw 5vw ( 73 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    padding: 11vw 0;
+    padding: 11vw 5vw ( 120 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
+    background-color: inherit;
     padding: 4vw 0;
   }
 }
@@ -392,19 +394,19 @@ section.zuc-tri-module {
       @media #{$tablet-only} {
         padding-top: 1.4vw;
       }
-  
+
       @media #{$laptop-up} {
         padding-top: .76vw;
       }
     }
 
     &:nth-child( n+2 ) {
-      margin-left: 10vw;
+      margin-left: 5vw;
 
       @media #{$tablet-only} {
         margin-left: 6vw;
       }
-  
+
       @media #{$laptop-up} {
         margin-left: 2.22vw;
       }
@@ -427,7 +429,7 @@ section.zuc-tri-module {
     @media #{$tablet-only} {
       height: 13vw;
       width: 10vw;
-      
+
       img {
         max-height: 13vw;
         max-width: 10vw;
