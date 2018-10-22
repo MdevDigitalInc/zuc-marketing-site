@@ -101,6 +101,7 @@
 
   p {
     color: $color-zuc-darkindigo;
+    max-width: 100px;
 
     @media #{$phone-only} {
       font-size: 2.5vh;
