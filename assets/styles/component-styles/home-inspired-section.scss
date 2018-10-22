@@ -79,14 +79,17 @@
     @media #{$tablet-only} {
       justify-content: space-around;
       width: 100%;
-
-      // todo: hacky in interests of time:
-      .--home-pg-icon p {
-        max-width: 200px;
-      }
     }
+
     @media #{$phone-only} {
       justify-content: space-around;
     }
+  }
+}
+
+@media #{$tablet-only} {
+  // todo: hacky in interests of time:
+  .--home-pg-icon p {
+    max-width: 200px;
   }
 }
