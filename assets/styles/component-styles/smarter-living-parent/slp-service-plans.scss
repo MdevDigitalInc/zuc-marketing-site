@@ -13,7 +13,7 @@
 
   .zuc-bg-blob {
     display: none;
-    
+
     @media #{$laptop-up} {
       display: block;
       position: absolute;
@@ -86,7 +86,7 @@
       left: 100%;
       transform: translateX(-50%);
       width: ( 170 / 19.2 ) * 1vw;
-      z-index: 10;      
+      z-index: 10;
     }
   }
 
@@ -103,7 +103,7 @@
     @media #{$tablet-up} {
       padding: 7vw;
     }
-  
+
     @media #{$laptop-up} {
       width: 30%;
       padding: 4.5vw 0 4.5vw 3.5vw;
@@ -115,11 +115,11 @@
     background-size: cover;
     background-position: center;
     background-image: url('../../assets/images/smarter-living/streetview-house.png');
-  
+
     @media #{$tablet-up} {
       height: 69.4vw;
     }
-  
+
     @media #{$laptop-up} {
       width: 70%;
       height: auto;
@@ -137,12 +137,12 @@
       width: 33.33%;
       height: 57.7vw;
     }
-  
+
     @media #{$laptop-up} {
       width: 16%;
       height: 30vw;
     }
-  
+
     @media #{$desktop-up} {
       height: 22.4vw;
     }
@@ -175,14 +175,14 @@
     @media #{$tablet-up} {
       height: 57.7vw;
     }
-  
+
     @media #{$laptop-up} {
       width: 52%;
       height: 30vw;
     }
-  
+
     @media #{$desktop-up} {
       height: 22.4vw;
-    } 
+    }
   }
 }
