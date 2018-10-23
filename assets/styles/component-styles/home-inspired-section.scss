@@ -53,7 +53,6 @@
   }
 
   .zuc-home-inspired-section--copy {
-
     @media #{$laptop-up} {
       width: 70%;
     }
@@ -74,7 +73,6 @@
       justify-content: space-around;
       width: 100%;
     }
-
     @media #{$phone-only} {
       justify-content: space-around;
     }
