@@ -150,7 +150,7 @@ section.zuc-teamgrid {
       padding: 0 0 vwp(19);
     }
 
-    .zuc-teamgrid-brad-link {
+    .zuc-teamgrid-brad-link { // TODO
       color: #4875b4;
     }
 
@@ -169,6 +169,10 @@ section.zuc-teamgrid {
       .zuc-teamgrid-brad-bio {
         font-size: vwt(18);
         padding: 0 0 vwt(31);
+      }
+
+      .zuc-teamgrid-brad-link { // TODO
+        color: #4875b4;
       }
     }
 
@@ -189,6 +193,10 @@ section.zuc-teamgrid {
         font-size: vwd(18);
         width: vwd(533);
         padding: 0 0 vwd(26);
+      }
+
+      .zuc-teamgrid-brad-link { // TODO
+        color: #4875b4;
       }
     }
   }
