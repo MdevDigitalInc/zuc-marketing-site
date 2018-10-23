@@ -1,7 +1,7 @@
 -
   var brad = 
     {
-      name : 'Mindy Dodd',
+      name : 'Brad Geddes',
       title : 'Vice President & Chief Operating Officer',
       bio : 'With her passion for coaching people and consistently achieving results, Mindy is our inspirational leaders who keeps us focused on delivering the very best customer experiences.',
       _linkedin : '#',
@@ -89,3 +89,14 @@ section.zuc-teamgrid
     //- Remaining items
     each prop in props.length ? props : ['Gallery is empty']
       .zuc-teamgrid-item(style=prop.style)
+        .zuc-teamgrid-item-overlay
+          .zuc-teamgrid-item-overlay-bg
+          span.zuc-teamgrid-item-title
+            |#{prop.title}
+          span.zuc-teamgrid-item-name
+            |#{prop.name}
+          .zuc-teamgrid-item-line
+          p.zuc-teamgrid-item-bio
+            |#{prop.bio}
+          a.zuc-teamgrid-item-link(href=prop._linkedin title=prop._title)
+            img(src="", alt="Linkedin Icon")
