@@ -1,0 +1,15 @@
+.slb-blob-photo {
+  z-index: 1;
+  max-width: 535px;
+  max-height: 400px;
+
+  @media #{$tablet-only} {
+    max-width: 100%;
+    display: block;
+  }
+
+  @media #{$phone-only} {
+    max-width: 100%;
+    display: block;
+  }
+}
