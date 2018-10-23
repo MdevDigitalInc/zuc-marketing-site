@@ -16,14 +16,14 @@ section.zuc-teamgrid {
   .teamgrid-title {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
-    font-size: vwp(30);
+    font-size: vw-phone(30);
 
     @media #{$tablet-only} {
-      font-size: vwt(47);
+      font-size: vw-tablet(47);
     }
   
     @media #{$laptop-up} {
-      font-size: vwd(47);
+      font-size: vw-desktop(47);
     }
   }
 
@@ -31,15 +31,15 @@ section.zuc-teamgrid {
     color: $color-zuc-darkindigo;
     font-weight: 100;
     font-style: italic;
-    font-size: vwp(14);
+    font-size: vw-phone(14);
 
     @media #{$tablet-only} {
-      font-size: vwt(22);
+      font-size: vw-tablet(22);
     }
   
     @media #{$laptop-up} {
-      font-size: vwd(22);
-      width: vwd(850);
+      font-size: vw-desktop(22);
+      width: vw-desktop(850);
     }
   }
 }
@@ -50,14 +50,14 @@ section.zuc-teamgrid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: vwp(35) 0 0;
+  margin: vw-phone(35) 0 0;
 
   @media #{$tablet-only} {
-    margin: vwt(42) 0 0;
+    margin: vw-tablet(42) 0 0;
   }
 
   @media #{$laptop-up} {
-    margin: vwd(49) 0 0;
+    margin: vw-desktop(49) 0 0;
   }
 }
 
@@ -69,31 +69,31 @@ section.zuc-teamgrid {
 
 .zuc-teamgrid-item {
   position: relative;
-  width: vwp(288);
-  height: vwp(288);
-  margin: 0 0 vwp(22);
+  width: vw-phone(288);
+  height: vw-phone(288);
+  margin: 0 0 vw-phone(22);
   background-size: cover;
   background-position: center;
 
   @media #{$tablet-only} {
-    width: vwt(313);
-    height: vwt(313);
-    margin: 0 0 vwt(34) vwt(34);
+    width: vw-tablet(313);
+    height: vw-tablet(313);
+    margin: 0 0 vw-tablet(34) vw-tablet(34);
   
     &:nth-child( 1 ),
     &:nth-child( 2n + 3 ) {
-      margin: 0 0 vwt(34);
+      margin: 0 0 vw-tablet(34);
     }
   }
 
   @media #{$laptop-up} {
-    width: vwd(375);
-    height: vwd(375);
-    margin: 0 0 vwd(16) vwd(16);
+    width: vw-desktop(375);
+    height: vw-desktop(375);
+    margin: 0 0 vw-desktop(16) vw-desktop(16);
 
     &:nth-child( 1 ),
     &:nth-child( 3n ) {
-      margin: 0 0 vwd(16);
+      margin: 0 0 vw-desktop(16);
     }
   }
 
@@ -105,8 +105,7 @@ section.zuc-teamgrid {
 
   &:hover,
   &:active,
-  &:focus,
-  &.--active-hover {
+  &:focus {
     .zuc-teamgrid-item-overlay > .zuc-teamgrid-item-overlay-bg {
       opacity: .8;
     }
@@ -132,71 +131,72 @@ section.zuc-teamgrid {
       color: $color-zuc-indigo;
       font-family: $main-font-serif;
       font-weight: 300;
-      font-size: vwp(30);
+      font-size: vw-phone(30);
     }
 
     .zuc-teamgrid-brad-title {
       color: $color-zuc-darkindigo;
       font-weight: 500;
-      font-size: vwp(16);
-      padding: vwp(18) 0;
+      font-size: vw-phone(16);
+      padding: vw-phone(18) 0;
     }
 
     .zuc-teamgrid-brad-bio {
       color: $color-zuc-darkindigo;
       font-weight: 100;
       line-height: 1.44;
-      font-size: vwp(14);
-      padding: 0 0 vwp(19);
+      font-size: vw-phone(14);
+      padding: 0 0 vw-phone(19);
     }
 
-    .zuc-teamgrid-brad-link { // TODO
+    .zuc-teamgrid-brad-link {
       color: #4875b4;
+      font-size: vw-phone(34);
     }
 
     @media #{$tablet-only} {
-      padding: vwt(22) 0 0;
+      padding: vw-tablet(20) 0 0;
 
       .zuc-teamgrid-brad-name {
-        font-size: vwt(36);
+        font-size: vw-tablet(36);
       }
   
       .zuc-teamgrid-brad-title {
-        font-size: vwt(16);
-        padding: vwt(18) 0;
+        font-size: vw-tablet(16);
+        padding: vw-tablet(14) 0;
       }
   
       .zuc-teamgrid-brad-bio {
-        font-size: vwt(18);
-        padding: 0 0 vwt(31);
+        font-size: vw-tablet(18);
+        padding: 0 0 vw-tablet(20);
       }
 
-      .zuc-teamgrid-brad-link { // TODO
-        color: #4875b4;
+      .zuc-teamgrid-brad-link {
+        font-size: vw-tablet(30);
       }
     }
 
     @media #{$laptop-up} {
-      width: vwd(766);
-      padding: vwd(76) 0 0 vwd(29);
+      width: vw-desktop(766);
+      padding: vw-desktop(76) 0 0 vw-desktop(29);
 
       .zuc-teamgrid-brad-name {
-        font-size: vwd(36);
+        font-size: vw-desktop(36);
       }
   
       .zuc-teamgrid-brad-title {
-        font-size: vwd(16);
-        padding: vwd(18) 0;
+        font-size: vw-desktop(16);
+        padding: vw-desktop(18) 0;
       }
   
       .zuc-teamgrid-brad-bio {
-        font-size: vwd(18);
-        width: vwd(533);
-        padding: 0 0 vwd(26);
+        font-size: vw-desktop(18);
+        width: vw-desktop(533);
+        padding: 0 0 vw-desktop(26);
       }
 
-      .zuc-teamgrid-brad-link { // TODO
-        color: #4875b4;
+      .zuc-teamgrid-brad-link {
+        font-size: vw-desktop(32);
       }
     }
   }
@@ -216,14 +216,14 @@ section.zuc-teamgrid {
   align-items: center;
   text-align: center;
   color: $color-pure-white;
-  padding: 0 vwp(23);
+  padding: 0 vw-phone(23);
 
   @media #{$tablet-only} {
-    padding: 0 vwt(21);
+    padding: 0 vw-tablet(21);
   }
 
   @media #{$laptop-up} {
-    padding: 0 vwd(32);
+    padding: 0 vw-desktop(32);
   }
 
   // All Children
@@ -250,75 +250,76 @@ section.zuc-teamgrid {
 
   .zuc-teamgrid-item-title {
     font-weight: 500;
-    font-size: vwp(16);
-    padding: vwt(21) 0 vwt(13);
+    font-size: vw-phone(16);
+    padding: vw-tablet(21) 0 vw-tablet(13);
 
     @media #{$tablet-only} {
-      font-size: vwt(16);
-      padding: vwt(21) 0 vwt(13);
+      font-size: vw-tablet(16);
+      padding: vw-tablet(21) 0 vw-tablet(13);
     }
 
     @media #{$laptop-up} {
-      font-size: vwd(16);
-      padding: vwd(52) 0 vwd(13);
+      font-size: vw-desktop(16);
+      padding: vw-desktop(52) 0 vw-desktop(13);
     }
   }
 
   .zuc-teamgrid-item-name {
     font-weight: 300;
     font-family: $main-font-serif;
-    font-size: vwp(28);
-    padding: 0 0 vwp(12);
+    font-size: vw-phone(28);
+    padding: 0 0 vw-phone(12);
 
     @media #{$tablet-only} {
-      font-size: vwt(28);
-      padding: 0 0 vwt(12);
+      font-size: vw-tablet(28);
+      padding: 0 0 vw-tablet(12);
     }
 
     @media #{$laptop-up} {
-      font-size: vwd(28);
-      padding: 0 0 vwd(12);
+      font-size: vw-desktop(28);
+      padding: 0 0 vw-desktop(12);
     }
   }
 
   .zuc-teamgrid-item-line {
     border: 1px solid $color-pure-white;
-    width: vwp(140);
+    width: vw-phone(140);
 
     @media #{$tablet-only} {
-      width: vwt(140);
+      width: vw-tablet(140);
     }
 
     @media #{$laptop-up} {
-      width: vwd(140);
+      width: vw-desktop(140);
     }
   }
 
   .zuc-teamgrid-item-bio {
     font-weight: 100;
-    font-size: vwp(11.5);
-    padding: vwp(18) 0 0;
+    font-size: vw-phone(11.5);
+    padding: vw-phone(18) 0 0;
 
     @media #{$tablet-only} {
-      font-size: vwt(16.5);
-      padding: vwt(18) 0 0;
+      font-size: vw-tablet(16.5);
+      padding: vw-tablet(18) 0 0;
     }
 
     @media #{$laptop-up} {
-      font-size: vwd(17.5);
-      padding: vwd(18) 0 0;
+      font-size: vw-desktop(17.5);
+      padding: vw-desktop(18) 0 0;
     }
   }
 
   .zuc-teamgrid-item-link {
-    // TODO
+    color: $color-pure-white;
+    font-size: vw-phone(34);
 
-    @media #{$laptop-only} {
-      // TODO
+    @media #{$tablet-only} {
+      font-size: vw-tablet(30);
     }
 
     @media #{$desktop-up} {
-      // TODO
+      font-size: vw-desktop(32);
     }
   }
 }
