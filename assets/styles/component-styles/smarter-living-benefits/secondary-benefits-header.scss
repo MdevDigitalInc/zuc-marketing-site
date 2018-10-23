@@ -1,6 +1,13 @@
-
-// TODO: this definitely needs fixing.
-// Not sure the best way to override the global styles here, though.
 .--slb-hero-grid-row {
-  padding-bottom: 6vh !important;
+  margin-top: 3.125vw;
+  background: $white;
+  padding: 3vw 10% 6vh;
+
+  @media #{$phone-only} {
+    padding: 8vw 5%;
+  }
+
+  @media #{$tablet-only} {
+    padding: 5vw 7%;
+  }
 }
