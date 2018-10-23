@@ -1,14 +1,17 @@
 section.zuc-about-hero {
   position: relative;
-  height: 90vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  margin: 0 0 20vh;
 }
 
 .zuc-about-hero-textbox {
   position: relative;
+  top: 13vh;
+  z-index: 5;
   background: $color-pure-white;
   box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
   margin: 0 16vw;
@@ -25,13 +28,15 @@ section.zuc-about-hero {
 
   .zuc-about-hero-graphic {
     position: absolute;
+    width: vw-desktop(185);
     top: vw-desktop(32);
     right: 0;
     transform: translatex(50%);
   }
 }
 .zuc-about-hero-wave {
+  width: 103vw;
   position: absolute;
-  left: -2px;
-  bottom: 0;
+  left: -5px;
+  bottom: -2px;
 }
