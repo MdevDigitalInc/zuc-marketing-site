@@ -10,18 +10,18 @@
 
 // Functions
 
-@function vwd($width) {
+@function vw-desktop($width) {
   @return ($width / 19.2) * 1vw;
 }
 
-@function vwl($width) {
+@function vw-laptop($width) {
   @return ($width / 12.8) * 1vw;
 }
 
-@function vwt($width) {
+@function vw-tablet($width) {
   @return ($width / 7.68) * 1vw;
 }
 
-@function vwp($width) {
+@function vw-phone($width) {
   @return ($width / 3.2) * 1vw;
 }
