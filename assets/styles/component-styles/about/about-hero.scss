@@ -1,21 +1,43 @@
 section.zuc-about-hero {
   position: relative;
-  height: 70vh;
-  background-position: center;
-  background-size: cover;
   display: flex;
   align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
   margin: 0 0 20vh;
+
+  @media #{$tablet-only} {
+    height: 70vh;
+    margin: 0 0 20vh;
+  }
+
+  @media #{$laptop-up} {
+    height: 70vh;
+    margin: 0 0 20vh;
+  }
 }
 
 .zuc-about-hero-textbox {
   position: relative;
-  top: 13vh;
   z-index: 5;
   background: $color-pure-white;
   box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
+  top: 13vh;
   margin: 0 16vw;
-  padding: vw-desktop(52) vw-desktop(88) vw-desktop(50) vw-desktop(80);
+  padding: vw-phone(52) vw-phone(88) vw-phone(50) vw-phone(80);
+
+  @media #{$tablet-only} {
+    top: 13vh;
+    margin: 0 16vw;
+    padding: vw-tablet(52) vw-tablet(88) vw-tablet(50) vw-tablet(80);
+  }
+
+  @media #{$laptop-up} {
+    top: 13vh;
+    margin: 0 16vw;
+    padding: vw-desktop(52) vw-desktop(88) vw-desktop(50) vw-desktop(80);
+  }
 
   h1 {
     color: $color-zuc-indigo;
@@ -28,15 +50,37 @@ section.zuc-about-hero {
 
   .zuc-about-hero-graphic {
     position: absolute;
-    width: vw-desktop(185);
-    top: vw-desktop(32);
     right: 0;
     transform: translatex(50%);
+    width: vw-phone(185);
+    top: vw-phone(32);
+
+    @media #{$tablet-only} {
+      width: vw-desktop(185);
+      top: vw-tablet(32);
+    }
+  
+    @media #{$laptop-up} {
+      width: vw-desktop(185);
+      top: vw-desktop(32);
+    }
   }
 }
 .zuc-about-hero-wave {
-  width: 103vw;
   position: absolute;
+  width: 103vw;
   left: -5px;
   bottom: -2px;
+
+  @media #{$tablet-only} {
+    width: 103vw;
+    left: -5px;
+    bottom: -2px;
+  }
+
+  @media #{$laptop-up} {
+    width: 103vw;
+    left: -5px;
+    bottom: -2px;
+  }
 }
