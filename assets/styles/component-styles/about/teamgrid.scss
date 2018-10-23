@@ -62,9 +62,9 @@ section.zuc-teamgrid {
 }
 
 .zuc-teamgrid-item {
-  width: ( 288 / 3.2 ) * 1vw;
-  height: ( 288 / 3.2 ) * 1vw;
-  margin: 0 0 ( 22 / 3.2 ) * 1vw;
+  width: vwp(288);
+  height: vwp(288);
+  margin: 0 0 vwp(22);
   background: $color-zuc-indigo;
   background-size: cover;
   background-position: center;
@@ -81,17 +81,17 @@ section.zuc-teamgrid {
   }
 
   /**************************************************
-    Grid Item Laptop
+    Grid Item Tablet
   **************************************************/
 
   @media #{$tablet-only} {
-    width: ( 313 / 7.68 ) * 1vw;
-    height: ( 313 / 7.68 ) * 1vw;
-    margin: 0 0 ( 34 / 7.68 ) * 1vw ( 34 / 7.68 ) * 1vw;
+    width: vwt(313);
+    height: vwt(313);
+    margin: 0 0 vwt(34) vwt(34);
 
     // BRAD
     &:nth-child( 1 ) {
-      margin: 0 0 ( 34 / 7.68 ) * 1vw;
+      margin: 0 0 vwt(34);
     }
     
     // BRAD'S BIO
@@ -100,7 +100,7 @@ section.zuc-teamgrid {
     }
   
     &:nth-child( 2n + 3 ) {
-      margin: 0 0 ( 34 / 7.68 ) * 1vw;
+      margin: 0 0 vwt(34);
     }
   }
 
@@ -110,19 +110,19 @@ section.zuc-teamgrid {
 
   @media #{$laptop-up} {
     width: vwd(375);
-    height: ( 375 / 19.2 ) * 1vw;
-    margin: 0 0 ( 16 / 19.2 ) * 1vw ( 16 / 19.2 ) * 1vw;
+    height: vwd(375);
+    margin: 0 0 vwd(16) vwd(16);
 
     &:nth-child( 1 ) {
-      margin: 0 0 ( 16 / 19.2 ) * 1vw;
+      margin: 0 0 vwd(16);
     }
   
     &:nth-child( 2 ) {
-      width: ( 766 / 19.2 ) * 1vw;
+      width: vwd(766);
     }
   
     &:nth-child( 3n ) {
-      margin: 0 0 ( 16 / 19.2 ) * 1vw;
+      margin: 0 0 vwd(16);
     }
   }
 }
