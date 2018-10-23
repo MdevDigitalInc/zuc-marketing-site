@@ -26,6 +26,7 @@
 
   @media #{$laptop-up} {
     margin: ( 31 / 19.2 ) * 1vw 0 ( 28 / 19.2 ) * 1vw;
+    width: 75%;
   }
 
   h2 {
@@ -121,9 +122,16 @@
 
   p {
     color: $color-zuc-darkindigo;
+    padding: 0 7vw;
+    width: auto;
 
-    @media #{$phone-only} {
-      padding: 0 7vw;
+    @media #{$tablet-up} {
+      padding: 0;
+      width: ( 200 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      width: ( 209 / 19.2 ) * 1vw;
     }
   }
 }
