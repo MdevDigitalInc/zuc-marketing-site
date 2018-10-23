@@ -16,12 +16,31 @@ section.zuc-teamgrid {
   .teamgrid-title {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
+    font-size: vwp(30);
+
+    @media #{$tablet-only} {
+      font-size: vwt(47);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vwd(47);
+    }
   }
 
   .teamgrid-subtitle {
     color: $color-zuc-darkindigo;
     font-weight: 100;
     font-style: italic;
+    font-size: vwp(14);
+
+    @media #{$tablet-only} {
+      font-size: vwt(22);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vwd(22);
+      width: vwd(850);
+    }
   }
 }
 
@@ -31,20 +50,36 @@ section.zuc-teamgrid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: vwp(35) 0 0;
+
+  @media #{$tablet-only} {
+    margin: vwt(42) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: vwd(49) 0 0;
+  }
 }
 
 .zuc-teamgrid-item {
   width: ( 288 / 3.2 ) * 1vw;
   height: ( 288 / 3.2 ) * 1vw;
   margin: 0 0 ( 22 / 3.2 ) * 1vw;
-  background: #0f0;
+  background: $color-zuc-indigo;
+  background-size: cover;
+  background-position: center;
 
+  // BRAD
   &:nth-child( 1 ) {
-    background: #42f0ca;
+    background: url('../../assets/images/about/about-team-brad.png');
+    background-size: cover;
+    background-position: center;
   }
 
+  // BRAD BIO
   &:nth-child( 2 ) {
-    background: #550f32;
+    text-align: left;
+    background: $color-zuc-platinum;
   }
 
   /**************************************************
@@ -56,17 +91,17 @@ section.zuc-teamgrid {
     height: ( 313 / 7.68 ) * 1vw;
     margin: 0 0 ( 34 / 7.68 ) * 1vw ( 34 / 7.68 ) * 1vw;
 
+    // BRAD
     &:nth-child( 1 ) {
-      background: #42f0ca;
       margin: 0 0 ( 34 / 7.68 ) * 1vw;
     }
-  
+    
+    // BRAD'S BIO
     &:nth-child( 2 ) {
-      background: #550f32;
+      text-align: left;
     }
   
     &:nth-child( 2n + 3 ) {
-      background: #55390f;
       margin: 0 0 ( 34 / 7.68 ) * 1vw;
     }
   }
@@ -85,12 +120,10 @@ section.zuc-teamgrid {
     }
   
     &:nth-child( 2 ) {
-      background: #550f32;
       width: ( 766 / 19.2 ) * 1vw;
     }
   
     &:nth-child( 3n ) {
-      background: #55390f;
       margin: 0 0 ( 16 / 19.2 ) * 1vw;
     }
   }
