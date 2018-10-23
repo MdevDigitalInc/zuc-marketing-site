@@ -1,0 +1,42 @@
+-
+  var gridTitles = [
+    'Eco-Friendly',
+    'Non-Toxic',
+    'Phosphate-Free'
+  ]
+-
+  var gridBody = [
+    'Earth-friendly. Not harmful to the environment.',
+    'Producs do not contain ingredients that have been linked to toxic responses.',
+    'Does not include ingredients which negatively impact aquatic life.'
+  ]
+
+section.zuc-sixgrid-container.flex.flex-column.flex-hor-center
+  h2.u-zuc-indigo.u-font-serif
+    |Clean homes, healthy families.
+  p.zuc-sixgrid-subtext
+    |ZU Collection's non-toxic ingredients are gentle on skin, tough on dirt, and delightful to use. The refreshing scents will leave you confident that you’re not using harsh chemicals; and that you’re making a positive impact on your family’s well-being and your environment.
+  .zuc-sixgrid-item-container.flex.flex-wrap
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-eco-friendly.svg", alt="Icon of the Earth")
+      h6
+        |!{gridTitles[0]}
+      p.zuc-body-small
+        |#{gridBody[0]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-non-toxic.svg", alt="Icon of a home with a heart on it")
+      h6
+        |!{gridTitles[1]}
+      p.zuc-body-small
+        |#{gridBody[1]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-phosphate-free.svg", alt="Icon of a chemical")
+      h6
+        |!{gridTitles[2]}
+      p.zuc-body-small
+        |#{gridBody[2]}
+
+  .--sixgrid-bkg

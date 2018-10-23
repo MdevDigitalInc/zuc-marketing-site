@@ -11,7 +11,7 @@
   padding-top: 50%;
   background-size: 100%;
   background-position: cover;
-  
+
   @media #{$tablet-only} {
     background-size: 170%;
     background-position: 100% 30%;
@@ -21,6 +21,11 @@
     background-size: 260%;
     background-position: 90% 40%;
   }
+}
+
+// Overrides to change BKG image
+.--spr-parent-hero-bkg-img {
+  background-image: url('../../assets/images/smarter-products/hero-background.png');
 }
 
 /*************************************************
@@ -78,7 +83,7 @@ section.zuc-ink-blob {
 
   p {
     width: 100%;
-  
+
     @media #{$laptop-up} {
       width: ( 457 / 19.2 ) * 1vw;
     }
