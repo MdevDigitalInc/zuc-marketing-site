@@ -266,7 +266,7 @@
 
     .--bottom-wave {
       display: none;
-  
+
       @media #{$tablet-up} {
         display: initial;
         position: absolute;
@@ -275,7 +275,7 @@
         bottom: -3px;
         left: -60vw;
       }
-  
+
       @media #{$laptop-up} {
         width: 105vw;
         bottom: -3px;
