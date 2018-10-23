@@ -61,6 +61,12 @@ section.zuc-teamgrid {
   }
 }
 
+/***************************************************
+
+    Item Spacing, Sizing, Styles + Logic
+
+  ***************************************************/
+
 .zuc-teamgrid-item {
   position: relative;
   width: vwp(288);
@@ -69,7 +75,53 @@ section.zuc-teamgrid {
   background-size: cover;
   background-position: center;
 
-  // Brad's Bio Box - Phone+
+  @media #{$tablet-only} {
+    width: vwt(313);
+    height: vwt(313);
+    margin: 0 0 vwt(34) vwt(34);
+  
+    &:nth-child( 1 ),
+    &:nth-child( 2n + 3 ) {
+      margin: 0 0 vwt(34);
+    }
+  }
+
+  @media #{$laptop-up} {
+    width: vwd(375);
+    height: vwd(375);
+    margin: 0 0 vwd(16) vwd(16);
+
+    &:nth-child( 1 ),
+    &:nth-child( 3n ) {
+      margin: 0 0 vwd(16);
+    }
+  }
+
+  /***************************************************
+
+      HOVER LOGIC
+
+  ***************************************************/
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.--active-hover {
+    .zuc-teamgrid-item-overlay > .zuc-teamgrid-item-overlay-bg {
+      opacity: .8;
+    }
+
+    .zuc-teamgrid-item-overlay > :nth-child( n+2 ) {
+      opacity: 1;
+    }
+  }
+
+  /***************************************************
+
+      BRAD BIO BOX - It's different!™
+
+  ***************************************************/
+
   &:nth-child( 2 ) {
     display: flex;
     flex-direction: column;
@@ -97,20 +149,12 @@ section.zuc-teamgrid {
       font-size: vwp(14);
       padding: 0 0 vwp(19);
     }
-  }
 
-  @media #{$tablet-only} {
-    width: vwt(313);
-    height: vwt(313);
-    margin: 0 0 vwt(34) vwt(34);
-
-    // Brad Box - Tablet
-    &:nth-child( 1 ) {
-      margin: 0 0 vwt(34);
+    .zuc-teamgrid-brad-link {
+      color: #4875b4;
     }
-    
-    // Brad's Bio Box - Tablet
-    &:nth-child( 2 ) {
+
+    @media #{$tablet-only} {
       padding: vwt(22) 0 0;
 
       .zuc-teamgrid-brad-name {
@@ -127,25 +171,8 @@ section.zuc-teamgrid {
         padding: 0 0 vwt(31);
       }
     }
-  
-    // Blocks on the left - Tablet
-    &:nth-child( 2n + 3 ) {
-      margin: 0 0 vwt(34);
-    }
-  }
 
-  @media #{$laptop-up} {
-    width: vwd(375);
-    height: vwd(375);
-    margin: 0 0 vwd(16) vwd(16);
-
-    // Brad Box - Desktop
-    &:nth-child( 1 ) {
-      margin: 0 0 vwd(16);
-    }
-  
-    // Brad Bio Box - Desktop
-    &:nth-child( 2 ) {
+    @media #{$laptop-up} {
       width: vwd(766);
       padding: vwd(76) 0 0 vwd(29);
 
@@ -163,30 +190,6 @@ section.zuc-teamgrid {
         width: vwd(533);
         padding: 0 0 vwd(26);
       }
-    }
-  
-    // Blocks on left - Desktop
-    &:nth-child( 3n ) {
-      margin: 0 0 vwd(16);
-    }
-  }
-
-  /***************************************************
-
-      HOVER LOGIC
-
-  ***************************************************/
-
-  &:hover,
-  &:active,
-  &:focus,
-  &.--active-hover {
-    .zuc-teamgrid-item-overlay > .zuc-teamgrid-item-overlay-bg {
-      opacity: .8;
-    }
-
-    .zuc-teamgrid-item-overlay > :nth-child( n+2 ) {
-      opacity: 1;
     }
   }
 }
