@@ -18,11 +18,9 @@
     @media #{$tablet-only} {
       margin-bottom: 7.03vw;
     }
-
     @media #{$laptop-only} {
       margin-bottom: 5vw;
     }
-
     @media #{$desktop-up} {
       margin-bottom: 4.2vw;
     }
@@ -34,11 +32,9 @@
     @media #{$tablet-only} {
       padding: 3.52vw 4%;
     }
-
     @media #{$laptop-only} {
       padding: 2.5vw 4%;
     }
-
     @media #{$desktop-up} {
       padding: 2vw 4%;
     }
@@ -71,7 +67,6 @@
     @media #{$tablet-up} {
       padding-bottom: 3vw;
     }
-
     @media #{$laptop-up} {
       padding-bottom: 1.5vw;
     }
@@ -110,11 +105,9 @@
       @media #{$tablet-only} {
         font-size: ( 14 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 14 / 19.2 ) * 1vw;
       }
-
       &:hover {
         color: $color-zuc-lilac;
         border-bottom: 2px solid $color-zuc-lilac;
@@ -144,7 +137,6 @@
   @media #{$tablet-up} {
     margin-bottom: 2vw;
   }
-
   @media #{$laptop-up} {
     margin-bottom: 1.25vw;
   }
@@ -167,7 +159,6 @@
   @media #{$tablet-up} {
     width: ( 55 / 7.68 ) * 1vw;
   }
-
   @media #{$laptop-up} {
     margin-left: .8vw;
     width: ( 55 / 19.2 ) * 1vw;
