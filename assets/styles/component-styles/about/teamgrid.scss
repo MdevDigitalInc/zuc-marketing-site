@@ -76,7 +76,7 @@ section.zuc-teamgrid {
   **************************************************/
 
   @media #{$laptop-up} {
-    width: ( 375 / 19.2 ) * 1vw;
+    width: vwd(375);
     height: ( 375 / 19.2 ) * 1vw;
     margin: 0 0 ( 16 / 19.2 ) * 1vw ( 16 / 19.2 ) * 1vw;
 

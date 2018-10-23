@@ -8,4 +8,20 @@
   animation-iteration-count: $iteration;
 }
 
+// Functions
 
+@function vwd($width) {
+  @return ($width / 19.2) * 1vw;
+}
+
+@function vwl($width) {
+  @return ($width / 12.8) * 1vw;
+}
+
+@function vwt($width) {
+  @return ($width / 7.68) * 1vw;
+}
+
+@function vwp($width) {
+  @return ($width / 3.2) * 1vw;
+}
