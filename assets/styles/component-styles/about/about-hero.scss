@@ -1,0 +1,37 @@
+section.zuc-about-hero {
+  position: relative;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.zuc-about-hero-textbox {
+  position: relative;
+  background: $color-pure-white;
+  box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
+  margin: 0 16vw;
+  padding: vw-desktop(52) vw-desktop(88) vw-desktop(50) vw-desktop(80);
+
+  h1 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  .zuc-about-hero-graphic {
+    position: absolute;
+    top: vw-desktop(32);
+    right: 0;
+    transform: translatex(50%);
+  }
+}
+.zuc-about-hero-wave {
+  position: absolute;
+  left: -2px;
+  bottom: 0;
+}
