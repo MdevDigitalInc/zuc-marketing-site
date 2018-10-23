@@ -44,6 +44,7 @@
     background: $color-zuc-indigo;
     width: 100%;
     padding: 9.06vw 11.87vw 7.5vw 5vw;
+    position: relative;
 
     @media #{$tablet-only} {
       padding: 5.85vw 16.66vw 5.85vw 7.55vw;
@@ -88,6 +89,18 @@
     .--list-margin {
       margin-bottom: 5vh;
       padding-bottom: 5vh;
+    }
+  }
+
+  .coral-wave {
+    display: none;
+    @media #{$laptop-up} {
+      display: inline;
+      position: absolute;
+      bottom: 8px;
+      right: -125px;
+      transform: scale(0.5);
+      z-index: 5;
     }
   }
 
