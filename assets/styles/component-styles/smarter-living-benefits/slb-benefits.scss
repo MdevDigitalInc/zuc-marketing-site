@@ -95,7 +95,13 @@
       bottom: 2%;
       right: -40%;
       transform: scale(0.5);
-      z-index: 5;
+    }
+    @media #{$tablet-only} {
+      display: inline;
+      transform: scale(0.25);
+      position: absolute;
+      bottom: -25%;
+      left: 45%;
     }
   }
 
