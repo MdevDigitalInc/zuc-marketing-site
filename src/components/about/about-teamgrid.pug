@@ -1,17 +1,91 @@
+-
+  var brad = 
+    {
+      name : 'Mindy Dodd',
+      title : 'Vice President & Chief Operating Officer',
+      bio : 'With her passion for coaching people and consistently achieving results, Mindy is our inspirational leaders who keeps us focused on delivering the very best customer experiences.',
+      _linkedin : '#',
+      _title : 'todo',
+     style : 'background-image:url(\'./images/about/about-team-brad.png\');'
+    }
+
+-
+  var props = [
+    {
+      name : 'Mindy Dodd',
+      title : 'Vice President & Chief Operating Officer',
+      bio : 'With her passion for coaching people and consistently achieving results, Mindy is our inspirational leaders who keeps us focused on delivering the very best customer experiences.',
+      _linkedin : '#',
+      _title : 'Mindy Dodd Linkedin',
+     style : 'background-image:url(\'./images/about/about-team-mindy.png\');'
+    },
+    {
+      name : 'Michelle',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-michelle.png\');'
+    },
+    {
+      name : 'Ashleigh',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-ashleigh.png\');'
+    },
+    {
+      name : 'David',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-david.png\');'
+    },
+    {
+      name : 'Mindy Dodd',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-magda.png\');'
+    },
+    {
+      name : 'Trevor',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-trevor.png\');'
+    },
+    {
+      name : 'Oksana',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-oksana.png\');'
+    },
+    {
+      name : 'Jim',
+      title : 'todo',
+      bio : 'todo',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-jim.png\');'
+    }
+  ]
+
 section.zuc-teamgrid
   h2.teamgrid-title
     |Meet our team:
   p.teamgrid-subtitle
     |We are lead by an experienced team of seasoned professionals who are passionate about delivering exceptional service - while still finding ways to have fun!
   .zuc-teamgrid-boxes
+    //- Brad Header
+    .zuc-teamgrid-item(style=brad.style)
     .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    .zuc-teamgrid-item
-    
+    //- Remaining items
+    each prop in props.length ? props : ['Gallery is empty']
+      .zuc-teamgrid-item(style=prop.style)
