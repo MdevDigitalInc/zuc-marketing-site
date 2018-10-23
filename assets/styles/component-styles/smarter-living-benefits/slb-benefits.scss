@@ -60,7 +60,7 @@
       @media #{$tablet-only} {
         padding-bottom: 4.68vw;
       }
-  
+
       @media #{$laptop-up} {
         padding-bottom: 2.37vw;
       }
@@ -71,6 +71,11 @@
     background: $color-pure-white;
     width: 100%;
     padding: 21.87vw 18.43vw 0 5vw;
+    background-image: url('../../assets/images/graphics/graphic_zigzag_coral.svg');
+    background-size: 25%;
+    background-position: -18% 95%;
+    background-repeat: no-repeat;
+    z-index: 2;
 
     @media #{$tablet-only} {
       padding: 6.38vw 8.59vw 0 7.16vw;
