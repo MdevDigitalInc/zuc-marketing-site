@@ -50,7 +50,7 @@ section.zuc-pane-links {
     box-shadow: .7px 1.9px 68px 0 rgba(12, 12, 12, .2);
     height: 100%;
     padding: 0 5vw;
-    
+
     @media #{$tablet-up} {
       justify-content: flex-start;
       height: 65%;
@@ -88,7 +88,7 @@ section.zuc-pane-links {
       font-size: ( 12 / 3.2 ) * 1vw;
 
       @media #{$tablet-only} {
-        font-size: ( 16 / 7.68 ) * 1vw; 
+        font-size: ( 16 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
@@ -147,7 +147,7 @@ section.zuc-pane-links {
     background-image: url('../../assets/images/shared/mom-boy-kitchen.png');
     background-position: 98% 0;
   }
-  
+
   a {
     position: absolute;
     z-index: 13;

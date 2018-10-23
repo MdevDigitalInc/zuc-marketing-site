@@ -17,13 +17,13 @@
     overflow: hidden;
     width: 250%;
     bottom: 0;
-    right: 0;    
+    right: 0;
 
     @media #{$tablet-only} {
       width: 160%;
       left: -30%;
     }
-  
+
     @media #{$laptop-up} {
       width: 100%;
       top: -1vw;
@@ -86,17 +86,17 @@
     //height: ( 421 / 7.68 ) * 1vw;
     margin: 0;
     padding: ( 14 / 7.68 ) * 1vw;
-  
+
     &:nth-child( n+2 ) {
       margin: 0 0 0 2%;
     }
   }
-  
+
   @media #{$laptop-up} {
     width: 32%;
     //height: ( 527 / 19.2 ) * 1vw;
     padding: ( 14 / 19.2 ) * 1vw;
-  
+
     &:nth-child( n+2 ) {
       margin: 0 0 0 2%;
     }
@@ -152,7 +152,7 @@
     @media #{$laptop-up} {
       padding: 0 0 ( 14 / 19.2 ) * 1vw;
     }
-    
+
     span {
       color: $color-zuc-darkindigo;
       font-weight: 500;

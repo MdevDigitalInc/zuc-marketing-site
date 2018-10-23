@@ -10,11 +10,9 @@
   @media #{$tablet-up} {
     width: 86vw;
   }
-
   @media #{$laptop-up} {
     width: 50vw;
   }
-
   @media #{$desktop-up} {
     width: 44vw;
   }
@@ -38,13 +36,11 @@
     width: 14.85vw;
     top: -7.425vw;
   }
-
   @media #{$laptop-only} {
     height: 8.9vw;
     width: 8.9vw;
     top: -4.45vw;
   }
-
   @media #{$desktop-up} {
     height: 5.75vw;
     width: 5.75vw;
@@ -64,11 +60,9 @@
   @media #{$tablet-only} {
     padding: 11.92vw 4.4vw 3.5vw;
   }
-
   @media #{$laptop-only} {
     padding: 7vw 4.4vw 1.5vw;
   }
-
   @media #{$desktop-up} {
     padding: 5.56vw 4.4vw 1.2vw;
   }
@@ -95,7 +89,6 @@
   @media #{$tablet-only} {
     padding: 3.9vw 0;
   }
-
   @media #{$laptop-up} {
     padding: 1.36vw 0;
   }
@@ -145,7 +138,6 @@
   @media #{$tablet-only} {
     padding: 4.69vw 0;
   }
-
   @media #{$laptop-up} {
     text-align: left;
     position: absolute;

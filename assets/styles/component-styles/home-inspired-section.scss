@@ -58,10 +58,11 @@
     }
   }
 
-  // todo: Better way of doing button overrides?
+  // TODO: Better way of doing button overrides?
+  // Without overrides, button behaves like a block element.
   .zuc-btn-secondary {
     margin-top: 30px;
-    width: 200px;
+    width: 15vw;
   }
 }
 
@@ -85,10 +86,6 @@
       width: 40%;
     }
   }
-}
-
-@media #{$tablet-only} {
-  // todo: hacky in interests of time:
 }
 
 @media #{$phone-only} {

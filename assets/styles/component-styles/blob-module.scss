@@ -39,10 +39,15 @@
   }
 
   .zuc-blob-module--heading {
-    // Todo: convert px to vw.
-    font-size: 36px;
-    width: 400px;
+    width: 50%;
     line-height: 1.3;
+
+    @media #{$laptop-up} {
+      width: 70%;
+    }
+    @media #{$phone-only} {
+      width: 100%;
+    }
   }
 
   .zuc-blob-module--copy {
