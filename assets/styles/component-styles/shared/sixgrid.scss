@@ -11,11 +11,9 @@
   @media #{$tablet-up} {
     padding: 20% 7vw 12.37vw;
   }
-
   @media #{$laptop-up} {
     padding: 20% 20vw 7vw;
   }
-
   @media #{$desktop-up} {
     padding: 20% 24vw 5.45vw;
   }
@@ -26,7 +24,6 @@
     @media #{$tablet-only} {
       width: ( 568 / 7.68 ) * 1vw;
     }
-
     @media #{$laptop-up} {
       width: ( 662 / 19.2 ) * 1vw;
     }
@@ -39,7 +36,6 @@
     @media #{$tablet-only} {
       padding: 0 0 8.6vw;
     }
-
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
@@ -98,7 +94,6 @@
       justify-content: flex-start;
       height: 12vw;
     }
-
     @media #{$laptop-up} {
       height: 6.3vw;
     }
@@ -111,11 +106,9 @@
     @media #{$tablet-up} {
       width: 30%;
     }
-
     @media #{$laptop-up} {
       width: 50%;
     }
-
     @media #{$desktop-up} {
       width: 40%;
     }
