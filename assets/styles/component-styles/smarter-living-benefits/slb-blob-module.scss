@@ -13,3 +13,13 @@
     display: block;
   }
 }
+
+.slb-grey-slash {
+  display: none;
+
+  @media #{$laptop-up} {
+    display: inline;
+    position: absolute;
+    transform: scale(.28);
+  }
+}
