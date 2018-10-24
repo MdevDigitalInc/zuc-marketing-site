@@ -7,6 +7,16 @@ section.spkids-video
         |Avoid the high cost of repairing accidental stains and damage.
       img.--wave-position(src='../../assets/images/graphics/graphic_chevron_lilac.svg')
     .zuc-video-right.flex.flex-vert-stretch.flex-hor-center
-      .zuc-video-player.flex.flex-vert-center.flex-hor-center
-        img.--play-icon(src='../../assets/images/icons/icon-play.svg')
+      .zuc-video-player
+        // Video or Image ( Image can also be added as BKG to above container )
+        video(
+          class="zuc-body-video"
+          poster="https://i.vimeocdn.com/video/734513263.jpg"
+          style="background-image: url('https://i.vimeocdn.com/video/734513263.jpg'); background-size: cover;"
+          preload="auto")
+
+          //- At least two sources plz
+          source(src="https://player.vimeo.com/external/296943409.hd.mp4?s=17dc5c9646d380367cb19fb2cd73820bd71d72e4&profile_id=175" type="video/mp4")
+          source(src="https://player.vimeo.com/external/296943409.hd.mp4?s=17dc5c9646d380367cb19fb2cd73820bd71d72e4&profile_id=174" type="video/mp4")
+
   img.zuc-video-bg(src="../../assets/images/shapes/round-blob-half-video.svg", alt="An abstract pear shaped blue and green shape")
