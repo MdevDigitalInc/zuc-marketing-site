@@ -12,7 +12,7 @@
   height: 100%;
   left: 16%;
   background: rgba(67, 77, 160, .7);
-  padding: 7vw 4vw;
+  padding: 6vh 4vw;
 
   @media #{$tablet-only} {
     width: 85%;
@@ -121,4 +121,8 @@
     background-position-y: 210%;
     background-position-x: 99%;
   }
+}
+// Change Color of wave - Addon - .--zu-hero-bkg-wave.grey-wave
+.--grey-wave {
+  background-image: url('../../assets/images/shapes/wave-top-grey.svg');
 }
