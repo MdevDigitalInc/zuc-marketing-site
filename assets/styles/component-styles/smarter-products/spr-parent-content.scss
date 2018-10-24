@@ -45,7 +45,14 @@ section.zuc-spr-hk {
     width: 60%;
   }
   .zuc-img-box {
-    width: vw-desktop(830);
+
+    @media #{$tablet-only} {
+      padding: vw-tablet(10) 0 0 vw-tablet(60);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-desktop(830);
+    }
   }
 
   img {
@@ -55,24 +62,26 @@ section.zuc-spr-hk {
 
 .zuc-spr-zu-right {
   width: 100%;
-  padding: ( 18 / 3.2 ) * 1vw ( 20 / 3.2 ) * 1vw 0;
+  padding: vw-phone(18) vw-phone(20) 0;
 
   @media #{$tablet-only} {
-    padding: ( 10 / 7.68 ) * 1vw 0 0 ( 60 / 7.68 ) * 1vw;
+    padding: vw-tablet(10) 0 0 vw-tablet(60);
   }
+
   @media #{$laptop-up} {
     width: 40%;
-    padding: 0 0 0 (81 / 19.2 ) * 1vw;
+    padding: 0 0 0 vw-desktop(81);
   }
 
   h3 {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 546 / 7.68 ) * 1vw;
+      width: vw-tablet(546);
     }
+
     @media #{$laptop-up} {
-      width: ( 506 / 19.2 ) * 1vw;
+      width: vw-desktop(506);
     }
   }
 
@@ -80,10 +89,11 @@ section.zuc-spr-hk {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 653 / 7.68 ) * 1vw;
+      width: vw-tablet(653);
     }
+
     @media #{$laptop-up} {
-      width: ( 531 / 19.2 ) * 1vw;
+      width: vw-desktop(531);
     }
   }
 }
@@ -95,36 +105,39 @@ section.zuc-spr-hk {
 **********************************************************/
 
 section.zuc-spr-pc {
-  padding: ( 100 / 3.2 ) * 1vw 0 0;
+  padding: vw-phone(100) 0 0;
 
   @media #{$tablet-only} {
-    padding: ( 120 / 7.68 ) * 1vw 0 0;
+    padding: vw-tablet(120) 0 0;
   }
+
   @media #{$laptop-up} {
-    padding: ( 82 / 19.2 ) * 1vw 0 0;
+    padding: vw-desktop(82) 0 0;
   }
 }
 
 .zuc-spr-pc-left {
   width: 100%;
-  padding: 0 ( 20 / 3.2 ) * 1vw ( 55 / 3.2 ) * 1vw;
+  padding: 0 vw-phone(20) vw-phone(55);
 
   @media #{$tablet-only} {
-    padding: 0 0 ( 85 / 7.68 ) * 1vw ( 60 / 7.68 ) * 1vw;
+    padding: 0 0 vw-tablet(85) vw-tablet(60);
   }
+
   @media #{$laptop-up} {
     width: 40%;
-    padding: 0 0 0 ( 226 / 19.2 ) * 1vw;
+    padding: 0 0 0 vw-desktop(226);
   }
 
   h3 {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 429 / 7.68 ) * 1vw;
+      width: vw-tablet(429);
     }
+
     @media #{$laptop-up} {
-      width: ( 429 / 19.2 ) * 1vw;
+      width: vw-desktop(429);
     }
   }
 
@@ -132,10 +145,11 @@ section.zuc-spr-pc {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 655 / 7.68 ) * 1vw;
+      width: vw-tablet(655);
     }
+
     @media #{$laptop-up} {
-      width: ( 519 / 19.2 ) * 1vw;
+      width: vw-desktop(519);
     }
   }
 }
@@ -162,13 +176,14 @@ section.zuc-spr-pc {
 **********************************************************/
 
 section.zuc-spr-hk {
-  padding: ( 146 / 3.2 ) * 1vw 0 ( 130 / 3.2 ) * 1vw;
+  padding: vw-phone(146)0 vw-phone(130);
 
   @media #{$tablet-only} {
-    padding: 0 0 ( 230 / 7.68 ) * 1vw;
+    padding: 0 0 vw-tablet(230);
   }
+
   @media #{$laptop-up} {
-    padding: 0 0 ( 350 / 19.2 ) * 1vw;
+    padding: 0 0 vw-desktop(350);
   }
 }
 
@@ -178,8 +193,9 @@ section.zuc-spr-hk {
   width: 100%;
 
   @media #{$tablet-only} {
-    padding: ( 206 / 7.68 ) * 1vw 0 0;
+    padding: vw-tablet(206) 0 0;
   }
+
   @media #{$laptop-up} {
     justify-content: flex-end;
     width: 50%;
@@ -193,24 +209,26 @@ section.zuc-spr-hk {
 
 .zuc-spr-hk-right {
   width: 100%;
-  padding: ( 44 / 3.2 ) * 1vw ( 20 / 3.2 ) * 1vw 0;
+  padding: vw-phone(44) vw-phone(20) 0;
 
   @media #{$tablet-only} {
-    padding: ( 48 / 7.68 ) * 1vw 0 0 ( 60 / 7.68 ) * 1vw;
+    padding: vw-tablet(48) 0 0 vw-tablet(60);
   }
+
   @media #{$laptop-up} {
     width: 50%;
-    padding: ( 106 / 19.2 ) * 1vw 0 0;
+    padding: vw-desktop(106) 0 0;
   }
 
   h3 {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 531 / 7.68 ) * 1vw;
+      width: vw-tablet(531);
     }
+
     @media #{$laptop-up} {
-      width: ( 429 / 19.2 ) * 1vw;
+      width: vw-desktop(429);
     }
   }
 
@@ -218,10 +236,11 @@ section.zuc-spr-hk {
     width: 100%;
 
     @media #{$tablet-only} {
-      width: ( 531 / 7.68 ) * 1vw;
+      width: vw-tablet(531);
     }
+
     @media #{$laptop-up} {
-      width: ( 519 / 19.2 ) * 1vw;
+      width: vw-desktop(519);
     }
   }
 }
