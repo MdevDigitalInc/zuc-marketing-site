@@ -87,7 +87,7 @@
   }
 
   .coral-wave {
-    display: none;
+
     @media #{$laptop-up} {
       display: inline;
       position: absolute;
@@ -101,6 +101,13 @@
       position: absolute;
       bottom: -25%;
       left: 45%;
+    }
+    @media #{$phone-only} {
+      display: inline;
+      transform: scale(.25);
+      position: absolute;
+      bottom: 0%;
+      left: 40%;
     }
   }
 
