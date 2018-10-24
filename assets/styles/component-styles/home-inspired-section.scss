@@ -88,13 +88,25 @@
   }
 }
 
-.--hp-insired-icons {
+.--hp-inspired-icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media #{$phone-only} {
+    width: 40%;
+  }
   @media #{$tablet-only} {
+    width: 25%;
+
     p {
       max-width: 200px;
     }
   }
-  @media #{$phone-only} {
-    width: 40%;
+
+  p {
+   max-width: 100px;
   }
+
 }
