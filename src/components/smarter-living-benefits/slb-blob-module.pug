@@ -3,12 +3,15 @@
 - var text = 'Earn valuable Smarter Living Rewards with your plan, product and service purchases. 10 points for every $1 spent means your rewards quickly accumulate and are valuable for future purchases.'
 
 section.zuc-blob-module--wrapper
-  .zuc-blob-module--text-section.flex.flex-column
-    h4.zuc-blob-module--subheading.u-uppercase.u-bold
-      |#{subheading}
-    h2.zuc-blob-module--heading.u-font-serif.u-zuc-indigo
+  .zuc-blob-module--text-section.zuc-blob-stack
+    .zuc-title-container.flex
+      h4
+        |#{subheading}
+      .zuc-title-flag
+        .--green
+    h3
       |#{title}
-    .zuc-blob-module--copy.u-light
+    p
       |#{text}
     .zuc-blob-module--grey-slash
       img.slb-grey-slash(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='')
