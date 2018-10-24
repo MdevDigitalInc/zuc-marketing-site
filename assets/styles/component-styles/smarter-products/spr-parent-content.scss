@@ -1,3 +1,23 @@
+/*************************************************
+
+  HERO STYLES
+
+*************************************************/
+
+// Overrides to change BKG image
+.--spr-parent-hero-bkg-img {
+  background-image: url('../../assets/images/smarter-products/hero-background.png');
+}
+
+.zuc-spr-hero-focus {
+  position: absolute;
+  top: 0;
+
+  @media #{$laptop-up} {
+    right: vw-desktop(85);
+  }
+}
+
 /**********************************************************
 
   ZU Collection Section
@@ -23,6 +43,9 @@ section.zuc-spr-hk {
   @media #{$laptop-up} {
     justify-content: flex-end;
     width: 60%;
+  }
+  .zuc-img-box {
+    width: vw-desktop(830);
   }
 
   img {
