@@ -12,6 +12,13 @@
 .zuc-spr-hero-focus {
   position: absolute;
   top: 0;
+  left: -10%;
+  width: 130%;
+
+  @media #{$tablet-only} {
+    left: vw-tablet(19);
+    width: 100%;
+  }
 
   @media #{$laptop-up} {
     right: vw-desktop(85);
@@ -45,8 +52,10 @@ section.zuc-spr-hk {
     width: 60%;
   }
   .zuc-img-box {
+    width: vw-phone(315);
 
     @media #{$tablet-only} {
+      width: vw-tablet(742);
       padding: vw-tablet(10) 0 0 vw-tablet(60);
     }
 
