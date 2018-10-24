@@ -74,17 +74,11 @@
   @media #{$tablet-only} {
     justify-content: space-around;
     width: 100%;
-    // .--home-pg-icon p {
-    //   max-width: 200px;
-    // }
   }
   @media #{$phone-only} {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    // .--home-pg-icon {
-    //   width: 40%;
-    // }
   }
 }
 
