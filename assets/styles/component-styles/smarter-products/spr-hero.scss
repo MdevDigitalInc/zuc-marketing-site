@@ -8,14 +8,14 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 90vh;
+  height: 75vh;
 
   @media #{$tablet-only} {
-    height: 60vw;
+    height: 60vh;
   }
 
-  @media #{$phone-only} {
-    height: 90vw;
+  @media #{$laptop-up} {
+    height: 90vh;
   }
 
   .zuc-spr-hero-content {
