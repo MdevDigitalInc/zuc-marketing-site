@@ -107,14 +107,12 @@
 .zuc-hp-about-icons {
   flex-wrap: wrap;
 
-  .--home-pg-icon {
-    @media #{$phone-only} {
-      width: 40%;
-    }
-  }
   .--about-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media #{$phone-only} {
+      width: 40%;
+    }
   }
 }
