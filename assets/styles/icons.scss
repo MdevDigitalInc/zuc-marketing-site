@@ -76,3 +76,35 @@
 .--back-icon {
   background: $color-brand-primary;
 }
+
+.--home-pg-icon {
+  margin-right: 2.5vw;
+
+  @media #{$phone-only} {
+    width: 25%;
+    margin-right: 2vw;
+  }
+  @media #{$tablet-only} {
+    width: 25%;
+    margin-right: 4vw;
+  }
+
+  .icon-img {
+    @media #{$phone-only} {
+      padding: 1vh .1vw;
+    }
+    z-index: 1;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 4vh;
+  }
+
+  p {
+    color: $color-zuc-darkindigo;
+    max-width: 100px;
+
+    @media #{$phone-only} {
+      font-size: 2.5vh;
+    }
+  }
+}
