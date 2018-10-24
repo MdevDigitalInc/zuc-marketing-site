@@ -5,16 +5,15 @@
 -
   var btnText = "Shop ZU Collection"
 
-section.zuc-spr-hero-container
+section.zuc-spr-hero-container.--zu
   .zuc-spr-hero-content
     h3
       |!{title}
     p
       |!{subHeading}
-    a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
-      |!{btnText}
+    .zuc-btn-box
+      a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
+        |!{btnText}
     img.product-image(src="../../assets/images/smarter-products/hero-zu-prodcts.png" alt="Zu cleaning products.")
-  // Background Image
-  .zuc-spr-hero-bg-img.--zu
   // Wave Shape
-  .zuc-spr-hero-bkg-wave
+  img.zuc-spr-hero-wave(src="../../assets/images/shapes/wave-top.svg", alt="A wave shape")

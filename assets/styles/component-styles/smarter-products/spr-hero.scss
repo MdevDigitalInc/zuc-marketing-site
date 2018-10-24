@@ -8,110 +8,105 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 75vh;
+  margin: 0 0 vw-phone(25);
 
   @media #{$tablet-only} {
-    height: 60vh;
+    margin: 0 0 vw-tablet(50);
   }
 
   @media #{$laptop-up} {
-    height: 90vh;
+    margin: 0 0 vw-desktop(50);
   }
 
   .zuc-spr-hero-content {
-    position: absolute;
-    width: 33%;
-    height: 100%;
-    left: 16%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background: rgba(67, 77, 160, .7);
-    padding: 6vh 4vw;
+    height: 100%;
+    width: 100%;
+    padding: 10vw 5vw 0;
 
     @media #{$tablet-only} {
       width: 85%;
-      left: 7.5%;
+      margin: 0 7.5vw;
       padding: 10vw 8vw 0;
     }
 
-    @media #{$phone-only} {
-      width: 100%;
-      left: 0;
-      padding: 10vw 10vw 0;
+    @media #{$laptop-up} {
+      width: 33%;
+      margin: 0 0 0 16vw;
+      padding: vw-desktop(125) vw-desktop(50) 0;
     }
 
     h3 {
       color: $color-pure-white;
       font-family: $main-font-serif;
       text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
-      font-size: 3vw;
-      line-height: 3.4vw;
-  
-      @media #{$phone-only} {
-        font-size: 9vw;
-        line-height: 9vw;
-      }
-  
+      font-weight: 300;
+      font-size: vw-phone(34);
+
       @media #{$tablet-only} {
-        font-size: 6vw;
-        line-height: 6vw;
+        font-size: vw-tablet(60);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-desktop(60);
       }
     }
 
     p {
       color: $color-pure-white;
+      text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
       font-weight: 300;
-      margin-bottom: 2vw;
-      font-size: 1.4vw;
-      line-height: 1.55;
-  
-      @media #{$phone-only} {
-        font-size: 3vw;
-        line-height: 4.5vw;
-      }
+      margin: 0 0 vw-phone(50);
+      font-size: vw-phone(14);
   
       @media #{$tablet-only} {
-        font-size: 1.8vw;
-        line-height: 2vw;
+        margin: 0 0 vw-tablet(45);
+        font-size: vw-tablet(30);
+      }
+
+      @media #{$laptop-up} {
+        margin: 0 0 vw-desktop(30);
+        font-size: vw-desktop(30);
       }
     }
 
     .product-image {
-      position: absolute;
       z-index: 10;
-      max-width: 23vw;
-      right: 15%;
-      bottom: 5vw;
+      position: relative;
+      align-self: center;
+      padding: vw-phone(40) 0 0;
+      width: vw-phone(261);
   
       @media #{$tablet-only} {
-        max-width: 35vw;
-        bottom: 4vw;
-        right: 24vw;
+        padding: vw-tablet(70) 0 0;
+        width: vw-tablet(550);
       }
       
-      @media #{$phone-only} {
-        max-width: 48vw;
-        bottom: 4vw;
-        right: 25%;
+      @media #{$laptop-up} {
+        padding: vw-desktop(36) 0 0;
+        width: vw-desktop(550);
       }
     }
   }
-}
 
-/*************************************************
+  /*************************************************
 
-  Hero Background Styles
+    Hero Background Styles
 
-*************************************************/
+    FYI parent uses default bg
 
-.zuc-spr-hero-bg-img {
-  height: 100%;
-  z-index: -1;
+  *************************************************/
+
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 25%;
+  background-image: url('../../assets/images/smarter-products/hero-background.png');
 
   &.--zu {
-    background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
-    padding-top: 50%;
-    background-size: 100%;
-    background-position: top right;
+    background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');  
   
     @media #{$tablet-only} {
       background-size: 170%;
@@ -159,10 +154,6 @@
       background-position: 45% 36%;
     }
   }
-
-  &.--parent {
-    background-image: url('../../assets/images/smarter-products/hero-background.png');
-  }
 }
 
 /*************************************************
@@ -171,27 +162,23 @@
 
 *************************************************/
 
-.zuc-spr-hero-bkg-wave {
-  background-image: url('../../assets/images/shapes/wave-top.svg');
+.zuc-spr-hero-wave {
   z-index: 2;
-  bottom: -2px;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
   position: absolute;
-  background-size: 105%;
-  background-repeat: no-repeat;
-
-  @media #{$phone-only} {
-    background-size: 460%;
-    background-position-y: 210%;
-    background-position-x: 99%;
-  }
+  width: 300%;
+  left: -25%;
+  bottom: -1%;
 
   @media #{$tablet-only} {
-    background-size: 290%;
-    background-position-y: 162%;
-    background-position-x: 16%;
+    width: 200%;
+    left: -20%;
+    bottom: -1%;
+  }
+
+  @media #{$laptop-up} {
+    width: 102%;
+    left: -1%;
+    bottom: -1%;
   }
 
   &.--grey-wave {
