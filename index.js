@@ -35,3 +35,14 @@ const slpHeroBgImg = require ( './assets/images/smarter-living/hero-background.p
 const srvHeaderAppl = require ( './assets/images/service-plans/woman-laundry-blue-header.png' );
 const srvHeaderFurn = require ( './assets/images/service-plans/father-son-laughing-blue-header.png' );
 const srvHeaderSys = require ( './assets/images/service-plans/front-house-blue-header.png' );
+
+// About Images
+const aboutBrad = require ( './assets/images/about/about-team-brad.png' ); 
+const aboutAshleigh = require ( './assets/images/about/about-team-ashleigh.png' ); 
+const aboutDavid = require ( './assets/images/about/about-team-david.png' ); 
+const aboutJim = require ( './assets/images/about/about-team-jim.png' ); 
+const aboutMagda = require ( './assets/images/about/about-team-magda.png' ); 
+const aboutMichelle = require ( './assets/images/about/about-team-michelle.png' ); 
+const aboutMindy = require ( './assets/images/about/about-team-mindy.png' ); 
+const aboutOksana = require ( './assets/images/about/about-team-oksana.png' ); 
+const aboutTrevor = require ( './assets/images/about/about-team-trevor.png' ); 
