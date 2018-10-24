@@ -112,4 +112,9 @@
       width: 40%;
     }
   }
+  .--about-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
