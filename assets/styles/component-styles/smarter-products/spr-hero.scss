@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 0 vw-phone(25);
-  height: 70vh;
+  height: 85vh;
 
   @media #{$tablet-only} {
     margin: 0 0 vw-tablet(50);
@@ -261,7 +261,7 @@
 
 .--zuc-spr-hero-focus {
   position: absolute;
-  top: 0;
+  bottom: vw-phone(-50);
   left: -10%;
   width: 130%;
 
@@ -284,7 +284,7 @@
     top: auto;
     left: auto;
     right: vw-desktop(85);
-    bottom: 0;
+    bottom: vw-desktop(-50);
     width: vw-desktop(1000);
   }
 }
