@@ -9,13 +9,21 @@
   position: relative;
   overflow: hidden;
   margin: 0 0 vw-phone(25);
+  height: 70vh;
 
   @media #{$tablet-only} {
     margin: 0 0 vw-tablet(50);
+    height: 80vh;
+  }
+
+  @media #{$tablet-lnd-only} {
+    margin: 0 0 vw-tablet(50);
+    height: 100vh;
   }
 
   @media #{$laptop-up} {
-    margin: 0 0 vw-desktop(50);
+    margin: 0 0 15vh;
+    height: 90vh;
   }
 
   .zuc-spr-hero-content {
@@ -31,6 +39,12 @@
       width: 85%;
       margin: 0 7.5vw;
       padding: 10vw 8vw 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      width: 85%;
+      margin: 0 7.5vw;
+      padding: 5vw 8vw 0;
     }
 
     @media #{$laptop-up} {
@@ -72,23 +86,29 @@
         font-size: vw-desktop(30);
       }
     }
+  }
 
-    .product-image {
-      z-index: 10;
-      position: relative;
-      align-self: center;
-      padding: vw-phone(40) 0 0;
-      width: vw-phone(261);
-  
-      @media #{$tablet-only} {
-        padding: vw-tablet(70) 0 0;
-        width: vw-tablet(550);
-      }
-      
-      @media #{$laptop-up} {
-        padding: vw-desktop(36) 0 0;
-        width: vw-desktop(550);
-      }
+  .product-image {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: vw-phone(30);
+    width: vw-phone(261);
+
+    @media #{$tablet-only} {
+      left: vw-tablet(115);
+      width: vw-tablet(550);
+    }
+
+    @media #{$tablet-lnd-only} {
+      bottom: vw-tablet(15);
+      left: vw-tablet(225);
+      width: vw-tablet(350);
+    }
+    
+    @media #{$laptop-up} {
+      left: vw-desktop(350);
+      width: vw-desktop(550);
     }
   }
 
