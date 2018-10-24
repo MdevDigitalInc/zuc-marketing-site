@@ -175,7 +175,7 @@
 *************************************************/
 
 .zuc-spr-hero-wave {
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   width: 300%;
   left: -25%;
@@ -209,53 +209,28 @@
 
   @media #{$laptop-up} {
     display: block;
-    background-image: url('../../assets/images/smarter-products-child/white-mol-mesh-bottom-left.png');
     position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-size: 25%;
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    top: 0;
+    z-index: 2;
+    width: vw-desktop(500);
+    bottom: 0;
     left: -75px;
     opacity: 1;
   }
 }
 
 .--pc-hero-bkg-overlay {
-  background-image: url('../../assets/images/smarter-products-child/circles-hero.png');
   position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: right;
-  margin-top: -35px;
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
-  padding-top: 20%;
+  z-index: 2;
+  width: vw-desktop(1150);
+  top: -15vh;
+  right: -4vw;
 
   @media #{$phone-only} {
-    margin-top: -10px;
-    background-size: 84%;
-    background-position: 50% 100%;
-    height: 100%;
+
   }
 
   @media #{$tablet-only} {
-    background-size: 74%;
-    background-position: 51% 85%;
-    margin-top: -2px;
-  }
-}
 
-.--pc-hero-bkg-wave {
-  @media #{$tablet-only} {
-    background-size: 290%;
-    background-position-y: 135%;
-    background-position-x: 16%;
   }
 }
 
