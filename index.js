@@ -37,6 +37,7 @@ const srvHeaderFurn = require ( './assets/images/service-plans/father-son-laughi
 const srvHeaderSys = require ( './assets/images/service-plans/front-house-blue-header.png' );
 
 // About Images
+const aboutHero = require ( './assets/images/about/zucora-home-building.png' );
 const aboutBrad = require ( './assets/images/about/about-team-brad.png' ); 
 const aboutAshleigh = require ( './assets/images/about/about-team-ashleigh.png' ); 
 const aboutDavid = require ( './assets/images/about/about-team-david.png' ); 
