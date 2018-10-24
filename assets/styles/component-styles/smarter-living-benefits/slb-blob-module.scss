@@ -20,13 +20,17 @@
   @media #{$laptop-up} {
     display: inline;
     position: absolute;
-    transform: scale(.28);
+    right: -40%;
+    transform: scale(.4);
   }
 }
 
 .zuc-slb-rt {
   width: 100%;
   justify-content: center;
+  @media #{$phone-only} {
+    padding-top: 8vh;
+  }
 
   .zuc-img-container {
     position: relative;
@@ -36,7 +40,6 @@
     @media #{$tablet-only} {
       width: 72vw;
     }
-
     @media #{$laptop-up} {
       width: 30.66vw;
     }
