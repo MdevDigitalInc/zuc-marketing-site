@@ -38,7 +38,7 @@
     @media #{$tablet-only} {
       width: 85%;
       margin: 0 7.5vw;
-      padding: 10vw 8vw 0;
+      padding: 7.5vw 8vw 0;
     }
 
     @media #{$tablet-lnd-only} {
@@ -266,13 +266,25 @@
   width: 130%;
 
   @media #{$tablet-only} {
+    top: auto;
     left: vw-tablet(19);
-    width: 100%;
+    bottom: vw-tablet(-100);
+    width: vw-tablet(750);
+  }
+
+  @media #{$tablet-lnd-only} {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: vw-tablet(-50);
+    width: vw-tablet(500);
   }
 
   @media #{$laptop-up} {
+    top: auto;
     left: auto;
     right: vw-desktop(85);
-    width: auto;
+    bottom: 0;
+    width: vw-desktop(1000);
   }
 }
