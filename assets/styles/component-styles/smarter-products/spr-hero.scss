@@ -121,13 +121,8 @@
 
   &.--hk {
     background-image: url('../../assets/images/shared/happy-family-livingroom.png');
-    padding-top: 50vh;
-    background-size: 100%;
-    background-position: cover;
-  
-    @media #{$laptop-up} {
-      padding-top: 90vh;
-    }
+
+
     @media #{$tablet-only} {
       background-size: 170%;
       background-position: 100% 30%;
@@ -140,9 +135,6 @@
 
   &.--pc {
     background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
-    padding-top: 50%;
-    background-size: 115%;
-    background-position: right bottom;
   
     @media #{$tablet-only} {
       background-size: 180%;
