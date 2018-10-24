@@ -8,4 +8,20 @@
   animation-iteration-count: $iteration;
 }
 
+// Functions
 
+@function vw-desktop($width) {
+  @return ($width / 19.2) * 1vw;
+}
+
+@function vw-laptop($width) {
+  @return ($width / 12.8) * 1vw;
+}
+
+@function vw-tablet($width) {
+  @return ($width / 7.68) * 1vw;
+}
+
+@function vw-phone($width) {
+  @return ($width / 3.2) * 1vw;
+}

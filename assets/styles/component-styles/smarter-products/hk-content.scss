@@ -8,15 +8,17 @@
   background-image: url('../../assets/images/shared/happy-family-livingroom.png');
   height: 100%;
   z-index: -1;
-  padding-top: 50%;
+  padding-top: 50vh;
   background-size: 100%;
   background-position: cover;
 
+  @media #{$laptop-up} {
+    padding-top: 90vh;
+  }
   @media #{$tablet-only} {
     background-size: 170%;
     background-position: 100% 30%;
   }
-
   @media #{$phone-only} {
     background-size: 260%;
     background-position: 90% 40%;

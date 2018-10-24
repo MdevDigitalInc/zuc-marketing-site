@@ -1,0 +1,110 @@
+-
+  var brad = 
+    {
+      name : 'Brad Geddes',
+      title : 'President & CEO',
+      bio : 'As an accomplished entrepreneur and business leader, Brad and his team are constantly creating opportunities to help our retail partners, customers and employees discover new ways to achieve maximum success.',
+      _linkedin : '#',
+      _title : 'todo',
+     style : 'background-image:url(\'./images/about/about-team-brad.png\');'
+    }
+
+-
+  var props = [
+    {
+      name : 'Mindy Dodd',
+      title : 'Vice President & Chief Operating Officer',
+      bio : 'With her passion for coaching people and consistently achieving results, Mindy is our inspirational leaders who keeps us focused on delivering the very best customer experiences.',
+      _linkedin : '#',
+      _title : 'Mindy Dodd Linkedin',
+     style : 'background-image:url(\'./images/about/about-team-mindy.png\');'
+    },
+    {
+      name : 'Michelle',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-michelle.png\');'
+    },
+    {
+      name : 'Ashleigh',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-ashleigh.png\');'
+    },
+    {
+      name : 'David',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-david.png\');'
+    },
+    {
+      name : 'Magda',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-magda.png\');'
+    },
+    {
+      name : 'Trevor',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-trevor.png\');'
+    },
+    {
+      name : 'Oksana',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-oksana.png\');'
+    },
+    {
+      name : 'Jim',
+      title : 'Morbi orci ipsum',
+      bio : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id libero vitae justo congue efficitur.',
+      _linkedin : '#',
+      _title : ' Linkedin',
+      style : 'background-image:url(\'./images/about/about-team-jim.png\');'
+    }
+  ]
+
+section.zuc-teamgrid
+  h2.teamgrid-title
+    |Meet our team:
+  p.teamgrid-subtitle
+    |We are lead by an experienced team of seasoned professionals who are passionate about delivering exceptional service - while still finding ways to have fun!
+  .zuc-teamgrid-items
+    //- First two items reserved for Brad
+    .zuc-teamgrid-item(style=brad.style)
+    .zuc-teamgrid-item
+      span.zuc-teamgrid-brad-name
+        |#{brad.name}
+      span.zuc-teamgrid-brad-title
+        |#{brad.title}
+      p.zuc-teamgrid-brad-bio
+        |#{brad.bio}
+      a.zuc-teamgrid-brad-link(href=brad._linkedin title=brad._title)
+        i.fab.fa-linkedin
+    //- Remaining items iterated
+    each prop in props.length ? props : ['Gallery is empty']
+      .zuc-teamgrid-item(style=prop.style)
+        .zuc-teamgrid-item-overlay
+          .zuc-teamgrid-item-overlay-bg
+          span.zuc-teamgrid-item-title
+            |#{prop.title}
+          span.zuc-teamgrid-item-name
+            |#{prop.name}
+          .zuc-teamgrid-item-line
+          p.zuc-teamgrid-item-bio
+            |#{prop.bio}
+          a.zuc-teamgrid-item-link(href=prop._linkedin title=prop._title)
+            i.fab.fa-linkedin

@@ -1,0 +1,80 @@
+section.zuc-about-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  margin: 0 0 30vh;
+
+  @media #{$tablet-up} {
+    height: 70vh;
+    margin: 0 0 20vh;
+  }
+}
+
+.zuc-about-hero-textbox {
+  position: relative;
+  z-index: 5;
+  background: $color-pure-white;
+  box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
+  top: 13vh;
+  margin: 0;
+  padding: vw-phone(39) vw-phone(19) vw-phone(49) vw-phone(14);
+
+  @media #{$tablet-only} {
+    margin: 0 7vw;
+    padding: vw-tablet(51) vw-tablet(35) vw-tablet(55) vw-tablet(33);
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 16vw;
+    padding: vw-desktop(52) vw-desktop(88) vw-desktop(50) vw-desktop(80);
+  }
+
+  h1 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  .zuc-about-hero-graphic {
+    position: absolute;
+    width: vw-phone(103);
+    top: vw-phone(32);
+    right: vw-phone(17);
+
+    @media #{$tablet-only} {
+      width: vw-tablet(185);
+      top: vw-tablet(38);
+      right: vw-tablet(34);
+    }
+  
+    @media #{$laptop-up} {
+      width: vw-desktop(185);
+      top: vw-desktop(32);
+      right: 0;
+      transform: translatex(50%);
+    }
+  }
+}
+.zuc-about-hero-wave {
+  position: absolute;
+  display: none;
+
+  @media #{$tablet-up} {
+    display: initial;
+    width: 225vw;
+    left: -100%;
+    bottom: -2px;
+  }
+
+  @media #{$laptop-up} {
+    width: 103vw;
+    left: -5px;
+    bottom: -2px;
+  }
+}
