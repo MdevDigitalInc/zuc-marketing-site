@@ -4,13 +4,13 @@
 */
 section.zuc-sixgrid-container {
   position: relative;
-  overflow: visible;
-  padding: 5vh 5vw 0;
+  overflow: hidden;
+  padding: 5vh 5vw vw-phone(100);
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 0 7vw;
+    padding: 0 7vw vw-tablet(200);
   }
 
   @media #{$laptop-only} {
@@ -19,10 +19,6 @@ section.zuc-sixgrid-container {
 
   @media #{$desktop-up} {
     padding: 0 24vw vw-desktop(200);
-  }
-
-  &.--grey {
-    background-color: $color-zuc-platinum;
   }
 
   h2 {
@@ -139,22 +135,15 @@ section.zuc-sixgrid-container {
 // Background Shape
 .--sixgrid-bkg {
   position: absolute;
-  z-index: -90;
-  width: 100%;
-  bottom: 0;
   left: 0;
+  z-index: -99;
+  // todo
 
-  @media #{$tablet-only} {
-
+  @media #{$tablet-up} {
+    // todo
   }
 
-  @media #{$laptop-only} {
-
-  }
-
-  @media #{$desktop-up} {
-    left: 0;
-    bottom: 0;
-    width: 100%;
+  @media #{$laptop-up} {
+    // todo
   }
 }
