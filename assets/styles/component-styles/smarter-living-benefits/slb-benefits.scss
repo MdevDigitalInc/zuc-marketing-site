@@ -87,20 +87,24 @@
   }
 
   .zuc-coral-wave {
-    display: none;
+    display: inline;
+    position: absolute;
+
     @media #{$laptop-up} {
-      display: inline;
-      position: absolute;
-      bottom: 2%;
-      right: -40%;
-      transform: scale(.5);
+      width: 40%;
+      right: 0;
+      bottom: vw-desktop(-22);
+      transform: translateX(50%);
     }
     @media #{$tablet-only} {
-      display: inline;
-      transform: scale(.25);
-      position: absolute;
       bottom: -25%;
+      transform: scale(.25);
       left: 45%;
+    }
+    @media #{$phone-only} {
+      bottom: 0%;
+      transform: scale(.25);
+      left: 40%;
     }
   }
 
