@@ -74,9 +74,12 @@
     padding: 50px 10px 40px;
     justify-content: space-between;
   }
-
   @media #{$phone-only} {
     padding-top: 8vh;
     justify-content: space-between;
+    flex-wrap: wrap;
+    .zuc-hp-icon {
+      margin-right: 10vw;
+    }
   }
 }

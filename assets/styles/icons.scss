@@ -77,15 +77,13 @@
   background: $color-brand-primary;
 }
 
-.--home-pg-icon {
+.zuc-hp-icon {
   margin-right: 2.5vw;
 
   @media #{$phone-only} {
-    width: 25%;
     margin-right: 2vw;
   }
   @media #{$tablet-only} {
-    width: 25%;
     margin-right: 4vw;
   }
 
@@ -101,10 +99,22 @@
 
   p {
     color: $color-zuc-darkindigo;
-    max-width: 100px;
 
     @media #{$phone-only} {
       font-size: 2.5vh;
     }
+  }
+}
+
+.--hp-icon-base {
+  @media #{$phone-only} {
+    width: 25%;
+  }
+  @media #{$tablet-only} {
+    width: 25%;
+  }
+
+  p {
+    max-width: 100px;
   }
 }
