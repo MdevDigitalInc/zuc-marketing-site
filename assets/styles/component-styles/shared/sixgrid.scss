@@ -5,16 +5,18 @@
 section.zuc-sixgrid-container {
   position: relative;
   overflow: visible;
-  padding: 5vh 5vw 29.375vw;
+  padding: 5vh 5vw 0;
+  display: flex;
+  flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 0 7vw 12.37vw;
+    padding: 0 7vw;
   }
   @media #{$laptop-up} {
-    padding: 0 20vw 7vw;
+    padding: 0 20vw;
   }
   @media #{$desktop-up} {
-    padding: 0 24vw 5.45vw;
+    padding: 0 24vw;
   }
 
   &.--grey {
