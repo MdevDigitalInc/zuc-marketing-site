@@ -12,11 +12,13 @@ section.zuc-sixgrid-container {
   @media #{$tablet-up} {
     padding: 0 7vw;
   }
-  @media #{$laptop-up} {
-    padding: 0 20vw;
+
+  @media #{$laptop-only} {
+    padding: 0 20vw vw-laptop(200);
   }
+
   @media #{$desktop-up} {
-    padding: 0 24vw;
+    padding: 0 24vw vw-desktop(200);
   }
 
   &.--grey {
@@ -136,12 +138,23 @@ section.zuc-sixgrid-container {
 
 // Background Shape
 .--sixgrid-bkg {
+  position: absolute;
+  z-index: -90;
   width: 100%;
-  padding-top: 61.7%;
-  @include center(both);
-  z-index: -1;
-  background-image: url('../../assets/images/shapes/wave-shape-dbl-silver.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  bottom: 0;
+  left: 0;
+
+  @media #{$tablet-only} {
+
+  }
+
+  @media #{$laptop-only} {
+
+  }
+
+  @media #{$desktop-up} {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
