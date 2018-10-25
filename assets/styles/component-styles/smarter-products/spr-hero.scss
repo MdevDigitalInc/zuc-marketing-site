@@ -122,17 +122,16 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 25%;
   background-image: url('../../assets/images/smarter-products/hero-background.png');
+
+  @media #{$tablet-only} {
+    // todo
+  }
 
   &.--zu {
     background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');  
   
     @media #{$tablet-only} {
-      // todo
-    }
-  
-    @media #{$phone-only} {
       // todo
     }
   }
@@ -144,19 +143,12 @@
     @media #{$tablet-only} {
       // todo
     }
-    @media #{$phone-only} {
-      // todo
-    }
   }
 
   &.--pc {
     background-image: url('../../assets/images/smarter-products-child/comfort-hero.png');
   
     @media #{$tablet-only} {
-      // todo
-    }
-  
-    @media #{$phone-only} {
       // todo
     }
   }
@@ -214,7 +206,6 @@
 .--pc-hero-bkg-overlay {
   position: absolute;
   z-index: 2;
-  
 
   @media #{$phone-only} {
     width: vw-phone(325);
