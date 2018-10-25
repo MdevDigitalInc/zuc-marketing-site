@@ -104,5 +104,8 @@
   @media #{$phone-only} {
     width: 40%;
   }
+  @media #{$tablet-only} {
+    width: 25%;
+  }
 }
 
