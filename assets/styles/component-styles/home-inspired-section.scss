@@ -91,13 +91,13 @@
   }
   @media #{$tablet-only} {
     width: 25%;
-
-    p {
-      max-width: 200px;
-    }
   }
 
   p {
-   max-width: 100px;
+    max-width: 100px;
+
+    @media #{$tablet-only} {
+      max-width: 200px;
+    }
   }
 }
