@@ -91,18 +91,19 @@
     position: absolute;
 
     @media #{$laptop-up} {
-      bottom: 2%;
-      right: -40%;
-      transform: scale(.5);
+      width: 40%;
+      right: 0;
+      bottom: vw-desktop(25);
+      transform: translateX(50%);
     }
     @media #{$tablet-only} {
-      transform: scale(.25);
       bottom: -25%;
+      transform: scale(.25);
       left: 45%;
     }
     @media #{$phone-only} {
-      transform: scale(.25);
       bottom: 0%;
+      transform: scale(.25);
       left: 40%;
     }
   }

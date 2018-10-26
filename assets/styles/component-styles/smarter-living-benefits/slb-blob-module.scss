@@ -1,15 +1,73 @@
-.zuc-slb-blob-photo {
-  z-index: 1;
-  max-width: 535px;
-  max-height: 400px;
+.slb-grey-slash {
+  display: none;
 
-  @media #{$tablet-only} {
-    max-width: 100%;
-    display: block;
+  @media #{$laptop-up} {
+    display: inline;
+    position: absolute;
+    right: -40%;
+    transform: scale(.4);
+  }
+}
+
+.zuc-slb-rt {
+  width: 100%;
+  justify-content: center;
+  @media #{$phone-only} {
+    padding-top: 8vh;
   }
 
-  @media #{$phone-only} {
-    max-width: 100%;
-    display: block;
+  .zuc-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media #{$tablet-only} {
+      width: 72vw;
+    }
+    @media #{$laptop-up} {
+      width: 30.66vw;
+    }
+
+    .zuc-img-block {
+      background: url('../../assets/images/shared/woman-online-purchase.png');
+      background-position: center;
+      background-size: cover;
+      height: ( 254 / 3.2 ) * 1vw;
+      width: ( 320 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        height: ( 512 / 7.68 ) * 1vw;
+        width: ( 607 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        height: ( 512 / 19.2 ) * 1vw;
+        width: ( 607 / 19.2 ) * 1vw;
+      }
+    }
+
+    .zuc-blob {
+      position: absolute;
+      z-index: -3;
+      top: -7.813vw;
+      left: 0;
+      width: 175%;
+
+      @media #{$phone-only} {
+        // display: none;
+      }
+
+      @media #{$tablet-only} {
+        top: 19vw;
+        left: -12vw;
+        width: 96vw;
+      }
+
+      @media #{$laptop-up} {
+        top: 6vw;
+        left: -6vw;
+        width: 42vw;
+      }
+    }
   }
 }
