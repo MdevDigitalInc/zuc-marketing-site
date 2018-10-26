@@ -1,31 +1,81 @@
 //-
   Review Component
   AW - 120918
+-
+  var quotes = [
+    {
+      author : 'Jason H',
+      text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
+      ratings : [
+        {
+          star: true
+        },
+        {
+          star: true
+        },
+        {
+          star: true
+        },
+        {
+          star: true
+        }
+      ]
+    },
+    {
+      author : 'Jason H',
+      text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
+      ratings : [
+        {
+          star: true
+        },
+        {
+          star: true
+        },
+        {
+          star: true
+        }
+      ]
+    },
+    {
+      author : 'Jason H',
+      text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
+      ratings : [
+        {
+          star: true
+        },
+        {
+          star: true
+        }
+      ]
+    }
+  ]
 
-- var quote = 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.'
-- var author = 'JASON H.'
-- var cta = 'See what our Members say'
+-
+  var cta = 'See what our Members say'
 
 section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing
   .zuc-review-container.flex.flex-column.flex-vert-center
-    .zuc-quote-container.flex.flex-column.flex-vert-center.u-soft-shadow
-      .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
-        img(src='../../assets/images/icons/icon-quote.svg' alt="Quotation mark")
-      .zuc-quote-text.u-zuc-darkindigo
-        p
-          |#{quote}
-      .zuc-stars-container.flex.flex-row.flex-space-around
-        img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
-        img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
-        img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
-        img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
-        img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
-      p.zuc-quote-author.u-bold.u-zuc-darkindigo
-        |— #{author}
-      a.zuc-quote-button.zuc-right.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href='#' title="todo")
-        img(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing right')
-      a.zuc-quote-button.zuc-left.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href='#' title="todo")
-        img.u-imgflip-hor(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing left')
+    .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
+      img(src='../../assets/images/icons/icon-quote.svg' alt="Quotation mark")
+    // Quote / Rating Container
+    .zuc-quote-container.u-soft-shadow
+      // Individual Quote
+      each quote in quotes.length ? quotes : ['Quotes are empty']
+        .zuc-quote-transition-wrap.flex.flex-column.flex-vert-center(data-review)
+          .zuc-quote-text.u-zuc-darkindigo
+            p
+              |#{quote.text}
+          .zuc-stars-container.flex.flex-row.flex-space-around
+            each rating in quote.ratings.length ? quote.ratings : ['Quotes are empty']
+              img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
+          p.zuc-quote-author.u-bold.u-zuc-darkindigo
+            |— #{quote.author}
+
+    // Action controls
+    .zuc-quote-button.zuc-right.u-soft-shadow.flex.flex-vert-center.flex-hor-center(data-review-next)
+      img(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing right')
+    .zuc-quote-button.zuc-left.u-soft-shadow.flex.flex-vert-center.flex-hor-center(data-review-prev)
+      img.u-imgflip-hor(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing left')
     .zuc-floating-container.u-soft-shadow
       h3.u-color-white.u-font-serif
         |!{cta}
