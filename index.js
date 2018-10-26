@@ -48,3 +48,4 @@ const aboutMichelle = require ( './assets/images/about/about-team-michelle.png' 
 const aboutMindy = require ( './assets/images/about/about-team-mindy.png' );
 const aboutOksana = require ( './assets/images/about/about-team-oksana.png' );
 const aboutTrevor = require ( './assets/images/about/about-team-trevor.png' );
+const aboutColleen = require ( './assets/images/about/about-team-colleen.png' );
