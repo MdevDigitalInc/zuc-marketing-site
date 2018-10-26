@@ -83,26 +83,8 @@ section.zuc-custom-plan {
     height: $zuc-custom-row-height-desktop;
   }
 
-  // CTA Line ("BEST VALUE")
-  > :nth-child( 1 ) {
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: ( 23 / 3.2 ) * 1vw 0 0;
-    font-size: ( 15 / 3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      padding: ( 13 / 7.68 ) * 1vw 0 0;
-      font-size: ( 8.5 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      padding: ( 26 / 19.2 ) * 1vw 0 0;
-      font-size: ( 16 / 19.2 ) * 1vw;
-    }
-  }
-
   // PLAN NAME ("Whole Home Plan")
-  > :nth-child( 2 ) {
+  > :nth-child( 1 ) {
     font-family: $main-font-serif;
     text-transform: capitalize;
     font-weight: 300;
@@ -115,13 +97,13 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      padding: ( 17 / 19.2 ) * 1vw 0 0;
+      padding: ( 45 / 19.2 ) * 1vw 0 0;
       font-size: ( 30 / 19.2 ) * 1vw;
     }
   }
 
   // Graphical Line
-  > :nth-child( 3 ) {
+  > :nth-child( 2 ) {
     border-top: 1px $color-pure-white solid;
     width: 40%;
     padding: ( 9 / 3.2 ) * 1vw 0;
@@ -138,7 +120,7 @@ section.zuc-custom-plan {
   }
 
   // Price Object
-  > :nth-child( 4 ) {
+  > :nth-child( 3 ) {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -185,7 +167,7 @@ section.zuc-custom-plan {
   }
 
   // Rate ("/month")
-  > :nth-child( 5 ) {
+  > :nth-child( 4 ) {
     font-weight: 600;
     font-size: ( 12 / 3.2 ) * 1vw;
     padding: 0 0 ( 28 / 3.2 ) * 1vw;
@@ -197,16 +179,17 @@ section.zuc-custom-plan {
 
     @media #{$laptop-up} {
       font-size: ( 16 / 19.2 ) * 1vw;
-      padding: 0 0 ( 30 / 19.2 ) * 1vw;
+      padding: 4.5vw 0 ( 30 / 19.2 ) * 1vw;
     }
   }
 
   // Savings ("Save $50")
-  > :nth-child( 6 ) {
+  > :nth-child( 5 ) {
     font-family: $main-font-serif;
     font-weight: 300;
     font-size: ( 27 / 3.2 ) * 1vw;
     padding: 0 0 ( 29 / 3.2 ) * 1vw;
+    line-height: 1.5vw;
 
     @media #{$tablet-only} {
       font-size: ( 15 / 7.68 ) * 1vw;
@@ -214,8 +197,8 @@ section.zuc-custom-plan {
     }
 
     @media #{$laptop-up} {
-      font-size: ( 29 / 19.2 ) * 1vw;
-      padding: 0 0 ( 31 / 19.2 ) * 1vw;
+      font-size: ( 24 / 19.2 ) * 1vw;
+      padding: 0 2vw ( 31 / 19.2 ) * 1vw;
     }
   }
 }
