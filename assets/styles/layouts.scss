@@ -27,11 +27,9 @@
     @media #{$tablet-only} {
       padding: 10.8vw 6vw 0;
     }
-  
     @media #{$laptop-only} {
       padding: 8vw 17vw 0;
     }
-  
     @media #{$desktop-up} {
       padding: 6.2vw 17vw  0;
     }
@@ -61,7 +59,7 @@
 .zuc-split {
   flex-direction: column;
   align-items: center;
-  
+
 
   @media #{$laptop-up} {
     flex-direction: row;
@@ -80,7 +78,7 @@
   .zuc-split-r {
     width: 100%;
     margin-bottom: 25px;
-  
+
     @media #{$laptop-up} {
       width: 50%;
     }

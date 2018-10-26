@@ -5,18 +5,14 @@
 -
   var btnText = "SHOP home care kits"
 
-section.zuc-spr-hero-container.--zu-hero-container
-  .zuc-spr-hero-content.--zu-hero-content
-    h3.u-font-serif.u-color-white.u-text-shadow
+section.zuc-spr-hero-container.--hk
+  .zuc-spr-hero-content
+    h3
       |!{title}
-    p.u-normal.u-color-white
+    p
       |!{subHeading}
-    a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
-      |!{btnText}
-    img.product-image(src="../../assets/images/smarter-products/hero-zu-prodcts.png" alt="Zu cleaning products.")
-  // Background Image.
-  .--hk-hero-bkg-img
-  // Wave Shape.
-  .zuc-spr-hero-bkg-wave.--zu-hero-bkg-wave
-
-//- TODO: .product-image is not correct, namespace on the this entire file
+    .zuc-btn-box
+      a.zuc-btn.zuc-btn-secondary.u-uppercase(href='#' title='TODO')
+        |!{btnText}
+  img.product-image(src="../../assets/images/smarter-products-child/hero-mockup.png" alt="Zucora Home Kit Boxes")
+  img.zuc-spr-hero-wave(src="../../assets/images/shapes/wave-top-grey.svg", alt="A wave shape")

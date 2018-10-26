@@ -1,34 +1,34 @@
-- var title = 'Protect your home and budget with a Smarter Living Plan'
-- var subheading = 'Customized'
-- var text = 'When furniture accidents happen; major appliances fail, or your home comfort systems need repair, the Smarter Living Plan will help remove the stress and reduce the financial burden.'
-- var button = 'Choose a Service Plan'
+- var title = 'Protect your home with a Smarter Living Plan.'
+- var subheading = 'Convenient'
+- var text = 'When major appliances malfunction; your furniture becomes stained or accidentally damaged, or your home comfort systems don’t operate the way they should, then a Smarter Living Plan from Zucora Home can help remove the stress of managing your home while protecting your budget from unexpected repairs. A Smarter Living Plan provides peace of mind with our priority service delivered by our national network of trained, qualified professionals.'
+- var button = 'Learn More'
 
-section.zuc-home-customized-section--wrapper.flex-vert-center.u-section-spacing
+section.zuc-home-customized-section.flex-vert-center.u-section-spacing
   .zuc-home-customized-section--text-section.flex.flex-column
-    h4.zuc-home-customized-section--subheading.u-uppercase.flex.flex-vert-center
+    h4.zuc-home-customized-section--subheading.u-light.u-zuc-darkindigo.u-uppercase.flex.flex-vert-center
       |#{subheading}
     h2.zuc-home-customized-section--heading.u-font-serif
       |#{title}
     p.zuc-home-customized-section--copy.u-light.u-zuc-darkindigo
       |#{text}
     .zuc-home-customized-section--btn
-      a.zuc-btn.zuc-btn-secondary.u-uppercase(href="service-plans.html" title="Service Plans")
+      a.zuc-btn.zuc-btn-secondary.u-uppercase(href="smarter-living.html" title="Smarter Living")
         |#{button}
   .zuc-home-customized-section--graphic-section.flex.flex-hor-between.flex-vert-center
-    .item
-      img.icon(src='../../assets/images/icons/icon-24-7-service.svg' alt='Solutions Team')
+    .zuc-hp-icon.--hp-icon-base
+      img.icon-img(src='../../assets/images/icons/icon-tech-network.svg' alt='Technician Network')
+      p.u-bold.u-uppercase
+        |Technician Network
+    .zuc-hp-icon.--hp-icon-base
+      img.icon-img(src='../../assets/images/icons/icon-premium-pricing.svg' alt='Premium Pricing')
+      p.u-bold.u-uppercase
+        |Earn Rewards
+    .zuc-hp-icon.--hp-icon-base
+      img.icon-img(src='../../assets/images/icons/icon-24-7-service.svg' alt='Solutions Team')
       p.u-bold.u-uppercase
         |Solutions Team
     // TODO: re-export this svg -- has different dimensions than rest.
-    .item
-      img.icon(src='../../assets/images/icons/icon-fast-service.svg' alt='Rapid Response')
+    .zuc-hp-icon.--hp-icon-base
+      img.icon-img(src='../../assets/images/icons/icon-fast-service.svg' alt='Rapid Response')
       p.u-bold.u-uppercase
         |Rapid Response
-    .item
-      img.icon(src='../../assets/images/icons/icon-tech-network.svg' alt='Technician Network')
-      p.u-bold.u-uppercase
-        |Technician Network
-    .item
-      img.icon(src='../../assets/images/icons/icon-premium-pricing.svg' alt='Premium Pricing')
-      p.u-bold.u-uppercase
-        |Premium Pricing

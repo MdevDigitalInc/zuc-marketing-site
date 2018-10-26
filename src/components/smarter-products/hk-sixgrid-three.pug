@@ -1,0 +1,42 @@
+-
+  var gridTitles = [
+    'Clean',
+    'Restore',
+    'Maintain'
+  ]
+-
+  var gridBody = [
+    'Easy and safe to use cleaners for wood, leather and fabric furniture.',
+    'Bring furniture back to like-new condition by treating it with products designed to remove stains and refresh its appearance.',
+    'Extend the life of furniture with regular treatments of moisturizer, lotion, and polish.'
+  ]
+
+section.zuc-sixgrid-container.--grey
+  h2
+    |Keep multiple surfaces looking like new.
+  p.zuc-sixgrid-subtext
+    |Whatever the purpose of your furniture, Zucora Home furniture care products can help you maximize its lifespan without using harsh chemicals.
+  .zuc-sixgrid-items
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-clean.svg", alt="Icon of a clipboard")
+      h6
+        |!{gridTitles[0]}
+      p
+        |#{gridBody[0]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-restore.svg", alt="Icon of mould")
+      h6
+        |!{gridTitles[1]}
+      p
+        |#{gridBody[1]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-maintain.svg", alt="Icon of an allergen")
+      h6
+        |!{gridTitles[2]}
+      p
+        |#{gridBody[2]}
+
+  img.zuc-spr-hero-wave(src="../../assets/images/shapes/wave-top.svg", alt="todo")

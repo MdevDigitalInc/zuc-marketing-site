@@ -1,120 +1,184 @@
-.zuc-damage-bar {
+.zuc-damage {
   position: relative;
-  padding-bottom: 88.44vw;
-
-  @media #{$tablet-only} {
-    padding-bottom: 44.22vw;
-  }
-
-  @media #{$laptop-up} {
-    padding-bottom: 22.11vw;
-  }
-
-  .zuc-damage-bg-img {
-    display: none;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    // Default fallback
-    background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
-    
-    &.--appl {
-      background-image: url('../../assets/images/service-plans/appliances-icon-banner.png');
-    }
-
-    &.--furn {
-      background-image: url('../../assets/images/service-plans/furniture-icon-banner.png');
-    }
-
-    &.--homesys {
-      background-image: url('../../assets/images/service-plans/home-systems-icon-banner.png');
-    }
-
-    @media #{$tablet-up} {
-      display: block;
-      z-index: -13;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 77.5vw;
-    }
-
-    @media #{$laptop-up} {
-      height: 30vw;
-    }
-  }
-}
-
-.zuc-damage-group {
-  margin: 0;
+  display: flex;
   flex-direction: column;
+  margin: ( 51 / 3.2 ) * 1vw 0 ( 133 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    margin: 52.86vw 6.5vw 0;
+    margin: ( 114 / 7.68 ) * 1vw 7vw ( 179 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
-    margin: 15.1vw 16.7vw 0;
-  }  
+    justify-content: space-between;
+    margin: ( 82 / 19.2 ) * 1vw 16vw ( 112 / 19.2 ) * 1vw;
+  }
 }
 
-.zuc-damage-box {
-  width: 100%;
-  background: $color-pure-white;
-  padding: 21.875vw 12.19vw 21.56vw 11.25vw;
+.zuc-damage-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vw ( 43 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    padding: 8.46vw 29.42vw 8.59vw 7.16vw;
+    margin: 0 0 ( 57 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {
-    width: 33.3%;
-    padding: 3.69vw 6.2vw 3.23vw 2.68vw;
+    margin: ( 31 / 19.2 ) * 1vw 0 ( 28 / 19.2 ) * 1vw;
+    width: 75%;
   }
 
-  .zuc-why-damage-img-box {
-    width: 34vw;
-    padding-bottom: 9.375vw;
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    font-size: ( 30 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      width: 17.6vw;
-      padding-bottom: 3.9vw;
+      font-size: ( 50 / 7.68 ) * 1vw;
     }
   
     @media #{$laptop-up} {
-      width: 5.6vw;
-      padding-bottom: 1.51vw;
+      font-size: ( 50 / 19.2 ) * 1vw;
     }
   }
 
-  h4 {
+  .zuc-btn-box {
+    align-self: center;
+
+    @media #{$tablet-up} {
+      align-self: flex-start;
+    }
+  }
+}
+
+.zuc-damage-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 ( 24 / 3.2 ) * 1vw; 
+
+  @media #{$tablet-up} {
+    flex-direction: row;
+    padding: 0 0 ( 45 / 7.68 ) * 1vw; 
+  }
+
+  @media #{laptop-up} {
+    padding: 0 0 ( 35 / 19.2 ) * 1vw; 
+  }
+}
+
+.zuc-damage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: $color-pure-white;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    align-items: flex-start;
+    text-align: left;
+    width: 33.3%;
+  }
+
+  .zuc-why-damage-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    height: ( 140 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      justify-content: flex-start;
+      height: ( 120 / 7.68 ) * 1vw;
+      width: 40%;
+    }
+
+    @media #{$laptop-up} {
+      height: ( 136 / 19.2 ) * 1vw;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h6 {
     color: $color-zuc-indigo;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: ( 20 / 3.2 ) * 1vw;
+
+    @media #{$tablet-up} {
+      margin-top: ( 20 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      margin-top: ( 20 / 19.2 ) * 1vw;
+    }
+  }
+
+  p {
+    color: $color-zuc-darkindigo;
+    padding: 0 7vw;
+    width: auto;
+
+    @media #{$tablet-up} {
+      padding: 0;
+      width: ( 200 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      width: ( 209 / 19.2 ) * 1vw;
+    }
+  }
+}
+
+.zuc-damage-right {
+  background: $color-zuc-indigo;
+  padding: ( 38 / 3.2 ) * 1vw 0 ( 34 / 3.2 ) * 1vw 5vw;
+  width: 100%;
+  
+  @media #{$tablet-only} {
+    padding: ( 41 / 7.68 ) * 1vw 0 ( 43 / 7.68 ) * 1vw ( 39 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: ( 115 / 19.2 ) * 1vw 0 0 ( 29 / 19.2 ) * 1vw;
+    width: ( 320 / 19.2 ) * 1vw;
+  }
+
+  h3 {
+    color: $color-pure-white;
     font-family: $main-font-serif;
-    white-space: nowrap;
-    // Override h4 sizes at Becky's direction - AW
-    font-size: 9.375vw;
+    font-weight: 300;
+    font-size: ( 30 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      font-size: 6vw;
+      font-size: ( 40 / 7.68 ) * 1vw;
     }
-
-    @media #{$laptop-only} {
-      font-size: 1.8vw;
-    }
-
-    @media #{$desktop-up} {
-      font-size: 1.51vw;
+  
+    @media #{$laptop-up} {
+      font-size: ( 40 / 19.2 ) * 1vw;
     }
   }
 
-  &:nth-child( even ) {
-    background: $color-zuc-indigo;
+  p {
     color: $color-pure-white;
+    font-weight: 100;
+    padding: 0 0 ( 26 / 3.2 ) * 1vw;
+    width: ( 237 / 3.2 ) * 1vw;
 
-    h4 {
-      color: $color-pure-white;
+    @media #{$tablet-only} {
+      padding: 0 0 ( 31 / 7.68 ) * 1vw;
+      width: ( 532 / 7.68 ) * 1vw;
+    }
+  
+    @media #{$laptop-up} {
+      padding: 0 0 ( 31 / 19.2 ) * 1vw;
+      width: ( 216 / 19.2 ) * 1vw;
     }
   }
 }

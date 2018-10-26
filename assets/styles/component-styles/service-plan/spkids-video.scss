@@ -69,6 +69,7 @@
 
   .--wave-position {
     display: none;
+    z-index: 10;
 
     @media #{$tablet-up} {
       display: block;
@@ -91,7 +92,7 @@
 }
 
 .zuc-video-right {
-  background: $color-zuc-indigo;
+  background: transparent;
   width: 100%;
 
   @media #{$laptop-up} {
@@ -101,27 +102,15 @@
 
 .zuc-video-player {
   width: 100%;
-  // Height is faked since there is no video
-  height: 88.75vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  height: auto;
+  background: transparent;
 
-  @media #{$tablet-only} {
-    height: 73.44vw;
-  }
-
-  @media #{$laptop-up} {
-    height: 32.07vw;
-  }
-
-  .--play-icon {
-    opacity: .6;
-    width: 20%;
-
-    @media #{$tablet-only} {
-      width: 13;
-    }
-  
-    @media #{$laptop-up} {
-      width: 10%;
-    }
+  .zuc-body-video {
+    width: 100%;
   }
 }

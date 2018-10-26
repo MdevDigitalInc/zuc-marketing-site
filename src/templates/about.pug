@@ -1,6 +1,14 @@
 extends _layout
 
 block content
-  //- About Page Here
-  h1
-    |About TODO
+  //- Hero Section
+  include ../heroes/about-hero.pug
+
+  //- Inevitable Middle Content
+
+  //- Team Grid Section
+  include ../components/about/about-teamgrid.pug
+  
+  //- Join CTA Section
+  include ../components/about/about-bumper.pug
+  

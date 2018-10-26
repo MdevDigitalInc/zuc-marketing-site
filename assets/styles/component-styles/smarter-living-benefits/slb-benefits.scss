@@ -2,7 +2,6 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  overflow: hidden;
   margin-bottom: 28.125vw;
   padding: 13.75vw 0 9vw;
 
@@ -44,6 +43,7 @@
     background: $color-zuc-indigo;
     width: 100%;
     padding: 9.06vw 11.87vw 7.5vw 5vw;
+    position: relative;
 
     @media #{$tablet-only} {
       padding: 5.85vw 16.66vw 5.85vw 7.55vw;
@@ -60,7 +60,7 @@
       @media #{$tablet-only} {
         padding-bottom: 4.68vw;
       }
-  
+
       @media #{$laptop-up} {
         padding-bottom: 2.37vw;
       }
@@ -75,10 +75,36 @@
     @media #{$tablet-only} {
       padding: 6.38vw 8.59vw 0 7.16vw;
     }
-
     @media #{$laptop-up} {
       width: 30%;
       padding: 2.77vw 2.72vw 0 2.47vw;
+    }
+
+    .--list-margin {
+      margin-bottom: 5vh;
+      padding-bottom: 5vh;
+    }
+  }
+
+  .zuc-coral-wave {
+    display: inline;
+    position: absolute;
+
+    @media #{$laptop-up} {
+      width: 40%;
+      right: 0;
+      bottom: vw-desktop(25);
+      transform: translateX(50%);
+    }
+    @media #{$tablet-only} {
+      bottom: -25%;
+      transform: scale(.25);
+      left: 45%;
+    }
+    @media #{$phone-only} {
+      bottom: 0%;
+      transform: scale(.25);
+      left: 40%;
     }
   }
 

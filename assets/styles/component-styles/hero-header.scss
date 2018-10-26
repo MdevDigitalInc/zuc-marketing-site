@@ -181,6 +181,7 @@
 .zuc-secondary-header {
   width: 100%;
   position: relative;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   margin-bottom: 7.8vw;
@@ -266,7 +267,7 @@
 
     .--bottom-wave {
       display: none;
-  
+
       @media #{$tablet-up} {
         display: initial;
         position: absolute;
@@ -275,7 +276,7 @@
         bottom: -3px;
         left: -60vw;
       }
-  
+
       @media #{$laptop-up} {
         width: 105vw;
         bottom: -3px;
