@@ -77,7 +77,6 @@ section.zuc-custom-plan {
     margin: ( 5 / 7.68 ) * 1vw;
     height: $zuc-custom-row-height-tablet;
   }
-
   @media #{$laptop-up} {
     margin: ( 9 / 19.2 ) * 1vw;
     height: $zuc-custom-row-height-desktop;
@@ -95,7 +94,6 @@ section.zuc-custom-plan {
       padding: ( 8 / 7.68 ) * 1vw 0 0;
       font-size: ( 15.5 / 7.68 ) * 1vw;
     }
-
     @media #{$laptop-up} {
       padding: ( 45 / 19.2 ) * 1vw 0 0;
       font-size: ( 30 / 19.2 ) * 1vw;
@@ -112,7 +110,6 @@ section.zuc-custom-plan {
       width: 45%;
       padding: ( 5 / 7.68 ) * 1vw 0;
     }
-
     @media #{$laptop-up} {
       width: 50%;
       padding: ( 9 / 19.2 ) * 1vw 0;
@@ -135,7 +132,6 @@ section.zuc-custom-plan {
       @media #{$tablet-only} {
         font-size: ( 24 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 50 / 19.2 ) * 1vw;
       }
@@ -147,7 +143,6 @@ section.zuc-custom-plan {
       @media #{$tablet-only} {
         font-size: ( 40 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 100 / 19.2 ) * 1vw;
       }
@@ -159,7 +154,6 @@ section.zuc-custom-plan {
       @media #{$tablet-only} {
         font-size: ( 14 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 26 / 19.2 ) * 1vw;
       }
