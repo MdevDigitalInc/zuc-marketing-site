@@ -6,47 +6,18 @@
     {
       author : 'Jason H',
       text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
-      ratings : [
-        {
-          star: true
-        },
-        {
-          star: true
-        },
-        {
-          star: true
-        },
-        {
-          star: true
-        }
-      ]
+      rating: 5
     },
     {
       author : 'Jason H',
       text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
-      ratings : [
-        {
-          star: true
-        },
-        {
-          star: true
-        },
-        {
-          star: true
-        }
-      ]
+      rating: 4
     },
     {
       author : 'Jason H',
       text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and  family. Truly a satisfied customer.',
-      ratings : [
-        {
-          star: true
-        },
-        {
-          star: true
-        }
-      ]
+      rating: 3
+
     }
   ]
 
@@ -66,7 +37,7 @@ section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing
             p
               |#{quote.text}
           .zuc-stars-container.flex.flex-row.flex-space-around
-            each rating in quote.ratings.length ? quote.ratings : ['Quotes are empty']
+            - for (var x = 0; x < quote.rating; x++)
               img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
           p.zuc-quote-author.u-bold.u-zuc-darkindigo
             |— #{quote.author}
