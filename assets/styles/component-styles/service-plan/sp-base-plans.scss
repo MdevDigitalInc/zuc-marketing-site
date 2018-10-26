@@ -1,8 +1,31 @@
+
 .zuc-base-plan {
   width: 100%;
-  position: relative
+  position: relative;
+  padding: 0 18vw;
 }
 
 .zuc-base-plan-box {
-  margin: 0 5vw;
+  margin: 0 2vw;
+  // height: vw-desktop(358);
+  flex-direction: column;
+  padding: 4vw;
+  border: 1px solid $color-zuc-indigo;
+}
+
+.zuc-base-plan-secondary-header{
+  //
+}
+
+.zuc-base-plan-header {
+  color: $color-zuc-indigo;
+}
+
+.zuc-base-plan-image {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.zuc-base-plan-badge {
+  // ;
 }
