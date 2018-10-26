@@ -135,22 +135,3 @@ section.zuc-sixgrid-container {
     }
   }
 }
-
-// Background Shape
-
-.--sixgrid-bkg {
-  position: absolute;
-  left: -1vw;
-  bottom: -1vw;
-  width: 102vw;
-  z-index: 7;
-  // todo
-
-  @media #{$tablet-up} {
-    // todo
-  }
-
-  @media #{$laptop-up} {
-    // todo
-  }
-}
