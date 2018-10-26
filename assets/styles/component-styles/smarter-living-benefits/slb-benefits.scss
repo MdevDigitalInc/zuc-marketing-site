@@ -93,7 +93,7 @@
     @media #{$laptop-up} {
       width: 40%;
       right: 0;
-      bottom: vw-desktop(-22);
+      bottom: vw-desktop(25);
       transform: translateX(50%);
     }
     @media #{$tablet-only} {
