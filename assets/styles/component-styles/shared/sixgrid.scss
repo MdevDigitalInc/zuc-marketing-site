@@ -2,30 +2,40 @@
   Sixgrid - AW 20181010
 
 */
-.zuc-sixgrid-container {
+section.zuc-sixgrid-container {
   position: relative;
-  overflow: visible;
-  padding: 20% 5vw 29.375vw;
-  margin-top: -20%;
+  overflow: hidden;
+  padding: 5vh 5vw vw-phone(100);
+  display: flex;
+  flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 20% 7vw 12.37vw;
+    padding: 0 7vw vw-tablet(200);
   }
-  @media #{$laptop-up} {
-    padding: 20% 20vw 7vw;
+
+  @media #{$laptop-only} {
+    padding: 0 20vw vw-laptop(200);
   }
+
   @media #{$desktop-up} {
-    padding: 20% 24vw 5.45vw;
+    padding: 0 24vw vw-desktop(200);
+  }
+
+  &.--grey {
+    background: $color-zuc-platinum;
   }
 
   h2 {
-    width: ( 280 / 3.2 ) * 1vw;
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    width: vw-phone(280);
 
     @media #{$tablet-only} {
-      width: ( 568 / 7.68 ) * 1vw;
+      width: vw-tablet(568);
     }
+
     @media #{$laptop-up} {
-      width: ( 662 / 19.2 ) * 1vw;
+      width: vw-desktop(662);
     }
   }
 
@@ -37,35 +47,43 @@
     @media #{$tablet-only} {
       padding: 0 0 8.6vw;
     }
+
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
   }
+
+  .zuc-sixgrid-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .zuc-sixgrid-item {
-  padding-bottom: 1.25vw;
   width: 100%;
   text-align: center;
+  margin: vw-phone(25) 0 0;
+  padding-bottom: 1.25vw;
 
   @media #{$tablet-only} {
     width: 45%;
     text-align: left;
-    padding-bottom: 1.8vw;
+    margin: vw-tablet(30) 0 0;
+    padding: 0 0 1.8vw;
 
     &:nth-child( 2n ) {
-      margin-left: 10%;
+      margin: vw-tablet(30) 0 0 10%;
     }
   }
 
   @media #{$laptop-up} {
     width: 30%;
-    margin-left: 5%;
     text-align: left;
-    padding-bottom: 45px;
+    margin: 0 0 0 5%;
+    padding: 0 0 vw-desktop(45);
 
     &:nth-child( 3n+1 ) {
-      margin-left: 0;
+      margin: 0;
     }
   }
 
@@ -78,6 +96,7 @@
 
   p {
     color: $color-zuc-darkindigo;
+    font-weight: 100;
 
     @media #{$phone-only} {
       padding: 0 7vw;
@@ -85,11 +104,10 @@
   }
 
   .zuc-sixgrid-img-container {
-    height: 23vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 23px;
+    height: 23vw;
 
     @media #{$tablet-up} {
       justify-content: flex-start;
@@ -101,29 +119,19 @@
   }
 
   img {
-    width: 25%;
     position: relative;
+    width: 25%;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       width: 30%;
     }
-    @media #{$laptop-up} {
+
+    @media #{$laptop-only} {
       width: 50%;
     }
+
     @media #{$desktop-up} {
       width: 40%;
     }
   }
-}
-
-// Background Shape
-.--sixgrid-bkg {
-  width: 100%;
-  padding-top: 61.7%;
-  @include center(both);
-  z-index: -1;
-  background-image: url('../../assets/images/shapes/wave-shape-dbl-silver.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
