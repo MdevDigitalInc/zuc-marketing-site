@@ -32,6 +32,7 @@ section.zuc-custom-plan {
   align-items: flex-start;
   width: 100%;
   overflow: hidden;
+  position: relative;
 
   margin: ( 32 / 3.2 ) * 1vw 0 ( 78 / 3.2 ) * 1vw;
 
@@ -280,7 +281,7 @@ section.zuc-custom-plan {
     @media #{$tablet-up} {
       font-size: ( 9.5 / 7.68 ) * 1vw;
     }
-  
+
     @media #{$laptop-up} {
       font-size: ( 18 / 19.2 ) * 1vw;
     }
@@ -305,4 +306,18 @@ section.zuc-custom-plan {
       width: 11.25vw;
     }
   }
+}
+
+.zuc-custom-plan--ribbon {
+  width: 200px;
+  background: $color-zuc-salmon;
+  color: $black;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
