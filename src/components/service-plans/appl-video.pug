@@ -7,6 +7,16 @@ section.spkids-video
         |Avoid the high cost of unexpected breakdowns.
       img.--wave-position(src='../../assets/images/graphics/graphic_chevron_lilac.svg' alt="Decorative element")
     .zuc-video-right.flex.flex-vert-stretch.flex-hor-center
-      .zuc-video-player.flex.flex-vert-center.flex-hor-center
-        img.--play-icon(src='../../assets/images/icons/icon-play.svg' alt="Decorative element")
+      .zuc-video-player
+        // Video or Image ( Image can also be added as BKG to above container )
+        video(
+          class="zuc-body-video"
+          poster="https://i.vimeocdn.com/video/734501059.jpg"
+          style="background-image: url('https://i.vimeocdn.com/video/734501059.jpg'); background-size: cover;"
+          preload="auto" controls)
+
+          //- At least two sources plz
+          source(src="https://player.vimeo.com/external/296940842.hd.mp4?s=ac76abf9d4937b883eb32c4fe36e1ee06270fcd0&profile_id=175" type="video/mp4")
+          source(src="https://player.vimeo.com/external/296940842.hd.mp4?s=ac76abf9d4937b883eb32c4fe36e1ee06270fcd0&profile_id=174" type="video/mp4")
+
   img.zuc-video-bg(src="../../assets/images/shapes/round-blob-half-video.svg", alt="An abstract pear shaped blue and green shape")
