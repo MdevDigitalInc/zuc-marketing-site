@@ -43,6 +43,7 @@
     background: $color-zuc-indigo;
     width: 100%;
     padding: 9.06vw 11.87vw 7.5vw 5vw;
+    position: relative;
 
     @media #{$tablet-only} {
       padding: 5.85vw 16.66vw 5.85vw 7.55vw;
@@ -59,7 +60,7 @@
       @media #{$tablet-only} {
         padding-bottom: 4.68vw;
       }
-  
+
       @media #{$laptop-up} {
         padding-bottom: 2.37vw;
       }
@@ -74,10 +75,35 @@
     @media #{$tablet-only} {
       padding: 6.38vw 8.59vw 0 7.16vw;
     }
-
     @media #{$laptop-up} {
       width: 30%;
       padding: 2.77vw 2.72vw 0 2.47vw;
+    }
+
+    .--list-margin {
+      margin-bottom: 5vh;
+      padding-bottom: 5vh;
+    }
+  }
+
+  .zuc-coral-wave {
+    display: inline;
+    position: absolute;
+
+    @media #{$laptop-up} {
+      bottom: 2%;
+      right: -40%;
+      transform: scale(.5);
+    }
+    @media #{$tablet-only} {
+      transform: scale(.25);
+      bottom: -25%;
+      left: 45%;
+    }
+    @media #{$phone-only} {
+      transform: scale(.25);
+      bottom: 0%;
+      left: 40%;
     }
   }
 

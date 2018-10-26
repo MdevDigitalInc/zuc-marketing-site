@@ -1,0 +1,13 @@
+.--slb-hero-grid-row {
+  margin-top: 3.125vw;
+  background: $white;
+  padding: 3vw 10% 6vh;
+
+  @media #{$phone-only} {
+    padding: 8vw 5%;
+  }
+
+  @media #{$tablet-only} {
+    padding: 5vw 7%;
+  }
+}
