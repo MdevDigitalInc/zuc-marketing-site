@@ -308,16 +308,17 @@ section.zuc-custom-plan {
   }
 }
 
+// todo: change hard-coded units & adjust accordingly.
 .zuc-custom-plan--ribbon {
   width: 200px;
   background: $color-zuc-salmon;
   color: $black;
   position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  top: 18px;
+  left: -74px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
 }
