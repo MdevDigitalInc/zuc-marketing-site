@@ -21,6 +21,10 @@ section.zuc-sixgrid-container {
     padding: 0 24vw vw-desktop(200);
   }
 
+  &.--grey {
+    background: $color-zuc-platinum;
+  }
+
   h2 {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
@@ -136,8 +140,10 @@ section.zuc-sixgrid-container {
 
 .--sixgrid-bkg {
   position: absolute;
-  left: 0;
-  z-index: -99;
+  left: -1vw;
+  bottom: -1vw;
+  width: 102vw;
+  z-index: 7;
   // todo
 
   @media #{$tablet-up} {
