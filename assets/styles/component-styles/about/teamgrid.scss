@@ -1,16 +1,18 @@
 section.zuc-teamgrid {
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 5vw;
+  background: $color-zuc-platinum;
+  padding: 0 5vw;
 
   @media #{$tablet-only} {
-    margin: 0 6vw;
+    padding: 0 6vw;
   }
 
   @media #{$laptop-up} {
-    margin: 0 19vw;
+    padding: 0 19vw;
   }
 
   .teamgrid-title {
@@ -40,6 +42,26 @@ section.zuc-teamgrid {
     @media #{$laptop-up} {
       font-size: vw-desktop(22);
       width: vw-desktop(850);
+    }
+  }
+
+  .zuc-bg-wave {
+    z-index: -5;
+    position: absolute;
+    width: 300%;
+    left: -25%;
+    bottom: -1%;
+  
+    @media #{$tablet-only} {
+      width: 200%;
+      left: -20%;
+      bottom: -1%;
+    }
+  
+    @media #{$laptop-up} {
+      width: 102%;
+      left: -1%;
+      bottom: -1%;
     }
   }
 }
@@ -323,3 +345,5 @@ section.zuc-teamgrid {
     }
   }
 }
+
+
