@@ -21,6 +21,20 @@
 .zuc-quote-container {
   background-color: $white;
   position: relative;
+  width: 100%;
+}
+
+.zuc-quote-transition-wrap {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: .4s all;
+
+
+  &.--active-review {
+    position: relative;
+    opacity: 1;
+  }
 }
 
 .zuc-quote-badge-container {
@@ -30,6 +44,7 @@
   top: -10.625vw;
   border-radius: 50%;
   background-color: $white;
+  z-index: 20;
 
   @media #{$tablet-only} {
     height: 14.85vw;

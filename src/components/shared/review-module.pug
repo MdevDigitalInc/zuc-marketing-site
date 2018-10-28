@@ -24,7 +24,7 @@
 -
   var cta = 'See what our Members say'
 
-section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing
+section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing(id="zuc-review-module")
   .zuc-review-container.flex.flex-column.flex-vert-center
     .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
       img(src='../../assets/images/icons/icon-quote.svg' alt="Quotation mark")
@@ -43,9 +43,9 @@ section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing
             |— #{quote.author}
 
     // Action controls
-    .zuc-quote-button.zuc-right.u-soft-shadow.flex.flex-vert-center.flex-hor-center(data-review-next)
+    a.zuc-quote-button.zuc-right.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href="javascript:void(0)" title="Next Review" onclick="traverseReview(1)")
       img(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing right')
-    .zuc-quote-button.zuc-left.u-soft-shadow.flex.flex-vert-center.flex-hor-center(data-review-prev)
+    a.zuc-quote-button.zuc-left.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href="javascript:void(0)" title="Previous Review" onclick="traverseReview(-1)")
       img.u-imgflip-hor(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing left')
     .zuc-floating-container.u-soft-shadow
       h3.u-color-white.u-font-serif
