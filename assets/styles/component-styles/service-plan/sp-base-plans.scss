@@ -2,6 +2,14 @@
 .zuc-base-plan {
   width: 100%;
   padding: 0 18vw;
+
+  @media #{$phone-only} {
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+  @media #{$tablet-only} {
+    padding: 0 8vw;
+  }
 }
 
 .zuc-base-plan-box-container {
@@ -17,7 +25,9 @@
   border: 1px solid $color-zuc-indigo;
 
   .zuc-base-plan-heading {
-    font-size: 1.6vw;
+    @media #{$tablet-up} {
+      font-size: 1.6vw;
+    }
   }
 }
 
@@ -34,7 +44,10 @@
     position: relative;
     right: 2vw;
     width: 100%;
-    justify-content: flex-start;
+
+    @media #{$phone-only} {
+      right: 2vw;
+    }
   }
 
   .zuc-base-plan-badge {
@@ -44,5 +57,10 @@
     width: 8vw;
     z-index: 2;
     filter: drop-shadow(0 .1px 5px rgba(12, 12, 12, .2));
+
+    @media #{$phone-only} {
+      top: -2%;
+      width: 36vw;
+    }
   }
 }
