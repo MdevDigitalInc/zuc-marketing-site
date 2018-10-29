@@ -10,7 +10,6 @@ section.zuc-teamgrid {
   @media #{$tablet-only} {
     padding: 0 6vw;
   }
-
   @media #{$laptop-up} {
     padding: 0 19vw;
   }
@@ -23,7 +22,6 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       font-size: vw-tablet(47);
     }
-
     @media #{$laptop-up} {
       font-size: vw-desktop(47);
     }
@@ -38,7 +36,6 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       font-size: vw-tablet(22);
     }
-
     @media #{$laptop-up} {
       font-size: vw-desktop(22);
       width: vw-desktop(850);
@@ -57,7 +54,6 @@ section.zuc-teamgrid {
       left: -20%;
       bottom: -1%;
     }
-
     @media #{$laptop-up} {
       width: 102%;
       left: -1%;
@@ -77,7 +73,6 @@ section.zuc-teamgrid {
   @media #{$tablet-only} {
     margin: vw-tablet(42) 0 0;
   }
-
   @media #{$laptop-up} {
     margin: vw-desktop(49) 0 0;
   }
@@ -107,7 +102,6 @@ section.zuc-teamgrid {
       margin: 0 0 vw-tablet(34);
     }
   }
-
   @media #{$laptop-up} {
     width: vw-desktop(375);
     height: vw-desktop(375);
@@ -197,7 +191,6 @@ section.zuc-teamgrid {
         font-size: vw-tablet(30);
       }
     }
-
     @media #{$laptop-up} {
       width: vw-desktop(766);
       padding: vw-desktop(76) 0 0 vw-desktop(29);
@@ -243,7 +236,6 @@ section.zuc-teamgrid {
   @media #{$tablet-only} {
     padding: 0 vw-tablet(21);
   }
-
   @media #{$laptop-up} {
     padding: 0 vw-desktop(32);
   }
@@ -279,7 +271,6 @@ section.zuc-teamgrid {
       font-size: vw-tablet(16);
       padding: vw-tablet(21) 0 vw-tablet(13);
     }
-
     @media #{$laptop-up} {
       font-size: vw-desktop(16);
       padding: vw-desktop(52) 0 vw-desktop(13);
@@ -296,7 +287,6 @@ section.zuc-teamgrid {
       font-size: vw-tablet(28);
       padding: 0 0 vw-tablet(12);
     }
-
     @media #{$laptop-up} {
       font-size: vw-desktop(28);
       padding: 0 0 vw-desktop(12);
@@ -310,7 +300,6 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       width: vw-tablet(140);
     }
-
     @media #{$laptop-up} {
       width: vw-desktop(140);
     }
@@ -325,7 +314,6 @@ section.zuc-teamgrid {
       font-size: vw-tablet(16.5);
       padding: vw-tablet(18) 0 0;
     }
-
     @media #{$laptop-up} {
       font-size: vw-desktop(17.5);
       padding: vw-desktop(18) 0 0;
@@ -339,7 +327,6 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       font-size: vw-tablet(30);
     }
-
     @media #{$desktop-up} {
       font-size: vw-desktop(32);
     }

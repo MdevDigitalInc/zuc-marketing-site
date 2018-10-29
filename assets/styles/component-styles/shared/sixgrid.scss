@@ -12,7 +12,6 @@ section.zuc-sixgrid-container {
   @media #{$tablet-up} {
     padding: 0 7vw vw-tablet(200);
   }
-
   @media #{$laptop-only} {
     padding: 0 20vw vw-laptop(200);
   }
