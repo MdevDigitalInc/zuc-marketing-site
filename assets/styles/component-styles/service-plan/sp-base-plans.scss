@@ -5,11 +5,16 @@
   padding: 0 18vw;
 }
 
+.zuc-base-plan-box-container {
+  width: 100%;
+  margin: 18px;
+}
+
 .zuc-base-plan-box {
-  margin: 0 2vw;
   // height: vw-desktop(358);
   flex-direction: column;
   padding: 4vw;
+  margin: 12px;
   border: 1px solid $color-zuc-indigo;
 }
 
