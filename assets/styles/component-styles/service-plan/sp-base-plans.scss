@@ -6,28 +6,33 @@
 
 .zuc-base-plan-box-container {
   width: 100%;
-  margin: 18px;
+  margin: 1vw;
   position: relative;
 }
 
 .zuc-base-plan-box {
-  // height: vw-desktop(358);
   flex-direction: column;
   padding: 1vw;
   margin: 12px;
   border: 1px solid $color-zuc-indigo;
+
+  .zuc-base-plan-heading {
+    font-size: 1.6vw;
+  }
 }
 
 .zuc-base-plan-btn {
   position: relative;
   bottom: 4.5vw;
+  margin-bottom: -4.5vw;
 }
 .zuc-base-plan-graphics-container {
   padding-top: 1vw;
   position: relative;
+
   .zuc-base-plan-image {
     position: relative;
-    right: 40px;
+    right: 2vw;
     width: 100%;
     justify-content: flex-start;
   }
@@ -36,7 +41,7 @@
     position: absolute;
     top: 1%;
     left: 47%;
-    width: 165px;
+    width: 8vw;
     z-index: 2;
     filter: drop-shadow(0 .1px 5px rgba(12, 12, 12, .2));
   }
