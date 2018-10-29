@@ -42,8 +42,8 @@
     position: relative;
     border: 1px solid $color-zuc-concrete;
     border-radius: 4px;    
-    width: vw-phone(64);
-    height: vw-phone(64);
+    width: 25vw;
+    height: 25vw;
 
     @media #{$tablet-only} {
       width: vw-tablet(150);
@@ -65,7 +65,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: vw-phone(30) 0 0 vw-phone(25);
+  padding: vw-phone(5) 0 0 vw-phone(10);
+  width: 10%;
 
   @media #{$tablet-up} {
     padding: vw-tablet(30) 0 0 vw-tablet(25);
@@ -79,9 +80,9 @@
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
     font-weight: 300;
-    width: vw-phone(350);
-    font-size: vw-phone(20);
-    margin: 0 0 vw-phone(10);
+    width: vw-phone(200);
+    font-size: vw-phone(18);
+    margin: 0 0 vw-phone(5);
 
     @media #{$tablet-only} {
       width: vw-tablet(350);
@@ -99,8 +100,9 @@
   .ecom-related-product-price-reg {
     color: $color-zuc-darkindigo;
     font-weight: 100;
-    font-size: vw-phone(14);
-    padding: 0 0 vw-phone(5);
+    white-space: nowrap;
+    font-size: vw-phone(12);
+    padding: 0 0 vw-phone(3);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(14);
@@ -116,7 +118,8 @@
   .ecom-related-product-price-mem {
     color: $color-zuc-darkindigo;
     font-weight: 500;
-    font-size: vw-phone(16);
+    white-space: nowrap;
+    font-size: vw-phone(14);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(16);
