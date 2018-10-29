@@ -18,31 +18,26 @@
   border: 1px solid $color-zuc-indigo;
 }
 
-.zuc-base-plan-secondary-header {
-  // tmp
-}
-
-.zuc-base-plan-header {
-  // color: $color-zuc-indigo;
-}
-
 .zuc-base-plan-btn {
   position: relative;
-  bottom: 60px;
+  bottom: 4.5vw;
 }
-
-.zuc-base-plan-image {
+.zuc-base-plan-graphics-container {
+  padding-top: 1vw;
   position: relative;
-  right: 40px;
-  width: 100%;
-  justify-content: flex-start;
-}
+  .zuc-base-plan-image {
+    position: relative;
+    right: 40px;
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-.zuc-base-plan-badge {
-  position: absolute;
-  top: 24%;
-  left: 50%;
-  width: 145px;
-  z-index: 2;
-  filter: drop-shadow(0 .1px 5px rgba(12, 12, 12, .2));
+  .zuc-base-plan-badge {
+    position: absolute;
+    top: 1%;
+    left: 47%;
+    width: 165px;
+    z-index: 2;
+    filter: drop-shadow(0 .1px 5px rgba(12, 12, 12, .2));
+  }
 }
