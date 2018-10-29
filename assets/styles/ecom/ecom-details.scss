@@ -12,71 +12,68 @@
   }
 
   .ecom-breadcrumbs {
-    background: #f09c9c;
     width: 100%;
+    order: 1;
 
-    @media #{tablet-only} {
-      height: 5vh; // DEV ONLY
-    }
-
-    @media #{$laptop-up} {
-      height: 5vh; // DEV ONLY
-    }
+    background: #f09c9c; // DEV - Delete when implementing
+    height: 5vh; // DEV - Delete when implementing
   }
 
   .ecom-det-showcase {
-    background: #df9cf0;
-    width: 50%;
-    height: 15vh; // DEV ONLY
+    width: 100%;
+    order: 2;
 
-    @media #{tablet-only} {
-      height: 15vh; // DEV ONLY
-    }
+    background: #df9cf0; // DEV - Delete when implementing
+    height: 45vh; // DEV - Delete when implementing
 
     @media #{$laptop-up} {
-      height: 15vh; // DEV ONLY
+      width: 50%;
+    }
+  }
+
+  .ecom-det-product {
+    width: 100%;
+    order: 3;
+
+    background: #9ca2f0; // DEV - Delete when implementing
+    height: 35vh; // DEV - Delete when implementing
+
+    @media #{$laptop-up} {
+      width: 50%;
     }
   }
 
   .ecom-det-infostack {
-    background: #9cdff0;
-    width: 50%;
-    height: 35vh; // DEV ONLY
+    width: 100%;
+    order: 4;
 
-    @media #{tablet-only} {
-      height: 35vh; // DEV ONLY
-    }
+    background: #9cdff0; // DEV - Delete when implementing
+    height: 35vh; // DEV - Delete when implementing
 
     @media #{$laptop-up} {
-      height: 35vh; // DEV ONLY
+      width: 50%;
+      order: 5;
     }
   }
 
   .ecom-det-related {
-    background: #9ff09c;
-    width: 50%;
-    height: 20vh; // DEV ONLY
+    width: 100%;
+    order: 5;
 
-    @media #{tablet-only} {
-      height: 20vh; // DEV ONLY
-    }
+    background: #9ff09c; // DEV - Delete when implementing
+    height: 20vh; // DEV - Delete when implementing
 
     @media #{$laptop-up} {
-      height: 20vh; // DEV ONLY
+      width: 50%;
+      order: 4;
     }
   }
 
   .ecom-det-best-sellers {
-    background: #f0d59c;
     width: 100%;
-    height: 15vh; // DEV ONLY
+    order: 6;
 
-    @media #{tablet-only} {
-      height: 15vh; // DEV ONLY
-    }
-
-    @media #{$laptop-up} {
-      height: 15vh; // DEV ONLY
-    }
+    background: #f0d59c; // DEV - Delete when implementing
+    height: 35vh; // DEV - Delete when implementing
   }
 }
