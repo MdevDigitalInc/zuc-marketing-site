@@ -255,6 +255,18 @@ module.exports = {
       template: './src/templates/spr-zu-collection.pug',
       filename: 'zu-collection.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-details.pug',
+      filename: 'ecom-details.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-category.pug',
+      filename: 'ecom-category.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-cart.pug',
+      filename: 'ecom-cart.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
