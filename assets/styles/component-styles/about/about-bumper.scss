@@ -1,0 +1,50 @@
+section.zuc-about-join {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: vw-phone(75) 0 vw-phone(55);
+  background: $color-zuc-platinum;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(150) vw-tablet(55) vw-tablet(130);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(130) vw-desktop(510) vw-desktop(115);
+    background: $color-pure-white;
+  }
+}
+
+.zuc-about-join-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: vw-phone(60) vw-phone(15);
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(55) vw-tablet(50);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(60) vw-desktop(160);
+  }
+
+  h2 {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+  }
+
+  p {
+    font-weight: 100;
+    padding: 0 0 vw-phone(30);
+
+    @media #{$tablet-only} {
+      padding: 0 0 vw-tablet(40);
+    }
+  
+    @media #{$laptop-up} {
+      padding: 0 0 vw-desktop(30);
+    }
+  }
+}

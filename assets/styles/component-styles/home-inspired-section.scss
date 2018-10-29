@@ -53,7 +53,6 @@
   }
 
   .zuc-home-inspired-section--copy {
-
     @media #{$laptop-up} {
       width: 70%;
     }
@@ -65,25 +64,40 @@
     margin-top: 30px;
     width: 15vw;
   }
+}
 
-  .zuc-home-inspired-section--icons {
-    margin-bottom: 5vh;
-    text-align: center;
-
-    @media #{$tablet-only} {
-      justify-content: space-around;
-      width: 100%;
-    }
-    @media #{$phone-only} {
-      justify-content: space-around;
-    }
+.zuc-home-inspired-section--icons {
+  margin-bottom: 5vh;
+  text-align: center;
+  width: 70%;
+  justify-content: space-around;
+  @media #{$tablet-only} {
+    width: 100%;
+  }
+  @media #{$phone-only} {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
-@media #{$tablet-only} {
-  // todo: hacky in interests of time:
-  // RG note: this is fixed in my next branch.
-  .--home-pg-icon p {
-    max-width: 200px;
+.--hp-inspired-icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media #{$phone-only} {
+    width: 40%;
+  }
+  @media #{$tablet-only} {
+    width: 25%;
+  }
+
+  p {
+    max-width: 100px;
+
+    @media #{$tablet-only} {
+      max-width: 200px;
+    }
   }
 }

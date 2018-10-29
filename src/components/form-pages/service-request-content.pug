@@ -61,9 +61,36 @@ section.zuc-section-container.--sides.--hstyle
           .zuc-input-name
             strong
               |Province
-          label.u-screenreader(for="field-province")
-            |Province
-          input(type="text" name="province" placeholder="Province")
+          .zuc-select-container
+            label.u-screenreader(for="field-province")
+              |Choose your product type
+            select(required name="province")
+              option(value="" disabled selected id="field-province")
+                |Choose your province
+              option(value="alberta")
+                |Alberta
+              option(value="britishcoloumbia")
+                |British Coloumbia
+              option(value="manitoba")
+                |Manitoba
+              option(value="newbrunswick")
+                |New Brunswick
+              option(value="newfoundland-and-labrador")
+                |Newfoundland &amp; Labrador
+              option(value="nwt")
+                |Northwest Territories
+              option(value="novascotia")
+                |Nova Scotia
+              option(value="ontario")
+                |Ontario
+              option(value="pei")
+                |Prince Edward Island
+              option(value="saskatchawan")
+                |Saskatchawan
+              option(value="quebec")
+                |Qu&eacute;bec
+              option(value="yukon")
+                |Yukon
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong

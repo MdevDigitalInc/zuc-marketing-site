@@ -1,16 +1,18 @@
 section.zuc-teamgrid {
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 5vw;
+  background: $color-zuc-platinum;
+  padding: 0 5vw;
 
   @media #{$tablet-only} {
-    margin: 0 6vw;
+    padding: 0 6vw;
   }
 
   @media #{$laptop-up} {
-    margin: 0 19vw;
+    padding: 0 19vw;
   }
 
   .teamgrid-title {
@@ -21,7 +23,7 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       font-size: vw-tablet(47);
     }
-  
+
     @media #{$laptop-up} {
       font-size: vw-desktop(47);
     }
@@ -36,10 +38,30 @@ section.zuc-teamgrid {
     @media #{$tablet-only} {
       font-size: vw-tablet(22);
     }
-  
+
     @media #{$laptop-up} {
       font-size: vw-desktop(22);
       width: vw-desktop(850);
+    }
+  }
+
+  .zuc-bg-wave {
+    z-index: -5;
+    position: absolute;
+    width: 300%;
+    left: -25%;
+    bottom: -1%;
+
+    @media #{$tablet-only} {
+      width: 200%;
+      left: -20%;
+      bottom: -1%;
+    }
+
+    @media #{$laptop-up} {
+      width: 102%;
+      left: -1%;
+      bottom: -1%;
     }
   }
 }
@@ -79,7 +101,7 @@ section.zuc-teamgrid {
     width: vw-tablet(313);
     height: vw-tablet(313);
     margin: 0 0 vw-tablet(34) vw-tablet(34);
-  
+
     &:nth-child( 1 ),
     &:nth-child( 2n + 3 ) {
       margin: 0 0 vw-tablet(34);
@@ -160,12 +182,12 @@ section.zuc-teamgrid {
       .zuc-teamgrid-brad-name {
         font-size: vw-tablet(36);
       }
-  
+
       .zuc-teamgrid-brad-title {
         font-size: vw-tablet(16);
         padding: vw-tablet(14) 0;
       }
-  
+
       .zuc-teamgrid-brad-bio {
         font-size: vw-tablet(18);
         padding: 0 0 vw-tablet(20);
@@ -183,12 +205,12 @@ section.zuc-teamgrid {
       .zuc-teamgrid-brad-name {
         font-size: vw-desktop(36);
       }
-  
+
       .zuc-teamgrid-brad-title {
         font-size: vw-desktop(16);
         padding: vw-desktop(18) 0;
       }
-  
+
       .zuc-teamgrid-brad-bio {
         font-size: vw-desktop(18);
         width: vw-desktop(533);
