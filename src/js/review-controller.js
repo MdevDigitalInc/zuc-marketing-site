@@ -82,5 +82,6 @@ function traverseReview(direction) {
   $('[data-review-container]').css({
     "height" : newHeight + 'px'
   });
+  // Make Active
   $(desiredTarget).addClass('--active-review');
 }

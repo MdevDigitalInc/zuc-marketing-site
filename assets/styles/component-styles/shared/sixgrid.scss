@@ -115,15 +115,3 @@
     }
   }
 }
-
-// Background Shape
-.--sixgrid-bkg {
-  width: 100%;
-  padding-top: 61.7%;
-  @include center(both);
-  z-index: -1;
-  background-image: url('../../assets/images/shapes/wave-shape-dbl-silver.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}

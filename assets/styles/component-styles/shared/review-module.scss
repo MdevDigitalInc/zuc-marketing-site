@@ -22,16 +22,18 @@
   background-color: $white;
   position: relative;
   width: 100%;
+  transition: all .9s ease;
 }
 
 .zuc-quote-transition-wrap {
   width: 100%;
   opacity: 0;
   position: absolute;
-  transition: .9s all;
+  transition: .2s all;
 
 
   &.--active-review {
+    transition: .9s all;
     opacity: 1;
   }
 }
