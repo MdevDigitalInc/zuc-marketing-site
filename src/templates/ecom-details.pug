@@ -1,18 +1,21 @@
 extends _layout
 
 block content
+  .ecom-details-wrapper
+    //- Breadcrumbs
+    include ../ecom/modules/_breadcrumbs.pug
 
-  //- Breadcrumbs
-  include ../ecom/modules/_breadcrumbs.pug
+    //- Showcase Module
+    include ../ecom/modules/det-showcase.pug
+    
+    //- Product Module
+    include ../ecom/modules/det-product.pug
+    
+    //- Related Products Module
+    include ../ecom/modules/det-related.pug
 
-  //- Showcase Module
-  include ../ecom/modules/det-showcase.pug
-  
-  //- Info Stack Module
-  include ../ecom/modules/det-infostack.pug
-  
-  //- Related Products Module
-  include ../ecom/modules/det-related.pug
-  
-  //- Best Sellers Module
-  include ../ecom/modules/det-best-sellers.pug
+    //- Info Stack Module
+    include ../ecom/modules/det-infostack.pug
+    
+    //- Best Sellers Module
+    include ../ecom/modules/det-best-sellers.pug
