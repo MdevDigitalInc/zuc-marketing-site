@@ -293,10 +293,18 @@ section.zuc-custom-plan {
   position: absolute;
   text-align: center;
   color: $black;
-  width: 200px;
+  width: 210px;
   transform: rotate(-45deg);
   top: 18px;
   left: -74px;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 22px;
+
+  @media #{$phone-only} {
+    width: 220px;
+    top: 22px;
+    left: -73px;
+    font-size: 13px;
+    line-height: 34px;
+  }
 }
