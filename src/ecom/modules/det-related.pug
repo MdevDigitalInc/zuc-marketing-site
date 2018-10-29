@@ -1,3 +1,50 @@
+-
+  var products = [
+    {
+      title: 'PureCare Silver 5-Sided Mattress Protector',
+      _src: '../../assets/images/smarter-products/product-micro-cleaning-cloths.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'PureCare Silver Pillow Protector',
+      _src: '../../assets/images/smarter-products/product-micro-cleaning-cloths.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'PureCare Microfiber Lite Sheet Set',
+      _src: '../../assets/images/smarter-products/product-micro-cleaning-cloths.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'SUB-0&deg; SoftCell Chill Latex Reversible Hybrid Pillow',
+      _src: '../../assets/images/smarter-products/product-micro-cleaning-cloths.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+  ]
 .ecom-det-related
-  span
-    |todo related ayy
+  +ecom-header('Related products')
+  each product in products.length ? products : ['No products to display']
+    .ecom-related-product-row
+      .ecom-related-product-image
+        img(src=product._src, alt=product._alt)
+      .ecom-related-product-info
+        h3.ecom-related-product-title
+          |!{product.title}
+        .ecom-related-product-price-reg
+          span
+            |Regular pricing:&nbsp;
+          span
+            |!{product.price_mem}
+        .ecom-related-product-price-mem
+          span
+            |Member pricing:&nbsp;
+          span
+            |!{product.price_mem}

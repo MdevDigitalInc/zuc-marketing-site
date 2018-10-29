@@ -1,0 +1,25 @@
+.ecom-header {
+
+  h2 {
+    font-weight: 300;
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-size: vw-phone(30);
+    margin: 0 0 vw-phone(5);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(30);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(30);
+      margin: 0 0 vw-desktop(5);
+    }
+  }
+
+  .ecom-header-line {
+    width: 100%;
+    border: 1px solid $color-zuc-concrete;
+  }
+}

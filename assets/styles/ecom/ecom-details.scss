@@ -60,9 +60,6 @@
     width: 100%;
     order: 5;
 
-    background: #9ff09c; // DEV - Delete when implementing
-    height: 20vh; // DEV - Delete when implementing
-
     @media #{$laptop-up} {
       width: 50%;
       order: 4;
