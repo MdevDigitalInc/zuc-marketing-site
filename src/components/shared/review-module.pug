@@ -29,7 +29,7 @@ section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing(i
     .zuc-quote-badge-container.flex.flex-vert-center.flex-hor-center.u-soft-shadow
       img(src='../../assets/images/icons/icon-quote.svg' alt="Quotation mark")
     // Quote / Rating Container
-    .zuc-quote-container.u-soft-shadow
+    .zuc-quote-container.u-soft-shadow(data-review-container)
       // Individual Quote
       each quote in quotes.length ? quotes : ['Quotes are empty']
         .zuc-quote-transition-wrap.flex.flex-column.flex-vert-center(data-review)

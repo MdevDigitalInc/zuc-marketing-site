@@ -28,11 +28,10 @@
   width: 100%;
   opacity: 0;
   position: absolute;
-  transition: .4s all;
+  transition: .9s all;
 
 
   &.--active-review {
-    position: relative;
     opacity: 1;
   }
 }
