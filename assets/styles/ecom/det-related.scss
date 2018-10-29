@@ -1,0 +1,102 @@
+.ecom-det-related {
+  width: 100%;
+  order: 5;
+  padding: vw-phone(10) 0; // Breathing room
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(10) 0; // Breathing room
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    order: 4;
+    padding: vw-desktop(10) 0; // Breathing room
+  }
+}
+
+.ecom-related-product-rows {
+  @media #{$laptop-up} {
+    padding: vw-desktop(15) 0 0;
+  }
+}
+
+.ecom-related-product-row {
+  display: flex;
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(20) 0 0;
+  }
+
+  .ecom-related-product-image {
+    width: vw-desktop(150);
+    height: vw-desktop(150);
+    border: 1px solid $color-zuc-concrete;
+    border-radius: 4px;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.ecom-related-product-info {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 vw-phone(25);
+
+  @media #{$laptop-up} {
+    padding: 0 0 0 vw-desktop(25);
+  }
+
+  .ecom-related-product-title {
+    width: 55%;
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-weight: 300;
+    font-size: vw-phone(24);
+    margin: 0 0 vw-phone(10);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(24);
+      margin: 0 0 vw-tablet(10);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(24);
+      margin: 0 0 vw-desktop(10);
+    }
+  }
+
+  .ecom-related-product-price-reg {
+    color: $color-zuc-darkindigo;
+    font-weight: 100;
+    font-size: vw-phone(14);
+    padding: 0 0 vw-phone(5);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(14);
+      padding: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(14);
+      padding: 0 0 vw-desktop(5);
+    }
+  }
+
+  .ecom-related-product-price-mem {
+    color: $color-zuc-darkindigo;
+    font-weight: 500;
+    font-size: vw-phone(16);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(16);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(16);
+    }
+  }
+}
