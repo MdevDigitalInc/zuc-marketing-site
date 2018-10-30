@@ -123,6 +123,7 @@ section.zuc-custom-plan {
     align-items: baseline;
     font-family: $main-font-serif;
     font-weight: 300;
+    height: 100%;
 
     // Currency Symbol
     > :nth-child( 1 ) {
@@ -162,19 +163,20 @@ section.zuc-custom-plan {
   }
 
   // Rate ("/month")
+  // Todo -- Bugfix: padding on this is buggy in Firefox.  Needs refactoring.
   .zuc-custom-plan--month {
     font-weight: 600;
     font-size: ( 12 / 3.2 ) * 1vw;
     padding: 0 0 ( 28 / 3.2 ) * 1vw;
+    display: flex;
 
     @media #{$tablet-only} {
       font-size: ( 10 / 7.68 ) * 1vw;
-      padding: 5vw 0 ( 14 / 7.68 ) * 1vw;
+      padding: 2vw 0 ( 14 / 7.68 ) * 1vw;
     }
-
     @media #{$laptop-up} {
       font-size: ( 16 / 19.2 ) * 1vw;
-      padding: 4.5vw 0 ( 30 / 19.2 ) * 1vw;
+      padding: 0 0 ( 30 / 19.2 ) * 1vw;
     }
   }
 
