@@ -1,9 +1,130 @@
 .zuc-ec-det-product {
   width: 100%;
   order: 3;
+  display: flex;
+  flex-direction: column;
 
   @media #{$laptop-up} {
     width: 50%;
     padding: 0 0 0 vw-desktop(60);
+  }
+}
+
+.zuc-ec-product-title h1 {
+  color: $color-zuc-indigo;
+  font-family: $main-font-serif;
+  font-weight: 300;
+  font-size: vw-phone(30);
+
+  @media #{$tablet-only} {
+    font-size: vw-tablet(47);
+  }
+
+  @media #{$laptop-up} {
+    font-size: vw-desktop(47);
+  }
+}
+
+.zuc-ec-product-info {
+  display: flex;
+  border-top: 1px $color-zuc-concrete solid;
+  border-bottom: 1px $color-zuc-concrete solid;
+  padding: vw-phone(15) 0;
+  margin: vw-phone(15) 0;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(15) 0;
+    margin: vw-tablet(15) 0;
+  }
+
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(15) 0;
+    margin: vw-desktop(15) 0;
+  }
+}
+
+.zuc-ec-product-info-prices {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  .zuc-ec-product-info-price-reg {
+    font-weight: 100;
+    color: $color-zuc-darkindigo;
+    font-size: vw-phone(10);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(21);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-desktop(21);
+      margin: 0 0 vw-desktop(13);
+    }
+  }
+
+  .zuc-ec-product-info-price-mem {
+    font-weight: 500;
+    color: $color-zuc-darkindigo;
+    font-size: vw-phone(10);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(21);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-desktop(21);
+    }
+
+    > :nth-child( 2 ) {
+      font-weight: 600;
+      font-size: vw-phone(18);
+
+      @media #{$tablet-only} {
+        font-size: vw-tablet(32);
+      }
+    
+      @media #{$laptop-up} {
+        font-size: vw-desktop(32);
+      }
+    }
+  }
+}
+
+.zuc-ec-product-info-stock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .zuc-ec-product-info-id {
+    font-weight: 100;
+    color: $color-zuc-darkindigo;
+    font-size: vw-phone(16);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(16);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-desktop(16);
+      padding: 0 0 vw-desktop(10);
+    }
+  }
+
+  .zuc-ec-product-info-availability {
+    font-weight: 500;
+    color: $color-zuc-darkindigo;
+    font-size: vw-phone(16);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(18);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-desktop(18);
+    }
   }
 }

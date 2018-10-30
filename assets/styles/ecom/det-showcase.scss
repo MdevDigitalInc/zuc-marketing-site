@@ -47,7 +47,8 @@
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.--active {
       border-color: $color-zuc-indigo;
     }
 
