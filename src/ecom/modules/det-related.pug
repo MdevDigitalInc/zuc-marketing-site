@@ -35,10 +35,10 @@
     each product in products.length ? products : ['No products to display']
       // Product Row [ Iterated ]
       .zuc-ec-related-product-row
-        .zuc-ec-related-product-image
+        a.zuc-ec-related-product-image(href="#" title="#")
           img(src=product._src, alt=product._alt)
         .zuc-ec-related-product-info
-          h3.zuc-ec-related-product-title
+          a.zuc-ec-related-product-title(href="#" title="#")
             |!{product.title}
           .zuc-ec-related-product-price-reg
             span
