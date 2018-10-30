@@ -15,19 +15,6 @@
     width: 100%;
     order: 1;
 
-    background: #f09c9c; // DEV - Delete when implementing
     height: 5vh; // DEV - Delete when implementing
-  }
-
-  .zuc-ec-det-product {
-    width: 100%;
-    order: 3;
-
-    background: #9ca2f0; // DEV - Delete when implementing
-    height: 35vh; // DEV - Delete when implementing
-
-    @media #{$laptop-up} {
-      width: 50%;
-    }
   }
 }

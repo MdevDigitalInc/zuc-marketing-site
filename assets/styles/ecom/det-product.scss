@@ -1,0 +1,8 @@
+.zuc-ec-det-product {
+  width: 100%;
+  order: 3;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
