@@ -44,10 +44,12 @@
     border: 1px solid $color-zuc-concrete;
     width: vw-phone(60);
     height: vw-phone(60);
+    cursor: pointer;
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.--active {
       border-color: $color-zuc-indigo;
     }
 
