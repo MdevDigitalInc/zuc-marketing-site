@@ -27,14 +27,7 @@ section.zuc-sixgrid-container {
   h2 {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
-    width: vw-phone(280);
-
-    @media #{$tablet-only} {
-      width: vw-tablet(568);
-    }
-    @media #{$laptop-up} {
-      width: vw-desktop(662);
-    }
+    width: 100%;
   }
 
   .zuc-sixgrid-subtext {
@@ -74,7 +67,7 @@ section.zuc-sixgrid-container {
   }
 
   @media #{$laptop-up} {
-    width: 30%;
+    width: 28%;
     text-align: left;
     margin: 0 0 0 5%;
     padding: 0 0 vw-desktop(45);
@@ -89,6 +82,7 @@ section.zuc-sixgrid-container {
     font-weight: 600;
     margin-top: 23px;
     text-transform: uppercase;
+    margin-bottom: .5vw;
   }
 
   p {

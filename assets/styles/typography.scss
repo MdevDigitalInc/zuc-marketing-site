@@ -127,16 +127,19 @@ p {
 
 h1,
 .h1 {
+  line-height: 1.17;
   @include font-size($h1-font-sizes);
 }
 
 h2,
 .h2 {
+  line-height: 1.02;
   @include font-size($h2-font-sizes);
 }
 
 h3,
 .h3 {
+  line-height: 1.25;
   @include font-size($h3-font-sizes);
 }
 
@@ -152,6 +155,7 @@ h5,
 
 h6,
 .h6 {
+  line-height: 1;
   @include font-size($h6-font-sizes);
 }
 
