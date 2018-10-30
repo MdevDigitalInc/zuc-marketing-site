@@ -26,8 +26,15 @@
 .zuc-base-plan-box {
   flex-direction: column;
   padding: 1vw;
-  margin: vw-desktop(12);
+  margin: ( 9 / 3.2 ) * 1vw;
   border: 1px solid $color-zuc-indigo;
+
+  @media #{$tablet-only} {
+    margin: ( 5 / 7.68 ) * 1vw;
+  }
+  @media #{$laptop-up} {
+    margin: ( 9 / 19.2 ) * 1vw;
+  }
 
   .zuc-base-plan-heading {
     @media #{$tablet-up} {
