@@ -183,12 +183,12 @@ section.zuc-custom-plan {
   .zuc-custom-plan--savings {
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: ( 20 / 3.2 ) * 1vw;
+    font-size: ( 21.5 / 3.2 ) * 1vw;
     padding: 0 0 ( 29 / 3.2 ) * 1vw;
     line-height: 7vw;
 
     @media #{$tablet-only} {
-      font-size: ( 12 / 7.68 ) * 1vw;
+      font-size: ( 13 / 7.68 ) * 1vw;
       padding: 0 1vw ( 16 / 7.68 ) * 1vw;
       line-height: 2.5vw;
     }
