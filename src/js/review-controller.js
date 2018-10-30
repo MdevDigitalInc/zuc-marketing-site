@@ -1,9 +1,9 @@
 // [ Hero Slider Controller ]
 // Reserve global variables
-var reviewLimit = null;
-var reviewIndex = null;
-var desiredIndex = null;
-var resizeTimer = null;
+var _ZucReviewLimit = null;
+var _zucReviewIndex = null;
+var _zucDesiredIndex = null;
+var _zucReviewResizeTimer = null;
 
 (function(){
 
@@ -20,9 +20,9 @@ var resizeTimer = null;
   // -----------------------------
   $(window).on('resize', function(e) {
     // Clear Timer
-    clearTimeout(resizeTimer);
+    clearTimeout(_zucReviewResizeTimer);
     // Fire function after 250ms
-    resizeTimer = setTimeout(function() {
+    _zucReviewResizeTimer = setTimeout(function() {
       // Reinitialize reviews
       initializeReviews();
     },250);
@@ -44,11 +44,11 @@ var resizeTimer = null;
       "height" : reviewHeight + 'px'
     });
     // Set review limit
-    reviewLimit = $('[data-review]');
-    reviewLimit = reviewLimit.length - 1;
+    _ZucReviewLimit = $('[data-review]');
+    _ZucReviewLimit = _ZucReviewLimit.length - 1;
     // Set Current active review
-    reviewIndex = 0;
-    desiredIndex = 0;
+    _zucReviewIndex = 0;
+    _zucDesiredIndex = 0;
   }
 })();
 
@@ -58,24 +58,24 @@ function traverseReview(direction) {
   var newHeight = null;
   // Figure out which review to show..
   // Are we going passed the end of the array?
-  if (direction + desiredIndex > reviewLimit) {
+  if (direction + _zucDesiredIndex > _ZucReviewLimit) {
     // Reset to start
-    desiredIndex = 0;
+    _zucDesiredIndex = 0;
   }
   // Are we going passed the start of the array?
-  else if (direction + desiredIndex < 0) {
+  else if (direction + _zucDesiredIndex < 0) {
     // Reset to the end
-    desiredIndex = reviewLimit;
+    _zucDesiredIndex = _ZucReviewLimit;
   }
   else {
     // Move as desired
-    desiredIndex += direction;
+    _zucDesiredIndex += direction;
   }
 
   // Remove any active review classes...
   $('.--active-review').removeClass('--active-review');
   // Select the correct review based on the math above..
-  desiredTarget = $('[data-review]')[desiredIndex];
+  desiredTarget = $('[data-review]')[_zucDesiredIndex];
   // Get height of next review
   newHeight = $(desiredTarget).height();
   // Set container to that height for absolute elements
