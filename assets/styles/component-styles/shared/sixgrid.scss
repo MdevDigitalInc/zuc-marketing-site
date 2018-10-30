@@ -16,7 +16,6 @@ section.zuc-sixgrid-container {
   @media #{$laptop-only} {
     padding: 0 20vw vw-laptop(200);
   }
-
   @media #{$desktop-up} {
     padding: 0 24vw vw-desktop(200);
   }
@@ -33,7 +32,6 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       width: vw-tablet(568);
     }
-
     @media #{$laptop-up} {
       width: vw-desktop(662);
     }
@@ -47,7 +45,6 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       padding: 0 0 8.6vw;
     }
-
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
@@ -125,11 +122,9 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       width: 30%;
     }
-
     @media #{$laptop-only} {
       width: 50%;
     }
-
     @media #{$desktop-up} {
       width: 40%;
     }
