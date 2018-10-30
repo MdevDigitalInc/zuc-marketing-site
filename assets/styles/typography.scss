@@ -34,7 +34,7 @@ $p-font-sizes: (
   $tablet-up  : 2.34vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1.2vw,
-  $desktop-up : .9375vw,
+  $desktop-only : .9375vw,
   $xl-up : 1vw
 );
 
@@ -117,7 +117,7 @@ $link-font-sizes: (
 
 p {
   line-height: 1.44;
-  font-weight: 400;
+  font-weight: 100;
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {
