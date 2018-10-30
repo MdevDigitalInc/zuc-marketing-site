@@ -38,6 +38,7 @@
     padding: .6vw .9vw;
     color: $color-zuc-darkindigo;
     transition: all .3s;
+    max-width: 190px;
 
     @media #{$portrait} {
       padding: 1.1vw 1.4vw;
@@ -60,6 +61,13 @@
       @media #{$phone-only} {
         font-size: 2vw;
       }
+    }
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
     }
   }
 
