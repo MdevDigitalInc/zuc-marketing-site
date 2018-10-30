@@ -309,4 +309,10 @@ section.zuc-custom-plan {
     font-size: 13px;
     line-height: 34px;
   }
+  @media #{$tablet-only} {
+    top: 15px;
+    left: -81px;
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
