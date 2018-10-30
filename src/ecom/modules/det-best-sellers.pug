@@ -48,7 +48,7 @@
   +ecom-header('Shop best sellers')
   .zuc-ec-best-sellers-cards
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-best-seller-card
+      a.zuc-ec-best-seller-card(href="#" title="#")
         .zuc-ec-best-seller-image
           img(src=card._src, alt=card._alt)
         .zuc-ec-best-seller-name
