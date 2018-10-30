@@ -44,10 +44,6 @@
     position: relative;
     right: 2vw;
     width: 100%;
-
-    @media #{$phone-only} {
-      right: 2vw;
-    }
   }
 
   .zuc-base-plan-badge {
