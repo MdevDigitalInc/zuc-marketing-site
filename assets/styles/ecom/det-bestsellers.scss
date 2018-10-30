@@ -1,4 +1,5 @@
 .zuc-ec-det-best-sellers {
+  position: relative;
   width: 100%;
   order: 6;
   margin: vw-phone(25) 0 vw-phone(80);
@@ -10,16 +11,44 @@
   @media #{$laptop-up} {
     margin: vw-desktop(25) 0 vw-desktop(80);
   }
+
+  .zuc-ec-best-sellers-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-pure-white;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media #{$laptop-up} {
+      display: none;
+    }
+
+    &.--left {
+      left: -2.5vw;
+    }
+
+    &.--right {
+      right: -2.5vw;
+    }
+  }
 }
 
 .zuc-ec-best-sellers-cards {
   position: relative;
   width: 100%;
   display: flex;
-  padding: vw-phone(10) 0;
+  padding: vw-phone(10) vw-phone(25);
 
   @media #{$tablet-only} {
-    padding: vw-tablet(25) 0;
+    padding: vw-tablet(25) vw-tablet(45);
   }
 
   @media #{$laptop-up} {
