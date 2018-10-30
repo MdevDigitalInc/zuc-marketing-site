@@ -83,7 +83,7 @@ section.zuc-custom-plan {
   }
 
   // PLAN NAME ("Whole Home Plan")
-  > :nth-child( 1 ) {
+  .zuc-custom-plan--plan-name {
     font-family: $main-font-serif;
     text-transform: capitalize;
     font-weight: 300;
@@ -101,7 +101,7 @@ section.zuc-custom-plan {
   }
 
   // Graphical Line
-  > :nth-child( 2 ) {
+  .zuc-custom-plan--line {
     border-top: 1px $color-pure-white solid;
     width: 40%;
     padding: ( 9 / 3.2 ) * 1vw 0;
@@ -117,7 +117,7 @@ section.zuc-custom-plan {
   }
 
   // Price Object
-  > :nth-child( 3 ) {
+  .zuc-custom-plan--price {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -162,7 +162,7 @@ section.zuc-custom-plan {
   }
 
   // Rate ("/month")
-  > :nth-child( 4 ) {
+  .zuc-custom-plan--month {
     font-weight: 600;
     font-size: ( 12 / 3.2 ) * 1vw;
     padding: 0 0 ( 28 / 3.2 ) * 1vw;
@@ -179,7 +179,7 @@ section.zuc-custom-plan {
   }
 
   // Savings ("Bundle all three plans ...")
-  > :nth-child( 5 ) {
+  .zuc-custom-plan--savings {
     font-family: $main-font-serif;
     font-weight: 300;
     font-size: ( 20 / 3.2 ) * 1vw;
