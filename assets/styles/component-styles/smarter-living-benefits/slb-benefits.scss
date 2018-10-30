@@ -9,14 +9,12 @@
     margin-bottom: 19.79vw;
     padding: 13.15vw 0 9vw;
   }
-
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 10.66vw;
     padding: 5vw 0 14vw;
   }
-
   @media #{$desktop-up} {
     padding: 4.64vw 0 9vw;
   }
@@ -48,7 +46,6 @@
     @media #{$tablet-only} {
       padding: 5.85vw 16.66vw 5.85vw 7.55vw;
     }
-
     @media #{$laptop-up} {
       width: 20%;
       padding: 2.72vw 2.47vw 3.78vw 1.96vw;
@@ -60,7 +57,6 @@
       @media #{$tablet-only} {
         padding-bottom: 4.68vw;
       }
-
       @media #{$laptop-up} {
         padding-bottom: 2.37vw;
       }
@@ -118,11 +114,9 @@
     @media #{$tablet-only} {
       width: 125%;
     }
-
     @media #{$laptop-only} {
       width: 60%;
     }
-
     @media #{$desktop-up} {
       width: 50%;
     }
