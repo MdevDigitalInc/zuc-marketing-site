@@ -36,9 +36,62 @@
         else
           span
             |OUT OF STOCK
-  .zuc-ec-product-order-info
-    .zuc-ec-product-order-info-size
-    .zuc-ec-product-order-info-qty
-  .zuc-btn-box
-    a.zuc-btn.zuc-btn-secondary(href="#" title="#")
-      |ADD TO CART
+  form.zuc-ec-product-order-forms(action="")
+    .zuc-ec-form-group
+      .zuc-input-name.--caps
+        span
+          |Select Size:
+      .zuc-select-container
+        label.u-screenreader(for="field-size")
+          |Choose your size
+        select(required name="size")
+          option(value="" disabled selected id="field-size")
+            |Choose your size
+          option(value="single")
+            |Single
+          option(value="twin")
+            |Twin
+          option(value="double")
+            |Double
+          option(value="queen")
+            |Queen
+          option(value="king")
+            |King
+          option(value="brazilking")
+            |Brazilian King
+    .zuc-ec-form-group
+      .zuc-input-name.--caps
+        span
+          |Select Colour:
+      .zuc-select-container
+        label.u-screenreader(for="field-colour")
+          |Choose your colour
+        select(required name="size")
+          option(value="" disabled selected id="field-colour")
+            |Choose your colour
+          option(value="black")
+            |Nightshade
+    .zuc-ec-form-group
+      .zuc-input-name.--caps
+        span
+          |Select Colour:
+      .zuc-select-container
+        label.u-screenreader(for="field-colour")
+          |Choose your colour
+        select(required name="size")
+          option(value="" disabled selected id="field-colour")
+            |Choose your colour
+          option(value="black")
+            |Nightshade
+          option(value="cream")
+            |Peruvian Cream
+          option(value="red")
+            |Velvet Thunder
+          option(value="brown")
+            |Boar Hide
+          option(value="pink")
+            |Bubblegum Armageddon
+    .zuc-ec-form-action
+        button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
+          strong
+            span ADD TO CART

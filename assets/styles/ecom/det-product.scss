@@ -1,3 +1,9 @@
+/***********************************************
+
+  Module Container Styles
+
+***********************************************/
+
 .zuc-ec-det-product {
   width: 100%;
   order: 3;
@@ -14,6 +20,12 @@
     padding: 0 0 0 vw-desktop(60);
   }
 }
+
+/***********************************************
+
+  Title Styles
+
+***********************************************/
 
 .zuc-ec-product-title h1 {
   color: $color-zuc-indigo;
@@ -32,6 +44,12 @@
     margin: 0 0 vw-desktop(48);
   }
 }
+
+/***********************************************
+
+  Pricing Styles
+
+***********************************************/
 
 .zuc-ec-product-info {
   display: flex;
@@ -107,6 +125,12 @@
   }
 }
 
+/***********************************************
+
+  Stock + Availability Styles
+
+***********************************************/
+
 .zuc-ec-product-info-stock {
   width: 100%;
   display: flex;
@@ -151,5 +175,34 @@
     @media #{$laptop-up} {
       font-size: vw-desktop(18);
     }
+  }
+}
+
+/***********************************************
+
+  Input Styles
+
+***********************************************/
+
+.zuc-ec-product-order-forms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zuc-ec-form-group {
+  width: 50%;
+  position: relative;
+  text-align: left;
+}
+
+.zuc-ec-form-action {
+  padding: vw-phone(30) 0 0;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(30) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(30) 0 0;
   }
 }
