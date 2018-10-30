@@ -1,4 +1,4 @@
-.ecom-det-related {
+.zuc-ec-det-related {
   width: 100%;
   order: 5;
   padding: vw-phone(10) 0; // Breathing room
@@ -14,7 +14,7 @@
   }
 }
 
-.ecom-related-product-rows {
+.zuc-ec-related-product-rows {
   padding: vw-phone(10) 0 0;
 
   @media #{$tablet-only} {
@@ -26,7 +26,7 @@
   }
 }
 
-.ecom-related-product-row {
+.zuc-ec-related-product-row {
   display: flex;
   padding: vw-phone(20) 0 0;
 
@@ -38,7 +38,7 @@
     padding: vw-desktop(20) 0 0;
   }
 
-  .ecom-related-product-image {
+  .zuc-ec-related-product-image {
     position: relative;
     border: 1px solid $color-zuc-concrete;
     border-radius: 4px;    
@@ -61,7 +61,7 @@
   }
 }
 
-.ecom-related-product-info {
+.zuc-ec-related-product-info {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@
     padding: vw-desktop(30) 0 0 vw-desktop(25);
   }
 
-  .ecom-related-product-title {
+  .zuc-ec-related-product-title {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
     font-weight: 300;
@@ -97,7 +97,7 @@
     }
   }
 
-  .ecom-related-product-price-reg {
+  .zuc-ec-related-product-price-reg {
     color: $color-zuc-darkindigo;
     font-weight: 100;
     white-space: nowrap;
@@ -115,7 +115,7 @@
     }
   }
 
-  .ecom-related-product-price-mem {
+  .zuc-ec-related-product-price-mem {
     color: $color-zuc-darkindigo;
     font-weight: 500;
     white-space: nowrap;

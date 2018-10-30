@@ -1,4 +1,4 @@
-.ecom-details-wrapper {
+.zuc-ec-details-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0 5vw;
@@ -11,7 +11,7 @@
     padding: 0 8vw;
   }
 
-  .ecom-breadcrumbs {
+  .zuc-ec-breadcrumbs {
     width: 100%;
     order: 1;
 
@@ -19,7 +19,7 @@
     height: 5vh; // DEV - Delete when implementing
   }
 
-  .ecom-det-showcase {
+  .zuc-ec-det-showcase {
     width: 100%;
     order: 2;
 
@@ -31,7 +31,7 @@
     }
   }
 
-  .ecom-det-product {
+  .zuc-ec-det-product {
     width: 100%;
     order: 3;
 
@@ -43,7 +43,7 @@
     }
   }
 
-  .ecom-det-infostack {
+  .zuc-ec-det-infostack {
     width: 100%;
     order: 4;
 
@@ -56,7 +56,7 @@
     }
   }
 
-  .ecom-det-best-sellers {
+  .zuc-ec-det-best-sellers {
     width: 100%;
     order: 6;
 

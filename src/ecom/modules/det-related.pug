@@ -29,23 +29,23 @@
       price_mem: '$16.99'
     },
   ]
-.ecom-det-related
+.zuc-ec-det-related
   +ecom-header('Related products')
-  .ecom-related-product-rows
+  .zuc-ec-related-product-rows
     each product in products.length ? products : ['No products to display']
       // Product Row [ Iterated ]
-      .ecom-related-product-row
-        .ecom-related-product-image
+      .zuc-ec-related-product-row
+        .zuc-ec-related-product-image
           img(src=product._src, alt=product._alt)
-        .ecom-related-product-info
-          h3.ecom-related-product-title
+        .zuc-ec-related-product-info
+          h3.zuc-ec-related-product-title
             |!{product.title}
-          .ecom-related-product-price-reg
+          .zuc-ec-related-product-price-reg
             span
               |Regular pricing:&nbsp;
             span
               |!{product.price_mem}
-          .ecom-related-product-price-mem
+          .zuc-ec-related-product-price-mem
             span
               |Member pricing:&nbsp;
             span
