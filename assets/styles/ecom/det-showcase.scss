@@ -5,10 +5,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 0 0 vw-phone(75); // Breathing room
+  padding: 0 0 vw-phone(30);
 
   @media #{$tablet-only} {
-    padding: 0 0 vw-tablet(75); // Breathing room
+    padding: 0 0 vw-tablet(50);
   }
 
   @media #{$laptop-up} {
@@ -16,7 +16,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     width: 50%;
-    padding: 0 0 vw-laptop(75); // Breathing room
+    padding: 0 0 vw-laptop(80);
   }
 }
 
