@@ -150,6 +150,7 @@ section.zuc-custom-plan {
     // Cent Value
     > :nth-child( 3 ) {
       font-size: ( 18 / 3.2 ) * 1vw;
+      align-self: flex-start;
 
       @media #{$tablet-only} {
         font-size: ( 14 / 7.68 ) * 1vw;
