@@ -62,6 +62,7 @@
 .zuc-ec-text-blob {
   padding: vw-phone(25) 0 0;
   font-size: vw-phone(12);
+  color: $color-zuc-darkindigo;
 
   @media #{$tablet-only} {
     padding: vw-tablet(30) 0 0;
