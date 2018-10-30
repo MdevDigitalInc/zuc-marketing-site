@@ -240,7 +240,7 @@
     }
     @media #{$portrait} {
       width: 100%;
-      padding: 5vw;
+      padding: 7vw;
 
       h5,
       p {
@@ -346,7 +346,7 @@
 
     @media #{$portrait} {
       width: 100%;
-      padding: 5vw;
+      padding: 7vw;
       text-align: left;
     }
 
@@ -355,7 +355,8 @@
       flex-wrap: wrap;
 
       p {
-        width: 50%;
+        width: 46%;
+        margin-left: 20px;
       }
     }
   }
@@ -397,9 +398,12 @@
     @media #{$tablet-prt-only} {
       display: block;
     }
-
     @media #{$tablet-lnd-only} {
       width: 150px;
+    }
+    @media #{$phone-only} {
+      display: block;
+      width: 120px;
     }
   }
 }
@@ -430,6 +434,9 @@
 
     @media #{$portrait} {
       width: 40%;
+    }
+    @media #{$phone-only} {
+      width: 20%;
     }
   }
 
