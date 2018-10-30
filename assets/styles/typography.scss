@@ -30,8 +30,8 @@ h6,.h6, {
 // Responsive Font Size Maps
 $p-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 3.3vw,
-  $tablet-up  : 2.34vw,
+  null  : 4.3vw,
+  $tablet-up  : 2.50vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1.2vw,
   $desktop-only : .9375vw,
@@ -40,7 +40,7 @@ $p-font-sizes: (
 
 $h1-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 9.07vw,
+  null  : 11.07vw,
   $tablet-up : 7.8vw,
   $tablet-lnd-only : 5.9vw,
   $laptop-up : 3.89vw,
