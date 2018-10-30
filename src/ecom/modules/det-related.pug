@@ -1,3 +1,52 @@
-.ecom-det-related
-  span
-    |todo related
+-
+  var products = [
+    {
+      title: 'PureCare Silver 5-Sided Mattress Protector',
+      _src: '../../assets/images/about/about-team-brad.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'PureCare Silver Pillow Protector',
+      _src: '../../assets/images/about/about-team-brad.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'PureCare Microfiber Lite Sheet Set',
+      _src: '../../assets/images/about/about-team-brad.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+    {
+      title: 'SUB-0&deg; SoftCell Chill Latex Reversible Hybrid Pillow',
+      _src: '../../assets/images/about/about-team-brad.png',
+      _alt: 'todo',
+      price_reg: '$19.99',
+      price_mem: '$16.99'
+    },
+  ]
+.zuc-ec-det-related
+  +ecom-header('Related products')
+  .zuc-ec-related-product-rows
+    each product in products.length ? products : ['No products to display']
+      // Product Row [ Iterated ]
+      .zuc-ec-related-product-row
+        a.zuc-ec-related-product-image(href="#" title="#")
+          img(src=product._src, alt=product._alt)
+        .zuc-ec-related-product-info
+          a.zuc-ec-related-product-title(href="#" title="#")
+            |!{product.title}
+          .zuc-ec-related-product-price-reg
+            span
+              |Regular pricing:&nbsp;
+            span
+              |!{product.price_mem}
+          .zuc-ec-related-product-price-mem
+            span
+              |Member pricing:&nbsp;
+            span
+              |!{product.price_mem}
