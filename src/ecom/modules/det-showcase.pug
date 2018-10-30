@@ -1,3 +1,29 @@
+-
+  var images = [
+    {
+      _src: '../../assets/images/service-plans/home-systems.png',
+      _alt: 'todo'
+    },
+    {
+      _src: '',
+      _alt: ''
+    },
+    {
+      _src: '',
+      _alt: ''
+    },
+    {
+      _src: '',
+      _alt: ''
+    }
+  ]
+
 .zuc-ec-det-showcase
-  span
-    |todo showcase
+  .zuc-ec-showcase-left
+    each image in images.length ? images : ['No images to display']
+      // Thumbnail [ Iterated ]
+      .zuc-ec-showcase-small-image
+        img(src=image._src, alt=image._alt)
+  .zuc-ec-showcase-right
+    .zuc-ec-showcase-big-image
+      img(src=images[0]._src alt=images[0]._alt)
