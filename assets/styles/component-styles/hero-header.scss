@@ -182,8 +182,6 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
   margin-bottom: 7.8vw;
 
   @media #{$tablet-only} {
@@ -321,6 +319,15 @@
       left: 0;
     }
   }
+}
+.--sl-header {
+  background-size: cover;
+  background-position: center;
+}
+.--slb-header {
+  background-position: -50px -110px;
+  background-size: 125%;
+  background-repeat: no-repeat;
 }
 
 // Video Row Modifier
