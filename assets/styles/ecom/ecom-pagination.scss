@@ -2,32 +2,117 @@
   position: relative;
   order: 4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  margin: vw-phone(35) auto;
+
+  @media #{$tablet-only} {
+    margin: vw-tablet(50) auto;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-desktop(80) auto;
+  }
 }
 
 .zuc-ec-pagination-pages {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .zuc-ec-pagination-page {
-  width: vw-desktop(25);
-  height: vw-desktop(25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
+  cursor: pointer;
+  color: $color-zuc-darkindigo;
+  vertical-align: center;
+  text-align: center;
+  font-weight: 500;
+  width: vw-phone(18);
+  line-height: vw-phone(18);
+  margin: 0 vw-phone(6);
+  font-size: vw-phone(14);
+
+  @media #{$tablet-only} {
+    width: vw-tablet(25);
+    line-height: vw-tablet(25);
+    margin: 0 vw-tablet(10);
+    font-size: vw-tablet(14);
+  }
+
+  @media #{$laptop-up} {
+    width: vw-desktop(25);
+    line-height: vw-desktop(25);
+    margin: 0 vw-desktop(10);
+    font-size: vw-desktop(14);
+  }
+
+  /*********
+
+    Hover styles for NON-active buttons
+
+  *********/
+
+  &:hover {
+    background: $color-zuc-darkindigo;
+    color: $color-pure-white;
+  }
+
+  /*********
+
+    Active styles
+
+  *********/
 
   &.--active {
     background: $color-zuc-indigo;
-
-    .zuc-ec-pagination-number {
-      color: $color-pure-white;
-    }
+    color: $color-pure-white;
+    cursor: default;
   }
-  
+}
 
-  .zuc-ec-pagination-number {
-    color: $color-zuc-darkindigo;
+.zuc-ec-pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zuc-ec-pagination-left,
+.zuc-ec-pagination-right {
+  cursor: pointer;
+  width: vw-phone(8);
+  margin: 0 vw-phone(25);
+
+  @media #{$tablet-only} {
+    width: vw-tablet(10);
+    margin: 0 vw-tablet(25);
+  }
+
+  @media #{$laptop-up} {
+    width: vw-desktop(12);
+    margin: 0 vw-desktop(25);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.zuc-ec-pagination-bar {
+  background: $color-zuc-platinum;
+  border-bottom: 1px solid $color-zuc-platinum;
+  box-shadow: 0 1px 6.7px .4px rgba(12, 12, 12, .4);
+  width: vw-phone(245); 
+  margin: vw-phone(16) 0 0;
+
+  @media #{$tablet-only} {
+    width: vw-tablet(420);
+    margin: vw-tablet(20) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    width: vw-desktop(420);
+    margin: vw-desktop(20) 0 0;
   }
 }
