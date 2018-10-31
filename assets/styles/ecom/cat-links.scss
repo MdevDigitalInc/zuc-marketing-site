@@ -1,16 +1,37 @@
 .zuc-ec-cat-links {
+  position: relative;
   display: flex;
   flex-direction: column;
   order: 5;
+  overflow: hidden;
   width: 100%;
-  margin: 0 0 vw-phone(30);
+  padding: 0 5vw vw-phone(30);
 
   @media #{$tablet-only} {
-    margin: 0 0 vw-tablet(42);
+    padding: 0 7vw vw-tablet(42);
   }
   
   @media #{$laptop-up} {
-    margin: 0 0 vw-desktop(42);
+    padding: 0 16vw vw-desktop(42);
+  }
+}
+
+.zuc-ec-links-bgshape {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 300%;
+
+  @media #{$tablet-only} {
+    bottom: -25%;
+    left: -2%;
+    width: 102%;
+  }
+  
+  @media #{$laptop-up} {
+    bottom: -125%;
+    left: -2%;
+    width: 102%;
   }
 }
 
