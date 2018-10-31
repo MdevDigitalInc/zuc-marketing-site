@@ -114,6 +114,10 @@ textarea {
   &.zuc-input-name-no-margin {
     margin-top: 0;
   }
+
+  &.--caps {
+    text-transform: uppercase;
+  }
 }
 
 .zuc-form-action {
