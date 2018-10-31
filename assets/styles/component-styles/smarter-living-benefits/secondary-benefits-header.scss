@@ -5,6 +5,23 @@
   // background-repeat: no-repeat !important;
 }
 
+.--zuc-slb-img-position {
+  position: relative;
+  bottom: -4vw;
+  right: 1vw;
+  z-index: -1;
+
+  @media #{$tablet-lnd-only} {
+    right: 0;
+  }
+  @media #{$portrait} {
+    display: block;
+    bottom: -9vw;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .zuc-slb-content {
   width: 65%;
   position: relative;
