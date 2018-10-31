@@ -96,9 +96,9 @@
       transform: translateX(50%);
     }
     @media #{$tablet-only} {
-      bottom: -25%;
       transform: scale(.25);
       left: 45%;
+      bottom: -30px;
     }
     @media #{$phone-only} {
       bottom: 0%;
