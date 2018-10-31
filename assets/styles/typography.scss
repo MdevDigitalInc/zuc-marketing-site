@@ -30,17 +30,17 @@ h6,.h6, {
 // Responsive Font Size Maps
 $p-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 3.3vw,
-  $tablet-up  : 2.34vw,
+  null  : 4.3vw,
+  $tablet-up  : 2.50vw,
   $tablet-lnd-only : 1.5vw,
   $laptop-up : 1.2vw,
-  $desktop-up : .9375vw,
+  $desktop-only : .9375vw,
   $xl-up : 1vw
 );
 
 $h1-font-sizes: (
   //- Tweaked for ZUC - A.
-  null  : 9.07vw,
+  null  : 11.07vw,
   $tablet-up : 7.8vw,
   $tablet-lnd-only : 5.9vw,
   $laptop-up : 3.89vw,
@@ -73,7 +73,7 @@ $h4-font-sizes: (
 );
 
 $h5-font-sizes: (
-  null  : 7vw,
+  null  : 9.7vw,
   $tablet-only : 8vw,
   $tablet-lnd-only : 5vw,
   $laptop-up : 4.6vw,
@@ -117,7 +117,7 @@ $link-font-sizes: (
 
 p {
   line-height: 1.44;
-  font-weight: 400;
+  font-weight: 100;
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {
