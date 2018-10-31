@@ -1,7 +1,7 @@
 /*
   Sixgrid - AW 20181010
-
 */
+
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
@@ -12,7 +12,6 @@ section.zuc-sixgrid-container {
   @media #{$tablet-up} {
     padding: 0 7vw vw-tablet(200);
   }
-
   @media #{$laptop-only} {
     padding: 0 20vw vw-laptop(200);
   }
@@ -22,12 +21,6 @@ section.zuc-sixgrid-container {
 
   &.--grey {
     background: $color-zuc-platinum;
-  }
-
-  h2 {
-    color: $color-zuc-indigo;
-    font-family: $main-font-serif;
-    width: 100%;
   }
 
   .zuc-sixgrid-subtext {
@@ -76,12 +69,17 @@ section.zuc-sixgrid-container {
     @media #{$portrait} {
       margin-bottom: 1vh;
     }
+    @media #{$phone-only} {
+      // A little bit hacky but works.
+      // Makes titles take up space a little nicer
+      // on mobile. - LM
+      br {
+        display: none;
+      }
+    }
   }
 
   p {
-    color: $color-zuc-darkindigo;
-    font-weight: 100;
-
     @media #{$phone-only} {
       padding: 0 7vw;
     }
@@ -98,9 +96,7 @@ section.zuc-sixgrid-container {
   }
 
   img {
-    position: relative;
-    width: 25%;
-
+    width: 30%;
 
     @media #{$tablet-only} {
       width: 35%;
