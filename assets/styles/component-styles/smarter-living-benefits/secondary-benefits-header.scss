@@ -32,16 +32,6 @@
   }
 }
 
-// todo: hacky solution to adding in dropshadow to box.
-.zuc-slb-dropshadow-box {
-  height: 10px;
-  background: #fff;
-}
-
-.zuc-slb-shadow {
-  box-shadow: 0 .1vw .43vw 0 rgba(12, 12, 12, .2)
-}
-
 .--slb-hero-grid-row {
   margin-top: 3.125vw;
   background: $color-pure-white;
