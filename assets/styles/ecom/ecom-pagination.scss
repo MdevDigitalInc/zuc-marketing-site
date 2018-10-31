@@ -24,7 +24,6 @@
 
 .zuc-ec-pagination-page {
   border-radius: 50%;
-  cursor: pointer;
   color: $color-zuc-darkindigo;
   vertical-align: center;
   text-align: center;
@@ -68,7 +67,6 @@
   &.--active {
     background: $color-zuc-indigo;
     color: $color-pure-white;
-    cursor: default;
   }
 }
 
@@ -80,7 +78,6 @@
 
 .zuc-ec-pagination-left,
 .zuc-ec-pagination-right {
-  cursor: pointer;
   width: vw-phone(8);
   margin: 0 vw-phone(25);
 
