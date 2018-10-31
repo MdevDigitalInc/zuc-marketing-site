@@ -38,6 +38,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  cursor: normal;
 
   h2,
   h3,
@@ -45,18 +46,26 @@
     z-index: 10;
   }
 
+  h5 {
+    font-size: vw-phone(66);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(66);
+    }
+    @media #{$laptop-up} {
+      font-size: vw-desktop(66);
+    }
+  }
+
   .zuc-title-container-slp {
     width: 100%;
     white-space: nowrap;
-
-    h4 {
-      font-weight: 500;
-    }
   }
 
   .zuc-box-link {
     position: absolute;
     top: 0;
+    cursor: auto;
     left: 0;
     width: 100%;
     height: 100%;
@@ -129,22 +138,25 @@
   &.--triple {
     height: 66.25vw;
 
-    h3 {
-      padding: 0 3vw 1vw;
-    }
 
     @media #{$tablet-up} {
       width: 33.33%;
+      height: 47.7vw;
+    }
+    @media #{$tablet-prt-only} {
+      width: 33.33%;
       height: 57.7vw;
     }
-
     @media #{$laptop-up} {
       width: 16%;
-      height: 30vw;
+      height: 25vw;
     }
-
     @media #{$desktop-up} {
       height: 22.4vw;
+    }
+
+    h3 {
+      padding: 0 3vw 1vw;
     }
   }
 
@@ -175,12 +187,10 @@
     @media #{$tablet-up} {
       height: 57.7vw;
     }
-
     @media #{$laptop-up} {
       width: 52%;
-      height: 30vw;
+      height: 25vw;
     }
-
     @media #{$desktop-up} {
       height: 22.4vw;
     }
