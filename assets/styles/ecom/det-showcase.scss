@@ -1,0 +1,113 @@
+.zuc-ec-det-showcase {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 0 vw-phone(30);
+
+  @media #{$tablet-only} {
+    padding: 0 0 vw-tablet(50);
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0 0 vw-laptop(80);
+  }
+}
+
+.zuc-ec-showcase-left {
+  display: flex;
+  justify-content: space-between;
+  order: 2;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    justify-content: initial;
+  }
+
+  @media #{$laptop-up} {
+    width: auto;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .zuc-ec-showcase-small-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid $color-zuc-concrete;
+    width: vw-phone(60);
+    height: vw-phone(60);
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.--active {
+      border-color: $color-zuc-indigo;
+    }
+
+    @media #{$tablet-only} {
+      width: vw-tablet(67);
+      height: vw-tablet(67);
+
+      &:nth-child( n + 2 ) {
+        margin: 0 0 0 vw-tablet(12);
+      }
+    }
+  
+    @media #{$laptop-up} {
+      width: vw-desktop(75);
+      height: vw-desktop(75);
+      margin: 0 0 vw-desktop(5) 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.zuc-ec-showcase-right {
+  order: 1;
+  border: 1px solid $color-zuc-concrete;
+  margin: 0 0 vw-phone(16) 0;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    margin: 0 0 vw-tablet(20) 0;
+  }
+
+  @media #{$laptop-up} {
+    order: 2;
+    margin: 0 0 0 vw-desktop(20);
+  }
+
+  .zuc-ec-showcase-big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw-phone(290);
+    height: vw-phone(290);
+
+    @media #{$tablet-only} {
+      width: vw-tablet(650);
+      height: vw-tablet(650);
+    }
+  
+    @media #{$laptop-up} {
+      width: vw-desktop(650);
+      height: vw-desktop(650);
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.ecom-details-wrapper {
+.zuc-ec-details-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0 5vw;
@@ -9,71 +9,5 @@
 
   @media #{$laptop-up} {
     padding: 0 8vw;
-  }
-
-  .ecom-breadcrumbs {
-    width: 100%;
-    order: 1;
-
-    background: #f09c9c; // DEV - Delete when implementing
-    height: 5vh; // DEV - Delete when implementing
-  }
-
-  .ecom-det-showcase {
-    width: 100%;
-    order: 2;
-
-    background: #df9cf0; // DEV - Delete when implementing
-    height: 45vh; // DEV - Delete when implementing
-
-    @media #{$laptop-up} {
-      width: 50%;
-    }
-  }
-
-  .ecom-det-product {
-    width: 100%;
-    order: 3;
-
-    background: #9ca2f0; // DEV - Delete when implementing
-    height: 35vh; // DEV - Delete when implementing
-
-    @media #{$laptop-up} {
-      width: 50%;
-    }
-  }
-
-  .ecom-det-infostack {
-    width: 100%;
-    order: 4;
-
-    background: #9cdff0; // DEV - Delete when implementing
-    height: 35vh; // DEV - Delete when implementing
-
-    @media #{$laptop-up} {
-      width: 50%;
-      order: 5;
-    }
-  }
-
-  .ecom-det-related {
-    width: 100%;
-    order: 5;
-
-    background: #9ff09c; // DEV - Delete when implementing
-    height: 20vh; // DEV - Delete when implementing
-
-    @media #{$laptop-up} {
-      width: 50%;
-      order: 4;
-    }
-  }
-
-  .ecom-det-best-sellers {
-    width: 100%;
-    order: 6;
-
-    background: #f0d59c; // DEV - Delete when implementing
-    height: 35vh; // DEV - Delete when implementing
   }
 }
