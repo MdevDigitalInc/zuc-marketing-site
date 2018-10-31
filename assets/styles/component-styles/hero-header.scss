@@ -320,14 +320,25 @@
     }
   }
 }
+
 .--sl-header {
   background-size: cover;
   background-position: center;
 }
 .--slb-header {
-  background-position: -50px -110px;
-  background-size: 125%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+
+  @media #{$tablet-only} {
+    background-position: 40% -15%;
+  }
+
+  @media #{$desktop-only} {
+    background-position: -50px -110px;
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
 }
 
 // Video Row Modifier

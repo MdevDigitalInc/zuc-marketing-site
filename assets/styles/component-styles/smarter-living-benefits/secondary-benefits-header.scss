@@ -23,18 +23,18 @@
   @media #{$tablet-lnd-only} {
     width: 75%;
   }
-  @media #{$laptop-only} {
-    width: 65%;
-  }
   @media #{$portrait} {
     width: 100%;
+  }
+  @media #{$laptop-only} {
+    width: 85%;
   }
 
   .zuc-slb-left {
     width: 45%;
-    padding: 0 0.2vw;
+    padding: 4vw 0.2vw;
     position: relative;
-    bottom: 12vh;
+    // bottom: 4vh;
 
     @media #{$portrait} {
       width: 75%;
