@@ -83,7 +83,7 @@ $h5-font-sizes: (
 
 $h6-font-sizes: (
   null  : 3.9vw,
-  $tablet-up : 2.08vw,
+  $tablet-up : 2.48vw,
   $tablet-lnd-only : 1.6vw,
   $laptop-up : 1.1vw,
   $desktop-up : .83vw,
@@ -118,6 +118,9 @@ $link-font-sizes: (
 p {
   line-height: 1.44;
   font-weight: 100;
+  color: $color-zuc-darkindigo;
+  font-weight: 100;
+
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {
@@ -127,16 +130,19 @@ p {
 
 h1,
 .h1 {
+  line-height: 1.17;
   @include font-size($h1-font-sizes);
 }
 
 h2,
 .h2 {
+  line-height: 1.02;
   @include font-size($h2-font-sizes);
 }
 
 h3,
 .h3 {
+  line-height: 1.25;
   @include font-size($h3-font-sizes);
 }
 
@@ -152,6 +158,7 @@ h5,
 
 h6,
 .h6 {
+  line-height: 1.03;
   @include font-size($h6-font-sizes);
 }
 
