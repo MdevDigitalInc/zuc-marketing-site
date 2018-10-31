@@ -120,6 +120,7 @@ p {
   font-weight: 100;
   color: $color-zuc-darkindigo;
   font-weight: 100;
+
   @include font-size($p-font-sizes);
 
   @media #{$phone-only} {

@@ -1,3 +1,97 @@
+-
+  var info = {
+    title: 'PureCare Sub-0&deg; Soft Cell Chill Reversible Hybrid Pillow',
+    price_reg: '$169.99',
+    price_mem: '$159.99',
+    id: 'xxxxxx',
+    available: true
+  }
+
 .zuc-ec-det-product
-  span
-    |todo product
+  .zuc-ec-product-title
+    h1
+      |!{info.title}
+  .zuc-ec-product-info
+    .zuc-ec-product-info-prices
+      .zuc-ec-product-info-price-reg
+        span
+          |Regular pricing:&nbsp;
+        span
+          |!{info.price_reg}
+      .zuc-ec-product-info-price-mem
+        span
+          |Member pricing:&nbsp;
+        span
+          |!{info.price_mem}
+    .zuc-ec-product-info-stock
+      .zuc-ec-product-info-id
+        span
+          |Item #:&nbsp;
+        span
+          |!{info.id}
+      .zuc-ec-product-info-availability
+        if info.available
+          span
+            |IN STOCK
+        else
+          span
+            |OUT OF STOCK
+  form.zuc-ec-product-order-forms(action="")
+    .zuc-ec-form-group
+      .zuc-input-name.u-uppercase
+        span
+          |Select Size:
+      .zuc-select-container
+        label.u-screenreader(for="field-size")
+          |Choose your size
+        select(required name="size")
+          option(value="" disabled selected id="field-size")
+            |Choose your size
+          option(value="single")
+            |Single
+          option(value="twin")
+            |Twin
+          option(value="double")
+            |Double
+          option(value="queen")
+            |Queen
+          option(value="king")
+            |King
+          option(value="brazilking")
+            |Brazilian King
+    .zuc-ec-form-group.--qty
+      .zuc-input-name.u-uppercase
+        span
+          |QTY:
+      .zuc-select-container
+        label.u-screenreader(for="field-colour")
+          |Choose quantity
+        select(required name="size")
+          option(value="" disabled selected id="field-colour")
+            |1
+          option(value="black")
+            |2
+    .zuc-ec-form-group
+      .zuc-input-name.u-uppercase
+        span
+          |Select Colour:
+      .zuc-select-container
+        label.u-screenreader(for="field-colour")
+          |Choose your colour
+        select(required name="size")
+          option(value="" disabled selected id="field-colour")
+            |Choose your colour
+          option(value="black")
+            |Nightshade
+          option(value="cream")
+            |Peruvian Cream
+          option(value="red")
+            |Velvet Thunder
+          option(value="brown")
+            |Boar Hide
+          option(value="pink")
+            |Bubblegum Armageddon
+    .zuc-ec-form-action
+        button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
+          strong
+            span ADD TO CART
