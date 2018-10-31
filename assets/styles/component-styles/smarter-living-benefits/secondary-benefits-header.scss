@@ -20,9 +20,9 @@
     bottom: 12vh;
 
     @media #{$portrait} {
-      width: 100%;
-      padding: 5vw;
-      text-align: center;
+      width: 75%;
+      padding: 5vw 5vw 0;
+      text-align: left;
 
       h5,
       p {
