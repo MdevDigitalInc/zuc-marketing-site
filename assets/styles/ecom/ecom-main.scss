@@ -1,4 +1,24 @@
 /*----
   Details Styles
 -----*/
-@import './ecom-details.scss';
+@import './ecom-wrappers.scss';
+@import './det-related.scss';
+@import './det-showcase.scss';
+@import './det-infostack.scss';
+@import './det-bestsellers.scss';
+@import './det-product.scss';
+
+/*----
+  Category Styles
+-----*/
+@import './cat-shelf.scss';
+
+/*----
+  Ecom Generic Styles
+-----*/
+@import './ecom-breadcrumbs.scss';
+
+/*----
+  Mixin Styles
+-----*/
+@import './ecom-mixins.scss';
