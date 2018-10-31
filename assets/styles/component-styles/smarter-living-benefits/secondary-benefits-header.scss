@@ -36,6 +36,8 @@
   margin-top: 3.125vw;
   background: $color-pure-white;
   padding: 3vw 10% 6vh;
+  // Needed for drop shadow:
+  margin-bottom: 1vh;
 
   @media #{$phone-only} {
     padding: 8vw 5%;
