@@ -52,29 +52,18 @@ section.zuc-sixgrid-container {
 .zuc-sixgrid-item {
   width: 100%;
   text-align: center;
-  margin: vw-phone(25) 0 0;
-  padding-bottom: 1.25vw;
+  padding: 0 0 vw-phone(25);
 
-  @media #{$tablet-only} {
+  @media #{$tablet-up} {
+    width: 28%;
+    text-align: left;
+    padding: 0 0 vw-desktop(45);
+  }
+  @media #{$tablet-prt-only} {
     width: 45%;
     text-align: left;
     margin: vw-tablet(30) 0 0;
     padding: 0 0 1.8vw;
-
-    &:nth-child( 2n ) {
-      margin: vw-tablet(30) 0 0 10%;
-    }
-  }
-
-  @media #{$laptop-up} {
-    width: 28%;
-    text-align: left;
-    margin: 0 0 0 5%;
-    padding: 0 0 vw-desktop(45);
-
-    &:nth-child( 3n+1 ) {
-      margin: 0;
-    }
   }
 
   h6 {
@@ -83,6 +72,10 @@ section.zuc-sixgrid-container {
     margin-top: 23px;
     text-transform: uppercase;
     margin-bottom: .5vw;
+
+    @media #{$portrait} {
+      margin-bottom: 1vh;
+    }
   }
 
   p {
@@ -98,14 +91,9 @@ section.zuc-sixgrid-container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 23vw;
 
     @media #{$tablet-up} {
       justify-content: flex-start;
-      height: 12vw;
-    }
-    @media #{$laptop-up} {
-      height: 6.3vw;
     }
   }
 
@@ -113,8 +101,12 @@ section.zuc-sixgrid-container {
     position: relative;
     width: 25%;
 
+
     @media #{$tablet-only} {
-      width: 30%;
+      width: 35%;
+    }
+    @media #{$tablet-prt-only} {
+      width: 40%;
     }
     @media #{$laptop-only} {
       width: 50%;

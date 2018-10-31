@@ -83,7 +83,7 @@ $h5-font-sizes: (
 
 $h6-font-sizes: (
   null  : 3.9vw,
-  $tablet-up : 2.08vw,
+  $tablet-up : 2.48vw,
   $tablet-lnd-only : 1.6vw,
   $laptop-up : 1.1vw,
   $desktop-up : .83vw,
@@ -155,7 +155,7 @@ h5,
 
 h6,
 .h6 {
-  line-height: 1;
+  line-height: 1.03;
   @include font-size($h6-font-sizes);
 }
 
