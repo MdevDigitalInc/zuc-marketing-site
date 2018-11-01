@@ -35,7 +35,7 @@ const slpHeroBgImg = require ( './assets/images/smarter-living/hero-background.p
 const srvHeaderAppl = require ( './assets/images/service-plans/woman-laundry-blue-header.png' );
 const srvHeaderFurn = require ( './assets/images/service-plans/father-son-laughing-blue-header.png' );
 const srvHeaderSys = require ( './assets/images/service-plans/front-house-blue-header.png' );
-const slbHeader = require ( './assets/images/smarter-living/interior-house-header.png')
+const slbHeader = require ( './assets/images/smarter-living/interior-house-header.png');
 
 // About Images
 const aboutHero = require ( './assets/images/about/zucora-home-building.png' );

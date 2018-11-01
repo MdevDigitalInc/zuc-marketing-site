@@ -32,6 +32,7 @@ section.zuc-custom-plan {
   align-items: flex-start;
   width: 100%;
   overflow: hidden;
+  position: relative;
 
   margin: ( 32 / 3.2 ) * 1vw 0 ( 78 / 3.2 ) * 1vw;
 
@@ -39,7 +40,6 @@ section.zuc-custom-plan {
     flex-direction: row;
     margin: ( 53 / 7.68 ) * 1vw 0 ( 59 / 7.68 ) * 1vw;
   }
-
   @media #{$laptop-up} {
     margin: ( 30 / 19.2 ) * 1vw 0 ( 40 / 19.2 ) * 1vw;
   }
@@ -49,7 +49,7 @@ section.zuc-custom-plan {
   width: 100%;
 
   @media #{$tablet-up} {
-    flex: 30%;
+    flex: 36%;
   }
 
   &.--lilac {
@@ -76,32 +76,13 @@ section.zuc-custom-plan {
     margin: ( 5 / 7.68 ) * 1vw;
     height: $zuc-custom-row-height-tablet;
   }
-
   @media #{$laptop-up} {
     margin: ( 9 / 19.2 ) * 1vw;
     height: $zuc-custom-row-height-desktop;
   }
 
-  // CTA Line ("BEST VALUE")
-  > :nth-child( 1 ) {
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: ( 23 / 3.2 ) * 1vw 0 0;
-    font-size: ( 15 / 3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      padding: ( 13 / 7.68 ) * 1vw 0 0;
-      font-size: ( 8.5 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      padding: ( 26 / 19.2 ) * 1vw 0 0;
-      font-size: ( 16 / 19.2 ) * 1vw;
-    }
-  }
-
   // PLAN NAME ("Whole Home Plan")
-  > :nth-child( 2 ) {
+  .zuc-custom-plan--plan-name {
     font-family: $main-font-serif;
     text-transform: capitalize;
     font-weight: 300;
@@ -109,18 +90,17 @@ section.zuc-custom-plan {
     font-size: ( 28 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      padding: ( 8 / 7.68 ) * 1vw 0 0;
+      padding: ( 25 / 7.68 ) * 1vw 0 0;
       font-size: ( 15.5 / 7.68 ) * 1vw;
     }
-
     @media #{$laptop-up} {
-      padding: ( 17 / 19.2 ) * 1vw 0 0;
+      padding: ( 45 / 19.2 ) * 1vw 0 0;
       font-size: ( 30 / 19.2 ) * 1vw;
     }
   }
 
   // Graphical Line
-  > :nth-child( 3 ) {
+  .zuc-custom-plan--line {
     border-top: 1px $color-pure-white solid;
     width: 40%;
     padding: ( 9 / 3.2 ) * 1vw 0;
@@ -129,7 +109,6 @@ section.zuc-custom-plan {
       width: 45%;
       padding: ( 5 / 7.68 ) * 1vw 0;
     }
-
     @media #{$laptop-up} {
       width: 50%;
       padding: ( 9 / 19.2 ) * 1vw 0;
@@ -137,12 +116,13 @@ section.zuc-custom-plan {
   }
 
   // Price Object
-  > :nth-child( 4 ) {
+  .zuc-custom-plan--price {
     display: flex;
     justify-content: center;
     align-items: baseline;
     font-family: $main-font-serif;
     font-weight: 300;
+    height: 100%;
 
     // Currency Symbol
     > :nth-child( 1 ) {
@@ -152,7 +132,6 @@ section.zuc-custom-plan {
       @media #{$tablet-only} {
         font-size: ( 24 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 50 / 19.2 ) * 1vw;
       }
@@ -164,57 +143,60 @@ section.zuc-custom-plan {
       @media #{$tablet-only} {
         font-size: ( 40 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         font-size: ( 100 / 19.2 ) * 1vw;
       }
     }
     // Cent Value
     > :nth-child( 3 ) {
-      font-size: ( 18 / 3.2 ) * 1vw;
+      font-size: ( 24 / 3.2 ) * 1vw;
+      align-self: flex-start;
 
       @media #{$tablet-only} {
-        font-size: ( 14 / 7.68 ) * 1vw;
+        font-size: ( 22 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
-        font-size: ( 26 / 19.2 ) * 1vw;
+        font-size: ( 45 / 19.2 ) * 1vw;
       }
     }
   }
 
   // Rate ("/month")
-  > :nth-child( 5 ) {
+  // Todo -- Bugfix: padding on this is buggy in Firefox.  Needs refactoring.
+  .zuc-custom-plan--month {
     font-weight: 600;
     font-size: ( 12 / 3.2 ) * 1vw;
     padding: 0 0 ( 28 / 3.2 ) * 1vw;
+    display: flex;
 
     @media #{$tablet-only} {
       font-size: ( 10 / 7.68 ) * 1vw;
-      padding: 0 0 ( 14 / 7.68 ) * 1vw;
+      padding: 2vw 0 ( 14 / 7.68 ) * 1vw;
     }
-
     @media #{$laptop-up} {
       font-size: ( 16 / 19.2 ) * 1vw;
       padding: 0 0 ( 30 / 19.2 ) * 1vw;
     }
   }
 
-  // Savings ("Save $50")
-  > :nth-child( 6 ) {
+  // Savings ("Bundle all three plans ...")
+  .zuc-custom-plan--savings {
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: ( 27 / 3.2 ) * 1vw;
+    font-size: ( 21.5 / 3.2 ) * 1vw;
     padding: 0 0 ( 29 / 3.2 ) * 1vw;
+    line-height: 7vw;
 
     @media #{$tablet-only} {
-      font-size: ( 15 / 7.68 ) * 1vw;
-      padding: 0 0 ( 16 / 7.68 ) * 1vw;
+      font-size: ( 13 / 7.68 ) * 1vw;
+      padding: 0 1vw ( 16 / 7.68 ) * 1vw;
+      line-height: 2.5vw;
     }
 
     @media #{$laptop-up} {
-      font-size: ( 29 / 19.2 ) * 1vw;
-      padding: 0 0 ( 31 / 19.2 ) * 1vw;
+      font-size: ( 24 / 19.2 ) * 1vw;
+      padding: 0 2vw ( 31 / 19.2 ) * 1vw;
+      line-height: 1.5vw;
     }
   }
 }
@@ -280,7 +262,7 @@ section.zuc-custom-plan {
     @media #{$tablet-up} {
       font-size: ( 9.5 / 7.68 ) * 1vw;
     }
-  
+
     @media #{$laptop-up} {
       font-size: ( 18 / 19.2 ) * 1vw;
     }
@@ -304,5 +286,32 @@ section.zuc-custom-plan {
       height: 11.25vw;
       width: 11.25vw;
     }
+  }
+}
+
+.zuc-custom-plan--ribbon {
+  background: $color-zuc-salmon;
+  position: absolute;
+  text-align: center;
+  color: $color-zuc-darkindigo;
+  width: 210px;
+  transform: rotate(-45deg);
+  top: 18px;
+  left: -74px;
+  font-size: 11px;
+  line-height: 22px;
+
+  @media #{$phone-only} {
+    width: 220px;
+    top: 22px;
+    left: -73px;
+    font-size: 13px;
+    line-height: 34px;
+  }
+  @media #{$tablet-only} {
+    top: 15px;
+    left: -81px;
+    font-size: 10px;
+    line-height: 20px;
   }
 }
