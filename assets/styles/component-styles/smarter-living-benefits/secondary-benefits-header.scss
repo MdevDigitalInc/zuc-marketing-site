@@ -4,13 +4,13 @@
   margin: 0 auto;
 
   @media #{$tablet-lnd-only} {
-    width: 75%;
+    width: 90%;
+  }
+  @media #{$laptop-only} {
+    width: 90%;
   }
   @media #{$portrait} {
     width: 100%;
-  }
-  @media #{$laptop-only} {
-    width: 85%;
   }
 
   .zuc-slb-left {
@@ -44,9 +44,10 @@
   }
   @media #{$portrait} {
     display: block;
-    bottom: -9vw;
-    width: 120%;
-    margin: 0 auto;
+    bottom: 8vw;
+    left: 10vw;
+    // Negative margin-bottom to up elements below.
+    margin: 0 auto -12vw;
   }
 }
 
