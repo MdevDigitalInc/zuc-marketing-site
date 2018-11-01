@@ -8,12 +8,13 @@
   animation-iteration-count: $iteration;
 }
 
-// Equally spaced boxes
-@mixin equal-boxes( $boxes: 3, $space-in-percent: 2% ) {
-  width: (100 - $space-in-percent * ($boxes - 1)) / $boxes * 1%;
+
+// Equally spaced boxes with known margin
+@mixin spaced-boxes( $boxes_per_row: 3, $space-between-in-percent: 2% ) {
+  width: (100 - $space-between-in-percent * ($boxes_per_row - 1)) / $boxes_per_row * 1%;
 
   &:nth-child( n + 2 ) {
-    margin: 0 0 0 $space-in-percent * 1%;
+    margin: 0 0 0 $space-between-in-percent * 1%;
   }
 }
 
