@@ -19,9 +19,9 @@
     padding: 4.64vw 0 9vw;
   }
 
-  h3 {
-    line-height: vw-desktop(60);
-  }
+  // h3 {
+  //   line-height: vw-desktop(60);
+  // }
 
   .zuc-image-box {
     background: $color-zuc-darkindigo;
@@ -112,10 +112,14 @@
     z-index: -5;
     left: 0;
     top: 0;
-    width: 125%;
+    // Todo: these values have been temporarily reduced from 125%
+    // were causing width/scrolling issues.
+    width: 75%;
 
     @media #{$tablet-only} {
-      width: 125%;
+      // Todo: these values have been temporarily reduced from 125%
+      // were causing width issues.
+      width: 75%;
     }
     @media #{$laptop-only} {
       left: vw-desktop(-100);

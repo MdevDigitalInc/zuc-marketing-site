@@ -10,7 +10,7 @@
   @media #{$portrait} {
     display: block;
     bottom: -9vw;
-    width: 80%;
+    width: 120%;
     margin: 0 auto;
   }
 }
@@ -47,7 +47,16 @@
       }
     }
   }
+
+
 }
+
+// .zuc-hero-right {
+//   @media #{$portrait} {
+//     position: relative;
+//     bottom: 10px;
+//   }
+// }
 
 .--slb-hero-grid-row {
   margin-top: 3.125vw;
