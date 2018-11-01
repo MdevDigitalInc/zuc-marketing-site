@@ -22,7 +22,7 @@ section.zuc-member-benefits {
   @media #{$laptop-up} {
     order: 1;
     justify-content: flex-end;
-    width: 60%;
+    width: 50%;
   }
 
   .zuc-img-box {
@@ -45,7 +45,7 @@ section.zuc-member-benefits {
   padding: 0 7vw 15vw;
 
   @media #{$tablet-only} {
-    padding: 0 6vw 13vw;
+    padding: 0 6vw 0;
   }
 
   @media #{$laptop-up} {

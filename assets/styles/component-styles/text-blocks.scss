@@ -138,13 +138,10 @@
     margin-bottom: 2vw;
   }
   @media #{$laptop-up} {
-    margin-bottom: 1.25vw;
+    margin-bottom: .75vw;
   }
 
   h4 {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $color-zuc-darkindigo;
     margin: 0;
     line-height: 1.5;
   }
