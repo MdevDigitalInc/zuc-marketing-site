@@ -11,6 +11,20 @@
   }
 }
 
+.zuc-ec-home-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+
+  @media #{tablet-only} {
+    padding: 0 7vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 0 16vw;
+  }
+}
+
 .zuc-ec-details-wrapper {
   display: flex;
   flex-wrap: wrap;

@@ -15,6 +15,14 @@
 @import './cat-links.scss';
 
 /*----
+  Home Styles
+-----*/
+@import './home/home-header.scss';
+@import './home/home-catlinks.scss';
+@import './home/home-best-sellers.scss';
+@import './home/home-plans.scss';
+
+/*----
   Ecom Generic Styles
 -----*/
 @import './ecom-breadcrumbs.scss';
