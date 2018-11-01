@@ -267,6 +267,10 @@ module.exports = {
       template: './src/templates/ecom-cart.pug',
       filename: 'ecom-cart.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-home.pug',
+      filename: 'ecom-home.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])

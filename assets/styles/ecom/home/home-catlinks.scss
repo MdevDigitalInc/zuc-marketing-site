@@ -1,0 +1,12 @@
+.zuc-ec-home-catlinks {
+  width: 100%;
+  margin: 0 0 vw-phone(50);
+
+  @media #{$tablet-only} {
+    margin: 0 0 vw-tablet(75);
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 0 vw-desktop(100);
+  }
+}

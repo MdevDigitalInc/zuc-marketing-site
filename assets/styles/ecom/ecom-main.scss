@@ -1,7 +1,7 @@
 /*----
   Details Styles
 -----*/
-@import './ecom-details.scss';
+@import './ecom-wrappers.scss';
 @import './det-related.scss';
 @import './det-showcase.scss';
 @import './det-infostack.scss';
@@ -9,9 +9,23 @@
 @import './det-product.scss';
 
 /*----
+  Category Styles
+-----*/
+@import './cat-shelf.scss';
+@import './cat-links.scss';
+
+/*----
+  Home Styles
+-----*/
+@import './home/home-header.scss';
+@import './home/home-catlinks.scss';
+@import './home/home-plans.scss';
+
+/*----
   Ecom Generic Styles
 -----*/
 @import './ecom-breadcrumbs.scss';
+@import './ecom-pagination.scss';
 
 /*----
   Mixin Styles

@@ -1,0 +1,35 @@
+-
+  var boxes = [
+    {
+      title: 'Smarter Living Plans',
+      subtitle: 'Protect your home and budget',
+      style: 'background-image:url(\'./images/about/about-team-david.png\');'
+    },
+    {
+      title: 'ZU Collection',
+      subtitle: 'impact your family’s well-being and environment positively',
+      style: 'background-image:url(\'./images/about/about-team-oksana.png\');'
+
+    },
+    {
+      title: 'PureCare',
+      subtitle: 'a safe haven for a sound sleep',
+      style: 'background-image:url(\'./images/about/about-team-michelle.png\');'
+    },
+    {
+      title: 'Furniture Care',
+      subtitle: 'clean. restore. maintain.',
+      style: 'background-image:url(\'./images/about/about-team-magda.png\');'
+    }
+  ]
+
+.zuc-ec-home-catlinks
+  +ecom-header('Shop innovative products for smarter home management')
+  .zuc-ec-links-boxes
+    each box in boxes.length ? boxes : [' No links to display']
+      a.zuc-ec-links-box.--iv(href="#" title="#")
+        .zuc-ec-links-box-image(style=box.style)
+        h5.zuc-ec-links-box-subtitle
+          |!{box.subtitle}
+        h3.zuc-ec-links-box-title
+          |!{box.title}
