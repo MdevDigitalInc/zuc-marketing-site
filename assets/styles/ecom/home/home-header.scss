@@ -1,3 +1,10 @@
 .zuc-ec-home-header {
   position: relative;
 }
+
+.zuc-ec-home-header-card {
+
+  &:nth-child( n+2 ) {
+    display: none; // dev only
+  }
+}
