@@ -182,8 +182,6 @@
   width: 100%;
   position: relative;
   overflow: visible;
-  background-size: cover;
-  background-position: center;
   margin-bottom: 7.8vw;
 
   @media #{$tablet-only} {
@@ -193,6 +191,7 @@
     padding-top: 30px;
   }
   @media #{$portrait} {
+    // This is throwing off SLB's header.
     padding: 50px 0 0;
     margin-bottom: 28.125vw;
     background-position: center -270px;
@@ -320,6 +319,34 @@
       bottom: -1px;
       left: 0;
     }
+  }
+}
+
+.--sl-header {
+  background-size: cover;
+  background-position: center;
+}
+.--slb-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media #{$phone-only} {
+    background-position: 30% -45%;
+    background-size: 430%;
+  }
+  @media #{$tablet-only} {
+    background-position: 40% -15%;
+  }
+  @media #{$laptop-only} {
+    background-position: -140px -110px;
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
+  @media #{$desktop-only} {
+    background-position: -50px -110px;
+    background-size: 125%;
+    background-repeat: no-repeat;
   }
 }
 
