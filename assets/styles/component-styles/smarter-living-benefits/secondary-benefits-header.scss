@@ -1,20 +1,3 @@
-.--zuc-slb-img-position {
-  position: relative;
-  bottom: -4vw;
-  right: 1vw;
-  z-index: -1;
-
-  @media #{$tablet-lnd-only} {
-    right: 0;
-  }
-  @media #{$portrait} {
-    display: block;
-    bottom: -9vw;
-    width: 120%;
-    margin: 0 auto;
-  }
-}
-
 .zuc-slb-content {
   width: 65%;
   position: relative;
@@ -47,16 +30,25 @@
       }
     }
   }
-
-
 }
 
-// .zuc-hero-right {
-//   @media #{$portrait} {
-//     position: relative;
-//     bottom: 10px;
-//   }
-// }
+// Image of woman with arms folded.
+.--zuc-slb-img-position {
+  position: relative;
+  bottom: -4vw;
+  right: 1vw;
+  z-index: -1;
+
+  @media #{$tablet-lnd-only} {
+    right: 0;
+  }
+  @media #{$portrait} {
+    display: block;
+    bottom: -9vw;
+    width: 120%;
+    margin: 0 auto;
+  }
+}
 
 .--slb-hero-grid-row {
   margin-top: 3.125vw;
