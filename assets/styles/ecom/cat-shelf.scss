@@ -45,14 +45,14 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: vw-phone(50) 0 vw-phone(25);
+  margin: vw-phone(30) 0 vw-phone(25);
 
   @media #{$tablet-only} {
     margin: vw-tablet(38) 0 vw-tablet(30);
   }
 
   @media #{$laptop-up} {
-    margin: vw-desktop(85) 0 vw-desktop(45);
+    margin: vw-desktop(40) 0 vw-desktop(45);
   }
 }
 
