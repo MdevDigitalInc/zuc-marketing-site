@@ -1,5 +1,8 @@
 .zuc-ec-home-header {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+  background-size: cover;
   margin: 0 0 vw-phone(40);
 
   @media #{$tablet-only} {
@@ -11,11 +14,32 @@
   }  
 }
 
+.zuc-ec-home-header-bg {
+  position: absolute;
+  z-index: -5;
+  width: 102%;
+  top: -50%;
+  left: -2px;
+
+  @media #{$tablet-only} { // this is where you stopped AW
+    width: 102%;
+    top: -50%;
+    left: -2px;
+  }
+
+  @media #{$laptop-up} {
+    width: 102%;
+    top: -50%;
+    left: -2px;
+  }  
+}
+
 .zuc-ec-home-header-card {
   display: flex;
   flex-direction: column;
+  background: $color-pure-white;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
-  margin: vw-desktop(200) 16vw vw-desktop(25);
+  margin: vw-desktop(100) 16vw vw-desktop(25);
   padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
 
   &:nth-child( n+2 ) {
