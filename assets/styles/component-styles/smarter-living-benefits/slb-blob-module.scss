@@ -39,7 +39,6 @@
         height: ( 512 / 7.68 ) * 1vw;
         width: ( 607 / 7.68 ) * 1vw;
       }
-
       @media #{$laptop-up} {
         height: ( 512 / 19.2 ) * 1vw;
         width: ( 607 / 19.2 ) * 1vw;
@@ -53,21 +52,25 @@
       left: 0;
       width: 175%;
 
-      @media #{$phone-only} {
-        // display: none;
-      }
-
       @media #{$tablet-only} {
         top: 19vw;
         left: -12vw;
         width: 96vw;
       }
-
       @media #{$laptop-up} {
         top: 6vw;
         left: -6vw;
         width: 42vw;
       }
     }
+  }
+}
+
+.--slb-blob-stack {
+  top: vw-desktop(20);
+  left: vw-desktop(34);
+
+  & .zuc-blob-module--grey-slash {
+    bottom: vw-desktop(12);
   }
 }
