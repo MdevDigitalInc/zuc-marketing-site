@@ -8,6 +8,15 @@
   animation-iteration-count: $iteration;
 }
 
+// Equally spaced boxes
+@mixin equal-boxes( $boxes: 3, $space-in-percent: 2% ) {
+  width: (100 - $space-in-percent * ($boxes - 1)) / $boxes * 1%;
+
+  &:nth-child( n + 2 ) {
+    margin: 0 0 0 $space-in-percent * 1%;
+  }
+}
+
 // Functions
 
 @function vw-desktop($width) {
@@ -25,3 +34,4 @@
 @function vw-phone($width) {
   @return ($width / 3.2) * 1vw;
 }
+

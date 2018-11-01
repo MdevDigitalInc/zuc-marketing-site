@@ -1,3 +1,18 @@
 .zuc-ec-home-plans {
-  position: relative;
+  width: 100%;
+}
+
+.zuc-ec-plans-boxes {
+  width: 100%;
+  display: flex;
+
+  margin: vw-desktop(15) 0;
+}
+
+.zuc-ec-plans-box {
+  @include equal-boxes(4, 2);
+
+  img {
+    width: 100%;
+  }
 }
