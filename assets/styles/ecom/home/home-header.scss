@@ -1,10 +1,78 @@
 .zuc-ec-home-header {
-  position: relative;
+  width: 100%;
+  margin: 0 0 vw-phone(40);
+
+  @media #{$tablet-only} {
+    margin: 0 0 vw-tablet(60);
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 0 vw-desktop(80);
+  }  
 }
 
 .zuc-ec-home-header-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
+  margin: vw-desktop(200) 16vw vw-desktop(25);
+  padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
 
   &:nth-child( n+2 ) {
     display: none; // dev only
+  }
+
+  .zuc-ec-home-header-subtitle {
+    color: $color-zuc-darkindigo;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 vw-phone(12);
+    font-size: vw-phone(10);
+
+    @media #{$tablet-only} {
+      margin: 0 0 vw-tablet(18);
+      font-size: vw-tablet(10);
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 0 vw-desktop(18);
+      font-size: vw-desktop(20);
+    }
+  }
+
+  .zuc-ec-home-header-title {
+    color: $color-zuc-indigo;
+    font-weight: 300;
+    font-family: $main-font-serif;
+    font-size: vw-phone(10);
+    margin: 0 0 vw-phone(20);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(10);
+      margin: 0 0 vw-tablet(30);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(80);
+      margin: 0 0 vw-desktop(30);
+    }
+  }
+
+  .zuc-ec-home-header-blurb {
+    color: $color-zuc-darkindigo;
+    font-weight: 100;
+    margin: 0 0 vw-phone(30);
+    font-size: vw-phone(10);
+
+    @media #{$tablet-only} {
+      margin: 0 0 vw-tablet(47);
+      font-size: vw-tablet(10);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-desktop(390);
+      margin: 0 0 vw-desktop(47);
+      font-size: vw-desktop(20);
+    }
   }
 }
