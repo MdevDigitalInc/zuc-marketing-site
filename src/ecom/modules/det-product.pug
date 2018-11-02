@@ -38,7 +38,7 @@
             |OUT OF STOCK
   form.zuc-ec-product-order-forms(action="")
     .zuc-ec-form-group
-      .zuc-input-name.u-uppercase
+      .zuc-input-name.u-uppercase.zuc-input-name-no-margin
         span
           |Select Size:
       .zuc-select-container
@@ -67,9 +67,7 @@
         label.u-screenreader(for="field-qty")
           |Choose quantity
         select(required name="size")
-          option(value="" disabled selected id="field-qty")
-            |-
-          option(value="1")
+          option(selected value="1")
             |1
           option(value="2")
             |2

@@ -2,6 +2,7 @@
   width: 100%;
   order: 4;
   padding: 0 0 vw-phone(30);
+  margin: 0;
 
   @media #{$tablet-only} {
     padding: 0 0 vw-tablet(30);
@@ -10,7 +11,12 @@
   @media #{$laptop-up} {
     width: 50%;
     order: 5;
+    margin: vw-laptop(-10) 0 0;
     padding: 0 16vw 0 vw-desktop(60);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(-90) 0 0;
   }
 }
 

@@ -32,7 +32,7 @@
   font-family: $main-font-serif;
   font-weight: 300;
   font-size: vw-phone(30);
-  margin: 0 0 vw-phone(22);
+  margin: 0;
 
   @media #{$tablet-only} {
     font-size: vw-tablet(47);
@@ -57,7 +57,7 @@
   border-top: 1px $color-zuc-concrete solid;
   border-bottom: 1px $color-zuc-concrete solid;
   padding: vw-phone(15) 0;
-  margin: vw-phone(15) 0;
+  margin: vw-phone(28) 0;
 
   @media #{$tablet-up} {
     flex-direction: row;
@@ -200,16 +200,10 @@
   }
 
   .zuc-input-name {
-    font-size: vw-phone(14);
-    padding: 0 0 vw-phone(25);
+    padding: 0 0 vw-phone(15);
 
     @media #{$tablet-up} {
-      font-size: vw-tablet(18);
       padding: 0;
-    }
-
-    @media #{$laptop-up} {
-      font-size: vw-desktop(18);
     }
   }
 
