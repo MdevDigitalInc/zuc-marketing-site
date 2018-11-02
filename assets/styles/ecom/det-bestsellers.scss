@@ -64,6 +64,7 @@
   text-align: center;
   background: $color-pure-white;
   z-index: 1;
+  transition: .3s;
   padding: vw-phone(30) 0;
 
   @media #{$phone-only} {
@@ -88,6 +89,7 @@
 
   &:hover {
     z-index: 2;
+    transform: scale(1.1);
     box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
   }
 
