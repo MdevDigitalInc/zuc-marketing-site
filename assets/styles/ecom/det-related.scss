@@ -65,7 +65,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: vw-phone(5) 0 0 vw-phone(10);
+  padding: 0 0 0 vw-phone(10);
   width: 10%;
 
   @media #{$tablet-up} {
@@ -82,7 +82,7 @@
     font-weight: 300;
     width: vw-phone(200);
     font-size: vw-phone(18);
-    margin: 0 0 vw-phone(5);
+    margin: 0 0 vw-phone(8);
 
     @media #{$tablet-only} {
       width: vw-tablet(350);
@@ -123,7 +123,7 @@
     color: $color-zuc-darkindigo;
     font-weight: 500;
     white-space: nowrap;
-    font-size: vw-phone(14);
+    font-size: vw-phone(12);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(16);
