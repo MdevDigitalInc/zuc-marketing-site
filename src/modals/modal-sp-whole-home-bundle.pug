@@ -6,6 +6,7 @@
     // Place Modal Content Here
     .zuc-sp-bundle-content
       //-------------------------------------------------
+      //- Titles
       .zuc-sp-bundle--titles
         .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase
           |Best Value
@@ -25,8 +26,26 @@
           span.month
             |/month
         .zuc-sp-bundle--btn
-          a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+          button.zuc-btn.zuc-btn-secondary(href="#" title="todo")
             |Get started today
+      //- Packages
+      .zuc-custom-plan--items
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
+          .plan-icon
+            img(src="../../assets/images/icons/icon-plus.svg", alt="a circle with a plus in it")
+          h4.zuc-sp-bundle--photo-text.u-font-serif.u-zuc-indigo
+            |Appliances Coverage:
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
+          .plan-icon
+            img(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
+          h4.zuc-sp-bundle--photo-text.u-font-serif.u-zuc-indigo
+            |Furniture Coverage:
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
+          h4.zuc-sp-bundle--photo-text.u-font-serif.u-zuc-indigo
+            |Home Systems Coverage:
       .zuc-sp-bundle--packages
         .zuc-sp-bundle-pkg
           |hey

@@ -4,7 +4,6 @@
 // class itself, but that would be nesting on 3 levels
 .--sp-bundle {
   width: 85%;
-
   .zuc-sp-bundle-content {
     margin: vw-desktop(10);
     padding: vw-desktop(20);
@@ -27,7 +26,7 @@
   }
 
   p {
-    padding: 0 vw-desktop(40);
+    padding: 0 vw-desktop(180);
   }
 }
 
@@ -39,7 +38,7 @@
     color: $color-zuc-indigo;
     display: flex;
     justify-content: center;
-    // letter-spacing:
+    letter-spacing: vw-desktop(2);
 
   .sign {
     font-size: vw-desktop(46);
@@ -47,17 +46,14 @@
   .dollar {
     font-size: vw-desktop(93);
   }
-
   .cents {
     font-size: vw-desktop(36);
     align-self: flex-start;
   }
-
   .month {
     font-size: vw-desktop(24);
     align-self: flex-end;
   }
-
 }
 
 .zuc-sp-bundle--packages {
