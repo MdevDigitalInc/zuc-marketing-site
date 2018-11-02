@@ -110,8 +110,12 @@
     }
 
     @media #{$laptop-up} {
-      font-size: vw-desktop(14);
+      font-size: vw-laptop(14);
       padding: 0 0 vw-desktop(5);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(14);
     }
   }
 
@@ -126,6 +130,10 @@
     }
 
     @media #{$laptop-up} {
+      font-size: vw-laptop(16);
+    }
+
+    @media #{$desktop-up} {
       font-size: vw-desktop(16);
     }
   }

@@ -5,7 +5,7 @@
   margin: vw-phone(25) 0 vw-phone(80);
 
   @media #{$tablet-only} {
-    margin: vw-tablet(25) 0 vw-tablet(80);
+    margin: vw-tablet(25) 0 vw-tablet(56);
   }
 
   @media #{$laptop-up} {
@@ -45,10 +45,10 @@
   position: relative;
   width: 100%;
   display: flex;
-  padding: vw-phone(10) vw-phone(25);
+  padding: vw-phone(10) 0;
 
   @media #{$tablet-only} {
-    padding: vw-tablet(25) vw-tablet(45);
+    padding: vw-tablet(25) 0;
   }
 
   @media #{$laptop-up} {
@@ -74,7 +74,7 @@
   
   @media #{$tablet-only} {
     width: 100 / 3 * 1%;
-    padding: vw-tablet(40) 0;
+    padding: vw-tablet(40) 1%;
 
     &:nth-child( n+4 ) {
       display: none;
@@ -83,7 +83,7 @@
 
   @media #{$laptop-up} {
     width: 100 / 6 * 1%;
-    padding: vw-desktop(20) 0 vw-desktop(40);
+    padding: vw-desktop(20) 1% vw-desktop(40);
   }
 
   &:hover {

@@ -2,6 +2,10 @@
   width: 100%;
   order: 4;
 
+  @media #{$tablet-only} {
+    padding: 0 0 vw-tablet(30);
+  }
+
   @media #{$laptop-up} {
     width: 50%;
     order: 5;
