@@ -1,7 +1,7 @@
 /*
   Sixgrid - AW 20181010
-
 */
+
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
@@ -12,31 +12,15 @@ section.zuc-sixgrid-container {
   @media #{$tablet-up} {
     padding: 0 7vw vw-tablet(200);
   }
-
   @media #{$laptop-only} {
     padding: 0 20vw vw-laptop(200);
   }
-
   @media #{$desktop-up} {
     padding: 0 24vw vw-desktop(200);
   }
 
   &.--grey {
     background: $color-zuc-platinum;
-  }
-
-  h2 {
-    color: $color-zuc-indigo;
-    font-family: $main-font-serif;
-    width: vw-phone(280);
-
-    @media #{$tablet-only} {
-      width: vw-tablet(568);
-    }
-
-    @media #{$laptop-up} {
-      width: vw-desktop(662);
-    }
   }
 
   .zuc-sixgrid-subtext {
@@ -47,7 +31,6 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       padding: 0 0 8.6vw;
     }
-
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
@@ -62,29 +45,18 @@ section.zuc-sixgrid-container {
 .zuc-sixgrid-item {
   width: 100%;
   text-align: center;
-  margin: vw-phone(25) 0 0;
-  padding-bottom: 1.25vw;
+  padding: 0 0 vw-phone(25);
 
-  @media #{$tablet-only} {
+  @media #{$tablet-up} {
+    width: 28%;
+    text-align: left;
+    padding: 0 0 vw-desktop(45);
+  }
+  @media #{$tablet-prt-only} {
     width: 45%;
     text-align: left;
     margin: vw-tablet(30) 0 0;
     padding: 0 0 1.8vw;
-
-    &:nth-child( 2n ) {
-      margin: vw-tablet(30) 0 0 10%;
-    }
-  }
-
-  @media #{$laptop-up} {
-    width: 30%;
-    text-align: left;
-    margin: 0 0 0 5%;
-    padding: 0 0 vw-desktop(45);
-
-    &:nth-child( 3n+1 ) {
-      margin: 0;
-    }
   }
 
   h6 {
@@ -92,12 +64,22 @@ section.zuc-sixgrid-container {
     font-weight: 600;
     margin-top: 23px;
     text-transform: uppercase;
+    margin-bottom: .5vw;
+
+    @media #{$portrait} {
+      margin-bottom: 1vh;
+    }
+    @media #{$phone-only} {
+      // A little bit hacky but works.
+      // Makes titles take up space a little nicer
+      // on mobile. - LM
+      br {
+        display: none;
+      }
+    }
   }
 
   p {
-    color: $color-zuc-darkindigo;
-    font-weight: 100;
-
     @media #{$phone-only} {
       padding: 0 7vw;
     }
@@ -107,29 +89,24 @@ section.zuc-sixgrid-container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 23vw;
 
     @media #{$tablet-up} {
       justify-content: flex-start;
-      height: 12vw;
-    }
-    @media #{$laptop-up} {
-      height: 6.3vw;
     }
   }
 
   img {
-    position: relative;
-    width: 25%;
+    width: 30%;
 
     @media #{$tablet-only} {
-      width: 30%;
+      width: 35%;
     }
-
+    @media #{$tablet-prt-only} {
+      width: 40%;
+    }
     @media #{$laptop-only} {
       width: 50%;
     }
-
     @media #{$desktop-up} {
       width: 40%;
     }

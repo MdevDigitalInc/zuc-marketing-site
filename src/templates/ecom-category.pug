@@ -1,0 +1,18 @@
+extends _layout
+
+block content
+  .zuc-ec-main-wrapper
+    //- Breadcrumbs
+    include ../ecom/modules/_breadcrumbs.pug
+  .zuc-ec-category-wrapper
+    //- Shelf Module
+    include ../ecom/modules/cat-shelf.pug
+    
+    //- Pagination Module
+    include ../ecom/modules/_pagination.pug
+    
+    //- Blurb Module - Becky says this is being redesigned, commented for now - AW
+    //-include ../ecom/modules/cat-blurb.pug
+    
+  //- Category Links Module - LIVES OUTSIDE OF WRAPPER
+  include ../ecom/modules/cat-links.pug
