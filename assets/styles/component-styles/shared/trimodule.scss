@@ -341,7 +341,7 @@ $zuc-review-author-font-sizes: (
   }
   @media #{$laptop-up} {
     background-color: inherit;
-    padding: 4vw 0;
+    padding: 4vw 1.4vw 4vw 0;
   }
 
   // Padding off-set to align with --review-box, which has a 43px img
