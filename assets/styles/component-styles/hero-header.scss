@@ -181,7 +181,7 @@
 .zuc-secondary-header {
   width: 100%;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   margin-bottom: 7.8vw;
 
   @media #{$tablet-only} {
