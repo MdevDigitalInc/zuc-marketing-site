@@ -22,20 +22,20 @@
 
   @media #{$laptop-up} {
     width: 50%;
-    padding: 0 8vw 0 3vw;
+    padding: 0 5vw 0 3vw;
   }
 
   h4 {
-    font-size: ( 16 / 3.2 ) * 1vw;
     margin: 0 0 ( 10 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      font-size: ( 20 / 7.68 ) * 1vw;
       margin: 0 0 ( 16/ 7.68 ) * 1vw;
+    }
+    @media #{$tablet-prt-only} {
+      margin: 0 0 ( 11/ 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
-      font-size: ( 20 / 19.2 ) * 1vw;
       margin: 0 0 ( 18 / 19.2 ) * 1vw;
     }
   }
@@ -47,10 +47,12 @@
     margin: 0 0 ( 10 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      font-size: ( 16 / 7.68 ) * 1vw;
+      font-size: ( 13 / 7.68 ) * 1vw;
       margin: 0 0 ( 10 / 7.68 ) * 1vw;
     }
-
+    @media #{$tablet-prt-only} {
+      font-size: ( 16 / 7.68 ) * 1vw;
+    }
     @media #{$laptop-up} {
       font-size: ( 16 / 19.2 ) * 1vw;
       margin: 0 0 ( 9 / 19.2 ) * 1vw;

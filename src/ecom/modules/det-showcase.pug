@@ -1,3 +1,37 @@
-.ecom-det-showcase
-  span
-    |todo showcase
+-
+  var images = [
+    {
+      _src: '../../assets/images/service-plans/home-systems.png',
+      _alt: 'todo',
+      _active: true
+    },
+    {
+      _src: '',
+      _alt: '',
+      _active: false
+    },
+    {
+      _src: '',
+      _alt: '',
+      _active: false
+    },
+    {
+      _src: '',
+      _alt: '',
+      _active: false
+    }
+  ]
+
+.zuc-ec-det-showcase
+  .zuc-ec-showcase-left
+    each image in images.length ? images : ['No images to display']
+      // Thumbnail [ Iterated ]
+      if image._active
+        .zuc-ec-showcase-small-image.--active
+          img(src=image._src, alt=image._alt)
+      else
+        .zuc-ec-showcase-small-image
+          img(src=image._src, alt=image._alt)
+  .zuc-ec-showcase-right
+    .zuc-ec-showcase-big-image
+      img(src=images[0]._src alt=images[0]._alt)

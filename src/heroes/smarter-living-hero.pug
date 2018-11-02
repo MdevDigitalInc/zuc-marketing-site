@@ -1,7 +1,7 @@
 -
   var introText = [
     'Smarter Living is about choices that make life more comfortable and convenient.',
-    'We take the stress out of home management with professional services and innovatiave products designed to protect your budget while delivering peace of mind for you and your family.',
+    'We take the stress out of home management with professional services and innovative products designed to protect your budget while delivering peace of mind for you and your family.',
     'Discover how easy it is to enjoy Smarter Living with Zucora Home.'
   ]
 -
@@ -9,7 +9,7 @@
 -
   var title = 'What is Smarter Living?'
 
-section.zuc-secondary-header(aria-describedby="header-caption" style="background-image: url('images/smarter-living/hero-background.png');")
+section.zuc-secondary-header.--sl-header(aria-describedby="header-caption" style="background-image: url('images/smarter-living/hero-background.png');")
   .zuc-secondary-header--graphic-section
     .--bottom-wave
       img(src='../../assets/images/shapes/hero-wave-bottom.svg', alt='An abstract grey wave')
@@ -18,7 +18,7 @@ section.zuc-secondary-header(aria-describedby="header-caption" style="background
     // Top Content
     .zuc-hero-row.flex.flex-vert-end
       .zuc-hero-left
-        h5.u-font-serif.u-zuc-indigo
+        h1.u-font-serif.u-zuc-indigo
           |!{title}
         p.u-zuc-darkindigo
           |#{introText[0]}

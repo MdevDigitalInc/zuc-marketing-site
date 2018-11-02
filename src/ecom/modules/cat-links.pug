@@ -1,3 +1,31 @@
-.ecom-cat-links
-  span
-    |todo links
+-
+  var boxes = [
+    {
+      title: 'Smarter Living Plans',
+      subtitle: 'Protect your home and budget',
+      style: 'background-image:url(\'./images/about/about-team-ashleigh.png\');'
+    },
+    {
+      title: 'PureCare',
+      subtitle: 'discover the science of healthy sleep',
+      style: 'background-image:url(\'./images/about/about-team-ashleigh.png\');'
+
+    },
+    {
+      title: 'Furniture Care',
+      subtitle: 'Extend the lifespan of your furniture',
+      style: 'background-image:url(\'./images/about/about-team-ashleigh.png\');'
+    }
+  ]
+
+.zuc-ec-cat-links
+  img.zuc-ec-links-bgshape(src="../../assets/images/shapes/wave-shape-bottom-flat.svg", alt="A grey wave shape")
+  +ecom-header('Shop by category')
+  .zuc-ec-links-boxes
+    each box in boxes.length ? boxes : [' No links to display']
+      a.zuc-ec-links-box(href="#" title="#")
+        .zuc-ec-links-box-image(style=box.style)
+        h5.zuc-ec-links-box-subtitle
+          |!{box.subtitle}
+        h3.zuc-ec-links-box-title
+          |!{box.title}

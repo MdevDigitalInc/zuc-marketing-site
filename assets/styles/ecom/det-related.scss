@@ -1,0 +1,132 @@
+.zuc-ec-det-related {
+  width: 100%;
+  order: 5;
+  padding: vw-phone(10) 0; // Breathing room
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(10) 0; // Breathing room
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    order: 4;
+    padding: vw-desktop(10) 0; // Breathing room
+  }
+}
+
+.zuc-ec-related-product-rows {
+  padding: vw-phone(10) 0 0;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(10) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(10) 0 0;
+  }
+}
+
+.zuc-ec-related-product-row {
+  display: flex;
+  padding: vw-phone(20) 0 0;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(20) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(20) 0 0;
+  }
+
+  .zuc-ec-related-product-image {
+    position: relative;
+    border: 1px solid $color-zuc-concrete;
+    border-radius: 4px;    
+    width: 25vw;
+    height: 25vw;
+
+    @media #{$tablet-only} {
+      width: vw-tablet(150);
+      height: vw-tablet(150);
+    }
+  
+    @media #{$laptop-up} {
+      width: vw-desktop(150);
+      height: vw-desktop(150);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.zuc-ec-related-product-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: vw-phone(5) 0 0 vw-phone(10);
+  width: 10%;
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(30) 0 0 vw-tablet(25);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(30) 0 0 vw-desktop(25);
+  }
+
+  .zuc-ec-related-product-title {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-weight: 300;
+    width: vw-phone(200);
+    font-size: vw-phone(18);
+    margin: 0 0 vw-phone(5);
+
+    @media #{$tablet-only} {
+      width: vw-tablet(350);
+      font-size: vw-tablet(24);
+      margin: 0 0 vw-tablet(10);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-desktop(350);
+      font-size: vw-desktop(24);
+      margin: 0 0 vw-desktop(10);
+    }
+  }
+
+  .zuc-ec-related-product-price-reg {
+    color: $color-zuc-darkindigo;
+    font-weight: 100;
+    white-space: nowrap;
+    font-size: vw-phone(12);
+    padding: 0 0 vw-phone(3);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(14);
+      padding: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(14);
+      padding: 0 0 vw-desktop(5);
+    }
+  }
+
+  .zuc-ec-related-product-price-mem {
+    color: $color-zuc-darkindigo;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: vw-phone(14);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(16);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(16);
+    }
+  }
+}
