@@ -16,7 +16,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     width: 50%;
-    padding: 0 0 vw-laptop(80);
+    padding: 0 0 vw-laptop(80) 11vw;
   }
 }
 
@@ -86,7 +86,7 @@
 
   @media #{$laptop-up} {
     order: 2;
-    margin: 0 0 0 vw-desktop(20);
+    margin: 0 0 0 vw-desktop(16);
   }
 
   .zuc-ec-showcase-big-image {
