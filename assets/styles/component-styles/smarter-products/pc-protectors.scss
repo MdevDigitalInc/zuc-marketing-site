@@ -16,12 +16,12 @@ section.zuc-protectors {
 
 .zuc-protectors-graphics {
   width: 100%;
-  
+
   img {
     z-index: -50;
     position: absolute;
     width: 450%;
-    top: ( 40 / 3.2 ) * 1vw;  
+    top: ( 40 / 3.2 ) * 1vw;
     right: -10%;
 
     @media #{$tablet-only} {
@@ -30,7 +30,7 @@ section.zuc-protectors {
       left: -99%;
       right: 0;
     }
-  
+
     @media #{$laptop-up} {
       width: 100%;
       top: -( 206 / 19.2 ) * 1vw;
@@ -101,17 +101,15 @@ section.zuc-protectors {
 
   p {
     width: 100%;
-  
+
     @media #{$laptop-up} {
       width: ( 438 / 19.2 ) * 1vw;
     }
   }
 
   .zuc-title-container {
-    position: relative;
 
     @media #{$phone-only} {
-
       align-items: flex-end;
 
       .zuc-title-flag {
