@@ -1,16 +1,16 @@
 .zuc-ec-det-related {
   width: 100%;
   order: 5;
-  padding: vw-phone(10) 0; // Breathing room
+  padding: vw-phone(10) 0;
 
   @media #{$tablet-up} {
-    padding: vw-tablet(10) 0; // Breathing room
+    padding: vw-tablet(10) 0;
   }
 
   @media #{$laptop-up} {
     width: 50%;
     order: 4;
-    padding: vw-desktop(10) 0; // Breathing room
+    padding: vw-desktop(10) 0 0 16vw;
   }
 }
 
