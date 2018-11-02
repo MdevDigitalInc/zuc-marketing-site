@@ -1,6 +1,7 @@
 .zuc-ec-det-infostack {
   width: 100%;
   order: 4;
+  padding: 0 0 vw-phone(30);
 
   @media #{$tablet-only} {
     padding: 0 0 vw-tablet(30);
@@ -21,14 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
     color: $color-zuc-concrete;
     border-bottom: solid 2px $color-zuc-concrete;
     font-size: vw-phone(10);
-    padding: 0 vw-phone(9) vw-phone(10);
+    padding: 0 vw-phone(9) vw-phone(10) 0;
+
+    &:nth-child( n+2 ) {
+      padding: 0 vw-phone(9) vw-phone(10);
+    }
 
     &:hover,
     &:focus,
@@ -40,7 +45,11 @@
 
     @media #{$tablet-only} {
       font-size: vw-tablet(16);
-      padding: 0 vw-tablet(18) vw-tablet(10);
+      padding: 0 vw-tablet(18) vw-tablet(10) 0;
+
+      &:nth-child( n+2 ) {
+        padding: 0 vw-tablet(18) vw-tablet(10);
+      }
     }
   
     @media #{$laptop-up} {

@@ -137,7 +137,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: vw-phone(20) 0 0;
+  padding: vw-phone(26) 0 0;
 
   @media #{$tablet-up} {
     width: 30%;
@@ -190,16 +190,22 @@
 }
 
 .zuc-ec-form-group {
-  width: 51%;
+  width: 100%;
   position: relative;
   text-align: left;
   order: 1;
 
+  @media #{$tablet-up} {
+    width: 51%;
+  }
+
   .zuc-input-name {
     font-size: vw-phone(14);
+    padding: 0 0 vw-phone(25);
 
-    @media #{$tablet-only} {
+    @media #{$tablet-up} {
       font-size: vw-tablet(18);
+      padding: 0;
     }
 
     @media #{$laptop-up} {
