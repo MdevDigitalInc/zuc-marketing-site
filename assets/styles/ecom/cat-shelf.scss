@@ -65,7 +65,7 @@
   background: $color-pure-white;
   z-index: 1;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, 0);
-  transition: .4s;
+  transition: .3s;
   padding: vw-phone(15) 0;
   
   @media #{$tablet-only} {
@@ -162,7 +162,7 @@
 
 .zuc-ec-btn-box {
   display: none;
-  transition: .3s;
+  transition: .4s .2s;
 
   @media #{$laptop-up} {
     display: block;
