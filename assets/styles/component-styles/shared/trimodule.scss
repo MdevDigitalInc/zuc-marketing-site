@@ -136,8 +136,8 @@ section.zuc-tri-module {
     }
   }
 }
-
-
+/* Disabling because it is breaking lint to have this here */
+/* stylelint-disable */
 $zuc-review-author-font-sizes: (
   null : 4.3vw,
   $tablet-up : 2.5vw * 1.25,
@@ -146,6 +146,7 @@ $zuc-review-author-font-sizes: (
   $desktop-only : .938vw * 1.25,
   $xl-up : 1vw * 1.25
 );
+/* stylelint-enable */
 
 .zuc-review-author {
   padding: 8vw 0 13vw;
