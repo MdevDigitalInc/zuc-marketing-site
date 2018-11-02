@@ -41,7 +41,7 @@
 
   @media #{$laptop-up} {
     font-size: vw-desktop(47);
-    margin: 0 0 vw-desktop(48);
+    margin: 0 0 vw-desktop(20);
   }
 }
 
@@ -159,7 +159,7 @@
   
     @media #{$laptop-up} {
       font-size: vw-desktop(16);
-      padding: 0 0 vw-desktop(10);
+      padding: 0 0 vw-desktop(6);
     }
   }
 
