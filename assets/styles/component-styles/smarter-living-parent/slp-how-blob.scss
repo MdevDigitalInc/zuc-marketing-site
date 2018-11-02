@@ -79,7 +79,7 @@
     @media #{$portrait} {
       overflow: hidden;
     }
-    @media #{$phone-only}  {
+    @media #{$phone-only} {
       padding: 7vw 0;
     }
     @media #{$tablet-only} {
