@@ -1,3 +1,38 @@
+-
+  var boxes = [
+    {
+      title: 'Bundles &amp; Combos',
+      _src: '../../assets/images/service-plans/bundles-combos.png',
+      _alt: 'todo'
+    },
+    {
+      title: 'Appliances',
+      _src: '../../assets/images/service-plans/appliances.png',
+      _alt: 'todo'
+    },
+    {
+      title: 'Furniture',
+      _src: '../../assets/images/service-plans/home-furnishing.png',
+      _alt: 'todo'
+    },
+    {
+      title: 'Home Systems',
+      _src: '../../assets/images/service-plans/home-systems.png',
+      _alt: 'todo'
+    }
+  ]
+
 .zuc-ec-home-plans
-  span
-    |todo
+  +ecom-header('Shop Smarter Living Plans')
+  .zuc-ec-plans-boxes
+    each box in boxes.length ? boxes : [' No items to display']
+      a.zuc-ec-plans-box(href="#" title="todo")
+        img.zuc-ec-plans-box-image(src=box._src alt=box._alt)
+        span.zuc-ec-plans-box-title
+          |!{box.title}
+  .zuc-ec-plans-links
+    a.zuc-ec-blink.--plans-blink(href="#" title="todo")
+      |learn more
+    .zuc-btn-box
+      a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+        |get started today
