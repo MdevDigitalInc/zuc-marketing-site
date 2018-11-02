@@ -7,28 +7,35 @@
     available: true
   }
 
+// Product Main Information Module
 .zuc-ec-det-product
+  // Product Name
   .zuc-ec-product-title
     h1
       |!{info.title}
+  // Product Information Container
   .zuc-ec-product-info
     .zuc-ec-product-info-prices
+      // Product Regular Price
       .zuc-ec-product-info-price-reg
         span
           |Regular pricing:&nbsp;
         span
           |!{info.price_reg}
+      // Product Member Price
       .zuc-ec-product-info-price-mem
         span
           |Member pricing:&nbsp;
         span
           |!{info.price_mem}
     .zuc-ec-product-info-stock
+      // Product ID / SKU
       .zuc-ec-product-info-id
         span
           |Item #:&nbsp;
         span
           |!{info.id}
+      // Product Availability
       .zuc-ec-product-info-availability
         if info.available
           span
@@ -36,6 +43,7 @@
         else
           span
             |OUT OF STOCK
+  // Product Forms Section
   form.zuc-ec-product-order-forms(action="")
     .zuc-ec-form-group
       .zuc-input-name.u-uppercase.zuc-input-name-no-margin
@@ -60,7 +68,7 @@
           option(value="brazilking")
             |Brazilian King
     .zuc-ec-form-group.--qty
-      .zuc-input-name.u-uppercase
+      .zuc-input-name.u-uppercase.zuc-input-name-no-margin
         span
           |QTY:
       .zuc-select-container

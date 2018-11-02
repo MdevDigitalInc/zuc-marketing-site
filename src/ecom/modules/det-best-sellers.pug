@@ -43,26 +43,30 @@
       price_mem: '$16.99'
     }
   ]
-
+// Best Sellers Module
 .zuc-ec-det-best-sellers
   +ecom-header('Shop best sellers')
   //-.zuc-ec-best-sellers-nav.--left
       img.u-imgflip-hor(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing left')
   //-.zuc-ec-best-sellers-nav.--right
     img(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing right')
+  // Best Sellers Card Container
   .zuc-ec-best-sellers-cards
     each card in cards.length ? cards : ['No cards to display']
+      // Best Seller Card [ Iterated ]
       a.zuc-ec-best-seller-card(href="#" title="#")
         .zuc-ec-best-seller-image
           img(src=card._src, alt=card._alt)
         .zuc-ec-best-seller-name
           span
             |!{card.title}
+        // Card Regular Price
         .zuc-ec-best-seller-price-reg
           span
             |Regular pricing:&nbsp;
           span
             |!{card.price_reg}
+        // Card Member Price
         .zuc-ec-best-seller-price-mem
           span
             |Member pricing:&nbsp;
