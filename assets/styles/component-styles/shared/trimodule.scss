@@ -354,6 +354,12 @@ $zuc-review-author-font-sizes: (
     background-color: inherit;
     padding: 4vw 0;
   }
+
+  // Padding off-set to align with --review-box, which has a 43px img
+  h2 {
+    padding-top: 43px;
+    margin-bottom: 1vw;
+  }
 }
 
 .zuc-why-box-icon-row {
