@@ -228,13 +228,28 @@
 .zuc-ec-form-action {
   width: 100%;
   order: 99;
-  padding: vw-phone(30) 0 0;
+  margin: vw-phone(30) 0 0;
 
   @media #{$tablet-only} {
-    padding: vw-tablet(30) 0 0;
+    margin: vw-tablet(30) 0 0;
   }
 
   @media #{$laptop-up} {
-    padding: vw-desktop(30) 0 0;
+    margin: vw-desktop(45) 0 0;
+  }
+
+  button {
+    font-size: vw-phone(16);
+    padding: vw-phone(15) vw-phone(35);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(18);
+      padding: vw-tablet(15) vw-tablet(35);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(18);
+      padding: vw-desktop(15) vw-desktop(35);
+    }
   }
 }
