@@ -1,4 +1,10 @@
-.tmp {
-  font-size: 99px;
-  color: pink;
+
+// Flag for .zuc-modal-content (in modals.scss).
+.--sp-bundle {
+  width: 80%;
+  .zuc-sp-bundle-content {
+    margin: vw-desktop(10);
+    padding: vw-desktop(20);
+    border: 1px solid $color-zuc-indigo;
+  }
 }

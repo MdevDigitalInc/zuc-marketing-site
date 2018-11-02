@@ -1,12 +1,13 @@
 // Modal Container
 .zuc-modal(data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
   // Modal Content
-  .zuc-modal-content(onclick="event.stopPropagation()")
+  .zuc-modal-content.--sp-bundle(onclick="event.stopPropagation()")
     // Place Modal Content Here
-    //-------------------------------------------------
-    .zuc-modal-subtitle.u-text-center
-      |Best Value
-    .zuc-modal-title.u-text-center
-      |Whole Home Bundle
-    .tmp
-      |Test
+    .zuc-sp-bundle-content
+      //-------------------------------------------------
+      .zuc-modal-subtitle.u-text-center.u-uppercase
+        |Best Value
+      h2.u-text-center.u-font-serif.u-zuc-indigo
+        |Whole Home Bundle
+
+
