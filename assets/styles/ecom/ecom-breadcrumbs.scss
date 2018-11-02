@@ -3,14 +3,14 @@
   order: 1;
   display: flex;
   flex-wrap: wrap;
-  padding: vw-phone(24) 0 0;
+  padding: vw-phone(24) 0;
 
   @media #{$tablet-only} {
-    padding: vw-tablet(30) 0 0;
+    padding: vw-tablet(30) 0 vw-tablet(21);
   }
 
   @media #{$laptop-up} {
-    padding: vw-desktop(50) 0 0 11vw;
+    padding: vw-desktop(50) 0 vw-desktop(74) 11vw;
   }
 
   .zuc-ec-breadlink {
