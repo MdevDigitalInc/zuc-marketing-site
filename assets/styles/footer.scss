@@ -23,7 +23,7 @@
 
 .zuc-footer--column {
   padding: 0 20px;
-  
+
 
   &:nth-child( 2 ) {
     margin: 5.86vw 0 0;
@@ -273,6 +273,7 @@ footer .zuc-footer-row {
   padding-top: 450px;
   margin-top: -500px;
   overflow-x: hidden;
+  z-index: 0;
 
   @media #{$laptop-up} {
     padding-top: 450px;
