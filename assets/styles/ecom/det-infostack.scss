@@ -1,11 +1,16 @@
 .zuc-ec-det-infostack {
   width: 100%;
   order: 4;
+  padding: 0 0 vw-phone(30);
+
+  @media #{$tablet-only} {
+    padding: 0 0 vw-tablet(30);
+  }
 
   @media #{$laptop-up} {
     width: 50%;
     order: 5;
-    padding: 0 0 0 vw-desktop(60);
+    padding: 0 16vw 0 vw-desktop(60);
   }
 }
 
@@ -17,14 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
     color: $color-zuc-concrete;
     border-bottom: solid 2px $color-zuc-concrete;
     font-size: vw-phone(10);
-    padding: 0 vw-phone(9) vw-phone(10);
+    padding: 0 vw-phone(9) vw-phone(10) 0;
+
+    &:nth-child( n+2 ) {
+      padding: 0 vw-phone(9) vw-phone(10);
+    }
 
     &:hover,
     &:focus,
@@ -36,7 +45,11 @@
 
     @media #{$tablet-only} {
       font-size: vw-tablet(16);
-      padding: 0 vw-tablet(18) vw-tablet(10);
+      padding: 0 vw-tablet(18) vw-tablet(10) 0;
+
+      &:nth-child( n+2 ) {
+        padding: 0 vw-tablet(18) vw-tablet(10);
+      }
     }
   
     @media #{$laptop-up} {
@@ -70,7 +83,7 @@
   }
 
   @media #{$laptop-up} {
-    padding: vw-desktop(40) 0 0;
+    padding: vw-desktop(28) 0 0;
     font-size: vw-desktop(16);
   }
 }
