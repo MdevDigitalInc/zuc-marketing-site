@@ -58,18 +58,7 @@ section.zuc-tri-module {
       font-size: 3.9vw;
     }
     @media #{$laptop-up} {
-      font-size: 1.51vw;
-    }
-  }
-
-  h3 {
-    font-size: 9.375vw;
-
-    @media #{$tablet-up} {
-      font-size: 5.47vw;
-    }
-    @media #{$laptop-up} {
-      font-size: 2.1vw;
+      font-size: vw-desktop(35);
     }
   }
 
