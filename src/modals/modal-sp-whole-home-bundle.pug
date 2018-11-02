@@ -1,13 +1,38 @@
 // Modal Container
-.zuc-modal(data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
+//- TODO remove temporarily applied zuc-modal-active class (dev only)
+.zuc-modal.zuc-modal-active(data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
   // Modal Content
   .zuc-modal-content.--sp-bundle(onclick="event.stopPropagation()")
     // Place Modal Content Here
     .zuc-sp-bundle-content
       //-------------------------------------------------
-      .zuc-modal-subtitle.u-text-center.u-uppercase
-        |Best Value
-      h2.u-text-center.u-font-serif.u-zuc-indigo
-        |Whole Home Bundle
+      .zuc-sp-bundle--titles
+        .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase
+          |Best Value
+        h2.u-font-serif.u-zuc-indigo
+          |Whole Home Bundle
+        .zuc-sp-bundle--subheading.u-font-serif.u-light
+          |Combine all 3 plans to save $50/month.
+        p
+          |Coverage includes repair, parts, and replacement for the items within your plans. The low monthly subscription fee gives you the coverage you want immediately without big, upfront costs.
+        .zuc-sp-bundle--price
+          span.sign
+            |$
+          span.dollar
+            |69
+          span.cents
+            |.99
+          span.month
+            |/month
+        .zuc-sp-bundle--btn
+          a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+            |Get started today
+      .zuc-sp-bundle--packages
+        .zuc-sp-bundle-pkg
+          |hey
+        .zuc-sp-bundle-pkg
+          |hey
+        .zuc-sp-bundle-pkg
+          |hey
 
 

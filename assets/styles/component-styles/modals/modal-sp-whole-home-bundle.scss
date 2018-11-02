@@ -1,10 +1,71 @@
 
 // Flag for .zuc-modal-content (in modals.scss).
+// I'd consider putting this in .zuc-modal-content
+// class itself, but that would be nesting on 3 levels
 .--sp-bundle {
-  width: 80%;
+  width: 85%;
+
   .zuc-sp-bundle-content {
     margin: vw-desktop(10);
     padding: vw-desktop(20);
     border: 1px solid $color-zuc-indigo;
+  }
+}
+
+.zuc-sp-bundle--titles {
+  text-align: center;
+
+  .zuc-sp-bundle--preheading {
+    padding: vw-desktop(50) 0 vw-desktop(20);
+  }
+
+  .zuc-sp-bundle--subheading {
+    font-size: vw-desktop(26);
+    padding-bottom: vw-desktop(20);
+    font-style: italic;
+    color: $color-zuc-darkindigo;
+  }
+
+  p {
+    padding: 0 vw-desktop(40);
+  }
+}
+
+.zuc-sp-bundle--price {
+    padding-top: vw-desktop(20);
+    padding-bottom: vw-desktop(20);
+    font-family: $main-font-serif;
+    font-weight: 300;
+    color: $color-zuc-indigo;
+    display: flex;
+    justify-content: center;
+    // letter-spacing:
+
+  .sign {
+    font-size: vw-desktop(46);
+  }
+  .dollar {
+    font-size: vw-desktop(93);
+  }
+
+  .cents {
+    font-size: vw-desktop(36);
+    align-self: flex-start;
+  }
+
+  .month {
+    font-size: vw-desktop(24);
+    align-self: flex-end;
+  }
+
+}
+
+.zuc-sp-bundle--packages {
+  display:flex;
+
+  .zuc-sp-bundle-pkg {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
   }
 }
