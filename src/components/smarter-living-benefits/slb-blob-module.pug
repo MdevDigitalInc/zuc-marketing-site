@@ -2,20 +2,21 @@
 - var subheading = 'Valuable rewards'
 - var text = 'Earn valuable Smarter Living Rewards with your plan, product and service purchases. 10 points for every $1 spent means your rewards quickly accumulate and are valuable for future purchases.'
 
-section.zuc-blob-module--wrapper
-  .zuc-blob-module--text-section.zuc-blob-stack
+section.zuc-featured.flex.flex-wrap
+  .zuc-featured-content.--text
     .zuc-title-container.flex
       h4
         |#{subheading}
       .zuc-title-flag
         .--green
-    h3
+    h3.u-font-serif.u-zuc-indigo
       |#{title}
     p
       |#{text}
     .zuc-blob-module--grey-slash
       img.slb-grey-slash(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='Decorative grey slashes.')
-  .zuc-slb-rt.flex.flex-hor-center
+  .zuc-featured-image.flex.flex-hor-center
     .zuc-img-container
-      .zuc-img-block
-      img.zuc-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")
+      .zuc-img-block.u-soft-shadow
+      //- img.zuc-photo(src="../../assets/images/smarter-living/couple-withdog.png", alt="A man and woman standing while holding a beagle dog on a leash, the people appear to be kissing but their faces are hidden behind a skateboard the man is holding")
+    img.zuc-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")

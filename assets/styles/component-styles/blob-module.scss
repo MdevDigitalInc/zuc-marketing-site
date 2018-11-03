@@ -1,85 +1,222 @@
-/*-------------------------------------
- * Blob Module
-/-------------------------------------*/
-.zuc-blob-module--wrapper {
-  width: 100%;
-  margin: 0;
-  padding: 4.5vw 0;
-  display: flex;
-  flex-direction: column;
-
-  @media #{$tablet-only} {
-    padding: 4.5vw 0 4.5vw 6vw;
-  }
+.slb-grey-slash {
+  display: none;
 
   @media #{$laptop-up} {
-    flex-direction: row;
-    padding: 4.5vw 0 4.5vw 14vw;
+    display: inline;
+    position: absolute;
+    right: -40%;
+    transform: scale(.4);
   }
 }
 
-.zuc-blob-module--text-section {
-  flex: 40%;
-  position: relative;
+// Featured Content Module
+.zuc-featured {
+  overflow: hidden;
+  padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
 
-  @media #{$phone-only} {
-    padding-left: 30px;
+  @media #{$tablet-only} {
+    padding: 3vw 7vw ( 205 / 7.68 ) * 1vw;
   }
 
-  .zuc-blob-module--subheading:after {
-    display: inline;
-    content: ' ';
-    background-image: url('../../assets/images/graphics/graphic_line_green_small.svg');
-    background-size: 40px 28px;
-    background-repeat: no-repeat;
-    position: absolute;
-    transform: translate(25%, -15%);
-    height: 30px;
-    width: 35px;
+  @media #{$laptop-up} {
+    padding: 2vw 11.5vw ( 165 / 19.2 ) * 1vw;
+  }
+}
+
+// Featured Content
+.zuc-featured-content {
+  width: 100%;
+  margin: 0;
+  padding: 0 5vw ( 90 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 ( 56 / 7.68 ) * 1vw;
   }
 
-  .zuc-blob-module--heading {
+  @media #{$laptop-up} {
     width: 50%;
-    line-height: 1.3;
+    padding: 0 5vw 0 3vw;
+  }
+
+  // How It Works Steps
+  .zuc-featured-how-step {
+    color: $color-zuc-lilac;
+    font-weight: 600;
+    font-size: ( 14 / 3.2 ) * 1vw;
+    margin: 0 0 ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 13 / 7.68 ) * 1vw;
+      margin: 0 0 ( 10 / 7.68 ) * 1vw;
+    }
+
+    @media #{$tablet-prt-only} {
+      font-size: ( 16 / 7.68 ) * 1vw;
+    }
 
     @media #{$laptop-up} {
-      width: 70%;
-    }
-    @media #{$phone-only} {
-      width: 100%;
+      font-size: ( 16 / 19.2 ) * 1vw;
+      margin: 0 0 ( 9 / 19.2 ) * 1vw;
     }
   }
 
-  .zuc-blob-module--copy {
-    @media #{$laptop-up} {
-      max-width: 400px;
-    }
-  }
+  // Override H4 margin for Smarter Living
+  &.--smarter {
 
-  .zuc-btn-secondary {
-    margin-top: 30px;
-    display: inline-block;
-  }
+    h4 {
+      margin: 0 0 ( 10 / 3.2 ) * 1vw;
 
-  .zuc-blob-module--grey-slash {
-    position: relative;
+      @media #{$tablet-only} {
+        margin: 0 0 ( 16/ 7.68 ) * 1vw;
+      }
 
-    .grey-slash {
-      display: none;
+      @media #{$tablet-prt-only} {
+        margin: 0 0 ( 11/ 7.68 ) * 1vw;
+      }
 
       @media #{$laptop-up} {
-        display: inline;
-        position: absolute;
-        bottom: -120px;
-        right: -65px;
-        transform: scale(.28);
+        margin: 0 0 ( 18 / 19.2 ) * 1vw;
+      }
+    }
+  }
+
+  .--text {
+    flex: 40%;
+    position: relative;
+
+    @media #{$phone-only} {
+      padding-left: 30px;
+    }
+
+    .zuc-blob-module--subheading:after {
+      display: inline;
+      content: ' ';
+      background-image: url('../../assets/images/graphics/graphic_line_green_small.svg');
+      background-size: 40px 28px;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: translate(25%, -15%);
+      height: 30px;
+      width: 35px;
+    }
+
+    .zuc-blob-module--heading {
+      width: 50%;
+      line-height: 1.3;
+
+      @media #{$laptop-up} {
+        width: 70%;
+      }
+      @media #{$phone-only} {
+        width: 100%;
+      }
+    }
+
+    .zuc-blob-module--copy {
+      @media #{$laptop-up} {
+        max-width: 400px;
+      }
+    }
+
+    .zuc-btn-secondary {
+      margin-top: 30px;
+      display: inline-block;
+    }
+
+    .zuc-blob-module--grey-slash {
+      position: relative;
+
+      .grey-slash {
+        display: none;
+
+        @media #{$laptop-up} {
+          display: inline;
+          position: absolute;
+          bottom: -120px;
+          right: -65px;
+          transform: scale(.28);
+        }
       }
     }
   }
 }
+// Image Block
+.zuc-featured-image {
+  width: 100%;
+  justify-content: center;
+  position: relative;
 
-.zuc-blob-module--graphic-section {
-  flex: 60%;
+  @media #{$laptop-up} {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .zuc-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+
+    @media #{$portrait} {
+      overflow: hidden;
+    }
+
+    @media #{$phone-only} {
+      padding: 7vw 0;
+    }
+
+    @media #{$tablet-only} {
+      width: 72vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 30.66vw;
+    }
+
+    .zuc-img-block {
+      background: url('../../assets/images/shared/couple-on-computer.png');
+      background-position: center;
+      background-size: cover;
+      height: ( 254 / 3.2 ) * 1vw;
+      width: ( 320 / 3.2 ) * 1vw;
+      overflow: visible;
+
+      @media #{$tablet-only} {
+        height: ( 512 / 7.68 ) * 1vw;
+        width: ( 607 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        height: ( 512 / 19.2 ) * 1vw;
+        width: ( 607 / 19.2 ) * 1vw;
+      }
+    }
+  }
+
+  .zuc-blob {
+    z-index: -3;
+    width: 110%;
+    @include center(both);
+    left: 60%;
+
+    @media #{$portrait} {
+      left: 50%;
+      width: 110%;
+    }
+
+    @media #{$phone-only} {
+      width: 190%;
+    }
+
+    @media #{$laptop-only} {
+      top: 35%;
+    }
+  }
+}
+
+.zuc-featured-graphic {
+  flex: 50%;
   position: relative;
 
   @media #{$tablet-only} {
@@ -125,7 +262,7 @@
     }
   }
 
-  .blob {
+  .zuc-blob {
     z-index: -99;
     display: inline;
     position: absolute;
@@ -146,8 +283,8 @@
     }
   }
 }
-
-.zuc-blob-module--app-icons {
+// App Icons
+.zuc-featured--app-icons {
   justify-content: flex-end;
   margin-top: 5px;
   margin-right: -10px;
@@ -161,3 +298,4 @@
     }
   }
 }
+
