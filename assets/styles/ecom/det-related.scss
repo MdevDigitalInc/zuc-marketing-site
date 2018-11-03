@@ -1,16 +1,16 @@
 .zuc-ec-det-related {
   width: 100%;
   order: 5;
-  padding: vw-phone(10) 0; // Breathing room
+  padding: vw-phone(10) 0;
 
   @media #{$tablet-up} {
-    padding: vw-tablet(10) 0; // Breathing room
+    padding: vw-tablet(10) 0;
   }
 
   @media #{$laptop-up} {
     width: 50%;
     order: 4;
-    padding: vw-desktop(10) 0; // Breathing room
+    padding: vw-desktop(10) 0 0 16vw;
   }
 }
 
@@ -65,7 +65,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: vw-phone(5) 0 0 vw-phone(10);
+  padding: 0 0 0 vw-phone(10);
   width: 10%;
 
   @media #{$tablet-up} {
@@ -82,7 +82,7 @@
     font-weight: 300;
     width: vw-phone(200);
     font-size: vw-phone(18);
-    margin: 0 0 vw-phone(5);
+    margin: 0 0 vw-phone(8);
 
     @media #{$tablet-only} {
       width: vw-tablet(350);
@@ -110,22 +110,30 @@
     }
 
     @media #{$laptop-up} {
-      font-size: vw-desktop(14);
+      font-size: vw-laptop(14);
       padding: 0 0 vw-desktop(5);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(14);
     }
   }
 
   .zuc-ec-related-product-price-mem {
     color: $color-zuc-darkindigo;
-    font-weight: 500;
+    font-weight: 600;
     white-space: nowrap;
-    font-size: vw-phone(14);
+    font-size: vw-phone(12);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(16);
     }
 
     @media #{$laptop-up} {
+      font-size: vw-laptop(16);
+    }
+
+    @media #{$desktop-up} {
       font-size: vw-desktop(16);
     }
   }

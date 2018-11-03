@@ -5,11 +5,11 @@
   margin: vw-phone(25) 0 vw-phone(80);
 
   @media #{$tablet-only} {
-    margin: vw-tablet(25) 0 vw-tablet(80);
+    margin: vw-tablet(50) 0 vw-tablet(56);
   }
 
   @media #{$laptop-up} {
-    margin: vw-desktop(25) 0 vw-desktop(80);
+    margin: vw-desktop(50) 8vw vw-desktop(80);
   }
 
   .zuc-ec-best-sellers-nav {
@@ -45,10 +45,10 @@
   position: relative;
   width: 100%;
   display: flex;
-  padding: vw-phone(10) vw-phone(25);
+  padding: vw-phone(10) 0;
 
   @media #{$tablet-only} {
-    padding: vw-tablet(25) vw-tablet(45);
+    padding: vw-tablet(25) 0;
   }
 
   @media #{$laptop-up} {
@@ -64,6 +64,7 @@
   text-align: center;
   background: $color-pure-white;
   z-index: 1;
+  transition: .3s;
   padding: vw-phone(30) 0;
 
   @media #{$phone-only} {
@@ -74,7 +75,7 @@
   
   @media #{$tablet-only} {
     width: 100 / 3 * 1%;
-    padding: vw-tablet(40) 0;
+    padding: vw-tablet(40) 1%;
 
     &:nth-child( n+4 ) {
       display: none;
@@ -83,11 +84,12 @@
 
   @media #{$laptop-up} {
     width: 100 / 6 * 1%;
-    padding: vw-desktop(40) 0;
+    padding: vw-desktop(20) 1% vw-desktop(40);
   }
 
   &:hover {
     z-index: 2;
+    transform: scale(1.1);
     box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
   }
 
