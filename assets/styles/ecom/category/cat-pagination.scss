@@ -1,3 +1,12 @@
 .zuc-ec-cat-pagination {
   width: 100%;
+  margin: vw-phone(35) auto;
+
+  @media #{$tablet-only} {
+    margin: vw-tablet(25) auto;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-desktop(45) auto;
+  }
 }

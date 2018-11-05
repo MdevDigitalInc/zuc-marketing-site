@@ -2,4 +2,33 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0 0 vw-phone(30);
+
+  @media #{$tablet-only} {
+    margin: vw-tablet(25) 0 vw-tablet(50);
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 0 vw-desktop(70);
+  }
+
+  .zuc-ec-blurb-text {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    line-height: 1.38;
+    text-align: center;
+    font-size: vw-phone(14);
+    padding: 0 2%;
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(26);
+      padding: 0 10%;
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(26);
+      padding: 0 23%;
+    }
+  }
 }

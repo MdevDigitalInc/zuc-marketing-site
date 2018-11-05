@@ -5,15 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: vw-phone(35) auto;
-
-  @media #{$tablet-only} {
-    margin: vw-tablet(50) auto;
-  }
-
-  @media #{$laptop-up} {
-    margin: vw-desktop(80) auto;
-  }
 }
 
 .zuc-ec-pagination-pages {
