@@ -62,7 +62,7 @@
   }
 
   p {
-    padding: 0 vw-desktop(180);
+    padding: 0 vw-desktop(320);
   }
 }
 
@@ -105,8 +105,22 @@
     color: $color-zuc-darkindigo;
     @include font-size($zuc-body-small-font-sizes);
     font-weight: 100;
-    line-height: vw-desktop(18);
+    line-height: vw-desktop(20);
 
+  }
+}
+
+.zuc-sp-bundle--header {
+  @media #{$tablet-up} {
+    font-size: vw-desktop(28);
+  }
+}
+
+.zuc-sp-bundle-base-plan--header {
+  // align-self: flex-start;
+  letter-spacing: .9px;
+  @media #{$tablet-up} {
+    font-size: vw-desktop(34);
   }
 }
 
@@ -134,12 +148,6 @@
   }
   @media #{$laptop-up} {
     margin: ( 9 / 19.2 ) * 1vw;
-  }
-
-  .zuc-base-plan-heading {
-    @media #{$tablet-up} {
-      font-size: 1.6vw;
-    }
   }
 }
 
