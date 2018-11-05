@@ -51,14 +51,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0 vw-phone(15);
+    margin: 0 0 vw-phone(15);
+    height: vw-phone(125);
 
     @media #{$tablet-only} {
-      padding: 0 0 vw-tablet(20);
+      margin: 0 0 vw-tablet(20);
+      height: vw-tablet(200);
     }
 
     @media #{$laptop-up} {
-      padding: 0 0 vw-desktop(20);
+      margin: 0 0 vw-desktop(20);
+      height: vw-desktop(300);
     }
 
     img {
