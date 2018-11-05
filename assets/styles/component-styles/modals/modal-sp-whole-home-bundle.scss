@@ -12,9 +12,10 @@
   position: relative;
 
   .zuc-sp-bundle-close-btn {
-    width: 10px;
-    position: relative;
-    right: 0;
+    width: 20px;
+    position: absolute;
+    right: vw-desktop(60);
+    cursor: pointer;
   }
 
   .zuc-sp-bundle-content {
