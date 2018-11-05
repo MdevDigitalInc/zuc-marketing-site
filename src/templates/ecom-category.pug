@@ -1,18 +1,24 @@
 extends _layout
 
 block content
-  .zuc-ec-main-wrapper
-    //- Breadcrumbs
-    include ../ecom/modules/_breadcrumbs.pug
   .zuc-ec-category-wrapper
+    //- Breadcrumbs
+    include ../ecom/modules/category/cat-breadcrumbs.pug
+
+    //- Category Head Module
+    include ../ecom/modules/category/cat-head.pug
+
+    //- Category Toggle Module
+    include ../ecom/modules/category/cat-toggle.pug
+  
     //- Shelf Module
-    include ../ecom/modules/cat-shelf.pug
+    include ../ecom/modules/category/cat-shelf.pug
     
     //- Pagination Module
-    include ../ecom/modules/_pagination.pug
+    include ../ecom/modules/category/cat-pagination.pug
     
-    //- Blurb Module - Becky says this is being redesigned, commented for now - AW
-    //-include ../ecom/modules/cat-blurb.pug
+    //- Blurb Module
+    include ../ecom/modules/category/cat-blurb.pug
     
-  //- Category Links Module - LIVES OUTSIDE OF WRAPPER!
-  include ../ecom/modules/cat-links.pug
+  //- Category Links Module - Outside Wrapper
+  include ../ecom/modules/category/cat-links.pug
