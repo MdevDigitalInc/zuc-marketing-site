@@ -1,3 +1,46 @@
+-
+  var applianceCoverages = [
+    'Refrigerator with built-in ice and water dispensers',
+    'Range/oven/cooktop',
+    'Dishwasher',
+    'Clothes washer',
+    'Clothes dryer',
+    'Freezer',
+    'Icemaker (free-standing)',
+    'Microwave cven (built-in)',
+    'Trash compactors',
+    'Food centre (built-in)'
+  ]
+
+  var furnitureCoverages = [
+    'Fabric upholstery',
+    'Occasional or oversized chair',
+    'Loveseat',
+    'Sofa (fabric, leather, synthetic)',
+    'Ottoman or futon',
+    'Dining chairs',
+    'Reclining chair (mechanical)',
+    'Mattress or foundation',
+    'Motion chair (electrical)',
+    'Sectional',
+    'Dining room',
+    'Bedroom suite'
+  ]
+
+  var homeSysCoverages= [
+    'Air conditioning with ductwork',
+    'Heating/furnace with ductwork',
+    'Electrical',
+    'Doorbells',
+    'Wired smoke detectors',
+    'Ceiling and exhaust fans',
+    'Plumbing including stoppages',
+    'Water heaters',
+    'Garbage disposals',
+    'Instant hot/cold dispensers',
+    'Central vacuums'
+  ]
+
 // Modal Container
 //- TODO remove temporarily applied zuc-modal-active class (dev only)
 .zuc-modal.zuc-modal-active(data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
@@ -48,10 +91,16 @@
             |Home Systems Coverage:
       .zuc-sp-bundle--packages
         .zuc-sp-bundle-pkg
-          |hey
+          ul
+            each val in applianceCoverages
+              li= val
         .zuc-sp-bundle-pkg
-          |hey
+          ul
+            each val in furnitureCoverages
+              li= val
         .zuc-sp-bundle-pkg
-          |hey
+          ul
+            each val in homeSysCoverages
+              li= val
 
 

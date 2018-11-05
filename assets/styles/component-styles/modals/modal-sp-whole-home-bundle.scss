@@ -57,11 +57,19 @@
 }
 
 .zuc-sp-bundle--packages {
-  display:flex;
+  display: flex;
 
   .zuc-sp-bundle-pkg {
     width: 33.3%;
     display: flex;
     justify-content: center;
+  }
+
+  li {
+    color: $color-zuc-darkindigo;
+    @include font-size($zuc-body-small-font-sizes);
+    font-weight: 100;
+    line-height: vw-desktop(18);
+
   }
 }
