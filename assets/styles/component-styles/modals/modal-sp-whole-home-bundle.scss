@@ -9,6 +9,14 @@
   padding: 1vw;
   background: white;
   width: 85%;
+  position: relative;
+
+  .zuc-sp-bundle-close-btn {
+    width: 10px;
+    position: relative;
+    right: 0;
+  }
+
   .zuc-sp-bundle-content {
     margin: vw-desktop(10);
     padding: vw-desktop(20);
