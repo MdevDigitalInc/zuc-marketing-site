@@ -24,16 +24,16 @@
   z-index: 1;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, 0);
   transition: .3s;
-  padding: vw-phone(15) 0;
+  padding: vw-phone(8) 0;
   
   @media #{$tablet-only} {
     width: 100 / 3 * 1%;
-    padding: vw-tablet(30) 0;
+    padding: vw-tablet(15) 0;
   }
 
   @media #{$laptop-up} {
     width: 100 / 4 * 1%;
-    padding: vw-desktop(30) 0;
+    padding: vw-desktop(15) 0;
   }
 
   &:hover {
