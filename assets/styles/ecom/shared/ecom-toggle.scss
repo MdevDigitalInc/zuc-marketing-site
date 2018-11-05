@@ -1,0 +1,42 @@
+.zuc-ec-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $color-zuc-ghost;
+  border-top: 1px solid $color-zuc-silver;
+  border-bottom: 1px solid $color-zuc-silver;
+
+  margin: 0;
+  padding: vw-phone(15) 0;
+
+  @media #{$tablet-up} {
+    flex-direction: row;
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 16vw;
+    padding: vw-desktop(15) 0;
+  }
+}
+
+.zuc-ec-toggle-category {
+  color: $color-zuc-slate;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  padding: vw-phone(20) vw-phone(25);
+
+  @media #{tablet-only} {
+    padding: vw-tablet(20) vw-tablet(25);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(20) vw-desktop(25);
+  }
+
+  &.--active {
+    background: $color-zuc-lilac;
+    color: $color-zuc-platinum;
+    border-radius: vw-desktop(27.5);
+  }
+}
