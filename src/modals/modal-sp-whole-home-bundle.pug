@@ -76,30 +76,26 @@
       .zuc-custom-plan--items
         .zuc-custom-plan--box.flex
           img.photo(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-          .plan-icon
+          .plan-icon.--modal
             img(src="../../assets/images/icons/icon-plus.svg", alt="a circle with a plus in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Appliances Coverage:
+          ul
+            each val in applianceCoverages
+              li= val
         .zuc-custom-plan--box.flex
           img.photo(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-          .plan-icon
+          .plan-icon.--modal
             img(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Furniture Coverage:
+          ul
+            each val in furnitureCoverages
+              li= val
         .zuc-custom-plan--box.flex
           img.photo(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Home Systems Coverage:
-      .zuc-sp-bundle--packages
-        .zuc-sp-bundle-pkg
-          ul
-            each val in applianceCoverages
-              li= val
-        .zuc-sp-bundle-pkg
-          ul
-            each val in furnitureCoverages
-              li= val
-        .zuc-sp-bundle-pkg
           ul
             each val in homeSysCoverages
               li= val

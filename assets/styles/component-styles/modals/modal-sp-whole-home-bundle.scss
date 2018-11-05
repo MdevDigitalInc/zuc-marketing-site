@@ -81,22 +81,22 @@
   }
 }
 
-.zuc-sp-bundle--packages {
-  display: flex;
+// .zuc-sp-bundle--packages {
+//   // display: flex;
 
-  .zuc-sp-bundle-pkg {
-    width: 33.3%;
-    display: flex;
-    justify-content: center;
-  }
+//   .zuc-sp-bundle-pkg {
+//     width: 33.3%;
+//     display: flex;
+//     justify-content: center;
+//   }
 
-  li {
-    color: $color-zuc-darkindigo;
-    @include font-size($zuc-body-small-font-sizes);
-    font-weight: 100;
-    line-height: vw-desktop(20);
-  }
-}
+//   li {
+//     color: $color-zuc-darkindigo;
+//     @include font-size($zuc-body-small-font-sizes);
+//     font-weight: 100;
+//     line-height: vw-desktop(20);
+//   }
+// }
 
 // Titles in the middle:
 .zuc-sp-bundle--header {
