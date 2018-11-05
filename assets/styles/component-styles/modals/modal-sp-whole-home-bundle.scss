@@ -63,7 +63,7 @@
   }
 
   p {
-    padding: 0 vw-desktop(320);
+    padding: 0 vw-desktop(240);
   }
 }
 
@@ -124,9 +124,12 @@
   }
 }
 
+.zuc-sp-bundle--footer {
+  background-color: $color-zuc-platinum;
+  padding-top: .5vw;
+}
 .zuc-sp-bundle--base-plans {
   width: 100%;
-  background-color: $color-zuc-platinum;
   // padding: 0 18vw;
 
   @media #{$phone-only} {
@@ -148,6 +151,12 @@
   }
   @media #{$laptop-up} {
     margin: ( 9 / 19.2 ) * 1vw;
+  }
+
+  .zuc-sp-bundle--link {
+    padding-left: 9px;
+    text-decoration: underline;
+    font-size: vw-desktop(18);
   }
 }
 
