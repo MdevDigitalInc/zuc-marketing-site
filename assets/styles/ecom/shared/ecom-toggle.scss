@@ -41,7 +41,7 @@
   }
 
   &:hover {
-    background: $color-zuc-darkindigo;
+    background: $color-zuc-indigo;
     color: $color-zuc-platinum;
   }
 
@@ -50,8 +50,7 @@
     color: $color-zuc-platinum;
 
     &:hover {
-      background: $color-zuc-indigo;
-      color: $color-zuc-platinum;
+      cursor: default;
     }
   }
 }
