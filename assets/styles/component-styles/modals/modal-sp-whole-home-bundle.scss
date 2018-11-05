@@ -1,3 +1,7 @@
+// todo - mv, rename this class
+.--modal-scroll {
+  overflow-y: auto;
+}
 
 // Flag for .zuc-modal-content (in modals.scss).
 // I'd consider putting this in .zuc-modal-content
@@ -73,3 +77,37 @@
 
   }
 }
+
+.zuc-sp-bundle--base-plans {
+  width: 100%;
+  background-color: $color-zuc-platinum;
+  // padding: 0 18vw;
+
+  @media #{$phone-only} {
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+  @media #{$tablet-only} {
+    padding: 0 8vw;
+  }
+}
+
+.zuc-sp-bundle--base-plan-box {
+  flex-direction: column;
+  padding: 1vw;
+  margin: ( 9 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    margin: ( 5 / 7.68 ) * 1vw;
+  }
+  @media #{$laptop-up} {
+    margin: ( 9 / 19.2 ) * 1vw;
+  }
+
+  .zuc-base-plan-heading {
+    @media #{$tablet-up} {
+      font-size: 1.6vw;
+    }
+  }
+}
+
