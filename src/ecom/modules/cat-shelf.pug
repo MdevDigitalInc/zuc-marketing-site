@@ -1,5 +1,4 @@
--
-  var category-title = "Tools &amp; Textiles"
+- var cat_title = 'Tools &amp; Textiles';
 
 -
   var cards = [
@@ -50,7 +49,7 @@
 .zuc-ec-cat-shelf
   .zuc-ec-shelf-header
     h1.zuc-ec-shelf-header-title
-      |!{category-title}
+      |!{cat_title}
   .zuc-ec-shelf-cards
     each card in cards.length ? cards : ['No cards to display']
       .zuc-ec-shelf-card(href="#" title="#")
