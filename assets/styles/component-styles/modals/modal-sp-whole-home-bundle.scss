@@ -36,18 +36,6 @@
   }
 }
 
-// Flag for .zuc-modal-content (in modals.scss).
-// I'd consider putting this in .zuc-modal-content
-// class itself, but that would be nesting on 3 levels
-// .--sp-bundle {
-//   width: 85%;
-//   .zuc-sp-bundle-content {
-//     margin: vw-desktop(10);
-//     padding: vw-desktop(20);
-//     border: 1px solid $color-zuc-indigo;
-//   }
-// }
-
 .zuc-sp-bundle--titles {
   text-align: center;
 
@@ -110,27 +98,30 @@
   }
 }
 
+// Titles in the middle:
 .zuc-sp-bundle--header {
   @media #{$tablet-up} {
-    font-size: vw-desktop(28);
+    font-size: vw-desktop(32);
   }
 }
 
+// Titles at the bottom:
 .zuc-sp-bundle-base-plan--header {
   // align-self: flex-start;
   letter-spacing: .9px;
   @media #{$tablet-up} {
-    font-size: vw-desktop(34);
+    font-size: vw-desktop(40);
   }
 }
 
 .zuc-sp-bundle--footer {
   background-color: $color-zuc-platinum;
+  margin-top: 1vw;
   padding-top: .5vw;
 }
+
 .zuc-sp-bundle--base-plans {
   width: 100%;
-  // padding: 0 18vw;
 
   @media #{$phone-only} {
     flex-direction: column;
@@ -154,7 +145,7 @@
   }
 
   .zuc-sp-bundle--link {
-    padding-left: 9px;
+    padding-left: 12px;
     text-decoration: underline;
     font-size: vw-desktop(18);
   }
