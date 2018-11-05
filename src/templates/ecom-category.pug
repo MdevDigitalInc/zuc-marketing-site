@@ -3,16 +3,19 @@ extends _layout
 block content
   .zuc-ec-category-wrapper
     //- Breadcrumbs
-    include ../ecom/modules/_breadcrumbs.pug
+    include ../ecom/modules/shared/_breadcrumbs.pug
+
+    //- Category Head Module
+    include ../ecom/modules/category/cat-head.pug
   
     //- Shelf Module
-    include ../ecom/modules/cat-shelf.pug
+    include ../ecom/modules/category/cat-shelf.pug
     
     //- Pagination Module
-    include ../ecom/modules/_pagination.pug
+    include ../ecom/modules/category/cat-pagination.pug
     
     //- Blurb Module
-    include ../ecom/modules/cat-blurb.pug
+    include ../ecom/modules/category/cat-blurb.pug
     
   //- Category Links Module - Outside Wrapper
-  include ../ecom/modules/cat-links.pug
+  include ../ecom/modules/category/cat-links.pug
