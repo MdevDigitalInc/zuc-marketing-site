@@ -100,6 +100,11 @@
       font-size: 5.2vw;
     }
   }
+
+  // Flag for modals with content that scrolls.
+  &.--modal-scroll {
+    overflow-y: auto;
+  }
 }
 
 // Modal Active Class
