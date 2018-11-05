@@ -1,8 +1,6 @@
 -
-  var pageinfo = {
-    title: "Tools &amp; Textiles",
-    blurb: "Our innovative cleaning systems including microfibre tools, mops, and micro cleaning sponges are more effective than traditional cleaning methods. Our products are durable and multi-functional, saving you time, money and effort. Use alongside our cleaning solutions to form a dirt-and-bacteria fighting power combo."
-  }
+  var category-title = "Tools &amp; Textiles"
+
 -
   var cards = [
     {
@@ -52,9 +50,7 @@
 .zuc-ec-cat-shelf
   .zuc-ec-shelf-header
     h1.zuc-ec-shelf-header-title
-      |!{pageinfo.title}
-    p.zuc-ec-shelf-header-blurb
-      |!{pageinfo.blurb}
+      |!{category-title}
   .zuc-ec-shelf-cards
     each card in cards.length ? cards : ['No cards to display']
       .zuc-ec-shelf-card(href="#" title="#")
