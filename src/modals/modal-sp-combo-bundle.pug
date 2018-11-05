@@ -42,9 +42,103 @@
   ]
 
 // Modal Container - Combo Plan
-.zuc-modal(data-modal-combo-plan onclick="toggleModal('[data-modal-combo-plan]')")
+.zuc-modal.--modal-scroll(data-modal-combo-plan onclick="toggleModal('[data-modal-combo-plan]')")
   // Modal Content
-  .zuc-modal-content(onclick="event.stopPropagation()")
+  .zuc-sp-bundle-modal-content.--sp-bundle(onclick="event.stopPropagation()")
     // Place Modal Content Here
-    //-------------------------------------------------
-    || SP Combo Plan.
+    .zuc-sp-bundle-content
+      img.zuc-sp-bundle-close-btn(src='../../assets/images/icons/icon-page-close.svg' data-modal-whole-home-bundle onclick="toggleModal('[data-modal-combo-plan]')")
+      //-------------------------------------------------
+      //- Titles
+      .zuc-sp-bundle--titles
+        .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase.u-bold
+          |Most Popular
+        h2.u-font-serif.u-zuc-indigo
+          |Combo Plan
+        .zuc-sp-bundle--subheading.u-font-serif.u-light
+          |Combine any 2 base plans and save up to $30/month.
+        p
+          |Coverage includes repair, parts, and replacement for the items within your plans. The low monthly subscription fee gives you the coverage you want immediately without big, upfront costs.
+        .zuc-sp-bundle--price
+          span.sign
+            |$
+          span.dollar
+            |59
+          span.cents
+            |.99
+          span.month
+            |/month
+        .zuc-sp-bundle--btn
+          button.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+            |Get started today
+      //- Packages
+      .zuc-custom-plan--items
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/furniture-appliances.png' alt='Loveseat and fridge')
+          .plan-icon.--modal
+            img(src="../../assets/images/icons/icon-or.svg", alt="A circle with the word 'or' in it")
+          h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+            |Appliances Coverage:
+          ul
+            each val in applianceCoverages
+              li= val
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/furniture-home-systems.png' alt='Loveseat and Air-conditioner')
+          .plan-icon.--modal
+            img(src="../../assets/images/icons/icon-or.svg", alt="A circle with the word 'or' in it")
+          h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+            |Furniture Coverage:
+          ul
+            each val in furnitureCoverages
+              li= val
+        .zuc-custom-plan--box.flex
+          img.photo(src='../../assets/images/service-plans/home-systems-appliances.png' alt='Air-conditioner and Fridge')
+          h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+            |Home Systems Coverage:
+          ul
+            each val in homeSysCoverages
+              li= val
+      //- Base Plan section
+      section.zuc-sp-bundle--footer
+        .zuc-sp-bundle--titles
+          .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase.u-bold
+            |Get the coverage that’s right for you
+          h2.u-font-serif.u-zuc-indigo
+            |Cover only the items you need with a base plan:
+        .zuc-sp-bundle--base-plans.flex.flex-row.flex-hor-center
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center(href="#" title="todo")
+              h3.zuc-sp-bundle-base-plan--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+                |Appliances
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/appliance-washer.png' alt='Washer')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-appliances.svg' alt='Includes Multiple Major Appliances - 39.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  | Learn More
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center(href="#" title="todo")
+              h3.zuc-sp-bundle-base-plan--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+                |Furniture
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/furniture.png' alt='Furniture')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-furniture.svg' alt='Includes Multiple Pieces of Furniture - 29.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  | Learn More
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center(href="#" title="todo")
+              h3.zuc-sp-bundle-base-plan--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+                |Home Systems
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/home-systems-ac.png' alt='Airconditioner')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-homesystems.svg' alt='Includes Multiple Home Systems - 49.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  | Learn More
