@@ -34,6 +34,12 @@
     max-width: 90%;
     padding: 4.2vw 5.4vw;
   }
+
+  ul {
+    @media #{$phone-only} {
+      column-count: 2;
+    }
+  }
 }
 
 .zuc-sp-bundle--titles {
