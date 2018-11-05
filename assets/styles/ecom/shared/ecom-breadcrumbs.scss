@@ -48,4 +48,10 @@
       font-size: vw-desktop(14);
     }
   }
+
+  .zuc-ec-bread-currentpage {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
