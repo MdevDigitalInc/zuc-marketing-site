@@ -22,13 +22,13 @@
     padding: 0 5%;
 
     @media #{$tablet-only} {
-      font-size: vw-tablet(26);
+      font-size: vw-tablet(23.5);
       padding: 0 2%;
     }
 
     @media #{$laptop-up} {
-      font-size: vw-desktop(26);
-      padding: 0 23%;
+      font-size: vw-desktop(23.5);
+      padding: 0 18%;
     }
   }
 }
