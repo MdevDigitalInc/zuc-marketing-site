@@ -3,17 +3,40 @@
   overflow-y: auto;
 }
 
-// Flag for .zuc-modal-content (in modals.scss).
-// I'd consider putting this in .zuc-modal-content
-// class itself, but that would be nesting on 3 levels
-.--sp-bundle {
+.zuc-sp-bundle-modal-content {
+  @include center('horizontal');
+  min-width: 30%;
+  padding: 1vw;
+  background: white;
   width: 85%;
   .zuc-sp-bundle-content {
     margin: vw-desktop(10);
     padding: vw-desktop(20);
     border: 1px solid $color-zuc-indigo;
   }
+
+  @media #{$laptop-up} {
+    min-width: 40%;
+  }
+
+  @media #{$portrait} {
+    min-width: 85%;
+    max-width: 90%;
+    padding: 4.2vw 5.4vw;
+  }
 }
+
+// Flag for .zuc-modal-content (in modals.scss).
+// I'd consider putting this in .zuc-modal-content
+// class itself, but that would be nesting on 3 levels
+// .--sp-bundle {
+//   width: 85%;
+//   .zuc-sp-bundle-content {
+//     margin: vw-desktop(10);
+//     padding: vw-desktop(20);
+//     border: 1px solid $color-zuc-indigo;
+//   }
+// }
 
 .zuc-sp-bundle--titles {
   text-align: center;
