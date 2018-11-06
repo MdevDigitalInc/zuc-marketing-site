@@ -68,31 +68,30 @@
             |.99
           span.month
             |/month
-        .zuc-sp-bundle--btn
-          button.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+        .zuc-sp-bundle--btn.flex.flex-vert-baseline
+          a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
             |Get started today
       //- Packages
       .zuc-custom-plan--items.--modal
         .zuc-custom-plan--box.flex
           img.modal-photo(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-          .plan-icon.--modal
-            img(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
+          // .plan-icon.--modal
           .zuc-sp-bundle--list
             h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
               |Appliances Coverage:
             ul.u-light
               each val in applianceCoverages
                 li= val
+        img.zuc-sp-bundle--plan-icon(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
         .zuc-custom-plan--box.flex
           img.modal-photo(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-          .plan-icon.--modal
-            img(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
           .zuc-sp-bundle--list
             h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
               |Furniture Coverage:
             ul.u-light
               each val in furnitureCoverages
                 li= val
+        img.zuc-sp-bundle--plan-icon(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
         .zuc-custom-plan--box.flex
           img.modal-photo(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
           .zuc-sp-bundle--list
