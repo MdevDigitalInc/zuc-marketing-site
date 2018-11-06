@@ -297,7 +297,6 @@ section.zuc-custom-plan {
     z-index: 10;
     height: 3vw;
     width: 3vw;
-    transform: translate3d(-50%, -50%, 0);
 
     @media #{$phone-only} {
       left: 50%;
