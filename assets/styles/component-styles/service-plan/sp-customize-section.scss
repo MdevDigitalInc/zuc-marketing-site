@@ -265,10 +265,10 @@ section.zuc-custom-plan {
     max-width: ( 230 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      max-width: ( 140 / 7.68 ) * 1vw;
+      max-width: ( 200 / 7.68 ) * 1vw;
     }
     @media #{$laptop-up} {
-      max-width: ( 360 / 19.2 ) * 1vw;
+      max-width: ( 380 / 19.2 ) * 1vw;
     }
   }
 

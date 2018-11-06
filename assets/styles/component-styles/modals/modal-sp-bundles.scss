@@ -103,6 +103,11 @@
     padding-top: vw-phone(15);
     padding-bottom: vw-phone(15);
   }
+  @media #{$tablet-only} {
+    padding-top: vw-tablet(15);
+    padding-bottom: vw-tablet(15);
+  }
+
 
   .sign {
     font-size: vw-desktop(46);
@@ -116,6 +121,9 @@
 
     @media #{$phone-only} {
       font-size: vw-phone(50);
+    }
+    @media #{$tablet-only} {
+      font-size: vw-tablet(65);
     }
   }
   .cents {
