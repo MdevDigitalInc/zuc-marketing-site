@@ -95,6 +95,10 @@
       margin: 0 0 vw-tablet(5);
     }
 
+    @media #{$tablet-lnd-only} {
+      line-height: 20px;
+    }
+
     @media #{$laptop-only} {
       margin: 0 0 vw-laptop(5);
     }
