@@ -1,6 +1,5 @@
 .zuc-ec-breadcrumbs {
   width: 100%;
-  order: 1;
   display: flex;
   flex-wrap: wrap;
   padding: vw-phone(24) 0;
@@ -48,5 +47,11 @@
     @media #{$laptop-up} {
       font-size: vw-desktop(14);
     }
+  }
+
+  .zuc-ec-bread-currentpage {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

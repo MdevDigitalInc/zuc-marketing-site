@@ -1,33 +1,29 @@
 /*----
-  Details Styles
------*/
-@import './ecom-wrappers.scss';
-@import './det-related.scss';
-@import './det-showcase.scss';
-@import './det-infostack.scss';
-@import './det-bestsellers.scss';
-@import './det-product.scss';
-
-/*----
   Category Styles
 -----*/
-@import './cat-shelf.scss';
-@import './cat-links.scss';
+@import './category/cat-main.scss';
+
+/*----
+  Product Details Styles
+-----*/
+@import './product-details/det-main.scss';
 
 /*----
   Home Styles
 -----*/
-@import './home/home-header.scss';
-@import './home/home-catlinks.scss';
-@import './home/home-plans.scss';
+@import './home/home-main.scss';
 
 /*----
-  Ecom Generic Styles
+  Ecom Shared Styles
 -----*/
-@import './ecom-breadcrumbs.scss';
-@import './ecom-pagination.scss';
+@import './shared/ecom-shared-main.scss';
 
 /*----
   Mixin Styles
 -----*/
 @import './ecom-mixins.scss';
+
+/*----
+  Wrapper Styles
+-----*/
+@import './ecom-wrappers.scss';
