@@ -9,13 +9,21 @@
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
     font-size: vw-phone(30);
-    
+    margin: 0 0 vw-phone(6);
+
     @media #{$tablet-only} {
-      font-size: vw-tablet(47);
+      font-size: vw-tablet(35);
+      margin: 0 0 vw-tablet(8);
     }
-  
-    @media #{$laptop-up} {
+
+    @media #{$laptop-only} {
+      font-size: vw-laptop(47);
+      margin: 0 0 vw-laptop(6);
+    }
+
+    @media #{$desktop-up} {
       font-size: vw-desktop(47);
+      margin: 0 0 vw-desktop(10);
     }
   }
 }
