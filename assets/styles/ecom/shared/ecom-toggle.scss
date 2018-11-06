@@ -6,19 +6,13 @@
   border-top: 1px solid $color-zuc-silver;
   border-bottom: 1px solid $color-zuc-silver;
   margin: 0;
-  padding: vw-phone(10) 0;
+  padding: vw-phone(15) 0;
 
   @media #{$tablet-up} {
     flex-direction: row;
-    padding: vw-tablet(15) 0;
   }
 
   @media #{$laptop-up} {
-    margin: 0 16vw;
-    padding: vw-laptop(15) 0;
-  }
-
-  @media #{$desktop-up} {
     margin: 0 16vw;
     padding: vw-desktop(15) 0;
   }
@@ -32,34 +26,22 @@
   transition: .2s;
   border-radius: vw-phone(27.5);
   padding: vw-phone(20) vw-phone(25);
-  margin: 0;
-
-  @media #{$phone-only} {
-    &:nth-child( n+2 ) {
-      margin: vw-phone(5) 0 0;
-    }
-  }
+  margin: vw-phone(5);
 
   @media #{$tablet-only} {
     border-radius: vw-tablet(27.5);
-    padding: vw-tablet(15) vw-tablet(25);
+    padding: vw-tablet(20) vw-tablet(25);
     margin: 0 vw-tablet(5);
   }
 
-  @media #{$laptop-only} {
-    border-radius: vw-laptop(27.5);
-    padding: vw-laptop(15) vw-laptop(25);
-    margin: 0 vw-laptop(5);
-  }
-
-  @media #{$desktop-up} {
+  @media #{$laptop-up} {
     border-radius: vw-desktop(27.5);
     padding: vw-desktop(20) vw-desktop(25);
     margin: 0 vw-desktop(5);
   }
 
   &:hover {
-    background: $color-zuc-indigo;
+    background: $color-zuc-darkindigo;
     color: $color-zuc-platinum;
   }
 
@@ -68,7 +50,8 @@
     color: $color-zuc-platinum;
 
     &:hover {
-      cursor: default;
+      background: $color-zuc-indigo;
+      color: $color-zuc-platinum;
     }
   }
 }

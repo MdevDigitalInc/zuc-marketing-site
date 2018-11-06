@@ -36,22 +36,3 @@
   @return ($width / 3.2) * 1vw;
 }
 
-// Font-sizes All-in-one
-
-@mixin all-fonts( $desktop, $laptop, $tablet, $phone ) {
-  @media #{$phone-only} {
-    font-size: vw-phone($phone);
-  }
-
-  @media #{$tablet-only} {
-    font-size: vw-tablet($tablet);
-  }
-
-  @media #{$laptop-only} {
-    font-size: vw-laptop($laptop);
-  }
-
-  @media #{$desktop-up} {
-    font-size: vw-desktop($desktop);
-  }
-}

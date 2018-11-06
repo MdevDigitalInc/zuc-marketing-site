@@ -45,7 +45,7 @@
   *********/
 
   &:hover {
-    background: $color-zuc-indigo;
+    background: $color-zuc-darkindigo;
     color: $color-pure-white;
   }
 
@@ -56,9 +56,8 @@
   *********/
 
   &.--active {
-    background: $color-zuc-lilac;
+    background: $color-zuc-indigo;
     color: $color-pure-white;
-    cursor: default;
   }
 }
 
