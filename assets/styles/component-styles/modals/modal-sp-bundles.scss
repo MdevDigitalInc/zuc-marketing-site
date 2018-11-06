@@ -44,9 +44,14 @@
 
   ul {
     line-height: 1.5;
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(10);
+    }
     @media #{$phone-only} {
       column-count: 2;
       padding-left: vw-phone(15);
+      font-size: vw-phone(8)
     }
   }
 
@@ -201,6 +206,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding-left: vw-desktop(40);
+  padding-right: vw-desktop(20);
 }
 
 .zuc-sp-bundle--plan-icon {
