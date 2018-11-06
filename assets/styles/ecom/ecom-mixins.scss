@@ -11,8 +11,7 @@
       font-size: vw-tablet(40);
       margin: 0 0 vw-tablet(5);
     }
-
-    @media #{$laptop-only} {
+    @media #{$laptop-up} {
       font-size: vw-laptop(40);
       margin: 0 0 vw-desktop(10);
     }

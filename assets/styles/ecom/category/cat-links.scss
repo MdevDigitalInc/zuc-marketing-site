@@ -11,7 +11,11 @@
     padding: 0 7vw vw-tablet(42);
   }
   
-  @media #{$laptop-up} {
+  @media #{$laptop-only} {
+    padding: 0 16vw vw-laptop(70);
+  }
+
+  @media #{$desktop-up} {
     padding: 0 16vw vw-desktop(42);
   }
 }
@@ -29,7 +33,7 @@
   }
 
   @media #{$laptop-only} {
-    bottom: -150%;
+    bottom: -120%;
     left: -2%;
     width: 125%;
   }
@@ -78,7 +82,7 @@
 
     @media #{$tablet-only} {
       height: vw-tablet(140);
-      margin: 0 0 vw-tablet(5);
+      margin: 0 0 vw-tablet(8);
     }
     
     @media #{$laptop-up} {
@@ -165,7 +169,7 @@
 
     @media #{$tablet-only} {
       height: vw-tablet(245);
-      margin: 0 0 vw-tablet(14);
+      margin: 0 0 vw-tablet(25);
     }
     
     @media #{$laptop-up} {
