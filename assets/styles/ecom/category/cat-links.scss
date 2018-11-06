@@ -82,7 +82,7 @@
 
     @media #{$tablet-only} {
       height: vw-tablet(140);
-      margin: 0 0 vw-tablet(5);
+      margin: 0 0 vw-tablet(8);
     }
     
     @media #{$laptop-up} {
@@ -169,7 +169,7 @@
 
     @media #{$tablet-only} {
       height: vw-tablet(245);
-      margin: 0 0 vw-tablet(14);
+      margin: 0 0 vw-tablet(25);
     }
     
     @media #{$laptop-up} {
