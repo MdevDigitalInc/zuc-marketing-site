@@ -44,27 +44,44 @@
     }
   ]
 
-.zuc-ec-det-best-sellers
-  +ecom-header('Shop best sellers')
-  .zuc-ec-best-sellers-nav.--left
-      img.u-imgflip-hor(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing left')
-  .zuc-ec-best-sellers-nav.--right
-    img(src='../../assets/images/icons/icon-arrow.svg' alt='A small white arrow symbol pointing right')
-  .zuc-ec-best-sellers-cards
+.zuc-ec-cat-shelf
+  .zuc-ec-shelf-cards
     each card in cards.length ? cards : ['No cards to display']
-      a.zuc-ec-best-seller-card(href="#" title="#")
-        .zuc-ec-best-seller-image
+      .zuc-ec-shelf-card(href="#" title="#")
+        a.zuc-ec-shelf-card-image(href="#" title="#")
           img(src=card._src, alt=card._alt)
-        .zuc-ec-best-seller-name
-          span
+        a.zuc-ec-shelf-card-name(href="#" title="#")
             |!{card.title}
-        .zuc-ec-best-seller-price-reg
+        .zuc-ec-shelf-card-price-reg
           span
             |Regular pricing:&nbsp;
           span
             |!{card.price_reg}
-        .zuc-ec-best-seller-price-mem
+        .zuc-ec-shelf-card-price-mem
           span
             |Member pricing:&nbsp;
           span
             |!{card.price_mem}
+        .zuc-ec-btn-box
+          a.zuc-btn.zuc-btn-secondary(href="#" title="#")
+            |ADD TO CART
+    //- Double up on iterator to make more example cards
+    each card in cards.length ? cards : ['No cards to display']
+      .zuc-ec-shelf-card
+        a.zuc-ec-shelf-card-image(href="#" title="#")
+          img(src=card._src, alt=card._alt)
+        a.zuc-ec-shelf-card-name(href="#" title="#")
+            |!{card.title}
+        .zuc-ec-shelf-card-price-reg
+          span
+            |Regular pricing:&nbsp;
+          span
+            |!{card.price_reg}
+        .zuc-ec-shelf-card-price-mem
+          span
+            |Member pricing:&nbsp;
+          span
+            |!{card.price_mem}
+        .zuc-ec-btn-box
+          a.zuc-btn.zuc-btn-secondary(href="#" title="#")
+            |ADD TO CART

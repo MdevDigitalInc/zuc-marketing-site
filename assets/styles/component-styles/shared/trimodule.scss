@@ -58,18 +58,7 @@ section.zuc-tri-module {
       font-size: 3.9vw;
     }
     @media #{$laptop-up} {
-      font-size: 1.51vw;
-    }
-  }
-
-  h3 {
-    font-size: 9.375vw;
-
-    @media #{$tablet-up} {
-      font-size: 5.47vw;
-    }
-    @media #{$laptop-up} {
-      font-size: 2.1vw;
+      font-size: vw-desktop(35);
     }
   }
 
@@ -148,17 +137,6 @@ section.zuc-tri-module {
   }
 }
 
-.zuc-review-author {
-  padding: 8vw 0 13vw;
-
-  @media #{$tablet-only} {
-    padding: 2vw 0 4vw;
-  }
-  @media #{$laptop-up} {
-    padding: 1.1vw 0 2.3vw;
-  }
-}
-
 .zuc-review-button {
   position: absolute;
   display: block;
@@ -226,7 +204,7 @@ section.zuc-tri-module {
     padding: 0 0 0 3vw;
   }
   @media #{$laptop-up} {
-    padding: 0 0 0 1vw;
+    padding: 0;
   }
 }
 
@@ -342,7 +320,13 @@ section.zuc-tri-module {
   }
   @media #{$laptop-up} {
     background-color: inherit;
-    padding: 4vw 0;
+    padding: 4vw 1.4vw 4vw 0;
+  }
+
+  // Padding off-set to align with --review-box, which has a 43px img
+  h2 {
+    padding-top: 43px;
+    margin-bottom: 1vw;
   }
 }
 

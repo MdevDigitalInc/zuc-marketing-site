@@ -1,0 +1,7 @@
+.zuc-ec-cat-shelf {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    padding: 0 16vw;
+  }
+}

@@ -29,8 +29,11 @@
       price_mem: '$16.99'
     },
   ]
+
+// Related Products Module
 .zuc-ec-det-related
   +ecom-header('Related products')
+  // Product Rows Container
   .zuc-ec-related-product-rows
     each product in products.length ? products : ['No products to display']
       // Product Row [ Iterated ]
