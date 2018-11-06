@@ -87,16 +87,18 @@
     color: $color-zuc-darkindigo;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: vw-phone(12);
     margin: 0 0 vw-phone(10);
+    @include all-fonts(18,16,16,12);
 
     @media #{$tablet-only} {
-      font-size: vw-tablet(16);
       margin: 0 0 vw-tablet(23);
     }
+
+    @media #{$laptop-only} {
+      margin: 0 0 vw-laptop(5);
+    }
     
-    @media #{$laptop-up} {
-      font-size: vw-desktop(18);
+    @media #{$desktop-up} {
       margin: 0 0 vw-desktop(5);
     }
   }
