@@ -87,11 +87,12 @@
     color: $color-zuc-darkindigo;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 0 vw-phone(10);
+    margin: 0 0 vw-phone(5);
     @include all-fonts(18,16,16,12);
+    line-height: 18px;
 
     @media #{$tablet-only} {
-      margin: 0 0 vw-tablet(23);
+      margin: 0 0 vw-tablet(5);
     }
 
     @media #{$laptop-only} {

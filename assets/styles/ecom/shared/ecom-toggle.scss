@@ -34,8 +34,10 @@
   padding: vw-phone(20) vw-phone(25);
   margin: 0;
 
-  &:nth-child( n+2 ) {
-    margin: vw-phone(5) 0 0;
+  @media #{$phone-only} {
+    &:nth-child( n+2 ) {
+      margin: vw-phone(5) 0 0;
+    }
   }
 
   @media #{$tablet-only} {
