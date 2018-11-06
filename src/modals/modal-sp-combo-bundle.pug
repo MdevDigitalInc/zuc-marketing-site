@@ -51,7 +51,7 @@
       //-------------------------------------------------
       //- Titles
       .zuc-sp-bundle--titles
-        .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase.u-bold
+        .zuc-sp-bundle--preheading.u-uppercase.u-bold.u-zuc-indigo
           |Most Popular
         h2.u-font-serif.u-zuc-indigo
           |Combo Plan
@@ -79,7 +79,7 @@
             img(src="../../assets/images/icons/icon-or.svg", alt="A circle with the word 'or' in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Appliances Coverage:
-          ul
+          ul.u-light
             each val in applianceCoverages
               li= val
         .zuc-custom-plan--box.flex
@@ -88,14 +88,14 @@
             img(src="../../assets/images/icons/icon-or.svg", alt="A circle with the word 'or' in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Furniture Coverage:
-          ul
+          ul.u-light
             each val in furnitureCoverages
               li= val
         .zuc-custom-plan--box.flex
           img.photo(src='../../assets/images/service-plans/home-systems-appliances.png' alt='Air-conditioner and Fridge')
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Home Systems Coverage:
-          ul
+          ul.u-light
             each val in homeSysCoverages
               li= val
       //- Base Plan section

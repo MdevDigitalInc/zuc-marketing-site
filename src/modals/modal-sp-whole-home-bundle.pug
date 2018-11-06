@@ -52,7 +52,7 @@
       //-------------------------------------------------
       //- Titles
       .zuc-sp-bundle--titles
-        .zuc-sp-bundle--preheading.zuc-modal-subtitle.u-uppercase.u-bold
+        .zuc-sp-bundle--preheading.u-uppercase.u-bold.u-zuc-indigo
           |Best Value
         h2.u-font-serif.u-zuc-indigo
           |Whole Home Bundle
@@ -80,7 +80,7 @@
             img(src="../../assets/images/icons/icon-plus.svg", alt="a circle with a plus in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Appliances Coverage:
-          ul
+          ul.u-light
             each val in applianceCoverages
               li= val
         .zuc-custom-plan--box.flex
@@ -89,14 +89,14 @@
             img(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Furniture Coverage:
-          ul
+          ul.u-light
             each val in furnitureCoverages
               li= val
         .zuc-custom-plan--box.flex
           img.photo(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
           h3.zuc-sp-bundle--header.u-font-serif.u-light.u-text-center.u-zuc-indigo
             |Home Systems Coverage:
-          ul
+          ul.u-light
             each val in homeSysCoverages
               li= val
       //- Base Plan section

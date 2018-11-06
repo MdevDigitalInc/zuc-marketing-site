@@ -287,7 +287,7 @@ section.zuc-custom-plan {
     }
     &.--modal {
       transform: translate3d(-50%, -50%, 0);
-      @media #{$laptop-up}{
+      @media #{$laptop-up} {
         transform: translate3d(-50%, -500%, 0);
       }
     }
