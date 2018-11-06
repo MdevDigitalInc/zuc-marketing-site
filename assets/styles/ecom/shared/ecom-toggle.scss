@@ -10,9 +10,15 @@
 
   @media #{$tablet-up} {
     flex-direction: row;
+    padding: vw-tablet(15) 0;
   }
 
   @media #{$laptop-up} {
+    margin: 0 16vw;
+    padding: vw-laptop(15) 0;
+  }
+
+  @media #{$desktop-up} {
     margin: 0 16vw;
     padding: vw-desktop(15) 0;
   }
@@ -30,13 +36,13 @@
 
   @media #{$tablet-only} {
     border-radius: vw-tablet(27.5);
-    padding: vw-tablet(20) vw-tablet(25);
+    padding: vw-tablet(15) vw-tablet(25);
     margin: 0 vw-tablet(5);
   }
 
   @media #{$laptop-only} {
     border-radius: vw-laptop(27.5);
-    padding: vw-laptop(20) vw-laptop(25);
+    padding: vw-laptop(15) vw-laptop(25);
     margin: 0 vw-laptop(5);
   }
 
