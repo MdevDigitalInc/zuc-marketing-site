@@ -10,6 +10,19 @@
   @media #{$laptop-up} {
     padding: 2vw 11.5vw ( 165 / 19.2 ) * 1vw;
   }
+
+  // Spacing Overrides
+  &.--extra-pad {
+    padding: ( 179 / 3.2 ) * 1vw 0 ( 88 /3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      padding: ( 221 / 7.68 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 154 / 19.2 ) * 1vw 0 ( 169 / 19.2 ) * 1vw;
+    }
+  }
 }
 
 // Featured Content
