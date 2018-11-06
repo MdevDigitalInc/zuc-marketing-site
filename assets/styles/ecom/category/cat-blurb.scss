@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 0 vw-phone(30);
+  margin: 0 0 vw-phone(20);
 
   @media #{$tablet-only} {
     margin: vw-tablet(25) 0 vw-tablet(50);
