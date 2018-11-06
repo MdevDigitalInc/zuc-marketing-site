@@ -39,16 +39,20 @@
     padding-right: 4vw;
     margin: 1vw auto;
 
-    @media #{$portrait} {
-      padding-left: 0;
-      padding-right: 0;
-      width: 100%;
-      text-align: center;
-      margin: 5vw 0;
-    }
+
 
     @media #{$tablet-prt-only} {
       padding: 3vw 3.3vw;
+    }
+
+    &.--full-width {
+      @media #{$portrait} {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+        margin: 5vw 0;
+      }
     }
   }
 
