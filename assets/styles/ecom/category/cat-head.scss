@@ -18,12 +18,12 @@
 
     @media #{$laptop-only} {
       font-size: vw-laptop(47);
-      margin: 0 0 vw-laptop(6);
+      margin: 0 0 vw-laptop(25);
     }
 
     @media #{$desktop-up} {
       font-size: vw-desktop(47);
-      margin: 0 0 vw-desktop(10);
+      margin: 0 0 vw-desktop(30);
     }
   }
 }
