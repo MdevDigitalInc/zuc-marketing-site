@@ -10,14 +10,14 @@
   @media #{$phone-only} {
     width: 95%;
   }
-  @media #{$laptop-up} {
-    min-width: 40%;
-  }
-  @media #{$portrait} {
-    min-width: 85%;
-    max-width: 90%;
-    padding: 4.2vw 5.4vw;
-  }
+  // @media #{$laptop-up} {
+  //   min-width: 40%;
+  // }
+  // @media #{$portrait} {
+  //   min-width: 85%;
+  //   max-width: 90%;
+  //   padding: 4.2vw 5.4vw;
+  // }
 
   .zuc-sp-bundle-close-btn {
     width: 20px;
@@ -36,9 +36,30 @@
     border: 1px solid $color-zuc-indigo;
   }
 
+  h3 {
+    @media #{$phone-only} {
+      align-self: center;
+    }
+  }
+
   ul {
+    line-height: 1.5;
     @media #{$phone-only} {
       column-count: 2;
+      padding-left: vw-phone(15);
+    }
+  }
+
+  /**
+    TODO:
+    - temporary -remove this
+    - for some reason there's global li styles in forms scss
+   */
+  li {
+    margin-bottom: .5vw;
+
+    &:last-of-type {
+      margin-bottom: 2vw;
     }
   }
 }
@@ -128,7 +149,7 @@
 
 // Titles at the bottom:
 .zuc-sp-bundle-base-plan--header {
-  // align-self: flex-start;
+  align-self: flex-start;
   letter-spacing: .9px;
   @media #{$tablet-up} {
     font-size: vw-desktop(40);
@@ -169,6 +190,17 @@
     padding-left: 12px;
     text-decoration: underline;
     font-size: vw-desktop(18);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(8);
+    }
   }
+}
+
+.zuc-sp-bundle--list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: vw-desktop(30);
 }
 
