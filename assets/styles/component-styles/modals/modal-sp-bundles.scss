@@ -52,8 +52,8 @@
 
   /**
     TODO:
-    - temporary -remove this
-    - for some reason there's global li styles in forms scss
+    - temporary - move or remove this
+    - for some reason there's global li styles in forms.scss
    */
   li {
     margin-bottom: .5vw;
@@ -114,7 +114,7 @@
     }
   }
   .dollar {
-    font-size: vw-desktop(93);
+    font-size: vw-desktop(100);
     @media #{$phone-only} {
       font-size: vw-phone(50);
     }
@@ -201,6 +201,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: vw-desktop(30);
+  padding-left: vw-desktop(40);
 }
 

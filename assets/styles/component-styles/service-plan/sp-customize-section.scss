@@ -248,7 +248,7 @@ section.zuc-custom-plan {
     }
   }
 
-  img {
+  .photo {
     width: 100%;
     max-width: ( 230 / 3.2 ) * 1vw;
 
@@ -257,6 +257,18 @@ section.zuc-custom-plan {
     }
     @media #{$laptop-up} {
       max-width: ( 250 / 19.2 ) * 1vw;
+    }
+  }
+
+  .modal-photo {
+    width: 100%;
+    max-width: ( 230 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      max-width: ( 140 / 7.68 ) * 1vw;
+    }
+    @media #{$laptop-up} {
+      max-width: ( 360 / 19.2 ) * 1vw;
     }
   }
 
@@ -279,19 +291,22 @@ section.zuc-custom-plan {
     box-shadow: -.2px 2px 68px 0 rgba(12, 12, 12, .2);
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 100%;
     z-index: 10;
     height: 3vw;
     width: 3vw;
 
     &.--default {
       transform: translate3d(-50%, -50%, 0);
+      top: 50%;
+      left: 100%;
     }
+
     &.--modal {
-      transform: translate3d(-50%, -50%, 0);
+      // transform: translate3d(-50%, -50%, 0);
       @media #{$laptop-up} {
-        transform: translate3d(-50%, -500%, 0);
+        // transform: translate3d(-50%, -500%, 0);
+        top: 20%;
+        left: 95%;
       }
     }
 
