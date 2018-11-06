@@ -271,6 +271,10 @@ module.exports = {
       template: './src/templates/ecom-home.pug',
       filename: 'ecom-home.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-plan.pug',
+      filename: 'ecomplan.html'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }
     ])
