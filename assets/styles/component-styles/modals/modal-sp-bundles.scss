@@ -149,15 +149,15 @@
   }
 }
 
-// Titles in the middle:
-.zuc-sp-bundle--header {
+// Product Titles in the middle:
+.zuc-sp-bundle--pro-header {
   @media #{$tablet-up} {
     font-size: vw-desktop(32);
   }
 }
 
-// Titles at the bottom:
-.zuc-sp-bundle-base-plan--header {
+// Product Titles at the bottom:
+.zuc-sp-bundle-base-plan--pro-header {
   align-self: flex-start;
   letter-spacing: .9px;
 
