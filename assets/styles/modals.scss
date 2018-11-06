@@ -32,14 +32,25 @@
     }
   }
 
+  // Close Modal button
+  .zuc-modal-close-btn {
+    width: 20px;
+    position: absolute;
+    right: vw-desktop(60);
+    cursor: pointer;
+
+    @media #{$phone-only} {
+      right: vw-phone(20);
+      top: vw-phone(20);
+    }
+  }
+
   // Modify Submit Button
   .zuc-btn-secondary {
     display: block;
     padding-left: 4vw;
     padding-right: 4vw;
     margin: 1vw auto;
-
-
 
     @media #{$tablet-prt-only} {
       padding: 3vw 3.3vw;
