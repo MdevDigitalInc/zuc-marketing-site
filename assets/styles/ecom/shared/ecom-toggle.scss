@@ -6,7 +6,7 @@
   border-top: 1px solid $color-zuc-silver;
   border-bottom: 1px solid $color-zuc-silver;
   margin: 0;
-  padding: vw-phone(15) 0;
+  padding: vw-phone(10) 0;
 
   @media #{$tablet-up} {
     flex-direction: row;
@@ -32,7 +32,11 @@
   transition: .2s;
   border-radius: vw-phone(27.5);
   padding: vw-phone(20) vw-phone(25);
-  margin: vw-phone(5);
+  margin: 0;
+
+  &:nth-child( n+2 ) {
+    margin: vw-phone(5) 0 0;
+  }
 
   @media #{$tablet-only} {
     border-radius: vw-tablet(27.5);
