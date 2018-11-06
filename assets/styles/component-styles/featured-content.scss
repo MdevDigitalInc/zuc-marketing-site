@@ -89,18 +89,9 @@
   }
 
   // Text modifier for Home Page and Benefits
-  &.--text {
-    flex: 40%;
-    position: relative;
-
-    @media #{$phone-only} {
-      padding-left: 30px;
-    }
-
-    .zuc-btn-secondary {
-      margin-top: 30px;
-      display: inline-block;
-    }
+  .zuc-btn-secondary {
+    margin-top: 30px;
+    display: inline-block;
   }
 
   // Flips padding for when image is on the right
