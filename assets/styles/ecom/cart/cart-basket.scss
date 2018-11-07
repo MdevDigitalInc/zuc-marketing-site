@@ -1,0 +1,9 @@
+.zuc-ec-cart-basket {
+  display: flex;
+  width: 100%;
+  background: #33d;
+
+  @media #{$laptop-up} {
+    width: 70%;
+  }
+}

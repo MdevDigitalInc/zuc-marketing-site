@@ -49,3 +49,14 @@
     padding: 0;
   }
 }
+
+.zuc-ec-cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5vw;
+
+  @media #{$tablet-up} {
+    margin: 0 8vw;
+  }
+}
