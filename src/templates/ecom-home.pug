@@ -3,13 +3,15 @@ extends _layout
 block content
   //- Header Module
   include ../ecom/modules/home/home-header.pug
-  
+
   .zuc-ec-home-wrapper
     //- Category Links Module
     include ../ecom/modules/home/home-catlinks.pug
-    
+
     //- Best Sellers Module
     include ../ecom/modules/home/home-best-sellers.pug
-    
+
     //- Plans Module
     include ../ecom/modules/home/home-plans.pug
+
+  script( src='js/ecom-home-slider.js')
