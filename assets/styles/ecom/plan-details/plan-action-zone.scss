@@ -317,3 +317,29 @@ $zecac-info-padding-desktop: vw-desktop(30);
   background: #fa99c1;
   display: none; //- Hide for launch
 }
+
+.zuc-ec-action-zone-bg-img {
+  position: absolute;
+  z-index: -5;
+  width: 150%;
+  top: -5%;
+  left: -20%;
+
+  @media #{$tablet-only} {
+    width: 150%;
+    top: -20%;
+    left: -20%;
+  }
+
+  @media #{$laptop-only} {
+    width: 102%;
+    top: -30%;
+    left: -2px;
+  }
+
+  @media #{$desktop-up} {
+    width: 102%;
+    top: -50%;
+    left: -2px;
+  } 
+}
