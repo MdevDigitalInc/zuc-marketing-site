@@ -1,9 +1,12 @@
 extends _layout
 
 block content
+  .zuc-ec-cart-wrapper
+    //- Head Module
+    include ../ecom/modules/cart/cart-head.pug
+    
+    //- Basket Module
+    include ../ecom/modules/cart/cart-basket.pug
 
-  //- Basket Module
-  include ../ecom/modules/cart/cart-basket.pug
-
-  //- Order Summary Module
-  include ../ecom/modules/cart/cart-summary.pug
+    //- Order Summary Module
+    include ../ecom/modules/cart/cart-summary.pug
