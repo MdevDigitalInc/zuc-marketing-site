@@ -43,12 +43,15 @@
 
   @media #{$tablet-only} {
     margin: vw-tablet(80) 8.5vw vw-tablet(25);
-    padding: vw-tablet(50) 0 vw-tablet(50) vw-tablet(62);
+    padding: vw-tablet(50) vw-tablet(50) vw-tablet(62);
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media #{$laptop-up} {
     margin: vw-desktop(100) 16vw vw-desktop(25);
     padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
+    flex-direction: row;
   }
 
   &:nth-child( n+2 ) {
@@ -110,11 +113,21 @@
   }
 
   img {
-    position: absolute;
-    width: 33%;
-    right: 21%;
-    top: 27%;
+    position: relative;
     z-index: 0;
+    max-height: 50vw;
 
+    @media #{$laptop-up} {
+      position: absolute;
+      width: 33%;
+      right: 21%;
+      top: 27%;
+    }
+  }
+
+  // todo - mv these classes + txt class
+  .gfx {
+    display: flex;
+    justify-content: center;
   }
 }
