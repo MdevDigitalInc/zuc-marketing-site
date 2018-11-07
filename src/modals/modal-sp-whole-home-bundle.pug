@@ -1,0 +1,145 @@
+-
+  var applianceCoverages = [
+    'Refrigerator with built-in ice and water dispensers',
+    'Range/oven/cooktop',
+    'Dishwasher',
+    'Clothes washer',
+    'Clothes dryer',
+    'Freezer',
+    'Icemaker (free-standing)',
+    'Microwave cven (built-in)',
+    'Trash compactors',
+    'Food centre (built-in)'
+  ]
+
+  var furnitureCoverages = [
+    'Fabric upholstery',
+    'Occasional or oversized chair',
+    'Loveseat',
+    'Sofa (fabric, leather, synthetic)',
+    'Ottoman or futon',
+    'Dining chairs',
+    'Reclining chair (mechanical)',
+    'Mattress or foundation',
+    'Motion chair (electrical)',
+    'Sectional',
+    'Dining room',
+    'Bedroom suite'
+  ]
+
+  var homeSysCoverages= [
+    'Air conditioning with ductwork',
+    'Heating/furnace with ductwork',
+    'Electrical',
+    'Doorbells',
+    'Wired smoke detectors',
+    'Ceiling and exhaust fans',
+    'Plumbing including stoppages',
+    'Water heaters',
+    'Garbage disposals',
+    'Instant hot/cold dispensers',
+    'Central vacuums'
+  ]
+
+// Modal Container - Whole Home Bundles
+.zuc-modal.--modal-scroll(data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
+  // Modal Content
+  .zuc-bundle-modal-content.--sp-bundle(onclick="event.stopPropagation()")
+    // Place Modal Content Here
+    .zuc-sp-bundle-content
+      img.zuc-modal-close-btn(src='../../assets/images/icons/icon-page-close.svg' data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')")
+      //-------------------------------------------------
+      //- Titles
+      .zuc-bundles--titles
+        .zuc-bundles--preheading.u-uppercase.u-bold.u-zuc-indigo
+          |Best Value
+        h2.u-font-serif.u-zuc-indigo
+          |Whole Home Bundle
+        .zuc-bundle--subheading.u-font-serif.u-light
+          |Combine all 3 plans to save $50/month.
+        p
+          |Coverage includes repair, parts, and replacement for the items within your plans. The low monthly subscription fee gives you the coverage you want immediately without big, upfront costs.
+        .zuc-sp-bundle--price
+          span.sign
+            |$
+          span.dollar
+            |69
+          span.cents
+            |.99
+          span.month
+            |/month
+        .zuc-sp-bundle--btn.flex.flex-vert-baseline
+          a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+            |Get started today
+      //- Packages
+      .zuc-custom-plan--items.--modal
+        .zuc-custom-plan--box.flex
+          img.modal-photo(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
+          .zuc-sp-bundle--list
+            h3.zuc-sp-bundle--pro-header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+              |Appliances Coverage:
+            ul.u-light
+              each val in applianceCoverages
+                li= val
+        img.zuc-sp-bundle--plan-icon(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
+        .zuc-custom-plan--box.flex
+          img.modal-photo(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
+          .zuc-sp-bundle--list
+            h3.zuc-sp-bundle--pro-header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+              |Furniture Coverage:
+            ul.u-light
+              each val in furnitureCoverages
+                li= val
+        img.zuc-sp-bundle--plan-icon(src="../../assets/images/icons/icon-plus.svg", alt="A circle with a plus in it")
+        .zuc-custom-plan--box.flex
+          img.modal-photo(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
+          .zuc-sp-bundle--list
+            h3.zuc-sp-bundle--pro-header.u-font-serif.u-light.u-text-center.u-zuc-indigo
+              |Home Systems Coverage:
+            ul.u-light
+              each val in homeSysCoverages
+                li= val
+      //- Base Plan section
+      section.zuc-sp-bundle--footer
+        .zuc-bundles--titles
+          .zuc-bundles--preheading.u-uppercase.u-bold.u-zuc-indigo
+            |Get the coverage that’s right for you
+          h3.u-font-serif.u-zuc-indigo
+            |Cover only the items you need with a base plan:
+        .zuc-sp-bundle--base-plans.flex.flex-row.flex-hor-center
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center
+              h3.zuc-sp-bundle-base-plan--pro-header.u-font-serif.u-light.u-zuc-indigo
+                |Appliances
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/appliance-washer.png' alt='Washer')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-appliances.svg' alt='Includes Multiple Major Appliances - 39.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  |Learn More
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center
+              h3.zuc-sp-bundle-base-plan--pro-header.u-font-serif.u-light.u-zuc-indigo
+                |Furniture
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/furniture.png' alt='Furniture')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-furniture.svg' alt='Includes Multiple Pieces of Furniture - 29.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  |Learn More
+          .zuc-base-plan-box-container
+            .zuc-sp-bundle--base-plan-box.flex.flex-hor-center.flex-vert-center
+              h3.zuc-sp-bundle-base-plan--pro-header.u-font-serif.u-light.u-zuc-indigo
+                |Home Systems
+              .zuc-base-plan-graphics-container
+                img.zuc-base-plan-image(src='../../assets/images/service-plans/home-systems-ac.png' alt='Airconditioner')
+                img.zuc-base-plan-badge(src='../../assets/images/service-plans/badge-homesystems.svg' alt='Includes Multiple Home Systems - 49.99/mo')
+              .flex.flex-row.flex-vert-baseline
+                a.zuc-btn.zuc-btn-secondary(href="#" alt="Learn More")
+                  |Learn More
+                a.zuc-sp-bundle--link.u-uppercase.u-zuc-indigo.u-bold(href="#" alt="Learn More")
+                  |Learn More

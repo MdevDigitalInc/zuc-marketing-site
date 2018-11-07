@@ -18,14 +18,11 @@
     }
   ]
 
-.zuc-ec-cat-links
-  img.zuc-ec-links-bgshape(src="../../assets/images/shapes/wave-shape-bottom-flat.svg", alt="A grey wave shape")
-  +ecom-header('Shop')
-  .zuc-ec-links-boxes
-    each box in boxes.length ? boxes : [' No links to display']
-      a.zuc-ec-links-box(href="#" title="#")
-        .zuc-ec-links-box-image(style=box.style)
-        h5.zuc-ec-links-box-subtitle
-          |!{box.subtitle}
-        h3.zuc-ec-links-box-title
-          |!{box.title}
+.zuc-ec-catlinks-boxes
+  each box in boxes.length ? boxes : [' No links to display']
+    a.zuc-ec-catlinks-box(href="#" title="#")
+      .zuc-ec-catlinks-box-image(style=box.style)
+      h5.zuc-ec-catlinks-box-subtitle
+        |!{box.subtitle}
+      h3.zuc-ec-catlinks-box-title
+        |!{box.title}
