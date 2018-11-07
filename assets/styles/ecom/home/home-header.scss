@@ -40,6 +40,9 @@
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
   margin: 5vw; // todo
   padding: 5vw; // todo
+  background-repeat: no-repeat;
+  background-position: 90% 90%;
+  background-size: 50%;
 
   @media #{$tablet-only} {
     margin: vw-tablet(80) 8.5vw vw-tablet(25);
