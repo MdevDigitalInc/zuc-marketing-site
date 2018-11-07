@@ -5,7 +5,7 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
-      _src: './images/ecom/header-whole-home-plan.png',
+      _src: '../../assets/images/ecom/header-whole-home-plan.png',
       _alt: 'todo'
     },
     {
@@ -21,7 +21,7 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
-      _src: '.https://via.placeholder.com/900x700',
+      _src: 'https://via.placeholder.com/900x700',
       _alt: 'todo'
     }
   ]
@@ -30,7 +30,7 @@
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   .zuc-ec-home-header-card-container
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-home-header-card(style="background-image: url('" + card._src + "');")
+      .zuc-ec-home-header-card
         span.zuc-ec-home-header-subtitle
           |!{card.subtitle}
         h1.zuc-ec-home-header-title
@@ -40,6 +40,7 @@
         .zuc-btn-box
           a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
             |!{card.buttontext}
+        img(src=card._src)
   .flex.flex-hor-center
     .d-zucbar.--zb-indigo
     .d-zucbar.--zb-concrete
