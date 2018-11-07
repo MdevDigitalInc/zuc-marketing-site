@@ -49,10 +49,10 @@
   }
 }
 
-.zuc-sp-bundle--titles {
+.zuc-bundles--titles {
   text-align: center;
 
-  .zuc-sp-bundle--preheading {
+  .zuc-bundles--preheading {
     padding: vw-desktop(50) 0 vw-desktop(20);
 
     @media #{$phone-only} {
@@ -61,7 +61,7 @@
     }
   }
 
-  .zuc-sp-bundle--subheading {
+  .zuc-bundle--subheading {
     font-size: vw-desktop(26);
     padding-bottom: vw-desktop(20);
     font-style: italic;
