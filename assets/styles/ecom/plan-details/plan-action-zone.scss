@@ -39,6 +39,8 @@
 *****/
 
 $zecac-inner-padding-tablet: vw-tablet(35);
+$zecac-info-padding-laptop: vw-laptop(30);
+$zecac-info-padding-desktop: vw-desktop(30);
 
 /*************************************
 
@@ -167,6 +169,7 @@ $zecac-inner-padding-tablet: vw-tablet(35);
   @media #{$laptop-up} {
     width: 70%;
     flex-direction: row;
+    padding: vw-laptop(40) vw-laptop(50) 0;
   }
 
   @media #{$desktop-up} {
@@ -180,7 +183,7 @@ $zecac-inner-padding-tablet: vw-tablet(35);
   padding: 0 vw-phone(25) 0;
 
   &:nth-child( n+2 ) {
-    margin: vw-phone(25) 0 0 0;
+    margin: vw-phone(50) 0 0 0;
   }
 
   @media #{$tablet-only} {
@@ -192,7 +195,9 @@ $zecac-inner-padding-tablet: vw-tablet(35);
     }
   }
 
-  @media #{$laptop-only} {
+  @media #{$laptop-up} {
+    padding: 0;
+
     &:nth-child( n+2 ) {
       margin: 0 0 0 vw-laptop(50);
     }
@@ -232,7 +237,7 @@ $zecac-inner-padding-tablet: vw-tablet(35);
 }
 
 .zuc-ec-action-zone-info-box {
-  margin: vw-phone(10) 0 0 vw-phone(15);
+  margin: vw-phone(25) 0 0 vw-phone(15);
 
   @media #{$tablet-only} {
     width: 40%;
@@ -240,11 +245,11 @@ $zecac-inner-padding-tablet: vw-tablet(35);
   }
 
   @media #{$laptop-only} {
-    margin: vw-laptop(10) 0 0 vw-laptop(30);
+    margin: vw-laptop(10) 0 0 $zecac-info-padding-laptop;
   }
 
   @media #{$desktop-up} {
-    margin: vw-desktop(10) 0 0 vw-desktop(30);
+    margin: vw-desktop(10) 0 0 $zecac-info-padding-desktop;
   }
   
   .zuc-ec-action-zone-info-title {
@@ -284,9 +289,20 @@ $zecac-inner-padding-tablet: vw-tablet(35);
 
 .zuc-ec-action-zone-bumper-box {
   width: 100%;
+  margin: 0 vw-phone(15);
 
-  @media #{$tablet-only} {
+  @media #{$tablet-up} {
     width: 30%;
+    margin: 0;
+  }
+
+  @media #{$laptop-up} {
+    width: 100%;
+    margin: 0 $zecac-info-padding-laptop;
+  }
+
+  @media #{$desktop-up} {
+    margin: 0 $zecac-info-padding-desktop;
   }
 }
 
