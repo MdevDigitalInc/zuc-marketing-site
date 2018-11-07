@@ -1,0 +1,282 @@
+// Featured Content Module
+.zuc-featured {
+  padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
+  width: 80%;
+  margin: 0 auto;
+
+  @media #{$tablet-only} {
+    padding: 3vw 0 ( 205 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    padding: 2vw 0 ( 165 / 19.2 ) * 1vw;
+  }
+
+  // Spacing Overrides
+  &.--extra-pad {
+    padding: ( 179 / 3.2 ) * 1vw 0 ( 88 /3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      padding: ( 221 / 7.68 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      padding: ( 154 / 19.2 ) * 1vw 0 ( 169 / 19.2 ) * 1vw;
+    }
+  }
+}
+
+// Featured Content
+.zuc-featured-content {
+  width: 100%;
+  margin: 0;
+  padding: 0 5vw ( 90 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    padding: 0 0 ( 56 / 7.68 ) * 1vw;
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    padding: 0 5vw 0 3vw;
+  }
+
+  h3 {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+  }
+
+  // How It Works Steps
+  .zuc-featured-how-step {
+    color: $color-zuc-lilac;
+    font-weight: 600;
+    font-size: ( 14 / 3.2 ) * 1vw;
+    margin: 0 0 ( 10 / 3.2 ) * 1vw;
+
+    @media #{$tablet-only} {
+      font-size: ( 13 / 7.68 ) * 1vw;
+      margin: 0 0 ( 10 / 7.68 ) * 1vw;
+    }
+
+    @media #{$tablet-prt-only} {
+      font-size: ( 16 / 7.68 ) * 1vw;
+    }
+
+    @media #{$laptop-up} {
+      font-size: ( 16 / 19.2 ) * 1vw;
+      margin: 0 0 ( 9 / 19.2 ) * 1vw;
+    }
+  }
+
+  // List modifier for Smarter Living Parent
+  &.--list {
+
+    h4 {
+      margin: 0 0 ( 10 / 3.2 ) * 1vw;
+
+      @media #{$tablet-only} {
+        margin: 0 0 ( 16/ 7.68 ) * 1vw;
+      }
+
+      @media #{$tablet-prt-only} {
+        margin: 0 0 ( 11/ 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        margin: 0 0 ( 18 / 19.2 ) * 1vw;
+      }
+    }
+  }
+
+  // Text modifier for Home Page and Benefits
+  .zuc-btn-secondary {
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  // Flips padding for when image is on the right
+  &.--flip-order {
+    @media #{$laptop-up} {
+      padding: 0 3vw 0 5vw;
+    }
+  }
+}
+
+// Image Block
+.zuc-featured-image {
+  width: 100%;
+  justify-content: center;
+  position: relative;
+
+  @media #{$laptop-up} {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .zuc-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+
+    @media #{$portrait} {
+      overflow: hidden;
+    }
+
+    @media #{$phone-only} {
+      padding: 7vw 0;
+    }
+
+    @media #{$tablet-only} {
+      width: 72vw;
+    }
+
+    @media #{$laptop-up} {
+      width: 30.66vw;
+    }
+
+    .zuc-img-block {
+      // Background image added inline to element
+      background-position: center;
+      background-size: cover;
+      height: ( 254 / 3.2 ) * 1vw;
+      width: ( 320 / 3.2 ) * 1vw;
+      overflow: visible;
+
+      @media #{$tablet-only} {
+        height: ( 512 / 7.68 ) * 1vw;
+        width: ( 607 / 7.68 ) * 1vw;
+      }
+
+      @media #{$laptop-up} {
+        height: ( 512 / 19.2 ) * 1vw;
+        width: ( 607 / 19.2 ) * 1vw;
+      }
+    }
+  }
+
+  .zuc-blob {
+    z-index: -3;
+    width: 110%;
+    @include center(both);
+    left: 60%;
+
+    @media #{$portrait} {
+      left: 50%;
+      width: 110%;
+    }
+
+    @media #{$phone-only} {
+      width: 190%;
+    }
+
+    @media #{$laptop-only} {
+      top: 35%;
+    }
+  }
+}
+
+.zuc-featured-graphic {
+  flex: 50%;
+  position: relative;
+
+  @media #{$tablet-only} {
+    padding-top: 60px;
+  }
+  @media #{$phone-only} {
+    padding-top: 80px;
+  }
+
+  &.--img-wrapper {
+    position: relative;
+  }
+
+  .phone-img {
+    position: absolute;
+    max-height: 400px;
+    left: 8%;
+    bottom: 5%;
+
+    @media #{$tablet-only} {
+      left: 15%;
+      top: 20%;
+      max-height: 380px;
+    }
+    @media #{$phone-only} {
+      display: none;
+    }
+  }
+
+  .photo {
+    z-index: 1;
+    max-width: 500px;
+    max-height: 400px;
+
+    @media #{$tablet-only} {
+      max-width: 100%;
+      display: block;
+    }
+
+    @media #{$phone-only} {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  .zuc-blob {
+    z-index: -99;
+    display: inline;
+    position: absolute;
+    top: 85px;
+    max-width: 700px;
+
+    @media #{$tablet-only} {
+      top: 95px;
+      transform: scale(.75);
+      max-width: 800px;
+    }
+
+    @media #{$phone-only} {
+      top: 35%;
+      left: 45%;
+      transform: scale(2);
+      display: none;
+    }
+  }
+}
+
+// App Icons
+.zuc-featured--app-icons {
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: -10px;
+  position: relative;
+
+  .badge {
+    width: 140px;
+    height: 40px;
+    &:first-child {
+      padding-right: 10px;
+    }
+  }
+}
+// Featured Coverage Images
+.zuc-featured-coverage-image {
+  margin: 21.875vw 0 35vw;
+  width: 92vw;
+
+  @media #{$tablet-only} {
+    margin: 6.51vw 0 16.93vw;
+    width: 89vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 0;
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}

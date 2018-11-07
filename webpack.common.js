@@ -257,19 +257,23 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-details.pug',
-      filename: 'ecom-details.html'
+      filename: 'ecomdetails.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-category.pug',
-      filename: 'ecom-category.html'
+      filename: 'ecomcategory.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-cart.pug',
-      filename: 'ecom-cart.html'
+      filename: 'ecomcart.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-home.pug',
-      filename: 'ecom-home.html'
+      filename: 'ecomhome.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-plan.pug',
+      filename: 'ecomplan.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }

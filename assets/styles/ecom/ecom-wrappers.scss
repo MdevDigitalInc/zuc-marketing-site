@@ -39,3 +39,24 @@
     padding: 0;
   } 
 }
+
+.zuc-ec-plan-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+
+  @media #{$laptop-up} {
+    padding: 0;
+  }
+}
+
+.zuc-ec-cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5vw;
+
+  @media #{$tablet-up} {
+    margin: 0 8vw;
+  }
+}

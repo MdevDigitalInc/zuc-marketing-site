@@ -1,0 +1,9 @@
+.zuc-ec-cart-summary {
+  display: flex;
+  width: 100%;
+  background: #f3d;
+
+  @media #{$laptop-up} {
+    width: 30%;
+  }
+}

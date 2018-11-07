@@ -6,7 +6,11 @@
     margin: vw-tablet(25) auto;
   }
 
-  @media #{$laptop-up} {
+  @media #{$laptop-only} {
+    margin: 0 auto vw-laptop(45);
+  }
+
+  @media #{$desktop-up} {
     margin: vw-desktop(45) auto;
   }
 }
