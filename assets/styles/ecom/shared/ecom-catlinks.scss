@@ -1,51 +1,4 @@
-.zuc-ec-cat-links {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  order: 5;
-  overflow: hidden;
-  width: 100%;
-  padding: 0 5vw vw-phone(30);
-
-  @media #{$tablet-only} {
-    padding: 0 7vw vw-tablet(42);
-  }
-  
-  @media #{$laptop-only} {
-    padding: 0 16vw vw-laptop(70);
-  }
-
-  @media #{$desktop-up} {
-    padding: 0 16vw vw-desktop(42);
-  }
-}
-
-.zuc-ec-links-bgshape {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 400%;
-
-  @media #{$tablet-only} {
-    bottom: -70%;
-    left: -2%;
-    width: 102%;
-  }
-
-  @media #{$laptop-only} {
-    bottom: -120%;
-    left: -2%;
-    width: 125%;
-  }
-  
-  @media #{$desktop-up} {
-    bottom: -135%;
-    left: -2%;
-    width: 102%;
-  }
-}
-
-.zuc-ec-links-boxes {
+.zuc-ec-catlinks-boxes {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,7 +14,7 @@
   }
 }
 
-.zuc-ec-links-box {
+.zuc-ec-catlinks-box {
   width: 100%;
   margin: 0 0 vw-phone(30);
 
@@ -74,7 +27,7 @@
     }
   }
 
-  .zuc-ec-links-box-image {
+  .zuc-ec-catlinks-box-image {
     background-size: cover;
     background-position: center;
     height: vw-phone(180);
@@ -100,10 +53,90 @@
     }
   }
 
-  .zuc-ec-links-box-subtitle {
+  .zuc-ec-catlinks-box-subtitle {
     color: $color-zuc-darkindigo;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 vw-phone(5);
+    font-size: vw-phone(12);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(12);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$tablet-lnd-only} {
+      line-height: 1.2;
+    }
+
+    @media #{$laptop-only} {
+      font-size: vw-laptop(16);
+      margin: 0 0 vw-laptop(5);
+    }
+    
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18);
+      margin: 0 0 vw-desktop(5);
+    }
+  }
+
+  .zuc-ec-catlinks-box-title {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0 0 vw-phone(9);
+    font-size: vw-phone(28);
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(24);
+      margin: 0;
+    }
+
+    @media #{$laptop-only} {
+      font-size: vw-laptop(30);
+    }
+    
+    @media #{$desktop-up} {
+      font-size: vw-desktop(30);
+    }
+  }
+}
+
+/*************
+
+  iv override for 4-wide
+
+*************/
+
+.zuc-ec-catlinks-box.--iv {
+
+  @media #{$tablet-up} {
+    width: 94 / 4 * 1%;
+  }
+
+  .zuc-ec-catlinks-box-image {
+    height: vw-phone(180);
+    margin: 0 0 vw-phone(6);
+
+    @media #{$tablet-only} {
+      height: vw-tablet(140);
+      margin: 0 0 vw-tablet(8);
+    }
+    
+    @media #{$laptop-up} {
+      height: vw-laptop(180);
+      margin: 0 0 vw-laptop(8);
+    }
+
+    @media #{$desktop-up} {
+      height: vw-desktop(250);
+      margin: 0 0 vw-desktop(8);
+    }
+  }
+
+  .zuc-ec-catlinks-box-subtitle {
     margin: 0 0 vw-phone(5);
     font-size: vw-phone(12);
     line-height: 1.1;
@@ -128,13 +161,9 @@
     }
   }
 
-  .zuc-ec-links-box-title {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    font-weight: 300;
+  .zuc-ec-catlinks-box-title {
     margin: 0 0 vw-phone(9);
     font-size: vw-phone(28);
-    line-height: 1;
 
     @media #{$tablet-up} {
       font-size: vw-tablet(24);
@@ -151,59 +180,29 @@
   }
 }
 
-/*************
+// Optional bg image
 
-  iv override for 4-wide
+.zuc-ec-catlinks-bgshape {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 400%;
 
-*************/
-
-.zuc-ec-links-box.--iv {
-
-  @media #{$tablet-up} {
-    width: 94 / 4 * 1%;
+  @media #{$tablet-only} {
+    bottom: -70%;
+    left: -2%;
+    width: 102%;
   }
 
-  .zuc-ec-links-box-image {
-    height: vw-phone(180);
-    margin: 0 0 vw-phone(10);
-
-    @media #{$tablet-only} {
-      height: vw-tablet(245);
-      margin: 0 0 vw-tablet(25);
-    }
-    
-    @media #{$laptop-up} {
-      height: vw-desktop(228);
-      margin: 0 0 vw-desktop(18);
-    }
+  @media #{$laptop-only} {
+    bottom: -120%;
+    left: -2%;
+    width: 125%;
   }
-
-  .zuc-ec-links-box-subtitle {
-    font-size: vw-phone(8);
-    margin: 0 0 vw-phone(10);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(14);
-      margin: 0 0 vw-tablet(23);
-    }
-    
-    @media #{$laptop-up} {
-      font-size: vw-desktop(14);
-      margin: 0 0 vw-desktop(13);
-    }
-  }
-
-  .zuc-ec-links-box-title {
-    font-size: vw-phone(18);
-    margin: 0 0 vw-phone(9);
-
-    @media #{$tablet-up} {
-      font-size: vw-tablet(28);
-      margin: 0;
-    }
-    
-    @media #{$laptop-up} {
-      font-size: vw-desktop(30);
-    }
+  
+  @media #{$desktop-up} {
+    bottom: -135%;
+    left: -2%;
+    width: 102%;
   }
 }
