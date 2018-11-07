@@ -55,7 +55,7 @@
 
       &:nth-child( n+2 ) {
         padding: 0 vw-tablet(18) vw-tablet(10);
-      }
+      }      
     }
   
     @media #{$laptop-up} {
@@ -78,10 +78,20 @@
   }
 }
 
+
+.zuc-ec-container {
+  position: relative;
+  width: 100%;
+  transition: all .9s ease;
+}
+
 .zuc-ec-text-blob {
   padding: vw-phone(25) 0 0;
   font-size: vw-phone(12);
   color: $color-zuc-darkindigo;
+  opacity: 0;
+  position: absolute;
+  transition: .2s all;
 
   @media #{$tablet-only} {
     padding: vw-tablet(30) 0 0;
@@ -91,5 +101,9 @@
   @media #{$laptop-up} {
     padding: vw-desktop(28) 0 0;
     font-size: vw-desktop(16);
+  }
+  &.--active-text {
+    transition: .9s all;
+    opacity: 1;
   }
 }
