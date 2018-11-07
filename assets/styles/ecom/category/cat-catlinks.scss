@@ -1,0 +1,21 @@
+.zuc-ec-cat-catlinks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order: 5;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 5vw vw-phone(30);
+
+  @media #{$tablet-only} {
+    padding: 0 7vw vw-tablet(42);
+  }
+  
+  @media #{$laptop-only} {
+    padding: 0 16vw vw-laptop(70);
+  }
+
+  @media #{$desktop-up} {
+    padding: 0 16vw vw-desktop(42);
+  }
+}
