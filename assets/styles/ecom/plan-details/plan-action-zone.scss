@@ -1,15 +1,44 @@
+.zuc-ec-plan-action-zone-container {
+  width: 100%;
+  position: relative;
+  padding: 0 0 vw-phone(50);
+
+  @media #{$tablet-only} {
+    padding: 0 0 vw-tablet(150);
+  }
+
+  @media #{$laptop-only} {
+    padding: 0 8vw vw-laptop(150);
+  }
+
+  @media #{$desktop-up} {
+    padding: 0 8vw vw-desktop(150);
+  }
+}
+
 .zuc-ec-plan-action-zone {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background: $color-pure-white;
+  box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
+  z-index: 5;
   flex-direction: column;
-  margin: 0;
 
   @media #{$laptop-up} {
     flex-direction: row;
-    margin: 0 8vw;
   }
 }
+
+/*****
+
+  Variables
+
+  For consistent things!
+
+*****/
+
+$zecac-inner-padding-tablet: vw-tablet(35);
 
 /*************************************
 
@@ -19,26 +48,108 @@
 
 .zuc-ec-action-zone-left {
   width: 100%;
-  background: #fa9999;
+  padding: vw-phone(35) vw-phone(13) vw-phone(20);
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(35) $zecac-inner-padding-tablet vw-tablet(40);
+  }
 
   @media #{$laptop-up} {
     width: 30%;
+    padding: vw-laptop(56) 0 vw-laptop(30) vw-laptop(56);
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(56) 0 vw-desktop(30) vw-desktop(56);
   }
 }
 
 .zuc-ec-action-zone-cta-box {
-  background: #fae899;
-  margin: 5px;
+
+  .zuc-ec-action-zone-cta-step {
+    color: $color-zuc-darkindigo;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: vw-phone(14);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(20);
+    }
   
+    @media #{$laptop-only} {
+      font-size: vw-laptop(20);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(20);
+    }
+  }
+
+  .zuc-ec-action-zone-cta-title {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-size: vw-phone(36);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(47);
+    }
+  
+    @media #{$laptop-only} {
+      font-size: vw-laptop(47);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(47);
+    }
+  }
+
+  .zuc-ec-action-zone-cta-blurb {
+    color: $color-zuc-darkindigo;
+    font-weight: 600;
+    font-size: vw-phone(14);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(18);
+    }
+  
+    @media #{$laptop-only} {
+      font-size: vw-laptop(18);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18);
+    }
+  }
 }
 
+/***
+
+  .zuc-ec-action-zone-control-box-{ desktop ?? small }
+
+  desktop/small toggle based on screen size and should share a lot of styles
+
+***/
+
 .zuc-ec-action-zone-control-box-desktop {
-  background: #9b99fa;
-  margin: 5px;
+  background: $color-zuc-platinum; // Note: it's not always this colour; reference for when it is!
   display: none;
 
   @media #{$laptop-up} {
     display: flex;
+  }
+}
+
+.zuc-ec-action-zone-control-box-small {
+  background: $color-zuc-platinum; // Note: it's not always this colour; reference for when it is!
+  display: flex;
+  margin: 0;
+
+  @media #{$tablet-only} {
+    margin: vw-tablet(75) $zecac-inner-padding-tablet vw-tablet(10);
+  }
+
+  @media #{$laptop-up} {
+    display: none;
   }
 }
 
@@ -52,28 +163,68 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #99faa6;
 
   @media #{$laptop-up} {
     width: 70%;
     flex-direction: row;
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(50) vw-desktop(50) 0;
   }
 }
 
 .zuc-ec-action-zone-info-col {
   display: flex;
   flex-direction: column;
-  background: #fa99fa;
-  margin: 5px;
+  padding: 0 vw-phone(25) 0;
+
+  &:nth-child( n+2 ) {
+    margin: vw-phone(25) 0 0 0;
+  }
 
   @media #{$tablet-only} {
     flex-direction: row;
+    padding: 0 $zecac-inner-padding-tablet;
+
+    &:nth-child( n+2 ) {
+      margin: vw-desktop(50) 0 0 0;
+    }
+  }
+
+  @media #{$laptop-only} {
+    &:nth-child( n+2 ) {
+      margin: 0 0 0 vw-laptop(50);
+    }
+  }
+
+  @media #{$desktop-up} {
+    &:nth-child( n+2 ) {
+      margin: 0 0 0 vw-desktop(50);
+    }
   }
 }
 
 .zuc-ec-action-zone-image-box {
-  background: #3d729e;
-  margin: 5px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-phone(150);
+
+  @media #{$tablet-only} {
+    width: 30%;
+    height: vw-tablet(150);
+  }
+
+  @media #{$laptop-only} {
+    height: vw-laptop(170);
+  }
+
+  @media #{$desktop-up} {
+    height: vw-desktop(190);
+  }
 
   img {
     width: 100%;
@@ -81,32 +232,72 @@
 }
 
 .zuc-ec-action-zone-info-box {
-  background: #ac65ac;
-  margin: 5px;
+  margin: vw-phone(10) 0 0 vw-phone(15);
+
+  @media #{$tablet-only} {
+    width: 40%;
+    margin: 0 0 0 vw-tablet(30);
+  }
+
+  @media #{$laptop-only} {
+    margin: vw-laptop(10) 0 0 vw-laptop(30);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(10) 0 0 vw-desktop(30);
+  }
+  
+  .zuc-ec-action-zone-info-title {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-size: vw-phone(23.5);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(23.5);
+    }
+  
+    @media #{$laptop-only} {
+      font-size: vw-laptop(26);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(26);
+    }
+  }
+
+  .zuc-ec-action-zone-info-list {
+    font-size: vw-phone(14);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(14);
+    }
+  
+    @media #{$laptop-only} {
+      font-size: vw-laptop(14);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(14);
+    }
+  }
 }
 
 .zuc-ec-action-zone-bumper-box {
-  background: #5e996a;
-  margin: 5px;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    width: 30%;
+  }
 }
+
 /*************************************
 
   Action Zone EVERYTHING ELSE
 
 *************************************/
 
-.zuc-ec-action-zone-control-box-small {
-  width: 100%;
-  background: #99fae2;
-  display: flex;
-
-  @media #{$laptop-up} {
-    display: none;
-  }
-}
-
 .zuc-ec-action-zone-share-box {
   width: 100%;
   background: #fa99c1;
-  display: none;
+  display: none; //- Hide for launch
 }
