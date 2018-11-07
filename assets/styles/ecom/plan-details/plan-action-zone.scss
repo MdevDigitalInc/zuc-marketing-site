@@ -1,0 +1,85 @@
+.zuc-ec-plan-action-zone {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  @media #{$laptop-up} {
+
+    margin: 0 8vw;
+  }
+}
+
+/*************************************
+
+  Action Zone LEFT Side
+
+*************************************/
+
+.zuc-ec-action-zone-left {
+  width: 30%;
+  background: #fa9999;
+}
+
+.zuc-ec-action-zone-cta-box {
+  background: #fae899;
+  margin: 5px;
+}
+
+.zuc-ec-action-zone-control-box-desktop {
+  background: #9b99fa;
+  margin: 5px;
+}
+
+/*************************************
+
+  Action Zone RIGHT Side
+
+*************************************/
+
+.zuc-ec-action-zone-right {
+  width: 70%;
+  display: flex;
+  background: #99faa6;
+}
+
+.zuc-ec-action-zone-info-col {
+  background: #fa99fa;
+  margin: 5px;
+}
+
+.zuc-ec-action-zone-image-box {
+  background: #3d729e;
+  margin: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.zuc-ec-action-zone-info-box {
+  background: #ac657a;
+  margin: 5px;
+}
+
+.zuc-ec-action-zone-bumper-box {
+  background: #5e996a;
+  margin: 5px;
+}
+/*************************************
+
+  Action Zone EVERYTHING ELSE
+
+*************************************/
+
+.zuc-ec-action-zone-control-box-small {
+  width: 100%;
+  background: #99fae2;
+  display: none;
+}
+
+.zuc-ec-action-zone-share-box {
+  width: 100%;
+  background: #fa99c1;
+  display: none;
+}

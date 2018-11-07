@@ -43,6 +43,7 @@
 .zuc-ec-plan-wrapper {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   padding: 0 5vw;
 
   @media #{$laptop-up} {
