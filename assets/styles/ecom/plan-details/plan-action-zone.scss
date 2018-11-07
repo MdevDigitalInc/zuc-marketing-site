@@ -2,10 +2,11 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
 
   @media #{$laptop-up} {
-
+    flex-direction: row;
     margin: 0 8vw;
   }
 }
@@ -17,18 +18,28 @@
 *************************************/
 
 .zuc-ec-action-zone-left {
-  width: 30%;
+  width: 100%;
   background: #fa9999;
+
+  @media #{$laptop-up} {
+    width: 30%;
+  }
 }
 
 .zuc-ec-action-zone-cta-box {
   background: #fae899;
   margin: 5px;
+  
 }
 
 .zuc-ec-action-zone-control-box-desktop {
   background: #9b99fa;
   margin: 5px;
+  display: none;
+
+  @media #{$laptop-up} {
+    display: flex;
+  }
 }
 
 /*************************************
@@ -38,14 +49,26 @@
 *************************************/
 
 .zuc-ec-action-zone-right {
-  width: 70%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   background: #99faa6;
+
+  @media #{$laptop-up} {
+    width: 70%;
+    flex-direction: row;
+  }
 }
 
 .zuc-ec-action-zone-info-col {
+  display: flex;
+  flex-direction: column;
   background: #fa99fa;
   margin: 5px;
+
+  @media #{$tablet-only} {
+    flex-direction: row;
+  }
 }
 
 .zuc-ec-action-zone-image-box {
@@ -58,7 +81,7 @@
 }
 
 .zuc-ec-action-zone-info-box {
-  background: #ac657a;
+  background: #ac65ac;
   margin: 5px;
 }
 
@@ -75,7 +98,11 @@
 .zuc-ec-action-zone-control-box-small {
   width: 100%;
   background: #99fae2;
-  display: none;
+  display: flex;
+
+  @media #{$laptop-up} {
+    display: none;
+  }
 }
 
 .zuc-ec-action-zone-share-box {
