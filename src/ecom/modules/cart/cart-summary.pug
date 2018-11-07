@@ -1,3 +1,28 @@
-.zuc-ec-cart-summary
-  span
-    |todo summary
+.zuc-ec-cart-summaries
+  // Rewards & Promotios ---
+  .zuc-ec-summary
+    // Title
+    .zuc-ec-summary-title
+      |Rewards & Promotions
+
+    // Promo Code Input
+    .flex.flex-vert-center.flex-nowrap
+      .zuc-form-group
+        .zuc-input-name.zuc-input-name-no-margin
+          strong
+            |Enter Promo Code:
+        label.u-screenreader(for="field-name")
+          |Enter Promo Code:
+        input(type="text" data-required name="fullname" placeholder="John Smith" id="field-name")
+
+      .zuc-form-action
+        button.zuc-btn-inline(type="submit")
+          strong
+            |APPLY
+
+  // Rewards & Promotios ---
+  .zuc-ec-summary
+    // Title
+    .zuc-ec-summary-title
+      |Purchase Summary
+

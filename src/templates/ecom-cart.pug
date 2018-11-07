@@ -2,9 +2,9 @@ extends _layout
 
 block content
   .zuc-ec-cart-wrapper
-    //- Head Module
-    include ../ecom/modules/cart/cart-head.pug
-    
+    //- Head Module-- Mixin
+    +ecom-header('Shopping Cart')
+
     //- Basket Module
     include ../ecom/modules/cart/cart-basket.pug
 
