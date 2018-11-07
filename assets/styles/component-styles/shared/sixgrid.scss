@@ -40,6 +40,11 @@ section.zuc-sixgrid-container {
     display: flex;
     flex-wrap: wrap;
   }
+
+  h2 {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+  }
 }
 
 .zuc-sixgrid-item {
