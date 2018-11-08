@@ -12,7 +12,7 @@
   // Make sure we are live and ready..
   $(document).ready(function() {
     // Normalize Container
-    normalizeSlider();
+    
     // Set Vars
     slides = $('[data-slide]');
     maxSlides = slides.length;
@@ -25,7 +25,7 @@
         currentSlide = $(slides[i]).attr('data-slide');
       }
     }
-
+    normalizeSlider();
     // Event listener on bottom dots
     $('[data-move-slide]').click(function(){
       // If user clicks... stop the interval
@@ -64,7 +64,7 @@
 
   // Fix height of container based on contents
   function normalizeSlider() {
-    containerHeight = $('[data-slide]')[0].getBoundingClientRect().height;
+    containerHeight = $('[data-slide]')[currentSlide-1].getBoundingClientRect().height;
     $('[data-slide-container]').css({
       'height': containerHeight + 'px'
     });
@@ -88,5 +88,6 @@
 
     // Set current Slide to reflect change.
     currentSlide = setSlide;
+    normalizeSlider();
   }
 })();

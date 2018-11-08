@@ -36,16 +36,16 @@
 .zuc-ec-home-header-card-container{
   position: relative;
   z-index: 2;
-  overflow: hidden;
 }
 
 .zuc-ec-home-header-card {
+  display: flex;
   flex-direction: column;
   background: $color-pure-white;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
   margin: 5vw;
   padding: 5vw;
-  width: 100%;
+  width: 90%;
   position: absolute;
   opacity: 0;
   transition: all .5s;
@@ -56,16 +56,18 @@
     padding: vw-tablet(50) vw-tablet(50) vw-tablet(62);
     flex-direction: column;
     justify-content: center;
+    width: 85%;
   }
 
   @media #{$laptop-up} {
     margin: vw-desktop(100) 16vw vw-desktop(25);
     padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
     flex-direction: row;
+    width: 70%;
   }
 
   &.--active-slide {
-    position: absolute;
+    position: relative;
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
@@ -132,7 +134,7 @@
     @media #{$laptop-up} {
       position: absolute;
       width: 33%;
-      right: 21%;
+      right: 10%;
       top: 27%;
     }
   }
@@ -141,6 +143,11 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.zuc-ec-home-slider-container
+{
+  padding-top: 0px;
 }
 
 .zuc-ec-home-slider-selector {
