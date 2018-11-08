@@ -6,22 +6,23 @@
       _active: true
     },
     {
-      _src: '',
-      _alt: '',
+      _src: '../../assets/images/service-plans/appliance-washer.png',
+      _alt: 'todo2',
       _active: false
     },
     {
-      _src: '',
-      _alt: '',
+      _src: '../../assets/images/service-plans/appliances-fridge.png',
+      _alt: 'todo3',
       _active: false
     },
     {
-      _src: '',
-      _alt: '',
+      _src: '../../assets/images/service-plans/home-systems-ac.png',
+      _alt: 'todo4',
       _active: false
     }
   ]
 
+- var i = 0;
 // Product Showcase Module
 .zuc-ec-det-showcase
   // Small image container
@@ -29,12 +30,12 @@
     each image in images.length ? images : ['No images to display']
       // Small thumbnail images [ Iterated ]
       if image._active
-        .zuc-ec-showcase-small-image.--active
-          img(src=image._src, alt=image._alt)
+        .zuc-ec-showcase-small-image.--active-image(showcase-small)
+          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' showcase-image)
       else
-        .zuc-ec-showcase-small-image
-          img(src=image._src, alt=image._alt)
+        .zuc-ec-showcase-small-image(showcase-small)
+          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' showcase-image)
   // Large image container
   .zuc-ec-showcase-right
     .zuc-ec-showcase-big-image
-      img(src=images[0]._src alt=images[0]._alt)
+      img(src=images[0]._src alt=images[0]._alt showcase-big)
