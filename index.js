@@ -37,6 +37,7 @@ const srvHeaderFurn = require ( './assets/images/service-plans/father-son-laughi
 const srvHeaderSys = require ( './assets/images/service-plans/front-house-blue-header.png' );
 const slbHeader = require ( './assets/images/smarter-living/interior-house-header.png');
 const BlogModule = require ( './assets/images/shared/baby-bath.png');
+const ecomSliderImg = require ( './assets/images/ecom/header-whole-home-plan.png');
 const SLFeaturedImage = require ( './assets/images/shared/couple-on-computer.png');
 const SLBFeaturedImage = require ( './assets/images/shared/woman-online-purchase.png');
 

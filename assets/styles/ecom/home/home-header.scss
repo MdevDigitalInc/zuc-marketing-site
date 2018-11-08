@@ -11,15 +11,15 @@
 
   @media #{$laptop-up} {
     padding: 0 0 vw-desktop(80);
-  }  
+  }
 }
 
 .zuc-ec-home-header-bg {
   position: absolute;
   z-index: -5;
-  width: 100%; // todo
-  top: 0; // todo
-  left: -2px; // todo
+  width: 100%;
+  top: 0;
+  left: -2px;
 
   @media #{$tablet-up} {
     width: 200%;
@@ -30,7 +30,7 @@
   @media #{$laptop-up} {
     width: 102%;
     left: -2px;
-  }  
+  }
 }
 
 .zuc-ec-home-header-card {
@@ -38,17 +38,20 @@
   flex-direction: column;
   background: $color-pure-white;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
-  margin: 5vw; // todo
-  padding: 5vw; // todo
+  margin: 5vw;
+  padding: 5vw;
 
   @media #{$tablet-only} {
     margin: vw-tablet(80) 8.5vw vw-tablet(25);
-    padding: vw-tablet(50) 0 vw-tablet(50) vw-tablet(62);
+    padding: vw-tablet(50) vw-tablet(50) vw-tablet(62);
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media #{$laptop-up} {
     margin: vw-desktop(100) 16vw vw-desktop(25);
     padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
+    flex-direction: row;
   }
 
   &:nth-child( n+2 ) {
@@ -59,8 +62,8 @@
     color: $color-zuc-darkindigo;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 0 vw-phone(12); // todo
-    font-size: vw-phone(16); // todo
+    margin: 0 0 vw-phone(12);
+    font-size: vw-phone(16);
 
     @media #{$tablet-only} {
       margin: 0 0 vw-tablet(18);
@@ -77,8 +80,8 @@
     color: $color-zuc-indigo;
     font-weight: 300;
     font-family: $main-font-serif;
-    font-size: vw-phone(28); // todo
-    margin: 0 0 vw-phone(20); // todo
+    font-size: vw-phone(28);
+    margin: 0 0 vw-phone(20);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(80);
@@ -94,8 +97,8 @@
   .zuc-ec-home-header-blurb {
     color: $color-zuc-darkindigo;
     font-weight: 100;
-    margin: 0 0 vw-phone(30); // todo
-    font-size: vw-phone(12); // todo
+    margin: 0 0 vw-phone(30);
+    font-size: vw-phone(12);
 
     @media #{$tablet-only} {
       margin: 0 0 vw-tablet(47);
@@ -107,5 +110,39 @@
       margin: 0 0 vw-desktop(47);
       font-size: vw-desktop(20);
     }
+  }
+
+  img {
+    position: relative;
+    z-index: 0;
+    max-height: 50vw;
+
+    @media #{$laptop-up} {
+      position: absolute;
+      width: 33%;
+      right: 21%;
+      top: 27%;
+    }
+  }
+
+  .zuc-ec-home-header-card--img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.zuc-ec-home-slider-selector {
+  border: 3px solid $color-zuc-concrete;
+  width: 20vw;
+  margin-top: 1.25vw;
+  margin-bottom: 1vw;
+  cursor: pointer;
+
+  @media #{$phone-only} {
+    border-width: 1px;
+  }
+
+  &.--active {
+    border-color: $color-zuc-indigo;
   }
 }
