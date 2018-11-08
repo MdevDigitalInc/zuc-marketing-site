@@ -252,11 +252,11 @@ textarea {
     bottom: 0;
     margin: auto;
     border-style: solid;
-    border-width: 10px 8px 0 8px; // <triangle height> <width left> 0 <width right>
+    border-width: 9px 7px 0 7px; // <triangle height> <width left> 0 <width right>
     border-color: $color-zuc-darkindigo transparent transparent transparent;
     pointer-events: none;
   }
-  
+
   // This is the small block of background behind the dropdown arrow, NOTE: update the position if you change the border thickness!!!
   &:before {
     width: 44px;
