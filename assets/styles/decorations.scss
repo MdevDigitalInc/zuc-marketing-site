@@ -44,6 +44,12 @@
   }
 }
 
+// Green Waves
+.d-green-waves {
+  display: inline;
+  width: 100px;
+  margin-bottom: 4vh;
+}
 /*
 
   Bar graphic used in many places on the site!
@@ -113,5 +119,21 @@
 
   &.--zb-concrete {
     border-color: $color-zuc-concrete;
+  }
+}
+
+// Featured Grey Slash
+.d-grey-slash {
+  position: relative;
+
+  .--image {
+    display: none;
+
+    @media #{$laptop-up} {
+      display: inline;
+      position: absolute;
+      right: -40%;
+      transform: scale(.4);
+    }
   }
 }
