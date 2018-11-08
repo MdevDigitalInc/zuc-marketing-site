@@ -34,7 +34,6 @@
   .zuc-ec-home-header-card-container
     each card in cards.length ? cards : ['No cards to display']
       .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
-        //- todo rm txt class if not used
         .txt.flex.flex-column
           span.zuc-ec-home-header-subtitle
             |!{card.subtitle}
@@ -45,14 +44,11 @@
           .zuc-btn-box
             a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
               |!{card.buttontext}
-        .gfx
+        .zuc-ec-home-header-card--img
           img(src=card._src)
   // Slideshow Controls
   .flex.flex-hor-center
     a.zuc-ec-home-slider-selector.--active(data-move-slide="1")
     a.zuc-ec-home-slider-selector(data-move-slide="2")
     a.zuc-ec-home-slider-selector(data-move-slide="3")
-  // .flex.flex-hor-center
-  //   .d-zucbar.--tmp.--zb-indigo
-  //   .d-zucbar.--tmp.--zb-concrete
-  //   .d-zucbar.--tmp.--zb-concrete
+
