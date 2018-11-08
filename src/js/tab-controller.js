@@ -1,7 +1,4 @@
-
-
 var currentTab = 0;
-
 
 (function(){
 
@@ -30,7 +27,7 @@ function changeTab(input) {
   // Remove any active text classes.
   $('.--active-text').removeClass('--active-text');
   // Select the correct tab based on the input.
-  desiredTarget = $('[detail-text]')[input];
+  desiredTarget = $('[data-detail-text]')[input];
   // Get height of the selected tabs text.
   newHeight = $(desiredTarget).outerHeight() * 1.1;
   // Set container to that height for absolute elements.
@@ -41,7 +38,7 @@ function changeTab(input) {
   // Remove any active tab classes...
   $('.--active').removeClass('--active');
   // Select the correct tab based on the input, and add the active class
-  $($('[detail-tab]')[input]).addClass('--active');
+  $($('[data-detail-tab]')[input]).addClass('--active');
   
   currentTab = input;
 }
