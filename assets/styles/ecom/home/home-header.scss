@@ -125,20 +125,22 @@
     }
   }
 
-  // todo - mv these classes + txt class
-  .gfx {
+  .zuc-ec-home-header-card--img {
     display: flex;
     justify-content: center;
   }
 }
 
 .zuc-ec-home-slider-selector {
-  border: 3px solid black;
+  border: 3px solid $color-zuc-concrete;
   width: 20vw;
   margin-top: 1.25vw;
   margin-bottom: 1vw;
-  border-color: $color-zuc-concrete;
   cursor: pointer;
+
+  @media #{$phone-only} {
+    border-width: 1px;
+  }
 
   &.--active {
     border-color: $color-zuc-indigo;
