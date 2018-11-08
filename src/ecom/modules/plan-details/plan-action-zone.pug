@@ -1,3 +1,46 @@
+-
+  var applianceCoverages = [
+    'Refrigerator with built-in ice and water dispensers',
+    'Range/oven/cooktop',
+    'Dishwasher',
+    'Clothes washer',
+    'Clothes dryer',
+    'Freezer',
+    'Icemaker (free-standing)',
+    'Microwave cven (built-in)',
+    'Trash compactors',
+    'Food centre (built-in)'
+  ]
+
+  var furnitureCoverages = [
+    'Fabric upholstery',
+    'Occasional or oversized chair',
+    'Loveseat',
+    'Sofa (fabric, leather, synthetic)',
+    'Ottoman or futon',
+    'Dining chairs',
+    'Reclining chair (mechanical)',
+    'Mattress or foundation',
+    'Motion chair (electrical)',
+    'Sectional',
+    'Dining room',
+    'Bedroom suite'
+  ]
+
+  var homeSysCoverages= [
+    'Air conditioning with ductwork',
+    'Heating/furnace with ductwork',
+    'Electrical',
+    'Doorbells',
+    'Wired smoke detectors',
+    'Ceiling and exhaust fans',
+    'Plumbing including stoppages',
+    'Water heaters',
+    'Garbage disposals',
+    'Instant hot/cold dispensers',
+    'Central vacuums'
+  ]
+
 //- TODO: Make this pull in all info via JS since it all changes based on the action-zone step context - AW
 .zuc-ec-plan-action-zone-container
   img.zuc-ec-action-zone-bg-img(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
@@ -23,26 +66,14 @@
       .zuc-ec-action-zone-info-col
         // Action Zone Info Box Image
         .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/smarter-products/hero-zu-prodcts.png', alt='todo')
+          img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
         // Action Zone Info Box
         .zuc-ec-action-zone-info-box
           h4.zuc-ec-action-zone-info-title
             |Appliances Coverage:
           ul.zuc-ec-action-zone-info-list
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
+            each val in applianceCoverages
+              li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           span
@@ -51,22 +82,14 @@
       .zuc-ec-action-zone-info-col
         // Action Zone Info Box Image
         .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/smarter-products/hero-zu-prodcts.png', alt='todo')
+          img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
         // Action Zone Info Box
         .zuc-ec-action-zone-info-box
           h4.zuc-ec-action-zone-info-title
             |Furniture Coverage:
           ul.zuc-ec-action-zone-info-list
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
+            each val in furnitureCoverages
+              li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           span
@@ -75,22 +98,14 @@
       .zuc-ec-action-zone-info-col
         // Action Zone Info Box Image
         .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/smarter-products/hero-zu-prodcts.png', alt='todo')
+          img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
         // Action Zone Info Box
         .zuc-ec-action-zone-info-box
           h4.zuc-ec-action-zone-info-title
             |Home Systems Coverage:
           ul.zuc-ec-action-zone-info-list
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
-            li
-              |lorem
+            each val in homeSysCoverages
+              li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           span
