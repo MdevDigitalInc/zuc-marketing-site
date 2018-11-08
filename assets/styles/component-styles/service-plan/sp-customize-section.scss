@@ -249,10 +249,6 @@ section.zuc-custom-plan {
     }
   }
 
-  &.--ecomplan {
-    justify-content: flex-start;
-  }
-
   .photo {
     width: 100%;
     max-width: ( 230 / 3.2 ) * 1vw;
@@ -274,18 +270,6 @@ section.zuc-custom-plan {
     }
     @media #{$laptop-up} {
       max-width: ( 380 / 19.2 ) * 1vw;
-    }
-  }
-
-  .ecomplan-photo {
-    width: 100%;
-    max-width: ( 230 / 3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      max-width: ( 200 / 7.68 ) * 1vw;
-    }
-    @media #{$laptop-up} {
-      max-width: ( 300 / 19.2 ) * 1vw;
     }
   }
 
