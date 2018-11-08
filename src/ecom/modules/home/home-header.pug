@@ -5,6 +5,7 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
+      _data_slide: '1',
       _src: '../../assets/images/ecom/header-whole-home-plan.png',
       _alt: 'todo'
     },
@@ -13,6 +14,7 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
+      _data_slide: '2',
       _src: 'https://via.placeholder.com/900x700',
       _alt: 'todo'
     },
@@ -21,6 +23,7 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
+      _data_slide: '3',
       _src: 'https://via.placeholder.com/900x700',
       _alt: 'todo'
     }
@@ -30,7 +33,8 @@
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   .zuc-ec-home-header-card-container
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-home-header-card.flex
+      .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
+        //- todo rm txt class if not used
         .txt.flex.flex-column
           span.zuc-ec-home-header-subtitle
             |!{card.subtitle}
@@ -43,10 +47,11 @@
               |!{card.buttontext}
         .gfx
           img(src=card._src)
+  // Slideshow Controls
   .flex.flex-hor-center
-    a.zuc-ec-home-slider-selector.--active
-    a.zuc-ec-home-slider-selector
-    a.zuc-ec-home-slider-selector
+    a.zuc-ec-home-slider-selector.--active(data-move-slide="1")
+    a.zuc-ec-home-slider-selector(data-move-slide="2")
+    a.zuc-ec-home-slider-selector(data-move-slide="3")
   // .flex.flex-hor-center
   //   .d-zucbar.--tmp.--zb-indigo
   //   .d-zucbar.--tmp.--zb-concrete
