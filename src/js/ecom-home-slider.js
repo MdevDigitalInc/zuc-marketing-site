@@ -1,3 +1,3 @@
 (function(){
-  console.log('Ecom home slider');
+  // console.log('Ecom home slider');
 })();
