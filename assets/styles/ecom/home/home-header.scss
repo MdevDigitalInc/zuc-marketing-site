@@ -17,9 +17,9 @@
 .zuc-ec-home-header-bg {
   position: absolute;
   z-index: -5;
-  width: 100%; // todo
-  top: 0; // todo
-  left: -2px; // todo
+  width: 100%;
+  top: 0;
+  left: -2px;
 
   @media #{$tablet-up} {
     width: 200%;
@@ -38,8 +38,8 @@
   flex-direction: column;
   background: $color-pure-white;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
-  margin: 5vw; // todo
-  padding: 5vw; // todo
+  margin: 5vw;
+  padding: 5vw;
 
   @media #{$tablet-only} {
     margin: vw-tablet(80) 8.5vw vw-tablet(25);
@@ -62,8 +62,8 @@
     color: $color-zuc-darkindigo;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 0 vw-phone(12); // todo
-    font-size: vw-phone(16); // todo
+    margin: 0 0 vw-phone(12);
+    font-size: vw-phone(16);
 
     @media #{$tablet-only} {
       margin: 0 0 vw-tablet(18);
@@ -80,8 +80,8 @@
     color: $color-zuc-indigo;
     font-weight: 300;
     font-family: $main-font-serif;
-    font-size: vw-phone(28); // todo
-    margin: 0 0 vw-phone(20); // todo
+    font-size: vw-phone(28);
+    margin: 0 0 vw-phone(20);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(80);
@@ -97,8 +97,8 @@
   .zuc-ec-home-header-blurb {
     color: $color-zuc-darkindigo;
     font-weight: 100;
-    margin: 0 0 vw-phone(30); // todo
-    font-size: vw-phone(12); // todo
+    margin: 0 0 vw-phone(30);
+    font-size: vw-phone(12);
 
     @media #{$tablet-only} {
       margin: 0 0 vw-tablet(47);
