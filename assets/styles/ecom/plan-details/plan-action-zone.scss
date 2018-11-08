@@ -77,11 +77,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     @media #{$tablet-only} {
       font-size: vw-tablet(20);
     }
-  
+
     @media #{$laptop-only} {
       font-size: vw-laptop(20);
     }
-  
+
     @media #{$desktop-up} {
       font-size: vw-desktop(20);
     }
@@ -95,11 +95,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     @media #{$tablet-only} {
       font-size: vw-tablet(47);
     }
-  
+
     @media #{$laptop-only} {
       font-size: vw-laptop(47);
     }
-  
+
     @media #{$desktop-up} {
       font-size: vw-desktop(47);
     }
@@ -113,11 +113,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     @media #{$tablet-only} {
       font-size: vw-tablet(18);
     }
-  
+
     @media #{$laptop-only} {
       font-size: vw-laptop(18);
     }
-  
+
     @media #{$desktop-up} {
       font-size: vw-desktop(18);
     }
@@ -251,7 +251,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
   @media #{$desktop-up} {
     margin: vw-desktop(10) 0 0 $zecac-info-padding-desktop;
   }
-  
+
   .zuc-ec-action-zone-info-title {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
@@ -260,11 +260,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     @media #{$tablet-only} {
       font-size: vw-tablet(23.5);
     }
-  
+
     @media #{$laptop-only} {
       font-size: vw-laptop(26);
     }
-  
+
     @media #{$desktop-up} {
       font-size: vw-desktop(26);
     }
@@ -276,11 +276,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     @media #{$tablet-only} {
       font-size: vw-tablet(14);
     }
-  
+
     @media #{$laptop-only} {
       font-size: vw-laptop(14);
     }
-  
+
     @media #{$desktop-up} {
       font-size: vw-desktop(14);
     }
@@ -290,19 +290,38 @@ $zecac-info-padding-desktop: vw-desktop(30);
 .zuc-ec-action-zone-bumper-box {
   width: 100%;
   margin: 0 vw-phone(15);
+  font-family: $main-font-serif;
+  font-weight: 300;
+  color: $color-zuc-indigo;
+  // letter-spacing: vw-desktop(2);
+  display: flex;
+  flex-direction: column;
 
   @media #{$tablet-up} {
     width: 30%;
     margin: 0;
   }
-
   @media #{$laptop-up} {
     width: 100%;
     margin: 0 $zecac-info-padding-laptop;
   }
-
   @media #{$desktop-up} {
     margin: 0 $zecac-info-padding-desktop;
+  }
+
+  .sign, .dollar {
+    font-size: vw-desktop(50);
+  }
+
+  .cents {
+    align-self: flex-start;
+  }
+  .month {
+    align-self: flex-end;
+  }
+  .zuc-ec-action-zone-taxes {
+    padding-top: vw-desktop(12);
+    color: $color-zuc-darkindigo;
   }
 }
 
@@ -341,5 +360,5 @@ $zecac-info-padding-desktop: vw-desktop(30);
     width: 102%;
     top: -50%;
     left: -2px;
-  } 
+  }
 }
