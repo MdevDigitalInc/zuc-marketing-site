@@ -1,5 +1,3 @@
-
-
 function changeMainImage(input) {
     
     $('.--active-image').removeClass('--active-image');
