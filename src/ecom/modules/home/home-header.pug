@@ -10,7 +10,7 @@
       _alt: 'todo'
     },
     {
-      title: 'Whole Home Plan',
+      title: 'Whole Home Plan2',
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
@@ -19,7 +19,7 @@
       _alt: 'todo'
     },
     {
-      title: 'Whole Home Plan',
+      title: 'Whole Home Plan3',
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
@@ -31,7 +31,7 @@
 
 .zuc-ec-home-header
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
-  .zuc-ec-home-header-card-container
+  .zuc-ec-home-header-card-container(data-slide-container)
     each card in cards.length ? cards : ['No cards to display']
       .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
         .txt.flex.flex-column
