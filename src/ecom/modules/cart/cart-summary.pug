@@ -2,19 +2,19 @@
   var summaryValues = [
     {
       type : 'Product Total',
-      value : 372.94
+      value : '$372.94'
     },
     {
       type : 'Whole Home Bundle Discount',
-      value : -50.00
+      value : '$-50.00'
     },
     {
       type : 'Monthly Service Plan Fee',
-      value : 69.99
+      value : '$69.99'
     },
     {
       type : 'Rewards Earned',
-      value : 700
+      value : '700'
     }
   ]
 
@@ -55,7 +55,7 @@
           span
             |#{value.type}
           span
-            |$#{value.value}
+            |#{value.value}
 
       // Subtotal row
       .zuc-report-row.flex.flex-hor-between.--total
