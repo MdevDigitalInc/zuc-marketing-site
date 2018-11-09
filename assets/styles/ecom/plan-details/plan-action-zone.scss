@@ -130,7 +130,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
 .zuc-ec-action-zone-control-box-desktop {
   background: $color-zuc-platinum; // Note: it's not always this colour; reference for when it is!
   display: none;
-  margin-top: vw-laptop(45);
+  margin-top: vw-laptop(22);
   padding: vw-laptop(12);
 
   @media #{$laptop-up} {
@@ -150,9 +150,16 @@ $zecac-info-padding-desktop: vw-desktop(30);
   }
 
   .bill-total {
-    margin-top: vw-laptop(40);
+    margin: vw-laptop(40) 0 vw-laptop(60);
     border-top: 2px solid $color-zuc-concrete;
-    font-size: vw-laptop(22);
+    font-size: vw-laptop(20);
+    text-transform: uppercase;
+  }
+
+  .bill-fine-print {
+    font-size: vw-laptop(14);
+    align-self: flex-end;
+    text-align: right;
   }
 }
 
