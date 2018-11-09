@@ -147,6 +147,10 @@ $zecac-info-padding-desktop: vw-desktop(30);
     flex-direction: row;
     justify-content: space-between;
     padding: vw-laptop(12) 0;
+
+    .val {
+      font-weight: 700;
+    }
   }
 
   .bill-total {
@@ -396,7 +400,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
   background: $color-zuc-mint;
   padding: 1.45vw 2.21vw;
   // todo: temporary hardcode value.
-  margin: 40px 0;
+  margin: 36px 0;
 }
 
 .zuc-ec-action-zone-bg-img {
