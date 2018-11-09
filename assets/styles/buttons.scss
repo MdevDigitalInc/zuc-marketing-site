@@ -116,3 +116,18 @@
     padding: 1vw 3vw;
   }
 }
+
+// Inline Button
+.zuc-btn-inline {
+  width: auto;
+  -webkit-appearance: none;
+  background: linear-gradient(88deg, $color-zuc-indigo 1%, $color-zuc-indigo 4%, $color-zuc-lilac 97%);
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+  color: $white;
+  font-weight: 700;
+  font-size: .71vw;
+  letter-spacing: .4px;
+  border-radius: 0 4px 4px 0;
+}

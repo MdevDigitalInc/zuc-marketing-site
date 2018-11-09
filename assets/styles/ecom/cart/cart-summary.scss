@@ -1,8 +1,39 @@
+// Summary Sidebar Parent -- Cart Page
 .zuc-ec-cart-summaries {
-  display: flex;
   width: 100%;
 
   @media #{$laptop-up} {
+    padding-left: 1.56vw;
     width: 30%;
   }
 }
+
+// Summary Block - Global
+.zuc-ec-summary {
+  width: 100%;
+  padding: vw-desktop(30) vw-desktop(20);
+  background: $color-zuc-platinum;
+  margin-bottom: vw-desktop(25);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // Override Form Styles
+  .zuc-form-promo {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    strong {
+      font-size: vw-desktop(18);
+      font-weight: 700;
+      color: $color-zuc-darkindigo;
+    }
+
+    input {
+      margin: 0;
+    }
+  }
+}
+

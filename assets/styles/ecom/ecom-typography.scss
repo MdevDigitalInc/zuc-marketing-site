@@ -28,3 +28,16 @@
     border: 1px solid $color-zuc-concrete;
   }
 }
+
+// Summary Title - Global
+.zuc-ec-summary-title {
+  width: 100%;
+  // Yes, I am using PX because I want it to stay the same
+  padding-bottom: 10px;
+  margin-bottom: vw-desktop(30);
+  border-bottom: 2px solid $color-zuc-concrete;
+  text-transform: uppercase;
+  font-size: vw-desktop(18);
+  font-weight: 700;
+  color: $color-zuc-darkindigo;
+}
