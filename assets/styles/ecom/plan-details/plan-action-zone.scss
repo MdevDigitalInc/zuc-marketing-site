@@ -266,10 +266,10 @@ $zecac-info-padding-desktop: vw-desktop(30);
     margin: 0 0 0 vw-tablet(30);
   }
   @media #{$laptop-only} {
-    margin: vw-laptop(10) 0 vw-laptop(110) $zecac-info-padding-laptop;
+    margin: vw-laptop(10) 0 vw-laptop(180) $zecac-info-padding-laptop;
   }
   @media #{$desktop-up} {
-    margin: vw-desktop(10) 0 vw-desktop(110) $zecac-info-padding-desktop;
+    margin: vw-desktop(10) 0 vw-desktop(180) $zecac-info-padding-desktop;
   }
 
   .zuc-ec-action-zone-info-title {
@@ -313,6 +313,8 @@ $zecac-info-padding-desktop: vw-desktop(30);
   // letter-spacing: vw-desktop(2);
   display: flex;
   flex-direction: column;
+  // tmp
+  // margin-top: 4vw;
 
   @media #{$tablet-up} {
     width: 30%;
@@ -328,6 +330,10 @@ $zecac-info-padding-desktop: vw-desktop(30);
     margin: 0 $zecac-info-padding-desktop;
   }
 
+  .zuc-ec-action-zone-price-btn {
+    padding: vw-desktop(20) 0;
+  }
+
   .zuc-ec-action-zone-taxes {
     padding-top: vw-desktop(12);
     color: $color-zuc-darkindigo;
@@ -339,6 +345,10 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   .sign, .dollar {
     font-size: vw-desktop(50);
+  }
+
+  .savings {
+    font-size: vw-desktop(38);
   }
 
   .cents {
