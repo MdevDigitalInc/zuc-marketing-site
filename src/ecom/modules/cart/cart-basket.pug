@@ -1,2 +1,146 @@
+-
+  var cartItems = [
+    {
+      name: 'PureCare Microfibre Sheets',
+      image: 'https://via.placeholder.com/500x500',
+      alt: 'TODO',
+      regPrice: 169.99,
+      memPrice: false,
+      sku: 'xxxxxxxxxxxx',
+      size: 'Queen',
+      color: 'Dove Grey'
+    },
+    {
+      name: 'OxyTough Commercial Stain Remover',
+      image: 'https://via.placeholder.com/500x500',
+      alt: 'TODO',
+      regPrice: 49.99,
+      memPrice: 40.99,
+      sku: 'xxxxxxxxxxxx',
+      size: '4L',
+      color: false
+    },
+    {
+      name: 'Dishwashing Liquid, Apricot',
+      image: 'https://via.placeholder.com/500x500',
+      alt: 'TODO',
+      regPrice: 4.99,
+      memPrice: 3.99,
+      sku: 'xxxxxxxxxxxx',
+      size: '750ml',
+      color: false
+    },
+    {
+      name: 'Whole Home Plan',
+      image: 'https://via.placeholder.com/500x500',
+      alt: 'TODO',
+      regPrice: 169.99,
+      memPrice: false,
+      sku: 'xxxxxxxxxxxx',
+      size: false,
+      color: false
+    },
+  ]
+
 .zuc-ec-cart-basket
-  h1 TODO
+  // Top Cart Legend
+  .zuc-ec-cart-legend.flex.flex-hor-between.flex-vert-center
+    .zuc-ec-cart-iteminfo.u-uppercase
+      |Item
+    .zuc-ec-cart-qty.u-uppercase
+      |Qty
+    .zuc-ec-cart-total.u-uppercase
+      |Item Total
+
+  // Cart Items Container
+
+  .zuc-ec-cart-items
+    // Individual Item to Iterate
+    each item in cartItems.length ? cartItems : ['There are no items here']
+      .zuc-ec-cart-item.flex.flex-hor-between.flex-vert-start
+
+        // Item Basic Information ------------------------------------------
+        .zuc-ec-cart-iteminfo.flex.flex-hor-between.flex-vert-start
+          // Image
+          .zuc-cart-image
+            img(src=item.image alt=item.alt)
+
+          // Item Information ---------------
+          .zuc-cart-description
+            .zuc-item-name
+              |#{item.name}
+
+            // Item Properties & Skus
+            .zuc-item-props
+              // SKU
+              .zuc-prop
+                |Item#: #{item.sku}
+              //- If memeber price is active create strikethrough
+              - if ( item.memPrice )
+                .zuc-prop
+                  span
+                    |Price:
+                  span.u-strikethrough
+                    | $#{item.regPrice}
+                  span.u-bold
+                    | $#{item.memPrice}
+              //- If there is no member price
+              - else
+                .zuc-prop
+                  |Price: $#{item.regPrice}
+              //- If there is color info...
+              - if (item.color)
+                .zuc-prop
+                  |Colour: #{item.color}
+              //- If there is sizing info...
+              - if (item.size)
+                .zuc-prop
+                  |Size: #{item.size}
+              // Item Controls
+              .zuc-item-controls
+                a(href="#" title="TODO" data-cart-remove)
+                  |Remove
+                a(href="#" title="TODO" data-cart-edit)
+                  |Edit
+
+        // Item Quantity Controls ------------
+        .zuc-ec-cart-qty.flex.flex-hor-end.flex-vert-center
+          .zuc-ec-form-group.--qty
+            .zuc-select-container
+              label.u-screenreader(for="field-qty")
+                |Choose quantity
+              // - Tried to make iterator work.. but failed
+              select(required name="size")
+                option(selected value="1")
+                  |1
+                option(value="2")
+                  |2
+                option(value="3")
+                  |3
+                option(value="4")
+                  |4
+                option(value="5")
+                  |5
+                option(value="6")
+                  |6
+                option(value="7")
+                  |7
+                option(value="8")
+                  |8
+                option(value="9")
+                  |9
+                option(value="10")
+                  |10
+
+
+        // Item Total --------------------------
+        // - It's being left with placeholder content because the backend will do the math
+        .zuc-ec-cart-total.u-uppercase
+          |$XXX.XX
+
+  // Cart Checkout Controls --------------------------------
+  .zuc-cart-controls.flex.flex-hor-end.flex-vert-center
+    a.zu-ec-generic-link(href="#" title="TODO")
+      |Continue Shopping
+    a.zu-btn.zu-btn-secondary(href="#" title="TODO")
+      |Proceed to Checkout
