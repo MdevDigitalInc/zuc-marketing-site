@@ -34,9 +34,11 @@
       strong.zuc-promo-title
         |Enter Promo Code:
 
+      //- Container to keep the input & button aligned
       .flex.flex-vert-stretch.flex-nowrap
+        // Input Field for Promo Code
         input(type="text" name="promocode")
-
+        // Submission Button
         button.zuc-btn-inline(type="submit")
           |APPLY
 
@@ -63,24 +65,27 @@
         span
           |$#{subtotal}
 
-      // Action Button
-      .flex.flex-hor-end
-        a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
-          |PROCEED TO CHECKOUT
+    // Action Button
+    .flex.flex-hor-end
+      a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
+        |PROCEED TO CHECKOUT
 
-      // Taxes
-      .zuc-subscript-info
-        |#{taxesInfo}
+    // Taxes
+    .zuc-subscript-info.u-text-right
+      |#{taxesInfo}
 
   //Help & Assistance
-  .zuc-summaries-footer
+  .zuc-summaries-footer.u-text-center
+    //- Spaces HTML entity after the | are intentional and needed
     span.u-bold.u-uppercase
       |Need Help?
+    span
+      |&nbsp;We're here! See our&nbsp;
     a(href="#" title="TODO")
       |FAQ page
     span
-      | or visit our
+      |&nbsp;or visit our&nbsp;
     a(href="#" title="TODO")
       |Contact page
     span
-      | for more information
+      |&nbsp;for more information

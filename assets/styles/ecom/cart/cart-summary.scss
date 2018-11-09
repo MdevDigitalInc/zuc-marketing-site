@@ -1,5 +1,6 @@
 // Summary Sidebar Parent -- Cart Page
 .zuc-ec-cart-summaries {
+  color: $color-zuc-darkindigo;
   width: 100%;
 
   @media #{$laptop-up} {
@@ -18,22 +19,52 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  // Override Form Styles
-  .zuc-form-promo {
+// Summary Report Block - Aka Prices / Points
+.zuc-ec-summary-report {
+  width: 100%;
+  color: $color-zuc-darkindigo;
+  margin-bottom: vw-desktop(90);
+  font-size: vw-desktop(18);
+  font-weight: 500;
+
+  // Standard report rows
+  .zuc-report-row {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 10px;
+  }
 
-    strong {
-      font-size: vw-desktop(18);
-      font-weight: 700;
-      color: $color-zuc-darkindigo;
-    }
+  // Total row override
+  .--total {
+    font-weight: 700;
+    padding-top: 15px;
+    border-top: 2px solid $color-zuc-concrete;
+    margin-top: 60px;
+  }
+}
 
-    input {
-      margin: 0;
-    }
+//Subscript Information block
+.zuc-subscript-info {
+  width: 100%;
+  font-weight: 100;
+  line-height: 1.44;
+  padding-left: 20%;
+  margin-top: 30px;
+}
+
+
+//Summary Footer
+.zuc-summaries-footer {
+  width: 100%;
+  // Matches container padding
+  padding: 0 vw-desktop(20);
+  font-weight: 100;
+  line-height: 1.44;
+
+  a {
+    color: $color-zuc-indigo;
+    text-decoration: underline;
   }
 }
 
