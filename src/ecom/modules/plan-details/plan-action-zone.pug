@@ -50,10 +50,25 @@
     .zuc-ec-action-zone-left
       // Action Zone CTA Box
       .zuc-ec-action-zone-cta-box
-        span.zuc-ec-action-zone-cta-step
+        h4.zuc-ec-action-zone-cta-step
           |STEP 1
-        h2.zuc-ec-action-zone-cta-title
-          |Make it a combo:
+        // .zuc-title-flag
+        //   .--green
+        h1.zuc-ec-action-zone-cta-title
+          |Choose your base service plan:
+        .zuc-select-container
+          label.u-screenreader(for="service-plan")
+            h1.zuc-ec-action-zone-cta-title
+              |Make it a combo:
+          select(required name="service-plan")
+            option(value="" disabled selected id="service-plan")
+              |Choose your plan
+            option(value="Appliances Plan")
+              |Appliances Plan
+            option(value="Furniture Plan")
+              |Furniture Plan
+            option(value="Home Systems Coverage")
+              |Home Systems Coverage
         p.zuc-ec-action-zone-cta-blurb
           |Add a second plan to save up to $30/month:
       // Action Zone Control Box - Desktop
@@ -144,4 +159,4 @@
     // Action Zone Share Box
     .zuc-ec-action-zone-share-box
       span
-          |zuc-ec-action-zone-share-box
+        |zuc-ec-action-zone-share-box
