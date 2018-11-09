@@ -338,6 +338,13 @@ $zecac-info-padding-desktop: vw-desktop(30);
     padding-top: vw-desktop(12);
     color: $color-zuc-darkindigo;
   }
+
+  .zuc-ec-action-zone-add-on {
+    padding-top: vw-desktop(18);
+    font-family: $main-font;
+    color: $color-zuc-darkindigo;
+    font-weight: 600;
+  }
 }
 
 .zuc-ec-action-zone-price {
@@ -370,6 +377,26 @@ $zecac-info-padding-desktop: vw-desktop(30);
   width: 100%;
   background: #fa99c1;
   display: none; //- Hide for launch
+}
+
+.zuc-ec-action-protected-btn {
+  width: auto;
+  padding: .67vw 1.04vw;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .4s;
+  border-radius: 20vw;
+  position: relative;
+  vertical-align: middle;
+  font-size: .83vw;
+  font-family: $main-font;
+  color: $color-pure-white;
+  border: 2px solid $color-zuc-mint;
+  background: $color-zuc-mint;
+  padding: 1.45vw 2.21vw;
+  // todo: temporary hardcode value.
+  margin: 35px 0;
 }
 
 .zuc-ec-action-zone-bg-img {
