@@ -60,13 +60,13 @@
       .zuc-ec-cart-item.flex.flex-hor-between.flex-vert-start
 
         // Item Basic Information ------------------------------------------
-        .zuc-ec-cart-iteminfo.flex.flex-hor-between.flex-vert-start
+        .zuc-ec-cart-iteminfo.flex.flex-hor-start.flex-vert-center
           // Image
-          .zuc-cart-image
+          .zuc-item-image
             img(src=item.image alt=item.alt)
 
           // Item Information ---------------
-          .zuc-cart-description
+          .zuc-item-description
             .zuc-item-name
               |#{item.name}
 
@@ -140,7 +140,10 @@
 
   // Cart Checkout Controls --------------------------------
   .zuc-cart-controls.flex.flex-hor-end.flex-vert-center
-    a.zu-ec-generic-link(href="#" title="TODO")
+    a.zuc-ec-generic-link(href="#" title="TODO")
       |Continue Shopping
-    a.zu-btn.zu-btn-secondary(href="#" title="TODO")
+    a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
       |Proceed to Checkout
+
+  .zuc-cart-footer.u-text-right
+    |Shipping and taxes will be calculated  at checkout, where applicable.
