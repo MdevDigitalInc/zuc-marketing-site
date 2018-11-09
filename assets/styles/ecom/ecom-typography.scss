@@ -41,3 +41,20 @@
   font-weight: 700;
   color: $color-zuc-darkindigo;
 }
+
+// Generic link used on Ecom
+.zuc-ec-generic-link {
+  color: $color-zuc-indigo;
+  font-size: vw-desktop(14);
+  line-height: 1.86;
+  margin: 0 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-zuc-indigo;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: none;
+  }
+}

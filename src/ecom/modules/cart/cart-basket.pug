@@ -47,9 +47,9 @@
   .zuc-ec-cart-legend.flex.flex-hor-between.flex-vert-center
     .zuc-ec-cart-iteminfo.u-uppercase
       |Item
-    .zuc-ec-cart-qty.u-uppercase
+    .zuc-ec-cart-qty.flex-hor-center.u-uppercase
       |Qty
-    .zuc-ec-cart-total.u-uppercase
+    .zuc-ec-cart-total.u-uppercase.u-text-right
       |Item Total
 
   // Cart Items Container
@@ -79,23 +79,23 @@
               - if ( item.memPrice )
                 .zuc-prop
                   span
-                    |Price:
+                    |Price:&nbsp;
                   span.u-strikethrough
-                    | $#{item.regPrice}
+                    |$#{item.regPrice}
                   span.u-bold
-                    | $#{item.memPrice}
+                    |&nbsp;$#{item.memPrice}
               //- If there is no member price
               - else
                 .zuc-prop
-                  |Price: $#{item.regPrice}
+                  |Price:&nbsp;$#{item.regPrice}
               //- If there is color info...
               - if (item.color)
                 .zuc-prop
-                  |Colour: #{item.color}
+                  |Colour:&nbsp;#{item.color}
               //- If there is sizing info...
               - if (item.size)
                 .zuc-prop
-                  |Size: #{item.size}
+                  |Size:&nbsp;#{item.size}
               // Item Controls
               .zuc-item-controls
                 a(href="#" title="TODO" data-cart-remove)
@@ -104,45 +104,46 @@
                   |Edit
 
         // Item Quantity Controls ------------
-        .zuc-ec-cart-qty.flex.flex-hor-end.flex-vert-center
-          .zuc-ec-form-group.--qty
-            .zuc-select-container
-              label.u-screenreader(for="field-qty")
-                |Choose quantity
-              // - Tried to make iterator work.. but failed
-              select(required name="size")
-                option(selected value="1")
-                  |1
-                option(value="2")
-                  |2
-                option(value="3")
-                  |3
-                option(value="4")
-                  |4
-                option(value="5")
-                  |5
-                option(value="6")
-                  |6
-                option(value="7")
-                  |7
-                option(value="8")
-                  |8
-                option(value="9")
-                  |9
-                option(value="10")
-                  |10
+        .zuc-ec-cart-qty.flex.flex-hor-center.flex-vert-center
+          .zuc-select-container
+            label.u-screenreader(for="field-qty")
+              |Choose quantity
+            // - Tried to make iterator work.. but failed
+            select(required name="size")
+              option(selected value="1")
+                |1
+              option(value="2")
+                |2
+              option(value="3")
+                |3
+              option(value="4")
+                |4
+              option(value="5")
+                |5
+              option(value="6")
+                |6
+              option(value="7")
+                |7
+              option(value="8")
+                |8
+              option(value="9")
+                |9
+              option(value="10")
+                |10
+          // Remove Item
+          i.far.fa-trash-alt(data-cart-remove)
 
 
         // Item Total --------------------------
         // - It's being left with placeholder content because the backend will do the math
-        .zuc-ec-cart-total.u-uppercase
+        .zuc-ec-cart-total.u-uppercase.u-text-right
           |$XXX.XX
 
   // Cart Checkout Controls --------------------------------
   .zuc-cart-controls.flex.flex-hor-end.flex-vert-center
     a.zuc-ec-generic-link(href="#" title="TODO")
       |Continue Shopping
-    a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
+    a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
       |Proceed to Checkout
 
   .zuc-cart-footer.u-text-right

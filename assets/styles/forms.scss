@@ -261,9 +261,9 @@ textarea {
   &:before {
     width: 44px;
     position: absolute;
-    top: 1px;
-    right: 1px;
-    bottom: 1px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
     background: $form-bg-passive;
     content: '';
     pointer-events: none;
