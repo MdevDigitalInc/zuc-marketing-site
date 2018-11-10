@@ -10,12 +10,12 @@
 /* Base Button */
 .zuc-btn {
   width: auto;
-  padding: .67vw 1.04vw;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
   transition: all .4s;
+  padding: 15px 20px;
   // Magic number I know.. but won't render well otherwise
   border-radius: 400px;
   position: relative;
@@ -27,16 +27,12 @@
   }
 }
 
+// Mint / Nav Button
 .zuc-btn-primary {
   color: $color-zuc-mint;
   border: 2px solid $color-zuc-mint;
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
-
-  @media #{$portrait} {
-    font-size: 1vw;
-    padding: 1vw;
-  }
 
   &:hover,
   &:focus,
@@ -47,6 +43,7 @@
   }
 }
 
+// Review Button - Hollow Lilac Button
 .zuc-btn-hollow {
   border: 2px solid $color-zuc-lilac;
   background: transparent;
@@ -62,6 +59,7 @@
 }
 
 
+// Blue Gradient Button
 .zuc-btn-secondary {
   color: $white;
   border: none;
@@ -119,4 +117,5 @@
   font-size: 14px;
   letter-spacing: .4px;
   border-radius: 0 4px 4px 0;
+  pointer: cursor;
 }

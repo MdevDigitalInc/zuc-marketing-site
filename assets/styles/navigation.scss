@@ -30,6 +30,9 @@
   @media #{$phone-only} {
     padding: 5vw 4vw;
   }
+  @media #{$tablet-only} {
+    padding: 10px 8%;
+  }
 
   &:hover,
   &:active,
@@ -71,6 +74,10 @@
   // Space out button a bit on the left
   .zuc-btn {
     margin-right: 10px;
+
+    @media #{$portrait} {
+      padding: 10px;
+    }
   }
 
   // Cart Text & Icon
