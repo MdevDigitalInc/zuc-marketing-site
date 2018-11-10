@@ -55,17 +55,16 @@
   // Cart Items Container
 
   .zuc-ec-cart-items
-    // Individual Item to Iterate
+    // Individual Cart Item [ Iterated ] --------------------------------------------------------
     each item in cartItems.length ? cartItems : ['There are no items here']
       .zuc-ec-cart-item.flex.flex-hor-between.flex-vert-start
-
-        // Item Basic Information ------------------------------------------
+        // Item Basic Information -----------------------------------------
         .zuc-ec-cart-iteminfo.flex.flex-hor-start.flex-vert-center
           // Image
           .zuc-item-image
             img(src=item.image alt=item.alt)
 
-          // Item Information ---------------
+          // Item Information --------------------------------------------
           .zuc-item-description
             .zuc-item-name
               |#{item.name}
@@ -97,14 +96,42 @@
                 .zuc-prop
                   |Size:&nbsp;#{item.size}
               // Item Controls
+              .u-phone-only.u-bold
+                |QTY
+              .zuc-select-container.u-phone-only
+                label.u-screenreader(for="field-qty")
+                  |Choose quantity
+                // - Tried to make iterator work.. but failed
+                select(required name="size")
+                  option(selected value="1")
+                    |1
+                  option(value="2")
+                    |2
+                  option(value="3")
+                    |3
+                  option(value="4")
+                    |4
+                  option(value="5")
+                    |5
+                  option(value="6")
+                    |6
+                  option(value="7")
+                    |7
+                  option(value="8")
+                    |8
+                  option(value="9")
+                    |9
+                  option(value="10")
+                    |10
+
               .zuc-item-controls
                 a(href="#" title="TODO" data-cart-remove)
                   |Remove
                 a(href="#" title="TODO" data-cart-edit)
                   |Edit
 
-        // Item Quantity Controls ------------
-        .zuc-ec-cart-qty.flex.flex-hor-center.flex-vert-center
+        // Item Quantity Controls -------------------------------------------
+        .zuc-ec-cart-qty.flex.flex-hor-center.flex-vert-center.u-hidden-phone
           .zuc-select-container
             label.u-screenreader(for="field-qty")
               |Choose quantity
@@ -134,17 +161,17 @@
           i.far.fa-trash-alt(data-cart-remove)
 
 
-        // Item Total --------------------------
+        // Item Total ------------------------------------------------------
         // - It's being left with placeholder content because the backend will do the math
         .zuc-ec-cart-total.u-uppercase.u-text-right
           |$XXX.XX
 
-  // Cart Checkout Controls --------------------------------
-  .zuc-cart-controls.flex.flex-hor-end.flex-vert-center
+  // Cart Checkout Controls -----------------------------------------------------------------
+  .zuc-cart-controls.flex.flex-vert-center
     a.zuc-ec-generic-link(href="#" title="TODO")
       |Continue Shopping
     a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
       |Proceed to Checkout
 
-  .zuc-cart-footer.u-text-right
+  .zuc-cart-footer.--zuc-aux-size
     |Shipping and taxes will be calculated  at checkout, where applicable.

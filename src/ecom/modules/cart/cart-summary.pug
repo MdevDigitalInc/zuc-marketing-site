@@ -23,7 +23,7 @@
 -
   var taxesInfo = 'Shipping and taxes will be calculated at checkout, where applicable.'
 .zuc-ec-cart-summaries
-  // Rewards & Promotios ---
+  // Rewards & Promotios --------------------------------------------------------------
   .zuc-ec-summary
     // Title
     .zuc-ec-summary-title
@@ -42,7 +42,7 @@
         button.zuc-btn-inline(type="submit")
           |APPLY
 
-  // Rewards & Promotios ---
+  // Purchase Summarhy -----------------------------------------------------------------
   .zuc-ec-summary
     // Title
     .zuc-ec-summary-title
@@ -65,17 +65,19 @@
         span
           |$#{subtotal}
 
-    // Action Button
-    .flex.flex-hor-end
-      a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
-        |PROCEED TO CHECKOUT
+    // Cart Checkout Controls --------------------------------
+    .zuc-cart-controls.flex.flex-vert-center
+      a.zuc-ec-generic-link.u-phone-only(href="#" title="TODO")
+        |Continue Shopping
+      a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
+        |Proceed to Checkout
 
     // Taxes
-    .zuc-subscript-info.u-text-right
+    .zuc-subscript-info.u-text-right.--zuc-aux-size
       |#{taxesInfo}
 
-  //Help & Assistance
-  .zuc-summaries-footer.u-text-center
+  //Help & Assistance -------------------------------------------------------------------
+  .zuc-summaries-footer.u-text-center.--zuc-aux-size
     //- Spaces HTML entity after the | are intentional and needed
     span.u-bold.u-uppercase
       |Need Help?

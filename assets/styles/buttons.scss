@@ -16,20 +16,11 @@
   font-weight: 700;
   cursor: pointer;
   transition: all .4s;
-  border-radius: 20vw;
+  // Magic number I know.. but won't render well otherwise
+  border-radius: 400px;
   position: relative;
   vertical-align: middle;
-  font-size: .83vw;
-
-  @media #{$portrait} {
-    font-size: 1.5vw;
-    padding: 2vw 2.2vw;
-  }
-  @media #{$phone-only} {
-    padding: 4vw 4.3vw;
-    letter-spacing: 1px;
-    font-size: 3vw;
-  }
+  font-size: 14px;
 
   i {
     margin-left: 10px;
@@ -75,18 +66,13 @@
   color: $white;
   border: none;
   font-weight: 700;
-  font-size: .71vw;
-  padding: 1.45vw 2.21vw;
   box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, .2);
+  padding: 25px 40px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0);
   background: linear-gradient(90deg, #434da0 34%, #a2acff);
   background-position: center;
   background-size: cover;
 
-  @media #{$portrait} {
-    font-size: 2.4vw;
-    padding: 3vw 3.3vw;
-  }
 
   &:hover,
   &:focus,
@@ -130,7 +116,7 @@
   border: none;
   color: $white;
   font-weight: 700;
-  font-size: .71vw;
+  font-size: 14px;
   letter-spacing: .4px;
   border-radius: 0 4px 4px 0;
 }
