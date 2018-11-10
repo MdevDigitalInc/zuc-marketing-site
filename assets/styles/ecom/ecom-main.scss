@@ -1,4 +1,19 @@
 /*----
+  Typography
+-----*/
+@import './ecom-typography.scss';
+
+/*----
+  Mixin Styles
+-----*/
+@import './ecom-mixins.scss';
+
+/*----
+  Wrapper Styles
+-----*/
+@import './ecom-wrappers.scss';
+
+/*----
   Category Styles
 -----*/
 @import './category/cat-main.scss';
@@ -27,13 +42,3 @@
   Ecom Shared Styles
 -----*/
 @import './shared/ecom-shared-main.scss';
-
-/*----
-  Mixin Styles
------*/
-@import './ecom-mixins.scss';
-
-/*----
-  Wrapper Styles
------*/
-@import './ecom-wrappers.scss';

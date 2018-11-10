@@ -1,3 +1,91 @@
-.zuc-ec-cart-summary
-  span
-    |todo summary
+-
+  var summaryValues = [
+    {
+      type : 'Product Total',
+      value : '$372.94'
+    },
+    {
+      type : 'Whole Home Bundle Discount',
+      value : '$-50.00'
+    },
+    {
+      type : 'Monthly Service Plan Fee',
+      value : '$69.99'
+    },
+    {
+      type : 'Rewards Earned',
+      value : '700'
+    }
+  ]
+
+-
+  var subtotal = 442.93
+-
+  var taxesInfo = 'Shipping and taxes will be calculated at checkout, where applicable.'
+.zuc-ec-cart-summaries
+  // Rewards & Promotios ---
+  .zuc-ec-summary
+    // Title
+    .zuc-ec-summary-title
+      |Rewards & Promotions
+
+    // Promo Code Input
+    .zuc-form-promo
+      strong.zuc-promo-title
+        |Enter Promo Code:
+
+      //- Container to keep the input & button aligned
+      .flex.flex-vert-stretch.flex-nowrap
+        // Input Field for Promo Code
+        input(type="text" name="promocode")
+        // Submission Button
+        button.zuc-btn-inline(type="submit")
+          |APPLY
+
+  // Rewards & Promotios ---
+  .zuc-ec-summary
+    // Title
+    .zuc-ec-summary-title
+      |Purchase Summary
+
+    .zuc-ec-summary-report
+      // Iterator to generate report rows
+      each value in summaryValues.length ? summaryValues : ['There are no summary values']
+        .zuc-report-row.flex.flex-hor-between
+          span
+            |#{value.type}
+          span
+            |#{value.value}
+
+      // Subtotal row
+      .zuc-report-row.flex.flex-hor-between.--total
+        span.u-uppercase
+          |Subtotal
+
+        span
+          |$#{subtotal}
+
+    // Action Button
+    .flex.flex-hor-end
+      a.zuc-btn.zuc-btn-secondary(href="#" title="TODO")
+        |PROCEED TO CHECKOUT
+
+    // Taxes
+    .zuc-subscript-info.u-text-right
+      |#{taxesInfo}
+
+  //Help & Assistance
+  .zuc-summaries-footer.u-text-center
+    //- Spaces HTML entity after the | are intentional and needed
+    span.u-bold.u-uppercase
+      |Need Help?
+    span
+      |&nbsp;We're here! See our&nbsp;
+    a(href="#" title="TODO")
+      |FAQ page
+    span
+      |&nbsp;or visit our&nbsp;
+    a(href="#" title="TODO")
+      |Contact page
+    span
+      |&nbsp;for more information

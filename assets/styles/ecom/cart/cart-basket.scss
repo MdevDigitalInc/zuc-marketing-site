@@ -1,9 +1,113 @@
 .zuc-ec-cart-basket {
-  display: flex;
   width: 100%;
-  background: #33d;
 
   @media #{$laptop-up} {
     width: 70%;
   }
 }
+
+// Top of cart Legend
+.zuc-ec-cart-legend {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 2px solid $color-zuc-concrete;
+  border-bottom: 2px solid $color-zuc-concrete;
+  font-weight: 700;
+  font-size: vw-desktop(16);
+  color: $color-zuc-darkindigo;
+}
+
+// Cart Items -----------------------
+// Collection of cart items
+.zuc-ec-cart-items {
+  width: 100%;
+  padding: 0;
+  color: $color-zuc-darkindigo;
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Indibidual Cart Item Row
+.zuc-ec-cart-item {
+  width: 100%;
+  position: relative;
+  padding: 25px 10px;
+  border-bottom: 1px solid $color-zuc-concrete;
+}
+
+// Item Info, description + image
+.zuc-ec-cart-iteminfo {
+  width: 70%;
+
+  // Product / Plan Image
+  .zuc-item-image {
+    width: 20%;
+    min-width: 150px;
+  }
+  // Product / Plan Information
+  .zuc-item-description {
+    width: 25%;
+    margin-left: 5%;
+    line-height: 1.5;
+    font-weight: 100;
+    min-width: 217px;
+  }
+  // Product / Plan Name
+  .zuc-item-name {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-weight: 300;
+  }
+}
+
+.zuc-item-props {
+  width: 100%;
+
+  .zuc-prop {
+    width: 100%;
+    display: block;
+  }
+}
+
+.zuc-item-controls {
+  width: 100%;
+  color: $color-zuc-indigo;
+  text-decoration: underline;
+
+  a {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Item Quantity & Quantity Controls
+.zuc-ec-cart-qty {
+  width: 20%;
+
+  .zuc-select-container {
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 0;
+    height: 46px;
+  }
+}
+
+// Item Total Price
+.zuc-ec-cart-total {
+  width: 10%;
+}
+
+.zuc-cart-footer {
+  margin-top: 30px;
+  color: $color-zuc-darkindigo;
+  font-size: vw-desktop(21);
+  font-weight: 100;
+  line-height: 1.33;
+}
+
