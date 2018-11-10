@@ -34,27 +34,44 @@
   width: 100%;
   // Yes, I am using PX because I want it to stay the same
   padding-bottom: 10px;
-  margin-bottom: vw-desktop(30);
+  margin-bottom: 30px;
   border-bottom: 2px solid $color-zuc-concrete;
   text-transform: uppercase;
-  font-size: vw-desktop(18);
+  font-size: 14px;
   font-weight: 700;
   color: $color-zuc-darkindigo;
+
+  @media #{$tablet-up} {
+    font-size: 18px;
+  }
 }
 
 // Generic link used on Ecom
 .zuc-ec-generic-link {
   color: $color-zuc-indigo;
-  font-size: vw-desktop(14);
+  font-size: 14px;
   line-height: 1.86;
-  margin: 0 25px;
+  margin: 0 15px;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 1px solid $color-zuc-indigo;
+
+  @media #{$tablet-up} {
+    margin: 0 25px;
+  }
 
   &:hover,
   &:focus,
   &:active {
     border-bottom: none;
+  }
+}
+
+// Auxiliary Info Size
+.--zuc-aux-size {
+  font-size: 12.5px;
+
+  @media #{$tablet-up} {
+    font-size: 21px;
   }
 }

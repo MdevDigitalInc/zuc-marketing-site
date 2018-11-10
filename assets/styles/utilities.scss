@@ -96,6 +96,14 @@
   }
 }
 
+.u-phone-only {
+  display: block;
+
+  @media #{$tablet-up} {
+    display: none;
+  }
+}
+
 .u-screenreader {
   width: 0!important;
   height: 0!important;

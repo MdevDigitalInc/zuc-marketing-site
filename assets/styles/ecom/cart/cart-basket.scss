@@ -13,8 +13,12 @@
   border-top: 2px solid $color-zuc-concrete;
   border-bottom: 2px solid $color-zuc-concrete;
   font-weight: 700;
-  font-size: vw-desktop(16);
+  font-size: 16px;
   color: $color-zuc-darkindigo;
+
+  @media #{$phone-only} {
+    display: none;
+  }
 }
 
 // Cart Items -----------------------
@@ -30,6 +34,29 @@
   }
 }
 
+// Cart Controls
+.zuc-cart-controls {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media #{$tablet-up} {
+    flex-wrap: nowrap;
+  }
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+  }
+
+  .zuc-btn {
+    margin: 10px 0 0;
+
+    @media #{$tablet-up} {
+      margin: 0;
+    }
+  }
+}
+
 // Indibidual Cart Item Row
 .zuc-ec-cart-item {
   width: 100%;
@@ -40,20 +67,41 @@
 
 // Item Info, description + image
 .zuc-ec-cart-iteminfo {
-  width: 70%;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  @media #{$tablet-up} {
+    align-items: center;
+  }
+
+  @media #{$tablet-only} {
+    width: 60%;
+  }
+  @media #{$laptop-up} {
+    width: 70%;
+  }
 
   // Product / Plan Image
   .zuc-item-image {
     width: 20%;
-    min-width: 150px;
+    min-width: 100px;
+
+    @media #{$tablet-up} {
+      min-width: 150px;
+    }
   }
   // Product / Plan Information
   .zuc-item-description {
-    width: 25%;
+    width: 100%;
     margin-left: 5%;
     line-height: 1.5;
     font-weight: 100;
-    min-width: 217px;
+
+    @media #{$tablet-up} {
+      width: 25%;
+      min-width: 217px;
+    }
   }
   // Product / Plan Name
   .zuc-item-name {
@@ -69,6 +117,16 @@
   .zuc-prop {
     width: 100%;
     display: block;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media #{$phone-only} {
+    .zuc-select-container {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -88,7 +146,13 @@
 
 // Item Quantity & Quantity Controls
 .zuc-ec-cart-qty {
-  width: 20%;
+  width: 25%;
+  text-align: center;
+
+  @media #{$laptop-up} {
+    width: 20%;
+    text-align: left;
+  }
 
   .zuc-select-container {
     width: 90px;
@@ -100,14 +164,31 @@
 
 // Item Total Price
 .zuc-ec-cart-total {
-  width: 10%;
+  width: 15%;
+  display: none;
+
+  @media #{$tablet-up} {
+    display: block;
+  }
+
+  @media #{$laptop-up} {
+    width: 15%;
+  }
+
+  @media #{$desktop-up} {
+    width: 10%;
+  }
 }
 
 .zuc-cart-footer {
   margin-top: 30px;
   color: $color-zuc-darkindigo;
-  font-size: vw-desktop(21);
   font-weight: 100;
   line-height: 1.33;
+  text-align: center;
+
+  @media #{$laptop-up} {
+    text-align: right;
+  }
 }
 

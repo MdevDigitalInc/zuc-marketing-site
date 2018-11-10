@@ -2,19 +2,34 @@
 .zuc-ec-cart-summaries {
   color: $color-zuc-darkindigo;
   width: 100%;
+  margin: 7vw 0;
 
   @media #{$laptop-up} {
     padding-left: 1.56vw;
     width: 30%;
+    margin: 0;
   }
 }
 
 // Summary Block - Global
 .zuc-ec-summary {
   width: 100%;
-  padding: vw-desktop(30) vw-desktop(20);
+  padding: 3vw;
   background: $color-zuc-platinum;
-  margin-bottom: vw-desktop(25);
+  margin-bottom: 2.6vw;
+
+  @media #{$tablet-lnd-only} {
+    padding: 3vw 2vw;
+  }
+
+  @media #{$tablet-prt-only} {
+    padding: 4vw 3vw;
+  }
+
+  @media #{$laptop-up} {
+    margin-bottom: vw-desktop(25);
+    padding: vw-desktop(30) vw-desktop(20);
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -33,6 +48,11 @@
   .zuc-report-row {
     width: 100%;
     margin-bottom: 10px;
+    font-size: 14px;
+
+    @media #{$tablet-up} {
+      font-size: 18px;
+    }
   }
 
   // Total row override
@@ -49,8 +69,15 @@
   width: 100%;
   font-weight: 100;
   line-height: 1.44;
-  padding-left: 20%;
   margin-top: 30px;
+  padding: 0 9%;
+  text-align: center;
+
+  @media #{$laptop-up} {
+    text-align: right;
+    padding-left: 20%;
+    padding-right: 0;
+  }
 }
 
 
@@ -58,7 +85,7 @@
 .zuc-summaries-footer {
   width: 100%;
   // Matches container padding
-  padding: 0 vw-desktop(20);
+  padding: 0 15%;
   font-weight: 100;
   line-height: 1.44;
 
