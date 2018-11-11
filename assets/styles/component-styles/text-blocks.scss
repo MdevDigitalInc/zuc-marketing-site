@@ -124,16 +124,10 @@
 .zuc-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 3.5vw;
+  margin-bottom: 8px;
   position: relative;
   width: 100%;
 
-  @media #{$tablet-up} {
-    margin-bottom: 2vw;
-  }
-  @media #{$laptop-up} {
-    margin-bottom: .75vw;
-  }
 
   h4 {
     margin: 0;

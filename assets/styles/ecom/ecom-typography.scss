@@ -68,6 +68,8 @@
   color: $color-zuc-indigo;
   font-family: $main-font-serif;
   font-size: 23px;
+  margin-left: -15px;
+  margin-bottom: 10px;
 
   @media #{$laptop-up} {
     font-size: 26px;
@@ -76,7 +78,7 @@
 
 .zuc-ec-action-zone-info-list {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.57;
 
   li {

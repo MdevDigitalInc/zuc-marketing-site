@@ -4,6 +4,7 @@
   display: none;
   overflow: hidden;
   padding-bottom: 3vw;
+  margin-top: -7vw;
 
   &.--active {
     display: flex;
@@ -22,6 +23,10 @@
 
   @media #{$laptop-up} {
     flex-direction: row;
+    width: 95%;
+  }
+
+  @media #{$desktop-up} {
     width: 80%;
   }
 }
@@ -61,6 +66,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   .zuc-select-container {
     max-width: 80%;
+    margin-top: 50px;
   }
 
   .zuc-ec-summary {
@@ -70,6 +76,10 @@ $zecac-info-padding-desktop: vw-desktop(30);
   .zuc-cart-controls {
     flex-wrap: wrap;
     justify-content: center;
+
+    @media #{$laptop-up} {
+      justify-content: flex-end;
+    }
 
     .zuc-btn {
       margin: 15px 0;
@@ -91,6 +101,8 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   // Final Step Override
   .--final-step {
+    justify-content: center;
+
     .zuc-btn {
       font-size: 23px;
       order: -1;
@@ -200,10 +212,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
   color: $color-zuc-indigo;
   display: flex;
   flex-direction: column;
-  padding-bottom: 6vw;
-  padding-top: 6vw;
+  padding-bottom: 60px;
+  padding-top: 40px;
   justify-self: flex-end;
   align-self: flex-end;
+  margin-left: -30px;
 
   @media #{$tablet-only} {
     padding-bottom: 2vw;
@@ -219,6 +232,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
     font-family: $main-font;
     color: $color-zuc-darkindigo;
     font-weight: 600;
+    font-size: 18px;
   }
 
   .--protected {
@@ -249,6 +263,8 @@ $zecac-info-padding-desktop: vw-desktop(30);
   .cents {
     vertical-align: super;
     font-size: 30px;
+    position: relative;
+    top: 2px;
   }
 
   .month {
