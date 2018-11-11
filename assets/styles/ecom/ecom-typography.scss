@@ -8,19 +8,7 @@
   .zuc-ec-head-title {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
-    margin: 0 0 vw-phone(6);
-
-    @media #{$tablet-only} {
-      margin: 0 0 vw-tablet(8);
-    }
-
-    @media #{$laptop-only} {
-      margin: 0 0 vw-laptop(25);
-    }
-
-    @media #{$desktop-up} {
-      margin: 0 0 vw-desktop(30);
-    }
+    margin: 0 0 20px;
   }
 
   .zuc-ec-header-line {
@@ -33,7 +21,7 @@
 .zuc-ec-summary-title {
   width: 100%;
   // Yes, I am using PX because I want it to stay the same
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   margin-bottom: 30px;
   border-bottom: 2px solid $color-zuc-concrete;
   text-transform: uppercase;
@@ -57,7 +45,7 @@
   border-bottom: 1px solid $color-zuc-indigo;
 
   @media #{$tablet-up} {
-    margin: 0 25px;
+    margin: 0 50px;
   }
 
   &:hover,

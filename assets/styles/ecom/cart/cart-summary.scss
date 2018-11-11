@@ -16,7 +16,7 @@
   width: 100%;
   padding: 3vw;
   background: $color-zuc-platinum;
-  margin-bottom: 2.6vw;
+  margin-bottom: 4.6vw;
 
   @media #{$tablet-lnd-only} {
     padding: 3vw 2vw;
@@ -49,9 +49,10 @@
     width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
+    font-weight: 700;
 
     @media #{$tablet-up} {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     i {
@@ -62,9 +63,15 @@
   // Total row override
   .--total {
     font-weight: 700;
-    padding-top: 15px;
+    padding-top: 8px;
     border-top: 2px solid $color-zuc-concrete;
+    font-size: 18px;
     margin-top: 60px;
+
+    @media #{$tablet-up} {
+      font-size: 22px;
+      padding-top: 15px;
+    }
   }
 }
 
@@ -76,10 +83,12 @@
   margin-top: 30px;
   padding: 0 9%;
   text-align: center;
+  font-size: 16px;
 
   @media #{$laptop-up} {
     text-align: right;
     padding-left: 0;
+    font-size: 16px;
     padding-right: 0;
   }
 }
@@ -89,9 +98,14 @@
 .zuc-summaries-footer {
   width: 100%;
   // Matches container padding
-  padding: 0 15%;
+  padding: 0;
   font-weight: 100;
   line-height: 1.44;
+  font-size: 18px;
+
+  @media #{$laptop-up} {
+    padding: 0 20px;
+  }
 
   a {
     color: $color-zuc-indigo;

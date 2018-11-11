@@ -50,9 +50,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 34vw 5vw 24vw;
+  margin: 34vw auto 18vw;
+  width: 95%;
 
   @media #{$tablet-up} {
-    margin: 14vw 8vw;
+    margin: 14vw auto;
+  }
+
+  @media #{$desktop-up} {
+    width: 85%;
   }
 }

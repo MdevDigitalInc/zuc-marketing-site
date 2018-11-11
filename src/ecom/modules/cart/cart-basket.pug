@@ -47,7 +47,7 @@
   .zuc-ec-cart-legend.flex.flex-hor-between.flex-vert-center
     .zuc-ec-cart-iteminfo.u-uppercase
       |Item
-    .zuc-ec-cart-qty.flex-hor-center.u-uppercase
+    .zuc-ec-cart-qty.flex-hor-start.u-uppercase
       |Qty
     .zuc-ec-cart-total.u-uppercase.u-text-right
       |Item Total
@@ -96,7 +96,7 @@
                 .zuc-prop
                   |Size:&nbsp;#{item.size}
               // Item Controls
-              .u-phone-only.u-bold
+              .u-phone-only.u-bold.--qty
                 |QTY
               .zuc-select-container.u-phone-only
                 label.u-screenreader(for="field-qty")
@@ -131,7 +131,7 @@
                   |Edit
 
         // Item Quantity Controls -------------------------------------------
-        .zuc-ec-cart-qty.flex.flex-hor-center.flex-vert-center.u-hidden-phone
+        .zuc-ec-cart-qty.flex.flex-hor-start.flex-vert-center.u-hidden-phone
           .zuc-select-container
             label.u-screenreader(for="field-qty")
               |Choose quantity

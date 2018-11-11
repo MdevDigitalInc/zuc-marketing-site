@@ -239,6 +239,10 @@ textarea {
   min-width: 95px;
   max-width: 100px;
 
+  @media #{$phone-only} {
+    height: 40px;
+  }
+
   @media #{$portrait} {
     margin-top: .9vw;
   }
@@ -351,7 +355,7 @@ li {
     font-size: 14px;
     font-weight: 700;
     color: $color-zuc-darkindigo;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     display: block;
 
     @media #{$tablet-up} {
