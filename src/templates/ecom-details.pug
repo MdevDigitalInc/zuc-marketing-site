@@ -1,13 +1,13 @@
 extends _layout-headless
 
 block content
+  //- Breadcrumbs
+  include ../ecom/modules/shared/_breadcrumbs.pug
+
   .zuc-ec-details-wrapper
 
     // Tab Controller
     script( src='/Scripts/Zuc/js/tab-controller.js')
-
-    //- Breadcrumbs
-    include ../ecom/modules/shared/_breadcrumbs.pug
 
     //- Showcase Module
     include ../ecom/modules/product-details/det-showcase.pug

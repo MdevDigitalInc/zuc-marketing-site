@@ -22,7 +22,7 @@
   width: 100%;
   // Yes, I am using PX because I want it to stay the same
   padding-bottom: 9px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-bottom: 2px solid $color-zuc-concrete;
   text-transform: uppercase;
   font-size: 14px;
@@ -30,6 +30,7 @@
   color: $color-zuc-darkindigo;
 
   @media #{$tablet-up} {
+    margin-bottom: 30px;
     font-size: 18px;
   }
 }
@@ -67,7 +68,9 @@
 .zuc-ec-action-zone-info-title {
   color: $color-zuc-indigo;
   font-family: $main-font-serif;
-  font-size: 23px;
+  font-size: 25px;
+  margin-left: -15px;
+  margin-bottom: 10px;
 
   @media #{$laptop-up} {
     font-size: 26px;
@@ -76,8 +79,12 @@
 
 .zuc-ec-action-zone-info-list {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.57;
+
+  @media #{$laptop-only} {
+    font-size: 14px;
+  }
 
   li {
     margin-bottom: 0;
@@ -88,5 +95,9 @@
   padding-top: vw-desktop(12);
   font-family: $main-font;
   color: $color-zuc-darkindigo;
-  font-size: 18px;
+  font-size: 16px;
+
+  @media #{$laptop-up} {
+    font-size: 18px;
+  }
 }

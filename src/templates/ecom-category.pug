@@ -1,9 +1,10 @@
 extends _layout-headless
 
 block content
+  //- Breadcrumbs
+  include ../ecom/modules/category/cat-breadcrumbs.pug
+
   .zuc-ec-category-wrapper
-    //- Breadcrumbs
-    include ../ecom/modules/category/cat-breadcrumbs.pug
 
     //- Category Head Module
     +ecom-header-centered('Tools & Textiles')
