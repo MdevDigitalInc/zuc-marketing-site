@@ -69,39 +69,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
 .zuc-ec-action-zone-cta-box {
 
-  .zuc-ec-action-zone-cta-step {
-    color: $color-zuc-darkindigo;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: vw-phone(14);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(20);
-    }
-    @media #{$laptop-only} {
-      font-size: vw-laptop(20);
-    }
-    @media #{$desktop-up} {
-      font-size: vw-desktop(20);
-    }
-  }
-
-  .zuc-ec-action-zone-cta-title {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    font-size: vw-phone(36);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(47);
-    }
-    @media #{$laptop-only} {
-      font-size: vw-laptop(47);
-    }
-    @media #{$desktop-up} {
-      font-size: vw-desktop(47);
-    }
-  }
-
   .zuc-ec-action-zone-cta-blurb {
     color: $color-zuc-darkindigo;
     font-weight: 500;
@@ -126,64 +93,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
   desktop/small toggle based on screen size and should share a lot of styles
 
 ***/
-
-.zuc-ec-action-zone-control-box-desktop {
-  background: $color-zuc-platinum; // Note: it's not always this colour; reference for when it is!
-  display: none;
-  margin-top: vw-laptop(22);
-  padding: vw-laptop(12);
-
-  @media #{$laptop-up} {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bill-summary {
-    border-bottom: 2px solid $color-zuc-concrete;
-  }
-
-  .bill-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: vw-laptop(12) 0;
-
-    .val {
-      font-weight: 700;
-    }
-  }
-
-  .bill-total {
-    margin: vw-laptop(40) 0 vw-laptop(90);
-    border-top: 2px solid $color-zuc-concrete;
-    font-size: vw-laptop(20);
-    text-transform: uppercase;
-  }
-
-  .bill-checkout-btn {
-    padding-bottom: vw-laptop(20);
-    align-self: flex-end;
-  }
-
-  .bill-fine-print {
-    font-size: vw-laptop(12);
-    align-self: flex-end;
-    text-align: right;
-  }
-}
-
-.zuc-ec-action-zone-control-box-small {
-  background: $color-zuc-platinum; // Note: it's not always this colour; reference for when it is!
-  display: flex;
-  margin: 0;
-
-  @media #{$tablet-only} {
-    margin: vw-tablet(75) $zecac-inner-padding-tablet vw-tablet(10);
-  }
-  @media #{$laptop-up} {
-    display: none;
-  }
-}
 
 /*************************************
 
