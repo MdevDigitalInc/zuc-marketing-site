@@ -65,8 +65,12 @@ $zecac-info-padding-desktop: vw-desktop(30);
   }
 
   .zuc-select-container {
-    max-width: 55%;
+    max-width: 100%;
     margin-top: 50px;
+
+    @media #{$tablet-only} {
+      max-width: 55%;
+    }
 
     @media #{$laptop-up} {
       max-width: 80%;
@@ -108,7 +112,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
     justify-content: center;
 
     .zuc-btn {
-      font-size: 23px;
       order: 1;
 
       @media #{$tablet-up} {
@@ -164,9 +167,13 @@ $zecac-info-padding-desktop: vw-desktop(30);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px 20px 20px;
   max-height: 1000px;
   width: 100%;
+
+  @media #{$tablet-up} {
+    padding: 30px;
+  }
 
   @media #{$tablet-only} {
     flex-direction: row;
@@ -225,22 +232,29 @@ $zecac-info-padding-desktop: vw-desktop(30);
   padding-top: 40px;
   justify-self: flex-end;
   align-self: flex-end;
-  margin-left: -30px;
+
+  @media #{$phone-only} {
+    padding-left: 5%;
+    padding-bottom: 0;
+  }
 
   @media #{$tablet-only} {
     padding-bottom: 2vw;
     padding-top: 2vw;
-    width: 30%;
-  }
-
-  @media #{$tablet-only} {
     justify-self: flex-start;
     align-self: flex-start;
     margin-top: 20px;
+    width: 30%;
   }
 
   .zuc-ec-action-zone-price-btn {
     padding: 20px 0;
+
+    @media #{$tablet-only} {
+      .zuc-btn {
+        font-size: 11px;
+      }
+    }
   }
 
   .zuc-ec-action-zone-add-on {

@@ -22,7 +22,7 @@
   width: 100%;
   // Yes, I am using PX because I want it to stay the same
   padding-bottom: 9px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-bottom: 2px solid $color-zuc-concrete;
   text-transform: uppercase;
   font-size: 14px;
@@ -30,6 +30,7 @@
   color: $color-zuc-darkindigo;
 
   @media #{$tablet-up} {
+    margin-bottom: 30px;
     font-size: 18px;
   }
 }

@@ -66,6 +66,14 @@
     &.--control {
       font-weight: 100;
     }
+
+    span:first-child {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+    }
   }
 
   // Total row override
@@ -89,9 +97,13 @@
   font-weight: 100;
   line-height: 1.44;
   margin-top: 30px;
-  padding: 0 9%;
+  padding: 0 2%;
   text-align: center;
   font-size: 14px;
+
+  @media #{$tablet-only} {
+    padding: 0 9%;
+  }
 
   @media #{$laptop-up} {
     text-align: right;
