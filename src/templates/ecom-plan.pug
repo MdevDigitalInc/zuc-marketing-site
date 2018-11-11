@@ -1,9 +1,10 @@
 extends _layout-headless
 
 block content
+  //- Breadcrumbs
+  include ../ecom/modules/plan-details/plan-breadcrumbs.pug
+
   .zuc-ec-plan-wrapper
-    //- Breadcrumbs
-    include ../ecom/modules/plan-details/plan-breadcrumbs.pug
 
     //- Action Zone Module
     include ../ecom/modules/plan-details/plan-action-zone.pug
