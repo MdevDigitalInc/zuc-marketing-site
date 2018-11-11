@@ -43,11 +43,7 @@
 .zuc-ec-plan-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 5vw;
-
-  @media #{$laptop-up} {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .zuc-ec-cart-wrapper {
