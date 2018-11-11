@@ -1,9 +1,96 @@
-.zuc-ec-cart-summary {
-  display: flex;
+// Summary Sidebar Parent -- Cart Page
+.zuc-ec-cart-summaries {
+  color: $color-zuc-darkindigo;
   width: 100%;
-  background: #f3d;
+  margin: 7vw 0;
 
   @media #{$laptop-up} {
+    padding-left: 1.56vw;
     width: 30%;
+    margin: 0;
+  }
+}
+
+// Summary Block - Global
+.zuc-ec-summary {
+  width: 100%;
+  padding: 3vw;
+  background: $color-zuc-platinum;
+  margin-bottom: 2.6vw;
+
+  @media #{$tablet-lnd-only} {
+    padding: 3vw 2vw;
+  }
+
+  @media #{$tablet-prt-only} {
+    padding: 4vw 3vw;
+  }
+
+  @media #{$laptop-up} {
+    margin-bottom: vw-desktop(25);
+    padding: vw-desktop(30) vw-desktop(20);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Summary Report Block - Aka Prices / Points
+.zuc-ec-summary-report {
+  width: 100%;
+  color: $color-zuc-darkindigo;
+  margin-bottom: vw-desktop(90);
+  font-size: vw-desktop(18);
+  font-weight: 500;
+
+  // Standard report rows
+  .zuc-report-row {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    @media #{$tablet-up} {
+      font-size: 18px;
+    }
+  }
+
+  // Total row override
+  .--total {
+    font-weight: 700;
+    padding-top: 15px;
+    border-top: 2px solid $color-zuc-concrete;
+    margin-top: 60px;
+  }
+}
+
+//Subscript Information block
+.zuc-subscript-info {
+  width: 100%;
+  font-weight: 100;
+  line-height: 1.44;
+  margin-top: 30px;
+  padding: 0 9%;
+  text-align: center;
+
+  @media #{$laptop-up} {
+    text-align: right;
+    padding-left: 20%;
+    padding-right: 0;
+  }
+}
+
+
+//Summary Footer
+.zuc-summaries-footer {
+  width: 100%;
+  // Matches container padding
+  padding: 0 15%;
+  font-weight: 100;
+  line-height: 1.44;
+
+  a {
+    color: $color-zuc-indigo;
+    text-decoration: underline;
   }
 }

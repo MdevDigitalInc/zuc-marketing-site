@@ -1,32 +1,3 @@
-.zuc-ec-header {
-
-  h2 {
-    font-weight: 300;
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-    margin: 0 0 vw-phone(5);
-    font-size: vw-phone(40);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(40);
-      margin: 0 0 vw-tablet(5);
-    }
-    @media #{$laptop-up} {
-      font-size: vw-laptop(40);
-      margin: 0 0 vw-desktop(10);
-    }
-
-    @media #{$desktop-up} {
-      font-size: vw-desktop(40);
-    }
-  }
-
-  .zuc-ec-header-line {
-    width: 100%;
-    border: 1px solid $color-zuc-concrete;
-  }
-}
-
 // bLink - specially formatted text snippet used in a variety of places
 // Not technically a mixin but definitely used needs to sit alone - AW
 

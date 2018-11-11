@@ -354,7 +354,8 @@ $zecac-info-padding-desktop: vw-desktop(30);
 .zuc-ec-action-zone-price {
   display: flex;
 
-  .sign, .dollar {
+  .sign,
+  .dollar {
     font-size: vw-desktop(50);
   }
 
@@ -385,7 +386,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
 .zuc-ec-action-protected-btn {
   width: auto;
-  padding: .67vw 1.04vw;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;

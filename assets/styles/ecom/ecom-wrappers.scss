@@ -37,7 +37,7 @@
 
   @media #{$laptop-up} {
     padding: 0;
-  } 
+  }
 }
 
 .zuc-ec-plan-wrapper {
@@ -54,9 +54,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 5vw;
+  margin: 34vw 5vw 24vw;
 
   @media #{$tablet-up} {
-    margin: 0 8vw;
+    margin: 14vw 8vw;
   }
 }
