@@ -1,10 +1,10 @@
-extends _layout
+extends _layout-headless
 
 block content
   .zuc-ec-details-wrapper
 
     // Tab Controller
-    script( src='js/tab-controller.js')
+    script( src='/Scripts/Zuc/js/tab-controller.js')
 
     //- Breadcrumbs
     include ../ecom/modules/shared/_breadcrumbs.pug
@@ -14,12 +14,12 @@ block content
 
     //- Product Module
     include ../ecom/modules/product-details/det-product.pug
-    
+
     //- Related Products Module
     include ../ecom/modules/product-details/det-related.pug
 
     //- Info Stack Module
     include ../ecom/modules/product-details/det-infostack.pug
-    
+
     //- Best Sellers Module
     include ../ecom/modules/product-details/det-best-sellers.pug

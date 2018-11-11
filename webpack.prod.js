@@ -95,14 +95,14 @@ module.exports = merge(common, {
         yandex: false,
         windows: false
       }
-    }),
-    // Gzip Compression
-    new CompressionPlugin({
-      asset: "[path].gz[query]",
-      algorithm: "gzip",
-      test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0.8
     })
+    // Gzip Compression
+    //new CompressionPlugin({
+    //  asset: "[path].gz[query]",
+    //  algorithm: "gzip",
+    //  test: /\.js$|\.css$|\.html$/,
+    //  threshold: 10240,
+    //  minRatio: 0.8
+    //})
   ]
 });
