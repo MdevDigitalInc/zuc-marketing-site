@@ -52,7 +52,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
     padding: vw-tablet(35) $zecac-inner-padding-tablet vw-tablet(40);
   }
   @media #{$laptop-up} {
-    width: 30%;
+    width: 35%;
     padding: vw-laptop(56) 0 vw-laptop(30) vw-laptop(40);
   }
   @media #{$desktop-up} {
@@ -72,7 +72,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
     justify-content: center;
 
     .zuc-btn {
-      margin-bottom: 15px;
+      margin: 15px 0;
       order: 0;
 
       @media #{$desktop-up} {
@@ -130,7 +130,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
   flex-direction: column;
 
   @media #{$laptop-up} {
-    width: 70%;
+    width: 65%;
     flex-direction: row;
     padding: vw-laptop(40) vw-laptop(40) 0;
   }
