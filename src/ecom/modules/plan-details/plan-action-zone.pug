@@ -42,6 +42,10 @@
   ]
 
 -
+  var step2subtotal = 29.99
+
+
+-
   var summaryValues = [
     {
       type : 'Product Total',
@@ -64,7 +68,7 @@
 -
   var subtotal = 442.93
 -
-  var taxesInfo = 'Shipping and taxes will be calculated at checkout, where applicable.'
+  var taxesInfo = 'Applicable taxes will be calculated at checkout'
 
 //- TODO: Make this pull in all info via JS since it all changes based on the action-zone step context - AW
 
@@ -102,16 +106,17 @@
     .zuc-ec-action-zone-right
       // Action Zone Column One
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Appliances Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in applianceCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Appliances Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in applianceCoverages
+                li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           .zuc-ec-action-zone-price
@@ -123,20 +128,21 @@
               |.99
             span.month
               | /month
-          .zuc-ec-action-zone-taxes
+          .zuc-ec-action-zone-taxes.u-bold
             |plus taxes
       // Action Zone Column Two
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Furniture Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in furnitureCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Furniture Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in furnitureCoverages
+                li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           .zuc-ec-action-zone-price
@@ -148,20 +154,21 @@
               |.99
             span.month
               | /month
-          .zuc-ec-action-zone-taxes
+          .zuc-ec-action-zone-taxes.u-bold
             |plus taxes
       // Action Zone Column Three
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Home Systems Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in homeSysCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Home Systems Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in homeSysCoverages
+                li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           .zuc-ec-action-zone-price
@@ -173,12 +180,8 @@
               |.99
             span.month
               | /month
-          .zuc-ec-action-zone-taxes
+          .zuc-ec-action-zone-taxes.u-bold
             |plus taxes
-    // Action Zone Control Box - Small Screens
-    .zuc-ec-action-zone-control-box-small
-      span
-          |zuc-ec-action-zone-control-box-small
     // Action Zone Share Box
     .zuc-ec-action-zone-share-box
       span
@@ -186,7 +189,7 @@
 
 
 
-// - Action Zone Two
+// - Action Zone Two ------------------------------------------------------------------------------------------
 .zuc-ec-plan-action-zone-container.--active
   img.zuc-ec-action-zone-bg-img(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   // Plan Action Zone Module
@@ -202,7 +205,7 @@
             .--green
         h2.u-font-serif.u-zuc-indigo
           |Make it a Combo
-        p.zuc-ec-action-zone-cta-blurb
+        p.u-bold
           |Add a second plan to save up to $30/month:
       // Purchase Summarhy -----------------------------------------------------------------
       .zuc-ec-summary
@@ -211,25 +214,40 @@
           |Purchase Summary
 
         .zuc-ec-summary-report
-          // Iterator to generate report rows
-          each value in summaryValues.length ? summaryValues : ['There are no summary values']
-            .zuc-report-row.flex.flex-hor-between
-              span
-                |#{value.type}
-              span
-                |#{value.value}
+          // Item Added Row
+          .zuc-report-row.flex.flex-hor-between
+            span
+              i.far.fa-trash-alt(data-cart-remove)
+              |Base Appliance Service Plan
+            span.u-bold
+              |$29.99
+
+          // Combo Discount Row
+          .zuc-report-row.flex.flex-hor-between
+            span.u-bold
+              |Combo Plan Discount
+            span.u-bold
+              |-$0.00
+
+          // Combo Discount Row
+          .zuc-report-row.flex.flex-hor-between
+            span.u-bold
+              |Rewards Earned
+            span.u-bold
+              |200
+
 
           // Subtotal row
           .zuc-report-row.flex.flex-hor-between.--total
             span.u-uppercase
-              |Subtotal
+              |Monthly plan fee
 
             span
-              |$#{subtotal}
+              |$#{step2subtotal}
 
         // Cart Checkout Controls --------------------------------
         .zuc-cart-controls.flex.flex-vert-center
-          a.zuc-ec-generic-link.u-phone-only(href="#" title="TODO")
+          a.zuc-ec-generic-link(href="#" title="TODO")
             |Continue Shopping
           a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
             |Proceed to Checkout
@@ -243,34 +261,42 @@
     .zuc-ec-action-zone-right
       // Action Zone Column One
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Appliances Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in applianceCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Appliances Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in applianceCoverages
+                li= val
         // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          //- Todo - fix
-          .tmp
-            .zuc-ec-action-protected-btn
+        .zuc-ec-action-zone-bumper-box.--protected-active
+          .zuc-ec-action-zone-price
+            span.savings
+              |Save &#36; 20
+            span.month
+              |&#47; month
+          .zuc-ec-action-zone-price-btn
+            a.zuc-btn.zuc-btn-secondary.--protected(href="#" title="todo")
+              i.fas.fa-check
               |PROTECTED
-      // Action Zone Column Two
+          .zuc-ec-action-zone-add-on
+            | &#43; &#36; 14.99 /month      // Action Zone Column Two
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Furniture Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in furnitureCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Furniture Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in furnitureCoverages
+                li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           .zuc-ec-action-zone-price
@@ -280,21 +306,23 @@
               |&#47; month
           .zuc-ec-action-zone-price-btn
             a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+              i.fas.fa-check
               |MAKE IT A COMBO
           .zuc-ec-action-zone-add-on
             | &#43; &#36; 14.99 /month
       // Action Zone Column Three
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Home Systems Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in homeSysCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Home Systems Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in homeSysCoverages
+                li= val
         // Action Zone Info Bumper Box
         .zuc-ec-action-zone-bumper-box
           .zuc-ec-action-zone-price
@@ -304,20 +332,17 @@
               |&#47; month
           .zuc-ec-action-zone-price-btn
             a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+              i.fas.fa-check
               |MAKE IT A COMBO
           .zuc-ec-action-zone-add-on
             | &#43; &#36; 24.99 /month
-    // Action Zone Control Box - Small Screens
-    .zuc-ec-action-zone-control-box-small
-      span
-          |zuc-ec-action-zone-control-box-small
     // Action Zone Share Box
     .zuc-ec-action-zone-share-box
       span
         |zuc-ec-action-zone-share-box
 
 
-// - Action Zone Three
+// - Action Zone FOUR ------------------------------------------------------------------------------------------
 .zuc-ec-plan-action-zone-container.--active
   img.zuc-ec-action-zone-bg-img(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   // Plan Action Zone Module
@@ -332,9 +357,9 @@
           .zuc-title-flag
             .--green
         h2.u-font-serif.u-zuc-indigo
-          |Complete your bundle &amp; save:
-        p.zuc-ec-action-zone-cta-blurb
-          |Add a third plan to save up to $50 a month and protect your whole home.
+          |Make it a Combo
+        p.u-bold
+          |Add a second plan to save up to $30/month:
       // Purchase Summarhy -----------------------------------------------------------------
       .zuc-ec-summary
         // Title
@@ -342,25 +367,58 @@
           |Purchase Summary
 
         .zuc-ec-summary-report
-          // Iterator to generate report rows
-          each value in summaryValues.length ? summaryValues : ['There are no summary values']
-            .zuc-report-row.flex.flex-hor-between
-              span
-                |#{value.type}
-              span
-                |#{value.value}
+          // Item Added Row
+          .zuc-report-row.flex.flex-hor-between
+            span
+              i.far.fa-trash-alt(data-cart-remove)
+              |Base Appliance Service Plan
+            span.u-bold
+              |$39.99
+
+
+          // Item Added Row
+          .zuc-report-row.flex.flex-hor-between
+            span
+              i.far.fa-trash-alt(data-cart-remove)
+              |Base Furniture Service Plan
+            span.u-bold
+              |$29.99
+
+
+          // Item Added Row
+          .zuc-report-row.flex.flex-hor-between
+            span
+              i.far.fa-trash-alt(data-cart-remove)
+              |Base Home Systems Service Plan
+            span.u-bold
+              |$49.99
+
+          // Combo Discount Row
+          .zuc-report-row.flex.flex-hor-between
+            span.u-bold
+              |Combo Plan Discount
+            span.u-bold
+              |-$50.00
+
+          // Combo Discount Row
+          .zuc-report-row.flex.flex-hor-between
+            span.u-bold
+              |Rewards Earned
+            span.u-bold
+              |700
+
 
           // Subtotal row
           .zuc-report-row.flex.flex-hor-between.--total
             span.u-uppercase
-              |Subtotal
+              |Monthly plan fee
 
             span
-              |$#{subtotal}
+              |$#{step2subtotal}
 
         // Cart Checkout Controls --------------------------------
-        .zuc-cart-controls.flex.flex-vert-center
-          a.zuc-ec-generic-link.u-phone-only(href="#" title="TODO")
+        .zuc-cart-controls.flex.flex-vert-center.--final-step
+          a.zuc-ec-generic-link(href="#" title="TODO")
             |Continue Shopping
           a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
             |Proceed to Checkout
@@ -374,187 +432,83 @@
     .zuc-ec-action-zone-right
       // Action Zone Column One
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Appliances Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in applianceCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Appliances Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in applianceCoverages
+                li= val
         // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          // todo: fix this/these
-          .zuc-ec-action-zone-price-btn
-            .zuc-ec-action-protected-btn
-              |PROTECTED
-      // Action Zone Column Two
-      .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Furniture Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in furnitureCoverages
-              li= val
-        // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
+        .zuc-ec-action-zone-bumper-box.--protected-active
           .zuc-ec-action-zone-price
             span.savings
-              |Save &#36; 50
+              |Save &#36; 20
             span.month
-              |&#47; monthly
+              |&#47; month
           .zuc-ec-action-zone-price-btn
-            a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
-              |BUNDLE &amp; SAVE
+            a.zuc-btn.zuc-btn-secondary.--protected(href="#" title="todo")
+              i.fas.fa-check
+              |PROTECTED
           .zuc-ec-action-zone-add-on
-            | &#43; &#36; 9.99 /month
+            | &#43; &#36; 14.99 /month      // Action Zone Column Two
+      .zuc-ec-action-zone-info-col
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Furniture Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in furnitureCoverages
+                li= val
+        // Action Zone Info Bumper Box
+        .zuc-ec-action-zone-bumper-box.--protected-active
+          .zuc-ec-action-zone-price
+            span.savings
+              |Save &#36; 20
+            span.month
+              |&#47; month
+          .zuc-ec-action-zone-price-btn
+            a.zuc-btn.zuc-btn-secondary.--protected(href="#" title="todo")
+              i.fas.fa-check
+              |PROTECTED
+          .zuc-ec-action-zone-add-on
+            | &#43; &#36; 14.99 /month
       // Action Zone Column Three
       .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Home Systems Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in homeSysCoverages
-              li= val
+        .zuc-ec-info-content
+          // Action Zone Info Box Image
+          .zuc-ec-action-zone-image-box
+            img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
+          // Action Zone Info Box
+          .zuc-ec-action-zone-info-box
+            h4.zuc-ec-action-zone-info-title
+              |Home Systems Coverage:
+            ul.zuc-ec-action-zone-info-list
+              each val in homeSysCoverages
+                li= val
         // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          // todo: fix this/these
+        .zuc-ec-action-zone-bumper-box.--protected-active
+          .zuc-ec-action-zone-price
+            span.savings
+              |Save &#36; 30
+            span.month
+              |&#47; month
           .zuc-ec-action-zone-price-btn
-            .zuc-ec-action-protected-btn
+            a.zuc-btn.zuc-btn-secondary.--protected(href="#" title="todo")
+              i.fas.fa-check
               |PROTECTED
-    // Action Zone Control Box - Small Screens
-    .zuc-ec-action-zone-control-box-small
-      span
-        |zuc-ec-action-zone-control-box-small
+          .zuc-ec-action-zone-add-on
+            | &#43; &#36; 24.99 /month
     // Action Zone Share Box
     .zuc-ec-action-zone-share-box
       span
         |zuc-ec-action-zone-share-box
 
-
-// - Action Zone Four
-.zuc-ec-plan-action-zone-container.--active
-  img.zuc-ec-action-zone-bg-img(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
-  // Plan Action Zone Module
-  .zuc-ec-plan-action-zone
-    // Action Zone Left Section
-    .zuc-ec-action-zone-left
-      // Action Zone CTA Box
-      .zuc-ec-action-zone-cta-box
-        .zuc-title-container.flex
-          h4
-            |STEP 4
-          .zuc-title-flag
-            .--green
-        h2.u-font-serif.u-zuc-indigo
-          |Complete your purchase:
-        p.zuc-ec-action-zone-cta-blurb
-      // Purchase Summarhy -----------------------------------------------------------------
-      .zuc-ec-summary
-        // Title
-        .zuc-ec-summary-title
-          |Purchase Summary
-
-        .zuc-ec-summary-report
-          // Iterator to generate report rows
-          each value in summaryValues.length ? summaryValues : ['There are no summary values']
-            .zuc-report-row.flex.flex-hor-between
-              span
-                |#{value.type}
-              span
-                |#{value.value}
-
-          // Subtotal row
-          .zuc-report-row.flex.flex-hor-between.--total
-            span.u-uppercase
-              |Subtotal
-
-            span
-              |$#{subtotal}
-
-        // Cart Checkout Controls --------------------------------
-        .zuc-cart-controls.flex.flex-vert-center
-          a.zuc-ec-generic-link.u-phone-only(href="#" title="TODO")
-            |Continue Shopping
-          a.zuc-btn.zuc-btn-secondary.u-soft-shadow(href="#" title="TODO")
-            |Proceed to Checkout
-
-        // Taxes
-        .zuc-subscript-info.u-text-right.--zuc-aux-size
-          |#{taxesInfo}
-
-
-    // Action Zone Right Section
-    .zuc-ec-action-zone-right
-      // Action Zone Column One
-      .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/appliances.png' alt='Home Appliances')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Appliances Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in applianceCoverages
-              li= val
-        // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          // todo: fix this/these
-          .zuc-ec-action-zone-price-btn
-            .zuc-ec-action-protected-btn
-              |PROTECTED
-      // Action Zone Column Two
-      .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-furnishing.png' alt='Home Furnishings')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Furniture Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in furnitureCoverages
-              li= val
-        // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          // todo: fix this/these
-          .zuc-ec-action-zone-price-btn
-            .zuc-ec-action-protected-btn
-              |PROTECTED
-      // Action Zone Column Three
-      .zuc-ec-action-zone-info-col
-        // Action Zone Info Box Image
-        .zuc-ec-action-zone-image-box
-          img(src='../../assets/images/service-plans/home-systems.png' alt='Home Systems')
-        // Action Zone Info Box
-        .zuc-ec-action-zone-info-box
-          h4.zuc-ec-action-zone-info-title
-            |Home Systems Coverage:
-          ul.zuc-ec-action-zone-info-list
-            each val in homeSysCoverages
-              li= val
-        // Action Zone Info Bumper Box
-        .zuc-ec-action-zone-bumper-box
-          // todo: fix this/these
-          .zuc-ec-action-zone-price-btn
-            .zuc-ec-action-protected-btn
-              |PROTECTED
-    // Action Zone Control Box - Small Screens
-    .zuc-ec-action-zone-control-box-small
-      span
-        |zuc-ec-action-zone-control-box-small
-    // Action Zone Share Box
-    .zuc-ec-action-zone-share-box
-      span
-        |zuc-ec-action-zone-share-box

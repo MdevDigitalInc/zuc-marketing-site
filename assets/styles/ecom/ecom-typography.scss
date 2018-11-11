@@ -75,3 +75,30 @@
     font-size: 21px;
   }
 }
+
+.zuc-ec-action-zone-info-title {
+  color: $color-zuc-indigo;
+  font-family: $main-font-serif;
+  font-size: 23px;
+
+  @media #{$laptop-up} {
+    font-size: 26px;
+  }
+}
+
+.zuc-ec-action-zone-info-list {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.57;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+.zuc-ec-action-zone-taxes {
+  padding-top: vw-desktop(12);
+  font-family: $main-font;
+  color: $color-zuc-darkindigo;
+  font-size: 18px;
+}

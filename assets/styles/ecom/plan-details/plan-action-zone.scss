@@ -65,25 +65,56 @@ $zecac-info-padding-desktop: vw-desktop(30);
   @media #{$desktop-up} {
     padding: vw-desktop(56) 0 vw-desktop(30) vw-desktop(40);
   }
+
+  .zuc-select-container {
+    max-width: 80%;
+  }
+
+  .zuc-ec-summary {
+    margin: 3vw 0;
+  }
+  // Presentational Overrides
+  .zuc-cart-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .zuc-btn {
+      margin-bottom: 15px;
+      order: 0;
+
+      @media #{$desktop-up} {
+        oder: 1;
+      }
+    }
+
+    .zuc-ec-generic-link {
+      order: 1;
+
+      @media #{$desktop-up} {
+        order: 0;
+      }
+    }
+  }
+
+  // Final Step Override
+  .--final-step {
+    .zuc-btn {
+      font-size: 23px;
+      order: -1;
+
+      @media #{$tablet-up} {
+        font-size: 15px;
+      }
+
+      @media #{$desktop-up} {
+        font-size: 23px;
+      }
+    }
+  }
 }
 
 .zuc-ec-action-zone-cta-box {
-
-  .zuc-ec-action-zone-cta-blurb {
-    color: $color-zuc-darkindigo;
-    font-weight: 500;
-    font-size: vw-phone(14);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(18);
-    }
-    @media #{$laptop-only} {
-      font-size: vw-laptop(18);
-    }
-    @media #{$desktop-up} {
-      font-size: vw-desktop(18);
-    }
-  }
+  width: 100%;
 }
 
 /***
@@ -117,33 +148,19 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
 .zuc-ec-action-zone-info-col {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 0 vw-phone(25) 0;
-
-  &:nth-child( n+2 ) {
-    margin: vw-phone(50) 0 0 0;
-  }
+  padding: 0 30px;
+  max-height: 1000px;
+  width: 100%;
 
   @media #{$tablet-only} {
     flex-direction: row;
-    padding: 0 $zecac-inner-padding-tablet;
-
-    &:nth-child( n+2 ) {
-      margin: vw-desktop(50) 0 0 0;
-    }
   }
+
   @media #{$laptop-up} {
-    padding: 0;
-    position: relative;
-
-    &:nth-child( n+2 ) {
-      margin: 0 0 0 vw-laptop(50);
-    }
-  }
-  @media #{$desktop-up} {
-    &:nth-child( n+2 ) {
-      margin: 0 0 0 vw-desktop(50);
-    }
+    flex-direction: column;
+    width: 33%;
   }
 }
 
@@ -153,18 +170,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: vw-phone(150);
-
-  @media #{$tablet-only} {
-    width: 30%;
-    height: vw-tablet(150);
-  }
-  @media #{$laptop-only} {
-    height: vw-laptop(170);
-  }
-  @media #{$desktop-up} {
-    height: vw-desktop(190);
-  }
 
   img {
     width: 100%;
@@ -172,91 +177,41 @@ $zecac-info-padding-desktop: vw-desktop(30);
 }
 
 .zuc-ec-action-zone-info-box {
-  margin: vw-phone(25) 0 0 vw-phone(15);
-
-  @media #{$tablet-only} {
-    width: 40%;
-    margin: 0 0 0 vw-tablet(30);
-  }
-  @media #{$laptop-only} {
-    margin: vw-laptop(10) 0 vw-laptop(180) $zecac-info-padding-laptop;
-  }
-  @media #{$desktop-up} {
-    margin: vw-desktop(10) 0 vw-desktop(180) $zecac-info-padding-desktop;
-  }
-
-  .zuc-ec-action-zone-info-title {
-    color: $color-zuc-indigo;
-    font-family: $main-font-serif;
-    font-size: vw-phone(23.5);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(23.5);
-    }
-    @media #{$laptop-only} {
-      font-size: vw-laptop(26);
-    }
-    @media #{$desktop-up} {
-      font-size: vw-desktop(26);
-    }
-  }
-
-  .zuc-ec-action-zone-info-list {
-    font-size: vw-phone(14);
-    font-weight: 300;
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(14);
-    }
-    @media #{$laptop-only} {
-      font-size: vw-laptop(14);
-    }
-    @media #{$desktop-up} {
-      font-size: vw-desktop(14);
-    }
-  }
+  width: 100%;
 }
 
 .zuc-ec-action-zone-bumper-box {
   width: 100%;
-  margin: 0 vw-phone(15);
   font-family: $main-font-serif;
   font-weight: 300;
   color: $color-zuc-indigo;
-  // letter-spacing: vw-desktop(2);
   display: flex;
   flex-direction: column;
-  // tmp
-  // margin-top: 4vw;
-
-  @media #{$tablet-up} {
-    width: 30%;
-    margin: 0;
-  }
-  @media #{$laptop-up} {
-    position: absolute;
-    bottom: vw-desktop(60);
-    width: 100%;
-    margin: 0 $zecac-info-padding-laptop;
-  }
-  @media #{$desktop-up} {
-    margin: 0 $zecac-info-padding-desktop;
-  }
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  justify-self: flex-end;
+  align-self: flex-end;
 
   .zuc-ec-action-zone-price-btn {
     padding: vw-desktop(20) 0;
   }
 
-  .zuc-ec-action-zone-taxes {
-    padding-top: vw-desktop(12);
-    color: $color-zuc-darkindigo;
-  }
-
   .zuc-ec-action-zone-add-on {
-    padding-top: vw-desktop(18);
     font-family: $main-font;
     color: $color-zuc-darkindigo;
     font-weight: 600;
+  }
+
+  .--protected {
+    margin-bottom: 15px;
+  }
+
+  // Hides auxiliary info when protected
+  &.--protected-active {
+    .zuc-ec-action-zone-price,
+    .zuc-ec-action-zone-add-on {
+      display: none;
+    }
   }
 }
 
@@ -265,7 +220,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   .sign,
   .dollar {
-    font-size: vw-desktop(50);
+    font-size: 50px;
   }
 
   .savings {
@@ -273,11 +228,13 @@ $zecac-info-padding-desktop: vw-desktop(30);
   }
 
   .cents {
-    align-self: flex-start;
+    vertical-align: super;
+    font-size: 30px;
   }
 
   .month {
     align-self: flex-end;
+    font-size: 23px;
   }
 }
 
@@ -291,25 +248,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
   width: 100%;
   background: #fa99c1;
   display: none; //- Hide for launch
-}
-
-.zuc-ec-action-protected-btn {
-  width: auto;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: all .4s;
-  border-radius: 20vw;
-  position: relative;
-  vertical-align: middle;
-  font-size: .83vw;
-  font-family: $main-font;
-  color: $color-pure-white;
-  border: 2px solid $color-zuc-mint;
-  background: $color-zuc-mint;
-  padding: 1.45vw 2.21vw;
-  // todo: temporary hardcode value.
-  margin: 36px 0;
 }
 
 .zuc-ec-action-zone-bg-img {
@@ -337,3 +275,5 @@ $zecac-info-padding-desktop: vw-desktop(30);
     left: -2px;
   }
 }
+
+

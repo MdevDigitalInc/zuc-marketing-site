@@ -64,6 +64,7 @@
   color: $white;
   border: none;
   font-weight: 700;
+  position: relative;
   box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, .2);
   padding: 25px 40px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0);
@@ -78,6 +79,29 @@
     color: $white;
     box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, 0);
     text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  }
+
+  i {
+    margin-right: 10px;
+    margin-left: -10px;
+    transform: scale(1.1);
+    display: none;
+  }
+}
+
+.--protected {
+  color: $white;
+  background: $color-zuc-mint;
+  box-shadow: 0 .1vw 3.43vw 0 rgba(12, 12, 12, 0);
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  i {
+    display: inline;
   }
 }
 
