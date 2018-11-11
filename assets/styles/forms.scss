@@ -318,6 +318,7 @@ li {
   list-style: inside;
   margin-bottom: 7.8vw;
   color: $color-zuc-darkindigo;
+  list-style-position: outside;
 
   @media #{$tablet-only} {
     margin-bottom: 3.26vw;

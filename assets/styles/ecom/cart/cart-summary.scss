@@ -53,6 +53,10 @@
     @media #{$tablet-up} {
       font-size: 18px;
     }
+
+    i {
+      margin-right: 10px;
+    }
   }
 
   // Total row override
@@ -75,7 +79,7 @@
 
   @media #{$laptop-up} {
     text-align: right;
-    padding-left: 20%;
+    padding-left: 0;
     padding-right: 0;
   }
 }
