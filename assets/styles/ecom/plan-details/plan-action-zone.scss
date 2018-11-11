@@ -264,9 +264,6 @@ $zecac-info-padding-desktop: vw-desktop(30);
     display: flex;
     width: 60%;
   }
-
-  @media #{$laptop-up} {
-  }
 }
 
 /*************************************
@@ -293,5 +290,3 @@ $zecac-info-padding-desktop: vw-desktop(30);
   left: 0;
   right: 0;
 }
-
-
