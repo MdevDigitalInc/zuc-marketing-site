@@ -37,7 +37,7 @@
   &:hover,
   &:active,
   &:focus {
-    background: lighten($color-brand-primary, 10%);
+    background: darken($color-brand-primary, 10%);
   }
 
   .zuc-nav-brand {
@@ -118,8 +118,10 @@
 }
 
 .zuc-nav-links {
-  @media #{$phone-only} {
-    display: none;
+  display: none;
+
+  @media #{$laptop-up} {
+    display: initial;
   }
 }
 

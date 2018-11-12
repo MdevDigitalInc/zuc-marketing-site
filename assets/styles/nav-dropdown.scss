@@ -7,15 +7,19 @@ $dropdown-padding: 1.5vw;
   color: $white;
   transition: all, .3s;
   background: transparent;
-  cursor: pointer;
+  cursor: default;
   position: relative;
+
+  > span {
+    letter-spacing: .05vw;
+  }
 
   // Hover reveals hidden menu
   &:hover,
   &:active,
   &:focus {
     background: $white;
-    color: darken($color-zuc-indigo, 10%);
+    color: lighten($color-zuc-indigo, 10%);
 
     .zuc-hidden-menu {
       opacity: 1;
@@ -50,6 +54,10 @@ $dropdown-padding: 1.5vw;
 
   .zuc-dropdown-images {
     padding: 0 $dropdown-padding;
+  }
+
+  .--clickme {
+    cursor: pointer;
   }
 }
 
