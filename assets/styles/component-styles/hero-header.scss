@@ -73,40 +73,32 @@
   }
 }
 
-// Shield Container
+// Shield Container, aspect ratio .875
 .zuc-shield {
   position: absolute;
   z-index: 20;
   overflow: visible;
-
-  
-
-  @media #{$portrait} {
-    width: 40%;
-    padding-top: 46.5%;
-    bottom: 4vh;
-    @include center(horizontal);
-  }
+  bottom: 0;
 
   @media #{$phone-only} {
-    width: 72%;
-    padding-top: 83.5%;
+    width: 100%;
+    padding-top: 114.25%;
+    @include center(horizontal);
   }
 
   @media #{$tablet-only} {
     width: 80%;
-    padding-top: 90%;
-    bottom: 0;
+    padding-top: 91.5%;
     @include center(horizontal);
   }
 
   @media #{$tablet-lnd-only} {
-    bottom: 14vh;
+    // todo
   }
 
   @media #{$laptop-up} {
     width: 44%;
-    padding-top: 50%;
+    padding-top: 50.25%;
     bottom: 3vh;
     right: 5%;
   }
