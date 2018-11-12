@@ -248,13 +248,6 @@
   }
 }
 
-footer .zuc-btn-primary {
-  @media #{$tablet-only} {
-    font-size: 1.75vw;
-    padding: 2vw;
-  }
-}
-
 footer .zuc-footer-row {
   display: flex;
   flex-direction: column;
