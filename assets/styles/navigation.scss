@@ -118,10 +118,9 @@
 }
 
 .zuc-nav-links {
-  display: none;
 
-  @media #{$laptop-up} {
-    display: initial;
+  @media #{$phone-only} {
+    display: none;
   }
 }
 
