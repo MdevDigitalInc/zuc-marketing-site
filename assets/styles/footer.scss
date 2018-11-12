@@ -5,7 +5,6 @@
 .zuc-footer {
   background-color: $color-zuc-indigo;
   padding: 60px 20px 70px;
-  letter-spacing: 1px;
   flex-direction: column;
 
   @media #{$tablet-only} {
@@ -18,14 +17,6 @@
 
   @media #{$phone-only} {
     display: none;
-  }
-
-  a {
-    color: $white;
-    &:hover {
-      text-decoration: underline;
-      color: $color-zuc-lilac;
-    }
   }
 }
 
@@ -44,7 +35,7 @@
 
 .zuc-footer--header {
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
   white-space: nowrap;
@@ -58,7 +49,7 @@
 .zuc-footer--link {
   color: $white;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .zuc-footer--logo {
@@ -131,7 +122,11 @@
   .zuc-social-link {
     font-size: 1.5vw;
     font-weight: 400;
-    padding: 0 5px;
+    padding: 0 10px;
+
+    &:last-child {
+      padding: 0;
+    }
 
     @media #{$laptop-only} {
       font-size: 1.3vw;
@@ -147,7 +142,7 @@
   }
 
   .zuc-btn {
-    margin-right: 10px;
+    // margin-right: 10px;
   }
 }
 
@@ -166,7 +161,7 @@
 
   .zuc-footer--copyright-text {
     color: $white;
-    font-size: 12px;
+    font-size: 14px;
 
     @media #{$phone-only} {
       font-size: 10px;
@@ -178,7 +173,7 @@
   }
 
   .zuc-footer--copyright-title {
-    font-size: 12px;
+    font-size: 14px;
 
     @media #{$phone-only} {
       padding: 0 0 1vw;
@@ -255,6 +250,15 @@ footer .zuc-btn-primary {
 footer .zuc-footer-row {
   display: flex;
   flex-direction: column;
+  letter-spacing: 1px;
+
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+      color: $color-zuc-lilac;
+    }
+  }
 
   @media #{$laptop-up} {
     flex-direction: row;
