@@ -30,12 +30,12 @@
     each image in images.length ? images : ['No images to display']
       // Small thumbnail images [ Iterated ]
       if image._active
-        .zuc-ec-showcase-small-image.--active-image(showcase-small)
-          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' showcase-image)
+        .zuc-ec-showcase-small-image.--active-image(data-showcase-small)
+          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' data-showcase-image)
       else
-        .zuc-ec-showcase-small-image(showcase-small)
-          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' showcase-image)
+        .zuc-ec-showcase-small-image(data-showcase-small)
+          img(src=image._src, alt=image._alt onclick='changeMainImage(' + i++ + ')' data-showcase-image)
   // Large image container
   .zuc-ec-showcase-right
     .zuc-ec-showcase-big-image
-      img(src=images[0]._src alt=images[0]._alt showcase-big)
+      img(src=images[0]._src alt=images[0]._alt data-showcase-big)
