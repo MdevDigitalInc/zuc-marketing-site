@@ -21,7 +21,7 @@
 }
 
 .zuc-footer--column {
-  padding: 0 20px;
+  padding: 0 vw-desktop(65);
 
 
   &:nth-child( 2 ) {
@@ -57,7 +57,7 @@
 }
 
 .zuc-footer--brand-section {
-  padding: 0 2%;
+  padding: 0;
   left: 0;
   color: $white;
   font-size: $font-size-body;
