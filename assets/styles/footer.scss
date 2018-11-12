@@ -194,6 +194,14 @@
       padding: 0 0 1vw;
     }
 
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+        color: $color-zuc-lilac;
+      }
+    }
+
     span {
       font-size: 12px;
       margin: 0 .5vw;
