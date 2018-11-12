@@ -19,6 +19,14 @@
   @media #{$phone-only} {
     display: none;
   }
+
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+      color: $color-zuc-lilac;
+    }
+  }
 }
 
 .zuc-footer--column {
@@ -174,6 +182,13 @@
 
     @media #{$phone-only} {
       padding: 0 0 1vw;
+    }
+
+    a {
+      color: $white;
+      &:hover {
+        color: $color-zuc-lilac;
+      }
     }
   }
 
