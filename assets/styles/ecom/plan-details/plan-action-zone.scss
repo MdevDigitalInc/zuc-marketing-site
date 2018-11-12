@@ -18,17 +18,18 @@
   box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
   z-index: 5;
   flex-direction: column;
-  width: 90%;
-  margin: 7vw auto 10vw;
+  margin: 7vw 5vw 10vw;
+
+
+  @media #{tablet-only} {
+    margin: 7vw 7vw 10vw;
+  }
 
   @media #{$laptop-up} {
+    margin: 7vw 8vw 10vw;
     flex-direction: row;
-    width: 95%;
   }
 
-  @media #{$desktop-up} {
-    width: 80%;
-  }
 }
 
 /*****
@@ -57,10 +58,11 @@ $zecac-info-padding-desktop: vw-desktop(30);
     padding: vw-tablet(35) $zecac-inner-padding-tablet vw-tablet(40);
   }
   @media #{$laptop-up} {
-    width: 35%;
+    width: 32%;
     padding: vw-laptop(56) 0 vw-laptop(30) vw-laptop(40);
   }
   @media #{$desktop-up} {
+    width: 35%;
     padding: vw-desktop(56) 0 vw-desktop(30) vw-desktop(40);
   }
 
@@ -72,8 +74,12 @@ $zecac-info-padding-desktop: vw-desktop(30);
       max-width: 55%;
     }
 
-    @media #{$laptop-up} {
+    @media #{$laptop-only} {
       max-width: 80%;
+    }
+
+    @media #{$desktop-up} {
+      max-width: 65%;
     }
   }
 
@@ -85,7 +91,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
     flex-wrap: wrap;
     justify-content: center;
 
-    @media #{$laptop-up} {
+    @media #{$tablet-up} {
       justify-content: flex-end;
     }
 
@@ -153,12 +159,17 @@ $zecac-info-padding-desktop: vw-desktop(30);
   display: flex;
   flex-direction: column;
 
+  @media #{$phone-only} {
+    padding-bottom: 20px;
+  }
+
   @media #{$laptop-up} {
-    width: 65%;
+    width: 68%;
     flex-direction: row;
     padding: vw-laptop(40) vw-laptop(40) 0;
   }
   @media #{$desktop-up} {
+    width: 65%;
     padding: vw-desktop(50) vw-desktop(40) 0;
   }
 }
@@ -179,6 +190,16 @@ $zecac-info-padding-desktop: vw-desktop(30);
     flex-direction: row;
   }
 
+  @media #{$laptop-only} {
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
   @media #{$laptop-up} {
     flex-direction: column;
     padding: 0 30px;
@@ -196,6 +217,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   @media #{$tablet-only} {
     width: 40%;
+    margin-right: 30px;
   }
 
   @media #{$laptop-up} {
@@ -218,6 +240,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   @media #{$tablet-only} {
     width: 60%;
+    margin-right: -25px;
   }
 }
 
@@ -236,6 +259,7 @@ $zecac-info-padding-desktop: vw-desktop(30);
   @media #{$phone-only} {
     padding-left: 5%;
     padding-bottom: 0;
+    padding-top: 20px;
   }
 
   @media #{$tablet-only} {
@@ -270,6 +294,8 @@ $zecac-info-padding-desktop: vw-desktop(30);
 
   // Hides auxiliary info when protected
   &.--protected-active {
+    padding-top: 0;
+
     .zuc-ec-action-zone-price,
     .zuc-ec-action-zone-add-on {
       display: none;
