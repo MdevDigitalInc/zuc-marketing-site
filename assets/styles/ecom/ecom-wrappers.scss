@@ -25,7 +25,8 @@
   }
 }
 
-.zuc-ec-details-wrapper {
+.zuc-ec-details-wrapper,
+.zuc-ec-category-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0 5vw;
@@ -39,16 +40,28 @@
   }
 }
 
-.zuc-ec-category-wrapper {
+.zuc-ec-plan-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 5vw;
+  padding: 0;
+}
 
-  @media #{tablet-only} {
-    padding: 0 7vw;
+.zuc-ec-cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 34vw auto 18vw;
+  width: 95%;
+
+  @media #{$tablet-up} {
+    margin: 14vw auto;
   }
 
-  @media #{$laptop-up} {
-    padding: 0 16vw;
+  @media #{$tablet-lnd-only} {
+    margin: 14vw auto 5vw;
+  }
+
+  @media #{$desktop-up} {
+    width: 85%;
   }
 }

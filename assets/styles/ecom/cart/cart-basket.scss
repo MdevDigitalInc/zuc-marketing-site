@@ -1,0 +1,214 @@
+.zuc-ec-cart-basket {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 70%;
+  }
+}
+
+// Top of cart Legend
+.zuc-ec-cart-legend {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 2px solid $color-zuc-concrete;
+  border-bottom: 2px solid $color-zuc-concrete;
+  font-weight: 700;
+  font-size: 16px;
+  color: $color-zuc-darkindigo;
+
+  @media #{$phone-only} {
+    display: none;
+  }
+}
+
+// Cart Items -----------------------
+// Collection of cart items
+.zuc-ec-cart-items {
+  width: 100%;
+  padding: 0;
+  color: $color-zuc-darkindigo;
+  margin-bottom: 60px;
+
+  @media #{$laptop-up} {
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// Cart Controls
+.zuc-cart-controls {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media #{$tablet-up} {
+    flex-wrap: nowrap;
+  }
+
+  @media #{$tablet-prt-only} {
+    padding-bottom: 10px;
+  }
+
+  @media #{$laptop-up} {
+    justify-content: flex-end;
+  }
+
+  .zuc-btn {
+    margin: 20px 0 0;
+
+    @media #{$tablet-up} {
+      margin: 0;
+    }
+  }
+}
+
+// Indibidual Cart Item Row
+.zuc-ec-cart-item {
+  width: 100%;
+  position: relative;
+  padding: 15px 10px;
+  border-bottom: 1px solid $color-zuc-concrete;
+
+  @media #{$phone-only} {
+    &:first-child {
+      border-top: 1px solid $color-zuc-concrete;
+    }
+  }
+}
+
+// Item Info, description + image
+.zuc-ec-cart-iteminfo {
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  @media #{$tablet-up} {
+    align-items: center;
+  }
+
+  @media #{$tablet-only} {
+    width: 60%;
+  }
+  @media #{$laptop-up} {
+    width: 70%;
+  }
+
+  // Product / Plan Image
+  .zuc-item-image {
+    width: 20%;
+    min-width: 100px;
+
+    @media #{$tablet-up} {
+      min-width: 150px;
+    }
+  }
+  // Product / Plan Information
+  .zuc-item-description {
+    width: 100%;
+    margin-left: 5%;
+    line-height: 1.5;
+    font-weight: 100;
+
+    @media #{$tablet-up} {
+      width: 25%;
+      min-width: 217px;
+    }
+  }
+  // Product / Plan Name
+  .zuc-item-name {
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+}
+
+.zuc-item-props {
+  width: 100%;
+
+  .zuc-prop {
+    width: 100%;
+    display: block;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media #{$phone-only} {
+    .zuc-select-container {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.zuc-item-controls {
+  width: 100%;
+  color: $color-zuc-indigo;
+  text-decoration: underline;
+  margin-top: 12px;
+
+  a {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Item Quantity & Quantity Controls
+.zuc-ec-cart-qty {
+  width: 25%;
+  text-align: left;
+
+  @media #{$laptop-up} {
+    width: 20%;
+  }
+
+  .zuc-select-container {
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 0;
+    height: 46px;
+  }
+}
+
+// Item Total Price
+.zuc-ec-cart-total {
+  width: 15%;
+  display: none;
+
+  @media #{$tablet-up} {
+    display: block;
+  }
+
+  @media #{$laptop-up} {
+    width: 15%;
+  }
+
+  @media #{$desktop-up} {
+    width: 10%;
+  }
+}
+
+.zuc-cart-footer {
+  margin-top: 30px;
+  color: $color-zuc-darkindigo;
+  font-weight: 100;
+  line-height: 1.33;
+  text-align: center;
+  font-size: 18px;
+
+  @media #{$laptop-up} {
+    text-align: right;
+  }
+}
+
+.--qty {
+  margin-top: 20px;
+}

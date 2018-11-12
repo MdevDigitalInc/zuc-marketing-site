@@ -25,7 +25,7 @@ module.exports = {
   // Output Files
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '',
+    publicPath: '/',
     filename: 'app/[name][hash].js'
   },
   // Split Vendor | Build Assets into separate chunks
@@ -66,7 +66,7 @@ module.exports = {
           exclude: /(node_modules)/,
           use: [{
             loader: "babel-loader",
-            options: { presets: ['es2015'] }
+            options: { presets: ['babel-preset-es2015'] }
           }]
       },
       // CSS Processing
@@ -257,22 +257,38 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-details.pug',
-      filename: 'ecom-details.html'
+      filename: 'ecomdetails.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-category.pug',
-      filename: 'ecom-category.html'
+      filename: 'ecomcategory.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-cart.pug',
-      filename: 'ecom-cart.html'
+      filename: 'ecomcart.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-home.pug',
-      filename: 'ecom-home.html'
+      filename: 'ecomhome.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ecom-plan.pug',
+      filename: 'ecomplan.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/shared/navigation.pug',
+      filename: 'layouts/mainNavigation.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/shared/secondary-footer.pug',
+      filename: 'layouts/secondaryFooter.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/shared/footer.pug',
+      filename: 'layouts/footer.html'
     }),
     new CopyWebpackPlugin([
-      { from: 'src/js', to: 'js', force: true }
+      { from: 'src/js', to: 'Scripts/Zuc/js', force: true }
     ])
   ],
   performance: {

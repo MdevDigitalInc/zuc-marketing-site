@@ -1,0 +1,24 @@
+-
+  var categories = [
+    {
+      name: 'home care',
+      _active: true
+    },
+    {
+      name: 'family care',
+      _active: false
+    },
+    {
+      name: 'tools &amp; textiles',
+      _active: false
+    }
+  ]
+
+.zuc-ec-toggle
+  each category in categories.length ? categories : [ 'Nothing to display' ]
+    if category._active
+      a.zuc-ec-toggle-category.--active(href="#" title="todo")
+        |!{category.name}
+    else
+      a.zuc-ec-toggle-category(href="#" title="todo")
+        |!{category.name}

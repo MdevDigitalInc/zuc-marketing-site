@@ -1,0 +1,8 @@
+.zuc-ec-plan-best-sellers {
+  width: 100%;
+  margin: 7vw 5%;
+
+  @media #{$laptop-up} {
+    margin: 7vw 8vw;
+  }
+}

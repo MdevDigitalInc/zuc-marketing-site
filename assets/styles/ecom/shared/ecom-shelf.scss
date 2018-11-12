@@ -1,0 +1,163 @@
+.zuc-ec-shelf-cards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: vw-phone(30) 0 vw-phone(25);
+
+  @media #{$tablet-only} {
+    margin: vw-tablet(38) 0 vw-tablet(30);
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-desktop(40) 0 vw-desktop(45);
+  }
+}
+
+.zuc-ec-shelf-card {
+  width: 100 / 2 * 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $color-pure-white;
+  z-index: 1;
+  box-shadow: 0 23px 40px 0 rgba(12, 12, 12, 0);
+  transition: .3s;
+  padding: vw-phone(8) 0 vw-phone(16);
+  
+  @media #{$tablet-only} {
+    width: 100 / 3 * 1%;
+    padding: vw-tablet(15) 0 vw-tablet(25);
+  }
+
+  @media #{$laptop-up} {
+    width: 100 / 4 * 1%;
+    padding: vw-laptop(15) 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(15) 0;
+  }
+
+  &:hover {
+    z-index: 2;
+    box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
+    transform: scale(1.05);
+
+    .zuc-ec-btn-box {
+      opacity: 1;
+    }
+  }
+
+  .zuc-ec-shelf-card-image {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 vw-phone(15);
+    height: vw-phone(125);
+
+    @media #{$tablet-only} {
+      margin: 0 0 vw-tablet(20);
+      height: vw-tablet(200);
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 0 vw-desktop(20);
+      height: vw-desktop(300);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .zuc-ec-shelf-card-name {
+    max-width: 90%;
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    font-size: vw-phone(14);
+    padding: 0 2% vw-phone(7);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(22);
+      padding: 0 2% vw-tablet(10);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(20);
+      padding: 0 2% vw-desktop(15);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(20);
+    }
+  }
+
+  .zuc-ec-shelf-card-price-reg {
+    max-width: 90%;
+    color: $color-zuc-darkindigo;
+    font-weight: 100;
+    font-size: vw-phone(10.5);
+    padding: 0 0 vw-phone(5);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(15);
+      padding: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(14);
+      padding: 0 0 vw-desktop(5);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(14);
+    }
+
+    span {
+      line-height: 1.3;
+      display: inline-block;
+    }
+  }
+
+  .zuc-ec-shelf-card-price-mem {
+    max-width: 90%;
+    color: $color-zuc-darkindigo;
+    font-weight: 600;
+    font-size: vw-phone(12);
+    padding: 0;
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(16);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(15);
+      padding: 0 0 vw-desktop(25);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(16);
+    }
+
+    span {
+      line-height: 1.3;
+      display: inline-block;
+    }
+  }
+}
+
+.zuc-ec-btn-box {
+  display: none;
+  transition: .4s .2s;
+
+  @media #{$laptop-up} {
+    display: block;
+    opacity: 0;
+  }
+}

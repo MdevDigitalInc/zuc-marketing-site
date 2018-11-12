@@ -1,15 +1,18 @@
-extends _layout
+extends _layout-headless
 
 block content
   //- Header Module
   include ../ecom/modules/home/home-header.pug
-  
+
   .zuc-ec-home-wrapper
     //- Category Links Module
     include ../ecom/modules/home/home-catlinks.pug
-    
+
     //- Best Sellers Module
     include ../ecom/modules/home/home-best-sellers.pug
-    
+
     //- Plans Module
     include ../ecom/modules/home/home-plans.pug
+
+  //- Ecom Home Slider Controller
+  script( src='/Scripts/Zuc/js/ecom-home-slider.js')

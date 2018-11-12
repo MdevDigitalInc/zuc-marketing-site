@@ -1,0 +1,109 @@
+.zuc-ec-det-infostack {
+  width: 100%;
+  order: 4;
+  padding: 0 0 vw-phone(30);
+  margin: 0;
+
+  @media #{$tablet-only} {
+    padding: 0 0 vw-tablet(30);
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+    order: 5;
+    margin: vw-laptop(-10) 0 0;
+    padding: 0 16vw 0 vw-desktop(60);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(-90) 0 0;
+  }
+}
+
+.zuc-ec-tabs {
+  width: 100%;
+  display: flex;
+
+  .zuc-ec-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-zuc-concrete;
+    border-bottom: solid 2px $color-zuc-concrete;
+    font-size: vw-phone(10);
+    padding: 0 vw-phone(9) vw-phone(10) 0;
+
+    &:nth-child( n+2 ) {
+      padding: 0 vw-phone(9) vw-phone(10);
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.--active {
+      color: $color-zuc-indigo;
+      border-color: $color-zuc-indigo;
+    }
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(16);
+      padding: 0 vw-tablet(18) vw-tablet(10) 0;
+
+      &:nth-child( n+2 ) {
+        padding: 0 vw-tablet(18) vw-tablet(10);
+      }
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-desktop(16);
+      padding: 0 vw-desktop(20) vw-desktop(5) 0;
+
+      &:nth-child( n+2 ) {
+        padding: 0 vw-desktop(20) vw-desktop(5);
+      }
+    }
+  }
+
+  .zuc-ec-tab-kaboose {
+    border-bottom: solid 2px $color-zuc-concrete;
+    flex-grow: 2;
+
+    @media #{$phone-only} {
+      display: none;
+    }
+  }
+}
+
+
+.zuc-ec-container {
+  position: relative;
+  width: 100%;
+  transition: all .9s ease;
+}
+
+.zuc-ec-text-blob {
+  padding: vw-phone(25) 0 0;
+  font-size: vw-phone(12);
+  color: $color-zuc-darkindigo;
+  opacity: 0;
+  position: absolute;
+  transition: .2s all;
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(30) 0 0;
+    font-size: vw-tablet(16);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-desktop(28) 0 0;
+    font-size: vw-desktop(16);
+  }
+  &.--active-text {
+    transition: .9s all;
+    opacity: 1;
+  }
+}

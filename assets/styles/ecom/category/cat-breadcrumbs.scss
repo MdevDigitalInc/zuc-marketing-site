@@ -1,0 +1,8 @@
+.zuc-ec-cat-breadcrumbs {
+  width: 100%;
+  padding: 0 5%;
+
+  @media #{$desktop-up} {
+    padding: 0 12.5%;
+  }
+}

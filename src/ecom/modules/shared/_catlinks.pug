@@ -1,0 +1,28 @@
+-
+  var boxes = [
+    {
+      title: 'Smarter Living Plans',
+      subtitle: 'Protect your home and budget',
+      style: 'background-image:url(\'./images/shared/man-tool-bag.png\');'
+    },
+    {
+      title: 'PureCare',
+      subtitle: 'a safe haven for a sound sleep',
+      style: 'background-image:url(\'./images/smarter-products/hero-family-kitchen.png\');'
+
+    },
+    {
+      title: 'Furniture Care',
+      subtitle: 'clean. restore. maintain.',
+      style: 'background-image:url(\'./images/shared/happy-family-livingroom.png\');'
+    }
+  ]
+
+.zuc-ec-catlinks-boxes
+  each box in boxes.length ? boxes : [' No links to display']
+    a.zuc-ec-catlinks-box(href="#" title="#")
+      .zuc-ec-catlinks-box-image(style=box.style)
+      h5.zuc-ec-catlinks-box-subtitle
+        |!{box.subtitle}
+      h3.zuc-ec-catlinks-box-title
+        |!{box.title}

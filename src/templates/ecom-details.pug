@@ -1,21 +1,25 @@
-extends _layout
+extends _layout-headless
 
 block content
+  //- Breadcrumbs
+  include ../ecom/modules/shared/_breadcrumbs.pug
+
   .zuc-ec-details-wrapper
-    //- Breadcrumbs
-    include ../ecom/modules/_breadcrumbs.pug
+
+    // Tab Controller
+    script( src='/Scripts/Zuc/js/tab-controller.js')
 
     //- Showcase Module
-    include ../ecom/modules/det-showcase.pug
+    include ../ecom/modules/product-details/det-showcase.pug
 
     //- Product Module
-    include ../ecom/modules/det-product.pug
-    
+    include ../ecom/modules/product-details/det-product.pug
+
     //- Related Products Module
-    include ../ecom/modules/det-related.pug
+    include ../ecom/modules/product-details/det-related.pug
 
     //- Info Stack Module
-    include ../ecom/modules/det-infostack.pug
-    
+    include ../ecom/modules/product-details/det-infostack.pug
+
     //- Best Sellers Module
-    include ../ecom/modules/det-best-sellers.pug
+    include ../ecom/modules/product-details/det-best-sellers.pug
