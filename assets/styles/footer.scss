@@ -23,7 +23,6 @@
 .zuc-footer--column {
   padding: 0 vw-desktop(65);
 
-
   &:nth-child( 2 ) {
     margin: 5.86vw 0 0;
 
@@ -44,6 +43,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   */
+
+  @media #{$portrait} {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
 }
 
 .zuc-footer--link {
@@ -272,6 +276,7 @@ footer .zuc-footer-row {
   @media #{$tablet-only} {
     display: block;
     padding-top: 4.69vw;
+    font-size: 14px;
   }
 }
 
