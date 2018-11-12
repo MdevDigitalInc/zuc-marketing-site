@@ -16,11 +16,13 @@
 
   //Nav Links
   .zuc-user-links.flex.flex-hor-start.flex-hor-between.flex-vert-center
-    // Search Placeholder
-    .zuc-search-box
-      i.fas.fa-search
-      span.search-text
-        |#{search}
+    //- HIDDEN FOR LAUNCH
+      // Search Placeholder
+      .zuc-search-box
+        i.fas.fa-search
+        span.search-text
+          |#{search}
+
     // Login - Logged Out State
     a(href="javascript:void(0)" title="Member Login" class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" onclick="toggleModal('[data-modal-login]')")
       // Logged Out State
@@ -34,10 +36,10 @@
       i.fas.fa-user.u-auth-show
       span.u-auth-show
         |#{loggedIn}
-
-    // Partnerships
-    a(href="#" title="Learn about our Partnership Program" class="zuc-user-generic")
-      |#{partner}
+    //- HIDDEN FOR LAUNCH
+      // Partnerships
+      a(href="#" title="Learn about our Partnership Program" class="zuc-user-generic")
+        |#{partner}
 
     // Shopping Cart
     a(href="#" title="User Cart" class="zuc-user-cart flex flex-vert-center")
@@ -48,7 +50,7 @@
         // Interpolate Cart Count from Limetac
         span
           |#{cartCount}
-
-    // Localization Toggle - French (FR)
-    a.zuc-lang-toggle.u-color-white.u-bold(href="#" title="Switch to French")
-      |FR
+    //- HIDDEN FOR LAUNCH
+      // Localization Toggle - French (FR)
+      a.zuc-lang-toggle.u-color-white.u-bold(href="#" title="Switch to French")
+        |FR

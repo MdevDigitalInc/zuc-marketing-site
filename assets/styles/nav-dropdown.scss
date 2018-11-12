@@ -15,7 +15,7 @@ $dropdown-padding: 1.5vw;
   &:active,
   &:focus {
     background: $white;
-    color: lighten($color-zuc-indigo, 10%);
+    color: darken($color-zuc-indigo, 10%);
 
     .zuc-hidden-menu {
       opacity: 1;
@@ -39,7 +39,7 @@ $dropdown-padding: 1.5vw;
     box-shadow: 0 0 50px rgba( 0,0,0,.5);
     border-bottom: 5px solid $color-zuc-indigo;
     cursor: default;
-    padding-top: 2.6vw;
+    padding-top: 1.2vw;
   }
 
   .zuc-dropdown-content {
@@ -69,7 +69,7 @@ $dropdown-padding: 1.5vw;
   a {
     display: block;
     width: 100%;
-    padding: .8vw $dropdown-padding;
+    padding: .8vw 0 .8vw $dropdown-padding;
     background: transparent;
     color: $color-zuc-indigo;
     transition: all, .2s;
