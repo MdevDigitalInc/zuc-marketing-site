@@ -16,7 +16,7 @@
   width: 100%;
   padding: 3vw;
   background: $color-zuc-platinum;
-  margin-bottom: 4.6vw;
+  margin-bottom: 30px;
 
   @media #{$tablet-lnd-only} {
     padding: 3vw 2vw;
@@ -27,7 +27,7 @@
   }
 
   @media #{$laptop-up} {
-    margin-bottom: vw-desktop(25);
+    margin-bottom: 30px;
     padding: vw-desktop(30) vw-desktop(20);
   }
 
@@ -68,7 +68,7 @@
     }
 
     span:first-child {
-      width: 100%;
+      width: 80%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -83,6 +83,7 @@
     border-top: 2px solid $color-zuc-concrete;
     font-size: 18px;
     margin-top: 60px;
+    margin-bottom: 20px;
 
     @media #{$tablet-up} {
       font-size: 22px;
@@ -122,6 +123,10 @@
   font-weight: 100;
   line-height: 1.44;
   font-size: 18px;
+
+  @media #{$phone-only} {
+    font-size: 16px;
+  }
 
   @media #{$laptop-up} {
     padding: 0 20px;
