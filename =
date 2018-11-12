@@ -50,7 +50,7 @@
     height: 85vh;
   }
   @media #{$phone-only} {
-    height: 80vh;
+    height: 100vh;
   }
   @media #{$laptop-only} {
     height: 95vh;
@@ -78,9 +78,6 @@
     width: 200%;
   }
   @media #{$phone-only} {
-    width: 220%;
-  }
-  @media #{$iphone-x} {
     width: 280%;
   }
 }
@@ -103,33 +100,10 @@
     padding-top: 91.5%;
     @include center(horizontal);
   }
-  @media #{$phone-only} {
-    width: 220%;
-  }
-}
 
-// Shield Container, aspect ratio .875
-.zuc-shield {
-  position: absolute;
-  z-index: 20;
-  overflow: visible;
-  bottom: 0;
-
-  @media #{$phone-only} {
-    width: 100%;
-    padding-top: 114.25%;
-    @include center(horizontal);
-  }
-
-  @media #{$tablet-prt-only} {
-    width: 80%;
-    padding-top: 91.5%;
-    @include center(horizontal);
-  }
-
-  @media #{$laptop-only} {
-    width: 44%;
-    padding-top: 50.25%;
+  @media #{$laptop-up} {
+    width: 34%;
+    padding-top: 40.25%;
     bottom: 3vh;
     right: 5%;
   }
@@ -148,7 +122,7 @@
   z-index: 2;
 
   .zuc-btn-secondary {
-    font-size: vw-phone(13.5);
+    font-size: vw-phone(18.5);
 
     @media #{$tablet-only} {
       font-size: vw-tablet(18.5);
@@ -197,13 +171,13 @@
   width: vw-phone(210);
   margin: vw-phone(22) auto vw-phone(23);
 
-  @media #{$tablet-only} {
-    font-size: vw-tablet(26);
+  @media #{$tablet-up} {
+    font-size: vw-tablet(24);
     width: vw-tablet(340);
     margin: vw-tablet(40) auto vw-tablet(78);
   }
 
-  @media #{$laptop-only} {
+  @media #{$laptop-up} {
     font-size: vw-laptop(24);
     width: vw-laptop(340);
     margin: vw-laptop(50) auto vw-laptop(57);
