@@ -57,6 +57,10 @@
     margin: 14vw auto;
   }
 
+  @media #{$tablet-lnd-only} {
+    margin: 14vw auto 5vw;
+  }
+
   @media #{$desktop-up} {
     width: 85%;
   }
