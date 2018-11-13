@@ -62,7 +62,7 @@
               |Province
           .zuc-select-container
             label.u-screenreader(for="field-province")
-              |Choose your product type
+              |Choose your province
             select(required name="province")
               option(value="" disabled selected id="field-province")
                 |Choose your province
@@ -80,16 +80,18 @@
                 |Northwest Territories
               option(value="novascotia")
                 |Nova Scotia
+              option(value="nunavut")
+                |Nunavut
               option(value="ontario")
                 |Ontario
               option(value="pei")
                 |Prince Edward Island
-              option(value="saskatchawan")
-                |Saskatchawan
               option(value="quebec")
                 |Qu&eacute;bec
+              option(value="saskatchawan")
+                |Saskatchawan
               option(value="yukon")
-                |Yukon
+                |Yukon Territory
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
@@ -128,7 +130,7 @@
               |Specific Item
           label.u-screenreader(for="field-item")
             |Specific Item
-          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)" id="field-item")
+          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, Etc.)" id="field-item")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
@@ -147,9 +149,9 @@
         .zuc-form-group
           .zuc-input-name
             strong
-              |Description of Problem *
+              |Description of Issue *
           label.u-screenreader(for="field-description")
-            |Description of Problem
+            |Description of Issue
           input(type="text" data-required name="issuedesc" placeholder="Description of Issue" id="field-description")
       .zuc-form-row
         .zuc-form-group.zuc-form-50

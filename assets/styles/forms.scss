@@ -40,10 +40,24 @@ input {
     padding: 0 1vw;
     margin-top: .4vw;
     color: $form-text-color;
+    font-size: vw-phone(14);
+    font-weight: 100;
 
     @media #{$portrait} {
       padding: 0 2vw;
       margin-top: .9vw;
+    }
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(18);
+    }
+  
+    @media #{$laptop-up} {
+      font-size: vw-laptop(18);
+    }
+  
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18);
     }
 
     &:hover,
@@ -117,7 +131,39 @@ textarea {
 }
 
 .zuc-form-action {
-  padding: 5vw 0;
+  margin: vw-phone(50) 0 0;
+
+  @media #{$tablet-up} {
+    margin: vw-tablet(40) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(50) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(50) 0 0;
+  }
+
+  > button {
+    padding: vw-phone(22) vw-phone(32);
+    font-size: vw-phone(14);
+
+    @media #{$tablet-up} {
+      padding: vw-tablet(22) vw-tablet(32);
+      font-size: vw-tablet(14);
+    }
+
+    @media #{$laptop-up} {
+      padding: vw-laptop(22) vw-laptop(32);
+      font-size: vw-laptop(14);
+    }
+
+    @media #{$desktop-up} {
+      padding: vw-desktop(22) vw-desktop(32);
+      font-size: vw-desktop(14);
+    }
+  }
 }
 
 /*
