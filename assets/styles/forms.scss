@@ -371,9 +371,9 @@ textarea {
   &:before {
     width: 44px;
     position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
     background: $form-bg-passive;
     content: '';
     pointer-events: none;
@@ -486,6 +486,6 @@ li {
     margin: 0;
     border-radius: 4px 0 0 4px;
     height: 46px;
-    backkground: $color-pure-white;
+    background: $color-pure-white;
   }
 }
