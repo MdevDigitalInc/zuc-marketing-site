@@ -222,11 +222,11 @@ textarea {
       }
 
       @media #{$laptop-up} {
-        margin: vw-laptop(20) 0 0 vw-laptop(20);
+        margin: vw-laptop(20) 0 0;
       }
 
       @media #{$desktop-up} {
-        margin: vw-desktop(20) 0 0 vw-desktop(20);
+        margin: vw-desktop(20) 0 0;
       }
     }
   }
@@ -276,28 +276,28 @@ textarea {
 .zuc-radio-group-container {
   display: flex;
   justify-content: flex-start;
-  color: $color-zuc-concrete;
+  color: $color-zuc-darkindigo;
   font-weight: 100;
   font-size: vw-phone(21);
-  margin: vw-phone(17) 0 vw-phone(5) vw-phone(10);
+  margin: vw-phone(17) 0 vw-phone(5);
 
   @media #{$tablet-up} {
     font-size: vw-tablet(18);
-    margin: vw-tablet(17) 0 0 vw-tablet(15);
+    margin: vw-tablet(17) 0 0;
   }
 
   @media #{$laptop-up} {
     font-size: vw-laptop(18);
-    margin: vw-laptop(15) 0 0 vw-laptop(20);
+    margin: vw-laptop(15) 0 0;
   }
 
   @media #{$desktop-up} {
     font-size: vw-desktop(18);
-    margin: vw-desktop(15) 0 0 vw-desktop(20);
+    margin: vw-desktop(15) 0 0;
   }
 
   .zuc-radio-group {
-    margin: 0 vw-phone(25) 0 0;
+    margin: 0 vw-phone(50) 0 0;
 
     @media #{$tablet-up} {
       margin: 0 vw-tablet(25) 0 0;
