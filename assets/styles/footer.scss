@@ -124,6 +124,11 @@
     font-size: 1.5vw;
     font-weight: 400;
     padding: 0 5px;
+    transition: .4s;
+
+    &:active {
+      color: $color-zuc-darkindigo;
+    }
 
     @media #{$laptop-only} {
       font-size: 1.3vw;
@@ -219,6 +224,11 @@
     font-size: 3vw;
     font-weight: 400;
     padding: 0 1.2vw;
+    transition: .4s;
+
+    &:active {
+      color: $color-zuc-darkindigo;
+    }
   }
 
   @media #{$laptop-up} {

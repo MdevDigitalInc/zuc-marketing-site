@@ -37,6 +37,7 @@
   border: 2px solid $color-zuc-mint;
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  letter-spacing: .05vw;
 
   &:hover,
   &:focus,
@@ -145,5 +146,5 @@
   font-size: 14px;
   letter-spacing: .4px;
   border-radius: 0 4px 4px 0;
-  pointer: cursor;
+  cursor: pointer;
 }
