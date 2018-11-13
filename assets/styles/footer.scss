@@ -74,12 +74,15 @@
   @media #{$tablet-up} {
     font-size: 1vw;
   }
+
   @media #{$desktop-only} {
     font-size: $font-size-body;
   }
+
   @media #{$xl-up} {
     font-size: 1vw;
   }
+
   @media #{$phone-only} {
     padding: 2vw;
   }
@@ -145,10 +148,6 @@
   .far.fa-envelope {
     display: none;
   }
-
-  .zuc-btn {
-    // margin-right: 10px;
-  }
 }
 
 .zuc-footer--copyright {
@@ -159,6 +158,7 @@
   @media #{$portrait} {
     font-size: 1.2vw;
   }
+
   @media #{$phone-only} {
     justify-content: center;
     flex-direction: column;
@@ -178,16 +178,44 @@
   }
 
   .zuc-footer--copyright-title {
-    font-size: 14px;
-
     @media #{$phone-only} {
       padding: 0 0 1vw;
     }
 
     a {
       color: $white;
+      font-size: vw-phone(10);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
+      }
+
       &:hover {
         color: $color-zuc-lilac;
+      }
+    }
+
+    span {
+      font-size: vw-phone(10);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
       }
     }
   }
@@ -201,6 +229,20 @@
 
     a {
       color: $white;
+      font-size: vw-phone(10);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
+      }
+
       &:hover {
         text-decoration: underline;
         color: $color-zuc-lilac;
@@ -208,20 +250,23 @@
     }
 
     span {
-      font-size: 12px;
-      margin: 0 .5vw;
       color: $white;
+      font-size: vw-phone(8);
+      margin: 0 vw-phone(5);
 
-      @media #{$tablet-only} {
-        margin: 0 .4vw;
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+        margin: 0 vw-tablet(5);
       }
 
-      @media #{$laptop-only} {
-        margin: 0 .2vw;
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+        margin: 0 vw-laptop(5);
       }
 
       @media #{$desktop-up} {
-        margin: 0 .1vw;
+        font-size: vw-desktop(14);
+        margin: 0 vw-desktop(5);
       }
     }
   }
@@ -242,7 +287,7 @@
     color: $white;
     font-size: 3vw;
     font-weight: 400;
-    padding: 0 1.2vw;
+    padding: 0 10px;
     transition: .4s;
 
     &:active {
