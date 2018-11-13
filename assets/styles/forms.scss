@@ -39,12 +39,12 @@ input {
     color: $form-text-color;
     font-family: $main-font;
     font-weight: 100;
-    margin: vw-phone(7) 0 0;
+    margin: vw-phone(7) 0 vw-phone(7);
     padding: 0 vw-phone(15);
     font-size: vw-phone(14);
 
     @media #{$tablet-up} {
-      margin: vw-tablet(8) 0 0;
+      margin: vw-tablet(8) 0 vw-tablet(8);
       padding: 0 vw-tablet(20);
       font-size: vw-tablet(18);
     }
@@ -76,19 +76,19 @@ input {
 
 textarea {
   width: 100%;
-    height: 175px;
-    border: solid 1px $border-color-passive;
-    border-radius: 4px;
-    background-color: $form-bg-passive;
-    color: $form-text-color;
-    font-family: $main-font;
-    font-weight: 100;
-    margin: vw-phone(7) 0 0;
-    padding: vw-phone(10) vw-phone(15);
-    font-size: vw-phone(14);
+  height: 175px;
+  border: solid 1px $border-color-passive;
+  border-radius: 4px;
+  background-color: $form-bg-passive;
+  color: $form-text-color;
+  font-family: $main-font;
+  font-weight: 100;
+  margin: vw-phone(7) 0 vw-phone(7);
+  padding: vw-phone(10) vw-phone(15);
+  font-size: vw-phone(14);
 
   @media #{$tablet-up} {
-    margin: vw-tablet(8) 0 0;
+    margin: vw-tablet(8) 0 vw-tablet(8);
     padding: vw-tablet(10) vw-tablet(20);
     font-size: vw-tablet(18);
   }
@@ -212,6 +212,24 @@ textarea {
   width: 100%;
   position: relative;
   text-align: left;
+
+  input {
+    &[type="button"] {
+      margin: vw-phone(17) 0 0;
+
+      @media #{$tablet-up} {
+        margin: vw-tablet(17) 0 0;
+      }
+
+      @media #{$laptop-up} {
+        margin: vw-laptop(20) 0 0 vw-laptop(20);
+      }
+
+      @media #{$desktop-up} {
+        margin: vw-desktop(20) 0 0 vw-desktop(20);
+      }
+    }
+  }
 }
 
 .zuc-form-50 {
@@ -292,10 +310,22 @@ textarea {
   width: 100%;
   height: 63px;
   background: $form-bg-passive;
-  margin-top: .5vw;
+  margin: vw-phone(7) 0 vw-phone(7);
+  font-size: vw-phone(14);
 
-  @media #{$portrait} {
-    margin-top: .9vw;
+  @media #{$tablet-up} {
+    margin: vw-tablet(8) 0 vw-tablet(8);
+    font-size: vw-tablet(18);
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(8) 0 0;
+    font-size: vw-laptop(18);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(8) 0 0;
+    font-size: vw-desktop(18);
   }
   
   // This is the little arrow on the dropdown button
@@ -357,6 +387,21 @@ textarea {
 
       &:required {
         color: $form-placeholder-color;
+        font-family: $main-font;
+        font-weight: 100;
+        font-size: vw-phone(14);
+
+        @media #{$tablet-up} {
+          font-size: vw-tablet(18);
+        }
+      
+        @media #{$laptop-up} {
+          font-size: vw-laptop(18);
+        }
+      
+        @media #{$desktop-up} {
+          font-size: vw-desktop(18);
+        }
       }
     }
 
