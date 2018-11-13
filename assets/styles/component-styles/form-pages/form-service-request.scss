@@ -1,14 +1,40 @@
 .zuc-service-form {
-  .zuc-service-form--blurb {
-    border-top: solid 2px $color-zuc-concrete;
-    padding-top: 1.4vw;
+  margin: vw-phone(150) 5vw 0;
+
+  @media #{$tablet-up} {
+    margin: vw-tablet(225) 7vw 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(225) 16vw 0;
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(225) 16vw 0;
+  }
+
+  .zuc-service-form-blurb {
+    margin: vw-phone(25) 0 0;
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(25) 0 0;
+    }
+  
+    @media #{$laptop-up} {
+      margin: vw-laptop(25) 0 0;
+    }
+  
+    @media #{$desktop-up} {
+      margin: vw-desktop(25) 0 0;
+    }
   }
 
   b {
-    font-weight: 700;
+    font-weight: 600;
   }
 
-  input, select {
+  input,
+  select {
     font-size: 16px;
   }
 }
