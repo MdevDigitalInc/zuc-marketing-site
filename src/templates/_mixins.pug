@@ -1,13 +1,22 @@
 //- Ecom Header Mixin
 
 mixin ecom-header(title)
-  .zuc-ec-header
-    h2= title
-    .zuc-ec-header-line
+  .zuc-ec-head
+    h2.zuc-ec-head-title= title
 
+mixin ecom-header-underlined(title)
+  .zuc-ec-head
+    h2.zuc-ec-head-title= title
+    .zuc-ec-header-line
+    
 //- ZUC Version of Ecom Header Mixin
 
 mixin zuc-header(title)
   .zuc-header
     h1= title
     .zuc-header-line
+
+mixin ecom-header-centered(title)
+  .zuc-ec-head.u-text-center
+    h2.zuc-ec-head-title= title
+

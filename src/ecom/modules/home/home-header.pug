@@ -5,38 +5,50 @@
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
-      _src: '../../assets/images/service-plans/home-systems.png',
+      _data_slide: '1',
+      _src: '../../assets/images/ecom/header-whole-home-plan.png',
       _alt: 'todo'
     },
     {
-      title: 'Whole Home Plan',
+      title: 'Whole Home Plan2',
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
-      _src: '../../assets/images/service-plans/home-systems.png',
+      _data_slide: '2',
+      _src: 'https://via.placeholder.com/900x700',
       _alt: 'todo'
     },
     {
-      title: 'Whole Home Plan',
+      title: 'Whole Home Plan3',
       subtitle: 'Bundle &amp; Save',
       blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
       buttontext: 'get started today',
-      _src: '../../assets/images/service-plans/home-systems.png',
+      _data_slide: '3',
+      _src: 'https://via.placeholder.com/900x700',
       _alt: 'todo'
     }
   ]
 
 .zuc-ec-home-header
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
-  .zuc-ec-home-header-card-container
+  .zuc-ec-home-header-card-container(data-slide-container)
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-home-header-card
-        span.zuc-ec-home-header-subtitle
-          |!{card.subtitle}
-        h1.zuc-ec-home-header-title
-          |!{card.title}
-        span.zuc-ec-home-header-blurb
-          |!{card.blurb}
-        .zuc-btn-box
-          a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
-            |!{card.buttontext}
+      .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
+        .txt.flex.flex-column
+          span.zuc-ec-home-header-subtitle
+            |!{card.subtitle}
+          h1.zuc-ec-home-header-title
+            |!{card.title}
+          span.zuc-ec-home-header-blurb
+            |!{card.blurb}
+          .zuc-btn-box
+            a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
+              |!{card.buttontext}
+        .zuc-ec-home-header-card--img
+          img(src=card._src)
+  // Slideshow Controls
+  .zuc-ec-home-slider-container.flex.flex-hor-center
+    a.zuc-ec-home-slider-selector.--active(data-move-slide="1")
+    a.zuc-ec-home-slider-selector(data-move-slide="2")
+    a.zuc-ec-home-slider-selector(data-move-slide="3")
+

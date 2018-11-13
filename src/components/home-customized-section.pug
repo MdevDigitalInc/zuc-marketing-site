@@ -4,16 +4,19 @@
 - var button = 'Learn More'
 
 section.zuc-home-customized-section.flex-vert-center.u-section-spacing
-  .zuc-home-customized-section--text-section.flex.flex-column
-    h4.zuc-home-customized-section--subheading.u-light.u-zuc-darkindigo.u-uppercase.flex.flex-vert-center
-      |#{subheading}
-    h2.zuc-home-customized-section--heading.u-font-serif
+  .zuc-featured-content.--text
+    .zuc-title-container.flex
+      h4
+        |#{subheading}
+      .zuc-title-flag
+        .--green
+    h3.u-font-serif.u-zuc-indigo
       |#{title}
-    p.zuc-home-customized-section--copy.u-light.u-zuc-darkindigo
+    p
       |#{text}
-    .zuc-home-customized-section--btn
-      a.zuc-btn.zuc-btn-secondary.u-uppercase(href="smarter-living.html" title="Smarter Living")
-        |#{button}
+    a.zuc-btn.zuc-btn-secondary(href="#" alt="TODO")
+      |#{button}
+
   .zuc-home-customized-section--graphic-section.flex.flex-hor-between.flex-vert-center
     .zuc-hp-icon.--hp-icon-base
       img.icon-img(src='../../assets/images/icons/icon-tech-network.svg' alt='Technician Network')

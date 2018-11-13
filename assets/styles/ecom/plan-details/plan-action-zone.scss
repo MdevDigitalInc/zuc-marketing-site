@@ -1,0 +1,378 @@
+.zuc-ec-plan-action-zone-container {
+  width: 100%;
+  position: relative;
+  display: none;
+  overflow: hidden;
+  padding-bottom: 3vw;
+  margin-top: -7vw;
+
+  &.--active {
+    display: flex;
+  }
+}
+
+.zuc-ec-plan-action-zone {
+  display: flex;
+  flex-wrap: wrap;
+  background: $color-pure-white;
+  box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
+  z-index: 5;
+  flex-direction: column;
+  margin: 7vw 5vw 10vw;
+
+
+  @media #{tablet-only} {
+    margin: 7vw 7vw 10vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 7vw 8vw 10vw;
+    flex-direction: row;
+  }
+}
+
+/*****
+
+  Variables
+
+  For consistent things!
+
+*****/
+
+$zecac-inner-padding-tablet: vw-tablet(35);
+$zecac-info-padding-laptop: vw-laptop(30);
+$zecac-info-padding-desktop: vw-desktop(30);
+
+/*************************************
+
+  Action Zone LEFT Side
+
+*************************************/
+
+.zuc-ec-action-zone-left {
+  width: 100%;
+  padding: vw-phone(35) vw-phone(13) vw-phone(20);
+
+  @media #{$tablet-only} {
+    padding: vw-tablet(35) $zecac-inner-padding-tablet vw-tablet(40);
+  }
+  @media #{$laptop-up} {
+    width: 32%;
+    padding: vw-laptop(56) 0 vw-laptop(30) vw-laptop(40);
+  }
+  @media #{$desktop-up} {
+    width: 35%;
+    padding: vw-desktop(56) 0 vw-desktop(30) vw-desktop(40);
+  }
+
+  .zuc-select-container {
+    max-width: 100%;
+    margin-top: 50px;
+
+    @media #{$tablet-only} {
+      max-width: 55%;
+    }
+
+    @media #{$laptop-only} {
+      max-width: 80%;
+    }
+
+    @media #{$desktop-up} {
+      max-width: 65%;
+    }
+  }
+
+  .zuc-ec-summary {
+    margin: 3vw 0;
+  }
+  // Presentational Overrides
+  .zuc-cart-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media #{$tablet-up} {
+      justify-content: flex-end;
+    }
+
+    .zuc-btn {
+      margin: 15px 0;
+      order: 0;
+
+      @media #{$desktop-up} {
+        oder: 1;
+      }
+    }
+
+    .zuc-ec-generic-link {
+      order: 1;
+
+      @media #{$desktop-up} {
+        order: 0;
+      }
+    }
+  }
+
+  // Final Step Override
+  .--final-step {
+    justify-content: center;
+
+    .zuc-btn {
+      order: 1;
+
+      @media #{$tablet-up} {
+        font-size: 15px;
+      }
+
+      @media #{$desktop-up} {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+.zuc-ec-action-zone-cta-box {
+  width: 100%;
+  padding-bottom: 15px;
+
+  @media #{$laptop-up} {
+    padding-bottom: 0;
+  }
+}
+
+/***
+
+  .zuc-ec-action-zone-control-box-{ desktop ?? small }
+
+  desktop/small toggle based on screen size and should share a lot of styles
+
+***/
+
+/*************************************
+
+  Action Zone RIGHT Side
+
+*************************************/
+
+.zuc-ec-action-zone-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$phone-only} {
+    padding-bottom: 20px;
+  }
+
+  @media #{$laptop-up} {
+    width: 68%;
+    flex-direction: row;
+    padding: vw-laptop(40) vw-laptop(40) 0;
+  }
+  @media #{$desktop-up} {
+    width: 65%;
+    padding: vw-desktop(50) vw-desktop(40) 0;
+  }
+}
+
+.zuc-ec-action-zone-info-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px 20px 20px;
+  max-height: 1000px;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    padding: 30px;
+  }
+
+  @media #{$tablet-only} {
+    flex-direction: row;
+  }
+
+  @media #{$laptop-only} {
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: column;
+    padding: 0 30px;
+    width: 33%;
+  }
+}
+
+.zuc-ec-action-zone-image-box {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+
+  @media #{$tablet-only} {
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  @media #{$laptop-up} {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.zuc-ec-action-zone-info-box {
+  width: 100%;
+
+  @media #{$phone-only} {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media #{$tablet-only} {
+    width: 60%;
+    margin-right: -25px;
+  }
+}
+
+.zuc-ec-action-zone-bumper-box {
+  width: 100%;
+  font-family: $main-font-serif;
+  font-weight: 300;
+  color: $color-zuc-indigo;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  justify-self: flex-end;
+  align-self: flex-end;
+
+  @media #{$phone-only} {
+    padding-left: 5%;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  @media #{$tablet-only} {
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 30%;
+  }
+
+  .zuc-ec-action-zone-price-btn {
+    padding: 20px 0;
+
+    @media #{$tablet-only} {
+      .zuc-btn {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .zuc-ec-action-zone-add-on {
+    font-family: $main-font;
+    color: $color-zuc-darkindigo;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .--protected {
+    margin-bottom: 15px;
+  }
+
+  // Hides auxiliary info when protected
+  &.--protected-active {
+    padding-top: 0;
+
+    .zuc-ec-action-zone-price,
+    .zuc-ec-action-zone-add-on {
+      display: none;
+    }
+  }
+}
+
+.zuc-ec-action-zone-price {
+  display: flex;
+
+  .sign,
+  .dollar {
+    font-size: 50px;
+  }
+
+  .savings {
+    font-size: 28px;
+
+    @media #{$laptop-up} {
+      font-size: 38px;
+    }
+  }
+
+  .cents {
+    vertical-align: super;
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+  }
+
+  .month {
+    align-self: flex-end;
+    font-size: 17px;
+
+    @media #{$laptop-up} {
+      font-size: 23px;
+    }
+  }
+}
+
+.zuc-ec-info-content {
+  align-items: flex-start;
+  width: 100%;
+
+  @media #{$tablet-only} {
+    display: flex;
+    width: 60%;
+  }
+}
+
+/*************************************
+
+  Action Zone EVERYTHING ELSE
+
+*************************************/
+
+.zuc-ec-action-zone-share-box {
+  width: 100%;
+  background: #fa99c1;
+  display: none; //- Hide for launch
+}
+
+.zuc-ec-action-zone-bg-img {
+  background-image: url('../../assets/images/shapes/comfort-blob.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media #{$tablet-only} {
+    background-size: 400%;
+    background-position-y: -800px;
+  }
+}

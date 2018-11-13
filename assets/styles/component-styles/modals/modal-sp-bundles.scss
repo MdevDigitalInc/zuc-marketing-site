@@ -1,0 +1,218 @@
+.zuc-bundle-modal-content {
+  @include center('horizontal');
+  min-width: 30%;
+  padding: 1vw;
+  background: white;
+  top: 5%;
+  width: 85%;
+  position: relative;
+
+  @media #{$phone-only} {
+    width: 95%;
+  }
+
+  .zuc-sp-bundle-content {
+    margin: vw-desktop(10);
+    padding: vw-desktop(20) 0 0;
+    border: 1px solid $color-zuc-indigo;
+  }
+
+  h3 {
+    @media #{$phone-only} {
+      align-self: center;
+    }
+  }
+
+  ul {
+    line-height: 1.2;
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(10);
+    }
+    @media #{$phone-only} {
+      column-count: 2;
+      padding-left: vw-phone(15);
+      font-size: vw-phone(8);
+    }
+  }
+
+  /**
+    Override:
+    - There are global li styles in forms.scss (not sure they should be there RG)
+   */
+  li {
+    margin-bottom: .5vw;
+
+    &:last-of-type {
+      margin-bottom: 2vw;
+    }
+  }
+}
+
+.zuc-bundles--titles {
+  text-align: center;
+
+  .zuc-bundles--preheading {
+    padding: vw-desktop(50) 0 vw-desktop(20);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(10);
+      padding: vw-phone(36) 0 vw-phone(12);
+    }
+  }
+
+  .zuc-bundle--subheading {
+    font-size: vw-desktop(26);
+    padding-bottom: vw-desktop(20);
+    font-style: italic;
+    color: $color-zuc-darkindigo;
+
+    @media #{$phone-only} {
+      font-size: vw-phone(14);
+      padding-bottom: vw-phone(14);
+    }
+  }
+
+  p {
+    padding: 0 vw-desktop(240);
+  }
+}
+
+.zuc-sp-bundle--price {
+  padding-top: vw-desktop(20);
+  padding-bottom: vw-desktop(20);
+  font-family: $main-font-serif;
+  font-weight: 300;
+  color: $color-zuc-indigo;
+  display: flex;
+  justify-content: center;
+  letter-spacing: vw-desktop(2);
+
+  @media #{$phone-only} {
+    padding-top: vw-phone(15);
+    padding-bottom: vw-phone(15);
+  }
+  @media #{$tablet-only} {
+    padding-top: vw-tablet(15);
+    padding-bottom: vw-tablet(15);
+  }
+
+  .sign {
+    font-size: vw-desktop(46);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(24);
+    }
+  }
+  .dollar {
+    font-size: vw-desktop(100);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(50);
+    }
+    @media #{$tablet-only} {
+      font-size: vw-tablet(65);
+    }
+  }
+  .cents {
+    font-size: vw-desktop(36);
+    align-self: flex-start;
+
+    @media #{$phone-only} {
+      font-size: vw-phone(24);
+    }
+  }
+  .month {
+    font-size: vw-desktop(24);
+    align-self: flex-end;
+    position: relative;
+    right: vw-desktop(10);
+    bottom: vw-desktop(15);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(12);
+      right: 1vw;
+      bottom: vw-phone(10);
+    }
+  }
+}
+
+// Product Titles in the middle:
+.zuc-sp-bundle--pro-header {
+  @media #{$tablet-up} {
+    font-size: vw-desktop(32);
+  }
+}
+
+// Product Titles at the bottom:
+.zuc-sp-bundle-base-plan--pro-header {
+  align-self: flex-start;
+  letter-spacing: .9px;
+
+  @media #{$tablet-up} {
+    font-size: vw-desktop(40);
+  }
+}
+
+.zuc-sp-bundle--footer {
+  background-color: $color-zuc-platinum;
+  margin-top: 1vw;
+  padding-top: .5vw;
+}
+
+.zuc-sp-bundle--base-plans {
+  width: 100%;
+
+  @media #{$phone-only} {
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+  @media #{$tablet-only} {
+    padding: 0 8vw;
+  }
+}
+
+.zuc-sp-bundle--base-plan-box {
+  flex-direction: column;
+  padding: 1vw;
+  margin: ( 9 / 3.2 ) * 1vw;
+
+  @media #{$tablet-only} {
+    margin: ( 5 / 7.68 ) * 1vw;
+  }
+  @media #{$laptop-up} {
+    margin: ( 9 / 19.2 ) * 1vw;
+  }
+
+  .zuc-sp-bundle--link {
+    padding-left: 12px;
+    text-decoration: underline;
+    font-size: vw-desktop(18);
+
+    @media #{$phone-only} {
+      font-size: vw-phone(8);
+    }
+  }
+}
+
+.zuc-sp-bundle--list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: vw-desktop(40);
+  padding-right: vw-desktop(20);
+}
+
+.zuc-sp-bundle--plan-icon {
+  height: 3vw;
+  width: 3vw;
+  position: relative;
+  top: vw-desktop(150);
+
+  @media #{$phone-only} {
+    left: 50%;
+    top: 100%;
+    height: 11.25vw;
+    width: 11.25vw;
+  }
+}

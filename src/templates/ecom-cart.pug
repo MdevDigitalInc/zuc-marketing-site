@@ -1,9 +1,12 @@
-extends _layout
+extends _layout-headless
 
 block content
+  .zuc-ec-cart-wrapper
+    //- Head Module-- Mixin
+    +ecom-header('Shopping Cart')
 
-  //- Basket Module
-  include ../ecom/modules/cart/cart-basket.pug
+    //- Basket Module
+    include ../ecom/modules/cart/cart-basket.pug
 
-  //- Order Summary Module
-  include ../ecom/modules/cart/cart-summary.pug
+    //- Order Summary Module
+    include ../ecom/modules/cart/cart-summary.pug

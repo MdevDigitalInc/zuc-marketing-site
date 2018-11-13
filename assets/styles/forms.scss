@@ -325,13 +325,13 @@ textarea {
   <<< Select Inputs >>>
 
   Note: Wrap all <select> objects in a <div class=".zuc-select-container">
-  
+
 */
 
 .zuc-select-container {
   position: relative;
   width: 100%;
-  height: 63px;
+  height: 50px;
   background: $form-bg-passive;
   margin: vw-phone(7) 0 vw-phone(7);
   font-size: vw-phone(14);
@@ -350,7 +350,7 @@ textarea {
     margin: vw-desktop(8) 0 0;
     font-size: vw-desktop(18);
   }
-  
+
   // This is the little arrow on the dropdown button
   &:after {
     content: '';
@@ -371,14 +371,14 @@ textarea {
   &:before {
     width: 44px;
     position: absolute;
-    top: 1px;
-    right: 1px;
-    bottom: 1px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
     background: $form-bg-passive;
     content: '';
     pointer-events: none;
   }
-  
+
   &:hover {
     &:before {
       background: $bkg-light-grey;
@@ -441,11 +441,12 @@ li {
   list-style: inside;
   margin-bottom: 7.8vw;
   color: $color-zuc-darkindigo;
+  list-style-position: outside;
 
   @media #{$tablet-only} {
     margin-bottom: 3.26vw;
   }
-  
+
   @media #{$laptop-up} {
     margin-bottom: 1vw;
   }
@@ -456,9 +457,35 @@ li {
     @media #{$tablet-only} {
       margin-bottom: 5.5vw;
     }
-    
+
     @media #{$laptop-up} {
       margin-bottom: 2.5vw;
     }
+  }
+}
+
+// Promo Form
+.zuc-form-promo {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .zuc-promo-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-zuc-darkindigo;
+    margin-bottom: 8px;
+    display: block;
+
+    @media #{$tablet-up} {
+      font-size: 18px;
+    }
+  }
+
+  input {
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+    height: 46px;
+    backkground: $color-pure-white;
   }
 }

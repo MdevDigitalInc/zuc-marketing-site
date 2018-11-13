@@ -37,5 +37,31 @@
 
   @media #{$laptop-up} {
     padding: 0;
-  } 
+  }
+}
+
+.zuc-ec-plan-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.zuc-ec-cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 34vw auto 18vw;
+  width: 95%;
+
+  @media #{$tablet-up} {
+    margin: 14vw auto;
+  }
+
+  @media #{$tablet-lnd-only} {
+    margin: 14vw auto 5vw;
+  }
+
+  @media #{$desktop-up} {
+    width: 85%;
+  }
 }
