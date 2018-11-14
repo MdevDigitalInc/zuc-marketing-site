@@ -73,7 +73,7 @@ module.exports = merge(common, {
     // Process and Inject Favicon
     new FaviconsWebpackPlugin({
       logo: './assets/images/favicon.png', // Source for Favicon file
-      prefix: 'icons-[hash]/', // File Prefix
+      prefix: 'Content/Zu/icons-[hash]/', // File Prefix
       emitStats: false,
       statsFilename: 'iconstats-[hash].json',
       persistentCache: true,
