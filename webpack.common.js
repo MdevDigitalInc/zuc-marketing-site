@@ -109,7 +109,7 @@ module.exports = {
       // Image Processing
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loaders: [ 'file-loader?context=assets&name=Content/Zu/[path][name].[ext]', {
+        loaders: [ 'file-loader?context=assets&name=[path][name].[ext]', {
           loader: 'image-webpack-loader',
           query: {
             // JPEG Processing
