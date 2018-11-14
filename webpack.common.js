@@ -102,7 +102,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/'
+            outputPath: 'Content/Zu/fonts/'
           }
         }]
       },
@@ -146,7 +146,7 @@ module.exports = {
   // Plugins & Post Processing
   plugins: [
     // Text Extraction & Chunking
-    new ExtractTextPlugin("styles[hash].css"),
+    new ExtractTextPlugin("Content/Zu/styles/styles[hash].css"),
     // [ PUG + SASS Template Registration ]
     // -----------------------------------
     // Webpack needs to know which main templates to compile.
@@ -187,10 +187,10 @@ module.exports = {
       template: './src/templates/form-orders.pug',
       filename: 'form-orders-shipping.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/typography-test.pug',
-      filename: 'typography.html'
-    }),
+    //new HtmlWebpackPlugin({
+    //  template: './src/templates/typography-test.pug',
+    //  filename: 'typography.html'
+    //}),
     new HtmlWebpackPlugin({
       template: './src/templates/sl-parent.pug',
       filename: 'smarter-living.html'
