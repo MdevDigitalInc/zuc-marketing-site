@@ -53,3 +53,8 @@ const aboutMindy = require ( './assets/images/about/about-team-mindy.png' );
 const aboutOksana = require ( './assets/images/about/about-team-oksana.png' );
 const aboutTrevor = require ( './assets/images/about/about-team-trevor.png' );
 const aboutColleen = require ( './assets/images/about/about-team-colleen.png' );
+
+// Nav Images
+const navSp = require ( './assets/images/nav/service-plans.png' );
+const navShp = require ( './assets/images/nav/smarter-home-products.png' );
+const navSl = require ( './assets/images/nav/smarter-living.png' );

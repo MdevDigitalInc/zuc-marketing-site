@@ -26,7 +26,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: 'app/[name][hash].js'
+    filename: 'Content/Zuc/js/[name][hash].js'
   },
   // Split Vendor | Build Assets into separate chunks
   optimization:{
@@ -102,14 +102,14 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/'
+            outputPath: 'Content/Zuc/fonts/'
           }
         }]
       },
       // Image Processing
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loaders: [ 'file-loader?context=assets&name=[path][name].[ext]', {
+        loaders: [ 'file-loader?context=assets&name=Images/Zuc/[path][name].[ext]', {
           loader: 'image-webpack-loader',
           query: {
             // JPEG Processing
@@ -146,7 +146,7 @@ module.exports = {
   // Plugins & Post Processing
   plugins: [
     // Text Extraction & Chunking
-    new ExtractTextPlugin("styles[hash].css"),
+    new ExtractTextPlugin("Content/Zuc/styles/styles[hash].css"),
     // [ PUG + SASS Template Registration ]
     // -----------------------------------
     // Webpack needs to know which main templates to compile.
@@ -187,10 +187,10 @@ module.exports = {
       template: './src/templates/form-orders.pug',
       filename: 'form-orders-shipping.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/typography-test.pug',
-      filename: 'typography.html'
-    }),
+    //new HtmlWebpackPlugin({
+    //  template: './src/templates/typography-test.pug',
+    //  filename: 'typography.html'
+    //}),
     new HtmlWebpackPlugin({
       template: './src/templates/sl-parent.pug',
       filename: 'smarter-living.html'
