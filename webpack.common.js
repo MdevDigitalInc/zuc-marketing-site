@@ -241,7 +241,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/about.pug',
-      filename: 'about.html'
+      filename: 'our-story.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spr-home-care-kits.pug',
