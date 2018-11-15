@@ -14,7 +14,6 @@ section.zuc-choice {
 }
 
 .zuc-choice-box-left {
-  background: $color-zuc-indigo;
   width: 100%;
   height: 60vw; // waiting on design
 
@@ -25,6 +24,10 @@ section.zuc-choice {
   @media #{$laptop-up} {
     width: 50%;
     height: 20.45vw; // waiting on design
+  }
+
+  img {
+    width: 100%;
   }
 }
 
