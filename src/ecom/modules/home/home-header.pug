@@ -1,30 +1,18 @@
 -
   var cards = [
     {
-      title: 'Whole Home Plan',
-      subtitle: 'Bundle &amp; Save',
-      blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
-      buttontext: 'get started today',
       _data_slide: '1',
-      _src: '../../assets/images/ecom/header-whole-home-plan.png',
+      _src: '../../assets/images/ecom/banner-whole-home-plan.png',
       _alt: 'Zucora Home - Whole Home Plan'
     },
     {
-      title: 'Remove stubborn stains &amp; odours with OxyTough – no harsh chemicals required.',
-      subtitle: 'just spray &amp; walk away',
-      blurb: 'When tough spills &amp; stains happen, ZU’s got you covered!',
-      buttontext: 'Get tips and tricks for using this product',
       _data_slide: '2',
-      _src: '../../assets/images/ecom/oxy-banner.png',
+      _src: '../../assets/images/ecom/banner-oxy-tough.png',
       _alt: 'OxyTough Stain and odour fighter'
     },
     {
-      title: 'Leather Care',
-      subtitle: 'Bring furniture back to like new condition',
-      blurb: 'Enhance and protect your leather home furnishings. Adding the Zucora Home Leather Care Kit to your regular cleaning schedule will keep your favourite pieces looking and feeling new longer.',
-      buttontext: 'Get tips and tricks for using this product throughout your home.',
       _data_slide: '3',
-      _src: '../../assets/images/ecom/header-leather-care.png',
+      _src: '../../assets/images/ecom/banner-leather-care.png',
       _alt: 'Zucora Home - Leather Care'
     }
   ]
@@ -33,19 +21,8 @@
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   .zuc-ec-home-header-card-container(data-slide-container)
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
-        .txt.flex.flex-column
-          span.zuc-ec-home-header-subtitle
-            |!{card.subtitle}
-          h1.zuc-ec-home-header-title
-            |!{card.title}
-          span.zuc-ec-home-header-blurb
-            |!{card.blurb}
-          .zuc-btn-box
-            a.zuc-btn.zuc-btn-secondary(href="#LimeTAC-Link-To-Ecommerce" title="LimeTAC-TODO")
-              |!{card.buttontext}
-        .zuc-ec-home-header-card--img
-          img(src=card._src)
+      .zuc-ec-home-header-card(aria-role="menuitem" data-slide=card._data_slide)
+        img(src=card._src alt=card._alt)
   // Slideshow Controls
   .zuc-ec-home-slider-container.flex.flex-hor-center
     a.zuc-ec-home-slider-selector.--active(data-move-slide="1")
