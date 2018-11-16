@@ -37,6 +37,7 @@
   border: 2px solid $color-zuc-mint;
   background: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  letter-spacing: .05vw;
 
   &:hover,
   &:focus,
@@ -110,13 +111,33 @@
 }
 
 .zuc-btn-browse {
-  margin-top: .8vw;
-  border-color: $color-zuc-lilac;
   color: $color-zuc-lilac;
+  border: 3px solid $color-zuc-lilac;
+  background: transparent;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  letter-spacing: .4px;
+  padding: vw-phone(15) vw-phone(36);
+  font-size: vw-phone(14);
 
-  &:hover {
-    color: $color-zuc-lilac;
-    background: $color-zuc-platinum;
+  @media #{$tablet-up} {
+    padding: vw-tablet(15) vw-tablet(36);
+    font-size: vw-tablet(14);
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-laptop(15) vw-laptop(36);
+    font-size: vw-laptop(14);
+  }
+  
+  @media #{$desktop-up} {
+    padding: vw-desktop(15) vw-desktop(36);
+    font-size: vw-desktop(14);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
 }
 
@@ -145,5 +166,5 @@
   font-size: 14px;
   letter-spacing: .4px;
   border-radius: 0 4px 4px 0;
-  pointer: cursor;
+  cursor: pointer;
 }

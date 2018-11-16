@@ -33,17 +33,32 @@ input {
   &[type="date"] {
     width: 100%;
     height: 63px;
+    border: solid 1px $border-color-passive;
     border-radius: 4px;
     background-color: $form-bg-passive;
-    border: solid 1px $border-color-passive;
-    font-family: $main-font;
-    padding: 0 1vw;
-    margin-top: .4vw;
     color: $form-text-color;
+    font-family: $main-font;
+    font-weight: 100;
+    margin: vw-phone(7) 0 vw-phone(7);
+    padding: 0 vw-phone(15);
+    font-size: vw-phone(14);
 
-    @media #{$portrait} {
-      padding: 0 2vw;
-      margin-top: .9vw;
+    @media #{$tablet-up} {
+      margin: vw-tablet(8) 0 vw-tablet(8);
+      padding: 0 vw-tablet(20);
+      font-size: vw-tablet(18);
+    }
+  
+    @media #{$laptop-up} {
+      margin: vw-laptop(8) 0 0;
+      padding: 0 vw-laptop(20);
+      font-size: vw-laptop(18);
+    }
+  
+    @media #{$desktop-up} {
+      margin: vw-desktop(8) 0 0;
+      padding: 0 vw-desktop(20);
+      font-size: vw-desktop(18);
     }
 
     &:hover,
@@ -59,36 +74,46 @@ input {
   }
 }
 
-// TODO textarea
-
 textarea {
   width: 100%;
+  height: 175px;
+  border: solid 1px $border-color-passive;
+  border-radius: 4px;
+  background-color: $form-bg-passive;
+  color: $form-text-color;
   font-family: $main-font;
-  border-radius: 0;
-  padding: 8px 0;
-  margin-top: 15px;
-  background: transparent;
-  outline: 0;
-  transition: border .5s, background .5s;
-  border: none;
-  border-bottom: 4px solid $border-color-passive;
-  border-top: 4px solid $border-color-active;
+  font-weight: 100;
+  margin: vw-phone(7) 0 vw-phone(7);
+  padding: vw-phone(10) vw-phone(15);
+  font-size: vw-phone(14);
 
-  &:hover, &:focus, &:active {
-    border-top: 4px solid $border-color-passive;
-    border-bottom: 4px solid $border-color-active;
-    background: $white;
-    padding: 8px;
+  @media #{$tablet-up} {
+    margin: vw-tablet(8) 0 vw-tablet(8);
+    padding: vw-tablet(10) vw-tablet(20);
+    font-size: vw-tablet(18);
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(8) 0 0;
+    padding: vw-laptop(15) vw-laptop(20);
+    font-size: vw-laptop(18);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(8) 0 0;
+    padding: vw-desktop(15) vw-desktop(20);
+    font-size: vw-desktop(18);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: solid 1px $border-color-active;
+      background-color: $form-bg-active;
   }
 
   &::placeholder {
-    color: $color-brand-bkg;
-  }
-
-  &.--filled {
-    border-top: 4px solid $border-color-passive;
-    text-transform: none!important;
-    border-bottom: 4px solid $border-color-active;
+    color: $form-placeholder-color;
   }
 }
 
@@ -117,7 +142,39 @@ textarea {
 }
 
 .zuc-form-action {
-  padding: 5vw 0;
+  margin: vw-phone(50) 0 0;
+
+  @media #{$tablet-up} {
+    margin: vw-tablet(40) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(50) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(50) 0 0;
+  }
+
+  > button {
+    padding: vw-phone(22) vw-phone(32);
+    font-size: vw-phone(14);
+
+    @media #{$tablet-up} {
+      padding: vw-tablet(22) vw-tablet(32);
+      font-size: vw-tablet(14);
+    }
+
+    @media #{$laptop-up} {
+      padding: vw-laptop(22) vw-laptop(32);
+      font-size: vw-laptop(14);
+    }
+
+    @media #{$desktop-up} {
+      padding: vw-desktop(22) vw-desktop(32);
+      font-size: vw-desktop(14);
+    }
+  }
 }
 
 /*
@@ -155,6 +212,24 @@ textarea {
   width: 100%;
   position: relative;
   text-align: left;
+
+  input {
+    &[type="button"] {
+      margin: vw-phone(17) 0 0;
+
+      @media #{$tablet-up} {
+        margin: vw-tablet(17) 0 0;
+      }
+
+      @media #{$laptop-up} {
+        margin: vw-laptop(20) 0 0;
+      }
+
+      @media #{$desktop-up} {
+        margin: vw-desktop(20) 0 0;
+      }
+    }
+  }
 }
 
 .zuc-form-50 {
@@ -201,24 +276,47 @@ textarea {
 .zuc-radio-group-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: .5vw;
-  font-size: 24px;
-  color: $color-zuc-concrete;
+  color: $color-zuc-darkindigo;
+  font-weight: 100;
+  font-size: vw-phone(21);
+  margin: vw-phone(17) 0 vw-phone(5);
 
   @media #{$tablet-up} {
-    justify-content: flex-start;
-    font-size: inherit;
+    font-size: vw-tablet(18);
+    margin: vw-tablet(17) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    font-size: vw-laptop(18);
+    margin: vw-laptop(15) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    font-size: vw-desktop(18);
+    margin: vw-desktop(15) 0 0;
   }
 
   .zuc-radio-group {
-    &:nth-child( n+2 ) {
-      padding-left: 40%; // TODO smelly padding
-    }
+    margin: 0 vw-phone(50) 0 0;
 
     @media #{$tablet-up} {
-      &:nth-child( n+2 ) {
-        padding-left: 5px;
-      }
+      margin: 0 vw-tablet(25) 0 0;
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 vw-laptop(25) 0 0;
+    }
+
+    @media #{$desktop-up} {
+      margin: 0 vw-desktop(25) 0 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
@@ -235,16 +333,22 @@ textarea {
   width: 100%;
   height: 50px;
   background: $form-bg-passive;
-  margin-top: .5vw;
-  min-width: 95px;
-  max-width: 100px;
+  margin: vw-phone(7) 0 vw-phone(7);
+  font-size: vw-phone(14);
 
-  @media #{$phone-only} {
-    height: 40px;
+  @media #{$tablet-up} {
+    margin: vw-tablet(8) 0 vw-tablet(8);
+    font-size: vw-tablet(18);
   }
 
-  @media #{$portrait} {
-    margin-top: .9vw;
+  @media #{$laptop-up} {
+    margin: vw-laptop(8) 0 0;
+    font-size: vw-laptop(18);
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(8) 0 0;
+    font-size: vw-desktop(18);
   }
 
   // This is the little arrow on the dropdown button
@@ -254,11 +358,11 @@ textarea {
     top: 0;
     width: 0;
     height: 0;
-    right: 17px;
+    right: 18px;
     bottom: 0;
     margin: auto;
     border-style: solid;
-    border-width: 10px 8px 0 8px; // <triangle height> <width left> 0 <width right>
+    border-width: 8px 6px 0 6px; // <triangle height> <width left> 0 <width right>
     border-color: $color-zuc-darkindigo transparent transparent transparent;
     pointer-events: none;
   }
@@ -267,9 +371,9 @@ textarea {
   &:before {
     width: 44px;
     position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
     background: $form-bg-passive;
     content: '';
     pointer-events: none;
@@ -306,6 +410,21 @@ textarea {
 
       &:required {
         color: $form-placeholder-color;
+        font-family: $main-font;
+        font-weight: 100;
+        font-size: vw-phone(14);
+
+        @media #{$tablet-up} {
+          font-size: vw-tablet(18);
+        }
+      
+        @media #{$laptop-up} {
+          font-size: vw-laptop(18);
+        }
+      
+        @media #{$desktop-up} {
+          font-size: vw-desktop(18);
+        }
       }
     }
 
@@ -367,6 +486,6 @@ li {
     margin: 0;
     border-radius: 4px 0 0 4px;
     height: 46px;
-    backkground: $color-pure-white;
+    background: $color-pure-white;
   }
 }

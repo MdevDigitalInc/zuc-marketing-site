@@ -2,15 +2,9 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: vw-phone(24) 0;
-
-  @media #{$tablet-only} {
-    padding: vw-tablet(30) 0 vw-tablet(21);
-  }
-
-  @media #{$laptop-up} {
-    padding: vw-desktop(50) 0 vw-desktop(50) 11vw;
-  }
+  padding: 30px 0;
+  position: relative;
+  z-index: 10;
 
   .zuc-ec-breadlink {
     color: $color-zuc-indigo;
