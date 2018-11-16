@@ -2,7 +2,7 @@
   var brad =
     {
       name : 'Brad Geddes',
-      title : 'Head Coach, President & CEO',
+      title : 'Head Coach, President &amp; CEO',
       bio : 'As an accomplished entrepreneur and business leader, Brad and his team are constantly creating opportunities to provide Canadians with smarter living solutions that combine emerging technologies with in-home professional services to help Canadians live more comfortably.',
       _linkedin : 'https://www.linkedin.com/in/bradfordgeddes/',
       _title : 'Brad Geddes LinkedIn',
@@ -13,7 +13,7 @@
   var props = [
     {
       name : 'Mindy Dodd',
-      title : 'Vice President & Chief Operating Officer',
+      title : 'Vice President &amp; Chief Operating Officer',
       bio : 'With her passion for coaching people and consistently achieving results, Mindy is one of our inspirational leaders who keeps us focused on delivering the very best customer experiences.',
       _linkedin : '#',
       _title : 'Mindy Dodd Linkedin',
@@ -21,7 +21,7 @@
     },
     {
       name : 'Michelle Mahovlich',
-      title : 'Director, Culture & Personnel',
+      title : 'Director, Culture &amp; Personnel',
       bio : 'By maintaining our unique Zucorian culture, Michelle is constantly devising ways to help our team members achieve their personal aspirations while contributing their very best.',
       _linkedin : '#',
       _title : ' Linkedin',
@@ -69,7 +69,7 @@
     },
     {
       name : 'Jim Brower',
-      title : 'Director, Product & Logistics',
+      title : 'Director, Product &amp; Logistics',
       bio : 'Jim leads our product manufacturing and distribution operations to make sure we deliver only the best solutions for our customers.',
       _linkedin : '#',
       _title : ' Linkedin',
@@ -97,7 +97,7 @@ section.zuc-teamgrid
       span.zuc-teamgrid-brad-name
         |#{brad.name}
       span.zuc-teamgrid-brad-title
-        |#{brad.title}
+        |!{brad.title}
       p.zuc-teamgrid-brad-bio
         |#{brad.bio}
       a.zuc-teamgrid-brad-link(href=brad._linkedin title=brad._title)
@@ -108,7 +108,7 @@ section.zuc-teamgrid
         .zuc-teamgrid-item-overlay
           .zuc-teamgrid-item-overlay-bg
           span.zuc-teamgrid-item-title
-            |#{prop.title}
+            |!{prop.title}
           span.zuc-teamgrid-item-name
             |#{prop.name}
           .zuc-teamgrid-item-line
