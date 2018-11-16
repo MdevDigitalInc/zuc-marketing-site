@@ -1,7 +1,18 @@
 // Modal Container
-.zuc-modal(data-smarter-video onclick="toggleModal('[data-smarter-video]')")
+.zuc-modal.--video-modal(data-smarter-video onclick="toggleModal('[data-smarter-video]')")
   // Modal Content
   .zuc-modal-content(onclick="event.stopPropagation()")
-    // Place Modal Content Here
+    // Zucora Home Introductory Video
     //-------------------------------------------------
-    | TEST TEST TEST
+    video(
+      class="zuc-modal-video"
+      poster="https://i.vimeocdn.com/video/739725837.jpg"
+      style="background-image: url('https://i.vimeocdn.com/video/739725837.jpg'); background-size: cover;"
+      preload="auto" controls)
+
+      //- at least two sources plz
+      source(src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&profile_id=175" type="video/mp4")
+      source(src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&profile_id=174" type="video/mp4")
+      source(src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&profile_id=165" type="video/mp4")
+
+
