@@ -102,18 +102,15 @@
   bottom: 0;
 
   @media #{$phone-only} {
-    width: 100%;
+    width: 220%;
     padding-top: 114.25%;
     @include center(horizontal);
   }
 
-  @media #{$tablet-prt-only} {
+  @media #{$tablet-only} {
     width: 80%;
     padding-top: 91.5%;
     @include center(horizontal);
-  }
-  @media #{$phone-only} {
-    width: 220%;
   }
 }
 

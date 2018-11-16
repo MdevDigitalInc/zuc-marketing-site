@@ -3,6 +3,11 @@
   padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
+
+  @media #{$tablet-prt-only} {
+    overflow: visible;
+  }
 
   @media #{$tablet-only} {
     padding: 3vw 0 ( 205 / 7.68 ) * 1vw;
@@ -10,6 +15,10 @@
 
   @media #{$laptop-up} {
     padding: 2vw 0 ( 165 / 19.2 ) * 1vw;
+  }
+
+  @media #{$phone-only} {
+    width: 100%;
   }
 
   // Spacing Overrides
@@ -100,6 +109,13 @@
       padding: 0 3vw 0 5vw;
     }
   }
+
+  &.--text-left {
+
+    @media #{$desktop-up} {
+      padding-right: 10%;
+    }
+  }
 }
 
 // Image Block
@@ -188,39 +204,48 @@
     padding-top: 80px;
   }
 
+  @media #{$phone-only} {
+    width: 100%;
+  }
+
   &.--img-wrapper {
     position: relative;
+
+    @media #{$phone-only} {
+      width: 100%;
+    }
   }
 
   .phone-img {
     position: absolute;
-    max-height: 400px;
     left: 8%;
-    bottom: 5%;
+    top: 5%;
 
-    @media #{$tablet-only} {
-      left: 15%;
-      top: 20%;
-      max-height: 380px;
+    @media #{$laptop-only} {
+      max-width: 200px;
     }
+
     @media #{$phone-only} {
       display: none;
+    }
+
+    @media #{$tablet-only} {
+      left: 0;
+      top: 15%;
     }
   }
 
   .photo {
-    z-index: 1;
-    max-width: 500px;
-    max-height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 
-    @media #{$tablet-only} {
-      max-width: 100%;
-      display: block;
+    @media #{$laptop-only} {
+      width: 80%;
     }
 
-    @media #{$phone-only} {
-      max-width: 100%;
-      display: block;
+    @media #{$tablet-only} {
+      width: 85%;
     }
   }
 
@@ -229,19 +254,17 @@
     display: inline;
     position: absolute;
     top: 85px;
-    max-width: 700px;
 
     @media #{$tablet-only} {
       top: 95px;
-      transform: scale(.75);
-      max-width: 800px;
+      max-width: 900px;
+      transform: scale(1.2);
     }
 
     @media #{$phone-only} {
       top: 35%;
-      left: 45%;
-      transform: scale(2);
-      display: none;
+      right: -20vw;
+      transform: scale(1.8);
     }
   }
 }

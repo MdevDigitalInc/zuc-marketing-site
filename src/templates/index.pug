@@ -23,7 +23,8 @@ block content
   include ../components/home-about-module.pug
 
   //- Blog Module
-  include ../components/shared/blog-module.pug
+  //- Disabled for launch
+  //-include ../components/shared/blog-module.pug
 
   // Hero Slider Controller
   script( src='/Scripts/Zuc/js/review-controller.js')
@@ -31,4 +32,10 @@ block content
 
 block foot
   //- Uses secondary footer on home-page.
-  include ../shared/secondary-footer.pug
+  //- Commented out for Launch since blog module is disabled
+  //- Re enable this footer and disable the othe rone
+  //- once we have the blog active
+  //- include ../shared/secondary-footer.pug
+
+  //- Temporary footer
+  include ../shared/footer.pug
