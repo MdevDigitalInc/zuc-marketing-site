@@ -78,43 +78,33 @@
 }
 
 .zuc-hp-icon {
-  margin-right: 2.5vw;
 
-  @media #{$phone-only} {
-    margin-right: 2vw;
-  }
-  @media #{$tablet-only} {
-    margin-right: 4vw;
-  }
-
-  .icon-img {
-    @media #{$phone-only} {
-      padding: 1vh .1vw;
-    }
-    z-index: 1;
-    height: 70px;
-    width: 70px;
-    margin-bottom: 4vh;
+  img {
+    width: 100%;
   }
 
   p {
     color: $color-zuc-darkindigo;
-
-    @media #{$phone-only} {
-      font-size: 2.5vh;
-    }
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .--hp-icon-base {
+  width: 20%;
+
   @media #{$phone-only} {
-    width: 25%;
-  }
-  @media #{$tablet-only} {
-    width: 25%;
+    width: 35%;
+    margin-bottom: 15px;
   }
 
-  p {
-    max-width: 100px;
+  @media #{$laptop-up} {
+    width: 20%;
+  }
+
+  @media #{$xl-up} {
+    width: 15%;
   }
 }

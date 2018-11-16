@@ -33,7 +33,7 @@
 .zuc-hero-media-container {
   width: 100%;
   position: relative;
-  height: 110vh;
+  height: 90vh;
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,13 +42,28 @@
     min-height: 400px;
     height: 98vh;
   }
+
   @media #{$portrait} {
     height: 60vh;
     min-height: 300px;
   }
-  @media #{$phone-only} {
-    height: 110vh;
+
+  @media #{$tablet-prt-only} {
+    height: 85vh;
   }
+
+  @media #{$phone-only} {
+    height: 80vh;
+  }
+
+  @media #{$laptop-only} {
+    height: 70vh;
+  }
+
+  @media #{$desktop-up} {
+    height: 100vh;
+  }
+
   @media #{$iphone-x} {
     height: 90vh;
   }
@@ -68,55 +83,89 @@
   @media #{$portrait} {
     width: 140%;
   }
+  @media #{$tablet-prt-only} {
+    width: 200%;
+  }
   @media #{$phone-only} {
+    width: 220%;
+  }
+  @media #{$iphone-x} {
     width: 280%;
   }
 }
 
-// Shield Container
+// Shield Container, aspect ratio .875
 .zuc-shield {
   position: absolute;
-  bottom: 20vh;
-  right: 15%;
-  background: $white;
-  width: 23%;
-  padding-top: 26.73%;
-  border-radius: 0 0 48% 48%;
-  box-shadow: 0 0 80px rgba(0, 0, 0, .3);
   z-index: 20;
-  overflow: hidden;
+  overflow: visible;
+  bottom: 0;
 
-  @media #{$tablet-lnd-only} {
-    bottom: 14vh;
-  }
-  @media #{$portrait} {
-    width: 40%;
-    padding-top: 46.5%;
-    bottom: 4vh;
+  @media #{$phone-only} {
+    width: 220%;
+    padding-top: 114.25%;
     @include center(horizontal);
   }
+
+  @media #{$tablet-only} {
+    width: 80%;
+    padding-top: 91.5%;
+    @include center(horizontal);
+  }
+}
+
+// Shield Container, aspect ratio .875
+.zuc-shield {
+  position: absolute;
+  z-index: 20;
+  overflow: visible;
+  bottom: 0;
+
   @media #{$phone-only} {
-    width: 72%;
-    padding-top: 83.5%;
+    width: 100%;
+    padding-top: 114.25%;
+    @include center(horizontal);
+  }
+
+  @media #{$tablet-prt-only} {
+    width: 80%;
+    padding-top: 91.5%;
+    @include center(horizontal);
+  }
+
+  @media #{$laptop-only} {
+    width: 44%;
+    padding-top: 50.25%;
+    bottom: 3vh;
+    right: 5%;
+  }
+
+  @media #{$desktop-up} {
+    width: 28%;
+    padding-top: 32%;
+    bottom: 15vh;
+    right: 12%;
   }
 }
 
 .zuc-shield-content {
-  position: absolute;
   width: 100%;
   @include center(both);
   z-index: 2;
-  padding: 10px;
 
   .zuc-btn-secondary {
-    text-transform: uppercase;
-    font-size: 1vw;
+    font-size: vw-phone(13.5);
 
-    @media #{$portrait} {
-      font-size: 2vw;
+    @media #{$tablet-only} {
+      font-size: vw-tablet(18.5);
     }
-    @media #{$phone-only} {
-      font-size: 3vw;
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(18.5);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18.5);
     }
   }
 }
@@ -124,39 +173,52 @@
 .zuc-shield-title {
   font-family: $main-font-serif;
   color: $color-zuc-indigo;
-  line-height: 1.2;
+  font-size: vw-phone(34.5);
+  line-height: 1.16;
+  margin: 0 auto;
 
-  //- My h1 changes broke this so I am adding the old styles here until we decide on a global fix - A.
-
-  font-size: 3.125vw;
-
-  @media #{$phone-only} {
-    font-size: 8vw;
+  @media #{$tablet-only} {
+    font-size: vw-tablet(60);
+    line-height: 1;
+    width: vw-tablet(400);
   }
 
-  @media #{$portrait} {
-    font-size: 5.3vw;
+  @media #{$laptop-up} {
+    font-size: vw-laptop(60);
+    line-height: 1.17;
+    width: vw-laptop(400);
   }
 
-  @media #{$laptop-only} {
-    font-size: 3vw;
+  @media #{$desktop-up} {
+    font-size: vw-desktop(60);
+    width: vw-desktop(400);
   }
 }
 
 .zuc-shield-subtitle {
-  font-size: 1.25vw;
-  line-height: 1.2;
-  margin-top: 36px;
-  margin-bottom: 52px;
+  font-weight: 500;
   letter-spacing: .7px;
+  line-height: 1.2;
+  font-size: vw-phone(15.5);
+  width: vw-phone(210);
+  margin: vw-phone(22) auto vw-phone(23);
 
-  @media #{$portrait} {
-    font-size: 2vw;
+  @media #{$tablet-only} {
+    font-size: vw-tablet(26);
+    width: vw-tablet(340);
+    margin: vw-tablet(40) auto vw-tablet(78);
   }
-  @media #{$phone-only} {
-    font-size: 3vw;
-    margin-top: 30px;
-    margin-bottom: 40px;
+
+  @media #{$laptop-only} {
+    font-size: vw-laptop(24);
+    width: vw-laptop(340);
+    margin: vw-laptop(50) auto vw-laptop(57);
+  }
+
+  @media #{$desktop-up} {
+    font-size: vw-desktop(24);
+    width: vw-desktop(340);
+    margin: vw-desktop(50) auto vw-desktop(57);
   }
 }
 
@@ -168,11 +230,10 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: url('../images/icons/ZH_Icon_Concrete.svg') $white;
+    background: url('../images/homepage/hero-shield-shadow.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center -1px;
-    opacity: .2;
     z-index: 0;
   }
 }

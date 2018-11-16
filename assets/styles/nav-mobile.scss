@@ -17,7 +17,7 @@ $nav-animation: transform .2s, opacity .5s;
   height: auto;
   transition: $nav-animation;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 
@@ -187,7 +187,7 @@ $line-offset: -7px;
     display: none;
   }
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 }
@@ -214,7 +214,7 @@ $line-offset: -7px;
 .zuc-menu {
   display: block;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 }

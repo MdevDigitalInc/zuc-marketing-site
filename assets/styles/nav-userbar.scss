@@ -7,6 +7,9 @@
   @media #{$portrait} {
     font-size: 1.2vw;
   }
+  @media #{$tablet-only} {
+    display: none;
+  }
   @media #{$phone-only} {
     display: none;
   }
