@@ -36,6 +36,11 @@
 .zuc-ec-home-header-card-container {
   position: relative;
   z-index: 2;
+  margin-bottom: 10vw;
+
+  @media #{$portrait} {
+    margin-bottom: 20vw;
+  }
 }
 
 .zuc-ec-home-header-card {
@@ -44,16 +49,13 @@
   background: $color-pure-white;
   box-shadow: 0 23px 40px 0 rgba(12, 12, 12, .2);
   margin: 5vw;
-  padding: 5vw;
   width: 90%;
   position: absolute;
   opacity: 0;
   transition: all .5s;
-  transform: translate3d(100%, 0, 0);
 
   @media #{$tablet-only} {
     margin: vw-tablet(80) 8.5vw vw-tablet(25);
-    padding: vw-tablet(50) vw-tablet(50) vw-tablet(62);
     flex-direction: column;
     justify-content: center;
     width: 85%;
@@ -61,87 +63,17 @@
 
   @media #{$laptop-up} {
     margin: vw-desktop(100) 16vw vw-desktop(25);
-    padding: vw-desktop(166) 0 vw-desktop(153) vw-desktop(71);
     flex-direction: row;
     width: 70%;
   }
 
   &.--active-slide {
-    position: relative;
     opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .zuc-ec-home-header-subtitle {
-    color: $color-zuc-darkindigo;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 0 0 vw-phone(12);
-    font-size: vw-phone(16);
-
-    @media #{$tablet-only} {
-      margin: 0 0 vw-tablet(18);
-      font-size: vw-tablet(20);
-    }
-
-    @media #{$laptop-up} {
-      margin: 0 0 vw-desktop(18);
-      font-size: vw-desktop(20);
-    }
-  }
-
-  .zuc-ec-home-header-title {
-    color: $color-zuc-indigo;
-    font-weight: 300;
-    font-family: $main-font-serif;
-    font-size: vw-phone(28);
-    margin: 0 0 vw-phone(20);
-
-    @media #{$tablet-only} {
-      font-size: vw-tablet(80);
-      margin: 0 0 vw-tablet(30);
-    }
-
-    @media #{$laptop-up} {
-      font-size: vw-desktop(80);
-      margin: 0 0 vw-desktop(30);
-    }
-  }
-
-  .zuc-ec-home-header-blurb {
-    color: $color-zuc-darkindigo;
-    font-weight: 100;
-    margin: 0 0 vw-phone(30);
-    font-size: vw-phone(12);
-
-    @media #{$tablet-only} {
-      margin: 0 0 vw-tablet(47);
-      font-size: vw-tablet(20);
-    }
-
-    @media #{$laptop-up} {
-      width: vw-desktop(390);
-      margin: 0 0 vw-desktop(47);
-      font-size: vw-desktop(20);
-    }
   }
 
   img {
-    position: relative;
-    z-index: 0;
-    max-height: 50vw;
-
-    @media #{$laptop-up} {
-      position: absolute;
-      width: 33%;
-      right: 10%;
-      top: 27%;
-    }
-  }
-
-  .zuc-ec-home-header-card--img {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
 }
 

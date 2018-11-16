@@ -120,11 +120,11 @@ module.exports = {
             // GIF Processing
             gifsicle: {
               interlaced: false,
-              optimizationLevel: 2
+              optimizationLevel: 1
             },
             // PNG Processing
             pngquant: {
-              quality: '75-80',
+              quality: '80-95',
               speed: 2
             },
             // SVG Processing
@@ -241,7 +241,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/about.pug',
-      filename: 'about.html'
+      filename: 'our-story.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spr-home-care-kits.pug',
