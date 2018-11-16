@@ -42,19 +42,28 @@
     min-height: 400px;
     height: 98vh;
   }
+
   @media #{$portrait} {
     height: 60vh;
     min-height: 300px;
   }
+
   @media #{$tablet-prt-only} {
     height: 85vh;
   }
+
   @media #{$phone-only} {
     height: 80vh;
   }
+
   @media #{$laptop-only} {
-    height: 95vh;
+    height: 70vh;
   }
+
+  @media #{$desktop-up} {
+    height: 100vh;
+  }
+
   @media #{$iphone-x} {
     height: 90vh;
   }
