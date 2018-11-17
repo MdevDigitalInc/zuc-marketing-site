@@ -7,6 +7,9 @@
   @media #{$portrait} {
     font-size: 1.2vw;
   }
+  @media #{$tablet-only} {
+    display: none;
+  }
   @media #{$phone-only} {
     display: none;
   }
@@ -14,14 +17,14 @@
 
   .zuc-nav-slogan {
     color: $white;
-    letter-spacing: .1vw;
+    letter-spacing: .05vw;
 
     @media #{$phone-only} {
       display: none;
     }
 
     span {
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 }

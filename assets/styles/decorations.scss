@@ -132,8 +132,7 @@
     @media #{$laptop-up} {
       display: inline;
       position: absolute;
-      right: -40%;
-      transform: scale(.4);
+      transform: scale(.4) translate3d( 40%, -90%, 0);
     }
   }
 }

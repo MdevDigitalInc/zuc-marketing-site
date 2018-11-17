@@ -1,31 +1,19 @@
 -
   var cards = [
     {
-      title: 'Whole Home Plan',
-      subtitle: 'Bundle &amp; Save',
-      blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
-      buttontext: 'get started today',
       _data_slide: '1',
-      _src: '../../assets/images/ecom/header-whole-home-plan.png',
-      _alt: 'todo'
+      _src: '../../assets/images/ecom/banner-whole-home-plan.png',
+      _alt: 'Zucora Home - Whole Home Plan'
     },
     {
-      title: 'Whole Home Plan2',
-      subtitle: 'Bundle &amp; Save',
-      blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
-      buttontext: 'get started today',
       _data_slide: '2',
-      _src: 'https://via.placeholder.com/900x700',
-      _alt: 'todo'
+      _src: '../../assets/images/ecom/banner-oxy-tough.png',
+      _alt: 'OxyTough Stain and odour fighter'
     },
     {
-      title: 'Whole Home Plan3',
-      subtitle: 'Bundle &amp; Save',
-      blurb: 'Protect your funiture, appliances and home systems with one easy monthly payment.',
-      buttontext: 'get started today',
       _data_slide: '3',
-      _src: 'https://via.placeholder.com/900x700',
-      _alt: 'todo'
+      _src: '../../assets/images/ecom/banner-leather-care.png',
+      _alt: 'Zucora Home - Leather Care'
     }
   ]
 
@@ -33,19 +21,8 @@
   img.zuc-ec-home-header-bg(src="../../assets/images/shapes/comfort-blob.svg", alt="An abstract blob shape")
   .zuc-ec-home-header-card-container(data-slide-container)
     each card in cards.length ? cards : ['No cards to display']
-      .zuc-ec-home-header-card.flex(aria-role="menuitem" data-slide=card._data_slide)
-        .txt.flex.flex-column
-          span.zuc-ec-home-header-subtitle
-            |!{card.subtitle}
-          h1.zuc-ec-home-header-title
-            |!{card.title}
-          span.zuc-ec-home-header-blurb
-            |!{card.blurb}
-          .zuc-btn-box
-            a.zuc-btn.zuc-btn-secondary(href="#" title="todo")
-              |!{card.buttontext}
-        .zuc-ec-home-header-card--img
-          img(src=card._src)
+      .zuc-ec-home-header-card(aria-role="menuitem" data-slide=card._data_slide)
+        img(src=card._src alt=card._alt)
   // Slideshow Controls
   .zuc-ec-home-slider-container.flex.flex-hor-center
     a.zuc-ec-home-slider-selector.--active(data-move-slide="1")

@@ -5,7 +5,6 @@
 .zuc-footer {
   background-color: $color-zuc-indigo;
   padding: 60px 20px 70px;
-  letter-spacing: 1px;
   flex-direction: column;
 
   @media #{$tablet-only} {
@@ -22,8 +21,7 @@
 }
 
 .zuc-footer--column {
-  padding: 0 20px;
-
+  padding: 0 vw-desktop(65);
 
   &:nth-child( 2 ) {
     margin: 5.86vw 0 0;
@@ -36,21 +34,26 @@
 
 .zuc-footer--header {
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   white-space: nowrap;
   /* Uncomment Me For Ellpsis overflow
   width: setme;
   overflow: hidden;
   text-overflow: ellipsis;
   */
+
+  @media #{$portrait} {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
 }
 
 .zuc-footer--link {
   color: $white;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .zuc-footer--logo {
@@ -58,7 +61,7 @@
 }
 
 .zuc-footer--brand-section {
-  padding: 0 2%;
+  padding: 0;
   left: 0;
   color: $white;
   font-size: $font-size-body;
@@ -71,18 +74,21 @@
   @media #{$tablet-up} {
     font-size: 1vw;
   }
+
   @media #{$desktop-only} {
     font-size: $font-size-body;
   }
+
   @media #{$xl-up} {
     font-size: 1vw;
   }
+
   @media #{$phone-only} {
     padding: 2vw;
   }
 
   .zuc-nav-brand {
-    width: 12vw;
+    width: 17vw;
     max-width: 237px;
     transition: all .2s ease-out;
 
@@ -111,7 +117,7 @@
   .zuc-footer--social-icons-primary {
     padding-top: 30px;
     position: absolute;
-    right: 48px;
+    right: 30px;
     top: 30px;
     display: none;
 
@@ -123,23 +129,24 @@
   .zuc-social-link {
     font-size: 1.5vw;
     font-weight: 400;
-    padding: 0 5px;
+    padding: 0 10px;
+    transition: .4s;
+
+    &:active {
+      color: $color-zuc-darkindigo;
+    }
 
     @media #{$laptop-only} {
       font-size: 1.3vw;
     }
 
     @media #{$desktop-up} {
-      font-size: 1.15vw;
+      font-size: 1.4vw;
     }
   }
 
   .far.fa-envelope {
     display: none;
-  }
-
-  .zuc-btn {
-    margin-right: 10px;
   }
 }
 
@@ -151,6 +158,7 @@
   @media #{$portrait} {
     font-size: 1.2vw;
   }
+
   @media #{$phone-only} {
     justify-content: center;
     flex-direction: column;
@@ -158,7 +166,7 @@
 
   .zuc-footer--copyright-text {
     color: $white;
-    font-size: 12px;
+    font-size: 14px;
 
     @media #{$phone-only} {
       font-size: 10px;
@@ -170,10 +178,45 @@
   }
 
   .zuc-footer--copyright-title {
-    font-size: 12px;
-
     @media #{$phone-only} {
       padding: 0 0 1vw;
+    }
+
+    a {
+      color: $white;
+      font-size: vw-phone(10);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
+      }
+
+      &:hover {
+        color: $color-zuc-lilac;
+      }
+    }
+
+    span {
+      font-size: vw-phone(10);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
+      }
     }
   }
 
@@ -184,21 +227,46 @@
       padding: 0 0 1vw;
     }
 
-    span {
-      font-size: 12px;
-      margin: 0 .5vw;
+    a {
       color: $white;
+      font-size: vw-phone(10);
 
-      @media #{$tablet-only} {
-        margin: 0 .4vw;
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
       }
 
-      @media #{$laptop-only} {
-        margin: 0 .2vw;
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
       }
 
       @media #{$desktop-up} {
-        margin: 0 .1vw;
+        font-size: vw-desktop(14);
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: $color-zuc-lilac;
+      }
+    }
+
+    span {
+      color: $white;
+      font-size: vw-phone(8);
+      margin: 0 vw-phone(5);
+
+      @media #{$tablet-up} {
+        font-size: vw-tablet(14);
+        margin: 0 vw-tablet(5);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-laptop(14);
+        margin: 0 vw-laptop(5);
+      }
+
+      @media #{$desktop-up} {
+        font-size: vw-desktop(14);
+        margin: 0 vw-desktop(5);
       }
     }
   }
@@ -208,7 +276,8 @@
 
 .zuc-footer--social-icons-secondary {
   display: block;
-  padding-top: 30px;
+  padding-top: 45px;
+  padding-bottom: 15px;
 
   .zuc-mobile-social {
     justify-content: flex-start;
@@ -218,7 +287,12 @@
     color: $white;
     font-size: 3vw;
     font-weight: 400;
-    padding: 0 1.2vw;
+    padding: 0 10px;
+    transition: .4s;
+
+    &:active {
+      color: $color-zuc-darkindigo;
+    }
   }
 
   @media #{$laptop-up} {
@@ -230,16 +304,18 @@
   }
 }
 
-footer .zuc-btn-primary {
-  @media #{$tablet-only} {
-    font-size: 1.75vw;
-    padding: 2vw;
-  }
-}
-
 footer .zuc-footer-row {
   display: flex;
   flex-direction: column;
+  letter-spacing: 1px;
+
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+      color: $color-zuc-lilac;
+    }
+  }
 
   @media #{$laptop-up} {
     flex-direction: row;
@@ -252,6 +328,7 @@ footer .zuc-footer-row {
   @media #{$tablet-only} {
     display: block;
     padding-top: 4.69vw;
+    font-size: 14px;
   }
 }
 

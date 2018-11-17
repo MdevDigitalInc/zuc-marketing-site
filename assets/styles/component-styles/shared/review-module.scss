@@ -16,6 +16,10 @@
   @media #{$desktop-up} {
     width: 44vw;
   }
+
+  @media #{$phone-only} {
+    margin-bottom: 7vw;
+  }
 }
 
 .zuc-quote-container {
@@ -161,5 +165,9 @@
     padding: 1.87vw 2.07vw 1.51vw;
     top: -4.2vw;
     left: -13.43vw;
+  }
+
+  @media #{$phone-only} {
+    display: none;
   }
 }

@@ -35,3 +35,31 @@
 @function vw-phone($width) {
   @return ($width / 3.2) * 1vw;
 }
+
+// ECOM Header except not for the ECOM and instead for ZUC
+
+.zuc-header {
+
+  h1 {
+    font-weight: 300;
+    font-family: $main-font-serif;
+    color: $color-zuc-indigo;
+    font-size: vw-phone(40);
+    margin: 0 0 vw-phone(5);
+
+    @media #{$tablet-only} {
+      font-size: vw-tablet(60);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-desktop(60);
+      margin: 0 0 vw-desktop(10);
+    }
+  }
+
+  .zuc-header-line {
+    width: 100%;
+    border: 1px solid $color-zuc-concrete;
+  }
+}

@@ -12,7 +12,7 @@
   // Make sure we are live and ready..
   $(document).ready(function() {
     // Normalize Container
-    
+
     // Set Vars
     slides = $('[data-slide]');
     maxSlides = slides.length;
@@ -43,11 +43,11 @@
         currentSlide = desiredSlide;
       }
       // Once the funciton is over, start the timer again.
-      sliderTimer = setInterval(flipSlider, 3000);
+      sliderTimer = setInterval(flipSlider, 2000);
     });
 
     // Slider is on a 3 second interval
-    sliderTimer = setInterval(flipSlider, 3000);
+    sliderTimer = setInterval(flipSlider, 2000);
 
   });
   // Resize Events (debounced)

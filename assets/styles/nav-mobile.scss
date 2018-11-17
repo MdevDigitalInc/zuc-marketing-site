@@ -17,7 +17,7 @@ $nav-animation: transform .2s, opacity .5s;
   height: auto;
   transition: $nav-animation;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 
@@ -63,6 +63,11 @@ $nav-animation: transform .2s, opacity .5s;
     .zuc-social-link {
       margin: 1.6vh 4% 0;
       display: block;
+      transition: .4s;
+
+      &:active {
+        color: $color-zuc-darkindigo;
+      }
     }
   }
 
@@ -85,7 +90,7 @@ $nav-animation: transform .2s, opacity .5s;
     width: 100%;
     font-size: 5vw;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     padding: 2vh 7vw;
     color: $white;
     position: relative;
@@ -182,7 +187,7 @@ $line-offset: -7px;
     display: none;
   }
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 }
@@ -209,7 +214,7 @@ $line-offset: -7px;
 .zuc-menu {
   display: block;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     display: none;
   }
 }

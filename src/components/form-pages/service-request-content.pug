@@ -1,12 +1,11 @@
 -
   var headBlurb = [
-    "Please complete as much information as you can on the Service Request before submitting it. This detail will help our Solutions Team gather information about your plan before contacting you. The questions you are asked help us to determine the right solution for you quickly because we'll better understand if one of our special-forumulated products will resolve the issue; a service technician should be sent to your home; or if there is another appropriate solution."
+    "<b>Please complete as much information as you can on the Service Request before submitting it.</b> This detail will help our Solutions Team gather information about your plan before contacting you. Your answers to these questions will help us to determine the right solution for you quickly because we'll better understand if one of our special-forumulated products will resolve the issue; a service technician should be sent to your home; or if there is another appropriate solution."
   ]
 
-section.zuc-section-container.--sides.--hstyle
-  h1
-    |Service Request
-  .zuc-head-blurb
+.zuc-service-form
+  +zuc-header('Service Request')
+  .zuc-service-form-blurb
     p
       |!{headBlurb}
   .zuc-forms-container.flex.flex-column
@@ -15,24 +14,24 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |First &amp; Last Name *
+              |First &amp; Last name *
           label.u-screenreader(for="field-name")
-            |Firs &amp; Last Name
+            |First &amp; Last name
           input(type="text" data-required name="fullname" placeholder="First & Last Name" id="field-name")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Email Address *
+              |Email address *
           label.u-screenreader(for="field-email")
-            |Email Address
+            |Email address
           input(type="email" data-required name="email" placeholder="Email Address" id="field-email")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Current Phone Number *
+              |Current phone number *
           label.u-screenreader(for="field-phone")
-            |Phone Number
+            |Current phone number
           input(type="tel" data-required name="phone" placeholder="Phone number where we can reach you" id="field-phone")
         .zuc-form-group.zuc-form-50
           .zuc-input-name
@@ -45,9 +44,9 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group
           .zuc-input-name
             strong
-              |Street Address
+              |Street address
           label.u-screenreader(for="field-address")
-            |Street Address
+            |Street address
           input(type="text" name="address" placeholder="Street Address" id="field-address")
       .zuc-form-row
         .zuc-form-group.zuc-form-33
@@ -63,7 +62,7 @@ section.zuc-section-container.--sides.--hstyle
               |Province
           .zuc-select-container
             label.u-screenreader(for="field-province")
-              |Choose your product type
+              |Choose your province
             select(required name="province")
               option(value="" disabled selected id="field-province")
                 |Choose your province
@@ -81,22 +80,24 @@ section.zuc-section-container.--sides.--hstyle
                 |Northwest Territories
               option(value="novascotia")
                 |Nova Scotia
+              option(value="nunavut")
+                |Nunavut
               option(value="ontario")
                 |Ontario
               option(value="pei")
                 |Prince Edward Island
-              option(value="saskatchawan")
-                |Saskatchawan
               option(value="quebec")
                 |Qu&eacute;bec
+              option(value="saskatchawan")
+                |Saskatchawan
               option(value="yukon")
-                |Yukon
+                |Yukon Territory
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |Postal Code
+              |Postal code
           label.u-screenreader(for="field-postal")
-            |Postal Code
+            |Postal code
           input(type="text" name="postal" placeholder="Postal Code" id="field-postal")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
@@ -109,7 +110,7 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |Product Type
+              |Product type
           .zuc-select-container
             label.u-screenreader(for="field-select")
               |Choose your product type
@@ -126,16 +127,16 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |Specific Item
+              |Specific item
           label.u-screenreader(for="field-item")
-            |Specific Item
-          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, etc.)" id="field-item")
+            |Specific item
+          input(type="text" name="specificitem" placeholder="Specific Item (Sofa, Fridge, Etc.)" id="field-item")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
             strong
-              |Date Purchased (YYYY-MM-DD)
+              |Date purchased (YYYY-MM-DD)
           label.u-screenreader(for="field-datepurchase")
-            |Date of Purchase
+            |Date purchased
           input(type="text" name="purchasedate" placeholder="Date Purchased" id="field-datepurchase")
         .zuc-form-group.zuc-form-33
           .zuc-input-name
@@ -148,10 +149,10 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group
           .zuc-input-name
             strong
-              |Description of Problem *
+              |Description of issue *
           label.u-screenreader(for="field-description")
-            |Description of Problem
-          input(type="text" data-required name="issuedesc" placeholder="Description of Issue" id="field-description")
+            |Description of issue
+          textarea(type="text" data-required name="issuedesc" placeholder="Description of Issue" id="field-description")
       .zuc-form-row
         .zuc-form-group.zuc-form-50
           .zuc-input-name
@@ -163,7 +164,7 @@ section.zuc-section-container.--sides.--hstyle
         .zuc-form-group.zuc-form-50
           .zuc-input-name
             strong
-              |When did the Issue Occur? (YYYY-MM-DD)
+              |When did the issue occur? (YYYY-MM-DD)
           label.u-screenreader(for="field-when")
             |When did the issue occur?
           input(type="text" name="issuewhen" placeholder="Date when issue occured" id="field-when")
@@ -186,7 +187,7 @@ section.zuc-section-container.--sides.--hstyle
           .zuc-input-name
             strong
               |Please upload your invoice and/or any pictures.
-          input.zuc-btn.zuc-btn-primary.zuc-btn-browse(type="button" name="issuedesc" value="Browse...")
+          input.zuc-btn.zuc-btn-browse(type="button" name="issuedesc" value="Browse...")
       .zuc-form-action
         button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
           strong

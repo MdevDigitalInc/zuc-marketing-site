@@ -3,18 +3,18 @@
 - var text = 'When major appliances malfunction; your furniture becomes stained or accidentally damaged, or your home comfort systems don’t operate the way they should, then a Smarter Living Plan from Zucora Home can help remove the stress of managing your home while protecting your budget from unexpected repairs. A Smarter Living Plan provides peace of mind with our priority service delivered by our national network of trained, qualified professionals.'
 - var button = 'Learn More'
 
-section.zuc-home-customized-section.flex-vert-center.u-section-spacing
-  .zuc-featured-content.--text
+section.zuc-home-customized-section.flex-hor-between.u-section-spacing
+  .zuc-featured-content.--text-left
     .zuc-title-container.flex
       h4
         |#{subheading}
       .zuc-title-flag
         .--green
-    h3.u-font-serif.u-zuc-indigo
+    h2.u-font-serif.u-zuc-indigo
       |#{title}
     p
       |#{text}
-    a.zuc-btn.zuc-btn-secondary(href="#" alt="TODO")
+    a.zuc-btn.zuc-btn-secondary(href="service-plans.html" title="See all of our service plans")
       |#{button}
 
   .zuc-home-customized-section--graphic-section.flex.flex-hor-between.flex-vert-center
@@ -30,7 +30,6 @@ section.zuc-home-customized-section.flex-vert-center.u-section-spacing
       img.icon-img(src='../../assets/images/icons/icon-24-7-service.svg' alt='Solutions Team')
       p.u-bold.u-uppercase
         |Solutions Team
-    // TODO: re-export this svg -- has different dimensions than rest.
     .zuc-hp-icon.--hp-icon-base
       img.icon-img(src='../../assets/images/icons/icon-fast-service.svg' alt='Rapid Response')
       p.u-bold.u-uppercase

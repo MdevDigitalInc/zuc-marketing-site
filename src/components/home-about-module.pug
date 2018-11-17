@@ -1,27 +1,29 @@
-- var aboutBlurb = 'Since 1979, we’ve been passionate about serving Canadians with innovative home convenience solutions. By combining our people, professional services and technology, we deliver smarter living solutions designed for today’s busy families and tomorrow’s digitally connected homes.Our unique service and replacement programs help remove the stress of home management by caring for your appliances, furniture, and home systems while our innovative home and lifestyle products deliver complete comfort and convenience!';
+- var aboutBlurb = 'Since 1979, we’ve been passionate about serving Canadians with innovative home convenience solutions. By combining our people, professional services and technology, we deliver smarter living solutions designed for today’s busy families and tomorrow’s digitally connected homes. Our unique service and replacement programs help remove the stress of home management by caring for your appliances, furniture, and home systems while our innovative home and lifestyle products deliver complete comfort and convenience!';
 
-section.zuc-about-section.flex
+section.zuc-about-section
+  .flex.flex-vert-stretch.flex-wrap
+    .zuc-about-img-box.flex
+      img(src="../../assets/images/shared/laughing-family.png", alt="A laughing family")
+    .zuc-about-text-box.flex.flex-column.u-soft-shadow
+      h2.u-font-serif.u-zuc-indigo
+        |Canada’s smarter living company.
+      p.u-zuc-darkindigo
+        |#{aboutBlurb}
+      .zuc-about-icons.flex.flex-hor-between.flex-vert-start.flex-wrap
+        .zuc-hp-icon.--about-icons
+          img.icon-img(src='../../assets/images/icons/icon-experienced.svg' alt='Experienced')
+          p.u-bold.u-uppercase
+            |Experienced
+        .zuc-hp-icon.--about-icons
+          img.icon-img(src='../../assets/images/icons/icon-nationwide.svg' alt='Nationwide')
+          p.u-bold.u-uppercase
+            |Nationwide
+        .zuc-hp-icon.--about-icons
+          img.icon-img(src='../../assets/images/icons/icon-guaranteed.svg' alt='Guaranteed')
+          p.u-bold.u-uppercase
+            |Guaranteed
+
+      a.zuc-btn.zuc-btn-secondary(href="our-story.html" title="About Us")
+        |ABOUT US
+
   img.zuc-pear-blob(src="../../assets/images/shapes/round-blob-half-solid.svg", alt="A pear shaped abstract blob")
-  .zuc-about-img-box.flex
-    img(src="../../assets/images/shared/laughing-family.png", alt="A laughing family")
-  .zuc-about-text-box.flex.flex-column.u-soft-shadow
-    h2.u-font-serif.u-zuc-indigo
-      |Canada’s smarter living company.
-    p.u-zuc-darkindigo
-      |#{aboutBlurb}
-    .flex.flex-hor-between.flex-vert-start.flex-wrap
-      .zuc-hp-icon.--about-icons
-        img.icon-img(src='../../assets/images/icons/icon-experienced.svg' alt='Experienced')
-        p.u-bold.u-uppercase
-          |Experienced
-      .zuc-hp-icon.--about-icons
-        img.icon-img(src='../../assets/images/icons/icon-nationwide.svg' alt='Nationwide')
-        p.u-bold.u-uppercase
-          |Nationwide
-      .zuc-hp-icon.--about-icons
-        img.icon-img(src='../../assets/images/icons/icon-guaranteed.svg' alt='Guaranteed')
-        p.u-bold.u-uppercase
-          |Guaranteed
-
-    a.zuc-btn.zuc-btn-secondary(href="about.html" title="About Us")
-      |ABOUT US
