@@ -12,6 +12,8 @@
     z-index: -1;
 
     @media #{$desktop-only} {
+      top: 33%;
+
       object {
         width: 130%;
         left: -760px;
