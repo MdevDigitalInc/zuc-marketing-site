@@ -11,6 +11,12 @@
     overflow: hidden;
     z-index: -1;
 
+    @media #{$desktop-only} {
+      object {
+        width: 130%;
+        left: -760px;
+      }
+    }
     @media #{$tablet-lnd-only} {
       object {
         width: 130%;
