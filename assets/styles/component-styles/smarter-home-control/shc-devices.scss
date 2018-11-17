@@ -15,11 +15,16 @@
   }
   @media #{$desktop-up} {
     width: 60%;
+    margin: 0 auto 20vw;
   }
 }
 
 .zuc-smart-device {
   width: 45%;
+
+  @media #{$laptop-up} {
+    padding-right: 10%;
+  }
 
   @media #{$portrait} {
     width: 100%;
@@ -45,6 +50,6 @@
   }
 
   h2 {
-    margin-top: 1.4vw;
+    margin-top: 10px;
   }
 }

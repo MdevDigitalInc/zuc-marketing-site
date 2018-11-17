@@ -10,10 +10,11 @@
 
   @media #{$tablet-only} {
     padding: 50px 0 510px;
-    margin-bottom: -70px;
+    margin-bottom: 100px;
   }
   @media #{$tablet-prt-only} {
     padding: 50px 0 970px;
+    margin-bottom: -90px;
 
     .d-green-bar:after {
       right: 0;
@@ -24,11 +25,18 @@
     padding: 40px 0 600px;
 
     .d-green-bar:after {
-      display: none;
+      right: 0;
+      top: 6.1vw;
+      width: 90px;
+      height: 4px;
+      transform: translatex(-60%);
     }
   }
   @media #{$laptop-only} {
     margin-bottom: -120px;
+  }
+  @media #{$desktop-only} {
+    margin-bottom: -150px;
   }
 }
 
@@ -176,8 +184,8 @@
   }
   @media #{$phone-only} {
     top: 35%;
-    padding-top: 160%;
-    width: 250%;
+    padding-top: 205%;
+    width: 355%;
   }
   @media #{$tablet-prt-only} {
     top: 25%;

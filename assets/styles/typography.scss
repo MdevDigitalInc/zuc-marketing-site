@@ -25,6 +25,10 @@ h6,.h6, {
   font-weight: 300;
   color: inherit;
   margin-bottom: 15px;
+
+  @media #{$phone-only} {
+    margin-bottom: 10px;
+  }
 }
 
 // Responsive Font Size Maps
