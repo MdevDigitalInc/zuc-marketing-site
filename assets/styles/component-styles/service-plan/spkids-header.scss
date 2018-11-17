@@ -112,6 +112,7 @@
   @media #{$laptop-up} {
     @include center(both);
     padding-top: 55%;
+    top: 45%;
     background-size: 100%;
   }
 }

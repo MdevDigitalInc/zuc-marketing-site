@@ -8,7 +8,11 @@
   height: 70vh;
 
   @media #{$portrait} {
-    height: 50vh;
+    height: 105vh;
+  }
+
+  @media #{$tablet-prt-only} {
+    height: 80vh;
   }
 }
 
@@ -95,6 +99,14 @@
       left: -150px;
       padding: 0;
     }
+
+    @media #{$portrait} {
+      padding: 100vw 0 0;
+    }
+
+    @media #{$tablet-prt-only} {
+      padding: 60vw 0 0;
+    }
   }
 
   .--grey-blob {
@@ -141,6 +153,18 @@
       bottom: -3px;
       left: -2px;
     }
+
+    @media #{$portrait} {
+      bottom: 18px;
+    }
+
+    @media #{$phone-only} {
+      bottom: -2px;
+    }
+
+    @media #{$tablet-prt-only} {
+      bottom: -3px;
+    }
   }
 
   .--bottom-wave-flipped {
@@ -159,6 +183,14 @@
 
     @media #{$laptop-up} {
       display: none;
+    }
+
+    @media #{$portrait} {
+      top: 98vw;
+    }
+
+    @media #{$tablet-prt-only} {
+      top: 58vw;
     }
   }
 }
