@@ -14,6 +14,7 @@ section.zuc-tri-module {
   overflow: hidden;
   flex-direction: row;
   padding: ( 157 / 3.2 ) * 1vw 0 0;
+  margin-bottom: -7vw;
 
   @media #{$tablet-only} {
     padding: ( 176 / 7.68 ) * 1vw 0 0;

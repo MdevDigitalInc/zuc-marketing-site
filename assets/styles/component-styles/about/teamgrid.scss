@@ -115,24 +115,6 @@ section.zuc-teamgrid {
 
   /***************************************************
 
-      HOVER LOGIC
-
-  ***************************************************/
-
-  &:hover,
-  &:active,
-  &:focus {
-    .zuc-teamgrid-item-overlay > .zuc-teamgrid-item-overlay-bg {
-      opacity: .8;
-    }
-
-    .zuc-teamgrid-item-overlay > :nth-child( n+2 ) {
-      opacity: 1;
-    }
-  }
-
-  /***************************************************
-
       BRAD BIO BOX - It's different!™
 
   ***************************************************/
@@ -230,8 +212,16 @@ section.zuc-teamgrid {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  opacity: 0;
+  transition: all, .4s;
   color: $color-pure-white;
   padding: 0 vw-phone(23);
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .8;
+  }
 
   @media #{$tablet-only} {
     padding: 0 vw-tablet(21);
@@ -240,11 +230,6 @@ section.zuc-teamgrid {
     padding: 0 vw-desktop(32);
   }
 
-  // All Children
-  :nth-child( n ) {
-    opacity: 0;
-    transition: .4s;
-  }
 
   .zuc-teamgrid-item-overlay-bg {
     position: absolute;
@@ -321,6 +306,7 @@ section.zuc-teamgrid {
   }
 
   .zuc-teamgrid-item-link {
+    margin-top: 15px;
     color: $color-pure-white;
     font-size: vw-phone(34);
 

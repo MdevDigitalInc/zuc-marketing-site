@@ -15,7 +15,10 @@
   }
 
   .zuc-about-icons {
-    margin-right: 25%;
+
+    @media #{$laptop-up} {
+      margin-right: 25%;
+    }
   }
 }
 

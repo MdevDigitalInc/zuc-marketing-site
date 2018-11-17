@@ -4,6 +4,7 @@
   margin: 0 auto;
   position: relative;
   flex-wrap: wrap;
+  margin-bottom: -300px;
 
   @media #{$tablet-up} {
     width: 80%;
@@ -87,7 +88,7 @@
     &.--dining {
       background-image: url('../../assets/images/shared/dining-room-set.png');
     }
-    
+
     &.--heater {
       background-image: url('../../assets/images/shared/water-heater-repair.png');
     }
@@ -195,6 +196,7 @@
     font-weight: 700;
     width: 100%;
     margin-bottom: 1.5vw;
+    font-size: 20px;
 
     @media #{$phone-only} {
       margin-bottom: 9vw;
@@ -212,6 +214,8 @@
     width: 100%;
     margin-top: .5vw;
     margin-bottom: 0;
+    color: $white;
+    list-style: none;
 
     @media #{$phone-only} {
       margin-top: 2vw;
@@ -221,7 +225,10 @@
     }
 
     li {
+      color: $white;
+      margin: 0;
       padding: .2vw;
+      list-style: none;
 
       @media #{$phone-only} {
         padding: 1vw;
@@ -230,7 +237,7 @@
 
     li:nth-child( odd ) {
       font-size: 1.04vw;
-      font-weight: 700;
+      font-weight: 300;
 
       @media #{$phone-only} {
         font-size: 3vw;
@@ -242,7 +249,7 @@
     }
 
     li:nth-child( even ) {
-      font-weight: 300;
+      font-weight: 700;
       font-size: .93vw;
 
       @media #{$phone-only} {
