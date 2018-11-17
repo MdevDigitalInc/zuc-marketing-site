@@ -167,6 +167,10 @@
       width: 110%;
     }
 
+    @media #{$desktop-up} {
+      top: 60%;
+    }
+
     @media #{$phone-only} {
       width: 190%;
     }
