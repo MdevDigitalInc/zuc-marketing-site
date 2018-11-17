@@ -59,7 +59,12 @@
   }
   @media #{$phone-only} {
     flex-wrap: wrap;
+    margin-top: -100px;
     width: 100%;
+
+    .zuc-hp-icon {
+      width: 26%;
+    }
   }
 }
 
