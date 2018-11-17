@@ -74,11 +74,9 @@
 }
 
 .--featured-link {
-  width: ( 225 / 3.2 ) * 1vw;
   padding: ( 24 / 3.2 ) * 1vw 0 0;
 
   @media #{$tablet-up} {
-    width: 100%;
     padding: ( 35 / 7.68 ) * 1vw 0 0;
   }
 
@@ -90,8 +88,8 @@
     text-transform: uppercase;
     color: $color-zuc-indigo;
     font-weight: 600;
-    border-bottom: 2px solid $color-zuc-indigo;
-    padding: 0 0 1px;
+    border-bottom: 1px solid $color-zuc-indigo;
+    padding: 0 0 5px;
     line-height: 1.6;
     font-size: ( 10 / 3.2 ) * 1vw;
 
@@ -103,7 +101,7 @@
     }
     &:hover {
       color: $color-zuc-lilac;
-      border-bottom: 2px solid $color-zuc-lilac;
+      border-bottom: 1px solid $color-zuc-lilac;
     }
   }
 }
