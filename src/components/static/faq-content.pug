@@ -25,20 +25,11 @@
     ]
 
 section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
-  h1
-    |Frequently Asked Questions
-  .zuc-hotlinks-container
-    .zuc-hotlink-box-l.flex.flex-column
-      each val in faqTitles.length ? faqTitles : ['There are no values']
-        a(href='#' title="TODO")
-          |#{val}
-
-    .zuc-hotlink-box-r.flex.flex-column
-      each val in faqTitles2.length ? faqTitles2 : ['There are no values']
-        a(href='#' title="TODO")
-          |#{val}
 
   .zuc-topic-parent-container.flex.flex-column.flex-vert-start
+    +ecom-header-underlined('Frequently Asked Questions')
+    br
+    br
     .zuc-faq-topic-container
       h2
         |#{faqTitles[0]}
