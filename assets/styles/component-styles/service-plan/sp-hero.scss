@@ -5,14 +5,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 220vw;
+  height: 70vh;
 
-  @media #{$tablet-only} {
-    height: 120vw;
-  }
-
-  @media #{$laptop-up} {
-    height: 36.818vw;
+  @media #{$portrait} {
+    height: 50vh;
   }
 }
 
@@ -44,7 +40,7 @@
       font-size: 7.813vw;
       width: 80vw;
     }
-  
+
     @media #{$laptop-up} {
       font-size: 3.03vw;
       width: 33vw;
@@ -93,7 +89,7 @@
       left: -55vw;
       padding: 66.93vw 0 0;
     }
-  
+
     @media #{$laptop-up} {
       width: 100%;
       left: 0;
@@ -160,7 +156,7 @@
       top: 66.5vw;
       left: -20vw;
     }
-  
+
     @media #{$laptop-up} {
       display: none;
     }
