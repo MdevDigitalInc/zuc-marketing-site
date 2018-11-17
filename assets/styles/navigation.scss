@@ -31,7 +31,7 @@
     padding: 5vw 4vw;
   }
   @media #{$tablet-only} {
-    padding: 10px 8%;
+    padding: 3vw 8%;
   }
 
   &:hover,
@@ -86,13 +86,21 @@
     position: relative;
     right: -20px;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
+      right: -25%;
+    }
+
+    @media #{$laptop-up} {
       display: none;
     }
 
     i {
       font-size: 7vw;
       color: $color-zuc-lightindigo;
+
+      @media #{$tablet-only} {
+        font-size: 4vw;
+      }
     }
   }
 
@@ -109,11 +117,19 @@
     top: -13px;
     right: 7px;
 
+    @media #{$tablet-only} {
+      padding: 1.6vw;
+    }
+
     span {
       display: block;
       @include center(both);
       padding-top: 1px;
       font-size: 3vw;
+
+      @media #{$tablet-only} {
+        font-size: 2vw;
+      }
     }
   }
 }
