@@ -12,6 +12,7 @@
 section.zuc-tri-module {
   position: relative;
   overflow: hidden;
+  z-index: 2;
   flex-direction: row;
   padding: ( 157 / 3.2 ) * 1vw 0 0;
   margin-bottom: -7vw;
@@ -47,6 +48,7 @@ section.zuc-tri-module {
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 3;
 
   @media #{$laptop-up} {
     width: 33.3%;
