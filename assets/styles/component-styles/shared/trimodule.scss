@@ -83,7 +83,7 @@ section.zuc-tri-module {
   padding: 0 5vw 20vw;
 
   @media #{$phone-only} {
-    padding: 0 16vw 0;
+    padding: 0 16vw;
   }
   @media #{$tablet-only} {
     padding: 0 16vw 2vw;
