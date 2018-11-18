@@ -14,12 +14,16 @@
   @media #{$tablet-lnd-only} {
     height: auto;
   }
+  @media #{$laptop-only} {
+    height: 65vh;
+  }
+
 }
 
 .zuc-service-plan-hero--text-section {
   position: absolute;
   z-index: 5;
-  flex: 85%;
+  width: 85%;
   top: 7vw;
   left: 5vw;
 
@@ -28,7 +32,7 @@
   }
 
   @media #{$tablet-only} {
-    flex: 75%;
+    width: 75%;
     top: 7vw;
     left: 7vw;
   }
@@ -38,38 +42,19 @@
   }
 
   @media #{$laptop-up} {
-    flex: 40%;
+    width: 30%;
     top: 7vw;
-    left: 16vw;
+    left: 14vw;
   }
 
   .zuc-service-plan-hero--heading {
     color: $color-zuc-indigo;
-    font-size: 10.625vw;
-    width: 85vw;
-
-    @media #{$tablet-only} {
-      font-size: 7.813vw;
-      width: 80vw;
-    }
-
-    @media #{$laptop-up} {
-      font-size: 3.03vw;
-      width: 33vw;
-    }
+    width: 100%;
   }
 
   .zuc-service-plan-hero--copy {
     color: $color-zuc-darkindigo;
-    width: 80vw;
-
-    @media #{$tablet-only} {
-      max-width: 64vw;
-    }
-
-    @media #{$laptop-up} {
-      max-width: 25vw;
-    }
+    width: 100%;
   }
 
   .zuc-service-plan-hero--tagline {
@@ -138,32 +123,18 @@
   .--bottom-wave {
     position: absolute;
     width: 170vw;
-    bottom: -2px;
+    bottom: -3px;
     left: -60vw;
     z-index: 2;
 
     @media #{$tablet-only} {
       width: 170vw;
-      bottom: -2px;
       left: -60vw;
     }
 
     @media #{$laptop-up} {
       width: 102vw;
-      bottom: -3px;
       left: -2px;
-    }
-
-    @media #{$portrait} {
-      bottom: 18px;
-    }
-
-    @media #{$phone-only} {
-      bottom: -2px;
-    }
-
-    @media #{$tablet-prt-only} {
-      bottom: -3px;
     }
   }
 
@@ -171,7 +142,7 @@
     transform: rotate(180deg);
     position: absolute;
     width: 300%;
-    top: -2px;
+    top: -3px;
     left: -80vw;
 
     @media #{$laptop-up} {
