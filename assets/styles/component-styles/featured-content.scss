@@ -283,8 +283,16 @@
   margin: 21.875vw 0 35vw;
   width: 92vw;
 
+  @media #{$phone-only} {
+    margin: -20px 0 16.93vw;
+    transform: translatey(-10%);
+    z-index: -1;
+  }
+
   @media #{$tablet-only} {
-    margin: 6.51vw 0 16.93vw;
+    margin: -20px 0 16.93vw;
+    transform: translatey(-10%);
+    z-index: -1;
     width: 89vw;
   }
 

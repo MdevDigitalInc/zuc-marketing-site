@@ -145,7 +145,7 @@
     margin: 0;
     font-size: 50px;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       font-size: 88px;
     }
   }
