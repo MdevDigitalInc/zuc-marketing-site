@@ -132,7 +132,12 @@
     @media #{$laptop-up} {
       display: inline;
       position: absolute;
-      transform: scale(.4) translate3d( 40%, -90%, 0);
+      transform: scale(.3) translate3d( 140%, -160%, 0);
+    }
+    @media #{$desktop-up} {
+      display: inline;
+      position: absolute;
+      transform: scale(.3) translate3d( 40%, -160%, 0);
     }
   }
 }

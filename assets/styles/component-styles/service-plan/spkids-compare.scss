@@ -24,7 +24,7 @@ section.zuc-compare {
     }
 
     @media #{$laptop-up} {
-      margin: 0 0 ( 44 / 19.2 ) * 1vw;
+      margin: 0 0 ( 88 / 19.2 ) * 1vw;
     }
   }
 }
@@ -50,22 +50,8 @@ section.zuc-compare {
   h6 {
     color: $color-zuc-indigo;
     font-weight: 600;
-    margin: 0 0 ( 11 / 3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      margin: 0 0 ( 10 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      margin: 0 0 ( 12 / 19.2 ) * 1vw;
-    }
-  }
-
-  h2 {
-    color: $color-zuc-indigo;
-    font-family: $main-font-serif;
-    text-align: center;
-    margin: 0;
+    margin-bottom: 0;
+    font-size: 16px;
   }
 
   .zuc-img-box {
@@ -78,6 +64,8 @@ section.zuc-compare {
 
   .zuc-btn-box {
     text-align: center;
+    position: relative;
+    top: -50px;
     margin: 0 0 ( 52 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
@@ -86,6 +74,14 @@ section.zuc-compare {
 
     @media #{$laptop-up} {
       margin: 0;
+    }
+  }
+  .zuc-compare-subtitle {
+    font-size: 25px;
+    font-weight: 300;
+
+    @media #{$tablet-up} {
+      font-size: 30px;
     }
   }
 }
