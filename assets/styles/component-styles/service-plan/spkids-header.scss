@@ -5,8 +5,16 @@
   padding: 6vw 0;
   margin-bottom: 5vw;
 
+  @media #{$phone-only} {
+    padding: 15vw 0;
+  }
+
   @media #{$laptop-only} {
     padding: 3vw 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: 3vw 0 9vw;
   }
 }
 
@@ -16,6 +24,10 @@
   margin: 0 auto;
   position: relative;
 
+  @media #{$phone-only} {
+    width: 100%;
+  }
+
   @media #{$laptop-up} {
     flex-direction: row;
   }
@@ -23,8 +35,8 @@
 
 .zuc-head-box {
   background-color: $color-pure-white;
-  padding: 2.81vw 2.3vw 0;
   position: relative;
+  padding: 8vw 8vw 0;
   width: 90%;
   margin: 0 auto;
 
@@ -34,7 +46,17 @@
     // This is because we are using flex-vert-stretch which tells them all
     // to be the same height. Margin is part of calculated height, so it
     // gives the desired effect.
+    padding: 2.81vw 2.3vw 0;
     margin: 3% 0;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 20px;
+
+    @media #{$laptop-up} {
+      margin-bottom: 30px;
+    }
   }
 
   p {
@@ -42,24 +64,44 @@
     padding-right: 0;
     padding-bottom: 12.188vw;
 
+    @media #{$phone-only} {
+      padding-bottom: 7vw;
+    }
+
     @media #{$tablet-only} {
-      padding-right: 8.72vw;
       padding-bottom: 5.6vw;
     }
 
     @media #{$laptop-up} {
-      padding-right: 3.38vw;
       padding-bottom: 2.17vw;
     }
   }
 
   img {
     width: 100%;
+
+    @media #{$laptop-only} {
+      transform: scale(1.2);
+    }
   }
 
   .zuc-btn {
-    @include center(horizontal);
-    bottom: 2.81vw;
+    position: absolute;
+    bottom: 8vw;
+    left: 50%;
+    transform: translatex(-50%) scale(1.2);
+
+    @media #{$phone-only} {
+      position: relative;
+    }
+
+    @media #{$laptop-up} {
+      bottom: 3vw;
+    }
+
+    @media #{$laptop-only} {
+      position: relative;
+    }
   }
 
   // Last Child override so UL doesnt touch the button
@@ -69,6 +111,12 @@
       margin-top: 2vw;
     }
   }
+
+  li {
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 1.2;
+  }
 }
 
 .zuc-spkids-header-img-box {
@@ -76,12 +124,12 @@
   z-index: 2;
   width: 100%;
   margin: 0;
-  padding: 60% 6vw 6vw;
+  padding: 60% 9vw 6vw 6vw;
   background-size: cover;
 
   @media #{$laptop-up} {
     width: 40%;
-    padding: 2.6vw;
+    padding: 3vw;
   }
 
   .zuc-zigzag {
@@ -95,6 +143,11 @@
 
   h5 {
     margin: 0;
+    font-size: 50px;
+
+    @media #{$tablet-up} {
+      font-size: 88px;
+    }
   }
 }
 
