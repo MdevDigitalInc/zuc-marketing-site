@@ -3,9 +3,12 @@
   padding: 0 18vw;
 
   .zuc-btn-secondary {
-    position: relative;
-    bottom: 4.5vw;
-    margin-bottom: -4.5vw;
+    position: absolute;
+    bottom: 3vw;
+
+    @media #{$phone-only} {
+      bottom: 8vw;
+    }
   }
 
   @media #{$phone-only} {
@@ -13,7 +16,7 @@
     padding: 0 5vw;
   }
   @media #{$tablet-only} {
-    padding: 0 8vw;
+    padding: 0 5vw;
   }
 }
 
@@ -21,6 +24,14 @@
   width: 100%;
   margin: 1vw;
   position: relative;
+  transform: scale(1);
+  transition: all .4s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.04);
+  }
 }
 
 .zuc-base-plan-box {
@@ -29,16 +40,40 @@
   border: 1px solid $color-zuc-indigo;
   margin: 15px;
 
+  @media #{$tablet-only} {
+    margin: 8px;
+  }
+
   .zuc-base-plan-heading {
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
+      font-size: 2.2vw;
+    }
+    @media #{$laptop-up} {
       font-size: 1.6vw;
+    }
+  }
+
+  h6 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+    @media #{$tablet-only} {
+      font-size: 2vw;
     }
   }
 }
 
 .zuc-base-plan-graphics-container {
-  padding-top: 1vw;
   position: relative;
+
+  @media #{$tablet-only} {
+    margin-top: -2vw;
+  }
+
+  @media #{$desktop-up} {
+    // Cancels out the padding top
+    margin-bottom: -1.5vw;
+  }
 
   .zuc-base-plan-image {
     position: relative;
@@ -50,9 +85,13 @@
     position: absolute;
     top: 1%;
     left: 47%;
-    width: 8vw;
+    width: 9vw;
     z-index: 2;
     filter: drop-shadow(0 .1px 5px rgba(12, 12, 12, .2));
+
+    @media #{$tablet-only} {
+      width: 12vw;
+    }
 
     @media #{$phone-only} {
       top: -2%;

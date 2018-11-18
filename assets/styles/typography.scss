@@ -138,7 +138,7 @@ h1,
 
 h2,
 .h2 {
-  line-height: 1.02;
+  line-height: 1.2;
   @include font-size($h2-font-sizes);
 }
 
@@ -212,20 +212,8 @@ $zuc-body-small-font-sizes: (
   @include font-size($zuc-body-small-font-sizes);
 }
 
-/* stylelint-disable */
-$zuc-review-author-font-sizes: (
-  null : 4.3vw,
-  $tablet-up : 2.5vw * 1.25,
-  $tablet-lnd-only : 1.5vw * 1.25,
-  $laptop-up : 1.2vw * 1.25,
-  $desktop-only : .938vw * 1.25,
-  $xl-up : 1vw * 1.25
-);
-/* stylelint-enable */
-
 .zuc-review-author {
   padding: 8vw 0 13vw;
-  @include font-size($zuc-review-author-font-sizes);
   @media #{$tablet-only} {
     padding: 2vw 0 4vw;
   }

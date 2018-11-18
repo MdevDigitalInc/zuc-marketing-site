@@ -29,16 +29,20 @@ section.zuc-custom-plan {
 .zuc-custom-plan--container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 100%;
   overflow: hidden;
   position: relative;
+  justify-content: stretch;
 
   margin: ( 32 / 3.2 ) * 1vw 0 ( 78 / 3.2 ) * 1vw;
 
   @media #{$tablet-up} {
     flex-direction: row;
-    margin: ( 53 / 7.68 ) * 1vw 0 ( 59 / 7.68 ) * 1vw;
+    margin: 2vw 0;
+
+    &:last-child {
+      margin-bottom: 7vw;
+    }
   }
   @media #{$laptop-up} {
     margin: ( 30 / 19.2 ) * 1vw 0 ( 40 / 19.2 ) * 1vw;
@@ -74,11 +78,9 @@ section.zuc-custom-plan {
 
   @media #{$tablet-only} {
     margin: ( 5 / 7.68 ) * 1vw;
-    height: $zuc-custom-row-height-tablet;
   }
   @media #{$laptop-up} {
     margin: ( 9 / 19.2 ) * 1vw;
-    height: $zuc-custom-row-height-desktop;
   }
 
   // PLAN NAME ("Whole Home Plan")
@@ -86,7 +88,7 @@ section.zuc-custom-plan {
     font-family: $main-font-serif;
     text-transform: capitalize;
     font-weight: 300;
-    padding: ( 16 / 3.2 ) * 1vw 0 0;
+    padding: 30px 0 0;
     font-size: ( 28 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
@@ -102,17 +104,8 @@ section.zuc-custom-plan {
   // Graphical Line
   .zuc-custom-plan--line {
     border-top: 1px $color-pure-white solid;
-    width: 40%;
-    padding: ( 9 / 3.2 ) * 1vw 0;
-
-    @media #{$tablet-only} {
-      width: 45%;
-      padding: ( 5 / 7.68 ) * 1vw 0;
-    }
-    @media #{$laptop-up} {
-      width: 50%;
-      padding: ( 9 / 19.2 ) * 1vw 0;
-    }
+    width: 45%;
+    margin: 8px 0 20px;
   }
 
   // Price Object
@@ -133,7 +126,7 @@ section.zuc-custom-plan {
         font-size: ( 24 / 7.68 ) * 1vw;
       }
       @media #{$laptop-up} {
-        font-size: ( 50 / 19.2 ) * 1vw;
+        font-size: ( 45 / 19.2 ) * 1vw;
       }
     }
     // Dollar Value
@@ -144,7 +137,7 @@ section.zuc-custom-plan {
         font-size: ( 40 / 7.68 ) * 1vw;
       }
       @media #{$laptop-up} {
-        font-size: ( 100 / 19.2 ) * 1vw;
+        font-size: ( 95 / 19.2 ) * 1vw;
       }
     }
     // Cent Value
@@ -156,7 +149,7 @@ section.zuc-custom-plan {
         font-size: ( 22 / 7.68 ) * 1vw;
       }
       @media #{$laptop-up} {
-        font-size: ( 45 / 19.2 ) * 1vw;
+        font-size: ( 40 / 19.2 ) * 1vw;
       }
     }
   }
@@ -166,7 +159,7 @@ section.zuc-custom-plan {
   .zuc-custom-plan--month {
     font-weight: 600;
     font-size: ( 12 / 3.2 ) * 1vw;
-    padding: 0 0 ( 28 / 3.2 ) * 1vw;
+    padding: 0 0 15px;
     display: flex;
 
     @media #{$tablet-only} {
@@ -206,8 +199,7 @@ section.zuc-custom-plan {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
 
   @media #{$tablet-up} {
     flex-direction: row;
@@ -238,17 +230,6 @@ section.zuc-custom-plan {
     padding: 0 0 11.25vw;
   }
 
-  // ie. for non-modals.
-  &.--default {
-    height: auto;
-    @media #{$tablet-up} {
-      height: $zuc-custom-row-height-tablet;
-    }
-    @media #{$laptop-up} {
-      height: $zuc-custom-row-height-desktop;
-    }
-  }
-
   .photo {
     width: 100%;
     max-width: ( 230 / 3.2 ) * 1vw;
@@ -276,14 +257,11 @@ section.zuc-custom-plan {
   .photo-text {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
-    font-size: ( 14 / 3.2 ) * 1vw;
+    font-weight: 300;
+    font-size: 25px;
 
     @media #{$tablet-up} {
-      font-size: ( 9.5 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      font-size: ( 18 / 19.2 ) * 1vw;
+      font-size: 18px;
     }
   }
 
@@ -296,14 +274,14 @@ section.zuc-custom-plan {
     left: 100%;
     transform: translate3d(-50%, -50%, 0);
     z-index: 10;
-    height: 3vw;
-    width: 3vw;
+    height: 2.5vw;
+    width: 2.5vw;
 
     @media #{$phone-only} {
       left: 50%;
       top: 100%;
-      height: 11.25vw;
-      width: 11.25vw;
+      height: 10vw;
+      width: 10vw;
     }
   }
 }
@@ -322,15 +300,21 @@ section.zuc-custom-plan {
 
   @media #{$phone-only} {
     width: 220px;
-    top: 22px;
-    left: -73px;
-    font-size: 13px;
-    line-height: 34px;
+    top: 18px;
+    left: -78px;
+    font-size: 12px;
+    line-height: 25px;
   }
   @media #{$tablet-only} {
     top: 15px;
     left: -81px;
     font-size: 10px;
     line-height: 20px;
+  }
+  @media #{$desktop-up} {
+    font-size: 16px;
+    top: 30px;
+    left: -58px;
+    line-height: 30px;
   }
 }

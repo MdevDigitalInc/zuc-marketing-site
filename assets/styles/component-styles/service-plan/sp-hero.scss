@@ -7,61 +7,53 @@
   overflow: hidden;
   height: 70vh;
 
-  @media #{$portrait} {
-    height: 105vh;
-  }
 
-  @media #{$tablet-prt-only} {
-    height: 80vh;
+  @media #{$portrait} {
+    height: auto;
+  }
+  @media #{$tablet-lnd-only} {
+    height: auto;
+  }
+  @media #{$laptop-only} {
+    height: 65vh;
   }
 }
 
 .zuc-service-plan-hero--text-section {
   position: absolute;
   z-index: 5;
-  flex: 85%;
+  width: 85%;
   top: 7vw;
   left: 5vw;
 
+  @media #{$portrait} {
+    position: relative;
+  }
+
   @media #{$tablet-only} {
-    flex: 75%;
+    width: 75%;
     top: 7vw;
     left: 7vw;
   }
 
+  @media #{$tablet-lnd-only} {
+    position: relative;
+  }
+
   @media #{$laptop-up} {
-    flex: 40%;
+    width: 30%;
     top: 7vw;
-    left: 16vw;
+    left: 14vw;
   }
 
   .zuc-service-plan-hero--heading {
     color: $color-zuc-indigo;
-    font-size: 10.625vw;
-    width: 85vw;
-
-    @media #{$tablet-only} {
-      font-size: 7.813vw;
-      width: 80vw;
-    }
-
-    @media #{$laptop-up} {
-      font-size: 3.03vw;
-      width: 33vw;
-    }
+    width: 100%;
   }
 
   .zuc-service-plan-hero--copy {
     color: $color-zuc-darkindigo;
-    width: 80vw;
-
-    @media #{$tablet-only} {
-      max-width: 64vw;
-    }
-
-    @media #{$laptop-up} {
-      max-width: 25vw;
-    }
+    width: 100%;
   }
 
   .zuc-service-plan-hero--tagline {
@@ -76,37 +68,29 @@
 }
 
 .zuc-service-plan-hero--graphic-section {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-image: url('../../assets/images/shared/man-tool-bag.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+
+  @media #{$portrait} {
+    background-position: right bottom;
+    margin-top: 15vw;
+    height: auto;
+    padding-top: 100%;
+  }
+
+  @media #{$tablet-lnd-only} {
+    height: auto;
+    padding-top: 50%;
+    margin-top: 10vw;
+  }
 
   img {
     width: 100%;
-  }
-
-  .--photo {
-    position: relative;
-    z-index: -2;
-    width: 320vw;
-    left: -210vw;
-    padding: 110vw 0 0;
-
-    @media #{$tablet-only} {
-      width: 155vw;
-      left: -55vw;
-      padding: 66.93vw 0 0;
-    }
-
-    @media #{$laptop-up} {
-      width: 120%;
-      left: -150px;
-      padding: 0;
-    }
-
-    @media #{$portrait} {
-      padding: 100vw 0 0;
-    }
-
-    @media #{$tablet-prt-only} {
-      padding: 60vw 0 0;
-    }
   }
 
   .--grey-blob {
@@ -118,7 +102,7 @@
       width: 70vw;
       top: -19vw;
       left: 0;
-      z-index: -1;
+      z-index: 0;
     }
   }
 
@@ -138,59 +122,30 @@
   .--bottom-wave {
     position: absolute;
     width: 170vw;
-    bottom: -2px;
+    bottom: -3px;
     left: -60vw;
     z-index: 2;
 
     @media #{$tablet-only} {
       width: 170vw;
-      bottom: -2px;
       left: -60vw;
     }
 
     @media #{$laptop-up} {
       width: 102vw;
-      bottom: -3px;
       left: -2px;
-    }
-
-    @media #{$portrait} {
-      bottom: 18px;
-    }
-
-    @media #{$phone-only} {
-      bottom: -2px;
-    }
-
-    @media #{$tablet-prt-only} {
-      bottom: -3px;
     }
   }
 
   .--bottom-wave-flipped {
     transform: rotate(180deg);
     position: absolute;
-    z-index: -2;
     width: 300%;
-    top: 109vw;
+    top: -3px;
     left: -80vw;
-
-    @media #{$tablet-only} {
-      width: 200%;
-      top: 66.5vw;
-      left: -20vw;
-    }
 
     @media #{$laptop-up} {
       display: none;
-    }
-
-    @media #{$portrait} {
-      top: 98vw;
-    }
-
-    @media #{$tablet-prt-only} {
-      top: 58vw;
     }
   }
 }
