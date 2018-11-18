@@ -7,12 +7,12 @@
   overflow: hidden;
   height: 70vh;
 
-  @media #{$portrait} {
-    height: 105vh;
-  }
 
-  @media #{$tablet-prt-only} {
-    height: 80vh;
+  @media #{$portrait} {
+    height: auto;
+  }
+  @media #{$tablet-lnd-only} {
+    height: auto;
   }
 }
 
@@ -23,10 +23,18 @@
   top: 7vw;
   left: 5vw;
 
+  @media #{$portrait} {
+    position: relative;
+  }
+
   @media #{$tablet-only} {
     flex: 75%;
     top: 7vw;
     left: 7vw;
+  }
+
+  @media #{$tablet-lnd-only} {
+    position: relative;
   }
 
   @media #{$laptop-up} {
@@ -76,37 +84,29 @@
 }
 
 .zuc-service-plan-hero--graphic-section {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-image: url('../../assets/images/shared/man-tool-bag.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+
+  @media #{$portrait} {
+    background-position: right bottom;
+    margin-top: 15vw;
+    height: auto;
+    padding-top: 100%;
+  }
+
+  @media #{$tablet-lnd-only} {
+    height: auto;
+    padding-top: 50%;
+    margin-top: 10vw;
+  }
 
   img {
     width: 100%;
-  }
-
-  .--photo {
-    position: relative;
-    z-index: -2;
-    width: 320vw;
-    left: -210vw;
-    padding: 110vw 0 0;
-
-    @media #{$tablet-only} {
-      width: 155vw;
-      left: -55vw;
-      padding: 66.93vw 0 0;
-    }
-
-    @media #{$laptop-up} {
-      width: 120%;
-      left: -150px;
-      padding: 0;
-    }
-
-    @media #{$portrait} {
-      padding: 100vw 0 0;
-    }
-
-    @media #{$tablet-prt-only} {
-      padding: 60vw 0 0;
-    }
   }
 
   .--grey-blob {
@@ -118,7 +118,7 @@
       width: 70vw;
       top: -19vw;
       left: 0;
-      z-index: -1;
+      z-index: 0;
     }
   }
 
@@ -170,27 +170,12 @@
   .--bottom-wave-flipped {
     transform: rotate(180deg);
     position: absolute;
-    z-index: -2;
     width: 300%;
-    top: 109vw;
+    top: -2px;
     left: -80vw;
-
-    @media #{$tablet-only} {
-      width: 200%;
-      top: 66.5vw;
-      left: -20vw;
-    }
 
     @media #{$laptop-up} {
       display: none;
-    }
-
-    @media #{$portrait} {
-      top: 98vw;
-    }
-
-    @media #{$tablet-prt-only} {
-      top: 58vw;
     }
   }
 }
