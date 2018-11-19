@@ -1,15 +1,27 @@
 section.zuc-about-hero {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  background-position: center;
-  background-size: cover;
-  height: 90vh;
-  margin: 0 0 30vh;
+  display: block;
+  background-position: 25% -200%;
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  padding: 0 0 50vh;
 
   @media #{$tablet-up} {
-    height: 70vh;
-    margin: 0 0 20vh;
+    padding: 0 0 50vh;
+    background-size: 150% auto;
+    background-position: 5% 100%;
+  }
+
+  @media #{$laptop-up} {
+    background-position: center 45%;
+    background-size: 100% auto;
+  }
+
+  .zuc-img-box {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
