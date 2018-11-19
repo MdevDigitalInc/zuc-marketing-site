@@ -198,6 +198,10 @@
     padding-top: 80px;
   }
 
+  &.--nopad {
+    padding-top: 0;
+  }
+
   @media #{$phone-only} {
     width: 100%;
   }
@@ -301,6 +305,7 @@
     width: 40%;
     margin-left: 10%;
   }
+
   @media #{$desktop-up} {
     margin: 0;
     width: 50%;
@@ -327,5 +332,97 @@
   img {
     width: 100%;
     height: 100%;
+  }
+}
+
+// Featured About Override
+
+.--featured-about {
+
+  .--second-p {
+    padding-top: 10px;
+  }
+}
+
+.--three-panels {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding-top: 50px;
+
+  @media #{$tablet-up} {
+    padding-top: 0;
+  }
+
+  @media #{$laptop-up} {
+    width: 75%;
+  }
+
+  .zuc-panel {
+    width: 100%;
+    background-size: cover;
+    height: vw-phone(150);
+
+    @media #{$tablet-up} {
+      height: vw-tablet(175);
+    }
+
+    @media #{$laptop-up} {
+      height: vw-laptop(140);
+    }
+
+    @media #{$desktop-up} {
+      height: vw-desktop(191);
+    }
+    
+    &.--toolman {
+      background-image: url('../../assets/images/shared/man-tool-bag.png');
+
+      span {
+        background-color: $color-zuc-indigo;
+      }
+    }
+
+    &.--family {
+      background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
+
+      span {
+        background-color: $color-zuc-lilac;
+      }
+    }
+
+    &.--smartphone {
+      background-image: url('../../assets/images/shared/woman-smartphone.png');
+
+      span {
+        background-color: $color-zuc-concrete;
+      }
+    }
+
+    span {
+      display: block;
+      width: 65%;
+      text-transform: uppercase;
+      color: $color-pure-white;
+      font-weight: 600;
+      padding: vw-phone(10);
+      font-size: vw-phone(10.5);
+
+      @media #{$tablet-up} {
+        width: 60%;
+        padding: vw-tablet(16);
+        font-size: vw-tablet(16);
+      }
+
+      @media #{$laptop-up} {
+        padding: vw-laptop(16);
+        font-size: vw-laptop(16);
+      }
+
+      @media #{$desktop-up} {
+        padding: vw-desktop(20);
+        font-size: vw-desktop(20);
+      }
+    }
   }
 }
