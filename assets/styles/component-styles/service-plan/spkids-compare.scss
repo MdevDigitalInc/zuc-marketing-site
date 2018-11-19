@@ -3,14 +3,14 @@ section.zuc-compare {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: ( 209 / 3.2 ) * 1vw 5vw 0;
+  margin: 0 5vw;
 
   @media #{$tablet-only} {
-    margin: ( 184 / 7.68 ) * 1vw 7vw 0;
+    margin: ( 70 / 7.68 ) * 1vw 7vw 0;
   }
 
   @media #{$laptop-up} {
-    margin: ( 178 / 19.2 ) * 1vw 16vw ( 122 / 19.2 ) * 1vw;
+    margin: ( 75 / 19.2 ) * 1vw 16vw ( 122 / 19.2 ) * 1vw;
   }
 
   .zuc-compare-title {
@@ -20,11 +20,17 @@ section.zuc-compare {
     margin: 0 0 ( 59 / 3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      margin: 0 0 ( 45 / 7.68 ) * 1vw;
+      margin: 0 0 ( 85 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
       margin: 0 0 ( 88 / 19.2 ) * 1vw;
+    }
+  }
+
+  .zuc-compare-title-container {
+    @media #{$tablet-only} {
+      margin-bottom: -30px;
     }
   }
 }
@@ -50,7 +56,7 @@ section.zuc-compare {
   h6 {
     color: $color-zuc-indigo;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-size: 16px;
   }
 
