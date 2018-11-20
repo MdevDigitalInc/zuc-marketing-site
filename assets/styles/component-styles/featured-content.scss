@@ -25,10 +25,10 @@
 
   // Spacing Overrides
   &.--extra-pad {
-    padding: ( 179 / 3.2 ) * 1vw 0 ( 88 /3.2 ) * 1vw;
+    padding: ( 30 / 3.2 ) * 1vw 0 ( 30 /3.2 ) * 1vw;
 
     @media #{$tablet-only} {
-      padding: ( 221 / 7.68 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
+      padding: ( 60 / 7.68 ) * 1vw 0 ( 60 / 7.68 ) * 1vw;
     }
 
     @media #{$laptop-up} {
@@ -175,7 +175,7 @@
     }
 
     @media #{$desktop-up} {
-      top: 60%;
+      top: 50%;
     }
 
     @media #{$phone-only} {
@@ -183,7 +183,7 @@
     }
 
     @media #{$laptop-only} {
-      top: 35%;
+      top: 20%;
     }
   }
 }
