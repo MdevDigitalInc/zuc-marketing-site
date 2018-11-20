@@ -49,7 +49,8 @@ $h2-font-sizes: (
 
 $h3-font-sizes: (
   null  : 30px,
-  $tablet-up : 40px
+  $tablet-up : 40px,
+  $laptop-only : 28px
 );
 
 $h4-font-sizes: (
@@ -59,7 +60,8 @@ $h4-font-sizes: (
 
 $h5-font-sizes: (
   null  : 40px,
-  $tablet-up : 80px
+  $tablet-up : 80px,
+  $laptop-only : 60px
 );
 
 $h6-font-sizes: (
