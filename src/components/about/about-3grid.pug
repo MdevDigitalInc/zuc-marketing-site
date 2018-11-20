@@ -1,0 +1,37 @@
+-
+  var gridTitles = [
+    'EXPERIENCED',
+    'NATIONWIDE',
+    'GUARANTEED'
+  ]
+-
+  var gridBody = [
+    'Since 1979 we’ve been helping Canadians live comfortably.',
+    'Coast-to-coast network of qualified technicians.',
+    'We make it right with our 60 day service guarantee.'
+  ]
+
+section.zuc-sixgrid-container
+  .zuc-sixgrid-items.flex-hor-between
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-experienced.svg", alt="Icon of an upward pointing thumb")
+      h6
+        |!{gridTitles[0]}
+      p
+        |#{gridBody[0]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-nationwide.svg", alt="Icon of a map")
+      h6
+        |!{gridTitles[1]}
+      p
+        |#{gridBody[1]}
+    .zuc-sixgrid-item
+      .zuc-sixgrid-img-container
+        img(src="../../assets/images/icons/icon-guaranteed.svg", alt="Icon of badge with a checkmark on it")
+      h6
+        |!{gridTitles[2]}
+      p
+        |#{gridBody[2]}
+  img.zuc-spr-hero-wave(src="../../assets/images/shapes/wave-top.svg", alt="Decorative background image")
