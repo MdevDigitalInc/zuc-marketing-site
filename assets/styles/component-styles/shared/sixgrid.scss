@@ -5,7 +5,7 @@
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
-  padding: 5vh 5vw vw-phone(50);
+  padding: 5vh 10vw vw-phone(50);
   display: flex;
   flex-direction: column;
 
@@ -30,12 +30,12 @@ section.zuc-sixgrid-container {
     font-weight: 100;
     padding: 0 0 5vw;
 
-    @media #{$tablet-only} {
+    @media #{$tablet-up} {
       padding: 0;
     }
 
     @media #{$laptop-up} {
-      padding: 0 0 3.84vw;
+      padding: 0 0 25px;
     }
   }
 
