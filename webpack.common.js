@@ -171,6 +171,7 @@ module.exports = {
       template: './src/templates/index.pug',
       filename: 'index.html'
     }),
+    // FORMS ----------------------------------------------
     new HtmlWebpackPlugin({
       template: './src/templates/form-contact.pug',
       filename: 'form-contact-us.html'
@@ -180,8 +181,12 @@ module.exports = {
       filename: 'form-service-request.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/faq.pug',
-      filename: 'faq.html'
+      template: './src/templates/form-forgot-password.pug',
+      filename: 'form-forgot-password.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-reset-password.pug',
+      filename: 'form-reset-password.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/form-orders.pug',
@@ -190,6 +195,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/form-orders-post.pug',
       filename: 'form-orders-shipping-success.html'
+    }),
+    // PAGES ----------------------------------------------
+    new HtmlWebpackPlugin({
+      template: './src/templates/faq.pug',
+      filename: 'faq.html'
     }),
     //new HtmlWebpackPlugin({
     //  template: './src/templates/typography-test.pug',
@@ -228,14 +238,6 @@ module.exports = {
       filename: 'smarter-home-control.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/form-forgot-password.pug',
-      filename: 'form-forgot-password.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/form-reset-password.pug',
-      filename: 'form-reset-password.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/templates/terms.pug',
       filename: 'terms-conditions.html'
     }),
@@ -259,6 +261,7 @@ module.exports = {
       template: './src/templates/spr-zu-collection.pug',
       filename: 'zu-collection.html'
     }),
+    // ECOMMERCE -------------------------------------------
     new HtmlWebpackPlugin({
       template: './src/templates/ecom-details.pug',
       filename: 'ecomdetails.html'
@@ -279,6 +282,7 @@ module.exports = {
       template: './src/templates/ecom-plan.pug',
       filename: 'ecomplan.html'
     }),
+    // LAYOUT FILES FOR LIMETAC ----------------------------
     new HtmlWebpackPlugin({
       template: './src/shared/navigation.pug',
       filename: 'layouts/mainNavigation.html'
@@ -291,6 +295,7 @@ module.exports = {
       template: './src/shared/footer.pug',
       filename: 'layouts/footer.html'
     }),
+    // JAVASCRIPT ----------------------------------------
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'Scripts/Zuc/js', force: true }
     ])
