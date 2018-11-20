@@ -30,7 +30,7 @@ section.zuc-sixgrid-container {
     font-weight: 100;
     padding: 0 0 5vw;
 
-    @media #{$tablet-up} {
+    @media #{$tablet-only} {
       padding: 0;
     }
 
