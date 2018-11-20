@@ -14,16 +14,29 @@
   // Overrides:
   .zuc-wave-hero-content {
     background: rgba(67, 77, 160, .7);
-    padding: 14.4vw 2vw 2vw;
+    padding: 10vw 2vw 2vw;
+
+    @media #{$phone-only} {
+      padding: 8vw 5vw 5vw;
+    }
+
+    @media #{$tablet-only} {
+      padding: 28vw 4vw 4vw;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+    }
 
     p {
-      margin-bottom: 10vw;
+      margin-bottom: 40px;
       font-size: 1.35vw;
       line-height: 1.55;
 
       @media #{$tablet-only} {
-        font-size: 2vw;
+        font-size: 2.5vw;
       }
+
       @media #{$phone-only} {
         font-size: 4vw;
       }
