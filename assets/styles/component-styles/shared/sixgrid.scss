@@ -5,18 +5,20 @@
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
-  padding: 5vh 5vw vw-phone(100);
+  padding: 5vh 5vw vw-phone(50);
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 0 7vw vw-tablet(200);
+    padding: 0 7vw vw-tablet(50);
   }
+
   @media #{$laptop-only} {
-    padding: 0 20vw vw-laptop(200);
+    padding: 0 20vw vw-laptop(100);
   }
+
   @media #{$desktop-up} {
-    padding: 0 24vw vw-desktop(200);
+    padding: 0 24vw vw-desktop(100);
   }
 
   &.--grey {
@@ -26,11 +28,12 @@ section.zuc-sixgrid-container {
   .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     font-weight: 100;
-    padding: 0 0 18vw;
+    padding: 0 0 5vw;
 
     @media #{$tablet-only} {
-      padding: 0 0 8.6vw;
+      padding: 0;
     }
+
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
