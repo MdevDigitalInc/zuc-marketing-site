@@ -2,58 +2,12 @@
  * Home Customized Section.
 /-------------------------------------*/
 
-.zuc-home-customized-section {
-  margin: 0;
-  z-index: 99;
-  display: flex;
-  position: relative;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
-
-  @media #{$tablet-only} {
-    padding: 6vw;
-    margin-top: 0;
-  }
-
-  @media #{$laptop-up} {
-    width: 80%;
-    flex-direction: row;
-    margin-top: -150px;
-    flex-wrap: nowrap;
-  }
-
-  // Overrides global width on Laptop Up
-  .zuc-featured-content {
-    @media #{$laptop-up} {
-      margin-right: 0;
-      width: 50%;
-    }
-  }
+.--home-custom-hoist {
+  margin-top: -7vw;
 }
 
-.zuc-home-customized-section--graphic-section {
-  width: 50%;
-  position: relative;
-  text-align: center;
-
+.--home-icons {
   @media #{$laptop-up} {
-    padding-right: 8%;
-  }
-
-  @media #{$tablet-only} {
-    justify-content: space-between;
-  }
-
-  @media #{$tablet-only} {
-    width: 100%;
-  }
-
-  @media #{$phone-only} {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: -3vw auto 15vw;
+    transform: translatey(-30%);
   }
 }
