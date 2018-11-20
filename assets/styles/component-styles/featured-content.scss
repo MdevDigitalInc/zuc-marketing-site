@@ -3,6 +3,8 @@
   padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
   width: 80%;
   margin: 0 auto;
+  z-index: 9;
+  position: relative;
   overflow: hidden;
 
   @media #{$tablet-prt-only} {
@@ -374,7 +376,7 @@
     @media #{$desktop-up} {
       height: vw-desktop(191);
     }
-    
+
     &.--toolman {
       background-image: url('../../assets/images/shared/man-tool-bag.png');
 
