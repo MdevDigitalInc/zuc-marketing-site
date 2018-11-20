@@ -94,15 +94,16 @@
       bottom: vw-desktop(25);
       transform: translateX(50%);
     }
-    @media #{$tablet-only} {
+    @media #{$tablet-lnd-only} {
       transform: scale(.25);
       left: 45%;
       bottom: -40px;
     }
-    @media #{$phone-only} {
-      bottom: 0%;
+    @media #{$portrait} {
+      bottom: 0;
       transform: scale(.25);
-      left: 40%;
+      right: 0;
+      display: none;
     }
   }
 

@@ -172,7 +172,13 @@
     }
 
     @media #{$laptop-only} {
-      top: 20%;
+      top: 50%;
+    }
+  }
+
+  .--slb-blob {
+    @media #{$laptop-up} {
+      top: 30%;
     }
   }
 }
