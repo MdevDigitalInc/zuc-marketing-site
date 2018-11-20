@@ -1,9 +1,13 @@
+// Featured Content Block
+// This encompases Blobs + text or text + image or text + gif
 .zuc-featured-block {
   width: 100%;
   position: relative;
   padding: 7vw 0;
   z-index: 11;
 
+  // Inner container for the actual content
+  // Set with width as "wrapper"
   .zuc-featured {
     width: 85%;
     margin: 0 auto;
@@ -13,6 +17,8 @@
     }
   }
 
+  // Featured Content
+  // Can be anything, usually text based.
   .zuc-featured-content {
     width: 100%;
     order: 1;
@@ -24,6 +30,8 @@
     }
   }
 
+  // Featured image container
+  // Media, Gifs or Media + content
   .zuc-featured-image {
     width: 100%;
     order: 2;
@@ -35,6 +43,7 @@
     }
   }
 
+  // Wrapper to hide overflow of image
   .zuc-featured-media {
     width: 100%;
 
@@ -43,6 +52,7 @@
     }
   }
 
+  // Override to space out featured link
   .--featured-link {
     margin: 0 15px;
   }
@@ -66,17 +76,21 @@
     }
   }
 
+  // How step overrides
   .zuc-featured-how-step {
     color: $color-zuc-lilac;
     font-weight: 700;
     margin-bottom: 10px;
   }
 
+  // Space button out from text
   .zuc-btn-secondary {
     margin-top: 30px;
   }
 
-  // Overrides
+  // Overrides ----------------
+
+  // Flip order so image is on the left
   &.--flipped-image {
     .zuc-featured-image {
       order: 1;
@@ -87,19 +101,23 @@
     }
   }
 
+  // Supersize the gifs
   .--gif-size img {
     width: 110%;
   }
 }
 
-// Graphic With Blob
+// To be used on .zuc-featured-block when blob graphic
+// is called for.
 .--graphic-blob {
   padding: 15vw 0;
 
+  // Give the blob a reference closer to home
   .zuc-featured-image {
     position: relative;
   }
 
+  // Supersize the media
   .zuc-featured-media {
     width: 100%;
     margin: 0 auto;
@@ -107,6 +125,7 @@
     img { width: 120%; }
   }
 
+  // Position the phone for Homepage
   .--phone-img {
     position: absolute;
     left: 2%;
@@ -130,12 +149,14 @@
     }
   }
 
+  // Position photo for homepage
   .--photo {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
 
+  // Position the mighty blob
   .zuc-blob {
     z-index: -99;
     width: 110%;
@@ -147,7 +168,9 @@
     }
   }
 
-  // Overrides
+  // Overrides blob to sit in center
+  // for instances where there is less
+  // vertical space to fill up
   &.--center-blob .zuc-blob {
     top: 50%;
   }
