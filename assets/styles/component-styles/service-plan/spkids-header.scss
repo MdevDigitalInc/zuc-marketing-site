@@ -171,20 +171,3 @@
     background-size: 100%;
   }
 }
-
-// Special BKG Override for this header type
-.--grey-bkg {
-  background-color: #f7f7f7;
-
-  &:after {
-    @include pseudo();
-    bottom: -2px;
-    right: 0;
-    width: 106%;
-    background-image: url('../../assets/images/shapes/wave-top.svg');
-    padding-top: 11%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 1;
-  }
-}

@@ -53,15 +53,9 @@ section.zuc-sixgrid-container {
   padding: 0 0 vw-phone(25);
 
   @media #{$tablet-up} {
-    width: 28%;
+    width: 30%;
     text-align: left;
     padding: 0 0 vw-desktop(45);
-  }
-  @media #{$tablet-prt-only} {
-    width: 45%;
-    text-align: left;
-    margin: vw-tablet(30) 0 0;
-    padding: 0 0 1.8vw;
   }
 
   h6 {
@@ -74,6 +68,7 @@ section.zuc-sixgrid-container {
     @media #{$portrait} {
       margin-bottom: 1vh;
     }
+
     @media #{$phone-only} {
       // A little bit hacky but works.
       // Makes titles take up space a little nicer
@@ -106,12 +101,15 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       width: 35%;
     }
+
     @media #{$tablet-prt-only} {
       width: 40%;
     }
+
     @media #{$laptop-only} {
       width: 50%;
     }
+
     @media #{$desktop-up} {
       width: 40%;
     }
