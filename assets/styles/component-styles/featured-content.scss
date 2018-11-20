@@ -43,6 +43,10 @@
     }
   }
 
+  .--featured-link {
+    margin: 0 15px;
+  }
+
   // List modifier for Smarter Living Parent
   .--list {
     h4 {
@@ -83,10 +87,8 @@
     }
   }
 
-  .--gif-size .zuc-featured-media {
-    img {
-      width: 110%;
-    }
+  .--gif-size img {
+    width: 110%;
   }
 }
 
