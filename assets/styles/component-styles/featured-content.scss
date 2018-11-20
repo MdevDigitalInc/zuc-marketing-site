@@ -1,5 +1,5 @@
 // Featured Content Module
-.zuc-featured {
+.zuc-featured-2 {
   padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
   width: 80%;
   margin: 0 auto;
@@ -38,7 +38,7 @@
 }
 
 // Featured Content
-.zuc-featured-content {
+.zuc-featured-content-2 {
   width: 100%;
   margin: 0;
   padding: 0 5vw ( 90 / 3.2 ) * 1vw;
@@ -127,7 +127,7 @@
 }
 
 // Image Block
-.zuc-featured-image {
+.zuc-featured-image-2 {
   width: 100%;
   justify-content: center;
   position: relative;
@@ -183,26 +183,24 @@
   }
 }
 
-.zuc-featured-graphic {
-  flex: 50%;
+// Graphic With Blob
+.zuc-featured-graphic-blob {
+  width: 50%;
   position: relative;
 
   @media #{$tablet-only} {
     padding-top: 60px;
   }
+
   @media #{$phone-only} {
     padding-top: 80px;
-  }
-
-  &.--nopad {
-    padding-top: 0;
   }
 
   @media #{$phone-only} {
     width: 100%;
   }
 
-  &.--img-wrapper {
+  .zuc-featured-media {
     position: relative;
 
     @media #{$phone-only} {
@@ -210,7 +208,7 @@
     }
   }
 
-  .phone-img {
+  .--phone-img {
     position: absolute;
     left: 8%;
     top: 5%;
@@ -229,7 +227,7 @@
     }
   }
 
-  .photo {
+  .--photo {
     width: 100%;
     margin: 0 auto;
     display: block;
@@ -278,6 +276,7 @@
     }
   }
 }
+
 // Featured Coverage Images
 .zuc-featured-coverage-image {
   margin: 21.875vw 0 35vw;
@@ -422,3 +421,22 @@
     }
   }
 }
+
+.zuc-featured-block {
+  width: 100%;
+  position: relative;
+
+  .zuc-featured {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .zuc-featured-content {
+    width: 50%;
+  }
+
+  .zuc-featured-image {
+    width: 50%;
+  }
+}
+
