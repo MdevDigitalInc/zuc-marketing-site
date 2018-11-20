@@ -33,63 +33,38 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  //- Tweaked for ZUC - A.
-  null  : 4.0vw,
-  $tablet-up  : 2.50vw,
-  $tablet-lnd-only : 1.5vw,
-  $laptop-up : 1.2vw,
-  $desktop-up : .9375vw,
+  null  : 14px,
+  $tablet-up : 18px
 );
 
 $h1-font-sizes: (
-  //- Tweaked for ZUC - A.
-  null  : 11.07vw,
-  $tablet-up : 7.8vw,
-  $tablet-lnd-only : 5.9vw,
-  $laptop-up : 3.89vw,
-  $desktop-up: 3.125vw
+  null  : 34px,
+  $tablet-up : 60px
 );
 
 $h2-font-sizes: (
-  //- Tweaked for ZUC - A.
-  null  : 9vw,
-  $tablet-up : 6.11vw,
-  $tablet-lnd-only : 4.6vw,
-  $laptop-up : 3vw,
-  $desktop-up: 2.44vw
+  null  : 30px,
+  $tablet-up : 47px
 );
 
 $h3-font-sizes: (
-  null  : 8vw,
-  $tablet-up: 5.2vw,
-  $tablet-lnd-only : 4vw,
-  $laptop-up : 30px
+  null  : 30px,
+  $tablet-up : 40px
 );
 
 $h4-font-sizes: (
-  null  : 4.27vw,
-  $tablet-up : 2.6vw,
-  $tablet-lnd-only : 1.8vw,
-  $laptop-up : 1.25vw,
-  $xl-up: 1.44vw,
-  $desktop-up : 1.01vw
+  null  : 16px,
+  $tablet-up : 20px
 );
 
 $h5-font-sizes: (
-  null  : 9.7vw,
-  $tablet-only : 80px,
-  $laptop-up : 4.6vw,
-  $xl-up : 3.13vw,
-  $desktop-up : 4.17vw
+  null  : 40px,
+  $tablet-up : 80px
 );
 
 $h6-font-sizes: (
-  null  : 3.9vw,
-  $tablet-up : 2.48vw,
-  $tablet-lnd-only : 1.6vw,
-  $laptop-up : 1.1vw,
-  $xl-up : 1vw,
-  $desktop-up : .83vw
+  null  : 14px,
+  $tablet-up : 16px
 );
 
 // Links
@@ -194,12 +169,8 @@ a {
 /* stylelint-disable */
 
 $zuc-body-small-font-sizes: (
-  null  : 3vw,
-  $tablet-up  : 2vw,
-  $tablet-lnd-only : 1.5vw,
-  $laptop-up : 1vw,
-  $desktop-up : .833vw,
-  $xl-up : .93vw
+  null  : 12px,
+  $tablet-up : 16px
 );
 
 /* stylelint-enable */
