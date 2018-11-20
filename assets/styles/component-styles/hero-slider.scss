@@ -12,11 +12,12 @@
     z-index: -1;
 
     @media #{$desktop-only} {
-      top: 33%;
+      top: 36%;
 
       object {
+        position: relative;
         width: 130%;
-        left: -760px;
+        left: -150px;
       }
     }
     @media #{$tablet-lnd-only} {
@@ -60,8 +61,7 @@
   width: 100%;
   position: absolute;
   opacity: 0;
-  transition: all .5s;
-  transform: translate3d(100%, 0, 0);
+  transition: all .9s;
 
   @media #{$portrait} {
     flex-wrap: wrap;
@@ -72,14 +72,13 @@
 .--active-slide {
   position: absolute;
   opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 // Slide Image
 .zuc-slide-media {
   width: 60%;
   position: relative;
-  padding-top: 37%;
+  padding-top: 45%;
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -101,6 +100,11 @@
   padding: 6vw 4vw 3vw 3vw;
   position: relative;
 
+  // Hides green bar
+  &:after {
+    display: none;
+  }
+
   @media #{$tablet-only} {
     width: 100%;
   }
@@ -110,6 +114,13 @@
   }
   @media #{$phone-only} {
     padding: 15vw 9vw;
+  }
+
+  // Shows Greenbar on the appropriate size
+  @media #{$laptop-up} {
+    &:after {
+      display: block;
+    }
   }
 
   .zuc-slide-text {
