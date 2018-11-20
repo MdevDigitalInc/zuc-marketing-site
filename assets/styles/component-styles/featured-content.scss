@@ -134,33 +134,22 @@
 
   @media #{$laptop-up} {
     width: 50%;
-    justify-content: flex-end;
   }
 
   .zuc-img-container {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    height: 26vw;
     overflow: visible;
 
     .zuc-img-block {
       // Background image added inline to element
       background-position: center;
       background-size: cover;
-      height: ( 254 / 3.2 ) * 1vw;
-      width: ( 320 / 3.2 ) * 1vw;
       overflow: visible;
-
-      @media #{$tablet-only} {
-        height: ( 512 / 7.68 ) * 1vw;
-        width: ( 607 / 7.68 ) * 1vw;
-      }
-
-      @media #{$laptop-up} {
-        height: ( 512 / 19.2 ) * 1vw;
-        width: ( 607 / 19.2 ) * 1vw;
-      }
+      width: 80%;
     }
   }
 
