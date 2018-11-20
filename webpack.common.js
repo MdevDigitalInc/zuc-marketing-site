@@ -187,6 +187,10 @@ module.exports = {
       template: './src/templates/form-orders.pug',
       filename: 'form-orders-shipping.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/form-orders-post.pug',
+      filename: 'form-orders-shipping-success.html'
+    }),
     //new HtmlWebpackPlugin({
     //  template: './src/templates/typography-test.pug',
     //  filename: 'typography.html'

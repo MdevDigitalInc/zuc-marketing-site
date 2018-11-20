@@ -5,32 +5,37 @@ section.zuc-orders-section {
   justify-content: flex-start;
   align-items: center;
 
-  &.--pre {
+  .zuc-orders-post-head {
+    width: 80%;
 
-    .zuc-orders-pre {
-      display: block;
+    @media #{$tablet-up} {
+      width: 75%;
+    }
+    
+    @media #{$laptop-up} {
       width: 66.7%;
     }
 
-    .zuc-orders-post {
+    .zuc-ec-header-line {
       display: none;
     }
   }
 
-  &.--post {
+  .zuc-orders-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-    .zuc-orders-pre {
-      display: none;
-    }
+    .zuc-head-blurb {
+      width: 80%;
+      align-self: center;
 
-    .zuc-orders-post {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-
-      > :nth-child( 1 ) {
+      @media #{$tablet-up} {
+        width: 75%;
+      }
+      
+      @media #{$laptop-up} {
         width: 66.7%;
-        align-self: center;
       }
     }
   }
