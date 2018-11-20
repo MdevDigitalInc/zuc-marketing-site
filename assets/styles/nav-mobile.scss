@@ -37,11 +37,7 @@ $nav-animation: transform .2s, opacity .5s;
     @include center(horizontal);
     position: relative;
     margin: 5vh auto 0;
-
-    @media #{$phone-only} {
-      font-size: 4vw;
-      padding: 3vw;
-    }
+    font-size: 4vw;
   }
 
   .aoda-compliant {
@@ -194,8 +190,8 @@ $line-offset: -7px;
 
 .close {
   background: transparent;
-  top: 6vw;
-  right: 3vw;
+  top: 7vw;
+  right: 7vw;
 
   &:before {
     transform: rotate(-45deg);
