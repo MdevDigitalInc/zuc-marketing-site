@@ -65,11 +65,27 @@
       }
     }
 
+    h1 {
+      color: $color-pure-white;
+      font-family: $main-font-serif;
+      text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
+      font-weight: 100;
+      font-size: vw-phone(34);
+
+      @media #{$tablet-only} {
+        font-size: vw-tablet(60);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-desktop(60);
+      }
+    }
+
     p {
       color: $color-pure-white;
       text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
-      font-weight: 300;
-      margin: 0 0 vw-phone(50);
+      font-weight: 100;
+      margin: 0 0 vw-phone(25);
       font-size: vw-phone(14);
 
       @media #{$tablet-only} {
@@ -84,7 +100,30 @@
     }
   }
 
-  .product-image {
+  .--zu-hero {
+
+    @media #{$phone-only} {
+     padding-top: 25.5vw;
+    }
+
+    @media #{$tablet-only} {
+      padding: 10.5vw 8vw 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding: 7vw 8vw 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding: 7vw 8vw 0;
+    }
+    
+    p {
+      line-height: 1.30;
+    }
+  }
+
+   .product-image {
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -108,6 +147,20 @@
     }
   }
 
+  .--zu-product {
+   
+    @media #{$tablet-only} {
+      bottom: vw-tablet(120);
+    }
+
+    @media #{$tablet-lnd-only} {
+      bottom: vw-tablet(15);
+    }
+
+    @media #{$laptop-only} {
+    }
+  }
+
   /*************************************************
 
     Hero Background Styles
@@ -122,7 +175,13 @@
 
   &.--zu {
     background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
-    background-position-y: -100px;
+    @media #{$laptop-up} {
+      background-position-y: -85px;
+    }
+    @media #{$tablet-only} {
+      background-size: 100%;
+      
+    }
   }
 
   &.--hk {

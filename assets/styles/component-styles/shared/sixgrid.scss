@@ -47,6 +47,23 @@ section.zuc-sixgrid-container {
   }
 }
 
+.--zu-sixgrid {
+
+  @media #{$phone-up} {
+    padding: 5vw 7vw vw-tablet(200);
+  }
+
+  @media #{$tablet-up} {
+    padding: 5vw 7vw vw-tablet(200);
+  }
+  @media #{$laptop-only} {
+    padding: 2vw 20vw vw-laptop(200);
+  }
+  @media #{$desktop-up} {
+    padding: 2vw 24vw vw-desktop(200);
+  }
+}
+
 .zuc-sixgrid-item {
   width: 100%;
   text-align: center;
