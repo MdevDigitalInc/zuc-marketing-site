@@ -67,6 +67,7 @@
   width: 37vw;
   margin-top: 3vw;
   margin-bottom: 6vw;
+  background: transparent;
 
   @media #{$tablet-up} {
     width: 24vw;
@@ -95,30 +96,37 @@
   // Color Modifiers
   &.--zb-lilac {
     border-color: $color-zuc-lilac;
+    background: $color-zuc-lilac;
   }
 
   &.--zb-indigo {
     border-color: $color-zuc-indigo;
+    background: $color-zuc-indigo;
   }
 
   &.--zb-darkindigo {
     border-color: $color-zuc-darkindigo;
+    background: $color-zuc-darkindigo;
   }
 
   &.--zb-mint {
     border-color: $color-zuc-mint;
+    background: $color-zuc-mint;
   }
 
   &.--zb-salmon {
     border-color: $color-zuc-salmon;
+    background: $color-zuc-salmon;
   }
 
   &.--zb-platinum {
     border-color: $color-zuc-platinum;
+    background: $color-zuc-platinum;
   }
 
   &.--zb-concrete {
     border-color: $color-zuc-concrete;
+    background: $color-zuc-concrete;
   }
 }
 

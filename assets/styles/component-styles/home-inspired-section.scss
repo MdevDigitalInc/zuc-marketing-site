@@ -21,7 +21,21 @@
   }
 
   .d-green-waves {
-    width: 180px;
+    width: 210px;
+    margin-top: 20px;
+
+    @media #{$laptop-up} {
+      width: 180px;
+      margin-top: 0;
+    }
+  }
+
+  // Overrides global width on Laptop Up
+  .zuc-featured-content {
+    @media #{$laptop-up} {
+      margin-right: 0;
+      width: 50%;
+    }
   }
 }
 

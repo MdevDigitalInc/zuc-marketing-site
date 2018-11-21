@@ -4,35 +4,37 @@
     'Should a covered item require service, we’re ready to help. Contact us by phone or 24/7 online. If a service technician is required, you’ll pay the Trade Service Fee and we’ll arrange for priority service.',
     'We’ll be with you every step of the way until your Service Request is resolved. A professional, local contractor will diagnose the problem and offer a solution. We pay for parts, labour, or replacement of the covered item. You protect your budget.'
   ]
-section.zuc-featured.flex.flex-wrap(id="how-it-works")
-  .zuc-featured-content.--list
-    h2.u-font-serif.u-zuc-indigo
-      |How does it work?
-    .zuc-featured-how-step
-      span
-        |STEP 1
-    h4.u-zuc-darkindigo.u-bold
-      |SELECT YOUR PLAN
-    p.u-zuc-darkindigo
-      |#{howContent[0]}
-    .d-zucbar.--zb-lilac
-    .zuc-featured-how-step
-      span
-        |STEP 2
-    h4.u-zuc-darkindigo.u-bold
-      |REQUEST ASSISTANCE
-    p.u-zuc-darkindigo
-      |#{howContent[1]}
-    .d-zucbar.--zb-lilac
-    .zuc-featured-how-step
-      span
-        |STEP 3
-    h4.u-zuc-darkindigo.u-bold
-      |PROBLEM SOLVED
-    p.u-zuc-darkindigo
-      |#{howContent[2]}
-    .d-zucbar.--zb-lilac
-  .zuc-featured-image.flex.flex-hor-center
-    .zuc-img-container
-      .zuc-img-block.u-soft-shadow(style="background-image:url('/Images/Zuc/images/shared/couple-on-computer.png')")
-    img.zuc-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")
+section.zuc-featured-block.--graphic-blob.--center-blob(id="how-it-works")
+  .zuc-featured.flex.flex-wrap
+    .zuc-featured-content.--list
+      h2.u-font-serif.u-zuc-indigo
+        |How does it work?
+      .zuc-featured-how-step
+        span
+          |STEP 1
+      h4.u-zuc-darkindigo.u-bold
+        |SELECT YOUR PLAN
+      p.u-zuc-darkindigo
+        |#{howContent[0]}
+      .d-zucbar.--zb-lilac
+      .zuc-featured-how-step
+        span
+          |STEP 2
+      h4.u-zuc-darkindigo.u-bold
+        |REQUEST ASSISTANCE
+      p.u-zuc-darkindigo
+        |#{howContent[1]}
+      .d-zucbar.--zb-lilac
+      .zuc-featured-how-step
+        span
+          |STEP 3
+      h4.u-zuc-darkindigo.u-bold
+        |PROBLEM SOLVED
+      p.u-zuc-darkindigo
+        |#{howContent[2]}
+      .d-zucbar.--zb-lilac
+    .zuc-featured-image.flex.flex-hor-center
+      .zuc-featured-media
+        img(src="../../assets/images/shared/couple-on-computer.png")
+
+      img.zuc-blob.--slb-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")
