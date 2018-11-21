@@ -202,6 +202,13 @@ textarea {
 
 */
 
+.zuc-forms-container {
+
+  &.--service {
+    margin-top: 30px;
+  }
+}
+
 .zuc-form-row {
   display: flex;
   flex-direction: row;
@@ -213,10 +220,6 @@ textarea {
   width: 100%;
   position: relative;
   text-align: left;
-
-  &:first-child {
-    margin-top: 25px;
-  }
 
   input {
     &[type="button"] {
