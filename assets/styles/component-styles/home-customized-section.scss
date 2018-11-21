@@ -4,6 +4,11 @@
 
 .--home-custom-hoist {
   margin-top: -7vw;
+  padding: 0;
+
+  @media #{$portrait} {
+    padding: 5vw 0;
+  }
 }
 
 .--home-icons {
