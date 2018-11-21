@@ -113,9 +113,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
   @media #{$phone-only} {
     width: 40%;
   }
+  
   @media #{$tablet-only} {
     width: 25%;
   }
