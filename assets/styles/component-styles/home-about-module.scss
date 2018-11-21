@@ -18,6 +18,8 @@
   }
 
   .zuc-about-icons {
+    display: flex;
+    flex-direction: row;
 
     @media #{$desktop-up} {
       margin-right: 25%;
@@ -113,13 +115,31 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
+  width: 45%;
+  margin-right: 5%;
 
   @media #{$phone-only} {
-    width: 40%;
+    &:nth-child( 2 ) {
+      margin-left: 5%;
+      margin-right: 0;
+    }
   }
   
   @media #{$tablet-only} {
-    width: 25%;
+    width: 20%;
+    margin-right: 10%;
+  }
+
+  @media #{$laptop-up} {
+    width: 13%;
+    margin-right: 10%;
+  }
+
+  .--icon-text {
+    text-align: center;
+    width: auto;
+    margin-top: 15px;
   }
 }
 
