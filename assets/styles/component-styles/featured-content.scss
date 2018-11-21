@@ -101,6 +101,14 @@
     }
   }
 
+  &.--less-pad {
+    padding: 7vw 0 15vw;
+  }
+
+  &.--no-pad {
+    padding: 0;
+  }
+
   // Supersize the gifs
   .--gif-size img {
     width: 110%;

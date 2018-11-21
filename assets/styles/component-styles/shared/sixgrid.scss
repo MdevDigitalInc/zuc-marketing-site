@@ -45,6 +45,14 @@ section.zuc-sixgrid-container {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
   }
+
+  &.--bottom-pad {
+    padding-bottom: 10vw;
+
+    @media #{$portrait} {
+      padding-bottom: 25vw;
+    }
+  }
 }
 
 .zuc-sixgrid-item {
