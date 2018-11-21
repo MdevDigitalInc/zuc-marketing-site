@@ -6,7 +6,8 @@
 $ss-padding: 8vw;
 
 .zuc-contact-blurb-container {
-
+  display: flex;
+  flex-direction: column;
   padding: 0 $ss-padding;
   text-align: left;
 
@@ -17,6 +18,15 @@ $ss-padding: 8vw;
   .--nudge {
     padding-top: 25px;
   }
+
+  a {
+    margin-top: 10px;
+    font-size: 14px;
+
+    @media #{$tablet-up} {
+      font-size: 18px;
+    }
+  }
 }
 
 .zuc-contact-title {
@@ -26,23 +36,22 @@ $ss-padding: 8vw;
 
 .zuc-contact-image-container {
   position: relative;
-  padding-top: 0;
-  max-width: none;
   display: block;
-  padding-left: 8vw;
+  padding: 0 0 0 8vw;
 
   @media #{$laptop-up} {
-    padding-top: 80px;
-    max-width: 700px;
-    padding-left: 0;
+    width: 80%;
+    padding: 80px 0 0;
   }
 
   .zuc-contact-image {
     display: none;
+    max-width: none;
 
     @media #{$laptop-up} {
       display: block;
       width: 100%;
+      max-width: 700px;
     }
   }
 
@@ -85,5 +94,3 @@ $ss-padding: 8vw;
     padding-right: $ss-padding;
   }
 }
-
-
