@@ -11,10 +11,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 0vw 8vw 7vw;
+    padding: 0 8vw 7vw;
   }
   @media #{$desktop-up} {
-    padding: 7vw 8vw 7vw;
+    padding: 7vw 8vw;
   }
 
   .zuc-about-icons {
