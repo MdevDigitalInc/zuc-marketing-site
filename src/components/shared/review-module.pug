@@ -4,19 +4,19 @@
 -
   var quotes = [
     {
-      author : 'Jason H',
-      text : 'Just a quick thank you for your professionalism. Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and family. Truly a satisfied customer.',
+      author : 'Hoang U',
+      text : 'Zucora has a good customer service. I had an ink stain in my sofa (my son used a pen to draw on my sofa and the stain was about 40 cm). Zucora sent me a "Ink Lifter" product to remove the stain but it did not work. Then they sent a technician come to my home and fix it. The stain was completely removed and I am totally satisfied with their service. I recommend Zucora to everyone.',
       rating: 5
     },
     {
-      author : 'Jason H',
-      text : 'Our technician explained the process before he began and impressed us with his friendly manner. I will recommend your services to friends and family. Truly a satisfied customer.',
+      author : 'James Michael',
+      text : 'The auto cleaning products are fantastic! Love the fact too that there are no harmful chemicals washing away. Ordering was simple, shipping was prompt and the packaging excellent.',
       rating: 4
     },
     {
-      author : 'Jason H',
-      text : 'I will recommend your services to friends and family. Truly a satisfied customer.',
-      rating: 3
+      author : 'Veronica Pinero',
+      text : 'We contacted them after finding stains in a sofa set. They did a fantastic job. We were quite satisfied by the quality of the work performed by their local partners.',
+      rating: 4
     }
   ]
 
@@ -39,7 +39,7 @@ section.zuc-review-section.flex.flex-column.flex-vert-center.u-section-spacing(i
             - for (var x = 0; x < quote.rating; x++)
               img.zuc-star(src='../../assets/images/icons/icon-star.svg' alt='A small purple star')
           p.zuc-quote-author.u-bold.u-zuc-darkindigo
-            |— #{quote.author}
+            |– #{quote.author}
 
     // Action controls
     a.zuc-quote-button.zuc-right.u-soft-shadow.flex.flex-vert-center.flex-hor-center(href="javascript:void(0)" title="Next Review" onclick="traverseReview(1)")

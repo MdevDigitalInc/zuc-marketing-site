@@ -110,7 +110,11 @@
 // To be used on .zuc-featured-block when blob graphic
 // is called for.
 .--graphic-blob {
-  padding: 15vw 0;
+  padding: 15vw 0 20vw;
+
+  @media #{$laptop-up} {
+    padding: 15vw 0;
+  }
 
   // Give the blob a reference closer to home
   .zuc-featured-image {
@@ -122,40 +126,17 @@
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    max-height: 500px;
     img { width: 120%; }
-  }
-
-  // Position the phone for Homepage
-  .--phone-img {
-    position: absolute;
-    left: 2%;
-    top: 5%;
-    /* Important is required here */
-    /* stylelint-disable */
-    width: auto !important;
-    /* stylelint-enable */
-
-    @media #{$laptop-only} {
-      max-width: 200px;
-    }
-
-    @media #{$phone-only} {
-      display: none;
-    }
 
     @media #{$tablet-only} {
-      left: 0;
-      top: 15%;
+      width: 80%;
+    }
+    @media #{$laptop-up} {
+      max-height: 600px;
     }
   }
-
-  // Position photo for homepage
-  .--photo {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-  }
-
+  //
   // Position the mighty blob
   .zuc-blob {
     z-index: -99;
@@ -310,3 +291,76 @@
     }
   }
 }
+// Uber Overrides
+//
+// Controls the Homepage Blob mostly
+.zuc-featured-block.--short-text {
+  @media #{$phone-only} {
+    padding: 15vw 0;
+  }
+  .zuc-featured {
+    @media #{$phone-only} {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .zuc-featured-media {
+    @media #{$phone-only} {
+      max-height: 300px;
+      margin: 7vw 0 10vw;
+    }
+  }
+
+  .zuc-featured-content {
+    @media #{$phone-only} {
+      padding-left: 7.5%;
+      padding-right: 7.5%;
+    }
+    @media #{$laptop-up} {
+      padding-right: 10%;
+    }
+  }
+
+  .zuc-blob {
+    @media #{$phone-only} {
+      transform: scale(1.5);
+      left: 10%;
+      top: 19%;
+    }
+  }
+
+  // Position the phone for Homepage
+  .--phone-img {
+    position: absolute;
+    left: 2%;
+    top: 9%;
+    /* Important is required here */
+    /* stylelint-disable */
+    width: auto !important;
+    /* stylelint-enable */
+
+    @media #{$laptop-only} {
+      max-width: 200px;
+    }
+
+    @media #{$phone-only} {
+      max-width: 150px;
+      left: 7%;
+      top: 25%;
+    }
+
+    @media #{$tablet-only} {
+      left: 0;
+      top: 15%;
+    }
+  }
+
+  // Position photo for homepage
+  .--photo {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
