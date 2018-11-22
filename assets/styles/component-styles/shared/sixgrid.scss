@@ -5,24 +5,28 @@
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
-  padding: 5vh 10vw vw-phone(50);
+  padding: 5vh 5vw 0;
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 0 7vw vw-tablet(50);
+    padding: 0 7vw;
   }
 
   @media #{$laptop-only} {
-    padding: 0 20vw vw-laptop(100);
+    padding: 0 20vw;
   }
 
   @media #{$desktop-up} {
-    padding: 0 24vw vw-desktop(100);
+    padding: 0 24vw;
   }
 
   &.--grey {
     background: $color-zuc-platinum;
+  }
+
+  &.--slp-6grid {
+    padding-bottom: 0;
   }
 
   .zuc-sixgrid-subtext {
@@ -49,19 +53,11 @@ section.zuc-sixgrid-container {
     color: $color-zuc-indigo;
   }
 
-  &.--zu-sixgrid {
+  &.--bottom-pad {
+    padding-bottom: 10vw;
 
-    @media #{$phone-up} {
-      padding: 5vw 7vw vw-phone(200);
-    }
-    @media #{$tablet-up} {
-      padding: 5vw 7vw vw-tablet(200);
-    }
-    @media #{$laptop-only} {
-      padding: 2vw 20vw vw-laptop(200);
-    }
-    @media #{$desktop-up} {
-      padding: 2vw 240vw vw-desktop(200);
+    @media #{$portrait} {
+      padding-bottom: 25vw;
     }
   }
 }
