@@ -14,7 +14,8 @@
   }
 
   @media #{$desktop-up} {
-    padding: 3vw 0 9vw;
+    padding: 3vw 0 13vw;
+    margin-bottom: -15px;
   }
 }
 
@@ -39,6 +40,7 @@
   padding: 8vw 8vw 0;
   width: 90%;
   margin: 0 auto;
+  z-index: 3;
 
   @media #{$laptop-up} {
     width: 33%;
@@ -121,7 +123,7 @@
 
 .zuc-spkids-header-img-box {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
   margin: 0;
   padding: 60% 9vw 6vw 6vw;
@@ -145,7 +147,7 @@
     margin: 0;
     font-size: 50px;
 
-    @media #{$tablet-only} {
+    @media #{$tablet-up} {
       font-size: 88px;
     }
   }
@@ -155,7 +157,7 @@
   background-image: url('../../assets/images/shapes/header-blob.svg');
   background-repeat: no-repeat;
   width: 100%;
-  z-index: -1;
+  z-index: 2;
   position: absolute;
   top: 0;
   background-size: 300%;
@@ -165,7 +167,7 @@
   @media #{$laptop-up} {
     @include center(both);
     padding-top: 55%;
-    top: 45%;
+    top: 30%;
     background-size: 100%;
   }
 }

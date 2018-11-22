@@ -43,22 +43,15 @@ section.zuc-teamgrid {
   }
 
   .zuc-bg-wave {
+    background-image: url('../../assets/images/shapes/wave-top.svg');
     z-index: -5;
     position: absolute;
-    width: 300%;
-    left: -25%;
-    bottom: -1%;
-
-    @media #{$tablet-only} {
-      width: 200%;
-      left: -20%;
-      bottom: -1%;
-    }
-    @media #{$laptop-up} {
-      width: 102%;
-      left: -1%;
-      bottom: -1%;
-    }
+    bottom: 0;
+    background-size: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 12%;
+    background-repeat: no-repeat;
   }
 }
 

@@ -11,12 +11,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 8vw 15vw;
+    padding: 0 8vw 7vw;
+  }
+  @media #{$desktop-up} {
+    padding: 7vw 8vw;
   }
 
   .zuc-about-icons {
 
-    @media #{$laptop-up} {
+    @media #{$desktop-up} {
       margin-right: 25%;
     }
   }
@@ -36,13 +39,13 @@
   }
   @media #{$laptop-only} {
     left: -2.5vw;
-    top: -29.9vw;
-    height: 69.65vw;
+    top: -35vw;
+    height: 100vw;
   }
   @media #{$desktop-up} {
     left: -2.5vw;
-    top: -29.9vw;
-    height: 69.65vw;
+    top: -25vw;
+    height: 75vw;
   }
 }
 

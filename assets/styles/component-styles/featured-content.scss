@@ -1,91 +1,64 @@
-// Featured Content Module
-.zuc-featured {
-  padding: 5vw 0 ( 77 / 3.2 ) * 1vw;
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
-
-  @media #{$tablet-prt-only} {
-    overflow: visible;
-  }
-
-  @media #{$tablet-only} {
-    padding: 3vw 0 ( 205 / 7.68 ) * 1vw;
-  }
-
-  @media #{$laptop-up} {
-    padding: 2vw 0 ( 165 / 19.2 ) * 1vw;
-  }
-
-  @media #{$phone-only} {
-    width: 100%;
-  }
-
-  // Spacing Overrides
-  &.--extra-pad {
-    padding: ( 179 / 3.2 ) * 1vw 0 ( 88 /3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      padding: ( 221 / 7.68 ) * 1vw 0 ( 120 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      padding: ( 154 / 19.2 ) * 1vw 0 ( 169 / 19.2 ) * 1vw;
-    }
-  }
-}
-
-// Featured Content
-.zuc-featured-content {
+// Featured Content Block
+// This encompases Blobs + text or text + image or text + gif
+.zuc-featured-block {
   width: 100%;
-  margin: 0;
-  padding: 0 5vw ( 90 / 3.2 ) * 1vw;
+  position: relative;
+  padding: 7vw 0;
+  z-index: 11;
 
-  @media #{$tablet-only} {
-    padding: 0 0 ( 56 / 7.68 ) * 1vw;
-  }
-
-  @media #{$laptop-up} {
-    width: 45%;
-    padding: 0 5vw 0 3vw;
-  }
-
-  @media #{$desktop-up} {
-    width: 40%;
-    margin-right: 5%;
-    padding: 0 5vw 0 3vw;
-  }
-
-  h3 {
-    font-family: $main-font-serif;
-    color: $color-zuc-indigo;
-  }
-
-  // How It Works Steps
-  .zuc-featured-how-step {
-    color: $color-zuc-lilac;
-    font-weight: 600;
-    font-size: ( 14 / 3.2 ) * 1vw;
-    margin: 0 0 ( 10 / 3.2 ) * 1vw;
-
-    @media #{$tablet-only} {
-      font-size: ( 13 / 7.68 ) * 1vw;
-      margin: 0 0 ( 10 / 7.68 ) * 1vw;
-    }
-
-    @media #{$tablet-prt-only} {
-      font-size: ( 16 / 7.68 ) * 1vw;
-    }
+  // Inner container for the actual content
+  // Set with width as "wrapper"
+  .zuc-featured {
+    width: 85%;
+    margin: 0 auto;
 
     @media #{$laptop-up} {
-      font-size: ( 16 / 19.2 ) * 1vw;
-      margin: 0 0 ( 9 / 19.2 ) * 1vw;
+      width: 80%;
     }
+  }
+
+  // Featured Content
+  // Can be anything, usually text based.
+  .zuc-featured-content {
+    width: 100%;
+    order: 1;
+    padding: 4vw 0;
+
+    @media #{$laptop-up} {
+      width: 50%;
+      padding: 0 4vw;
+    }
+  }
+
+  // Featured image container
+  // Media, Gifs or Media + content
+  .zuc-featured-image {
+    width: 100%;
+    order: 2;
+    padding: 4vw 0;
+
+    @media #{$laptop-up} {
+      width: 50%;
+      padding: 0 4vw;
+    }
+  }
+
+  // Wrapper to hide overflow of image
+  .zuc-featured-media {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Override to space out featured link
+  .--featured-link {
+    margin: 0 15px;
   }
 
   // List modifier for Smarter Living Parent
-  &.--list {
-
+  .--list {
     h4 {
       margin: 0 0 ( 10 / 3.2 ) * 1vw;
 
@@ -103,165 +76,87 @@
     }
   }
 
-  // Text modifier for Home Page and Benefits
+  // How step overrides
+  .zuc-featured-how-step {
+    color: $color-zuc-lilac;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  // Space button out from text
   .zuc-btn-secondary {
-    margin-top: 40px;
-    margin-right: 30px;
-    display: inline-block;
+    margin-top: 30px;
   }
 
-  // Flips padding for when image is on the right
-  &.--flip-order {
-    @media #{$laptop-up} {
-      padding: 0 3vw 0 5vw;
+  // Overrides ----------------
+
+  // Flip order so image is on the left
+  &.--flipped-image {
+    .zuc-featured-image {
+      order: 1;
+    }
+
+    .zuc-featured-content {
+      order: 2;
     }
   }
 
-  &.--text-left {
-
-    @media #{$desktop-up} {
-      padding-right: 10%;
-    }
+  // Supersize the gifs
+  .--gif-size img {
+    width: 110%;
   }
 }
 
-// Image Block
-.zuc-featured-image {
-  width: 100%;
-  justify-content: center;
-  position: relative;
+// To be used on .zuc-featured-block when blob graphic
+// is called for.
+.--graphic-blob {
+  padding: 15vw 0 20vw;
 
   @media #{$laptop-up} {
-    width: 50%;
-    justify-content: flex-end;
+    padding: 15vw 0;
   }
 
-  .zuc-img-container {
+  // Give the blob a reference closer to home
+  .zuc-featured-image {
     position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow: visible;
-
-    .zuc-img-block {
-      // Background image added inline to element
-      background-position: center;
-      background-size: cover;
-      height: ( 254 / 3.2 ) * 1vw;
-      width: ( 320 / 3.2 ) * 1vw;
-      overflow: visible;
-
-      @media #{$tablet-only} {
-        height: ( 512 / 7.68 ) * 1vw;
-        width: ( 607 / 7.68 ) * 1vw;
-      }
-
-      @media #{$laptop-up} {
-        height: ( 512 / 19.2 ) * 1vw;
-        width: ( 607 / 19.2 ) * 1vw;
-      }
-    }
   }
 
-  .zuc-blob {
-    z-index: -3;
-    width: 100%;
-    @include center(both);
-
-    @media #{$portrait} {
-      left: 50%;
-      width: 110%;
-    }
-
-    @media #{$desktop-up} {
-      top: 60%;
-    }
-
-    @media #{$phone-only} {
-      width: 190%;
-    }
-
-    @media #{$laptop-only} {
-      top: 35%;
-    }
-  }
-}
-
-.zuc-featured-graphic {
-  flex: 50%;
-  position: relative;
-
-  @media #{$tablet-only} {
-    padding-top: 60px;
-  }
-  @media #{$phone-only} {
-    padding-top: 80px;
-  }
-
-  @media #{$phone-only} {
-    width: 100%;
-  }
-
-  &.--img-wrapper {
-    position: relative;
-
-    @media #{$phone-only} {
-      width: 100%;
-    }
-  }
-
-  .phone-img {
-    position: absolute;
-    left: 8%;
-    top: 5%;
-
-    @media #{$laptop-only} {
-      max-width: 200px;
-    }
-
-    @media #{$phone-only} {
-      display: none;
-    }
-
-    @media #{$tablet-only} {
-      left: 0;
-      top: 15%;
-    }
-  }
-
-  .photo {
+  // Supersize the media
+  .zuc-featured-media {
     width: 100%;
     margin: 0 auto;
-    display: block;
+    overflow: hidden;
+    max-height: 500px;
+    img { width: 120%; }
 
-    @media #{$laptop-only} {
+    @media #{$tablet-only} {
       width: 80%;
     }
-
-    @media #{$tablet-only} {
-      width: 85%;
+    @media #{$laptop-up} {
+      max-height: 600px;
     }
   }
-
+  //
+  // Position the mighty blob
   .zuc-blob {
     z-index: -99;
-    display: inline;
-    position: absolute;
-    top: 85px;
+    width: 110%;
+    @include center(both);
+    top: 80%;
 
-    @media #{$tablet-only} {
-      top: 95px;
-      max-width: 900px;
-      transform: scale(1.2);
-    }
-
-    @media #{$phone-only} {
-      top: 35%;
-      right: -20vw;
-      transform: scale(1.8);
+    @media #{$laptop-only} {
+      top: 50%;
     }
   }
+
+  // Overrides blob to sit in center
+  // for instances where there is less
+  // vertical space to fill up
+  &.--center-blob .zuc-blob {
+    top: 50%;
+  }
 }
+
 
 // App Icons
 .zuc-featured--app-icons {
@@ -278,6 +173,7 @@
     }
   }
 }
+
 // Featured Coverage Images
 .zuc-featured-coverage-image {
   margin: 21.875vw 0 35vw;
@@ -301,6 +197,7 @@
     width: 40%;
     margin-left: 10%;
   }
+
   @media #{$desktop-up} {
     margin: 0;
     width: 50%;
@@ -312,20 +209,158 @@
   }
 }
 
-// Featured Gif Override
-.--featured-gif {
+.--three-panels {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding-top: 50px;
+
+  @media #{$tablet-up} {
+    padding-top: 0;
+  }
 
   @media #{$laptop-up} {
-    .zuc-featured-image {
-      width: 60%;
+    width: 75%;
+  }
+
+  .zuc-panel {
+    width: 100%;
+    background-size: cover;
+    height: vw-phone(150);
+
+    @media #{$tablet-up} {
+      height: vw-tablet(175);
     }
 
-    .zuc-featured-content {
-      width: 40%;
+    @media #{$laptop-up} {
+      height: vw-laptop(140);
+    }
+
+    @media #{$desktop-up} {
+      height: vw-desktop(191);
+    }
+
+    &.--toolman {
+      background-image: url('../../assets/images/shared/man-tool-bag.png');
+
+      span {
+        background-color: $color-zuc-indigo;
+      }
+    }
+
+    &.--family {
+      background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
+
+      span {
+        background-color: $color-zuc-lilac;
+      }
+    }
+
+    &.--smartphone {
+      background-image: url('../../assets/images/shared/woman-smartphone.png');
+
+      span {
+        background-color: $color-zuc-concrete;
+      }
+    }
+
+    span {
+      display: block;
+      width: 65%;
+      text-transform: uppercase;
+      color: $color-pure-white;
+      font-weight: 600;
+      padding: vw-phone(10);
+      font-size: vw-phone(10.5);
+
+      @media #{$tablet-up} {
+        width: 60%;
+        padding: vw-tablet(16);
+        font-size: vw-tablet(16);
+      }
+
+      @media #{$laptop-up} {
+        padding: vw-laptop(16);
+        font-size: vw-laptop(16);
+      }
+
+      @media #{$desktop-up} {
+        padding: vw-desktop(20);
+        font-size: vw-desktop(20);
+      }
     }
   }
-  img {
+}
+// Uber Overrides
+//
+// Controls the Homepage Blob mostly
+.zuc-featured-block.--short-text {
+  @media #{$phone-only} {
+    padding: 15vw 0;
+  }
+  .zuc-featured {
+    @media #{$phone-only} {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .zuc-featured-media {
+    @media #{$phone-only} {
+      max-height: 300px;
+      margin: 7vw 0 10vw;
+    }
+  }
+
+  .zuc-featured-content {
+    @media #{$phone-only} {
+      padding-left: 7.5%;
+      padding-right: 7.5%;
+    }
+    @media #{$laptop-up} {
+      padding-right: 10%;
+    }
+  }
+
+  .zuc-blob {
+    @media #{$phone-only} {
+      transform: scale(1.5);
+      left: 10%;
+      top: 19%;
+    }
+  }
+
+  // Position the phone for Homepage
+  .--phone-img {
+    position: absolute;
+    left: 2%;
+    top: 9%;
+    /* Important is required here */
+    /* stylelint-disable */
+    width: auto !important;
+    /* stylelint-enable */
+
+    @media #{$laptop-only} {
+      max-width: 200px;
+    }
+
+    @media #{$phone-only} {
+      max-width: 150px;
+      left: 7%;
+      top: 25%;
+    }
+
+    @media #{$tablet-only} {
+      left: 0;
+      top: 15%;
+    }
+  }
+
+  // Position photo for homepage
+  .--photo {
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    display: block;
   }
 }
+

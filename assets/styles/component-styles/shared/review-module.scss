@@ -155,16 +155,26 @@
   padding: 15vw 0;
   width: 100%;
 
+  // Temporary for launch
+  // since we do not have Blog active
+  h3 {
+    margin-bottom: 0;
+  }
+
   @media #{$tablet-only} {
     padding: 4.69vw 0;
   }
   @media #{$laptop-up} {
     text-align: left;
     position: absolute;
-    width: 17vw;
-    padding: 1.87vw 2.07vw 1.51vw;
+    width: 40%;
+    padding: 2vw;
     top: -4.2vw;
     left: -13.43vw;
+  }
+
+  @media #{$desktop-up} {
+    width: 17vw;
   }
 
   @media #{$phone-only} {

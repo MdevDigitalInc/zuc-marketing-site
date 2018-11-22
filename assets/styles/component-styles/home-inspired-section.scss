@@ -8,20 +8,32 @@
   flex-direction: column;
 
   @media #{$tablet-only} {
-    padding: 4.5vw 0 20vh 6vw;
+    padding: 4.5vw 6vw 20vh;
   }
 
   @media #{$laptop-up} {
     flex-direction: row;
     padding: 4.5vw 0 10vh 14vw;
   }
-
   .zuc-featured-action {
     margin-top: 30px;
   }
 
   .d-green-waves {
-    width: 180px;
+    width: 150px;
+    margin-top: 20px;
+
+    @media #{$laptop-up} {
+      width: 180px;
+    }
+  }
+
+  // Overrides global width on Laptop Up
+  .zuc-featured-content {
+    @media #{$laptop-up} {
+      margin-right: 0;
+      width: 50%;
+    }
   }
 }
 
@@ -59,7 +71,6 @@
   }
   @media #{$phone-only} {
     flex-wrap: wrap;
-    margin-top: -100px;
     width: 100%;
 
     .zuc-hp-icon {

@@ -290,11 +290,11 @@
 
   .zuc-hero-left {
     width: 40%;
-    padding: 0 4.2vw;
+    padding: 100px 4.2vw 0;
     position: relative;
 
     @media #{$laptop-only} {
-      padding: 0 2.2vw;
+      padding: 80px 2.2vw 0;
     }
     @media #{$tablet-lnd-only} {
       width: 60%;
@@ -311,8 +311,12 @@
   }
 
   .zuc-btn {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 60px;
+
+    @media #{$laptop-up} {
+      margin-top: 0;
+    }
   }
 
   img {

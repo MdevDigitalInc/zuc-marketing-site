@@ -2,17 +2,14 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 28.125vw;
   padding: 13.75vw 0 9vw;
 
   @media #{$tablet-only} {
-    margin-bottom: 19.79vw;
     padding: 13.15vw 0 9vw;
   }
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 10.66vw;
     padding: 5vw 0 14vw;
   }
   @media #{$desktop-up} {
@@ -94,15 +91,16 @@
       bottom: vw-desktop(25);
       transform: translateX(50%);
     }
-    @media #{$tablet-only} {
+    @media #{$tablet-lnd-only} {
       transform: scale(.25);
       left: 45%;
       bottom: -40px;
     }
-    @media #{$phone-only} {
-      bottom: 0%;
+    @media #{$portrait} {
+      bottom: 0;
       transform: scale(.25);
-      left: 40%;
+      right: 0;
+      display: none;
     }
   }
 
