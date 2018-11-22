@@ -1,10 +1,11 @@
 .--zu-wave-content {
+  padding-top: 10px;
 
   background-image: url('../images/smarter-products/boy-laying-withdog.png');
   // Uniquely positions & sizes the "Child and Dog" image.
   @media #{$tablet-only} {
     background-position: 100% 20%;
-    background-size: 122%;
+    background-size: cover;
   }
   @media #{$phone-only} {
     background-position: 65% 29%;
