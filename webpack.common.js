@@ -239,7 +239,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/terms.pug',
-      filename: 'terms-conditions.html'
+      filename: 'terms-service.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/privacy.pug',

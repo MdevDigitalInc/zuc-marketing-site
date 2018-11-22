@@ -1,0 +1,44 @@
+.zuc-pp-page {
+  position: relative;
+  margin: 20vh 7vw;
+
+  @media #{$tablet-only} {
+    margin: 20vh 6vw;
+  }
+
+  @media #{$laptop-up} {
+    margin: 20vh 17vw;
+  }
+}
+
+.zuc-pp-blurb {
+  margin: 3vh 0;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.zuc-pp-topic-container {
+  margin-top: 25px;
+
+  h2 {
+    color: $color-zuc-indigo;
+    font-family: $main-font-serif;
+  }
+
+  p {
+    display: block;
+    color: $color-zuc-darkindigo;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-left: 35px;
+    font-weight: 400;
+  }
+
+  a {
+    color: $color-zuc-indigo;
+  }
+}
