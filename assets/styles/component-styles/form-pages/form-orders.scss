@@ -40,3 +40,18 @@ section.zuc-orders-section {
     }
   }
 }
+
+.zuc-orders-form {
+  width: 90%;
+  margin: 5vh auto 0;
+
+  @media #{$laptop-up} {
+    margin: 5vh auto 0;
+    width: 70%;
+  }
+
+  @media #{$desktop-up} {
+    margin: 5vh auto 0;
+    width: 60%;
+  }
+}
