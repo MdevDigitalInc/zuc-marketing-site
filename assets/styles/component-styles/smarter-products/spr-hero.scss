@@ -8,10 +8,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 85vh;
+  height: 80vh;
 
   @media #{$tablet-only} {
-    height: 95vh;
+    height: 85vh;
   }
 
   @media #{$tablet-lnd-only} {
@@ -150,14 +150,8 @@
   .--zu-product {
    
     @media #{$tablet-only} {
-      bottom: vw-tablet(120);
+      bottom: 5%;
     }
-
-    @media #{$tablet-lnd-only} {
-      bottom: vw-tablet(15);
-    }
-    // @media #{$laptop-only} {
-    // }
   }
 
   /*************************************************
@@ -174,11 +168,21 @@
 
   &.--zu {
     background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
+    @media #{$phone-only} {
+      background-size: 400%;
+      background-position-y: 40%;
+      background-position-x: 83%;
+    }
+
+    
+    @media #{$tablet-only} {
+      background-size: 250%;
+      background-position-y: 25%;
+      background-position-x: 79%;
+    }
+
     @media #{$laptop-up} {
       background-position-y: -85px;
-    }
-    @media #{$tablet-only} {
-      background-size: 100%;
     }
   }
 

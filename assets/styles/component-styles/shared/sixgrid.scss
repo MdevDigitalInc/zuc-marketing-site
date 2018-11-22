@@ -35,7 +35,7 @@ section.zuc-sixgrid-container {
     }
 
     @media #{$laptop-up} {
-      padding: 0 0 25px;
+      padding: 0 0 3.84vw;
     }
   }
 
@@ -48,22 +48,21 @@ section.zuc-sixgrid-container {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
   }
-}
 
-.--zu-sixgrid {
+  &.--zu-sixgrid {
 
-  @media #{$phone-up} {
-    padding: 5vw 7vw vw-tablet(200);
-  }
-
-  @media #{$tablet-up} {
-    padding: 5vw 7vw vw-tablet(200);
-  }
-  @media #{$laptop-only} {
-    padding: 2vw 20vw vw-laptop(200);
-  }
-  @media #{$desktop-up} {
-    padding: 2vw 24vw vw-desktop(200);
+    @media #{$phone-up} {
+      padding: 5vw 7vw vw-phone(200);
+    }
+    @media #{$tablet-up} {
+      padding: 5vw 7vw vw-tablet(200);
+    }
+    @media #{$laptop-only} {
+      padding: 2vw 20vw vw-laptop(200);
+    }
+    @media #{$desktop-up} {
+      padding: 2vw 240vw vw-desktop(200);
+    }
   }
 }
 

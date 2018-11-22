@@ -6,7 +6,7 @@
   align-items: flex-start;
   padding: 0 5% 13vw;
 
-  @media #{$tablet-up} {
+  @media #{$tablet-only} {
     padding: 0 9% 10vw;
   }
   @media #{$laptop-up} {
