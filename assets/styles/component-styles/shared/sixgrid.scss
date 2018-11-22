@@ -12,9 +12,11 @@ section.zuc-sixgrid-container {
   @media #{$tablet-up} {
     padding: 0 7vw;
   }
+
   @media #{$laptop-only} {
     padding: 0 20vw;
   }
+
   @media #{$desktop-up} {
     padding: 0 24vw;
   }
@@ -26,15 +28,16 @@ section.zuc-sixgrid-container {
   &.--slp-6grid {
     padding-bottom: 0;
   }
-  
+
   .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     font-weight: 100;
-    padding: 0 0 18vw;
+    padding: 0 0 5vw;
 
     @media #{$tablet-only} {
-      padding: 0 0 8.6vw;
+      padding: 0;
     }
+
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
