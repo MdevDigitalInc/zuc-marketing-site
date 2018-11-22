@@ -404,6 +404,7 @@
   }
   @media #{$tablet-only} {
     background-position: 40% -15%;
+    box-shadow: 0 2vw 9.43vw 0 rgba(12, 12, 12, .2);
   }
   @media #{$laptop-only} {
     background-position: -140px -110px;

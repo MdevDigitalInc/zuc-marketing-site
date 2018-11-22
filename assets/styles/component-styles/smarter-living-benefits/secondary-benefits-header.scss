@@ -67,10 +67,12 @@
   margin-bottom: 1vh;
 
   @media #{$phone-only} {
+    margin-bottom: -1vh;
     padding: 8vw 5%;
   }
 
   @media #{$tablet-only} {
     padding: 5vw 7%;
+    margin-bottom: -1vh;
   }
 }

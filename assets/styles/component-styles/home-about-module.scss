@@ -34,15 +34,20 @@
   top: -21.47vw;
   height: 190vw;
 
-  @media #{$tablet-only} {
+  @media #{$tablet-lnd-only} {
     left: -13vw;
     top: -18vw;
     height: 200vw;
   }
+  @media #{$tablet-prt-only} {
+    left: -13vw;
+    top: -18vw;
+    height: 130vw;
+  }
   @media #{$laptop-only} {
     left: -2.5vw;
     top: -35vw;
-    height: 100vw;
+    height: 90vw;
   }
   @media #{$desktop-up} {
     left: -2.5vw;
