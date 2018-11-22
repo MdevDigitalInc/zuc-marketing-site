@@ -48,13 +48,19 @@
     @media #{$laptop-up} {
       margin-top: 15px;
     }
+  }
+}
 
-    .zuc-tos-table-row-head {
-      width: 5%;
-    }
+.zuc-tos-table-row-head {
+  width: 5%;
+  text-align: right;
+  margin-right: 3%;
+}
 
-    .zuc-tos-table-row-body {
-      width: 95%;
-    }
+.zuc-tos-table-row-body {
+  width: 92%;
+
+  a,p {
+    display: inline;
   }
 }
