@@ -3,7 +3,7 @@
   margin: 20vh 7vw;
 
   @media #{$tablet-only} {
-    margin: 20vh 10vw;
+    margin: 20vh 6vw;
   }
 
   @media #{$laptop-up} {
@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 2vw;
 
   h2 {
     width: 100%;
@@ -39,7 +38,7 @@
     width: 100%;
     color: $color-zuc-darkindigo;
     margin-top: 15px;
-    padding: 0 2vw;
+    padding: 0 1vw;
 
     @media #{$tablet-only} {
       margin-top: 15px;
@@ -52,15 +51,32 @@
 }
 
 .zuc-tos-table-row-head {
-  width: 5%;
   text-align: right;
+  width: 15%;
   margin-right: 3%;
+
+  @media #{$tablet-only} {
+    width: 12%;
+  }
+
+  @media #{$laptop-up} {
+    width: 10%;
+  }
 }
 
 .zuc-tos-table-row-body {
-  width: 92%;
+  width: 82%;
 
-  a,p {
+  @media #{$tablet-only} {
+    width: 85%;
+  }
+
+  @media #{$laptop-up} {
+    width: 87%;
+  }
+
+  a,
+  p {
     display: inline;
   }
 }
