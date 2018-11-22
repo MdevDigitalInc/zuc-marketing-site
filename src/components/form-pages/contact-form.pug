@@ -1,9 +1,9 @@
 - var subtitle = 'Need help? We make it easy.<br/>Contact us and let us help solve your problem.'
 section.zuc-section-container.--form-margin
-  h1.zuc-contact-title.u-zuc-indigo.u-font-serif
-      |Contact Us
   .zuc-split.flex.flex-row
     .zuc-split-l.flex.flex-column
+      h1.zuc-contact-title.u-zuc-indigo.u-font-serif
+        |Contact Us
       .zuc-contact-blurb-container
         p.u-zuc-darkindigo
           |!{subtitle}
@@ -21,9 +21,9 @@ section.zuc-section-container.--form-margin
         +ecom-header-underlined('Make an inquiry')
         form(action="")
             .zuc-form-group
-              .zuc-input-name.zuc-input-name-no-margin
+              .zuc-input-name
                 strong
-                  |FIRST &amp; LAST NAME
+                  |First &amp; Last Name
               label.u-screenreader(for="field-name")
                 |First &amp; Last Name
               input(type="text" data-required name="fullname" placeholder="John Smith" id="field-name")
