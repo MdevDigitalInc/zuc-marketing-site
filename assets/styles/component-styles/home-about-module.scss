@@ -55,6 +55,11 @@
   z-index: 2;
   overflow: hidden; // Maybe
   width: 100%;
+  background-image: url('../../assets/images/shared/laughing-family.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 
   @media #{$laptop-up} {
     width: 40%;
@@ -125,7 +130,7 @@
       margin-right: 0;
     }
   }
-  
+
   @media #{$tablet-only} {
     width: 20%;
     margin-right: 10%;
