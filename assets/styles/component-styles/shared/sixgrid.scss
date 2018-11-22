@@ -23,6 +23,10 @@ section.zuc-sixgrid-container {
     background: $color-zuc-platinum;
   }
 
+  &.--slp-6grid {
+    padding-bottom: 0;
+  }
+  
   .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     font-weight: 100;
