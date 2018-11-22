@@ -1,5 +1,13 @@
 extends _layout
 
+block append head
+  title Zucora Home | TODO-SEO
+
+  // [ SEO ]
+  meta( name='keywords' 							content='TODO-SEO')
+  meta( name='description' 						content='TODO-SEO')
+
+
 block content
   // - Orders Form
   include ../components/form-pages/orders-content.pug

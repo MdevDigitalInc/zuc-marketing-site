@@ -1,7 +1,15 @@
 extends _layout
 
+block append head
+  title Zucora Home | TODO-SEO
+
+  // [ SEO ]
+  meta( name='keywords' 							content='TODO-SEO')
+  meta( name='description' 						content='TODO-SEO')
+
+
 block content
-  
+
   .zuc-tos-page
     +zuc-header('Zucora Home – E-Commerce Terms of Service')
     // Overview Section -----------------------------------------------------<
@@ -579,7 +587,7 @@ block content
             |20.1
         .zuc-tos-table-row-body
           p
-            |Questions about the Terms of Service should be sent to us at 
+            |Questions about the Terms of Service should be sent to us at
           a(href="mailto:info@zucora.com")
             |info@zucora.com
           span
