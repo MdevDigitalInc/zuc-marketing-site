@@ -103,7 +103,7 @@
   .--zu-hero {
 
     @media #{$phone-only} {
-     padding-top: 25.5vw;
+      padding-top: 25.5vw;
     }
 
     @media #{$tablet-only} {
@@ -119,11 +119,11 @@
     }
     
     p {
-      line-height: 1.30;
+      line-height: 1.3;
     }
   }
 
-   .product-image {
+  .product-image {
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -156,9 +156,8 @@
     @media #{$tablet-lnd-only} {
       bottom: vw-tablet(15);
     }
-
-    @media #{$laptop-only} {
-    }
+    // @media #{$laptop-only} {
+    // }
   }
 
   /*************************************************
@@ -180,7 +179,6 @@
     }
     @media #{$tablet-only} {
       background-size: 100%;
-      
     }
   }
 

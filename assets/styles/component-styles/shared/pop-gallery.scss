@@ -7,6 +7,9 @@
   padding: 0 5% 13vw;
 
   @media #{$tablet-up} {
+    padding: 0 9% 10vw;
+  }
+  @media #{$laptop-up} {
     padding: 0 9% 5vw;
   }
 }
@@ -48,21 +51,21 @@
     color: $color-zuc-lilac;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 4.375vw;
+    font-size: 7px;
     padding: 6vw 0 3.5vw;
 
     @media #{$tablet-only} {
-      font-size: 1.82vw;
+      font-size: 14px;
       padding: 2.6vw 0 1.3vw;
     }
 
     @media #{$laptop-only} {
-      font-size: .8vw;
+      font-size: 14px;
       padding: 1.45vw 0 .8vw;
     }
 
     @media #{$desktop-up} {
-      font-size: .7vw;
+      font-size: 14px;
       padding: 1.4vw 0 .7vw;
     }
   }
@@ -71,18 +74,10 @@
     color: $color-zuc-darkindigo;
     font-family: $main-font-serif;
     font-weight: 300;
-    font-size: 7vw;
+    font-size: 14.5px;
 
-    @media #{$tablet-only} {
-      font-size: 3.9vw;
-    }
-
-    @media #{$laptop-only} {
-      font-size: 1.65vw;
-    }
-
-    @media #{$desktop-up} {
-      font-size: 1.5vw;
+    @media #{$tablet-up} {
+      font-size: 30px;
     }
   }
 }
