@@ -51,8 +51,22 @@ section.zuc-dual-video {
       }
     }
 
-    video {
+    video,
+    iframe {
+
       width: 100%;
+      height: vw-phone(185);
+      
+      @media #{$tablet-only} {
+        margin-left: 5%;
+        width: 90%;
+        height: vw-tablet(325);
+      }
+
+      @media #{$laptop-up} {
+        width: 100%;
+        height: vw-desktop(400);
+      }
     }
   }
 }
