@@ -17,11 +17,11 @@
 
   &:after {
     @include pseudo();
-    background: url('../images/shapes/wave-bottom.svg');
+    background-image: url('../images/shapes/wave-bottom.svg');
     //background-image: url('./images/shapes/hero-wave-shape.svg');
     // Another asinine percentage for webkit.
     background-size: 100%;
-    top: -2px;
+    top: -3px;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: calc(251 / 1839 * 100%);
@@ -50,6 +50,7 @@
       left: 7.5%;
       padding: 18vw 3vw 2vw;
     }
+
     @media #{$phone-only} {
       width: 100%;
       left: 0;
@@ -83,6 +84,12 @@
     }
     @media #{$tablet-only} {
       display: none;
+    }
+  }
+
+  &.--grey-top {
+    &:after {
+      background-image: url('../images/shapes/wave-bottom-grey.svg');
     }
   }
 }

@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: -80px 0 ( 133 / 3.2 ) * 1vw;
+  margin: 0 0 ( 133 / 3.2 ) * 1vw;
 
   @media #{$tablet-only} {
-    margin: -100px 7vw ( 179 / 7.68 ) * 1vw;
+    margin: 0 7vw ( 179 / 7.68 ) * 1vw;
   }
 
   @media #{$laptop-up} {

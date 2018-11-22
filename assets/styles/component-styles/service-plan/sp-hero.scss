@@ -15,7 +15,7 @@
     height: auto;
   }
   @media #{$laptop-only} {
-    height: 65vh;
+    height: 75vh;
   }
 }
 
@@ -42,8 +42,13 @@
 
   @media #{$laptop-up} {
     width: 30%;
-    top: 7vw;
+    top: 6vw;
     left: 14vw;
+  }
+
+  @media #{$laptop-only} {
+    top: 4vw;
+    width: 42%;
   }
 
   .zuc-service-plan-hero--heading {
@@ -103,6 +108,10 @@
       top: -19vw;
       left: 0;
       z-index: 0;
+    }
+
+    @media #{$laptop-only} {
+      width: 92vw;
     }
   }
 
