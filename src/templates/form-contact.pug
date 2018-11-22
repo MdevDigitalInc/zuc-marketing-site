@@ -1,5 +1,12 @@
 extends _layout
 
+block append head
+  title Zucora Home | TODO-SEO
+
+  // [ SEO ]
+  meta( name='keywords' 							content='TODO-SEO')
+  meta( name='description' 						content='TODO-SEO')
+
 block content
   // - Contact Form
   include ../components/form-pages/contact-form.pug

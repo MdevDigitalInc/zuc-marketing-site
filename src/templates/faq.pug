@@ -1,5 +1,12 @@
 extends _layout
 
+block append head
+  title Zucora Home | TODO-SEO
+
+  // [ SEO ]
+  meta( name='keywords' 							content='TODO-SEO')
+  meta( name='description' 						content='TODO-SEO')
+
 block content
   // - FAQ Content
   include ../components/static/faq-content.pug
