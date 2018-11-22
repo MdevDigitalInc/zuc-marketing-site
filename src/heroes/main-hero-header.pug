@@ -4,13 +4,13 @@ section.zuc-hero-header-mask
     // Video or Image ( Image can also be added as BKG to above container )
     video(
       class="zuc-hero-video"
-      poster="https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg"
-      style="background-image: url('https://thumbs.gfycat.com/ClearFreshGossamerwingedbutterfly-poster.jpg'); background-size: cover;"
+      poster="https://i.vimeocdn.com/video/741021302.jpg"
+      style="background-image: url('https://i.vimeocdn.com/video/741021302.jpg'); background-size: cover;"
       preload="auto" autoplay muted loop )
 
       //- At least two sources plz
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.webm" type="video/webm")
-      source(src="https://giant.gfycat.com/ClearFreshGossamerwingedbutterfly.mp4" type="video/mp4")
+      source(src="https://player.vimeo.com/external/302275660.hd.mp4?s=1c249c15c125da57623f36d46bc960cbc1f409d2&profile_id=175" type="video/mp4")
+      source(src="https://player.vimeo.com/external/302275660.hd.mp4?s=1c249c15c125da57623f36d46bc960cbc1f409d2&profile_id=165" type="video/mp4")
 
   // Header Shield
   .zuc-shield.zuc-icon--primary
@@ -21,7 +21,9 @@ section.zuc-hero-header-mask
       .zuc-shield-subtitle.u-uppercase
         |Convenient. Intelligent. Innovative.
 
-      a(class="zuc-btn zuc-btn-secondary" href="smarter-living.html#smarter-video" title="Smarter Living")
+      a(class="zuc-btn zuc-btn-secondary" href="javascript:void(0)" title="Smarter Living" onclick="toggleModal('[data-smarter-video]')")
         |Watch Video
   .u-screenreader(id="header-caption")
     |BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO
+
+include ../modals/modal-smarter-video.pug
