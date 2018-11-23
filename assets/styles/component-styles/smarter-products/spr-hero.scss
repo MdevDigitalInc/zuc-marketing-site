@@ -20,6 +20,7 @@
 
   @media #{$laptop-up} {
     height: 80vh;
+    min-height: 760px;
   }
 
   .zuc-spr-hero-content {
@@ -117,7 +118,7 @@
     @media #{$tablet-lnd-only} {
       padding: 7vw 8vw 0;
     }
-    
+
     p {
       line-height: 1.3;
     }
@@ -148,7 +149,7 @@
   }
 
   .--zu-product {
-   
+
     @media #{$tablet-only} {
       bottom: 5%;
     }
@@ -174,7 +175,7 @@
       background-position-x: 83%;
     }
 
-    
+
     @media #{$tablet-only} {
       background-size: 250%;
       background-position-y: 25%;

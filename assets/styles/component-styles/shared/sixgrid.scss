@@ -83,15 +83,6 @@ section.zuc-sixgrid-container {
     @media #{$portrait} {
       margin-bottom: 1vh;
     }
-
-    @media #{$phone-only} {
-      // A little bit hacky but works.
-      // Makes titles take up space a little nicer
-      // on mobile. - LM
-      br {
-        display: none;
-      }
-    }
   }
 
   p {
