@@ -6,7 +6,7 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     a(href="index.html" title="Zucora Home")
       img(src="../../assets/images/ZucoraHome-brand-white.svg" alt="Zucora Home")
     // Primary CTA Button
-    a(class='zuc-btn zuc-btn-primary' href='form-request-service.html' title='Service Request')
+    a(class='zuc-btn zuc-btn-primary' href='form-service-request.html' title='Service Request')
       |Service Request
 
   // Accordion Nav ----------------------------------------
@@ -15,12 +15,12 @@ div(class="zuc-mobile-nav" data-mobile-menu)
     //About Links --------------------------------
     div(class="zuc-accordion-item" data-accordion-item)
       .zuc-accordion-title
-        |Our Story
+        |About Us
         i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
         a(class="zuc-accordion-link" href='our-story.html' title='About Zucora Home' aria-role='menuitem')
-          |About Us
+          |Our Story
         a(class="zuc-accordion-link" href='form-contact-us.html' title='Contact us' aria-role='menuitem')
           |Contact Us
         a(class="zuc-accordion-link" href='our-story.html' title='Our team' aria-role='menuitem')
@@ -40,7 +40,8 @@ div(class="zuc-mobile-nav" data-mobile-menu)
           |Discover Smarter Living
         a(href='smarter-living-membership-benefits.html' title='What is Smarter living.' aria-role='menuitem')
           |Smarter Living Benefits
-        a(href='smarter-home-products.html' title='What smarter living can do for you.' aria-role='menuitem')
+        //- Disabled for launch
+        //-a(href='smarter-home-products.html' title='What smarter living can do for you.' aria-role='menuitem')
           |Smarter Living Matters
         a(href='smarter-home-control.html' title='Smart Home Products' aria-role='menuitem')
           |Smarter Home Control
@@ -68,14 +69,14 @@ div(class="zuc-mobile-nav" data-mobile-menu)
         i.zuc-accordion-arrow.fas.fa-angle-right
       // Hidden Content
       div(class="zuc-accordion-hidden" aria-hidden="true")
-        a(class="zuc-accordion-link" href='#' title='Learn about our approach to home wellness' aria-role='menuitem')
-          |Why wellness matters
+        a(class="zuc-accordion-link" href='smarter-home-products.html' title='Learn about our approach to home wellness' aria-role='menuitem')
+          |Home wellness solutions
         a(class="zuc-accordion-link" href='zu-collection.html' title='View our line of home care products' aria-role='menuitem')
           |ZU Collection
         a(class="zuc-accordion-link" href='purecare.html' title='View our line of sleep wellness products' aria-role='menuitem')
           |PureCare
-        a(class="zuc-accordion-link" href='home-care-kits.html' title='Learn more about our home wellness care kits' aria-role='menuitem')
-          |Furniture Care Kits
+        a(class="zuc-accordion-link" href='furniture-care.html' title='Learn more about our home wellness care kits' aria-role='menuitem')
+          |Furniture Care
         a(class="zuc-accordion-link" href='smarter-home-products.html' title='View our whole line of offerings' aria-role='menuitem')
           |Shop all products
 

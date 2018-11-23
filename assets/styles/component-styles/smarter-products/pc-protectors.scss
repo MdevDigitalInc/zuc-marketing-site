@@ -12,31 +12,37 @@ section.zuc-protectors {
   @media #{$laptop-up} {
     padding: ( 162 / 19.2 ) * 1vw 16vw ( 76 / 19.2 ) * 1vw;
   }
+
+  @media #{$portrait} {
+    margin-bottom: 7vw;
+  }
 }
 
 .zuc-protectors-graphics {
   width: 100%;
+  background-image: url('../../assets/images/shapes/comfort-blob.svg');
+  overflow: hidden;
+  position: absolute;
+  padding-top: 60%;
+  @include center(both);
+  top: 40%;
+  z-index: -55;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 
-  img {
-    z-index: -50;
-    position: absolute;
-    width: 450%;
-    top: ( 40 / 3.2 ) * 1vw;
-    right: -10%;
+  @media #{$portrait} {
+    background-size: 300%;
+    padding-top: 165%;
+    background-position-x: 99%;
+    background-position-y: center;
+    top: 55%;
+  }
 
-    @media #{$tablet-only} {
-      width: 200%;
-      top: 35vw;
-      left: -99%;
-      right: 0;
-    }
-
-    @media #{$laptop-up} {
-      width: 100%;
-      top: -( 206 / 19.2 ) * 1vw;
-      left: 0;
-      right: 0;
-    }
+  @media #{$phone-only} {
+    padding-top: 205%;
+    background-size: 370%;
+    top: 63%;
   }
 }
 

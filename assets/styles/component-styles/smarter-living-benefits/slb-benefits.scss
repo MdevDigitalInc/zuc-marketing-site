@@ -2,17 +2,14 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 28.125vw;
   padding: 13.75vw 0 9vw;
 
   @media #{$tablet-only} {
-    margin-bottom: 19.79vw;
     padding: 13.15vw 0 9vw;
   }
   @media #{$laptop-up} {
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 10.66vw;
     padding: 5vw 0 14vw;
   }
   @media #{$desktop-up} {
@@ -32,7 +29,7 @@
     }
     @media #{$laptop-up} {
       width: 33.3%;
-      height: auto;
+      height: 500px;
     }
   }
 
@@ -46,7 +43,7 @@
       padding: 5.85vw 16.66vw 5.85vw 7.55vw;
     }
     @media #{$laptop-up} {
-      width: 25%;
+      width: 20%;
       padding: 2.72vw 2.47vw 3.78vw 1.96vw;
     }
 
@@ -65,7 +62,7 @@
   .zuc-info-box {
     background: $color-pure-white;
     width: 100%;
-    padding: 21.87vw 18.43vw 0 5vw;
+    padding: 12vw 4vw 4vw 10vw;
 
     @media #{$tablet-only} {
       padding: 6.38vw 8.59vw 0 7.16vw;
@@ -74,10 +71,14 @@
       width: 40%;
       padding: 2.77vw 2.72vw 0 2.47vw;
     }
+    @media #{$desktop-up} {
+      width: 25%;
+    }
 
     .--list-margin {
       margin-bottom: 5vh;
       padding-bottom: 5vh;
+      margin-top: 30px;
     }
   }
 
@@ -91,15 +92,16 @@
       bottom: vw-desktop(25);
       transform: translateX(50%);
     }
-    @media #{$tablet-only} {
+    @media #{$tablet-lnd-only} {
       transform: scale(.25);
       left: 45%;
       bottom: -40px;
     }
-    @media #{$phone-only} {
-      bottom: 0%;
+    @media #{$portrait} {
+      bottom: 0;
       transform: scale(.25);
-      left: 40%;
+      right: 0;
+      display: none;
     }
   }
 

@@ -200,6 +200,7 @@
 
       &:hover {
         color: $color-zuc-lilac;
+        text-decoration: underline;
       }
     }
 
@@ -389,4 +390,8 @@ footer .zuc-footer-row {
   @media #{$phone-only} {
     display: none;
   }
+}
+
+.zuc-footer-wrapper {
+  margin-top: 7vw;
 }

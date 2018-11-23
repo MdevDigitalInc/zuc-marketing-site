@@ -2,7 +2,7 @@ section.zuc-about-hero {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-position: center;
+  background-position: center -26vh;
   background-size: cover;
   height: 90vh;
   margin: 0 0 30vh;
@@ -18,7 +18,7 @@ section.zuc-about-hero {
   z-index: 5;
   background: $color-pure-white;
   box-shadow: 0 2px 68px 0 rgba(12, 12, 12, .2);
-  top: 13vh;
+  top: 5vh;
   margin: 0;
   padding: vw-phone(39) vw-phone(19) vw-phone(49) vw-phone(14);
 
@@ -29,12 +29,13 @@ section.zuc-about-hero {
 
   @media #{$laptop-up} {
     margin: 0 16vw;
-    padding: vw-desktop(52) vw-desktop(88) vw-desktop(50) vw-desktop(80);
+    padding: vw-desktop(32) vw-desktop(88) vw-desktop(55) vw-desktop(80);
   }
 
   h1 {
     color: $color-zuc-indigo;
     font-family: $main-font-serif;
+    margin-bottom: 30px;
   }
 
   p {
@@ -52,7 +53,7 @@ section.zuc-about-hero {
       top: vw-tablet(38);
       right: vw-tablet(34);
     }
-  
+
     @media #{$laptop-up} {
       width: vw-desktop(185);
       top: vw-desktop(32);

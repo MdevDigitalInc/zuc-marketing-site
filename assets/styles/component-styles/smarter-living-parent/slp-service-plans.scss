@@ -156,11 +156,12 @@
       height: 25vw;
     }
     @media #{$desktop-up} {
-      height: 22.4vw;
+      height: 20vw;
     }
 
     h3 {
       padding: 0 3vw 1vw;
+      line-height: 1.1;
     }
   }
 
@@ -196,7 +197,7 @@
       height: 25vw;
     }
     @media #{$desktop-up} {
-      height: 22.4vw;
+      height: 20vw;
     }
   }
 }

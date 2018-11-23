@@ -1,6 +1,6 @@
 .spkids-video {
   position: relative;
-  padding-bottom: 51.25vw;
+  padding-bottom: 21.25vw;
 
   @media #{$tablet-only} {
     padding-bottom: 26.95vw;
@@ -14,11 +14,11 @@
     position: absolute;
     right: -1px;
     top: -19.69vw;
-    width: 80vw;
+    width: 70vw;
 
     @media #{$tablet-only} {
-      top: -11.46vw;
-      width: 55vw;
+      top: -9.46vw;
+      width: 50vw;
     }
 
     @media #{$laptop-up} {
@@ -53,12 +53,12 @@
   padding: 8.75vw 20.94vw 8.75vw 4.69vw;
 
   @media #{$tablet-only} {
-    padding: 9.24vw 17.97vw 6.51vw 6vw;
+    padding: 9.24vw 22.97vw 6.51vw 6vw;
   }
 
   @media #{$laptop-up} {
     width: 30%;
-    padding: 3.48vw 5.1vw 4.29vw 2.53vw;
+    padding: 3.48vw 4.1vw 4.29vw 2.53vw;
   }
 
   p {

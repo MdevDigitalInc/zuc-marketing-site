@@ -1,10 +1,10 @@
-section.zuc-orders-section.zuc-section-container.--hstyle.--pre
-  h1
-    |Orders &amp; Returns
-  .zuc-orders-pre
-    .zuc-head-blurb
-      p
-        |Please submit the information requested below and a Solutions Team member will be in touch with details about your order.
+section.zuc-orders-section
+  .zuc-orders-form
+    +zuc-header('Orders & Returns')
+    br
+    br
+    p
+      |Please submit the information requested below and a Solutions Team member will be in touch with details about your order.
     .zuc-forms-container.flex.flex-column
       form.flex.flex-column(action="")
         .zuc-form-row
@@ -56,8 +56,3 @@ section.zuc-orders-section.zuc-section-container.--hstyle.--pre
           button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
             strong
               span SUBMIT
-  .zuc-orders-post
-    .zuc-head-blurb
-      p
-        |Thank You! Your form was successfully sent... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nisi sed neque egestas, quis sagittis ligula laoreet. Mauris porta arcu at quam vulputate vestibulum.
-    include orders-panelinks.pug

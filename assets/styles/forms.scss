@@ -48,13 +48,13 @@ input {
       padding: 0 vw-tablet(20);
       font-size: vw-tablet(18);
     }
-  
+
     @media #{$laptop-up} {
       margin: vw-laptop(8) 0 0;
       padding: 0 vw-laptop(20);
       font-size: vw-laptop(18);
     }
-  
+
     @media #{$desktop-up} {
       margin: vw-desktop(8) 0 0;
       padding: 0 vw-desktop(20);
@@ -83,6 +83,7 @@ textarea {
   color: $form-text-color;
   font-family: $main-font;
   font-weight: 100;
+  min-height: 150px;
   margin: vw-phone(7) 0 vw-phone(7);
   padding: vw-phone(10) vw-phone(15);
   font-size: vw-phone(14);
@@ -142,18 +143,18 @@ textarea {
 }
 
 .zuc-form-action {
-  margin: vw-phone(50) 0 0;
+  margin: vw-phone(20) 0 0;
 
   @media #{$tablet-up} {
-    margin: vw-tablet(40) 0 0;
+    margin: vw-tablet(20) 0 0;
   }
 
   @media #{$laptop-up} {
-    margin: vw-laptop(50) 0 0;
+    margin: vw-laptop(30) 0 0;
   }
 
   @media #{$desktop-up} {
-    margin: vw-desktop(50) 0 0;
+    margin: vw-desktop(30) 0 0;
   }
 
   > button {
@@ -200,6 +201,13 @@ textarea {
             <your-3rd-form-group>
 
 */
+
+.zuc-forms-container {
+
+  &.--service {
+    margin-top: 30px;
+  }
+}
 
 .zuc-form-row {
   display: flex;
@@ -417,11 +425,11 @@ textarea {
         @media #{$tablet-up} {
           font-size: vw-tablet(18);
         }
-      
+
         @media #{$laptop-up} {
           font-size: vw-laptop(18);
         }
-      
+
         @media #{$desktop-up} {
           font-size: vw-desktop(18);
         }
@@ -488,4 +496,8 @@ li {
     height: 46px;
     background: $color-pure-white;
   }
+}
+
+.--form-margin {
+  margin-bottom: 8vw;
 }

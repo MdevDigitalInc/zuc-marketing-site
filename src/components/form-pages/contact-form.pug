@@ -1,9 +1,9 @@
 - var subtitle = 'Need help? We make it easy.<br/>Contact us and let us help solve your problem.'
-section.zuc-section-container
-  h1.zuc-contact-title.u-zuc-indigo.u-font-serif
-      |Contact Us
+section.zuc-section-container.--form-margin
   .zuc-split.flex.flex-row
     .zuc-split-l.flex.flex-column
+      h1.zuc-contact-title.u-zuc-indigo.u-font-serif
+        |Contact Us
       .zuc-contact-blurb-container
         p.u-zuc-darkindigo
           |!{subtitle}
@@ -11,16 +11,19 @@ section.zuc-section-container
           |1.800.388.2640
         p.u-zuc-indigo
           |552 Clark Road, London ON N5V 3K5
+        a.u-zuc-indigo(href="mailto:info@zucorahome.com" title="Make an Inquiry")
+          |info@zucorahome.com
       .zuc-contact-image-container
-        img.zuc-contact-image.u-soft-shadow(src='../../assets/images/shared/happy-family-livingroom.png' alt='A happy family sitting in their living room')
-        img.zuc-contact-badge(src='../../assets/images/graphics/graphic_slash_coral.svg' alt='Four coral colored diagonal lines')
+        img.zuc-contact-image.u-soft-shadow(src='../../assets/images/contact/dad-daughter-playing.png' alt='A happy family sitting in their living room')
+        img.zuc-contact-badge(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='Four coral colored diagonal lines')
     .zuc-split-r
       .zuc-contact-forms-container.flex.flex-column
+        +ecom-header-underlined('Make an inquiry')
         form(action="")
             .zuc-form-group
-              .zuc-input-name.zuc-input-name-no-margin
+              .zuc-input-name
                 strong
-                  |FIRST &amp; LAST NAME
+                  |First &amp; Last Name
               label.u-screenreader(for="field-name")
                 |First &amp; Last Name
               input(type="text" data-required name="fullname" placeholder="John Smith" id="field-name")
@@ -44,7 +47,7 @@ section.zuc-section-container
                   |Message
               label.u-screenreader(for="field-message")
                 |Message
-              input(type="text" data-required name="message" placeholder="Your Message Here" id="field-message")
+              textarea(data-required name="message" placeholder="Your message here" id="field-message")
             .zuc-form-action
               button.zuc-btn.zuc-btn-secondary.zuc-btn-xpad.u-soft-shadow(type="submit")
                 strong

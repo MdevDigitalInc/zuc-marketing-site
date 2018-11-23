@@ -12,8 +12,10 @@
 section.zuc-tri-module {
   position: relative;
   overflow: hidden;
+  z-index: 2;
   flex-direction: row;
   padding: ( 157 / 3.2 ) * 1vw 0 0;
+  margin-bottom: -7vw;
 
   @media #{$tablet-only} {
     padding: ( 176 / 7.68 ) * 1vw 0 0;
@@ -46,6 +48,7 @@ section.zuc-tri-module {
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 3;
 
   @media #{$laptop-up} {
     width: 33.3%;
@@ -79,8 +82,11 @@ section.zuc-tri-module {
   background-color: $color-zuc-platinum;
   padding: 0 5vw 20vw;
 
+  @media #{$phone-only} {
+    padding: 0 16vw;
+  }
   @media #{$tablet-only} {
-    padding: 0 16vw 11.7vw;
+    padding: 0 16vw 2vw;
   }
   @media #{$laptop-up} {
     background-color: inherit;
@@ -126,10 +132,10 @@ section.zuc-tri-module {
 .zuc-review-stars {
 
   // This is to get around Chrome rendering
-  max-height: 27px;
+  max-height: 35px;
 
   .zuc-star {
-    width: 27px;
+    width: 35px;
 
     &:not( :last-child ) {
       margin-right: 6px;
@@ -326,7 +332,11 @@ section.zuc-tri-module {
   // Padding off-set to align with --review-box, which has a 43px img
   h2 {
     padding-top: 43px;
-    margin-bottom: 1vw;
+    margin-bottom: 0;
+
+    @media #{$laptop-up} {
+      margin-bottom: 1vw;
+    }
   }
 }
 
@@ -349,7 +359,7 @@ section.zuc-tri-module {
     align-items: center;
 
     h6 {
-      color: $color-zuc-darkindigo;
+      color: $color-zuc-indigo;
       font-weight: 600;
       text-align: center;
       line-height: 1.5;
@@ -360,6 +370,10 @@ section.zuc-tri-module {
       }
       @media #{$laptop-up} {
         padding-top: .76vw;
+      }
+
+      @media #{$phone-only} {
+        font-size: 3vw;
       }
     }
 

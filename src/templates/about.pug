@@ -1,10 +1,21 @@
 extends _layout
 
+block append head
+  title Zucora Home | About Zucora Home
+
+  // [ SEO ]
+  meta( name='description' 						content='Canada\'s Smarter Living, Zucora Home, offers enviromentally friendly products and service solutions for busy families and digitally connected homes.')
+
+
 block content
   //- Hero Section
   include ../heroes/about-hero.pug
 
-  //- Inevitable Middle Content
+  //- Our Story 3Grid
+  include ../components/about/about-3grid.pug
+
+  //- Feature Module
+  include ../components/about/about-featured.pug
 
   //- Team Grid Section
   include ../components/about/about-teamgrid.pug

@@ -16,7 +16,7 @@
     top: 4vw;
 
     @media #{$laptop-only} {
-      width: 35%;
+      width: 25%;
     }
 
     @media #{$portrait} {
@@ -67,6 +67,7 @@
   width: 37vw;
   margin-top: 3vw;
   margin-bottom: 6vw;
+  background: transparent;
 
   @media #{$tablet-up} {
     width: 24vw;
@@ -95,30 +96,37 @@
   // Color Modifiers
   &.--zb-lilac {
     border-color: $color-zuc-lilac;
+    background: $color-zuc-lilac;
   }
 
   &.--zb-indigo {
     border-color: $color-zuc-indigo;
+    background: $color-zuc-indigo;
   }
 
   &.--zb-darkindigo {
     border-color: $color-zuc-darkindigo;
+    background: $color-zuc-darkindigo;
   }
 
   &.--zb-mint {
     border-color: $color-zuc-mint;
+    background: $color-zuc-mint;
   }
 
   &.--zb-salmon {
     border-color: $color-zuc-salmon;
+    background: $color-zuc-salmon;
   }
 
   &.--zb-platinum {
     border-color: $color-zuc-platinum;
+    background: $color-zuc-platinum;
   }
 
   &.--zb-concrete {
     border-color: $color-zuc-concrete;
+    background: $color-zuc-concrete;
   }
 }
 
@@ -132,7 +140,79 @@
     @media #{$laptop-up} {
       display: inline;
       position: absolute;
-      transform: scale(.4) translate3d( 40%, -90%, 0);
+      transform: scale(.3) translate3d( 140%, -160%, 0);
+    }
+    @media #{$desktop-up} {
+      display: inline;
+      position: absolute;
+      transform: scale(.3) translate3d( 40%, -160%, 0);
     }
   }
 }
+
+// BOTTOM -TOP Background Wave
+//
+// This is pretty much universal, can be applied to any div
+// Will take up 100% of the parent and present a wave.
+//
+// Wave can be set to TOP or BOTTOM with .--top | .--bottom
+//
+// 3 Wave variations, more can easily be added.
+
+.d-bkg-wave {
+  position: relative;
+
+  // Same for all instances
+  &:after {
+    // Creates pseudo element to contain the wave bkg
+    @include pseudo();
+    width: 106%;
+    padding-top: 11%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: 0;
+    z-index: 1;
+  }
+
+  // Glue to bottom and hide seam
+  &.--bottom {
+    &:after {
+      bottom: -2px;
+    }
+  }
+
+  // Glue to top and hide seam
+  &.--top {
+    &:after {
+      top: -2px;
+    }
+  }
+
+  // Makes BKG of parent grey + white wave
+  // Used on SPKIDS Header
+  &.--grey-bkg {
+    background-color: #f7f7f7;
+
+    &:after {
+      background-image: url('../../assets/images/shapes/wave-top.svg');
+    }
+  }
+
+  // Makes background transparent -About page
+  &.--transparent-bkg {
+    background-color: transparent;
+
+    &:after {
+      background-image: url('../../assets/images/shapes/wave-top.svg');
+    }
+  }
+
+  // Subs standard wave for grey wave -About page
+  &.--grey-wave {
+    &:after {
+      background-image: url('../../assets/images/shapes/wave-top-grey.svg');
+    }
+  }
+}
+
+

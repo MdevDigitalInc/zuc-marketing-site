@@ -8,10 +8,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 85vh;
+  height: 80vh;
 
   @media #{$tablet-only} {
-    height: 95vh;
+    height: 85vh;
   }
 
   @media #{$tablet-lnd-only} {
@@ -19,7 +19,8 @@
   }
 
   @media #{$laptop-up} {
-    height: 90vh;
+    height: 80vh;
+    min-height: 760px;
   }
 
   .zuc-spr-hero-content {
@@ -65,11 +66,27 @@
       }
     }
 
+    h1 {
+      color: $color-pure-white;
+      font-family: $main-font-serif;
+      text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
+      font-weight: 100;
+      font-size: vw-phone(34);
+
+      @media #{$tablet-only} {
+        font-size: vw-tablet(60);
+      }
+
+      @media #{$laptop-up} {
+        font-size: vw-desktop(60);
+      }
+    }
+
     p {
       color: $color-pure-white;
       text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
-      font-weight: 300;
-      margin: 0 0 vw-phone(50);
+      font-weight: 100;
+      margin: 0 0 vw-phone(25);
       font-size: vw-phone(14);
 
       @media #{$tablet-only} {
@@ -81,6 +98,29 @@
         margin: 0 0 vw-desktop(30);
         font-size: vw-desktop(30);
       }
+    }
+  }
+
+  .--zu-hero {
+
+    @media #{$phone-only} {
+      padding-top: 25.5vw;
+    }
+
+    @media #{$tablet-only} {
+      padding: 10.5vw 8vw 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding: 7vw 8vw 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding: 7vw 8vw 0;
+    }
+
+    p {
+      line-height: 1.3;
     }
   }
 
@@ -108,6 +148,13 @@
     }
   }
 
+  .--zu-product {
+
+    @media #{$tablet-only} {
+      bottom: 5%;
+    }
+  }
+
   /*************************************************
 
     Hero Background Styles
@@ -122,6 +169,22 @@
 
   &.--zu {
     background-image: url('../../assets/images/smarter-products/hero-family-kitchen.png');
+    @media #{$phone-only} {
+      background-size: 400%;
+      background-position-y: 40%;
+      background-position-x: 83%;
+    }
+
+
+    @media #{$tablet-only} {
+      background-size: 250%;
+      background-position-y: 25%;
+      background-position-x: 79%;
+    }
+
+    @media #{$laptop-up} {
+      background-position-y: -85px;
+    }
   }
 
   &.--hk {

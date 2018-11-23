@@ -1,35 +1,34 @@
 .zuc-service-form {
-  margin: vw-phone(100) 5vw vw-phone(40);
-
-  @media #{$tablet-up} {
-    margin: vw-tablet(150) 7vw vw-tablet(100);
-  }
+  width: 90%;
+  margin: 15vh auto 0;
 
   @media #{$laptop-up} {
-    margin: vw-laptop(225) 16vw vw-laptop(125);
+    margin: 20vh auto 0;
+    width: 70%;
   }
 
   @media #{$desktop-up} {
-    margin: vw-desktop(225) 16vw vw-desktop(125);
+    margin: 20vh auto 0;
+    width: 60%;
   }
 
   .zuc-service-form-blurb {
-    margin: vw-phone(25) 0 vw-phone(40);
+    margin: vw-phone(25) 0 vw-phone(10);
     font-size: vw-phone(14);
     font-weight: 100;
 
     @media #{$tablet-up} {
-      margin: vw-tablet(25) 0 vw-tablet(60);
+      margin: vw-tablet(25) 0 vw-tablet(10);
       font-size: vw-tablet(18);
     }
-  
+
     @media #{$laptop-up} {
-      margin: vw-laptop(25) 0 vw-laptop(60);
+      margin: vw-laptop(25) 0 vw-laptop(10);
       font-size: vw-laptop(18);
     }
-  
+
     @media #{$desktop-up} {
-      margin: vw-desktop(25) 0 vw-desktop(60);
+      margin: vw-desktop(25) 0 vw-desktop(10);
       font-size: vw-desktop(18);
     }
 

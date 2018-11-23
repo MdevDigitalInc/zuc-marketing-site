@@ -5,32 +5,39 @@
 section.zuc-sixgrid-container {
   position: relative;
   overflow: hidden;
-  padding: 5vh 5vw vw-phone(100);
+  padding: 5vh 5vw 0;
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-up} {
-    padding: 0 7vw vw-tablet(200);
+    padding: 0 7vw;
   }
+
   @media #{$laptop-only} {
-    padding: 0 20vw vw-laptop(200);
+    padding: 0 20vw;
   }
+
   @media #{$desktop-up} {
-    padding: 0 24vw vw-desktop(200);
+    padding: 0 24vw;
   }
 
   &.--grey {
     background: $color-zuc-platinum;
   }
 
+  &.--slp-6grid {
+    padding-bottom: 0;
+  }
+
   .zuc-sixgrid-subtext {
     color: color-zuc-darkindigo;
     font-weight: 100;
-    padding: 0 0 18vw;
+    padding: 0 0 5vw;
 
     @media #{$tablet-only} {
-      padding: 0 0 8.6vw;
+      padding: 0;
     }
+
     @media #{$laptop-up} {
       padding: 0 0 3.84vw;
     }
@@ -44,6 +51,23 @@ section.zuc-sixgrid-container {
   h2 {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
+
+    @media #{$desktop-only} {
+      padding-right: 70px;
+      padding-top: 30px;
+    }
+  }
+
+  &.--bottom-pad {
+    padding-bottom: 10vw;
+
+    @media #{$portrait} {
+      padding-bottom: 25vw;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding-bottom: 20vw;
+    }
   }
 }
 
@@ -53,15 +77,9 @@ section.zuc-sixgrid-container {
   padding: 0 0 vw-phone(25);
 
   @media #{$tablet-up} {
-    width: 28%;
+    width: 30%;
     text-align: left;
     padding: 0 0 vw-desktop(45);
-  }
-  @media #{$tablet-prt-only} {
-    width: 45%;
-    text-align: left;
-    margin: vw-tablet(30) 0 0;
-    padding: 0 0 1.8vw;
   }
 
   h6 {
@@ -73,14 +91,6 @@ section.zuc-sixgrid-container {
 
     @media #{$portrait} {
       margin-bottom: 1vh;
-    }
-    @media #{$phone-only} {
-      // A little bit hacky but works.
-      // Makes titles take up space a little nicer
-      // on mobile. - LM
-      br {
-        display: none;
-      }
     }
   }
 
@@ -106,12 +116,15 @@ section.zuc-sixgrid-container {
     @media #{$tablet-only} {
       width: 35%;
     }
+
     @media #{$tablet-prt-only} {
       width: 40%;
     }
+
     @media #{$laptop-only} {
       width: 50%;
     }
+
     @media #{$desktop-up} {
       width: 40%;
     }

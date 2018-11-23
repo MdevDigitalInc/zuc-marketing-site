@@ -1,5 +1,6 @@
 section.zuc-pane-links {
   padding: 0 0 11vw;
+  margin-bottom: -7vw;
 
   @media #{$tablet-only} {
     padding: 0 6vw;
@@ -21,6 +22,7 @@ section.zuc-pane-links {
   background-position: center;
   width: 100%;
   height: 51.25vw;
+  transition: .2s;
 
   @media #{$tablet-up} {
     align-items: flex-start;
@@ -33,6 +35,13 @@ section.zuc-pane-links {
     height: 28.08vw;
   }
 
+  &:hover,
+  &:active,
+  &:focus {
+    z-index: 999;
+    transform: scale(1.025);
+  }
+
   /* Styles for pane titles */
   .zuc-pane-title {
     position: relative;
@@ -43,7 +52,6 @@ section.zuc-pane-links {
     align-items: center;
     text-transform: uppercase;
     color: $color-zuc-darkindigo;
-    font-weight: 500;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     transform-origin: 50%;
@@ -84,11 +92,11 @@ section.zuc-pane-links {
     }
 
     span {
-      font-weight: 500;
+      font-weight: 600;
       font-size: ( 12 / 3.2 ) * 1vw;
 
       @media #{$tablet-only} {
-        font-size: ( 16 / 7.68 ) * 1vw;
+        font-size: ( 20 / 7.68 ) * 1vw;
       }
 
       @media #{$laptop-up} {
@@ -163,8 +171,12 @@ section.zuc-pane-links {
 
 .zuc-pane-bumper {
   position: relative;
-  width: 100%;
-  padding: 3.69vw 1vw 0;
+  width: 50%;
+  padding: 10vw 0 5vw 8vw;
+
+  @media #{$tablet-only} {
+    padding: 5vw 1vw;
+  }
 
   @media #{$laptop-up} {
     width: 28%;
@@ -199,5 +211,19 @@ section.zuc-pane-links {
   // h4 override
   h4 {
     margin: 0;
+  }
+
+  a {
+    @media #{$phone-only} {
+      margin-top: 25px;
+    }
+
+    @media #{$tablet-only} {
+      margin-top: 15px;
+    }
+
+    @media #{$laptop-up} {
+      margin-top: 25px;
+    }
   }
 }

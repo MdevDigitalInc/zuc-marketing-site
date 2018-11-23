@@ -25,26 +25,17 @@
     ]
 
 section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
-  h1
-    |Frequently Asked Questions
-  .zuc-hotlinks-container
-    .zuc-hotlink-box-l.flex.flex-column
-      each val in faqTitles.length ? faqTitles : ['There are no values']
-        a(href='#' title="TODO")
-          |#{val}
-
-    .zuc-hotlink-box-r.flex.flex-column
-      each val in faqTitles2.length ? faqTitles2 : ['There are no values']
-        a(href='#' title="TODO")
-          |#{val}
 
   .zuc-topic-parent-container.flex.flex-column.flex-vert-start
+    +ecom-header-underlined('Frequently Asked Questions')
+    br
+    br
     .zuc-faq-topic-container
       h2
         |#{faqTitles[0]}
       p
         |!{faqAnswers[0]}
-      h4.u-uppercase
+      h4.u-uppercase.u-bold
         |Approximate Delivery Times to major Canadian Cities:
       p
         |2-5 business days - Ottawa, Toronto, Kitchener, London, Montreal<br/>4-7 business days Halifax, Saint John, Regina, Saskatoon<br/>5-8 business days Calgary, Edmonton, Vancouver<br/>6-9 business days St. John's, Victoria<br/>Please allow extra delivery days for additional distances from major city centres above. Zucora Home cannot guarantee package arrival dates and is not responsible for lost or stolen packages, but we will be more than happy to assist you as much as possible.<br/>Please contact us at orders@zucora.com if you have any concerns regarding your order.
@@ -66,20 +57,20 @@ section.zuc-section-container.--hstyle.flex.flex-column.flex-vert-center
         |#{faqAnswers[3]}
     .zuc-faq-topic-container
       h2
-        |#{faqTitles[4]}
+        |#{faqTitles2[0]}
       p
         |#{faqAnswers[4]}
     .zuc-faq-topic-container
       h2
-        |#{faqTitles2[0]}
+        |#{faqTitles2[1]}
       p
         |#{faqAnswers[5]}
     .zuc-faq-topic-container
       h2
-        |#{faqTitles2[1]}
+        |#{faqTitles2[2]}
       p
         |#{faqAnswers[6]}
-      h4.u-uppercase
+      h4.u-uppercase.u-bold
         |Approved products can be returned to:
       p
         |Zucora Home<br/>552 Clarke Road<br/>London, ON, N5V 3K5, Canada

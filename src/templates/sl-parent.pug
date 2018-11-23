@@ -1,5 +1,12 @@
 extends _layout
 
+block append head
+  title Zucora Home | What is Smarter Living?
+
+  // [ SEO ]
+  meta( name='description' 						content='Smarter Living removes stress from home management with services and innovative products to protect your budget.')
+
+
 block content
   //- Secondary Header
   include ../heroes/smarter-living-hero.pug
@@ -21,4 +28,10 @@ block content
 
 block foot
   //- Uses secondary footer on home-page.
-  include ../shared/secondary-footer.pug
+  //- Commented out for Launch since blog module is disabled
+  //- Re enable this footer and disable the othe rone
+  //- once we have the blog active
+  //- include ../shared/secondary-footer.pug
+
+  //- Temporary footer
+  include ../shared/footer.pug

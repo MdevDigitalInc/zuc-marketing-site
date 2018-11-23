@@ -3,7 +3,7 @@ section.zuc-about-join {
   display: flex;
   justify-content: center;
   padding: vw-phone(75) 0 vw-phone(55);
-  background: $color-zuc-platinum;
+  background: #fff;
 
   @media #{$tablet-only} {
     padding: vw-tablet(150) vw-tablet(55) vw-tablet(130);
@@ -42,7 +42,7 @@ section.zuc-about-join {
     @media #{$tablet-only} {
       padding: 0 0 vw-tablet(40);
     }
-  
+
     @media #{$laptop-up} {
       padding: 0 0 vw-desktop(30);
     }

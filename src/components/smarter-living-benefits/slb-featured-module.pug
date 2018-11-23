@@ -2,20 +2,24 @@
 - var subheading = 'Valuable rewards'
 - var text = 'Earn valuable Smarter Living Rewards with your plan, product and service purchases. By earning 10 points for every $1 spent, means your points will accumulate quickly and become valuable for future product purchases.'
 
-section.zuc-featured.flex.flex-wrap
-  .zuc-featured-content
-    .zuc-title-container.flex
-      h4
-        |#{subheading}
-      .zuc-title-flag
-        .--green
-    h3.u-font-serif.u-zuc-indigo
-      |#{title}
-    p
-      |#{text}
-    .d-grey-slash
-      img.--image(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='Decorative grey slashes.')
-  .zuc-featured-image.flex.flex-hor-center
-    .zuc-img-container
-      .zuc-img-block.u-soft-shadow(style="background-image:url('/Images/Zuc/images/shared/woman-online-purchase.png')")
-    img.zuc-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")
+section.zuc-featured-block.--graphic-blob
+  .zuc-featured.flex.flex-wrap
+    .zuc-featured-content
+      .zuc-title-container.flex
+        h4
+          |#{subheading}
+        .zuc-title-flag
+          .--green
+      h2.u-font-serif.u-zuc-indigo
+        |#{title}
+      p
+        |#{text}
+      br
+      br
+      br
+      .d-grey-slash
+        img.--image(src='../../assets/images/graphics/graphic_slash_grey.svg' alt='Decorative grey slashes.')
+    .zuc-featured-image.flex.flex-hor-center
+      .zuc-featured-media
+        img(src="../../assets/images/shared/woman-online-purchase.png")
+      img.zuc-blob(src="../../assets/images/shapes/round-blob-solid.svg", alt="An abstract green and blue blob shape")

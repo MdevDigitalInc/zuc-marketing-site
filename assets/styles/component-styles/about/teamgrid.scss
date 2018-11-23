@@ -43,22 +43,15 @@ section.zuc-teamgrid {
   }
 
   .zuc-bg-wave {
+    background-image: url('../../assets/images/shapes/wave-top.svg');
     z-index: -5;
     position: absolute;
-    width: 300%;
-    left: -25%;
-    bottom: -1%;
-
-    @media #{$tablet-only} {
-      width: 200%;
-      left: -20%;
-      bottom: -1%;
-    }
-    @media #{$laptop-up} {
-      width: 102%;
-      left: -1%;
-      bottom: -1%;
-    }
+    bottom: 0;
+    background-size: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 12%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -110,24 +103,6 @@ section.zuc-teamgrid {
     &:nth-child( 1 ),
     &:nth-child( 3n ) {
       margin: 0 0 vw-desktop(16);
-    }
-  }
-
-  /***************************************************
-
-      HOVER LOGIC
-
-  ***************************************************/
-
-  &:hover,
-  &:active,
-  &:focus {
-    .zuc-teamgrid-item-overlay > .zuc-teamgrid-item-overlay-bg {
-      opacity: .8;
-    }
-
-    .zuc-teamgrid-item-overlay > :nth-child( n+2 ) {
-      opacity: 1;
     }
   }
 
@@ -230,8 +205,16 @@ section.zuc-teamgrid {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  opacity: 0;
+  transition: all, .4s;
   color: $color-pure-white;
   padding: 0 vw-phone(23);
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .8;
+  }
 
   @media #{$tablet-only} {
     padding: 0 vw-tablet(21);
@@ -240,11 +223,6 @@ section.zuc-teamgrid {
     padding: 0 vw-desktop(32);
   }
 
-  // All Children
-  :nth-child( n ) {
-    opacity: 0;
-    transition: .4s;
-  }
 
   .zuc-teamgrid-item-overlay-bg {
     position: absolute;
@@ -321,6 +299,7 @@ section.zuc-teamgrid {
   }
 
   .zuc-teamgrid-item-link {
+    margin-top: 15px;
     color: $color-pure-white;
     font-size: vw-phone(34);
 
