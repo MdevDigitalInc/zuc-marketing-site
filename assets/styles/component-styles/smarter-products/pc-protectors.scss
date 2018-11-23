@@ -34,7 +34,8 @@ section.zuc-protectors {
   @media #{$portrait} {
     background-size: 300%;
     padding-top: 165%;
-    background-position: right center;
+    background-position-x: 99%;
+    background-position-y: center;
     top: 55%;
   }
 

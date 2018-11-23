@@ -138,7 +138,7 @@
 
 .zuc-damage-right {
   background: $color-zuc-indigo;
-  padding: ( 38 / 3.2 ) * 1vw 0 ( 34 / 3.2 ) * 1vw 5vw;
+  padding: ( 38 / 3.2 ) * 1vw 5vw ( 34 / 3.2 ) * 1vw 5vw;
   width: 100%;
 
   @media #{$tablet-only} {
