@@ -51,6 +51,11 @@ section.zuc-sixgrid-container {
   h2 {
     font-family: $main-font-serif;
     color: $color-zuc-indigo;
+
+    @media #{$desktop-only} {
+      padding-right: 70px;
+      padding-top: 30px;
+    }
   }
 
   &.--bottom-pad {
@@ -58,6 +63,10 @@ section.zuc-sixgrid-container {
 
     @media #{$portrait} {
       padding-bottom: 25vw;
+    }
+
+    @media #{$tablet-lnd-only} {
+      padding-bottom: 20vw;
     }
   }
 }
@@ -82,15 +91,6 @@ section.zuc-sixgrid-container {
 
     @media #{$portrait} {
       margin-bottom: 1vh;
-    }
-
-    @media #{$phone-only} {
-      // A little bit hacky but works.
-      // Makes titles take up space a little nicer
-      // on mobile. - LM
-      br {
-        display: none;
-      }
     }
   }
 

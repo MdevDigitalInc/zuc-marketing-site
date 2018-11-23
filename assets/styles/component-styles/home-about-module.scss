@@ -20,10 +20,6 @@
   .zuc-about-icons {
     display: flex;
     flex-direction: row;
-
-    @media #{$desktop-up} {
-      margin-right: 25%;
-    }
   }
 }
 
@@ -37,7 +33,7 @@
   @media #{$tablet-lnd-only} {
     left: -13vw;
     top: -18vw;
-    height: 200vw;
+    height: 100vw;
   }
   @media #{$tablet-prt-only} {
     left: -13vw;
@@ -141,8 +137,12 @@
     margin-right: 10%;
   }
 
-  @media #{$laptop-up} {
+  @media #{$desktop-up} {
     width: 13%;
+    margin-right: 10%;
+  }
+  @media #{$laptop-only} {
+    width: 20%;
     margin-right: 10%;
   }
 
