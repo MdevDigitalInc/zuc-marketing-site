@@ -250,8 +250,8 @@ module.exports = {
       filename: 'our-story.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/spr-home-care-kits.pug',
-      filename: 'home-care-kits.html'
+      template: './src/templates/spr-furniture.pug',
+      filename: 'furniture-care.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/spr-purecare.pug',
@@ -298,6 +298,10 @@ module.exports = {
     // JAVASCRIPT ----------------------------------------
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'Scripts/Zuc/js', force: true }
+    ]),
+    // Socials ----------------------------------------
+    new CopyWebpackPlugin([
+      { from: 'src/social', to: 'Content/Zuc/social', force: true }
     ])
   ],
   performance: {

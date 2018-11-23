@@ -270,6 +270,12 @@
     @media #{$portrait} {
       flex-wrap: wrap;
     }
+
+    &.flex-vert-start {
+      @media #{$tablet-only} {
+        align-items: flex-end;
+      }
+    }
   }
 
   .zuc-hero-content {
@@ -528,6 +534,14 @@
     width: 25%;
     margin: 20px 0;
     opacity: 1;
+    cursor: pointer;
+    transition: .4s all;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.1);
+    }
 
     @media #{$portrait} {
       width: 40%;

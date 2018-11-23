@@ -113,6 +113,10 @@
     padding: 0;
   }
 
+  &.--no-pad-top {
+    padding-top: 0;
+  }
+
   // Supersize the gifs
   .--gif-size img {
     width: 110%;

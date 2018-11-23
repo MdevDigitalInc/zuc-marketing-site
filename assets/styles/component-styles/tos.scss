@@ -60,7 +60,7 @@
   }
 
   @media #{$laptop-up} {
-    width: 10%;
+    width: 5%;
   }
 }
 
@@ -72,11 +72,14 @@
   }
 
   @media #{$laptop-up} {
-    width: 87%;
+    width: 95%;
   }
 
   a,
   p {
     display: inline;
+    @media #{$phone-only} {
+      font-size: 14px;
+    }
   }
 }

@@ -132,6 +132,7 @@ h4,
 h5,
 .h5 {
   @include font-size($h5-font-sizes);
+  line-height: 1.1;
 }
 
 h6,
