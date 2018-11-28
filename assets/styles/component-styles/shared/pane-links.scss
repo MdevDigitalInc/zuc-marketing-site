@@ -171,11 +171,12 @@ section.zuc-pane-links {
 
 .zuc-pane-bumper {
   position: relative;
-  width: 50%;
+  width: 90%;
   padding: 10vw 0 5vw 8vw;
 
   @media #{$tablet-only} {
     padding: 5vw 1vw;
+    width: 70%;
   }
 
   @media #{$laptop-up} {
