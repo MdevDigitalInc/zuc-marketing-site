@@ -37,7 +37,7 @@
 .zuc-head-box {
   background-color: $color-pure-white;
   position: relative;
-  padding: 8vw 8vw 0;
+  padding: 8vw;
   width: 90%;
   margin: 0 auto;
   z-index: 3;
@@ -117,7 +117,8 @@
   li {
     font-size: 18px;
     margin-left: 20px;
-    line-height: 1.2;
+    line-height: 1.4;
+    margin-bottom: 0;
   }
 }
 
@@ -149,6 +150,10 @@
 
     @media #{$tablet-up} {
       font-size: 88px;
+    }
+
+    @media #{$laptop-only} {
+      font-size: 65px;
     }
   }
 }

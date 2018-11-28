@@ -122,17 +122,7 @@
 
   p {
     color: $color-zuc-darkindigo;
-    padding: 0 7vw;
-    width: auto;
-
-    @media #{$tablet-up} {
-      padding: 0;
-      width: ( 200 / 7.68 ) * 1vw;
-    }
-
-    @media #{$laptop-up} {
-      width: ( 209 / 19.2 ) * 1vw;
-    }
+    padding-right: 10%;
   }
 }
 
@@ -146,8 +136,8 @@
   }
 
   @media #{$laptop-up} {
-    padding: ( 115 / 19.2 ) * 1vw 0 0 ( 29 / 19.2 ) * 1vw;
-    width: ( 320 / 19.2 ) * 1vw;
+    padding: ( 115 / 19.2 ) * 1vw ( 29 / 19.2 ) * 1vw 0 ( 29 / 19.2 ) * 1vw;
+    width: 30%;
   }
 
   h3 {

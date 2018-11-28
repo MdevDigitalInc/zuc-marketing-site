@@ -15,8 +15,8 @@
       name : 'Michelle Mahovlich',
       title : 'Director, Culture &amp; Personnel',
       bio : 'By maintaining our unique Zucorian culture, Michelle is constantly devising ways to help our team members achieve their personal aspirations while contributing their very best.',
-      _linkedin : '#',
-      _title : ' Linkedin',
+      _linkedin : false,
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-michelle.png\');'
     },
     {
@@ -24,7 +24,7 @@
       title : 'Director, Plan Registrations',
       bio : 'Ashleigh ensures our plan registration programs provide the ultimate support for our retail partners and their customers.',
       _linkedin : 'https://www.linkedin.com/in/ashleighmgeddes/',
-      _title : ' Linkedin',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-ashleigh.png\');'
     },
     {
@@ -32,7 +32,7 @@
       title : 'National Sales Manager',
       bio : 'With an infectious enthusiasm for life and laughter and a passion for helping our partners grow their business, David is the inspiration behind our incredible team of professional Sales Agents.',
       _linkedin : 'https://www.linkedin.com/in/david-cohn-070ab814/',
-      _title : ' Linkedin',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-david.png\');'
     },
     {
@@ -40,23 +40,23 @@
       title : 'Director, Financial Services',
       bio : 'Magda leads our incredible team of financial professionals who assist our many partners and associates. She also provides the internal support and guidance we need to keep our business financially strong and healthy.',
       _linkedin : 'https://www.linkedin.com/in/magdalena-everett-b3746a70/',
-      _title : ' Linkedin',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-magda.png\');'
     },
     {
       name : 'Trevor Brimson',
       title : 'Director, Digital Transformation',
       bio : 'While leading our continuously evolving business transformation, Trevor helps us leverage the power of technology to deliver new solutions for tomorrow’s digitally connected homes.',
-      _linkedin : 'www.linkedin.com/in/trevor-brimson-72472936/',
-      _title : ' Linkedin',
+      _linkedin : 'https://www.linkedin.com/in/trevor-brimson-72472936/',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-trevor.png\');'
     },
     {
       name : 'Oksana Tchoutchman',
       title : 'Director, Customer Solutions',
       bio : 'Delivering exceptional service is what Oksana does best. Finding creative solutions, we count on Oksana’s experience and professional expertise to deliver outstanding solutions that please our Smarter Living Members, customers, and retail partners.',
-      _linkedin : 'www.linkedin.com/in/oksana-t-89a74891/',
-      _title : ' Linkedin',
+      _linkedin : 'https://www.linkedin.com/in/oksana-t-89a74891/',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-oksana.png\');'
     },
     {
@@ -64,15 +64,15 @@
       title : 'Director, Product &amp; Logistics',
       bio : 'Jim leads our product manufacturing and distribution operations to make sure we deliver only the best solutions for our customers.',
       _linkedin : 'https://www.linkedin.com/in/jim-brower-76762018/',
-      _title : ' Linkedin',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-jim.png\');'
     },
     {
       name : 'Colleen Babenko',
       title : 'Manager, Marketing and Communications',
       bio : 'Recognized for her work by the International Association of Business Communicators, Colleen leads our growing MarCom team to execute innovative strategies that increase Canadian\'s awareness of smarter living.',
-      _linkedin : 'www.linkedin.com/in/colleen-babenko',
-      _title : ' Linkedin',
+      _linkedin : 'https://www.linkedin.com/in/colleen-babenko',
+      _title : ' LinkedIn',
       style : 'background-image:url(\'./Images/Zuc/images/about/about-team-colleen.png\');'
     }
   ]
@@ -106,6 +106,7 @@ section.zuc-teamgrid
           .zuc-teamgrid-item-line
           p.zuc-teamgrid-item-bio.u-color-white
             |#{prop.bio}
-          a.zuc-teamgrid-item-link(href=prop._linkedin title=prop._title)
-            i.fab.fa-linkedin
+          - if (prop._linkedin)
+            a.zuc-teamgrid-item-link(href=prop._linkedin title=prop._title)
+              i.fab.fa-linkedin
   .zuc-bg-wave(id="join-us")
