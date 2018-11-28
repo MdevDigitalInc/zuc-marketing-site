@@ -46,6 +46,9 @@
       width: 20%;
       padding: 2.72vw 2.47vw 3.78vw 1.96vw;
     }
+    @media #{$laptop-only} {
+      width: 30%;
+    }
 
     p {
       padding-bottom: 6.875vw;
@@ -71,6 +74,9 @@
       width: 40%;
       padding: 2.77vw 2.72vw 0 2.47vw;
     }
+    @media #{$laptop-only} {
+      width: 30%;
+    }
     @media #{$desktop-up} {
       width: 25%;
     }
@@ -89,7 +95,7 @@
     @media #{$laptop-up} {
       width: 40%;
       right: 0;
-      bottom: vw-desktop(25);
+      bottom: 40px;
       transform: translateX(50%);
     }
     @media #{$tablet-lnd-only} {
