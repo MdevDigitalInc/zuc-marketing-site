@@ -4,11 +4,11 @@ section.zuc-about-hero {
   align-items: flex-end;
   background-position: center -26vh;
   background-size: cover;
-  height: 90vh;
+  min-height: 110vh;
   margin: 0 0 30vh;
 
   @media #{$tablet-up} {
-    height: 70vh;
+    min-height: 90vh;
     margin: 0 0 20vh;
   }
 }
