@@ -33,11 +33,17 @@ section.zuc-tri-module {
     width: auto;
     height: auto;
     background-image: url('../../assets/images/shapes/wave-shape-bottom-flat.svg');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: -99;
-  }
 
+    @media #{$laptop-up} {
+      background-size: cover;
+    }
+    @media #{$phone-only} {
+      background-size: 150%;
+    }
+  }
 }
 
 .zuc-tri-box {
