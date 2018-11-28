@@ -25,20 +25,23 @@ section.zuc-tri-module {
   }
 
   .zuc-tri-module-wave {
-    z-index: -700;
     position: absolute;
-    top: 15vw;
-    width: 300%;
-    left: -170%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-image: url('../../assets/images/shapes/wave-shape-bottom-flat.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -99;
 
-    @media #{$tablet-up} {
-      top: 0;
-      width: 200%;
-      left: -30vw;
-    }
     @media #{$laptop-up} {
-      width: 100%;
-      left: 0;
+      background-size: cover;
+    }
+    @media #{$phone-only} {
+      background-size: 150%;
     }
   }
 }

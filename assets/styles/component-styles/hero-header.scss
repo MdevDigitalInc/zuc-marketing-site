@@ -300,7 +300,8 @@
     position: relative;
 
     @media #{$laptop-only} {
-      padding: 80px 2.2vw 0;
+      padding: 80px 0 0;
+      width: 50%;
     }
     @media #{$tablet-lnd-only} {
       width: 60%;
@@ -318,7 +319,6 @@
 
   .zuc-btn {
     margin-top: 15px;
-    margin-bottom: 60px;
 
     @media #{$laptop-up} {
       margin-top: 0;
