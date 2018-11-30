@@ -43,11 +43,11 @@
         currentSlide = desiredSlide;
       }
       // Once the funciton is over, start the timer again.
-      sliderTimer = setInterval(flipSlider, 2000);
+      sliderTimer = setInterval(flipSlider, 3500);
     });
 
     // Slider is on a 3 second interval
-    sliderTimer = setInterval(flipSlider, 2000);
+    sliderTimer = setInterval(flipSlider, 3500);
 
   });
   // Resize Events (debounced)

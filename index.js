@@ -58,3 +58,7 @@ const aboutColleen = require ( './assets/images/about/about-team-colleen.png' );
 const navSp = require ( './assets/images/nav/service-plans.png' );
 const navShp = require ( './assets/images/nav/smarter-home-products.png' );
 const navSl = require ( './assets/images/nav/smarter-living.png' );
+// Sliders
+const slider1 = require ( './assets/images/homepage/slider-img-1.png' );
+const slider2 = require ( './assets/images/homepage/slider-img-2.png' );
+const slider3 = require ( './assets/images/homepage/slider-img-3.png' );
