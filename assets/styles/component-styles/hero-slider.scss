@@ -48,6 +48,11 @@
     }
   }
 
+  .zuc-btn {
+    position: relative;
+    z-index: 10;
+  }
+
   &.--hero-pad {
     margin-bottom: 7vw;
     margin-top: 5vw;
