@@ -104,46 +104,54 @@
   position: absolute;
   z-index: 20;
   overflow: visible;
+  border-radius: 0 0 48% 48%;
+  box-shadow: 0 0 80px rgba(0, 0, 0, .3);
+  background-color: rgba(255,255,255,.75);
   bottom: 0;
 
   @media #{$phone-only} {
-    width: 100%;
-    padding-top: 114.25%;
-    bottom: -6vh;
+    width: 80%;
+    padding-top: 93.25%;
+    bottom: 4vh;
     left: 50%;
     transform: translatex(-50%) scale(.9);
   }
 
   @media #{$tablet-prt-only} {
-    width: 80%;
-    padding-top: 91.5%;
-    bottom: -6vh;
+    width: 60%;
+    padding-top: 65.5%;
+    bottom: 0;
     left: 50%;
     transform: translatex(-50%) scale(.9);
   }
 
   @media #{$tablet-lnd-only} {
-    width: 80%;
-    padding-top: 91.5%;
-    bottom: -30vh;
-    right: -20vw;
+    width: 60%;
+    padding-top: 68.5%;
+    bottom: -18vh;
+    right: -6vw;
     transform: scale(.5);
   }
 
   @media #{$laptop-only} {
-    width: 44%;
-    padding-top: 50.25%;
-    bottom: -5vh;
+    width: 37%;
+    padding-top: 42.25%;
+    bottom: -2vh;
     right: 5%;
-    transform: scale(.7);
+    transform: scale(.65);
   }
 
   @media #{$desktop-up} {
-    width: 28%;
-    padding-top: 32%;
-    bottom: 5vh;
+    width: 25%;
+    padding-top: 29%;
+    bottom: 7vh;
     right: 12%;
     transform: scale(.9);
+  }
+
+  @media #{$xl-up} {
+    bottom: 11vh;
+    transform: scale(.8);
   }
 }
 
@@ -223,21 +231,6 @@
 }
 
 // Shield Backgrounds
-.zuc-icon--primary {
-  &:before {
-    @include pseudo();
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url('../images/homepage/hero-shield-shadow.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center -1px;
-    z-index: 0;
-  }
-}
-
 // Secondary Hero Header -------------
 .zuc-secondary-header {
   width: 100%;
